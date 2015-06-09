@@ -1,0 +1,9 @@
+<header class="gbl-head {{ page.colour }}">
+  <a href="../" class="gbl-head-logo">go to pebble {code} home page</a>
+  <button id="navBtn" class="gbl-head-btn">Menu</button>
+  <nav id="navMenu" class="gbl-head-nav">
+    {% assign nav = site.pages %}
+    {% assign group = 'nav' %}
+    {% include nav.html %}
+  </nav>
+</header>

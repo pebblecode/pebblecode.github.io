@@ -1,0 +1,66 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+// Import partials from `sass_dir` (defaults to `_sass`)
+
+// SHARED
+// ===================================================
+// VARIABLES: Colours, Type sizes etc.
+@import "shared/_variables.scss";
+
+// NORMALIZE v3.0.0: Normalise across browsers
+@import "shared/_normalize.scss";
+
+// SPRITE: Global sprite used across all pages.
+@import "shared/_sprite.scss";
+
+// MIXINS: Fixes, Recurring blocks of styling etc.
+@import "shared/_mixins.scss";
+
+// ANIMATIONS: CSS Animations
+@import "shared/_animations.scss";
+
+// LAYOUT: Base layout, Grid
+@import "shared/_layout.scss";
+
+// TYPOGRAPHY: Headings, Hierarchy etc.
+@import "shared/_typography.scss";
+
+// ELEMENTS: Links, Buttons, Forms, Lists etc.
+@import "shared/_elements.scss";
+
+// COMPONENTS
+// ===================================================
+// GLOBAL HEADER: Global header across all pages.
+@import "components/_gbl-head.scss";
+
+// GLOBAL FOOTER: Global footer across all pages.
+@import "components/_gbl-foot.scss";
+
+// PAGES
+// ===================================================
+// PAGE BASE: Base styles used for most pages.
+@import "pages/_page-base.scss";
+
+// HOME: Styles for the home page
+@import "pages/_home.scss";
+
+// SERVICES: Styles for the services page
+@import "pages/_services.scss";
+
+// CONTACT: Styles for the contact page
+@import "pages/_contact.scss";
+
+// ABOUT: Styles for the work page
+@import "pages/_work.scss";
+
+// CAREERS: Styles for the careers page
+@import "pages/_careers.scss";
+
+// BLOG: Styles for the blog page
+@import "pages/_blog.scss";
+
+// IE 8
+// ===================================================
+@import "shared/_ie.scss";

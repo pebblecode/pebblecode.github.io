@@ -1,0 +1,178 @@
+//===============================================================================
+// GLOBAL HEADER
+//===============================================================================
+.gbl-head {
+  background-color: $primary;
+  border-bottom: 1px solid rgba(white, 0.25);
+  padding: 40px $gutter * 2 20px;
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+
+  @media screen and ( max-width: $medium ) {
+    position: relative;
+    padding: 20px 0 15px;
+  }
+
+  &.pink {
+    background-color: $pink;
+  }
+
+  &.aqua {
+    background-color: $aqua;
+  }
+
+  &.blue {
+    background-color: $blue;
+  }
+
+  &.purple {
+    background-color: $purple;
+  }
+
+  &.transparent {
+    background-color: transparent;
+    box-shadow: none;
+  }
+}
+
+.gbl-head-logo {
+  position: relative;
+  color: transparent;
+  overflow: hidden;
+  display: block;
+  width: 175px;
+  height: 31px;
+  transition: 0.2s;
+
+  &:after {
+    @include icon-pseudo;
+    @extend .i-gbl-logo-white;
+    bottom: 0;
+    left: 0;
+  }
+
+  @media screen and ( max-width: $medium ) {
+    margin-left: $gutter;
+  }
+
+  &:hover {
+    color: transparent;
+    opacity: 0.8;
+  }
+}
+
+.gbl-head-nav {
+  position: absolute;
+  right: $gutter * 2;
+  top: 0;
+
+  @media screen and ( max-width: $medium ) {
+    position: relative;
+    top: 15px;
+    right: 0;
+    max-height: 0;
+    transition: max-height 0.2s ease-out;
+    overflow: hidden;
+
+    &.active {
+      max-height: 500px;
+      transition: max-height 0.4s ease-in;
+    }
+  }
+}
+
+.gbl-head-nav-item {
+  color: white;
+  display: block;
+  float: left;
+  padding: 40px 15px 23px;
+  color: rgba(white, 0.6);
+  border-top: 5px solid transparent;
+  transition: 0.2s;
+  text-transform: capitalize;
+
+  @media screen and ( max-width: $medium ) {
+    display: block;
+    float: none;
+    border: none;
+    text-align: right;
+    font-size: $delta;
+    background-color: rgba(black, 0.07);
+    color: rgba(white, 0.9);
+    padding: 10px $gutter;
+    margin: 1px 0 0;
+
+    &:first-child {
+      margin-top: 9px;
+
+      &:after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 28px;
+        width: 0; 
+        height: 0; 
+        border-left: 9px solid transparent;
+        border-right: 9px solid transparent;
+        border-bottom: 9px solid rgba(black, 0.07);
+        transition: 0.2s;
+      }
+
+      &:hover:after {
+        border-bottom-color: rgba(black, 0.12); 
+      }
+    }
+  }
+
+  &:hover {
+    color: rgba(white, 0.9);
+    border-color: rgba(white, 0.4);
+
+    @media screen and ( max-width: $medium ) {
+      background-color: rgba(black, 0.12);
+    }
+  }
+
+  &.active {
+    color: white;
+    border-color: white;
+  }
+}
+
+.gbl-head-btn {
+  display: none;
+  position: absolute;
+  top: 10px;
+  right: $gutter - 5px;
+  height: 45px;
+  width: 45px;
+  color: transparent;
+  overflow: hidden;
+  background-color: white;
+  border-radius: 50%;
+  box-shadow: 0 4px 0 rgba(black, 0.1);
+  transition: box-shadow 0.2s, opacity 0.2s;
+
+  &:after {
+    @include icon-pseudo;
+    @extend .i-menu-grey;
+    top: 14px;
+    left: 13px;
+  }
+
+  &:active {
+    opacity: 0.9;
+    box-shadow: 0 1px 0 rgba(black, 0.1);
+  }
+
+  &.active:after {
+    @extend .i-close-grey;
+    left: 15px;
+  }
+
+  @media screen and ( max-width: $medium ) {
+    display: block;
+  }  
+}

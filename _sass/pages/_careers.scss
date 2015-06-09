@@ -1,0 +1,500 @@
+//===============================================================================
+// CAREERS
+//===============================================================================
+// Kaizen Container
+.kaizen-container {
+  color: white;
+  margin-top: $gutter + 5px;
+  margin-bottom: $gutter + 10px;
+
+  &:after {
+    @include clearfix;
+    background-color: $aqua;
+  }
+
+  @media screen and ( max-width: $medium ) {
+    background-color: $aqua;
+    margin-top: 0;
+    margin-bottom: $gutter;
+  }
+
+  h3 {
+    text-shadow: 2px 2px 0 rgba(black, 0.2);
+  }
+
+  p {
+    margin-bottom: 12px;
+  }
+}
+
+// Benefits Container
+.benefits-container {
+  background-color: $blue;
+  margin: 0;
+  padding-bottom: $gutter;
+  padding-top: $gutter;
+  color: white;
+
+  @media screen and ( max-width: $medium ) {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  & + .photo-container .photo-inner  {
+    &:before {
+      transform: rotate(1deg) scale(1.2);
+      -ms-transform: rotate(1deg) scale(1.2);
+      -webkit-transform: rotate(1deg) scale(1.2);
+    }
+
+    &:after {
+      background-color: $blue;
+      transform: rotate(1.6deg) scale(1.2);
+      -ms-transform: rotate(1.6deg) scale(1.2);
+      -webkit-transform: rotate(1.6deg) scale(1.2);
+    }
+  }
+}
+
+.benefits-inner {
+  position: relative;
+  z-index: 3;
+  padding-top: 30px;
+
+  .content-title {
+    color: white;
+    border-bottom-color: rgba(white, 0.2); 
+    text-shadow: 3px 4px 0 rgba(black, 0.2);
+  }
+}
+
+.benefits-list-container {
+  @include clearfix;
+}
+
+.benefits-list-title {
+  font-size: $beta;
+  text-shadow: 2px 2px 0 rgba(black, 0.2);
+  position: relative;
+
+  &:before {
+    content: "";
+    height: 6px;
+    width: 150px;
+    background-color: rgba(white, 0.2);
+    display: block;
+    margin: 30px 0 50px;
+
+    @media screen and ( max-width: $medium ) {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+.benefits-list {
+  margin-bottom: 0;
+}
+
+.benefits-list-item {
+  padding: $gutter $gutter * 2 $gutter 60px;
+  line-height: 1.2;
+  position: relative;
+  text-align: left;
+
+  @media screen and ( max-width: $medium ) {
+    padding-right: $gutter;
+  }
+
+  &:after {
+    @include icon-pseudo;
+    top: 15px;
+    left: 25px;
+    opacity: 0.6;
+  }
+
+  &.benefit-flexible {
+    padding-top: 8px;
+
+    &:after {
+      @extend .i-flexible-white;
+    }
+  }
+
+  &.benefit-10 {
+    padding-top: 8px;
+
+    &:after {
+      @extend .i-10-white;
+    }
+  }
+
+  &.benefit-holidays:after {
+    @extend .i-holidays-white;
+  }
+
+  &.benefit-snacks:after {
+    @extend .i-snacks-white;
+    left: 28px;
+  }
+
+  &.benefit-pay:after {
+    @extend .i-pay-white;
+  }
+
+  &.benefit-gym {
+    padding-top: 8px;
+
+    &:after {
+      @extend .i-gym-white;
+    }
+  }
+
+  &.benefit-social:after {
+    @extend .i-social-white;
+  }
+
+  &.benefit-charity:after {
+    @extend .i-charity-white;
+    left: 28px;
+  }
+}
+
+// Culture Photos grid
+.photos-container {
+  overflow: hidden;
+  position: relative;
+  height: 550px;
+
+  @media screen and ( min-width: 1500px ) {
+    height: 500px;
+  }
+
+  @media screen and ( min-width: 1800px ) {
+    height: 600px;
+  }
+
+  @media screen and ( max-width: $medium ) {
+    margin-top: 0;
+    margin-bottom: 0;
+    height: 350px;
+  }
+
+  @media screen and ( max-width: $small ) {
+    height: 300px;
+  }
+
+  &:before {
+    @include shadow-pseudo;
+    bottom: 2px;
+    height: 20px;
+    z-index: 1;
+    background-color: rgba(black, 0.15);
+    transform: rotate(-1.2deg) scale(1.2);
+    -ms-transform: rotate(-1.2deg) scale(1.2);
+    -webkit-transform: rotate(-1.2deg) scale(1.2);
+  }
+
+  &:after {
+    @include shadow-pseudo;
+    bottom: -40px;
+    height: 50px;
+    z-index: 2;
+    background-color: $blue;
+    transform: rotate(-0.8deg) scale(1.2);
+    -ms-transform: rotate(-0.8deg) scale(1.2);
+    -webkit-transform: rotate(-0.8deg) scale(1.2);
+  }
+}
+
+.photos-grid {
+  position: relative;
+  width: 120%;
+  width: calc(100% + 220px);
+
+  @media screen and ( min-width: 1500px ) {
+    width: calc(100% + 280px);
+  }
+
+  @media screen and ( min-width: 1800px ) {
+    width: calc(100% + 350px);
+  }
+
+  @media screen and ( max-width: $medium ) {
+    width: calc(100% + 150px);
+  }
+
+  @media screen and ( max-width: $small ) {
+    width: calc(100% + 100px);
+  }
+
+  &:before {
+    @include shadow-pseudo;
+    top: 15px;
+    height: 20px;
+    z-index: 1;
+    background-color: rgba(black, 0.15);
+    transform: rotate(1.6deg) scale(1.2);
+    -ms-transform: rotate(1.6deg) scale(1.2);
+    -webkit-transform: rotate(1.6deg) scale(1.2);
+  }
+
+  &:after {
+    @include shadow-pseudo;
+    top: -25px;
+    height: 50px;
+    background-color: white;
+    z-index: 2;
+    transform: rotate(1deg) scale(1.2);
+    -ms-transform: rotate(1deg) scale(1.2);
+    -webkit-transform: rotate(1deg) scale(1.2);
+  }
+}
+
+.photos-item {
+  padding: 0;
+  width: 220px;
+  height: 220px;
+  position: relative;
+  overflow: hidden;
+  float: left;
+
+  & > img {
+    display: block;
+    width: auto;
+    max-width: none;
+    min-width: 220px;
+    width: auto;
+    height: 220px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+  }
+
+  @media screen and ( min-width: 1500px ) {
+    height: 280px;
+    width: 280px;
+
+    & > img {
+      min-width: 280px;
+      height: 280px;
+    }
+  }
+
+  @media screen and ( min-width: 1800px ) {
+    height: 350px;
+    width: 350px;
+
+    & > img {
+      min-width: 350px;
+      height: 350px;
+    }
+  }
+
+  @media screen and ( max-width: $medium ) {
+    height: 150px;
+    width: 150px;
+
+    & > img {
+      min-width: 150px;
+      height: 150px;
+    }
+  }
+
+  @media screen and ( max-width: $small ) {
+    height: 100px;
+    width: 100px;
+
+    & > img {
+      min-width: 100px;
+      height: 100px;
+    }
+  }
+}
+
+// Careers Listings
+.careers-container {
+  @include clearfix;
+  margin-top: $gutter + 10px;
+  margin-bottom: $gutter;
+
+  @media screen and ( max-width: $medium ) {
+    margin-top: 0;
+  }
+
+  .content-title {
+    width: auto;
+    padding-top: $gutter + 10px;
+    margin-bottom: $gutter;
+  }
+
+  .rt-offer {
+    margin: $gutter 0;
+    padding: 10px 0 20px;
+    position: relative;
+
+    @media screen and ( max-width: $medium ) {
+      padding: 10px 0 $gutter;
+    }
+
+    &:last-child {
+      margin-bottom: 10px;
+
+      &:after {
+        display: none;
+      }
+    }
+
+    &:after {
+      content: "";
+      height: 6px;
+      width: 150px;
+      background-color: lighten($ink, 50);
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+
+    h3 {
+      font-size: $beta;
+      color: $primary;
+      margin-bottom: 5px;
+      transition: 0.2s;
+      line-height: 1;
+
+      @media screen and ( max-width: $medium ) {
+        font-size: $beta;
+        margin-bottom: 5px;
+      }
+
+      @media screen and ( max-width: $small ) {
+        font-size: $beta - 4px;
+      }
+
+      &:hover {
+        color: lighten($primary, 8);
+      }
+    }
+
+    p {
+      font-size: $delta;
+      line-height: 1;
+      margin-bottom: 15px;
+    }
+  }
+}
+
+.rt-modal {
+  .rt-brand-color {
+    color: $primary;
+  }
+
+  .rt-dialog {
+    border-radius: 0;
+    padding: 60px 30px 50px;
+    box-shadow: 0 0 20px rgba(black, 0.2);
+
+    @media screen and ( max-width: $medium ) {
+      padding: 50px $gutter;
+    }
+  }
+
+  .rt-close-button {
+    position: absolute;
+    right: -15px;
+    top: -15px;
+    height: 49px;
+    width: 49px;
+    border-radius: 50%;
+    background: lighten($ink, 50);
+    box-shadow: 0 4px 0 rgba(black, 0.1);
+    transition: 0.2s;
+
+    &:after {
+      @include icon-pseudo;
+      @extend .i-close-grey;
+      top: 17px;
+      left: 17px;
+    }
+
+    &:hover {
+      background: lighten($ink, 48);
+      transform: scale(1.1);
+      -ms-transform: scale(1.1);
+      -webkit-transform: scale(1.1);
+    }
+  }
+
+  .rt-title {
+    font-size: $alpha;
+    line-height: 1;
+    margin: 0 0 10px;
+
+    @media screen and ( max-width: $medium ) {
+      font-size: $alpha - 8px;
+    }
+  }
+
+  .rt-subtitle {
+    font-size: $gamma;
+    position: relative;
+    padding-bottom: 10px;
+
+    @media screen and ( max-width: $medium ) {
+      font-size: $delta;
+    }
+  }
+
+  .rt-offer-heading {
+    position: relative;
+    margin-top: $gutter;
+    padding-top: 40px;
+
+    &:after {
+      content: "";
+      height: 6px;
+      width: 150px;
+      background-color: lighten($ink, 45);
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  } 
+
+  .rt-body {
+    h3 {
+      color: $ink;
+    }
+
+    p {
+      line-height: 1.4;
+      margin-bottom: 18px;
+    }
+
+    ul {
+      margin-left: $gutter;
+    }
+
+    ul li p {
+      line-height: 1;
+    }
+  }
+
+  .rt-footer {
+    @include clearfix;
+    position: relative;
+
+    .rt-btn {
+      @extend .btn;
+      @extend .btn-primary;
+      @extend .btn-block;
+      margin: $gutter auto 0;
+      display: table;
+    }
+
+    .rt-btn-link {
+      display: none;
+    }
+  }
+}

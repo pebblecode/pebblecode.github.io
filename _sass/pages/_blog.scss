@@ -1,0 +1,25 @@
+//===============================================================================
+// BLOG
+//===============================================================================
+// Hero
+.hero-container-blog {
+  background-color: $aqua;
+  background-image: repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(255,255,255,.1) 35px, rgba(255,255,255,.1) 70px);
+
+  .hero-inner {
+    z-index: 1;
+    transition: 0.2s;
+
+    &:hover {
+      transform: scale(1.01);
+    }
+  }
+
+  .meta-title-container {
+    margin-bottom: 20px;
+  }
+
+  .hero-title {
+    margin-bottom: 70px;
+  }
+}

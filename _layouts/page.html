@@ -1,0 +1,39 @@
+---
+layout: default
+---
+<!DOCTYPE html>
+<!--[if IE 8]> <html class="lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html> <!--<![endif]-->
+
+  {% include head.html %}
+
+  <body class="{{ layout }}">
+
+    {% include header.html %}
+
+    <section class="hero-container {{ page.colour }}">
+      <div class="hero-inner grid">
+        <h1 class="hero-title col-1-1">{% if page.hero-title %}{{page.hero-title}}{% else %}{{page.title}}{% endif %}</h1>
+        {% if page.hero-subtitle %}
+          <p class="hero-summary col-1-1">{{page.hero-subtitle}}</p>
+        {% endif %}
+      </div>
+    </section>
+    <!-- /.hero-container -->
+
+    <section class="content-container grid">
+      <article class="content col-1-1">
+        {{content}}
+      </article>
+    </section>
+    <!-- /.content-container -->
+
+    {% include footer.html %}
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-2.1.1.min.js""><\/script>')</script>
+    <script type="text/javascript" src="{{ site.baseurl }}/js/main.js"></script>
+    <!-- /scripts-->
+
+  </body>
+</html>

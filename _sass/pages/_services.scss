@@ -1,0 +1,157 @@
+//===============================================================================
+// SERVICES
+//===============================================================================
+// Services Process
+.services-process-container {
+  background-color: lighten($ink, 50);
+  text-align: center;
+  position: relative;
+  overflow-x: hidden;
+
+  @media screen and ( max-width: $medium + 150px ) {
+    margin-top: 20px;
+  }
+
+  &:after {
+    @include shadow-pseudo;
+    top: -25px;
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    transform: rotate(-1.3deg) scale(1.2);
+    -ms-transform: rotate(-1.3deg) scale(1.2);
+    -webkit-transform: rotate(-1.3deg) scale(1.2);
+  }
+}
+
+.services-process-img {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+// Services List
+.services-container {
+  overflow: hidden;
+  background-color: $purple;
+  position: relative;
+  margin: 0;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  transition: background-color 1s;
+
+  @media screen and ( max-width: $medium + 150px ) {
+    padding-bottom: 0;
+  }
+
+  &:before {
+    @include shadow-pseudo;
+    top: 10px;
+    height: 25px;
+    background-color: rgba(black, 0.15);
+    transform: rotate(2deg) scale(1.2);
+    -ms-transform: rotate(2deg) scale(1.2);
+    -webkit-transform: rotate(2deg) scale(1.2);
+    z-index: 1;
+  }
+
+  &:after {
+    @include shadow-pseudo;
+    top: -25px;
+    height: 40px;
+    background-color: lighten($ink, 50);
+    transform: rotate(1.3deg) scale(1.2);
+    -ms-transform: rotate(1.3deg) scale(1.2);
+    -webkit-transform: rotate(1.3deg) scale(1.2);
+    z-index: 1;
+  }
+}
+
+.services-item {
+  display: block;
+  position: relative;
+  min-height: 90vh;
+  color: white;
+  font-size: $delta;
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  &:last-of-type {
+    min-height: 100vh;
+  }
+
+  @media screen and ( max-width: 900px ) {
+    font-size: $delta - 2px;
+    line-height: 1.4;
+  }
+
+  @media screen and ( max-width: $medium + 150px ) {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    min-height: 0;
+  }
+}
+
+.services-item-inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  width: 100%;
+
+  @media screen and ( max-width: $medium + 150px ) {
+    position: relative;
+    top: auto;
+    left: auto;
+    transform: none;
+    -ms-transform: none;
+    -webkit-transform: none;
+    padding-top: 200px;
+  }
+}
+
+.services-item-text {
+  @media screen and ( max-width: $medium + 150px ) {
+    float: none;
+    display: block;
+    width: 100%;
+  }
+
+  h3 {
+    color: white;
+    text-shadow: 2px 2px 0 rgba($grey, 0.4);
+    line-height: 1.1;
+  }
+}
+
+.services-item-img {
+  padding: 20px 20px 20px 70px;
+
+  @media screen and ( max-width: $medium + 300px ) {
+    padding: 20px;
+  }
+
+  .services-item:nth-of-type(even) & {
+    padding: 20px 70px 20px 20px;
+
+    @media screen and ( max-width: $medium + 300px ) {
+      padding: 20px;
+    }
+  }
+
+  @media screen and ( max-width: $medium + 150px ) {
+    float: none;
+    display: block;
+    height: 200px;
+    width: auto;
+    max-width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px;
+  }
+}

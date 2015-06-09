@@ -1,0 +1,50 @@
+//===============================================================================
+// VARIABLES
+//===============================================================================
+// COLOURS
+$paper: white;
+$ink: #6b7482;
+
+$pink: #ed4f7e;
+$purple: #9b5ca4;
+$blue: #0ea2dc;
+$aqua: #37bec0;
+$green: #a4ce4e;
+$orange: #faad40;
+
+$grey: darken($ink, 20);
+$primary: $pink;
+
+
+// TYPOGRAPHY
+$base-font: 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+$museo: 'museo-sans', $base-font; 
+$brandon: 'brandon-grotesque', $base-font; 
+
+$body-font-size: 16px;
+$font-regular: 300; // $museo only
+$font-bold: 700; // $museo only
+$font-black: 900; // $brandon only
+
+$tera: 78px;
+$giga: 60px;
+$mega: 52px;
+$alpha: 42px;
+$beta: 32px;
+$gamma: 22px;
+$delta: 18px;
+$epsilon: 14px;
+$zeta: 12px;
+
+
+// SPACING: Grid, Viewports etc
+$large: 1000px;
+$medium: 650px;
+$small: 500px;
+
+$gutter: 20px;
+
+
+// SPRITE
+$gbl-sprite: '../img/gbl-sprite.svg';
+$logo-sprite: '../img/logo-sprite.svg';
