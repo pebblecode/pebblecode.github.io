@@ -13,5 +13,5 @@ vimeo:  pebblecode
 markdown: kramdown
 redirects: yes
 sass:
-    # style: :compressed
+    style: :compressed
 
