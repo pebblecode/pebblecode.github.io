@@ -1,0 +1,77 @@
+//===============================================================================
+// MIXINS
+//===============================================================================
+// CLEAR FIX
+// @include clearfix;
+@mixin clearfix {
+  clear: both;
+
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+// HIDE TEXT
+// @include hide-text;
+@mixin hide-text {
+  overflow: hidden;
+
+  &:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 100%;
+  }
+}
+
+// MARGIN AUTO
+// @include margin-auto;
+@mixin margin-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// If more than one of same, add margin
+// @include doubly(20px);
+@mixin doubly($margin) {
+  & + & {
+    margin-left: $margin;
+    @content;
+  }
+}
+
+// SPRITE ICON
+// @include icon;
+@mixin icon {
+  color: transparent;
+  overflow: hidden;
+  display: block;
+  background-repeat: no-repeat;
+
+  &:hover {
+    color: transparent;
+  }
+}
+
+// SPRITE ICON (PSEUDO)
+// @include icon-pseudo;
+@mixin icon-pseudo {
+  content: "";
+  overflow: hidden;
+  display: block;
+  position: absolute;
+  background-repeat: no-repeat;
+}
+
+// BEFORE/AFTER SHADOWS
+// @include shadow-pseudo;
+@mixin shadow-pseudo {
+  content: "";
+  overflow: hidden;
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 100%;
+}

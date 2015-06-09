@@ -1,0 +1,126 @@
+//===============================================================================
+// HOME
+//===============================================================================
+// Hero
+.hero-container-home {
+  .hero-title {
+    @media screen and ( max-width: 1100px ) {
+      font-size: $tera - 10px;
+    }
+
+    @media screen and ( max-width: 900px ) {
+      font-size: $giga;
+    }
+
+    @media screen and ( max-width: 800px ) {
+      font-size: $mega;
+    }
+
+    @media screen and ( max-width: 700px ) {
+      font-size: $mega - 5px;
+      margin-bottom: 0;
+    }
+
+    @media screen and ( max-width: 600px ) {
+      font-size: $alpha;
+    }
+  }
+
+  .hero-inner {
+    padding-bottom: 110px;
+
+    @media screen and ( max-width: $medium ) {
+      padding-bottom: 80px;
+    }
+  }
+
+  .hero-summary {
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  &:after {
+    background-color: lighten($ink, 50);
+    background-color: white;
+  }
+}
+
+// Clients
+.client-container {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: lighten($ink, 45);
+  background-color: white;
+
+  @media screen and ( max-width: $medium ) {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
+.client-item {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  position: relative;
+  text-align: center;
+  vertical-align: vertical;
+}
+
+// Featured Case Study
+.feat-content-container {
+  background-color: $aqua;
+  position: relative;
+  padding-bottom: 50px;
+
+  @media screen and ( max-width: $medium ) {
+    padding-top: 0;
+    padding-bottom: 40px;
+  }
+}
+
+.feat-content {
+  padding-top: 0;
+  padding-bottom: 0;
+  color: white;
+
+  .meta-title-container {
+    padding: 30px 0 40px;
+  }
+}
+
+.feat-content-text {
+  @media screen and ( max-width: $medium + 100px ) {
+    width: 100%;
+    float: none;
+  }
+
+  .btn-block {
+    margin: 30px 0 0;
+    padding: 12px 25px;
+    display: table;
+  }
+
+  h3 {
+    color: white;
+    text-shadow: 2px 2px 0 rgba($grey, 0.4);
+    line-height: 1.1;
+  }
+
+  p {
+    font-size: $delta;
+  }
+}
+
+.feat-content-img {
+  z-index: 2;
+  height: 540px;
+  background: url(../img/services/services-featured.png) no-repeat center left;
+  background-size: auto 540px;
+  right: 0;
+  bottom: -60px;
+  position: absolute;
+
+  @media screen and ( max-width: $medium + 100px ) {
+    display: none;
+  }
+}

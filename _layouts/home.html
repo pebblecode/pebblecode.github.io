@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html class="lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html> <!--<![endif]-->
+
+  {% include head.html %}
+
+  <body class="{{ layout }}">
+
+    {% include header.html %}
+
+    <section class="hero-container hero-container-tile hero-container-home">
+      <div class="hero-inner grid">
+        <h1 class="hero-title col-1-1">{{page.hero-title}}</h1>
+        {% if page.hero-subtitle %}
+          <p class="hero-summary col-1-1">{{page.hero-subtitle}}</p>
+        {% endif %}
+      </div>
+    </section>
+    <!-- /.hero-container -->
+
+    {% include clients.html %}
+
+    <section class="photo-container home-photo-container">
+      <div class="photo-inner" style="background-image: url({{ site.baseurl }}/img/{{page.cover-img}})"></div>
+    </section>
+    <!-- /.photo-container -->
+
+    <section class="feat-content-container">
+      <div class="feat-content grid">
+        <div class="feat-content-text col-1-2">
+          <div class="meta-title-container">
+          <span class="meta-title">Featured Case Study</span>
+          <span class="meta-subtitle">{{page.feat-client}}</span>
+        </div>
+          <h3>{{page.feat-title}}</h3>
+          <p>{{page.feat-excerpt}}</p>
+          <a href="{{ site.baseurl }}/work" class="btn btn-light btn-block">Read more</a>
+        </div>
+        <div class="feat-content-img col-1-2"></div>
+      </div>
+    </section>
+    <!-- /.feat-content-container -->
+
+    {% include footer.html %}
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-2.1.1.min.js""><\/script>')</script>
+    <script type="text/javascript" src="{{ site.baseurl }}/js/main.js"></script>
+    <!-- /scripts-->
+
+  </body>
+</html>

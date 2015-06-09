@@ -1,0 +1,68 @@
+//===============================================================================
+// TYPOGRAPHY
+//===============================================================================
+h1, h2, h3, h4, h5, h6,
+p, ul, ol, dl, blockquote, pre, button {
+  margin: 0 0 20px 0;
+}
+
+// FONT SIZES
+.tera    { font-size: $tera; }
+.giga    { font-size: $giga; }
+.mega    { font-size: $mega; }
+.alpha   { font-size: $alpha; }
+.beta    { font-size: $beta; }
+.gamma   { font-size: $gamma; }
+.delta   { font-size: $delta; }
+.epsilon { font-size: $epsilon; }
+.zeta    { font-size: $zeta; }
+
+// HEADINGS
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, strong {
+  font-weight: $font-bold;
+}
+
+h1, h2, h3, .h1, .h2, .h3 {
+  line-height: 1.3;
+  font-family: $brandon;
+  font-weight: $font-black;
+  font-style: italic;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+}
+
+h1, .h1 {
+  font-size: $tera;
+
+  @media screen and ( max-width: $medium ) {
+    font-size: $mega;
+  }
+}
+
+h2, .h2 {
+  font-size: $mega;
+
+  @media screen and ( max-width: $medium ) {
+    font-size: $alpha;
+  }
+}
+
+h3, .h3 {
+  font-size: $alpha;
+
+  @media screen and ( max-width: $medium ) {
+    font-size: $alpha - 8px;
+  }
+}
+
+h4, .h4 {
+  font-size: $gamma;
+}
+
+h5, .h5 {
+  font-size: $epsilon;
+}
+
+h6, .h6 {
+  font-size: $zeta;
+}

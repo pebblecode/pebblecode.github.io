@@ -1,0 +1,192 @@
+//===============================================================================
+// WORK
+//===============================================================================
+.project-container {
+  background-color: white;
+  z-index: 1;
+  overflow-x: hidden;
+}
+
+.project-title-container {
+  background-color: white;
+}
+
+.project-title {
+  padding-top: 15px;
+  margin: 0;
+  z-index: 6;
+  position: relative;
+
+  @media screen and ( max-width: $medium ) {
+    padding: 15px 20px 0;
+    line-height: 0.9;
+  }
+}
+
+.project-item-container {
+  position: relative;
+  color: white;
+
+  hr {
+    border-color: rgba(white, 0.2);
+    margin-bottom: 30px;
+  }
+
+  .project-item-title {
+    text-shadow: 2px 3px 0 rgba(black, 0.2);
+    line-height: 1;
+  }
+
+  .project-item-intro {
+    font-size: $gamma + 6px;
+    margin-bottom: 40px;
+    color: rgba(black, 0.4);
+    line-height: 1.2;
+    font-family: $brandon;
+    font-weight: $font-black;
+    font-style: italic;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+  }
+
+  p {
+    font-size: $gamma;
+    line-height: 1.4;
+
+    @media screen and ( max-width: $medium ) {
+      font-size: $delta;
+    }
+  }
+}
+
+.project-item-inner {
+  background-color: $purple;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: top right;
+  padding: 80px $gutter 20px;
+
+  .project-container:last-of-type & {
+    padding-bottom: 50px;
+  }
+
+  &:before {
+    @include shadow-pseudo;
+    top: 20px;
+    width: 100%;
+    height: 20px;
+    background-color: rgba(black, 0.15);
+    transform: rotate(1.8deg) scale(1.2);
+    -ms-transform: rotate(1.8deg) scale(1.2);
+    -webkit-transform: rotate(1.8deg) scale(1.2);
+  }
+
+  &:after {
+    @include shadow-pseudo;
+    top: -25px;
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    transform: rotate(1deg) scale(1.2);
+    -ms-transform: rotate(1deg) scale(1.2);
+    -webkit-transform: rotate(1deg) scale(1.2);
+  }
+}
+
+.project-item-img-feat {
+  margin-bottom: 30px;
+  max-width: 50%;
+
+  @media screen and ( max-width: $medium ) {
+    margin-bottom: 20px;
+  }
+}
+
+.project-item-aside {
+  position: relative;
+  z-index: 3;
+  margin: 40px 0 0;
+  padding: 40px 200px 30px 40px;
+
+  &:after {
+    @include shadow-pseudo;
+    height: 100%;
+    top: 0;
+    background-color: rgba(black, 0.1);
+    z-index: -1;
+    transform: rotate(0.3deg) skew(-0.6deg);  
+    -ms-transform: rotate(0.3deg) skew(-0.6deg);  
+    -webkit-transform: rotate(0.3deg) skew(-0.6deg);  
+  }
+
+  @media screen and ( max-width: $medium ) {
+    padding: 30px 30px 12px;
+    background-color: rgba(black, 0.1);
+
+    &:after {
+      display: none;
+    }
+  }
+}
+
+.project-item-aside-img {
+  position: absolute;
+  max-height: 300px;
+  right: -80px;
+  top: -40px;
+
+  @media screen and ( max-width: $medium ) {
+    position: relative;
+    right: auto;
+    top: 0;
+    max-width: 70%;
+    margin-bottom: 20px;
+  }
+}
+
+.project-azsearch {
+  .project-title {
+    padding-top: 5px;
+  }
+  .project-item-inner {
+    background-image: url(../img/projects/hand.svg);
+    z-index: 5;
+    position: relative;
+    background-position: top;
+    background-size: 100% 100%;
+
+    @media screen and ( max-width: $medium ) {
+      background-size: 100%;
+    }
+  }
+
+  & + .photo-container .photo-inner:after {
+    background-color: $purple;
+  }
+}
+
+.project-bede {
+  .project-item-inner {
+    background-color: $aqua;
+    background-image: url(../img/projects/flexible.svg);
+  }
+
+  & + .photo-container .photo-inner:after {
+    background-color: $aqua;
+  }
+}
+
+.project-azinno {
+  .project-item-img-feat {
+    max-height: 300px;
+  }
+
+  .project-item-inner {
+    background-color: $blue;
+    background-image: url(../img/projects/trophy.svg);
+  }
+
+  & + .photo-container .photo-inner:after {
+    background-color: $blue;
+  }
+}

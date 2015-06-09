@@ -1,0 +1,93 @@
+//===============================================================================
+// IE8 AND BELOW
+//===============================================================================
+.lt-ie9 {
+
+  // Global Sprite
+  .i-gym-white, .i-10-white, .i-pay-white, .i-charity-white, .i-snacks-white, .i-holidays-white, .i-flexible-white, .i-social-white, .i-vimeo-pink, .i-github-pink, .i-menu-grey, .i-twitter-pink, .i-gbl-logo-white, .i-close-grey, .i-phone-grey, .i-email-grey, .i-location-grey { background: url(../img/gbl-sprite.png); }
+
+
+  // Global Header
+  .gbl-head-logo{
+    text-indent: -9999px;
+  }
+
+  .gbl-head-nav {
+    right: 100px;
+  }
+
+  // Global Footer
+  .gbl-foot-social li a {
+    width: auto;
+    font-size: $body-font-size;
+    color: $primary;
+  }
+
+  // Hide Content
+  .feat-content-img,
+  .client-container,
+  .services-process-container, 
+  .services-item-img,
+  .project-item hr {
+    display: none;
+  }
+
+  // Services
+  .services-item-inner {
+    display: block;
+    position: relative;
+    top: auto;
+    left: auto;
+    right: auto;
+  }
+
+  // Work
+  .project-title {
+    background-color: white;
+    padding-bottom: 20px;
+  }
+
+  // Careers
+  .kaizen-container {
+    background-color: $aqua;
+  }
+
+  .benefits-list-item {
+    padding-left: 20px;
+
+    &:after {
+      display: none;
+    }
+  }
+
+  // Contact
+  .tab-head-item {
+    color: white;
+    opacity: 0.5;
+
+    &.active {
+      opacity: 1;
+    }
+  }
+
+  .location-item a {
+    padding-left: 0;
+
+    &:after {
+      display: none;
+    }
+  }
+
+  .ppl-container .content-title {
+    border-bottom: none;
+    margin-bottom: 20px;
+  }
+
+  .ppl-item {
+    padding: 0 0 20px;
+  }
+
+  .ppl-join-container {
+    background-color: white;
+  }
+}

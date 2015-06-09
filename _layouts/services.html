@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html class="lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html> <!--<![endif]-->
+
+  {% include head.html %}
+
+  <body class="{{ layout }}">
+
+    {% include header.html %}
+
+    <section class="hero-container {{ page.colour }}">
+      <div class="hero-inner grid">
+        <h1 class="hero-title col-1-1">{% if page.hero-title %}{{page.hero-title}}{% else %}{{page.title}}{% endif %}</h1>
+        {% if page.hero-subtitle %}
+          <p class="hero-summary col-1-1">{{page.hero-subtitle}}</p>
+        {% endif %}
+      </div>
+    </section>
+    <!-- /.hero-container -->
+
+    <section class="content-container grid">
+      <article class="content col-1-1">
+        {{content}}
+      </article>
+    </section>
+    <!-- /.content-container -->
+
+    <div class="services-process-container">
+      <img src="{{ site.baseurl }}/img/services/services-process.png" class="services-process-img grid" alt="pebble {code}'s process">
+    </div>
+    <!-- /.services-process-container -->
+
+    <ul class="services-container">
+      <li id="servicesStrategy" class="services-item">
+        <div class="services-item-inner grid">
+          <div class="services-item-text col-1-2">
+            <h3>Innovation Strategy</h3>
+            <p>There are no disruption-proof businesses. Everyone needs a strategy to uncover, or at least react to, the next big game changer. At pebble {code} we have an excellent record of introducing cutting-edge technology to big businesses. By using a combination of design thinking workshops, hack days and micro-projects, we bring inspiration to bear on difficult problems.</p>
+            <p>From small-scale single function apps to large-scale data experiments, practical innovation techniques get you to a solution faster. Our Innovation Strategy also brings a culture of practical technological problem solving to your organisation.</p>
+          </div>
+          <img src="{{ site.baseurl }}/img/services/services-strategy.png" alt="Innovation Strategy" class="services-item-img col-1-2">
+        </div>
+      </li>
+      <!-- /.services-item -->
+      <li id="servicesHacking" class="services-item">
+        <div class="services-item-inner grid">
+          <img src="{{ site.baseurl }}/img/services/services-hacking.png" alt="Innovation Strategy" class="services-item-img col-1-2">
+          <div class="services-item-text col-1-2">
+            <h3>Rapid Prototype &amp; Hacking</h3>
+            <p>The first step towards creating a culture of technical innovation is removing the fear of failure. By going through iterations of rapid prototyping, stakeholders, business users and deliverers get to see what is possible - whether that be trialling new technology, new processes or just understanding how different technologies can work together. It is a fun and exciting way to engage without wasting lots of time and money.</p> 
+            <p>If you have creative technologists, their brains need feeding - rapid prototyping and hacking gives them a chance to try, and learn.</p>
+          </div>
+        </div>
+      </li>
+      <!-- /.services-item -->
+      <li id="servicesUX" class="services-item">
+        <div class="services-item-inner grid">
+          <div class="services-item-text col-1-2">
+            <h3>User Experience Strategy &amp; Research</h3>
+            <p>Software, when created correctly, should solve a specific problem, or set of problems. A great deal of the success of software projects lies in the correct identification of the problems to be solved. Using a blend of techniques drawn from social science research, we gather in-depth requirements that meet both business and human needs.</p>
+            <p>The research tests assumptions, uncovers latent requirements, and ensures that we design our products from a robust evidence base. UX Research is also highly effective at user engagement, and creating advocates for your new software.</p>
+          </div>
+          <img src="{{ site.baseurl }}/img/services/services-ux.png" alt="Innovation Strategy" class="services-item-img col-1-2">
+        </div>
+      </li>
+      <!-- /.services-item -->
+      <li id="servicesUXdesign" class="services-item">
+        <div class="services-item-inner grid">
+          <img src="{{ site.baseurl }}/img/services/services-uxdesign.png" alt="Innovation Strategy" class="services-item-img col-1-2">
+          <div class="services-item-text col-1-2">
+            <h3>User Experience <br>Design</h3>
+            <p>Our design process focuses on clarity and simplicity of function. We specialise in simplifying processes to allow the user to focus on what they do best.</p>
+            <p>Excellent UX design results in greater efficiency, fewer errors, and more insight. It also inspires, instills confidence and results in more satisfaction.</p>
+          </div>
+        </div>
+      </li>
+      <!-- /.services-item -->
+      <li id="servicesDesign" class="services-item">
+        <div class="services-item-inner grid">
+          <div class="services-item-text col-1-2">
+            <h3>Graphic Design, Motion Graphics &amp; Video</h3>
+            <p>We are in the business of creating beautiful things. We believe that all software should be every bit as gorgeous as the apps on your phone. We are constantly incorporating cutting edge design patterns, aesthetic elements and interactions into our software.</p>
+            <p>On top of this we also create polished and professional video content, including animation and motion graphics.</p>
+          </div>
+          <img src="{{ site.baseurl }}/img/services/services-design.png" alt="Innovation Strategy" class="services-item-img col-1-2">
+        </div>
+      </li>
+      <!-- /.services-item -->
+      <li id="servicesAgile" class="services-item">
+        <div class="services-item-inner grid">
+          <img src="{{ site.baseurl }}/img/services/services-agile.png" alt="Innovation Strategy" class="services-item-img col-1-2">
+          <div class="services-item-text col-1-2">
+            <h3>Agile Software Development &amp; Continuous Improvement</h3>
+            <p>Waterfall does not work. It is also not, in any way, cost effective or efficient. Technology, and the way people use technology, moves too fast. People do not know if something is going to work until they start using it. That is why an iterative, Agile, approach to software delivery is best. Tackle specific problems and release often - put software into the hands of end users as soon as possible, get feedback, learn and iterate.</p>
+            <p>This way you end up with a software product that you need, not one that you thought you needed.</p>
+          </div>
+        </div>
+      </li>
+      <!-- /.services-item -->
+      <li id="servicesTests" class="services-item">
+        <div class="services-item-inner grid">
+          <div class="services-item-text col-1-2">
+            <h3>Testing &amp; Measurement</h3>
+            <p>Having a iterative methodology for developing and delivering software means that you have the opportunity to learn more often. By putting your software in front of end users early and often you can react and adapt much more easily.</p>
+            <p>We encourage clients to take this approach with every element of a solution to a business problem - test it, measure it, learn from it. This includes learning from data and systems that are already in use. Everything can be improved.</p>
+          </div>
+          <img src="{{ site.baseurl }}/img/services/services-tests.png" alt="Innovation Strategy" class="services-item-img col-1-2">
+        </div>
+      </li>
+      <!-- /.services-item -->
+      <li id="servicesCollab" class="services-item">
+        <div class="services-item-inner grid">
+          <img src="{{ site.baseurl }}/img/services/services-collab.png" alt="Innovation Strategy" class="services-item-img col-1-2">
+          <div class="services-item-text col-1-2">
+            <h3>Sharing &amp; Collaboration</h3>
+            <p>Software is usually developed and deployed in silos and the bigger the business, the more that this happens. By encouraging your people to share and shout about both their successes and failures, others can learn and benefit from that hard work too. A great example is authentication - every team needs to authenticate to the corporate systems in order to release business software and it usually takes a reasonable amount of time. It does not have to. If you create reusable code and share that code, you could save months of time and money each year as well as potentially having that same code improved upon over time.</p>
+            <p>Removing the fear of failure, trying new things, being user-centric, releasing often, learning and sharing is how you can create a truly innovative technology delivery culture - one in which the best creative technologists want to come and work for and one that keeps you one, or even two, steps ahead of your competition.</p>
+          </div>
+        </div>
+      </li>
+      <!-- /.services-item -->
+    </ul>
+    <!-- /.services-item-container -->
+
+    {% include footer.html %}
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-2.1.1.min.js""><\/script>')</script>
+    <script type="text/javascript" src="{{ site.baseurl }}/js/main.js"></script>
+    <!-- /scripts-->
+
+  </body>
+</html>

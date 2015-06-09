@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html class="lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html> <!--<![endif]-->
+
+  {% include head.html %}
+
+  <body class="{{ layout }}">
+
+    {% include header.html %}
+
+    <section class="hero-container {{ page.colour }}">
+      <div class="hero-inner grid">
+        <h1 class="hero-title col-1-1">{% if page.hero-title %}{{page.hero-title}}{% else %}{{page.title}}{% endif %}</h1>
+        {% if page.hero-subtitle %}
+          <p class="hero-summary col-1-1">{{page.hero-subtitle}}</p>
+        {% endif %}
+        {% if page.hero-btn %}
+          <a href="#careers-list" class="btn btn-primary btn-block">{{page.hero-btn}}</a>
+        {% endif %}
+      </div>
+    </section>
+    <!-- /.hero-container -->
+
+    <section class="content-container grid">
+      <h2 class="content-title">{{page.content-title}}</h2>
+      <article class="content-intro col-1-1">
+        {{content}}
+      </article>
+      <br class="clear">
+      <aside class="aside-container kaizen-container">
+        <h3>{{page.kaizen-title}}</h3>
+        <p>{{page.kaizen-content}}</p>
+      </aside>
+    </section>
+    <!-- /.content-container -->
+
+    {% include photos.html %}
+
+    <section class="content-container benefits-container">
+      <div class="benefits-inner grid">
+        <h2 class="content-title">Awesome Benefits</h2>
+        <article class="content-intro col-1-1">
+          <p>Everyone in the company benefits from 10% time to work on what they are passionate about, have additional days off for volunteering, is encouraged to go to events and conferences and is empowered to help make pebble a great place to work.</p>
+          <p>We’re always up for exploring new technologies, whether it be software or hardware through regular internal hack days. We embrace a start up culture and are light on management layers, favouring team responsibility and autonomy.</p>
+        </article>
+        <aside class="benefits-list-container grid-container">
+          <h3 class="benefits-list-title col-1-1">Benefits</h3>
+          <ul class="benefits-list">
+            <li class="benefits-list-item benefit-flexible col-1-2">Flexible working practices (remote working, flexible hours, shorts &amp; flip flops welcome)</li>
+            <li class="benefits-list-item benefit-10 col-1-2">10% time – spend half a day a week working on your own projects</li>
+            <li class="benefits-list-item benefit-holidays col-1-2">26 days/year holiday</li>
+            <li class="benefits-list-item benefit-snacks col-1-2">Free snacks and drinks</li>
+            <li class="benefits-list-item benefit-pay col-1-2">Competitive salaries</li>
+            <li class="benefits-list-item benefit-gym col-1-2">Flexible contributions (towards gym, pension or healthcare)</li>
+            <li class="benefits-list-item benefit-social col-1-2">Regular social events</li>
+            <li class="benefits-list-item benefit-charity col-1-2">Additional time off for volunteer days</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+    <!-- /.benefits-container -->
+
+    <section class="photo-container">
+      <div class="photo-inner" style="background-image: url({{ site.baseurl }}/img/{{page.cover-img}})"></div>
+    </section>
+    <!-- /.photo-container -->
+
+    {% include recruitee.html %}
+
+    {% include footer.html %}
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-2.1.1.min.js""><\/script>')</script>
+    <script type="text/javascript" src="{{ site.baseurl }}/js/main.js"></script>
+    <script src='https://recruitee.com/assets/widget.js' type='text/javascript'></script>
+    <script type='text/javascript' charset='utf-8'>
+    RT.jQuery(document).ready(function() {
+      RT.recruitee.init({company: 418, language: "en"});
+      RT.recruitee.renderOffers("#recruitee-offers");
+    });
+    </script>
+    <!-- /scripts-->
+
+  </body>
+</html>
