@@ -1,6 +1,6 @@
 ---
 layout: redirect
 sitemap: false
-permalink: /jobs/
-redirect_to: /careers/
+permalink: /findus/
+redirect_to: /contact/
 ---
