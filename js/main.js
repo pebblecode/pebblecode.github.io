@@ -99,13 +99,6 @@
     }
   });
 
-  // Target touch or click devices
-  if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-    $( 'body' ).addClass( 'touch-device' );
-  } else {
-    $( 'body' ).addClass( 'click-device' );
-  }
-
   // Google Maps: Pan between different Locations
   var marker;
   var map;
