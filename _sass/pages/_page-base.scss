@@ -312,7 +312,6 @@
 }
 
 .home-photo-container {
-
   &:before {
     transform: rotate(1.2deg) scale(1.2);
     -ms-transform: rotate(1.2deg) scale(1.2);
@@ -328,11 +327,9 @@
 }
 
 .photo-inner {
-  background-size: scroll;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  // background-attachment: fixed;
-  background-attachment: scroll;
   margin: 0;
   height: 450px;
   position: absolute;
@@ -343,10 +340,6 @@
   width: 100%;
   display: block;
   overflow: hidden;
-
-  .touch-device & {
-    background-attachment: scroll;
-  }
 
   @media screen and ( max-width: $medium ) {
     height: 250px;
