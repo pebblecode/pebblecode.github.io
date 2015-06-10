@@ -9,7 +9,10 @@ The Jekyll based website for pebblecode.com.
 `gem install jekyll`
 
 
-#####2. Build and view the website on locally:
+You may need to include sudo at the start if there is a permissions error.
+
+
+#####2. Build and view the website locally:
 
 `cd [project folder]`
 
