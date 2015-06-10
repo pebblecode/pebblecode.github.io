@@ -40,7 +40,8 @@
   margin: 0;
   padding-top: 50px;
   padding-bottom: 50px;
-  transition: background-color 1s;
+  transition: background-color 0.8s;
+  transform: translateZ(0);
 
   @media screen and ( max-width: $medium + 150px ) {
     padding-bottom: 0;
