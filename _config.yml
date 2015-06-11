@@ -14,4 +14,4 @@ markdown: kramdown
 redirects: yes
 sass:
     # style: :compressed
-
+permalink: "/blog/:title"
