@@ -98,7 +98,7 @@
   display: block;
   position: relative;
 
-  @media screen and ( max-width: $medium ) {
+  @media screen and ( max-width: $medium + 100px ) {
     padding: 40px 0 60px
   }
 }
@@ -372,22 +372,6 @@
     transform: rotate(-1deg) scale(1.2);
     -ms-transform: rotate(-1deg) scale(1.2);
     -webkit-transform: rotate(-1deg) scale(1.2);
-  }
-
-  &.photo-hardware {
-    background-image: url(../img/office/hardware.jpg);
-  }
-
-  &.photo-wshop {
-    background-image: url(../img/office/wshop.jpg);
-  }
-
-  &.photo-couch {
-    background-image: url(../img/office/couch.jpg);
-  }
-
-  &.photo-lunch {
-    background-image: url(../img/office/lunch.jpg);
   }
 }
 

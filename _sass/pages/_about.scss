@@ -2,9 +2,18 @@
 // CAREERS
 //===============================================================================
 .about-photo-container {
-	
+
+	&:before {
+    transform: rotate(1.2deg) scale(1.2);
+    -ms-transform: rotate(1.2deg) scale(1.2);
+    -webkit-transform: rotate(1.2deg) scale(1.2);
+  }
+
 	&:after {
 		background-color: $blue;
+    transform: rotate(0.8deg) scale(1.2);
+    -ms-transform: rotate(0.8deg) scale(1.2);
+    -webkit-transform: rotate(0.8deg) scale(1.2);
 	}
 }
 
@@ -16,12 +25,24 @@
   background-position: bottom;
   background-size: 500px;
   position: relative;
+
+  a {
+    color: rgba(white, 0.6);
+
+    &:hover {
+      color: rgba(white, 0.9);
+    }
+  }
 }
 
 .ppl-inner {
   padding-top: 40px;
   position: relative;
   z-index: 3;
+
+  @media screen and ( max-width: $medium ) {
+    padding-top: 30px;
+  }
 
   .content-title {
     color: white;
@@ -115,6 +136,7 @@
       top: 0;
       border: 5px solid rgba(white, 0.2);
       height: 100%;
+      z-index: -1;
     }
   }
   
