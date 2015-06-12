@@ -7,16 +7,18 @@ colour: pink
 
 ## Hero Content
 hero-title: about
-hero-subtitle: pebble {code} has been around since early 2010, building software for startups, investment funds, gaming companies &amp; enterprise. 
+hero-subtitle: pebble {code} was founded to focus its entire passionate existence on building the right products for great clients, hiring the best talent and creating a truly great place to grow, work and have fun.
 
 cover-img: office/couch.jpg
 
 ---
 
-## A bit about us
+## Some History
 
-Incorporated in 2010, pebble {code} was born out of its sister company pebble.it to focus its entire passionate existence on building the right products for the right clients, hiring the best talent and truly creating a great place to grow, work and have fun.
+We have been around since early 2010, building software for startups, investment funds, gaming companies &amp; enterprises across many industries. pebble {code} was born out of its sister company <a href="http://pebbleit.com">pebble.it</a> (who provides creative IT support &amp; solutions) with which we still share an office, an ethos and a social life. 
 
-We believe that we have created this and we are growing into a company with ever increasing resources to continue the upwards cycle of improvement... and it is exciting!
+Bios of our founders and directors are below, but important to know that we value our people and their happiness above all else. We believe in employee empowerment and development, only working on work that excites us and that unnecessary management layers are, well, unnecessary.
 
-We believe in employee empowerment and development, only working on work that excites us and no unnecessary management layers. 
+pebble {code} has a great product and luckily a huge market of juicy problems to get stuck into. We are growing too and with this growth comes ever increasing resources to continually improve... and it is exciting!
+
+ 
