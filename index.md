@@ -4,11 +4,11 @@ title:
 permalink: /
 
 ## Hero Content
-hero-title: Accelerating Technology Innovation
-hero-subtitle: We enable organisations to make the most of modern technologies, data & people through innovation strategy consulting, hacking, rapid prototyping, human-centred design, Agile delivery & measurement.
+hero-title: Accelerating Digital Transformation
+hero-subtitle: We enable organisations to go digital by default, using a combination of innovation strategy consulting, hacking, rapid prototyping, human-centred design, Agile delivery & measurement.
 
 ## Main background image
-cover-img: office/couch.jpg
+cover-img: features/couch.jpg
 
 ## Featured case study:
 feat-client: Astrazeneca

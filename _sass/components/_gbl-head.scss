@@ -9,7 +9,7 @@
   width: 100%;
   z-index: 10;
 
-  @media screen and ( max-width: $medium ) {
+  @media screen and ( max-width: $medium + 100px ) {
     position: relative;
     padding: 20px 0 15px;
   }
@@ -52,7 +52,7 @@
     left: 0;
   }
 
-  @media screen and ( max-width: $medium ) {
+  @media screen and ( max-width: $medium + 100px ) {
     margin-left: $gutter;
   }
 
@@ -67,7 +67,7 @@
   right: $gutter * 2;
   top: 0;
 
-  @media screen and ( max-width: $medium ) {
+  @media screen and ( max-width: $medium + 100px ) {
     position: relative;
     top: 15px;
     right: 0;
@@ -92,7 +92,7 @@
   transition: 0.2s;
   text-transform: capitalize;
 
-  @media screen and ( max-width: $medium ) {
+  @media screen and ( max-width: $medium + 100px ) {
     display: block;
     float: none;
     border: none;
@@ -172,7 +172,7 @@
     left: 15px;
   }
 
-  @media screen and ( max-width: $medium ) {
+  @media screen and ( max-width: $medium + 100px ) {
     display: block;
   }  
 }
