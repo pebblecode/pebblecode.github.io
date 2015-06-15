@@ -386,6 +386,8 @@
 }
 
 .rt-modal {
+  -webkit-overflow-scrolling: touch;
+  
   .rt-brand-color {
     color: $primary;
   }

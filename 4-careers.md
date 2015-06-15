@@ -18,7 +18,7 @@ kaizen-title: Power of Kaizen!
 kaizen-content: As advocates of Kaizen, our staff are empowered to continuously improve everything that we do, from client delivery to coffee selection!
 
 ## Join us background image
-cover-img: office/lunch.jpg
+cover-img: features/lunch.jpg
 ---
 
 We’re passionate about crafting outstanding software. We put top notch people into small, dynamic teams, give them the best tools and encourage maximum collaboration in our stimulating and spacious work environment, and we find that’s how to make big things happen.
