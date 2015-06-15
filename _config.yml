@@ -9,10 +9,24 @@ twitter: pebblecode
 github:  pebblecode
 vimeo:  pebblecode
 
+
 # Build settings
 markdown: kramdown
 redirects: yes
 sass:
     style: :compressed
-
 permalink: "/blog/:title"
+
+
+# Pagination
+paginate: 8
+paginate_path: "/blog/:num"
+
+
+# Authors
+George Ornbo:
+    twitter: shapeshed
+    github: shapeshed
+Ian Black:
+    twitter: itomblack
+    github: itomblack

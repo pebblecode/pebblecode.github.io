@@ -2,7 +2,6 @@
 // CAREERS
 //===============================================================================
 .about-photo-container {
-
 	&:before {
     transform: rotate(1.2deg) scale(1.2);
     -ms-transform: rotate(1.2deg) scale(1.2);
@@ -36,7 +35,7 @@
 }
 
 .ppl-inner {
-  padding-top: 40px;
+  padding-top: 50px;
   position: relative;
   z-index: 3;
 
@@ -140,7 +139,6 @@
     }
   }
   
-
   h3 {
     font-size: $alpha - 6px;
     margin: 0 0 10px;
