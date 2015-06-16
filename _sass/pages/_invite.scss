@@ -1,0 +1,153 @@
+//===============================================================================
+// INVITE
+//===============================================================================
+.invite {
+  background-image: url(../img/projects/trophy.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: top;
+
+  .gbl-head {
+    background-color: transparent;
+  }
+
+  &.pink {
+    background-color: $pink;
+
+    @media screen and ( max-width: $medium + 100px ) {
+      .gbl-head {
+        background-color: $pink;
+      }
+    }
+  }
+
+  &.blue {
+    background-color: $blue;
+
+    @media screen and ( max-width: $medium + 100px ) {
+      .gbl-head {
+        background-color: $blue;
+      }
+    }
+  }
+
+  &.aqua {
+    background-color: $aqua;
+
+    @media screen and ( max-width: $medium + 100px ) {
+      .gbl-head {
+        background-color: $aqua;
+      }
+    }
+  }
+
+  &.purple {
+    background-color: $purple;
+
+    @media screen and ( max-width: $medium + 100px ) {
+      .gbl-head {
+        background-color: $purple;
+      }
+    }
+  }
+}
+
+.invite-container {
+  max-width: 800px;
+  display: table;
+  margin: 0 auto 40px;
+  padding-top: 150px;
+  padding-bottom: 40px;
+  text-align: center;
+
+  @media screen and ( max-width: $medium + 100px ) {
+    padding-top: 40px;
+    padding-bottom: 0;
+  }
+
+  h2 {
+    color: white;
+    text-shadow: 3px 4px 0 rgba(black, 0.2);
+    margin-bottom: 40px;
+  }
+}
+
+.invite-content {
+  margin: 0 auto;
+  padding: 50px 35px 10px;
+
+  @media screen and ( max-width: $medium ) {
+    padding: 40px $gutter 0;
+  }
+
+  @media screen and ( min-width: $medium ) {
+    &:before {
+      @include shadow-pseudo;
+      height: 100%;
+      top: 0;
+      background-color: rgba(white, 0.8);
+      box-shadow: 0 0 10px rgba(black, 0.2);
+      z-index: -1;
+      transform: rotate(1.5deg) skew(1deg); 
+      -ms-transform: rotate(1.5deg) skew(1deg); 
+      -webkit-transform: rotate(1.5deg) skew(1deg);  
+    }
+  }
+
+  hr {
+    margin: 40px auto;
+    border-top-width: 2px;
+  }
+}
+
+.invite-section {
+  margin: 30px auto 50px;
+}
+
+h3.invite-title {
+  padding: 0 0 20px;
+  margin-bottom: 0;
+  line-height: 1;
+}
+
+p.invite-details {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-size: $beta;
+  color: $pink;
+  line-height: 1.2;
+
+  @media screen and ( max-width: $medium ) {
+    font-size: $gamma;
+  }
+}
+
+.invite-date, 
+.invite-time,
+.invite-where {
+  padding: 0 10px 20px;
+  display: inline-block;
+  font-size: $gamma;
+  line-height: 1.1;
+
+  &:last-child {
+    padding-bottom: 0;
+  }
+}
+
+.invite-where {
+  display: block;
+}
+
+.invite-subtitle {
+  line-height: 1.3;
+  font-family: $brandon;
+  font-weight: $font-black;
+  font-style: italic;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  color: $pink;
+  margin-bottom: 0;
+  font-size: $delta;
+}
+
