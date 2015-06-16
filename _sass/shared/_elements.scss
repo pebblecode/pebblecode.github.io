@@ -240,7 +240,22 @@ hr {
 
 // Pagination
 .pagination {
+  position: relative;
+  
   .btn {
     margin-right: 5px;
+  }
+}
+
+
+// Content
+blockquote {
+  border-left: 10px solid $primary;
+  padding-left: 20px;
+  font-style: italic;
+  margin: 45px 30px 25px;
+
+  @media screen and ( max-width: $medium ) {
+    margin: 35px 0 15px;
   }
 }

@@ -9,12 +9,13 @@ layout: blog
 
     <section class="hero-container hero-container-blog {{ page.colour }}">
       <div class="hero-inner grid">
+        {% if paginator.next_page == 2 %}
         {% for post in site.posts %}
           {% if post.featured == true %}
             {% capture count %}{{ count | plus: '1' }}{% endcapture %}
             {% if count == '1' %}
               <div class="meta-title-container col-1-1">
-                <span class="meta-title">Featured Article</span>
+                <span class="meta-title">Featured Post</span>
               </div>
               <a href="{{ post.url }}"><h1 class="hero-title col-1-1">{{ post.title }}</h1></a>
               <span class="post-author col-1-1">{{ post.author }}</span>
@@ -27,7 +28,7 @@ layout: blog
             {% capture counttwo %}{{ counttwo | plus: '1' }}{% endcapture %}
             {% if counttwo == '2' or counttwo == '3' %}
               <div class="meta-title-container">
-                <span class="meta-title">Featured Article</span>
+                <span class="meta-title">Featured Post</span>
               </div>
               <a href="{{ post.url }}"><h1 class="hero-title">{{ post.title }}</h1></a>
               <span class="post-author">{{ post.author }}</span>
@@ -35,6 +36,9 @@ layout: blog
             {% endif %}
           {% endif %}
         {% endfor %}
+        {% else %}
+        <h1 class="hero-title col-1-1">{{page.title}}</h1>
+        {% endif %}
       </div>
     </section>
     <!-- /.hero-container -->
@@ -42,8 +46,7 @@ layout: blog
     <section class="content-container grid">
       <header class="tab-head-container col-1-1">
         <nav class="blog-tab-head tab-head">
-          <button id="articles" data-tab-id="articles" class="tab-head-item active">Articles</button>
-          <!-- <button id="collections" data-tab-id="collections" class="tab-head-item">Collections</button> -->
+          <button id="articles" data-tab-id="articles" class="tab-head-item active">{{ paginator.page }} of {{ paginator.total_pages }} Posts</button>
         </nav>
       </header>
       <!-- /.tab-head-container -->
@@ -64,14 +67,14 @@ layout: blog
       <div class="grid">
         <div class="pagination col-1-1">
           {% if paginator.previous_page %}
-            <a class="btn btn-block btn-primary btn-new" rel="prev" href="{{ paginator.previous_page_path | replace: 'index.html', '/' | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Newer Posts</a>
+            <a class="btn btn-block btn-primary btn-new" rel="prev" href="{{ paginator.previous_page_path | replace: 'index.html', '/' | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer Posts</a>
           {% else %}
-            <span class="btn btn-block btn-disabled btn-new">&laquo; Newer Posts</span>
+            <span class="btn btn-block btn-disabled btn-new">&larr; Newer Posts</span>
           {% endif %}
           {% if paginator.next_page %}
-            <a class="btn btn-block btn-secondary btn-old" rel="next" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Posts &raquo;</a>
+            <a class="btn btn-block btn-secondary btn-old" rel="next" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Posts &rarr;</a>
           {% else %}
-            <span class="btn btn-block btn-disabled btn-old">Older Posts &raquo;</span>
+            <span class="btn btn-block btn-disabled btn-old">Older Posts &rarr;</span>
           {% endif %}
         </div>
       </div>

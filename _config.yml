@@ -21,12 +21,3 @@ permalink: "/blog/:title"
 # Pagination
 paginate: 8
 paginate_path: "/blog/:num"
-
-
-# Authors
-George Ornbo:
-    twitter: shapeshed
-    github: shapeshed
-Ian Black:
-    twitter: itomblack
-    github: itomblack

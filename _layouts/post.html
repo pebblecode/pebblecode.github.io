@@ -1,15 +1,38 @@
 ---
 layout: post
 ---
-<div class="post">
+{% include head.html %}
 
-  <header class="post-header">
-    <h1 class="post-title">{{ page.title }}</h1>
-    <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
-  </header>
+  <body class="{{ page.layout }}">
 
-  <article class="post-content">
-    {{ content }}
-  </article>
+    {% include header.html %}
 
-</div>
+    <section class="hero-container hero-container-blog {{ page.colour }}">
+      <div class="hero-inner grid"></div>
+    </section>
+    <!-- /.hero-container -->
+
+    <section class="content-container post-container grid">
+      <header class="post-header col-1-1">
+        <h1 class="post-title">{{ page.title }}</h1>
+        <span class="post-author">{{ page.author }}</span>
+        <span class="post-date">{{ page.date | date: "%B %-d, %Y" }}</span>
+      </header>
+      <article class="content post-content col-1-1">
+        {{content}}
+      </article>
+      <aside class="twitter-share col-1-1">
+
+      </aside>
+    </section>
+    <!-- /.post-container -->
+
+    {% include footer.html %}
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-2.1.1.min.js""><\/script>')</script>
+    <script type="text/javascript" src="{{ site.baseurl }}/js/main.js"></script>
+    <!-- /scripts-->
+
+  </body>
+</html>

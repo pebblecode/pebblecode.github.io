@@ -1,0 +1,114 @@
+.post {
+
+  .gbl-head {
+    background-color: transparent;
+
+    @media screen and ( max-width: $medium + 100px ) {
+      background-color: $aqua;
+    }
+  }
+
+  .hero-container {
+    background-color: $aqua;
+  }
+
+  .hero-inner {
+    padding-top: 110px;
+  }
+
+  .content-container {
+    margin-top: 10px;
+  }
+}
+
+.post-header {
+  padding-top: 70px;
+  padding-bottom: 60px;
+  margin-bottom: 50px;
+  position: relative;
+
+  @media screen and ( max-width: $large ) {
+    padding-top: 20px;
+    padding-bottom: 40px;
+  }
+
+  &:after {
+    content: "";
+    height: 6px;
+    width: 300px;
+    background-color: lighten($ink, 48);
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+  }
+
+  .post-title {
+    margin-bottom: 40px;
+    color: $primary;
+    line-height: 1;
+
+    @media screen and ( max-width: $large ) {
+      font-size: $mega + 4px;
+    }
+
+    @media screen and ( max-width: $medium ) {
+      font-size: $mega - 4px;
+    }
+  }
+}
+
+.post-content {
+  padding-right: 150px;
+
+  @media screen and ( max-width: 800px ) {
+    padding-right: 20px;
+  }
+   
+  .post-excerpt,
+  .blockquote p {
+    color: $primary;
+    font-size: $gamma + 4px;
+    margin-bottom: 50px;
+
+    @media screen and ( max-width: $large ) {
+      font-size: $gamma;
+      line-height: 1.4;
+      margin-bottom: 40px;
+    }
+
+    @media screen and ( max-width: $medium ) {
+      font-size: $delta;
+    }
+
+    a {
+      text-decoration: underline;
+    }
+  }
+
+  h2 {
+    font-family: $museo;
+    font-weight: $font-bold;
+    font-size: $beta - 6px;
+    line-height: 1.1;
+    text-transform: none;
+    font-style: normal;
+    letter-spacing: 0;
+    border-bottom: none;
+    margin: 50px 0 15px;
+    padding: 0;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  img, video, iframe {
+    display: table;
+    margin: 30px auto;
+    width: 100%;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+}

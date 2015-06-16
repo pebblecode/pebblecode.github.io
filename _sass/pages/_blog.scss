@@ -16,15 +16,27 @@
   }
 }
 
-.hero-container-blog {
-  background-image: repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(255,255,255,.1) 35px, rgba(255,255,255,.1) 70px);
+.hero-container-blog, .hero-container-blog.aqua {
+  background-image: repeating-linear-gradient(-45deg, transparent, transparent 70px, rgba(255,255,255,.1) 70px, rgba(255,255,255,.1) 140px);
 
+  &:before {
+    bottom: 25px;
+    transform: rotate(-2deg) scale(1.2);
+    -ms-transform: rotate(-2deg) scale(1.2);
+    -webkit-transform: rotate(-2deg) scale(1.2);
+  }
+
+  &:after {
+    transform: rotate(-1.4deg) scale(1.2);
+    -ms-transform: rotate(-1.4deg) scale(1.2);
+    -webkit-transform: rotate(-1.4deg) scale(1.2);
+  }
 
   .meta-title-container {
     margin-bottom: 30px;
   }
 
-  .hero-title {
+  a .hero-title {
     margin-bottom: 50px;
     transition: 0.2s;
     display: table;
@@ -66,6 +78,7 @@
     color: lighten($ink, 30);
     border-bottom: 6px solid transparent;
     position: relative;
+    cursor: default;
 
     &:hover {
       color: lighten($ink, 20);
@@ -87,7 +100,7 @@
 
 .post-item {
   margin: $gutter 0;
-  padding: 20px 0 50px;
+  padding: 25px 0 55px;
   position: relative;
 
   &:after {
@@ -100,8 +113,12 @@
     left: 0;
   }
 
-  &:last-child:after {
-    display: none;
+  &:last-child {
+    padding-bottom: 25px;
+
+    &:after {
+      display: none;
+    }
   }
 
   a {
@@ -109,7 +126,7 @@
   }
 }
 
-.post-title {
+a .post-title {
   display: table;
   font-family: $brandon;
   font-weight: $font-black;
@@ -146,7 +163,7 @@
 
 .post-author {
   display: block;
-  font-size: $delta;
+  font-size: $gamma;
   font-weight: $font-bold;
 }
 
@@ -157,9 +174,14 @@
 
 .blog-pagination {
   padding-top: 80px;
-  padding-bottom: 35px;
+  padding-bottom: 40px;
   background-color: lighten($ink, 50);
   position: relative;
+
+  @media screen and ( max-width: $small ) {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
 
   &:after {
     @include shadow-pseudo;
@@ -167,12 +189,29 @@
     height: 50px;
     background-color: white;
     z-index: 2;
-    transform: rotate(1.6deg) scale(1.2);
-    -ms-transform: rotate(1.6deg) scale(1.2);
-    -webkit-transform: rotate(1.6deg) scale(1.2);
+    transform: rotate(1.2deg) scale(1.2);
+    -ms-transform: rotate(1.2deg) scale(1.2);
+    -webkit-transform: rotate(1.2deg) scale(1.2);
+
+    @media screen and ( max-width: $small ) {
+      display: none;
+    }
+  }
+
+  .btn {
+    display: table;
   }
 
   .btn-old {
-    float: right;
+    position: absolute;
+    right: 15px;
+    top: 80px;
+
+    @media screen and ( max-width: $small ) {
+      top: 10px;
+    }
+  }
+
+  @media screen and ( max-width: $small ) {
   }
 }
