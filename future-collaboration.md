@@ -12,7 +12,7 @@ footer-img: features/cricket.jpg
 
 ## Invite Details
 invite-title: The Future of Innovation & Collaboration
-invite-details: Meet, discuss and collaborate with both creative technologists from pebble and other businesses from a wide variety of industries about digital transformation and collaborative innovation.
+invite-details: Meet and collaborate with creative technologists from both pebble and other businesses from a wide variety of industries about digital transformation and collaborative innovation.
 
 invite-where: Kia Oval, Surrey Cricket Ground
 invite-where-extra: (Royal London One Day Cup, Surrey vs Worcestershire)
