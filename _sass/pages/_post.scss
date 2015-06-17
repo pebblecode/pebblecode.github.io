@@ -1,5 +1,4 @@
 .post {
-
   .gbl-head {
     background-color: transparent;
 
@@ -102,13 +101,55 @@
     }
   }
 
-  img, video, iframe {
+  img, video, iframe, figure {
     display: table;
     margin: 30px auto;
     width: 100%;
 
     &:first-child {
       margin-top: 0;
+    }
+  }
+
+  figure {
+
+    & > * {
+      margin: 0;
+    }
+  }
+}
+
+.twitter-share {
+  position: relative;
+  padding-top: 20px;
+}
+
+.twitter-share-text {
+  display: block;
+  padding: 60px 0;
+  position: relative;
+  font-size: $gamma;
+  font-weight: $font-bold;
+
+  &:before {
+    content: "";
+    display: block;
+    width: 200px;
+    height: 6px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: lighten($ink, 48);
+  }
+
+  .twitter {
+    position: relative;
+
+    &:after {
+      @include icon-pseudo;
+      @extend .i-twitter-pink;
+      top: 2px;
+      right: -32px;
     }
   }
 }
