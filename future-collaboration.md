@@ -12,9 +12,10 @@ footer-img: features/cricket.jpg
 
 ## Invite Details
 invite-title: The Future of Innovation & Collaboration
-invite-details: (Royal London One Day Cup, Surrey vs Worcestershire)
+invite-details: Meet the team, other businesses and talk about the future of collaborating to help innovatation.
 
 invite-where: Kia Oval, Surrey Cricket Ground
+invite-where-extra: (Royal London One Day Cup, Surrey vs Worcestershire)
 invite-date: Tuesday 4th August
 invite-time: 2pm–10pm (or anytime in between)
 
