@@ -41,6 +41,27 @@
     transition: 0.2s;
     display: table;
 
+    @media screen and ( max-width: 1100px ) {
+      font-size: $tera - 10px;
+    }
+
+    @media screen and ( max-width: 900px ) {
+      font-size: $giga;
+      margin-bottom: 30px;
+    }
+
+    @media screen and ( max-width: 800px ) {
+      font-size: $mega;
+    }
+
+    @media screen and ( max-width: 700px ) {
+      font-size: $mega - 5px;
+    }
+
+    @media screen and ( max-width: 600px ) {
+      font-size: $alpha;
+    }
+
     &:hover {
       transform: scale(1.03);
       -webkit-transform: scale(1.03);

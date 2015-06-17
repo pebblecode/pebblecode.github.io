@@ -13,6 +13,10 @@
 
   .hero-inner {
     padding-top: 110px;
+
+    @media screen and ( max-width: $medium + 100px ) {
+      padding-top: 20px;
+    }
   }
 
   .content-container {
@@ -126,7 +130,7 @@
 
 .twitter-share-text {
   display: block;
-  padding: 60px 0;
+  padding: 60px 0 40px;
   position: relative;
   font-size: $gamma;
   font-weight: $font-bold;
@@ -142,6 +146,11 @@
     background-color: lighten($ink, 48);
   }
 
+  a:hover {
+    color: $primary;
+    opacity: 0.7;
+  }
+
   .twitter {
     position: relative;
 
@@ -151,5 +160,29 @@
       top: 2px;
       right: -32px;
     }
+  }
+}
+
+.hero-container-blog.hero-container-related {
+  @media screen and ( max-width: $medium + 100px ) {
+    padding-top: 70px;
+  }
+
+  &:before {
+    top: 15px;
+    transform: rotate(-2deg) scale(1.2);
+    -ms-transform: rotate(-2deg) scale(1.2);
+    -webkit-transform: rotate(-2deg) scale(1.2);
+  }
+
+  &:after {
+    top: -30px;
+    transform: rotate(-1.4deg) scale(1.2);
+    -ms-transform: rotate(-1.4deg) scale(1.2);
+    -webkit-transform: rotate(-1.4deg) scale(1.2);
+  }
+
+  .hero-inner {
+    padding-bottom: 50px;
   }
 }
