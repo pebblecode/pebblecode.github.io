@@ -126,7 +126,7 @@ p.invite-details {
   margin-top: 15px;
   margin-bottom: 30px;
   line-height: 1.3;
-  font-size: $gamma;
+  font-size: $gamma - 2px;
 
   @media screen and ( max-width: $medium ) {
     font-size: $delta;
@@ -165,7 +165,7 @@ p.invite-details {
   padding-bottom: 20px;
   display: table;
   margin: 0 auto;
-  font-size: $gamma;
+  font-size: $gamma - 2px;
   line-height: 1.1;
 
   @media screen and ( max-width: $medium ) {
