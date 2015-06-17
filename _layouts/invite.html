@@ -24,6 +24,12 @@ layout: invite
           {% if page.invite-map %}<a href="{{page.invite-map}}" title="Google Maps link" target="_blank">{% endif %}<span class="invite-where">{{page.invite-where}}</span>{% if page.invite-map %}</a>{% endif %}
         </div>
         {% endif %}
+        {% if page.invite-rsvp %}
+        <div class="invite-section">
+          <h4 class="invite-subtitle">RSVP</h4>
+            <a href="mailto:{{page.invite-rsvp}}" title="Email Reply" class="invite-rsvp">{{page.invite-rsvp}}</a>
+        </div>
+        {% endif %}
       </article>
     </section>
     <!-- /.content-container -->
