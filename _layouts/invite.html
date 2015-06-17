@@ -1,0 +1,45 @@
+---
+layout: invite
+---
+{% include head.html %}
+
+  <body class="{{ page.layout }} {{ page.colour }}">
+
+    {% include header.html %}
+
+    <section class="invite-container grid">
+      <h2>{% if page.intro-title %}{{page.intro-title}}{% else %}You are invited!{% endif %}</h2>
+      <article class="invite-content aside-container">
+        {% if page.invite-title %}<h3 class="invite-title">{{page.invite-title}}</h3>{% endif %}
+        {% if page.invite-details %}<p class="invite-details">{{page.invite-details}}</p>{% endif %}
+        <div class="invite-section">
+          <h4 class="invite-subtitle">When?</h4>
+          {% if page.invite-date %}<span class="invite-date">{{page.invite-date}}</span>{% endif %}
+          {% if page.invite-time %}<span class="invite-time">{{page.invite-time}}</span>{% endif %}
+        </div>
+        {% if page.invite-where %}
+        <div class="invite-section">
+          <h4 class="invite-subtitle">Where?</h4>
+          {% if page.invite-map %}<a href="{{page.invite-map}}" title="Google Maps link" target="_blank">{% endif %}<span class="invite-where">{{page.invite-where}}</span>{% if page.invite-map %}</a>{% endif %}
+          {% if page.invite-where-extra %}<p class="invite-extra">{{page.invite-where-extra}}</p>{% endif %}
+        </div>
+        {% endif %}
+        {% if page.invite-rsvp %}
+        <div class="invite-section">
+          <h4 class="invite-subtitle">RSVP</h4>
+            <a href="mailto:{{page.invite-rsvp}}" title="Email Reply" class="invite-rsvp">{{page.invite-rsvp}}</a>
+        </div>
+        {% endif %}
+      </article>
+    </section>
+    <!-- /.content-container -->
+
+    {% include footer.html %}
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-2.1.1.min.js""><\/script>')</script>
+    <script type="text/javascript" src="{{ site.baseurl }}/js/main.js"></script>
+    <!-- /scripts-->
+
+  </body>
+</html>

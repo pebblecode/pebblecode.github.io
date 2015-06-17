@@ -1,0 +1,194 @@
+//===============================================================================
+// INVITE
+//===============================================================================
+.invite {
+  background-image: url(../img/projects/trophy.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: top;
+
+  .gbl-head {
+    background-color: transparent;
+  }
+
+  &.pink {
+    background-color: $pink;
+
+    @media screen and ( max-width: $medium + 100px ) {
+      .gbl-head {
+        background-color: $pink;
+      }
+    }
+  }
+
+  &.blue {
+    background-color: $blue;
+
+    @media screen and ( max-width: $medium + 100px ) {
+      .gbl-head {
+        background-color: $blue;
+      }
+    }
+  }
+
+  &.aqua {
+    background-color: $aqua;
+
+    @media screen and ( max-width: $medium + 100px ) {
+      .gbl-head {
+        background-color: $aqua;
+      }
+    }
+  }
+
+  &.purple {
+    background-color: $purple;
+
+    @media screen and ( max-width: $medium + 100px ) {
+      .gbl-head {
+        background-color: $purple;
+      }
+    }
+  }
+}
+
+.invite-container {
+  max-width: 800px;
+  display: table;
+  margin: 0 auto 40px;
+  padding-top: 150px;
+  padding-bottom: 40px;
+  text-align: center;
+
+  @media screen and ( max-width: $medium + 100px ) {
+    padding-top: 40px;
+    padding-bottom: 0;
+  }
+
+  h2 {
+    color: white;
+    text-shadow: 3px 4px 0 rgba(black, 0.2);
+    margin-bottom: 40px;
+  }
+}
+
+.invite-content {
+  margin: 0 auto;
+  padding: 50px 35px 10px;
+
+  a {
+    color: $ink;
+    padding-bottom: 2px;
+    display: table;
+    margin: 0 auto;
+    border-bottom: 2px solid lighten($ink, 40);
+
+    &:hover {
+      color: $pink;
+      border-bottom-color: lighten($pink, 30);
+    }
+  }
+
+  @media screen and ( max-width: $medium ) {
+    padding: 40px $gutter 0;
+  }
+
+  @media screen and ( min-width: $medium ) {
+    &:before {
+      @include shadow-pseudo;
+      height: 100%;
+      top: 0;
+      background-color: rgba(white, 0.8);
+      box-shadow: 0 0 10px rgba(black, 0.2);
+      z-index: -1;
+      transform: rotate(2deg) skew(1deg); 
+      -ms-transform: rotate(2deg) skew(1deg); 
+      -webkit-transform: rotate(2deg) skew(1deg);  
+    }
+  }
+
+  hr {
+    margin: 40px auto;
+    border-top-width: 2px;
+  }
+}
+
+.invite-section {
+  margin: 30px auto;
+}
+
+h3.invite-title {
+  margin-bottom: 0;
+  line-height: 1;
+}
+
+p.invite-details {
+  margin-top: 15px;
+  margin-bottom: 30px;
+  line-height: 1.3;
+  font-size: $gamma - 2px;
+
+  @media screen and ( max-width: $medium ) {
+    font-size: $delta;
+    margin-bottom: 30px;
+  }
+}
+
+.invite-subtitle {
+  line-height: 1.3;
+  font-family: $brandon;
+  font-weight: $font-black;
+  font-style: italic;
+  text-transform: uppercase;
+  color: $pink;
+  margin-bottom: 10px;
+  font-size: $delta;
+
+  &:before {
+    content: "";
+    height: 6px;
+    width: 150px;
+    background-color: lighten($ink, 48);
+    display: table;
+    margin: 20px auto;
+
+    @media screen and ( max-width: $medium ) {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+.invite-date, 
+.invite-time,
+.invite-where,
+.invite-rsvp {
+  padding-bottom: 20px;
+  display: table;
+  margin: 0 auto;
+  font-size: $gamma - 2px;
+  line-height: 1.1;
+
+  @media screen and ( max-width: $medium ) {
+    font-size: $delta;
+  }
+
+  &:last-child {
+    padding-bottom: 0;
+  }
+}
+
+.invite-date + .invite-time {
+  margin-top: -10px;
+  position: relative;
+}
+
+.invite-where {
+  display: block;
+}
+
+p.invite-extra {
+  margin-top: 7px;
+  margin-bottom: 20px;
+  font-size: $delta - 2px;
+  line-height: 1.2;
+}
