@@ -241,6 +241,11 @@ a .post-title {
       background-color: transparent;
       color: $primary;
       text-shadow: none;
+
+      &:hover {
+        background-color: transparent;
+        color: $primary
+      }
     }
   }
 
@@ -251,12 +256,20 @@ a .post-title {
 
     @media screen and ( max-width: $small ) {
       color: $ink;
+
+      &:hover {
+        color: $primary;
+      }
     }
   }
 
   .btn-disabled {
     @media screen and ( max-width: $small ) {
       color: lighten($ink, 30);
+
+      &:hover {
+        color: lighten($ink, 30); 
+      }
     }
   }
 }
