@@ -33,7 +33,7 @@ Most of the major editable content can be found in the markdown files (such as 1
 ## Creating a Blog Post
 Create a Markdown file within the `_posts` folder. The name structure is a backward date followed by the title of your post, for example: `2011-10-18-a-day-with-clojure.md`. All of the content within this file is written using the [Markdown language](http://daringfireball.net/projects/markdown/syntax). 
 
-At the top of your mardkown file should have the post information like so:
+At the top of your mardkown file there should be the post information like so:
 
 ```
 ---
@@ -45,7 +45,7 @@ categories: hackday
 ---
 ```
 
-You can set whether an article is featured at the top of the blog homepage by setting: `feature: true` within the information section at the top of the markdown file. Make sure only have one post is set to this.
+You can set whether an article is featured at the top of the blog homepage by setting: `feature: true` within the information section at the top of the markdown file. Make sure only one post is set to this.
 
 Once you are happy, push this file to the `master` branch to go LIVE.
 
