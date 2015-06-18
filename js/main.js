@@ -33,13 +33,7 @@
     $('#' + tabID).siblings('.tab-content').removeClass('active');
     $('#' + tabID).addClass('active');
   });
-
-  // Add .prettyprint to all <pre>
-  [].forEach.call(document.getElementsByTagName("pre"), function(el) {
-    el.classList.add("prettyprint");
-  });
-  prettyPrint();
-
+  
   // Change services bg colour on scroll
   var servicesContainer = $('.services-container');
 
