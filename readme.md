@@ -30,7 +30,7 @@ Template source can be found in `_layouts`. Component source can be found in `_i
 Most of the major editable content can be found in the markdown files (such as 1-services.md). Use the number at the start of the filename to order the pages.
 
 
-## Creating Blog Post
+## Creating a Blog Post
 Create a Markdown file within the `_posts` folder. The name structure is a backward date followed by the title of your post, for example: `2011-10-18-a-day-with-clojure.md`. All of the content within this file is written using the [Markdown language](http://daringfireball.net/projects/markdown/syntax). 
 
 At the top of your mardkown file should have the post information like so:
@@ -49,6 +49,6 @@ You can set whether an article is featured at the top of the blog homepage by se
 
 Once you are happy, push this file to the `master` branch to go LIVE.
 
-### Tips
+#### Tips
 - Always wrap video elements in a `<div class="video"></div>` element if you want it to look awesome.
 - Use an h3 at the start of articles to give a summary of the post.
