@@ -33,7 +33,7 @@ Most of the major editable content can be found in the markdown files (such as 1
 ## Creating a Blog Post
 Create a Markdown file within the `_posts` folder. The name structure is a backward date followed by the title of your post, for example: `2011-10-18-a-day-with-clojure.md`. All of the content within this file is written using the [Markdown language](http://daringfireball.net/projects/markdown/syntax). 
 
-At the top of your mardkown file there should be the post information like so:
+At the top of your markdown file there should be the post information like so:
 
 ```
 ---
