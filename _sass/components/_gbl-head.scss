@@ -135,7 +135,9 @@
     }
   }
 
-  &.active {
+  &.active,
+  .blog &:last-child,
+  .post &:last-child {
     color: white;
     border-color: white;
   }

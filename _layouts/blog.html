@@ -1,0 +1,90 @@
+---
+layout: blog
+---
+{% include head.html %}
+
+  <body class="{{ page.layout }}">
+
+    {% include header.html %}
+
+    <section class="hero-container hero-container-blog {{ page.colour }}">
+      <div class="hero-inner grid">
+        {% if paginator.next_page == 2 %}
+        {% for post in site.posts %}
+          {% if post.featured == true %}
+            {% capture count %}{{ count | plus: '1' }}{% endcapture %}
+            {% if count == '1' %}
+              <div class="meta-title-container col-1-1">
+                <span class="meta-title">Featured Post</span>
+              </div>
+              <a href="{{ post.url }}"><h1 class="hero-title col-1-1">{{ post.title }}</h1></a>
+              <span class="post-author col-1-1">{{ post.author }}</span>
+              <span class="post-date col-1-1">{{ post.date | date: '%B %d, %Y' }}</span>
+            {% endif %}
+          {% endif %}
+        {% endfor %}
+        {% for post in site.posts %}
+          {% if post.featured == true %}
+            {% capture counttwo %}{{ counttwo | plus: '1' }}{% endcapture %}
+            {% if counttwo == '2' or counttwo == '3'%}
+              <div class="meta-title-container">
+                <span class="meta-title">Featured Post</span>
+              </div>
+              <a href="{{ post.url }}"><h1 class="hero-title">{{ post.title }}</h1></a>
+              <span class="post-author">{{ post.author }}</span>
+              <span class="post-date">{{ post.date | date: '%B %d, %Y' }}</span>
+            {% endif %}
+          {% endif %}
+        {% endfor %}
+        {% endif %}
+      </div>
+    </section>
+    <!-- /.hero-container -->
+
+    <section class="content-container grid">
+      <header class="tab-head-container col-1-1">
+        <nav class="blog-tab-head tab-head">
+          <button id="articles" data-tab-id="articles" class="tab-head-item active">{{ paginator.page }} of {{ paginator.total_pages }}</button>
+        </nav>
+      </header>
+      <!-- /.tab-head-container -->
+      <ul class="content col-1-1 post-list">
+        {% for post in paginator.posts %} 
+          <li class="post-item">
+            <a href="{{ post.url }}"><h3 class="post-title">{{ post.title }}</h3></a>
+            <span class="post-author">{{ post.author }}</span>
+            <span class="post-date">{{ post.date | date: '%B %d, %Y' }}</span>
+          </li>
+        {% endfor %}
+      </ul>
+    </section>
+    <!-- /.content-container -->
+
+    {% if paginator.total_pages > 1 %}
+    <section class="blog-pagination">
+      <div class="grid">
+        <div class="pagination col-1-1">
+          {% if paginator.previous_page %}
+            <a class="btn btn-block btn-primary btn-new" rel="prev" href="{{ paginator.previous_page_path | replace: 'index.html', '/' | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer Posts</a>
+          {% else %}
+            <span class="btn btn-block btn-disabled btn-new">&larr; Newer Posts</span>
+          {% endif %}
+          {% if paginator.next_page %}
+            <a class="btn btn-block btn-secondary btn-old" rel="next" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Posts &rarr;</a>
+          {% else %}
+            <span class="btn btn-block btn-disabled btn-old">Older Posts &rarr;</span>
+          {% endif %}
+        </div>
+      </div>
+    </section>
+    {% endif %}
+
+    {% include footer.html %}
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-2.1.1.min.js""><\/script>')</script>
+    <script type="text/javascript" src="{{ site.baseurl }}/js/main.js"></script>
+    <!-- /scripts-->
+
+  </body>
+</html>

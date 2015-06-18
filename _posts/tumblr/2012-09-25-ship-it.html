@@ -1,0 +1,33 @@
+---
+layout: post
+title: Ship it!
+date: '2012-09-25T15:57:00+01:00'
+tags:
+- deployment
+- rake
+- shipit
+tumblr_url: http://blog.pebblecode.com/post/32263926012/ship-it
+author: Tak Tran
+---
+<p>Shipping code is exciting. The moment when technological magic, beautification, and business articulations get released into the wild, for all to see. When it hasn’t shipped, it’s not yet real; only stuck in the minds of the creators, not having stood the true test of the real world. It is one of the most satisfying software development moments. To <a href="http://tom.preston-werner.com/2010/10/18/optimize-for-happiness.html">optimise for this joyous moment</a>, I’ve created a <a href="https://gist.github.com/3697640">rake task</a> to make shipping code as simple as a 1 line command:</p>
+
+<pre><code>bundle exec rake:shipit[production]
+</code></pre>
+
+<p>The ease of a 1 line deploy, changes your perception of deployment, making it less of a chore, and more of a celebratory keyboard dance, just as you cross that finish line of your last bit of work. Abstracting away the finicky bits of the deployment process, allows you to focus more on programming and less on administrative tasks. It’s also just <em>satisfying</em> - after finishing a chunky bit of work, to type a command, press Enter, watch the matrix flow, and presto! Deployed! It would be even better to have a big shiny red button&hellip;</p>
+
+<p>Underneath this 1 line deploy, our default case is for a project to be merged with a deployment branch such as <code>staging</code> or <code>production</code>, pushed to the remote servers, and then shipped to deployment servers.</p>
+
+<p>We have deployment branches, so that we can track where each deployment is at in the git history. This is useful for figuring out where code changes, between deployment and current work (it also means we can use <a href="https://github.com/blog/612-introducing-github-compare-view">github’s neat compare view</a>). Another nice side effect is that after deploying, our <a href="https://github.com/joshwand/campfire-bot">campfire bot</a>, Marvin sends us an automated message (using the <a href="https://github.com/blog/570-campfire-service-hook-returns">campfire service hooks</a>).</p>
+
+<p><img src="http://media.tumblr.com/tumblr_mawucull7m1qdcl2v.jpg" alt=""/></p>
+
+<p>There are much more formalised ways of using git for deployment such as <a href="http://nvie.com/posts/a-successful-git-branching-model/">git-flow</a> and <a href="http://scottchacon.com/2011/08/31/github-flow.html">github-flow</a>, however, usually these are much too heavy weight for what we need. Especially when the team is made up of only 1 or 2 people.</p>
+
+<p>A master and deployment branch is really all that’s needed most of the time, with feature branches used if necessary. We’ve used this deployment system (or similar) for projects such as <a href="http://tricklrapp.com/">Tricklr</a>, <a href="http://vistazoapp.com">Vistazo</a> and the <a href="http://pebblecode.com/">pebblecode.com site</a>, and it’s worked pretty well.</p>
+
+<p>To use the rake task, you’ll need to set up the relevant git branches, fill in the branch names, and fill in your deployment method (there are examples for <a href="http://heroku.com">heroku</a> and <a href="http://capistranorb.com/">capistrano</a>). It is made to be a template, and edited as relevant to your project.</p>
+
+<p>Here is the rake task again: <a href="https://gist.github.com/3697640">https://gist.github.com/3697640</a>.</p>
+
+<p>Feel free to fork away, and make <a href="http://shipitsquirrel.github.com/">ship it squirrel</a> proud.</p>

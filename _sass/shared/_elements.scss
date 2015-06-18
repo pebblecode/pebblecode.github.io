@@ -64,20 +64,37 @@ a {
   text-transform: uppercase;
   font-size: $delta - 2px;
   border-bottom: none;
+  transition: 0.2s;
 
   @media screen and ( max-width: $medium ) {
     padding: 14px;
   }
 
   &.btn-primary {
+    text-shadow: 1px 1px 0 rgba(black, 0.2);
     background-color: $primary;
     color: white;
-    transition: 0.2s;
 
     &:hover {
       color: white;
       background-color: darken($primary, 10);
     }
+  }
+
+  &.btn-secondary {
+    text-shadow: 1px 1px 0 rgba(black, 0.2);
+    background-color: $ink;
+    color: white;
+
+    &:hover {
+      color: white;
+      background-color: darken($ink, 10);
+    }
+  }
+
+  &.btn-disabled {
+    background-color: lighten($ink, 45);
+    color: lighten($ink, 15);
   }
 }
 
@@ -217,5 +234,43 @@ hr {
     opacity: 1;
     height: 100%;
     transition: opacity 0.8s;
+  }
+}
+
+
+// Pagination
+.pagination {
+  position: relative;
+  
+  .btn {
+    margin-right: 5px;
+  }
+}
+
+
+// Content
+blockquote {
+  border-left: 10px solid $primary;
+  padding-left: 20px;
+  font-style: normal;
+  margin: 45px 30px;
+  color: $primary;
+  font-size: $gamma + 4px;
+
+  @media screen and ( max-width: $medium ) {
+    margin: 30px 0;
+  }
+}
+
+
+// Code
+pre.prettyprint.prettyprinted {
+  background-color: lighten($ink, 48);
+  padding: 20px;
+  font-family: monospace;
+  border: none;
+
+  & * {
+    font-family: monospace;
   }
 }
