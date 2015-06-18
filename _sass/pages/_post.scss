@@ -31,8 +31,12 @@
   position: relative;
 
   @media screen and ( max-width: $large ) {
-    padding-top: 20px;
+    padding-top: 30px;
     padding-bottom: 40px;
+  }
+
+  @media screen and ( max-width: $medium ) {
+    padding-top: 20px;
   }
 
   &:after {
@@ -67,8 +71,7 @@
     padding-right: 20px;
   }
    
-  .post-excerpt,
-  .blockquote p {
+  .post-excerpt {
     color: $primary;
     font-size: $gamma + 4px;
     margin-bottom: 50px;
@@ -91,7 +94,7 @@
   h2 {
     font-family: $museo;
     font-weight: $font-bold;
-    font-size: $beta - 6px;
+    font-size: $gamma;
     line-height: 1.1;
     text-transform: none;
     font-style: normal;
@@ -107,7 +110,7 @@
 
   img, video, iframe, figure {
     display: table;
-    margin: 30px auto;
+    margin: 20px auto;
     width: 100%;
 
     &:first-child {
@@ -116,7 +119,6 @@
   }
 
   figure {
-
     & > * {
       margin: 0;
     }
@@ -125,12 +127,11 @@
 
 .twitter-share {
   position: relative;
-  padding-top: 20px;
 }
 
 .twitter-share-text {
   display: block;
-  padding: 60px 0 40px;
+  padding: 50px 0;
   position: relative;
   font-size: $gamma;
   font-weight: $font-bold;

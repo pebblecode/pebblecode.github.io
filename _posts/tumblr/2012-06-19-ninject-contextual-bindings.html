@@ -4,6 +4,7 @@ title: Contextual bindings with Ninject
 date: '2012-06-19T09:10:00+01:00'
 tags: []
 tumblr_url: http://blog.pebblecode.com/post/25423911537/ninject-contextual-bindings
+author: Joseph Jeganathan
 ---
 <p>Contextual binding is a very useful and powerful feature of Ninject. There are several <a href="https://github.com/ninject/ninject/wiki/Contextual-Binding" title="Contextual binding">different ways</a> to do contextual binding in ninject, an appropriate one must be used based on the problem you are trying to solve. </p>
 <p>I&rsquo;ve recently faced an interesting ninject binding problem. I needed to generate prices for a number of financial instruments. Each instrument has an <em>InstrumentType</em> property, for each <em>InstrumentType</em> there is different concrete price-builder implementation. I wanted to do binding using ninject in such a way to load a relevant concrete price-buider depending on the instrument&rsquo;s <em>InstrumentType</em>.</p>

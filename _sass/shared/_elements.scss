@@ -252,10 +252,25 @@ hr {
 blockquote {
   border-left: 10px solid $primary;
   padding-left: 20px;
-  font-style: italic;
-  margin: 45px 30px 25px;
+  font-style: normal;
+  margin: 45px 30px;
+  color: $primary;
+  font-size: $gamma + 4px;
 
   @media screen and ( max-width: $medium ) {
-    margin: 35px 0 15px;
+    margin: 30px 0;
+  }
+}
+
+
+// Code
+pre.prettyprint.prettyprinted {
+  background-color: lighten($ink, 48);
+  padding: 20px;
+  font-family: monospace;
+  border: none;
+
+  & * {
+    font-family: monospace;
   }
 }
