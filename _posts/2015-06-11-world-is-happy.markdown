@@ -4,7 +4,7 @@ title:  On Average, the World is Happy
 date:   2015-06-11 11:20:20
 author: Ian Black
 categories: hackday
-
+featured: true
 ---
 ### How far would you agree with the above statement? If you could visualise the emotional state of the world, what would it looks like?
 

@@ -6,18 +6,26 @@
   .gbl-head {
     background-color: transparent;
 
-    @media screen and ( max-width: $medium ) {
+    @media screen and ( max-width: $medium + 100px ) {
       background-color: $aqua;
     }
   }
 
   .content-container {
     margin-top: 10px;
+
+    @media screen and ( max-width: $medium ) {
+      margin-top: -10px;
+    }
   }
 }
 
 .hero-container-blog, .hero-container-blog.aqua {
   background-image: repeating-linear-gradient(-45deg, transparent, transparent 70px, rgba(255,255,255,.1) 70px, rgba(255,255,255,.1) 140px);
+
+  @media screen and ( max-width: $medium + 100px ) {
+    background-image: none;
+  }
 
   &:before {
     bottom: 25px;
@@ -124,6 +132,10 @@
   padding: 25px 0 55px;
   position: relative;
 
+  @media screen and ( max-width: $medium ) {
+    padding: 20px 0 40px;
+  }
+
   &:after {
     content: "";
     height: 6px;
@@ -166,15 +178,11 @@ a .post-title {
 
   .post-item & {
     font-size: $alpha;
-  }
 
-  @media screen and ( max-width: $medium ) {
-    font-size: $beta;
-    margin-bottom: 5px;
-  }
-
-  @media screen and ( max-width: $small ) {
-    font-size: $beta - 4px;
+    @media screen and ( max-width: $medium ) {
+      font-size: $beta;
+      margin-bottom: 5px;
+    }
   }
 
   &:hover {
@@ -186,6 +194,10 @@ a .post-title {
   display: block;
   font-size: $gamma;
   font-weight: $font-bold;
+
+  @media screen and ( max-width: $medium ) {
+    font-size: $delta;
+  }
 }
 
 .post-date {
@@ -200,8 +212,8 @@ a .post-title {
   position: relative;
 
   @media screen and ( max-width: $small ) {
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 
   &:after {
@@ -221,11 +233,30 @@ a .post-title {
 
   .btn {
     display: table;
+
+    @media screen and ( max-width: $small ) {
+      padding: 12px 8px;
+
+      padding: 0;
+      background-color: transparent;
+      color: $primary;
+      text-shadow: none;
+    }
   }
 
   .btn-old {
     position: absolute;
     right: 15px;
     top: 0;
+
+    @media screen and ( max-width: $small ) {
+      color: $ink;
+    }
+  }
+
+  .btn-disabled {
+    @media screen and ( max-width: $small ) {
+      color: lighten($ink, 30);
+    }
   }
 }

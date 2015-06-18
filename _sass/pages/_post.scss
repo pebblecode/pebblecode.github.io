@@ -15,7 +15,7 @@
     padding-top: 110px;
 
     @media screen and ( max-width: $medium + 100px ) {
-      padding-top: 20px;
+      padding-top: 10px;
     }
   }
 
@@ -36,13 +36,14 @@
   }
 
   @media screen and ( max-width: $medium ) {
-    padding-top: 20px;
+    padding-top: 0;
+    margin-bottom: 30px;
   }
 
   &:after {
     content: "";
     height: 6px;
-    width: 300px;
+    width: 200px;
     background-color: lighten($ink, 48);
     position: absolute;
     bottom: 0;
@@ -60,6 +61,12 @@
 
     @media screen and ( max-width: $medium ) {
       font-size: $mega - 4px;
+      margin-bottom: 20px;
+    }
+
+    @media screen and ( max-width: $small ) {
+      font-size: $alpha - 4px;
+      margin-bottom: 20px;
     }
   }
 }
@@ -91,6 +98,15 @@
     }
   }
 
+  a {
+    -ms-word-break: break-all;
+    word-break: break-all;
+    word-break: break-word;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    hyphens: auto;
+  }
+
   h2, h3 {
     color: $primary;
     font-family: $museo;
@@ -104,6 +120,10 @@
     margin: 50px 0 15px;
     padding: 0;
 
+    @media screen and ( max-width: $medium ) {
+      font-size: $gamma;
+    }
+
     &:first-child {
       margin-top: 0;
     }
@@ -112,7 +132,7 @@
   h3 {
     font-weight: $font-regular;
     line-height: 1.4;
-    margin: 15px 0;
+    margin: 15px 0 20px;
   }
 
   h4 {
