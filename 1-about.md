@@ -16,7 +16,7 @@ cover-img: features/stickies.jpg
 
 ## Some History
 
-Founded in early 2010 we have created software for startups, investment funds, gaming companies &amp; enterprises across many industries. pebble {code} was forge from its sister company <a href="http://pebbleit.com">pebble.it</a> (who provide creative IT support &amp; solutions) with whom we still share an office, an ethos and a social life. 
+Founded in early 2010 we have created software for startups, investment funds, gaming companies &amp; enterprises across many industries. pebble {code} was forged from its sister company <a href="http://pebbleit.com">pebble.it</a> (who provide creative IT support &amp; solutions) with whom we still share an office, an ethos and a social life. 
 
 We believe in employee empowerment over management layers and seek to find difficult and challenging problems for our staff to tackle. We give our staff autonomy to build their workflows the way they want to and favour responsibility over micro-management. 
  
