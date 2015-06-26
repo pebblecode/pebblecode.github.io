@@ -7,7 +7,7 @@ colour: purple
 
 ## Hero Content
 hero-title: about
-hero-subtitle: pebble {code} was founded to focus on building the right products for great clients, to hire the best talent and to create a truely great bplace for technologists to work.
+hero-subtitle: pebble {code} was founded to focus on building the right products for great clients, to hire the best talent and to create a truly great bplace for technologists to work.
 
 
 cover-img: features/stickies.jpg
