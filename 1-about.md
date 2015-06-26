@@ -7,7 +7,8 @@ colour: purple
 
 ## Hero Content
 hero-title: about
-hero-subtitle: pebble {code} was founded to focus its entire passionate existence on building the right products for great clients, hiring the best talent and creating a truly great place to grow, work and have fun.
+hero-subtitle: pebble {code} was founded to focus on building the right products for great clients, to hire the best talent and to create a truely great bplace for technologists to work.
+
 
 cover-img: features/stickies.jpg
 
@@ -15,10 +16,10 @@ cover-img: features/stickies.jpg
 
 ## Some History
 
-We have been around since early 2010, building software for startups, investment funds, gaming companies &amp; enterprises across many industries. pebble {code} was born out of its sister company <a href="http://pebbleit.com">pebble.it</a> (who provides creative IT support &amp; solutions) with which we still share an office, an ethos and a social life. 
+Founded in early 2010 we have created software for startups, investment funds, gaming companies &amp; enterprises across many industries. pebble {code} was forge from its sister company <a href="http://pebbleit.com">pebble.it</a> (who provide creative IT support &amp; solutions) with whom we still share an office, an ethos and a social life. 
 
-We believe in employee empowerment and development, only working on work that excites us and that unnecessary management layers are, well, unnecessary.
-
-pebble {code} has a great product and luckily a huge market of juicy problems to get stuck into. We are growing too and with this growth comes ever increasing resources to continually improve... and it is exciting!
-
+We believe in employee empowerment over management layers and seek to find difficult and challenging problems for our staff to tackle. We give our staff autonomy to build their workflows the way they want to and favour responsibility over micro-management. 
  
+Experimentation and exploration has always been central to our culture and from inception we have run regular Hack Days and offered 10% time for our staff to express this.
+
+We continue to obsess about client satisfaction, building a great place to work and hiring the best talent!
