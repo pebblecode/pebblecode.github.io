@@ -42,11 +42,6 @@ layout: blog
     <!-- /.hero-container -->
 
     <section class="content-container grid">
-      <header class="tab-head-container col-1-1">
-        <nav class="blog-tab-head tab-head">
-          <button id="articles" data-tab-id="articles" class="tab-head-item active">{{ paginator.page }} of {{ paginator.total_pages }}</button>
-        </nav>
-      </header>
       <!-- /.tab-head-container -->
       <ul class="content col-1-1 post-list">
         {% for post in paginator.posts %} 
