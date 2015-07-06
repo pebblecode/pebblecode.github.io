@@ -5,13 +5,17 @@
   background-color: $primary;
   border-bottom: 1px solid rgba(white, 0.25);
   padding: 40px $gutter * 2 20px;
-  position: absolute;
+  position: fixed;
+  left: 0;
   width: 100%;
   z-index: 10;
+  transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+
 
   @media screen and ( max-width: $medium + 100px ) {
-    position: relative;
-    padding: 20px 0 15px;
+   padding: 20px 0 15px;
   }
 
   &.pink {
@@ -34,6 +38,13 @@
     background-color: transparent;
     box-shadow: none;
   }
+}
+
+.show {
+    top: 0;
+}
+.hide {
+    top: -92px;
 }
 
 .gbl-head-logo {
@@ -112,8 +123,8 @@
         position: absolute;
         top: 0;
         right: 28px;
-        width: 0; 
-        height: 0; 
+        width: 0;
+        height: 0;
         border-left: 9px solid transparent;
         border-right: 9px solid transparent;
         border-bottom: 9px solid rgba(black, 0.07);
@@ -121,7 +132,7 @@
       }
 
       &:hover:after {
-        border-bottom-color: rgba(black, 0.12); 
+        border-bottom-color: rgba(black, 0.12);
       }
     }
   }
@@ -176,5 +187,5 @@
 
   @media screen and ( max-width: $medium + 100px ) {
     display: block;
-  }  
+  }
 }

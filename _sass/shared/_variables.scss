@@ -18,8 +18,8 @@ $primary: $pink;
 
 // TYPOGRAPHY
 $base-font: 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
-$museo: 'museo-sans', $base-font; 
-$brandon: 'brandon-grotesque', $base-font; 
+$museo: 'museo-sans', $base-font;
+$brandon: 'brandon-grotesque', $base-font;
 
 $body-font-size: 16px;
 $font-regular: 300; // $museo only
@@ -39,6 +39,7 @@ $zeta: 12px;
 
 // SPACING: Grid, Viewports etc
 $large: 1000px;
+$semi-large: 750px;
 $medium: 650px;
 $small: 500px;
 

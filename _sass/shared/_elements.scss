@@ -186,7 +186,7 @@ hr {
     margin-right: 15px;
   }
 
-  &:hover { 
+  &:hover {
     &.active {}
   }
 
@@ -241,7 +241,7 @@ hr {
 // Pagination
 .pagination {
   position: relative;
-  
+
   .btn {
     margin-right: 5px;
   }
@@ -272,5 +272,23 @@ pre.prettyprint.prettyprinted {
 
   & * {
     font-family: monospace;
+  }
+}
+
+
+
+// Back to top
+
+.back-to-top {
+  text-align: right;
+  padding: 30px;
+  a {
+    color: white;
+    background: rgba(230, 230, 230, 0.1);
+    padding: 10px 20px;
+  }
+
+  a:hover {
+    opacity: 0.7;
   }
 }

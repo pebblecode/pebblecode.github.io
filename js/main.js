@@ -1,5 +1,6 @@
 (function () {'use strict';
 
+
   function debounce(func, wait, immediate) {
     var timeout;
     return function() {
@@ -14,6 +15,21 @@
       if (callNow) func.apply(context, args);
     };
   };
+
+  // Navigation appear on scroll up
+
+  var scrollCurrent = 0;
+  $(window).scroll(function() {
+    var scrollDiff = $(this).scrollTop();
+    if(scrollDiff > scrollCurrent) {
+       $('header').addClass('hide').removeClass('show');
+    }
+    else {
+       $('header').addClass('show').removeClass('hide');
+    }
+    scrollCurrent = scrollDiff;
+  });
+
 
   // Mobile nav
   var gblHeadBtn = $('.gbl-head-btn');
@@ -33,7 +49,7 @@
     $('#' + tabID).siblings('.tab-content').removeClass('active');
     $('#' + tabID).addClass('active');
   });
-  
+
   // Change services bg colour on scroll
   var servicesContainer = $('.services-container');
 
@@ -145,3 +161,4 @@
   }
 
 }()); // end 'use strict'
+
