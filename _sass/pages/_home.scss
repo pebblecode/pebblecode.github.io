@@ -114,13 +114,28 @@
 .feat-content-img {
   z-index: 2;
   height: 540px;
-  background: url(../img/services/services-featured.png) no-repeat center left;
-  background-size: auto 540px;
   right: 0;
   bottom: -60px;
   position: absolute;
+  overflow: hidden;
+
+  img {
+    position: absolute;
+    max-height: 100%;
+  }
 
   @media screen and ( max-width: $medium + 100px ) {
     display: none;
   }
+}
+
+.feat-content-img-ipad {
+  left: 100px;
+  bottom: 0;
+  min-height: 70%;
+}
+
+.feat-content-img-iphone {
+  left: 0;
+  top: -20px;
 }

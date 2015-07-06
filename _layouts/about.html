@@ -9,7 +9,7 @@
     {% include header.html %}
 
     <section class="hero-container {{ page.colour }}">
-      <div class="hero-inner grid">
+      <div class="hero-inner grid" data-sr="wait 0.3s, enter left move 100px">
         <h1 class="hero-title col-1-1">{% if page.hero-title %}{{page.hero-title}}{% else %}{{page.title}}{% endif %}</h1>
         {% if page.hero-subtitle %}
           <p class="hero-summary col-1-1">{{page.hero-subtitle}}</p>
@@ -21,7 +21,7 @@
     <section class="content-container grid">
       <article class="content col-1-1">
         {{content}}
-        <a href="{{ site.baseurl }}/careers" class="btn btn-primary btn-block">SOUND GOOD TO YOU? COME JOIN US!</a>
+        <a href="{{ site.baseurl }}/careers" class="btn btn-primary btn-block" data-sr="wait 0.3s, scale up 20%">SOUND GOOD TO YOU? COME JOIN US!</a>
       </article>
     </section>
     <!-- /.content-container -->
@@ -69,7 +69,7 @@
           </li>
         </ul>
         <!-- /.ppl-col -->
-        <aside class="aside-container ppl-join-container">
+        <aside class="aside-container ppl-join-container" data-sr="wait 0.1s, scale up 20%">
           <h3>Join the Team</h3>
           <p>We put top notch people into small, dynamic teams, give them the best tools and encourage maximum collaboration in our stimulating and spacious work environment.</p>
           <a href="{{ site.baseurl }}/careers" class="btn btn-primary btn-block">Join us</a>
@@ -85,6 +85,7 @@
     <!--[if gt IE 8]><!-->
       <script type="text/javascript"src="http://maps.google.com/maps/api/js?v=3&amp;sensor=false"></script>
     <!--<![endif]-->
+    <script type="text/javascript" src="{{ site.baseurl }}/js/vendor/scrollReveal.min.js"></script>
     <script type="text/javascript" src="{{ site.baseurl }}/js/main.js"></script>
     <!-- /scripts-->
 
