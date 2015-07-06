@@ -9,6 +9,8 @@ colour: purple
 hero-title:
 hero-subtitle: Since inception, pebble {code} has strived to create an environment in which the best designers, developers and creative technologists can thrive. Running regular hack days, encouraging technology exploration, giving time for personal development and having a results only work culture has meant that we attract and retain the best talent.
 hero-btn: We are hiring, come join us!
+hero-btn-url: #careers-list
+
 
 ## Content
 content-title: Delivering Awesome

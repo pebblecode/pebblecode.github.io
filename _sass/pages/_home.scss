@@ -2,7 +2,12 @@
 // HOME
 //===============================================================================
 // Hero
-.hero-container-home {
+.home .hero-container {
+  background-image: url(../img/tile-white.png);
+  background-repeat: repeat-x;
+  background-position: bottom;
+  background-size: 400px;
+  
   .hero-title {
     @media screen and ( max-width: 1100px ) {
       font-size: $tera - 10px;
