@@ -101,6 +101,140 @@
     servicesBG();
   }
 
+  // Change nav bg colour on scroll
+
+  var aboutHeaderContainer = $('.about .gbl-head');
+  var servicesHeaderContainer = $('.services .gbl-head');
+  var workHeaderContainer = $('.work .gbl-head');
+  var careersHeaderContainer = $('.careers .gbl-head');
+
+  if ($(aboutHeaderContainer).length > 0) {
+    var aboutDirectors;
+
+    var scrollPositions = debounce(function () {
+      aboutDirectors = $('#aboutDirectors').offset().top - 200;
+    }, 100);
+
+    var headerBG = debounce(function () {
+      var windowTop = $(window).scrollTop();
+
+     if (windowTop > aboutDirectors) {
+        aboutHeaderContainer.css({'background-color':'#0ea2dc' });
+      } else {
+        aboutHeaderContainer.css({'background-color':'' });
+      }
+     }, 100);
+
+    $(window).resize(scrollPositions).scroll(headerBG);
+    scrollPositions();
+    headerBG();
+  }
+
+  if ($(servicesHeaderContainer).length > 0) {
+    var servicesStrategy;
+    var servicesHacking;
+    var servicesUX;
+    var servicesUXdesign;
+    var servicesDesign;
+    var servicesAgile;
+    var servicesTests;
+    var servicesCollab;
+
+    var scrollPositions = debounce(function () {
+      servicesStrategy = $('#servicesStrategy').offset().top - 200;
+      servicesHacking = $('#servicesHacking').offset().top - 200;
+      servicesUX = $('#servicesUX').offset().top - 200;
+      servicesUXdesign = $('#servicesUXdesign').offset().top - 200;
+      servicesDesign = $('#servicesDesign').offset().top - 200;
+      servicesAgile = $('#servicesAgile').offset().top - 200;
+      servicesTests = $('#servicesTests').offset().top - 200;
+      servicesCollab = $('#servicesCollab').offset().top - 200;
+    }, 100);
+
+    var headerBG = debounce(function () {
+      var windowTop = $(window).scrollTop();
+
+      if (windowTop > servicesCollab) {
+        servicesHeaderContainer.css({'background-color':'#ed4f7e' });
+      } else if (windowTop > servicesTests) {
+        servicesHeaderContainer.css({'background-color':'#9b5ca4' });
+      } else if (windowTop > servicesAgile) {
+        servicesHeaderContainer.css({'background-color':'#faad40' });
+      } else if (windowTop > servicesDesign) {
+        servicesHeaderContainer.css({'background-color':'#a4ce4e' });
+      } else if (windowTop > servicesUXdesign) {
+        servicesHeaderContainer.css({'background-color':'#37bec0' });
+      } else if (windowTop > servicesUX) {
+        servicesHeaderContainer.css({'background-color':'#0ea2dc' });
+      } else if (windowTop > servicesHacking) {
+        servicesHeaderContainer.css({'background-color':'#ed4f7e' });
+      } else if (windowTop > servicesStrategy) {
+        servicesHeaderContainer.css({'background-color':'#9b5ca4' });
+      } else {
+        servicesHeaderContainer.css({'background-color':'' });
+      }
+    }, 100);
+
+    $(window).resize(scrollPositions).scroll(headerBG);
+    scrollPositions();
+    headerBG();
+
+  }
+
+  if ($(workHeaderContainer).length > 0) {
+    var workAZknowledge;
+    var workBede;
+    var workAZinnovation;
+
+    var scrollPositions = debounce(function () {
+      workAZknowledge = $('#workAZknowledge').offset().top - 200;
+      workBede = $('#workBede').offset().top - 200;
+      workAZinnovation = $('#workAZinnovation').offset().top - 200;
+    }, 100);
+
+    var headerBG = debounce(function () {
+      var windowTop = $(window).scrollTop();
+
+     if (windowTop > workAZinnovation) {
+        workHeaderContainer.css({'background-color':'#0ea2dc' });
+      } else if (windowTop > workBede) {
+        workHeaderContainer.css({'background-color':'#37bec0' });
+      } else if (windowTop > workAZknowledge) {
+        workHeaderContainer.css({'background-color':'#9b5ca4' });
+      }
+        else {
+        workHeaderContainer.css({'background-color':'' });
+      }
+     }, 100);
+
+    $(window).resize(scrollPositions).scroll(headerBG);
+    scrollPositions();
+    headerBG();
+  }
+
+  if ($(careersHeaderContainer).length > 0) {
+    var careersBenefits;
+
+    var scrollPositions = debounce(function () {
+      careersBenefits = $('#careersBenefits').offset().top - 200;
+    }, 100);
+
+    var headerBG = debounce(function () {
+      var windowTop = $(window).scrollTop();
+
+     if (windowTop > careersBenefits) {
+        careersHeaderContainer.css({'background-color':'#0ea2dc' });
+      } else {
+        careersHeaderContainer.css({'background-color':'' });
+      }
+     }, 100);
+
+    $(window).resize(scrollPositions).scroll(headerBG);
+    scrollPositions();
+    headerBG();
+  }
+
+
   // Smooth Scrolling for Internal Links
   $('a[href*=#]:not([href=#])').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
