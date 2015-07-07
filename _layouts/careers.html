@@ -4,7 +4,18 @@
 
     {% include header.html %}
 
-    {% include hero.html %}
+    <section class="hero-container {{ page.colour }}">
+      <div class="hero-inner grid">
+        <h1 class="hero-title col-1-1">{% if page.hero-title %}{{page.hero-title}}{% else %}{{page.title}}{% endif %}</h1>
+        {% if page.hero-subtitle %}
+          <p class="hero-summary col-1-1">{{page.hero-subtitle}}</p>
+        {% endif %}
+        {% if page.hero-btn %}
+          <a href="#careers-list" class="btn btn-primary btn-block" data-sr="scale up 20%, vF 0">{{page.hero-btn}}</a>
+        {% endif %}
+      </div>
+    </section>
+    <!-- /.hero-container -->
 
     <section class="content-container grid">
       <h2 class="content-title">{{page.content-title}}</h2>
@@ -31,14 +42,14 @@
         <aside class="benefits-list-container grid-container">
           <h3 class="benefits-list-title col-1-1">Benefits</h3>
           <ul class="benefits-list">
-            <li class="benefits-list-item benefit-flexible col-1-2" data-sr="enter left move 100px">Flexible working practices (remote working, flexible hours, shorts &amp; flip flops welcome)</li>
-            <li class="benefits-list-item benefit-10 col-1-2"  data-sr="wait 0.05s, enter left move 100px">10% time – spend half a day a week working on your own projects</li>
-            <li class="benefits-list-item benefit-holidays col-1-2"  data-sr="wait 0.1s, enter left move 100px">26 days/year holiday</li>
-            <li class="benefits-list-item benefit-snacks col-1-2"  data-sr="wait 0.15s, enter left move 100px">Free snacks and drinks</li>
-            <li class="benefits-list-item benefit-pay col-1-2"  data-sr="wait 0.2s, enter left move 100px">Competitive salaries</li>
-            <li class="benefits-list-item benefit-gym col-1-2"  data-sr="wait 0.25s, enter left move 100px">Flexible contributions (towards gym, pension or healthcare)</li>
-            <li class="benefits-list-item benefit-social col-1-2"  data-sr="wait 0.3s, enter left move 100px">Regular social events</li>
-            <li class="benefits-list-item benefit-charity col-1-2"  data-sr="wait 0.35s, enter left move 100px">Additional time off for volunteer days</li>
+            <li class="benefits-list-item benefit-flexible col-1-2" data-sr="scale up 20%">Flexible working practices (remote working, flexible hours, shorts &amp; flip flops welcome)</li>
+            <li class="benefits-list-item benefit-10 col-1-2"  data-sr="wait 0.05s, scale up 20%">10% time – spend half a day a week working on your own projects</li>
+            <li class="benefits-list-item benefit-holidays col-1-2"  data-sr="wait 0.1s, scale up 20%">26 days/year holiday</li>
+            <li class="benefits-list-item benefit-snacks col-1-2"  data-sr="wait 0.15s, scale up 20%">Free snacks and drinks</li>
+            <li class="benefits-list-item benefit-pay col-1-2"  data-sr="wait 0.2s, scale up 20%">Competitive salaries</li>
+            <li class="benefits-list-item benefit-gym col-1-2"  data-sr="wait 0.25s, scale up 20%">Flexible contributions (towards gym, pension or healthcare)</li>
+            <li class="benefits-list-item benefit-social col-1-2"  data-sr="wait 0.3s, scale up 20%">Regular social events</li>
+            <li class="benefits-list-item benefit-charity col-1-2"  data-sr="wait 0.35s, scale up 20%">Additional time off for volunteer days</li>
           </ul>
         </aside>
       </div>

@@ -8,6 +8,8 @@ colour: aqua
 ## Hero Content
 hero-title:
 hero-subtitle:
+hero-btn:
+hero-btn-url:
 ---
 
 ## Our Approach

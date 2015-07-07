@@ -8,6 +8,8 @@ colour: purple
 ## Hero Content
 hero-title: about
 hero-subtitle: pebble {code} was founded to focus its entire passionate existence on building the right products for great clients, hiring the best talent and creating a truly great place to grow, work and have fun.
+hero-btn:
+hero-btn-url:
 
 cover-img: features/stickies.jpg
 

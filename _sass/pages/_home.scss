@@ -120,7 +120,7 @@
   z-index: 2;
   height: 540px;
   right: 0;
-  bottom: -60px;
+  bottom: -70px;
   position: absolute;
   overflow: hidden;
 
@@ -135,12 +135,14 @@
 }
 
 .feat-content-img-ipad {
-  left: 100px;
+  left: 60px;
   bottom: 0;
-  min-height: 70%;
+  min-height: 100%;
+  max-width: none;
 }
 
 .feat-content-img-iphone {
-  left: 0;
-  top: -20px;
+  left: -20px;
+  top: -30px;
+  max-width: 340px;
 }
