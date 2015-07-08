@@ -1,6 +1,5 @@
 (function () {'use strict';
 
-
   function debounce(func, wait, immediate) {
     var timeout;
     return function() {
@@ -17,19 +16,16 @@
   };
 
   // Navigation appear on scroll up
-
   var scrollCurrent = 0;
   $(window).scroll(function() {
     var scrollDiff = $(this).scrollTop();
-    if(scrollDiff > scrollCurrent) {
+    if(scrollDiff > scrollCurrent && scrollDiff > 100) {
        $('header').addClass('hide').removeClass('show');
-    }
-    else {
+    } else {
        $('header').addClass('show').removeClass('hide');
     }
     scrollCurrent = scrollDiff;
   });
-
 
   // Mobile nav
   var gblHeadBtn = $('.gbl-head-btn');
@@ -102,7 +98,6 @@
   }
 
   // Change nav bg colour on scroll
-
   var aboutHeaderContainer = $('.about .gbl-head');
   var servicesHeaderContainer = $('.services .gbl-head');
   var workHeaderContainer = $('.work .gbl-head');

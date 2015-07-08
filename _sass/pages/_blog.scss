@@ -3,13 +3,6 @@
 //===============================================================================
 // Hero
 .blog {
-  .gbl-head {
-    background-color: transparent;
-
-    @media screen and ( max-width: $medium + 100px ) {
-      background-color: $aqua;
-    }
-  }
 
   .content-container {
     margin-top: 10px;
@@ -268,7 +261,7 @@ a .post-title {
       color: lighten($ink, 30);
 
       &:hover {
-        color: lighten($ink, 30); 
+        color: lighten($ink, 30);
       }
     }
   }
