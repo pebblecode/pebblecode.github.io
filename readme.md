@@ -39,13 +39,14 @@ At the top of your markdown file there should be the post information like so:
 ---
 layout: post
 title:  On Average, the World is Happy
-date:   2015-06-11 11:20:20
 author: Ian Black
 categories: hackday
 ---
 ```
 
-You can set whether an article is featured at the top of the blog homepage by setting: `feature: true` within the information section at the top of the markdown file. Make sure only one post is set to this.
+You can set whether an article is featured at the top of the blog homepage by setting: `feature: true` within the information section at the top of the markdown file. Make sure only *one* post is set to this.
+
+Images are linked like this: ![Installation](/img/posts/example.jpg). The caption is included within square brackets `![caption]` and the path to the image file included within the regular brackets after.
 
 Once you are happy, push this file to the `master` branch to go LIVE.
 
