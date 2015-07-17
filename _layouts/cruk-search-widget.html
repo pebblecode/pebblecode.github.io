@@ -29,14 +29,14 @@ layout: cruk-search-widget
           var widget = document.createElement('script');
           widget.type = 'text/javascript';
           widget.async = true;
-          widget.src = 'http://pebblecode.com/js/search-widget.js';
+          widget.src = 'http://localhost:4000/js/search-widget.js';
           var embedder = document.getElementById('cancerresearch-search-widget');
           embedder.parentNode.insertBefore(widget, embedder);
 
           var stylingRef = document.createElement('link');
           stylingRef.setAttribute('rel', 'stylesheet');
           stylingRef.setAttribute('type', 'text/css');
-          stylingRef.setAttribute('href', 'http://pebblecode.com/css/search-widget_css.css');
+          stylingRef.setAttribute('href', 'http://localhost:4000/css/search-widget_css.css');
           document.getElementsByTagName('head')[0].appendChild(stylingRef); }
 
          if (window.attachEvent)
@@ -63,7 +63,6 @@ layout: cruk-search-widget
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-2.1.1.min.js""><\/script>')</script>
     <script type="text/javascript" src="{{ site.baseurl }}/js/main.js"></script>
-    <script type="text/javascript" src="{{ site.baseurl }}/js/search-widget.js"></script>
     <!-- /scripts-->
 
   </body>
