@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: cruk-search-widget
 title: CRUK Clinical Trials Search Widget
 permalink: /cruk-clinical-trials/
 colour: pink
@@ -10,17 +10,3 @@ hero-subtitle: Building a search widget for CRUK to share with 3rd party website
 
 ---
 
-## Search Widget
-
-
-### HTML
-
-Insert this HTML code on to the page on your website where you would like the widget to appear. 
-
-### CSS
-
-You must upload this file to your website, wherever you keep your CSS files. 
-
-### JavaScript
-
-You must upload this file to your website, wherever you keep your JavaScript files. 
