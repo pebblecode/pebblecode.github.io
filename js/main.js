@@ -1,5 +1,7 @@
 (function () {'use strict';
 
+  window.sr = new scrollReveal();
+  
   function debounce(func, wait, immediate) {
     var timeout;
     return function() {

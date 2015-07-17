@@ -8,6 +8,8 @@ colour: blue
 ## Hero Content
 hero-title:
 hero-subtitle: We deliver awesome products for Pharma, Gaming, Finance, Media & Travel, for now, but we are not shy of taking on something different… in fact, we thrive on it.
+hero-btn:
+hero-btn-url:
 
 ## Main background image 1
 cover-img-1: features/wshop.jpg

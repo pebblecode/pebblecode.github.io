@@ -29,6 +29,9 @@
 }
 
 .gbl-foot-links {
+  position: relative;
+  z-index: 3;
+
   li {
     display: inline-block;
     margin-right: 20px;

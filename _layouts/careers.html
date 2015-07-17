@@ -11,7 +11,7 @@
           <p class="hero-summary col-1-1">{{page.hero-subtitle}}</p>
         {% endif %}
         {% if page.hero-btn %}
-          <a href="#careers-list" class="btn btn-primary btn-block">{{page.hero-btn}}</a>
+          <a href="#careers-list" class="btn btn-primary btn-block" data-sr="scale up 20%, vF 0">{{page.hero-btn}}</a>
         {% endif %}
       </div>
     </section>
@@ -23,7 +23,7 @@
         {{content}}
       </article>
       <br class="clear">
-      <aside class="aside-container kaizen-container">
+      <aside class="aside-container kaizen-container" data-sr="wait 0.1s, scale up 10%">
         <h3>{{page.kaizen-title}}</h3>
         <p>{{page.kaizen-content}}</p>
       </aside>
@@ -42,14 +42,14 @@
         <aside class="benefits-list-container grid-container">
           <h3 class="benefits-list-title col-1-1">Benefits</h3>
           <ul class="benefits-list">
-            <li class="benefits-list-item benefit-flexible col-1-2">Flexible working practices (remote working, flexible hours, shorts &amp; flip flops welcome)</li>
-            <li class="benefits-list-item benefit-10 col-1-2">10% time – spend half a day a week working on your own projects</li>
-            <li class="benefits-list-item benefit-holidays col-1-2">26 days/year holiday</li>
-            <li class="benefits-list-item benefit-snacks col-1-2">Free snacks and drinks</li>
-            <li class="benefits-list-item benefit-pay col-1-2">Competitive salaries</li>
-            <li class="benefits-list-item benefit-gym col-1-2">Flexible contributions (towards gym, pension or healthcare)</li>
-            <li class="benefits-list-item benefit-social col-1-2">Regular social events</li>
-            <li class="benefits-list-item benefit-charity col-1-2">Additional time off for volunteer days</li>
+            <li class="benefits-list-item benefit-flexible col-1-2" data-sr="scale up 20%">Flexible working practices (remote working, flexible hours, shorts &amp; flip flops welcome)</li>
+            <li class="benefits-list-item benefit-10 col-1-2"  data-sr="wait 0.05s, scale up 20%">10% time – spend half a day a week working on your own projects</li>
+            <li class="benefits-list-item benefit-holidays col-1-2"  data-sr="wait 0.1s, scale up 20%">26 days/year holiday</li>
+            <li class="benefits-list-item benefit-snacks col-1-2"  data-sr="wait 0.15s, scale up 20%">Free snacks and drinks</li>
+            <li class="benefits-list-item benefit-pay col-1-2"  data-sr="wait 0.2s, scale up 20%">Competitive salaries</li>
+            <li class="benefits-list-item benefit-gym col-1-2"  data-sr="wait 0.25s, scale up 20%">Flexible contributions (towards gym, pension or healthcare)</li>
+            <li class="benefits-list-item benefit-social col-1-2"  data-sr="wait 0.3s, scale up 20%">Regular social events</li>
+            <li class="benefits-list-item benefit-charity col-1-2"  data-sr="wait 0.35s, scale up 20%">Additional time off for volunteer days</li>
           </ul>
         </aside>
       </div>
@@ -67,6 +67,7 @@
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-2.1.1.min.js""><\/script>')</script>
+    <script type="text/javascript" src="{{ site.baseurl }}/js/vendor/scrollReveal.min.js"></script>
     <script type="text/javascript" src="{{ site.baseurl }}/js/main.js"></script>
     <script src='https://recruitee.com/assets/widget.js' type='text/javascript'></script>
     <script type='text/javascript' charset='utf-8'>

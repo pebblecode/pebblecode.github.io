@@ -2,7 +2,12 @@
 // HOME
 //===============================================================================
 // Hero
-.hero-container-home {
+.home .hero-container {
+  background-image: url(../img/tile-white.png);
+  background-repeat: repeat-x;
+  background-position: bottom;
+  background-size: 400px;
+  
   .hero-title {
     @media screen and ( max-width: 1100px ) {
       font-size: $tera - 10px;
@@ -114,13 +119,30 @@
 .feat-content-img {
   z-index: 2;
   height: 540px;
-  background: url(../img/services/services-featured.png) no-repeat center left;
-  background-size: auto 540px;
   right: 0;
-  bottom: -60px;
+  bottom: -70px;
   position: absolute;
+  overflow: hidden;
+
+  img {
+    position: absolute;
+    max-height: 100%;
+  }
 
   @media screen and ( max-width: $medium + 100px ) {
     display: none;
   }
+}
+
+.feat-content-img-ipad {
+  left: 60px;
+  bottom: 0;
+  min-height: 100%;
+  max-width: none;
+}
+
+.feat-content-img-iphone {
+  left: -20px;
+  top: -30px;
+  max-width: 340px;
 }
