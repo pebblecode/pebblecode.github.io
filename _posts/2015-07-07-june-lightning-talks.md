@@ -1,7 +1,6 @@
 ---
 layout: post
 title:  June Lightning Talks
-date:   2015-07-07 11:20:20
 author: Jonny Li
 categories: lightning talks
 ---
