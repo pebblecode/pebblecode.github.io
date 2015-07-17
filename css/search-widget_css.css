@@ -112,3 +112,15 @@
 #cancerresearch-search-widget .cruksearchwidget-search-options {
         display: inline-block;
 }
+
+#cancerresearch-search-widget input[type="checkbox"] {
+        -webkit-appearance: checkbox;
+}  
+
+#cancerresearch-search-widget input[type="submit"] {
+        -webkit-appearance: submit;
+}  
+
+#cancerresearch-search-widget input[type="text"] {
+        -webkit-appearance: text;
+}
