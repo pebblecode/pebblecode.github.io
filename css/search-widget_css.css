@@ -1,4 +1,4 @@
-.cruksearchwidget-pane {
+#cancerresearch-search-widget .cruksearchwidget-pane {
         display: block;
         color: #333333;
         font-family: "Arial", sans-serif;
@@ -12,7 +12,7 @@
         position: relative;
 }
 
-.cruksearchwidget-pane-title {
+#cancerresearch-search-widget .cruksearchwidget-pane-title {
         line-height: 1.4em;
         font-family: "MuseoSans-700","Arial","Helvetica",sans-serif;
         font-weight: bold;
@@ -62,28 +62,28 @@
         border: 0;
 }
 
-.cruksearchwidget-fieldset-wrapper .cruksearchwidget-fieldset-description {
+#cancerresearch-search-widget .cruksearchwidget-fieldset-wrapper #cancerresearch-search-widget .cruksearchwidget-fieldset-description {
         float: left;
 }
 
-.cruksearchwidget-form-checkboxes {
+#cancerresearch-search-widget .cruksearchwidget-form-checkboxes {
         float: left;
         padding-left: 20px;
         margin-top: -9px;
 }
 
-.cruksearchwidget-form-checkboxes div {
+#cancerresearch-search-widget .cruksearchwidget-form-checkboxes div {
         width: 100%;
 }
 
-.cruksearchwidget-form-checkboxes div input {
+#cancerresearch-search-widget .cruksearchwidget-form-checkboxes div input {
         margin: 15px 0 0;
         float: left;
         clear: left;
         padding: 0;
 }
 
-.cruksearchwidget-form-checkboxes div label {
+#cancerresearch-search-widget .cruksearchwidget-form-checkboxes div label {
         width: auto;
         padding: 10px 0 0 5px;
         display: inline;
@@ -91,7 +91,7 @@
         float: left;
 }
 
-.cruksearchwidget-result-button {
+#cancerresearch-search-widget .cruksearchwidget-result-button {
         width: 30%;
         display: inline-block;
         padding: 9px;
@@ -109,6 +109,6 @@
         min-width: 150px;
 }
 
-.cruksearchwidget-search-options {
+#cancerresearch-search-widget .cruksearchwidget-search-options {
         display: inline-block;
 }
