@@ -112,3 +112,4 @@ I’ll leave you with this:
 
 > “You can have everything in life you want, if you will just help enough other people get what they want.” - Zig Ziglar
 
+Photos by Ray Crundwell http://www.raycrundwell.com/
