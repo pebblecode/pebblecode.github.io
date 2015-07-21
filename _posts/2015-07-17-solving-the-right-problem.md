@@ -5,7 +5,7 @@ author: Jonny Li
 categories: Workshop
 ---
 
-### I was recently invited to facilitate a 3DS (3 Day Startup) event for students at Queen Mary University. A 3 day event for students to learn how to find out what it is people want to may money for. 
+### I was recently invited to facilitate a 3DS (3 Day Startup) event for students at Queen Mary University. A 3 day event for students to learn how to find out what it is people want to pay money for. 
 
 ![3DS](/img/posts/2015-07-17-solving-the-right-problem/3ds.jpg)
 
