@@ -11,7 +11,7 @@ categories: Workshop
 
 It’s a little different from Startup Weekend where the end goal is to have a working prototype they can show off to a panelist of judges. 
 
-It’s closer to the lean startup machine model where people focus on validating assumptions about their customers, customers problems, and the kind of solutions should be built. 
+It’s closer to the lean startup machine model where people focus on validating assumptions about their customers, customers problems, and the kind of solutions that should be built. 
 
 By the end of the event, students who have attended this event, will have learnt how to identify the real problems they need to be solving through a process of getting customer feedback, and rapidly prototyped ideas.
 
@@ -50,7 +50,7 @@ A narrow group of people that will buy or use your product
 The top 3 problems the customers is facing today and how they are currently solving the problem.
 
 #### Value proposition
-Single, clear, compelling message that turns an unaware visitor into an interested posted.
+Single, clear, compelling message that turns an unaware visitor into an interested prospect.
 
 #### Solution
 Defining the MVP (minimal viable product), the minimal set of functionality to solve each problem of the customers
@@ -79,7 +79,7 @@ What we are looking for are patterns in their responses. We don’t sell our ide
 ## The solutions interview
 Hopefully at this point, your hypothesis has either gone through several iterations or remained the same. This in turn will likely affect your solution. 
 
-In the same way the customer interview was used to validate your problem; the solutions interview is for validating your solution. Points to look out for when talking about your solution:
+In the same way the customer interview was used to validate your problem, the solutions interview is for validating your solution. Points to look out for when talking about your solution:
 
 - Does it solve their problem?
 - How much is it work to them?
@@ -98,7 +98,7 @@ The customer and solutions interview process is very much like the build, measur
 
 Over the course of the 3 days, the students have come to experience the sense of dread when I approach them. They  realised quickly that I will ask them the same question over and over again:
 
-“Whats they problem you are trying to solve” 
+“What's they problem you are trying to solve” 
 
 ![Tripeezy](/img/posts/2015-07-17-solving-the-right-problem/Tripeezy.jpg)
 
