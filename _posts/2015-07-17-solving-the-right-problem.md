@@ -9,7 +9,7 @@ categories: Workshop
 
 ![3DS](/img/posts/2015-07-17-solving-the-right-problem/3ds.jpg)
 
-It’s a little different from Startup Weekend where the end goal is to have a working prototype they can show off when presenting to a panelist of judges. 
+It’s a little different from Startup Weekend where the end goal is to have a working prototype they can show off to a panelist of judges. 
 
 It’s closer to the lean startup machine model where people focus on validating assumptions about their customers, customers problems, and the kind of solutions should be built. 
 
@@ -65,6 +65,7 @@ The details added into the lean canvas are not some random exercise that we do, 
 > “Customers don’t care about your solution. They care about their problems.” - Dave McClure, 500Startups
 
 During the customer interview, there are a few key points that to look out for: 
+
 - The customers pain point. Look for big, emotional pains. People don’t take action until it really hurts.
 - What doesn’t work with alternatives? Stuff they’ve already tried to solve their problem. 
 - How big is their problem? 
@@ -79,6 +80,7 @@ What we are looking for are patterns in their responses. We don’t sell our ide
 Hopefully at this point, your hypothesis has either gone through several iterations or remained the same. This in turn will likely affect your solution. 
 
 In the same way the customer interview was used to validate your problem; the solutions interview is for validating your solution. Points to look out for when talking about your solution:
+
 - Does it solve their problem?
 - How much is it work to them?
 - Is it a must-have?
@@ -100,7 +102,7 @@ Over the course of the 3 days, the students have come to experience the sense of
 
 ![Tripeezy](/img/posts/2015-07-17-solving-the-right-problem/Tripeezy.jpg)
 
-The students that participated in the 3 days of the workshop, did an amazing job. Some ideas evolved, while some remained mostly unchanged from first days they were pitched. By the end of the event, the students finally understood the importance of solving the right problem. The fact that Jonny was being mean and asking horrible questions seemed cruel at the time but it was worth it when the judges during the final presentations asked the exact same questions.
+The students that participated in the 3 day workshop did an amazing job. Some ideas evolved, while some remained mostly unchanged from first days they were pitched. By the end of the event, the students understood the importance of solving the right problem. The fact that Jonny was being mean and asking horrible questions seemed cruel at the time but it was worth it when the judges asked the exact same questions.
 
 ![Final Day](/img/posts/2015-07-17-solving-the-right-problem/final-day.jpg)
 
