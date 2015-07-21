@@ -29,14 +29,14 @@ layout: cruk-search-widget
           var widget = document.createElement('script');
           widget.type = 'text/javascript';
           widget.async = true;
-          widget.src = 'http://localhost:4000/js/search-widget.js';
+          widget.src = '../js/search-widget.js';
           var embedder = document.getElementById('cancerresearch-search-widget');
           embedder.parentNode.insertBefore(widget, embedder);
 
           var stylingRef = document.createElement('link');
           stylingRef.setAttribute('rel', 'stylesheet');
           stylingRef.setAttribute('type', 'text/css');
-          stylingRef.setAttribute('href', 'http://localhost:4000/css/search-widget_css.css');
+          stylingRef.setAttribute('href', '../css/search-widget_css.css');
           document.getElementsByTagName('head')[0].appendChild(stylingRef); }
 
          if (window.attachEvent)
