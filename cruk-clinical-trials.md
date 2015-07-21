@@ -6,7 +6,7 @@ colour: pink
 
 ## Hero Content
 hero-title: CRUK Clinical Trials Search Widget
-hero-subtitle: Building a search widget for CRUK to share with 3rd party websites giving people easy access to clinical trials information. 
+hero-subtitle: Building a search widget for CRUK to share with 3rd party websites giving people easy access to their clinical trials summary information. 
 
 ---
 
