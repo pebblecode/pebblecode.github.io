@@ -1,9 +1,9 @@
-—
+---
 layout: post
 title:  July Lightning Talks
 author: Jonny Li
 categories: lightning talks
-—
+---
 In July’s lighting talk, Peter our Technology Lead and future tech enthusiast shows us how folks are currently hacking their brain to learn new skills more quickly. 
 
 In this talk, Peter will talk about:
@@ -13,7 +13,7 @@ In this talk, Peter will talk about:
 
 <div class=“video”><iframe width=“532” height=“400” src=“//www.youtube.com/embed/TeoBG3onbjs” frameborder=“0” allowfullscreen=“allowfullscreen”></iframe></div>
 
-—
+---
 
 Jaz loves Scotch, and he’d like to share that love with others.
 
