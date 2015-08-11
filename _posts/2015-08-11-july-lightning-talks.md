@@ -11,7 +11,7 @@ In this talk, Peter will talk about:
 - Ways to hack your brain 
 - Using virtual reality as a training tool
 
-<div class=“video”><iframe width=“532” height=“400” src=“//www.youtube.com/embed/TeoBG3onbjs” frameborder=“0” allowfullscreen=“allowfullscreen”></iframe></div>
+<div class="video"><iframe width="532" height="400" src="//www.youtube.com/embed/TeoBG3onbjs" frameborder="0" allowfullscreen="allowfullscreen"></iframe></div>
 
 ---
 
@@ -23,4 +23,4 @@ In this beginners guide to Whisky, Jaz talks about:
 - How do you know what you might like
 - What you should try if you have already tried one or two others
 
-<div class=“video”><iframe width=“560” height=“315” src=“https://www.youtube.com/embed/X1AikZOMPDE” frameborder=“0” allowfullscreen=“allowfullscreen”></iframe></div>
+<div class="video"><iframe width="560" height="315" src="https://www.youtube.com/embed/X1AikZOMPDE" frameborder="0" allowfullscreen="allowfullscreen"></iframe></div>
