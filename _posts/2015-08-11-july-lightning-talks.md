@@ -7,6 +7,7 @@ categories: lightning talks
 In July’s lighting talk, Peter our Technology Lead and future tech enthusiast shows us how folks are currently hacking their brain to learn new skills more quickly. 
 
 In this talk, Peter will talk about:
+
 - How your brain works
 - Ways to hack your brain 
 - Using virtual reality as a training tool
@@ -18,6 +19,7 @@ In this talk, Peter will talk about:
 Jaz loves Scotch, and he’d like to share that love with others.
 
 In this beginners guide to Whisky, Jaz talks about:
+
 - How it’s made
 - How do you choose what you want
 - How do you know what you might like
