@@ -3,6 +3,7 @@ layout: post
 title:  Solving Big Data for Humans
 author: Peter O'Shaughnessy
 categories: data
+featured: true
 ---
 
 Modern computing and the Internet are causing a data explosion; how can we process it all? That’s the question at the 
