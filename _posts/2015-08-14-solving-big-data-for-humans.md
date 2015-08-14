@@ -6,9 +6,10 @@ categories: data
 featured: true
 ---
 
-Modern computing and the Internet are causing a data explosion; how can we process it all? That’s the question at the 
+**Modern computing and the Internet are causing a data explosion; how can we process it all? That’s the question at the 
 heart of the ‘Big Data’ theme; a concept especially familiar for the FinTech world, with its dependence on numbers, 
-trends and forecasts. However, most discussions about this seem to miss a vital element: *humans*.
+trends and forecasts. 
+However, most discussions about this seem to miss a vital element: *humans*.**
 
 Yes, we can throw more computing power at the problem. We can use better databases and smarter systems; computers can 
 crunch the numbers for us and spit out the results. We can even use Artificial Intelligence and have computers suggest 
@@ -27,10 +28,13 @@ us better understand the complex world around us.
 
 Meanwhile, Virtual Reality may be largely seen as an entertainment medium, but it has the potential to transform 
 complex, abstract content into vivid, immersive and easily consumable experiences. Virtual worlds can make the best use 
-of - as neuroscientist Beau Cronin describes it - *“the quotidian spatiotemporal genius of the human brain”*. In other 
-words, there’s nothing more natural for us humans than inhabiting a 4-Dimensional world. In this way, VR could turn out 
-to be a brilliant medium for data visualisation, helping us to interpret large amounts of data more intuitively and 
-efficiently.
+of - as neuroscientist Beau Cronin describes it:
+
+> “The quotidian spatiotemporal genius of the human brain” 
+
+In other words, there’s nothing more natural for us humans than inhabiting a 4-Dimensional world. In this way, VR could 
+turn out to be a brilliant medium for data visualisation, helping us to interpret large amounts of data more intuitively 
+and efficiently.
 
 It’s early days, but companies are already starting to explore this space. Last year, an investment bank launched a 
 VR app, [StockCity](https://www.fidelitylabs.com/content/stockcity-oculus-rift), for customers to explore their 
