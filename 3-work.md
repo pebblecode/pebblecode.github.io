@@ -7,13 +7,14 @@ colour: blue
 
 ## Hero Content
 hero-title:
-hero-subtitle: We deliver awesome products for Pharma, Gaming, Finance, Media & Travel, for now, but we are not shy of taking on something different… in fact, we thrive on it.
+hero-subtitle: We work with our clients to embed a culture of technical innovation, continuous improvement and rapid delivery.
 hero-btn:
 hero-btn-url:
 
-## Main background image 1
-cover-img-1: features/wshop.jpg
 
-## Main background image 2
-cover-img-2: features/hardware.jpg
+
 ---
+
+
+
+Using iterative approaches, shortening feedback loops and identifying success metrics at each step, we provide critical advice on how to supercharge technology delivery and generate novel solutions to business problems.

@@ -1,6 +1,6 @@
 ---
 layout: home
-title: 
+title:
 permalink: /
 
 ## Hero Content

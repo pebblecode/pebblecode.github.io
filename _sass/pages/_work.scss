@@ -11,6 +11,11 @@
   background-color: white;
 }
 
+.project-item {
+  padding-top:20px;
+  padding-bottom:20px;
+}
+
 .project-title {
   padding-top: 15px;
   margin: 0;
@@ -50,7 +55,7 @@
   }
 
   p {
-    font-size: $gamma;
+    font-size: $delta;
     line-height: 1.4;
 
     @media screen and ( max-width: $medium ) {
@@ -93,14 +98,74 @@
   }
 }
 
-.project-item-img-feat {
-  margin-bottom: 30px;
-  max-width: 50%;
+.project-item-text {
 
-  @media screen and ( max-width: $medium ) {
-    margin-bottom: 20px;
+  @media screen and ( max-width: $medium + 150px ) {
+    float: none;
+    display: block;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+}
+
+
+@media screen and ( max-width: $medium + 150px ) {
+  .col-1-2.project-item-img {
+  width:66.66%;
   }
 }
+
+@media screen and ( max-width: $medium) {
+  .col-1-2.project-item-img {
+  width:100%;
+  }
+}
+
+.project-item-img {
+  position: relative;
+  z-index: 1;
+
+  @media screen and ( max-width: $medium + 150px ) {
+    float: none;
+    display: block;
+    max-width: 100%;
+    padding-top: 30px;
+  }
+
+}
+
+.projects-item-inner {
+  @media screen and ( max-width: $medium + 150px ) {
+    position: relative;
+    top: auto;
+    left: auto;
+    transform: none;
+    -ms-transform: none;
+    -webkit-transform: none;
+    padding-top: 175px;
+  }
+
+  @media screen and ( max-width: $small) {
+  padding-top: 250px
+  }
+}
+
+@media screen and ( max-width: $medium + 150px ) {
+  .project-container [class*='col-'] {
+    width: 100%;
+    float: none;
+    }
+}
+
+// @media (min-width: 525px) and (max-width: $medium + 150px){
+//   .project-container img {
+//     width: 60%;
+//   }
+// }
+
 
 .project-item-aside {
   position: relative;
@@ -114,9 +179,9 @@
     top: 0;
     background-color: rgba(black, 0.1);
     z-index: -1;
-    transform: rotate(0.3deg) skew(-0.6deg);  
-    -ms-transform: rotate(0.3deg) skew(-0.6deg);  
-    -webkit-transform: rotate(0.3deg) skew(-0.6deg);  
+    transform: rotate(0.3deg) skew(-0.6deg);
+    -ms-transform: rotate(0.3deg) skew(-0.6deg);
+    -webkit-transform: rotate(0.3deg) skew(-0.6deg);
   }
 
   @media screen and ( max-width: $medium ) {
@@ -147,6 +212,471 @@
     margin-bottom: 20px;
   }
 }
+
+
+.project-aqua {
+  .project-item-inner {
+    background-color: $aqua;
+
+    &:after {
+      background-color:$pink;
+    }
+  }
+}
+
+.project-last{
+    .project-item-inner {
+      background-image: url(../img/tile-white.png);
+      background-repeat: repeat-x;
+      background-position: bottom;
+      background-size: 500px;
+      position: relative;
+    }
+}
+
+.project-white {
+  .project-item-inner {
+    background-color: white;
+
+    &:after {
+      background-color:$aqua;
+    }
+
+  }
+}
+
+.project-blue {
+  .project-item-inner {
+    background-color: $blue;
+
+  }
+    & + .photo-container:after {
+    background-color:$green;
+  }
+
+  .photo-inner:after {
+    background-color: $blue;
+  }
+}
+
+.project-pink {
+  .project-item-inner {
+    background-color: $pink;
+
+    &:after {
+      background-color:$purple;
+    }
+   }
+}
+
+.project-green {
+  .project-item-inner {
+    background-color: $green;
+
+    &:after {
+      background-color:$blue;
+    }
+  }
+}
+
+.project-orange {
+  .project-item-inner {
+    background-color: $orange;
+
+    &:after {
+      background-color:$green;
+    }
+  }
+}
+
+.project-purple {
+  .project-item-inner {
+    background-color: $purple;
+
+    &:after {
+      background-color:$orange;
+    }
+  }
+}
+
+
+.gif-photo-container {
+  background-color: $aqua;
+
+  &:before {
+    //photo shadows
+    //background: transparent;
+    transform: rotate(1.2deg) scale(1.2);
+    -ms-transform: rotate(1.2deg) scale(1.2);
+    -webkit-transform: rotate(1.2deg) scale(1.2);
+  }
+
+  &:after {
+    background-color: $aqua;
+    transform: rotate(0.8deg) scale(1.2);
+    -ms-transform: rotate(0.8deg) scale(1.2);
+    -webkit-transform: rotate(0.8deg) scale(1.2);
+  }
+
+  .photo-inner{
+
+    height: 400px;
+    @media screen and ( max-width: $medium ) {
+    // height: 261px;
+    }
+
+    &:after {
+      background-color: $aqua;
+    }
+    &:before {
+      //photo shadows
+      //background: transparent;
+    }
+  }
+}
+
+
+video {
+  width: 100%    !important;
+  height: auto   !important;
+}
+
+.project-item.photo, .project-item-inner.photo {
+  padding-bottom:0px;
+}
+
+
+.green-top{
+    background-color: $green;
+      .photo-inner:after {
+      background-color: $green;
+    }
+}
+
+.green-top.photo-container:after {
+    background-color: $green;
+  }
+
+  .purple-top{
+    background-color:$purple;
+      .photo-inner:after {
+      background-color: $purple;
+    }
+}
+
+.purple-top.photo-container:after {
+    background-color: $purple;
+  }
+
+
+.photos-container-work {
+  overflow: hidden;
+  position: relative;
+  height: 224px;
+
+  @media screen and ( min-width: 1500px ) {
+    height: 500px;
+  }
+  @media screen and ( min-width: 1800px ) {
+    height: 600px;
+  }
+
+  @media screen and ( max-width: $medium ) {
+    margin-top: 0;
+    margin-bottom: 0;
+    height: 350px;
+  }
+
+  @media screen and ( max-width: $small ) {
+    height: 300px;
+  }
+
+  &:before {
+    @include shadow-pseudo;
+    bottom: 2px;
+    height: 20px;
+    z-index: 1;
+    background-color: rgba(black, 0.15);
+    transform: rotate(-1.2deg) scale(1.2);
+    -ms-transform: rotate(-1.2deg) scale(1.2);
+    -webkit-transform: rotate(-1.2deg) scale(1.2);
+  }
+
+  &:after {
+    @include shadow-pseudo;
+    bottom: -40px;
+    height: 50px;
+    z-index: 2;
+    background-color: white;
+    transform: rotate(-0.8deg) scale(1.2);
+    -ms-transform: rotate(-0.8deg) scale(1.2);
+    -webkit-transform: rotate(-0.8deg) scale(1.2);
+  }
+}
+
+.photos-grid-work {
+  position: relative;
+  width: 120%;
+  width: calc(100% + 220px);
+
+  @media screen and ( min-width: 1500px ) {
+    width: calc(100% + 280px);
+  }
+
+  @media screen and ( min-width: 1800px ) {
+    width: calc(100% + 350px);
+  }
+
+  @media screen and ( max-width: $medium ) {
+    width: calc(100% + 150px);
+  }
+
+  @media screen and ( max-width: $small ) {
+    width: calc(100% + 100px);
+  }
+
+  &:before {
+    transform: rotate(1.6deg) scale(1.2);
+    -ms-transform: rotate(1.6deg) scale(1.2);
+    -webkit-transform: rotate(1.6deg) scale(1.2);
+  }
+
+  &:after {
+    @include shadow-pseudo;
+    top: -25px;
+    height: 50px;
+    background-color: $aqua;
+    z-index: 2;
+    transform: rotate(1deg) scale(1.2);
+    -ms-transform: rotate(1deg) scale(1.2);
+    -webkit-transform: rotate(1deg) scale(1.2);
+  }
+}
+
+.photos-container-work2 {
+  overflow: hidden;
+  position: relative;
+  height: 224px;
+
+  @media screen and ( min-width: 1500px ) {
+    height: 500px;
+  }
+  @media screen and ( min-width: 1800px ) {
+    height: 600px;
+  }
+
+  @media screen and ( max-width: $medium ) {
+    margin-top: 0;
+    margin-bottom: 0;
+    height: 350px;
+  }
+
+  @media screen and ( max-width: $small ) {
+    height: 300px;
+  }
+
+  &:before {
+    @include shadow-pseudo;
+    bottom: 2px;
+    height: 20px;
+    z-index: 1;
+    background-color: rgba(black, 0.15);
+    transform: rotate(-1.2deg) scale(1.2);
+    -ms-transform: rotate(-1.2deg) scale(1.2);
+    -webkit-transform: rotate(-1.2deg) scale(1.2);
+  }
+
+  &:after {
+    @include shadow-pseudo;
+    bottom: -40px;
+    height: 50px;
+    z-index: 2;
+    background-color: white;
+    transform: rotate(-0.8deg) scale(1.2);
+    -ms-transform: rotate(-0.8deg) scale(1.2);
+    -webkit-transform: rotate(-0.8deg) scale(1.2);
+  }
+}
+
+.photos-grid-work2 {
+  position: relative;
+  width: 120%;
+  width: calc(100% + 220px);
+
+  @media screen and ( min-width: 1500px ) {
+    width: calc(100% + 280px);
+  }
+
+  @media screen and ( min-width: 1800px ) {
+    width: calc(100% + 350px);
+  }
+
+  @media screen and ( max-width: $medium ) {
+    width: calc(100% + 150px);
+  }
+
+  @media screen and ( max-width: $small ) {
+    width: calc(100% + 100px);
+  }
+
+  &:before {
+    transform: rotate(1.6deg) scale(1.2);
+    -ms-transform: rotate(1.6deg) scale(1.2);
+    -webkit-transform: rotate(1.6deg) scale(1.2);
+  }
+
+  &:after {
+    @include shadow-pseudo;
+    top: -25px;
+    height: 50px;
+    background-color: $purple;
+    z-index: 2;
+    transform: rotate(1deg) scale(1.2);
+    -ms-transform: rotate(1deg) scale(1.2);
+    -webkit-transform: rotate(1deg) scale(1.2);
+  }
+}
+
+
+
+.quote {
+  position: relative;
+  display: block;
+  padding: 40px;
+  margin-bottom: 20px;
+  color: red;
+
+  @media screen and ( max-width: $medium + 100px ) {
+    margin-bottom: 15px;
+    padding: 30px 25px;
+    border: 5px solid rgba(white, 0.2);
+  }
+
+  @media screen and ( min-width: $medium + 100px ) {
+    &:after {
+      @include shadow-pseudo;
+      top: 0;
+      border: 5px solid rgba(white, 0.2);
+      height: 100%;
+      z-index: -1;
+    }
+  }
+}
+
+
+.photos-item-gif {
+  padding: 0;
+  margin-right:35px;
+  width: 555px;
+  height: 420px;
+  position: relative;
+  overflow: hidden;
+  float: left;
+}
+
+
+.project-img-small {
+  width: 60%;
+
+  @media screen and ( max-width: $medium + 150px ) {
+    width: 35%;
+  }
+}
+
+.project-img-large {
+  width: 90%;
+
+  @media (min-width: $medium) and (max-width: $medium + 150px){
+    width: 70%;
+  }
+  @media screen and ( max-width: $small ) {
+    width: 100%;
+  }
+}
+
+.project-img2 {
+  width: 30%;
+
+  @media screen and ( max-width: $medium + 150px ) {
+    width: 20%;
+  }
+
+  @media screen and ( max-width: $small) {
+    width:30%;
+  }
+}
+
+.project-img3 {
+  width: 40%;
+
+  @media screen and ( max-width: $medium + 150px ) {
+    width: 30%;
+  }
+
+  @media screen and ( max-width: $small) {
+    width:40%;
+  }
+}
+
+.alignme
+{
+    display:inline-block;
+    float:none;
+    margin-right:-4px;
+    vertical-align:middle;
+}
+
+.nucleus-mobile {
+  width:20%;
+  position: absolute;
+  bottom: 0;
+  left: 465px;
+
+  @media (min-width: 1000px) and (max-width: 1087px){
+    left: 422px;
+  }
+
+  @media (min-width: 928px) and (max-width: 1000px){
+    left: 386px;
+  }
+
+  @media (min-width: 800px) and (max-width: 928px){
+    left: 320px;
+  }
+
+  @media (min-width: 500px) and (max-width: 700px){
+    left: 359px;
+  }
+
+  @media (min-width: 535px) and (max-width: 519px){
+    left: 350px;
+  }
+
+  @media (min-width: 0px) and (max-width: 535px){
+    left: 233px;
+  }
+
+}
+
+.project-container img .nucleus-mobile {
+
+  @media screen and ( max-width: $medium) {
+    width:20%;
+  }
+}
+
+// CAN GO IF CASE STUDIES ISN'T STAYING
+
+
+.project-item-img-feat {
+  margin-bottom: 30px;
+  max-width: 50%;
+
+  @media screen and ( max-width: $medium ) {
+    margin-bottom: 20px;
+  }
+}
+
 
 .project-azsearch {
   .project-title {
