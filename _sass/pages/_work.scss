@@ -149,7 +149,15 @@
   }
 
   @media screen and ( max-width: $small) {
-  padding-top: 250px
+  padding-top: 230px
+  }
+
+  @media (min-width: 312px) and (max-width: 400px){
+  padding-top: 280px
+  }
+
+  @media (min-width: 0px) and (max-width: 312px){
+  padding-top: 380px
   }
 }
 
@@ -305,7 +313,7 @@
 
   &:before {
     //photo shadows
-    //background: transparent;
+    background: transparent;
     transform: rotate(1.2deg) scale(1.2);
     -ms-transform: rotate(1.2deg) scale(1.2);
     -webkit-transform: rotate(1.2deg) scale(1.2);
@@ -316,6 +324,10 @@
     transform: rotate(0.8deg) scale(1.2);
     -ms-transform: rotate(0.8deg) scale(1.2);
     -webkit-transform: rotate(0.8deg) scale(1.2);
+  }
+
+  @media screen and (max-width: 650px) {
+      height: 240px;
   }
 
   .photo-inner{
@@ -330,7 +342,7 @@
     }
     &:before {
       //photo shadows
-      //background: transparent;
+      background: transparent;
     }
   }
 }
@@ -576,10 +588,13 @@ video {
 
 
 .project-img-small {
-  width: 60%;
+  width: 80%;
 
   @media screen and ( max-width: $medium + 150px ) {
-    width: 35%;
+    width: 45%;
+  }
+  @media screen and ( max-width: $small ) {
+    width: 80%;
   }
 }
 
@@ -626,7 +641,12 @@ video {
     vertical-align:middle;
 }
 
-.nucleus-mobile {
+.intranet-desktop {
+  width:80%;
+}
+
+
+.intranet-mobile {
   width:20%;
   position: absolute;
   bottom: 0;
@@ -652,17 +672,32 @@ video {
     left: 350px;
   }
 
-  @media (min-width: 0px) and (max-width: 535px){
+  @media (min-width: 366px) and (max-width: 535px){
     left: 233px;
+  }
+
+  @media (min-width: 0px) and (max-width: 366px){
+    left: 191px;
   }
 
 }
 
-.project-container img .nucleus-mobile {
+.project-container img .intranet-mobile {
 
   @media screen and ( max-width: $medium) {
     width:20%;
   }
+}
+
+
+.photo-inner.mobile {
+
+  display:none;
+
+}
+
+.ink {
+  color: $ink;
 }
 
 // CAN GO IF CASE STUDIES ISN'T STAYING

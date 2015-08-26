@@ -23,23 +23,25 @@
     <!-- /.project-container -->
 
    <section class="photo-container gif-photo-container purple-top">
-      <!-- <div class="photo-inner" style="background-image: url(/img/projects/ci-portal-2.png)"></div> -->
-      <div class="photo-inner">
-        <video autoplay loop>
-          <source src="/img/projects/pharma-intelligence.mp4" type="video/mp4">
-          <source src="/img/projects/pharma-intelligence.ogv" type="video/ogg">
-          <img src="/img/projects/ci-portal-2.png">
+      <!-- <div class="photo-inner" style="background-image: url(/img/projects/pharma-int.png)"></div> -->
+      <div id="video1" class="photo-inner tester">
+        <video autoplay muted loop>
+          <source src="/img/projects/pharma-int.mp4" type="video/mp4" />
+          <source src="/img/projects/pharma-int.webm" type="video/webm" />
+          <source src="/img/projects/pharma-int.ogv" type="video/ogg" />
+          <img src="/img/projects/pharma-int.png">
         </video>
       </div>
+      <div id="gif1" class="photo-inner mobile" style="background-image: url(/img/projects/pharma-int-smlr.gif)"></div>
     </section>
 
     <section class="project-container project-pink">
       <div class="project-item-container">
         <div class="project-item-inner">
           <div class="project-item projects-item-inner grid">
-            <div style="padding-left:0px;" class="col-2-3 project-item-img alignme">
-              <img style="width:80%" src="{{ site.baseurl }}/img/projects/nucleus-laptop.gif"  data-sr="enter left move 300px, vF 0.2, wait 0.2s" alt="">
-              <img class="nucleus-mobile" src="{{ site.baseurl }}/img/projects/nucleus-mobile.gif" data-sr="enter left move 300px, vF 0.2" alt="">
+            <div class="col-2-3 project-item-img alignme">
+              <img class="intranet-desktop" src="{{ site.baseurl }}/img/projects/intranet-laptop.gif"  data-sr="enter left move 300px, vF 0.2, wait 0.2s" alt="The mother of all intranets">
+              <img class="intranet-mobile" src="{{ site.baseurl }}/img/projects/intranet-mobile.gif" data-sr="enter left move 300px, vF 0.2" alt="The mother of all intranets">
             </div>
             <div class="col-1-3 project-item-text alignme">
               <h3 class="project-item-title">The mother of all intranets</h3>
@@ -67,23 +69,22 @@
 
     <section class="photo-container gif-photo-container">
       <!-- <div class="photo-inner" style="background-image: url(/img/projects/pearson-app-1.gif)"></div> -->
-      <div class="photo-inner">
-        <video autoplay loop>
-          <source src="/img/projects/self-directed-learning.mp4" type="video/mp4">
-          <source src="/img/projects/self-directed-learning.ogv" type="video/ogg">
-          <img src="/img/projects/pearson-app-1.gif">
+      <div id="video2" class="photo-inner tester">
+        <video autoplay muted loop>
+          <source src="/img/projects/self-directed-learning.mp4" type="video/mp4" />
+            <source src="/img/projects/self-directed-learning.webm" type="video/webm" />
+          <source src="/img/projects/self-directed-learning.ogv" type="video/ogg" />
+          <img src="/img/projects/self-directed-learning.png">
         </video>
       </div>
+      <div id="gif2" class="photo-inner mobile" style="background-image: url(/img/projects/self-directed-learning-smlr.gif)"></div>
     </section>
-
-
-
 
     <section class="project-container project-white">
       <div class="project-item-container">
         <div class="project-item-inner">
           <div class="content-container grid">
-            <article style="color:#6b7482;" class="content col-1-1 quote">
+            <article class="content col-1-1 ink quote">
               {{content}}
             </article>
           </div>
@@ -91,14 +92,6 @@
       </div>
     </section>
     <!-- /.content-container -->
-<!-- <section class="project-container project-aqua">
- <div class="project-item-inner">
-            <aside class="aside-container ppl-join-container content" data-sr="wait 0.1s, scale up 20%, vF 0">
-          <p style="color:#6b7482;">{{content}}</p>
-
-        </aside>
-        </div>
-        </section> -->
 
     <section class="project-container project-blue">
       <div class="project-item-container">
@@ -109,7 +102,7 @@
               <p>Using the latest cutting edge Bluetooth Low Energy technology to create a seamless locker delivery experience. By loading the smart stuff onto mobile devices, smart lockers are now 90% cheaper than before.</p>
             </div>
             <div class="col-1-3 alignme">
-              <img class="project-img-small" src="{{ site.baseurl }}/img/projects/by-box.png" data-sr="enter right move 100px, vF 0.2" alt="">
+              <img class="project-img-small" src="{{ site.baseurl }}/img/projects/by-box.png" data-sr="enter right move 100px, vF 0.2" alt="By Box">
             </div>
           </div>
         </div>
@@ -124,7 +117,7 @@
 
             <div class="col-1-1">
               <h3 class="project-item-title">Enterprise Mobile Directory</h3>
-              <p>A consumer-grade native application allowing users to search 60,000 people, add notes and bookmarks. The go-to directory for an enterprise transitioning to mobile by default.</p>
+              <p>A consumer-grade native application allowing users to search 60,000 people, add notes and bookmarks. The go-t o directory for an enterprise transitioning to mobile by default.</p>
             </div>
 
           </div>
@@ -134,13 +127,15 @@
     <!-- /.project-container -->
 
     <section class="photo-container gif-photo-container green-top">
-      <div class="photo-inner">
-        <video autoplay loop>
-          <source src="/img/projects/enterprise-mobile-directory.mp4" type="video/mp4">
-          <source src="/img/projects/enterprise-mobile-directory.ogv" type="video/ogg">
-          <img src="/img/projects/people-app-1.gif">
+      <div id="video3" class="photo-inner tester">
+        <video autoplay muted loop>
+          <source src="/img/projects/mobile-dir.mp4" type="video/mp4">
+          <source src="/img/projects/mobile-dir.webm" type="video/webm" />
+          <source src="/img/projects/mobile-dir.ogv" type="video/ogg">
+          <img src="/img/projects/mobile-dir.png">
         </video>
       </div>
+      <div id="gif3" class="photo-inner mobile" style="background-image: url(/img/projects/mobile-dir-smlr.gif)"></div>
     </section>
 
     <section class="project-container project-orange">
@@ -152,7 +147,7 @@
               <p>A tablet-based quality system allows a national rail company to make a quantum leap in the quality of the experience of passengers in stations and on their trains.</p>
             </div>
             <div class="col-1-2 alignme">
-              <img class="project-img-large" src="{{ site.baseurl }}/img/projects/c2c.gif" data-sr="enter right move 100px, vF 0.2" alt="c2c">
+              <img class="project-img-large" src="{{ site.baseurl }}/img/projects/rail-custom-exp.gif" data-sr="enter right move 100px, vF 0.2" alt="Rail Travel Customer Experience System">
             </div>
           </div>
         </div>
@@ -165,7 +160,7 @@
         <div class="project-item-inner">
           <div class="project-item projects-item-inner grid">
             <div class="col-1-2 project-item-img alignme">
-              <img class="project-img-large" src="{{ site.baseurl }}/img/projects/agile-hub.gif" data-sr="enter left move 200px, vF 0.2" alt="">
+              <img class="project-img-large" src="{{ site.baseurl }}/img/projects/agile-hub.gif" data-sr="enter left move 200px, vF 0.2" alt="Agile Transformation Hub">
             </div>
             <div class="col-1-2 project-item-text alignme">
               <h3 class="project-item-title">Agile Transformation Hub</h3>
@@ -186,13 +181,13 @@
               <p>An innovative project to use web technologies to tag broadcast media content with inaudible high frequency tags. </p>
             </div>
             <div class="col-1-2 alignme">
-              <img class="project-img2" src="{{ site.baseurl }}/img/projects/audio.svg" data-sr="enter right move 100px, vF 0.2" alt="">
-              <img class="project-img3" src="{{ site.baseurl }}/img/projects/audio-tagging.gif" data-sr="enter right move 300px, vF 0.2, wait 0.2s" alt="">
+              <img class="project-img2" src="{{ site.baseurl }}/img/projects/audio.svg" data-sr="enter right move 100px, vF 0.2" alt="High Frequency Audio Tagging">
+              <img class="project-img3" src="{{ site.baseurl }}/img/projects/audio-tagging.gif" data-sr="enter right move 300px, vF 0.2, wait 0.2s" alt="High Frequency Audio Tagging">
             </div>
           </div>
           <!-- /.ppl-col -->
         <aside class="aside-container ppl-join-container" data-sr="wait 0.1s, scale up 20%, vF 0">
-          <p style="color:#6b7482;">What we do is only one part of the story; what makes all of this possible is the top notch people who make up pebble {code}.</p>
+          <p class="ink">What we do is only one part of the story; what makes all of this possible is the top notch people who make up pebble {code}.</p>
           <a href="{{ site.baseurl }}/careers" class="btn btn-primary btn-block">Join us</a>
         </aside>
         </div>
@@ -202,6 +197,7 @@
 
 
     {% include footer.html %}
+
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-2.1.1.min.js""><\/script>')</script>
