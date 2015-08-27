@@ -252,6 +252,7 @@ $ppl-bgcolor: darken($blue, 6%);
       // border-top: 0;
       height: 100%;
       z-index: 1;
+      box-shadow: 0 0 0 3px $blue;
     }
   }
 
