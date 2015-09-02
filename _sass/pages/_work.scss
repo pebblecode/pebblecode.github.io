@@ -247,7 +247,10 @@
     background-color: white;
 
     &:after {
-      background-color:$aqua;
+      background-color:white;
+    }
+    &:before {
+      background-color:white;
     }
 
   }
@@ -272,7 +275,7 @@
     background-color: $pink;
 
     &:after {
-      background-color:$purple;
+      background-color:$orange;
     }
    }
 }
@@ -292,7 +295,11 @@
     background-color: $orange;
 
     &:after {
-      background-color:$green;
+      background-color:$orange;
+    }
+
+    &:before {
+      background-color:$orange;
     }
   }
 }
@@ -308,19 +315,18 @@
 }
 
 
-.gif-photo-container {
+.work-photo-container {
   background-color: $aqua;
 
   &:before {
-    //photo shadows
-    background: transparent;
+    //photo shadows background: transparent;
     transform: rotate(1.2deg) scale(1.2);
     -ms-transform: rotate(1.2deg) scale(1.2);
     -webkit-transform: rotate(1.2deg) scale(1.2);
   }
 
   &:after {
-    background-color: $aqua;
+    background-color: white;
     transform: rotate(0.8deg) scale(1.2);
     -ms-transform: rotate(0.8deg) scale(1.2);
     -webkit-transform: rotate(0.8deg) scale(1.2);
@@ -341,8 +347,7 @@
       background-color: $aqua;
     }
     &:before {
-      //photo shadows
-      background: transparent;
+      //photo shadows background: transparent;
     }
   }
 }
@@ -353,12 +358,25 @@ video {
   height: auto   !important;
 }
 
-.project-item.photo, .project-item-inner.photo {
-  padding-bottom:0px;
+
+.pink-top {
+  .project-item-inner {
+    background-color: $pink;
+
+    &:before {
+      background-color:$pink;
+    }
+    &:after {
+      background-color:$pink;
+    }
+   }
 }
 
+.pink-top.photo-container:after {
+    background-color: $pink;
+  }
 
-.green-top{
+.green-top {
     background-color: $green;
       .photo-inner:after {
       background-color: $green;
@@ -366,7 +384,7 @@ video {
 }
 
 .green-top.photo-container:after {
-    background-color: $green;
+    background-color: $orange;
   }
 
   .purple-top{
@@ -377,7 +395,7 @@ video {
 }
 
 .purple-top.photo-container:after {
-    background-color: $purple;
+    background-color: $pink;
   }
 
 
@@ -550,11 +568,14 @@ video {
 }
 
 
-
+.project-white .project-item-inner .quote {
+  padding:0px;
+}
 .quote {
+  color: $ink;
   position: relative;
   display: block;
-  padding: 40px;
+  padding: 0px;
   margin-bottom: 20px;
   color: red;
 
@@ -610,14 +631,14 @@ video {
 }
 
 .project-img2 {
-  width: 30%;
+  width: 25%;
 
   @media screen and ( max-width: $medium + 150px ) {
-    width: 20%;
+    width: 15%;
   }
 
   @media screen and ( max-width: $small) {
-    width:30%;
+    width:25%;
   }
 }
 
@@ -692,13 +713,55 @@ video {
 
 .photo-inner.mobile {
 
-  display:none;
+  visibility: hidden;
 
 }
 
 .ink {
   color: $ink;
 }
+
+.aside-container.work-container {
+    margin: 40px 15%;
+    width: 70%;
+
+    p {
+      text-align:center;
+    }
+
+    @media screen and ( max-width: $small) {
+    margin: 40px 10%;
+    width: 80%;
+    font-size: 16px;
+    }
+
+}
+
+.work-container {
+  color: $ink;
+  margin-top: $gutter + 5px;
+  margin-bottom: $gutter + 10px;
+
+  &:after {
+    @include clearfix;
+    background-color: white;
+    border: 5px solid #f5f6f7;
+    box-shadow: none;
+  }
+
+  @media screen and ( max-width: $medium ) {
+    &:after {
+      border: 0px;
+    }
+    background-color: white;
+    margin-top: 0;
+    margin-bottom: $gutter;
+    border: 5px solid #f5f6f7;
+    box-shadow: none;
+  }
+
+}
+
 
 // CAN GO IF CASE STUDIES ISN'T STAYING
 
@@ -759,3 +822,6 @@ video {
     background-color: $blue;
   }
 }
+
+
+

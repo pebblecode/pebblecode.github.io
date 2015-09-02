@@ -6,10 +6,19 @@
 
     {% include hero.html %}
 
-    <section class="project-container project-azsearch">
-      <hgroup class="project-title-container grid">
-        <h2 class="project-title col-1-1">AstraZeneca</h2>
-      </hgroup>
+    <section class="content-container grid">
+      <article class="content-intro col-1-1">
+        {{content}}
+      </article>
+    </section>
+    <!-- /.content-container -->
+
+    <section class="photo-container">
+      <div class="photo-inner" style="background-image: url({{ site.baseurl }}/img/{{page.cover-img-1}})"></div>
+    </section>
+    <!-- /.photo-container -->
+
+    <section class="project-container project-pink pink-top">
       <div class="project-item-container">
         <div class="project-item-inner">
           <div class="project-item grid">
@@ -29,62 +38,12 @@
     </section>
     <!-- /.project-container -->
 
-    <section class="photo-container">
+    <section class="photo-container pink-top">
       <div class="photo-inner" style="background-image: url({{ site.baseurl }}/img/{{page.cover-img-1}})"></div>
     </section>
     <!-- /.photo-container -->
 
-    <section class="project-container project-bede">
-      <hgroup class="project-title-container grid">
-        <h2 class="project-title col-1-1">Bede Gaming</h2>
-      </hgroup>
-      <div class="project-item-container">
-        <div class="project-item-inner">
-          <div class="project-item grid">
-            <img src="{{ site.baseurl }}/img/projects/slot.png" class="project-item-img-feat" data-sr="scale up 20%, vF 0.1">
-            <h3 class="project-item-title">A LEADING SUPPLIER IN ONLINE GAMING TECHNOLOGY<br> A NEW BREED OF GAMING PLATFORM</h3>
-            <p>Our client used to invent and market games for itself and its customers using industry standard gaming platforms.</p>
-            <p>Yet they were never satisfied with the quality of the service or the software they were buying in.</p>
-            <aside class="project-item-aside">
-              <img src="{{ site.baseurl }}/img/projects/robot.png" class="project-item-aside-img" data-sr="scale up 20%, vF 0.1">
-              <p>They decided to start from scratch by building their own software platform to deliver industry leading technology and games, while also integrating best of breed games from other content providers.</p>
-              <p>Using pebble {code} and its skills and expertise to bolster their in-house software team, they have built a highly flexible online gaming platform, giving their customers and gamers the freedom to adapt their products and the ability to play them on any device.</p>
-            </aside>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- /.project-container -->
 
-    <section class="photo-container">
-      <div class="photo-inner" style="background-image: url({{ site.baseurl }}/img/{{page.cover-img-2}})"></div>
-    </section>
-    <!-- /.photo-container -->
-
-    <section id="test" class="project-container project-azinno">
-      <hgroup class="project-title-container grid">
-        <h2 class="project-title col-1-1">AstraZeneca</h2>
-      </hgroup>
-      <div class="project-item-container">
-        <div class="project-item-inner">
-          <div class="project-item grid">
-            <img src="{{ site.baseurl }}/img/projects/brain.png" class="project-item-img-feat" data-sr="scale up 20%, vF 0.1">
-            <h3 class="project-item-title">TURBO-CHARGING INNOVATION</h3>
-            <p>AZ used to run innovation competitions for new ideas, but they suffered from a relatively low level of participation.</p>
-            <p>The ideas were always submitted as lengthy academic documents which limited the number of people capable of suggesting or appraising ideas.</p>
-            <p>So they missed out on the collective brainpower available.</p>
-            <aside class="project-item-aside">
-              <img src="{{ site.baseurl }}/img/projects/innovation.png" class="project-item-aside-img" data-sr="scale up 20%, vF 0.1">
-              <p>So with them we developed a collaborative innovation tool, creating a place where new ideas can be captured, shared and appraised anytime, anywhere by anyone.</p>
-              <p>Ideas start out as 140 character chunks. The crowd vote on the most attractive and only those selected by the crowd are developed any further.</p>
-              <p>All participants get rewarded for being involved. This gets more people than ever from within the organisation involved in innovation.</p>
-              <p>Ideas are improved by wider collaboration into more rounded concepts, making the real-world application of the ideas more likely.</p>
-            </aside>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- /.project-container -->
 
     {% include footer.html %}
 
