@@ -111,19 +111,6 @@
 
 }
 
-
-@media screen and ( max-width: $medium + 150px ) {
-  .col-1-2.project-item-img {
-  width:66.66%;
-  }
-}
-
-@media screen and ( max-width: $medium) {
-  .col-1-2.project-item-img {
-  width:100%;
-  }
-}
-
 .project-item-img {
   position: relative;
   z-index: 1;
@@ -168,60 +155,6 @@
     }
 }
 
-// @media (min-width: 525px) and (max-width: $medium + 150px){
-//   .project-container img {
-//     width: 60%;
-//   }
-// }
-
-
-.project-item-aside {
-  position: relative;
-  z-index: 3;
-  margin: 40px 0 0;
-  padding: 40px 200px 30px 40px;
-
-  &:after {
-    @include shadow-pseudo;
-    height: 100%;
-    top: 0;
-    background-color: rgba(black, 0.1);
-    z-index: -1;
-    transform: rotate(0.3deg) skew(-0.6deg);
-    -ms-transform: rotate(0.3deg) skew(-0.6deg);
-    -webkit-transform: rotate(0.3deg) skew(-0.6deg);
-  }
-
-  @media screen and ( max-width: $medium ) {
-    padding: 30px 25px 20px;
-    background-color: rgba(black, 0.1);
-
-    &:after {
-      display: none;
-    }
-  }
-
-  p:last-of-type {
-    margin-bottom: 0;
-  }
-}
-
-.project-item-aside-img {
-  position: absolute;
-  max-height: 300px;
-  right: -80px;
-  top: -40px;
-
-  @media screen and ( max-width: $medium ) {
-    position: relative;
-    right: auto;
-    top: 0;
-    max-width: 70%;
-    margin-bottom: 20px;
-  }
-}
-
-
 .project-aqua {
   .project-item-inner {
     background-color: $aqua;
@@ -232,7 +165,7 @@
   }
 }
 
-.project-last{
+.project-last {
     .project-item-inner {
       background-image: url(../img/tile-white.png);
       background-repeat: repeat-x;
@@ -240,20 +173,6 @@
       background-size: 500px;
       position: relative;
     }
-}
-
-.project-white {
-  .project-item-inner {
-    background-color: white;
-
-    &:after {
-      background-color:white;
-    }
-    &:before {
-      background-color:white;
-    }
-
-  }
 }
 
 .project-blue {
@@ -337,7 +256,6 @@
   }
 
   .photo-inner{
-
     height: 400px;
     @media screen and ( max-width: $medium ) {
     // height: 261px;
@@ -352,13 +270,6 @@
   }
 }
 
-
-video {
-  width: 100%    !important;
-  height: auto   !important;
-}
-
-
 .pink-top {
   .project-item-inner {
     background-color: $pink;
@@ -370,15 +281,14 @@ video {
       background-color:$pink;
     }
    }
-}
-
-.pink-top.photo-container:after {
-    background-color: $pink;
+  .photo-container:after {
+      background-color: $pink;
   }
+}
 
 .green-top {
     background-color: $green;
-      .photo-inner:after {
+    .photo-inner:after {
       background-color: $green;
     }
 }
@@ -399,215 +309,13 @@ video {
   }
 
 
-.photos-container-work {
-  overflow: hidden;
-  position: relative;
-  height: 224px;
-
-  @media screen and ( min-width: 1500px ) {
-    height: 500px;
-  }
-  @media screen and ( min-width: 1800px ) {
-    height: 600px;
-  }
-
-  @media screen and ( max-width: $medium ) {
-    margin-top: 0;
-    margin-bottom: 0;
-    height: 350px;
-  }
-
-  @media screen and ( max-width: $small ) {
-    height: 300px;
-  }
-
-  &:before {
-    @include shadow-pseudo;
-    bottom: 2px;
-    height: 20px;
-    z-index: 1;
-    background-color: rgba(black, 0.15);
-    transform: rotate(-1.2deg) scale(1.2);
-    -ms-transform: rotate(-1.2deg) scale(1.2);
-    -webkit-transform: rotate(-1.2deg) scale(1.2);
-  }
-
-  &:after {
-    @include shadow-pseudo;
-    bottom: -40px;
-    height: 50px;
-    z-index: 2;
-    background-color: white;
-    transform: rotate(-0.8deg) scale(1.2);
-    -ms-transform: rotate(-0.8deg) scale(1.2);
-    -webkit-transform: rotate(-0.8deg) scale(1.2);
-  }
+// Video Full Width
+video {
+  width: 100%    !important;
+  height: auto   !important;
 }
 
-.photos-grid-work {
-  position: relative;
-  width: 120%;
-  width: calc(100% + 220px);
-
-  @media screen and ( min-width: 1500px ) {
-    width: calc(100% + 280px);
-  }
-
-  @media screen and ( min-width: 1800px ) {
-    width: calc(100% + 350px);
-  }
-
-  @media screen and ( max-width: $medium ) {
-    width: calc(100% + 150px);
-  }
-
-  @media screen and ( max-width: $small ) {
-    width: calc(100% + 100px);
-  }
-
-  &:before {
-    transform: rotate(1.6deg) scale(1.2);
-    -ms-transform: rotate(1.6deg) scale(1.2);
-    -webkit-transform: rotate(1.6deg) scale(1.2);
-  }
-
-  &:after {
-    @include shadow-pseudo;
-    top: -25px;
-    height: 50px;
-    background-color: $aqua;
-    z-index: 2;
-    transform: rotate(1deg) scale(1.2);
-    -ms-transform: rotate(1deg) scale(1.2);
-    -webkit-transform: rotate(1deg) scale(1.2);
-  }
-}
-
-.photos-container-work2 {
-  overflow: hidden;
-  position: relative;
-  height: 224px;
-
-  @media screen and ( min-width: 1500px ) {
-    height: 500px;
-  }
-  @media screen and ( min-width: 1800px ) {
-    height: 600px;
-  }
-
-  @media screen and ( max-width: $medium ) {
-    margin-top: 0;
-    margin-bottom: 0;
-    height: 350px;
-  }
-
-  @media screen and ( max-width: $small ) {
-    height: 300px;
-  }
-
-  &:before {
-    @include shadow-pseudo;
-    bottom: 2px;
-    height: 20px;
-    z-index: 1;
-    background-color: rgba(black, 0.15);
-    transform: rotate(-1.2deg) scale(1.2);
-    -ms-transform: rotate(-1.2deg) scale(1.2);
-    -webkit-transform: rotate(-1.2deg) scale(1.2);
-  }
-
-  &:after {
-    @include shadow-pseudo;
-    bottom: -40px;
-    height: 50px;
-    z-index: 2;
-    background-color: white;
-    transform: rotate(-0.8deg) scale(1.2);
-    -ms-transform: rotate(-0.8deg) scale(1.2);
-    -webkit-transform: rotate(-0.8deg) scale(1.2);
-  }
-}
-
-.photos-grid-work2 {
-  position: relative;
-  width: 120%;
-  width: calc(100% + 220px);
-
-  @media screen and ( min-width: 1500px ) {
-    width: calc(100% + 280px);
-  }
-
-  @media screen and ( min-width: 1800px ) {
-    width: calc(100% + 350px);
-  }
-
-  @media screen and ( max-width: $medium ) {
-    width: calc(100% + 150px);
-  }
-
-  @media screen and ( max-width: $small ) {
-    width: calc(100% + 100px);
-  }
-
-  &:before {
-    transform: rotate(1.6deg) scale(1.2);
-    -ms-transform: rotate(1.6deg) scale(1.2);
-    -webkit-transform: rotate(1.6deg) scale(1.2);
-  }
-
-  &:after {
-    @include shadow-pseudo;
-    top: -25px;
-    height: 50px;
-    background-color: $purple;
-    z-index: 2;
-    transform: rotate(1deg) scale(1.2);
-    -ms-transform: rotate(1deg) scale(1.2);
-    -webkit-transform: rotate(1deg) scale(1.2);
-  }
-}
-
-
-.project-white .project-item-inner .quote {
-  padding:0px;
-}
-.quote {
-  color: $ink;
-  position: relative;
-  display: block;
-  padding: 0px;
-  margin-bottom: 20px;
-  color: red;
-
-  @media screen and ( max-width: $medium + 100px ) {
-    margin-bottom: 15px;
-    padding: 30px 25px;
-    border: 5px solid rgba(white, 0.2);
-  }
-
-  @media screen and ( min-width: $medium + 100px ) {
-    &:after {
-      @include shadow-pseudo;
-      top: 0;
-      border: 5px solid rgba(white, 0.2);
-      height: 100%;
-      z-index: -1;
-    }
-  }
-}
-
-
-.photos-item-gif {
-  padding: 0;
-  margin-right:35px;
-  width: 555px;
-  height: 420px;
-  position: relative;
-  overflow: hidden;
-  float: left;
-}
-
-
+// Gifs & Images
 .project-img-small {
   width: 80%;
 
@@ -630,7 +338,7 @@ video {
   }
 }
 
-.project-img2 {
+.audio-icon {
   width: 25%;
 
   @media screen and ( max-width: $medium + 150px ) {
@@ -642,7 +350,7 @@ video {
   }
 }
 
-.project-img3 {
+.audio-mobile {
   width: 40%;
 
   @media screen and ( max-width: $medium + 150px ) {
@@ -666,12 +374,11 @@ video {
   width:80%;
 }
 
-
 .intranet-mobile {
   width:20%;
   position: absolute;
   bottom: 0;
-  left: 465px;
+  left: 515px;
 
   @media (min-width: 1000px) and (max-width: 1087px){
     left: 422px;
@@ -682,11 +389,11 @@ video {
   }
 
   @media (min-width: 800px) and (max-width: 928px){
-    left: 320px;
+    left: 380px;
   }
 
   @media (min-width: 500px) and (max-width: 700px){
-    left: 359px;
+    left: 400px;
   }
 
   @media (min-width: 535px) and (max-width: 519px){
@@ -712,14 +419,11 @@ video {
 
 
 .photo-inner.mobile {
-
   visibility: hidden;
-
 }
 
-.ink {
-  color: $ink;
-}
+
+// White Text Box
 
 .aside-container.work-container {
     margin: 40px 15%;
@@ -735,6 +439,10 @@ video {
     font-size: 16px;
     }
 
+}
+
+.ink {
+  color: $ink;
 }
 
 .work-container {
@@ -761,67 +469,3 @@ video {
   }
 
 }
-
-
-// CAN GO IF CASE STUDIES ISN'T STAYING
-
-
-.project-item-img-feat {
-  margin-bottom: 30px;
-  max-width: 50%;
-
-  @media screen and ( max-width: $medium ) {
-    margin-bottom: 20px;
-  }
-}
-
-
-.project-azsearch {
-  .project-title {
-    padding-top: 5px;
-  }
-  .project-item-inner {
-    // background-image: url(../img/projects/hand.svg);
-    z-index: 5;
-    position: relative;
-    background-position: top;
-    background-size: 100% 100%;
-
-    @media screen and ( max-width: $medium ) {
-      background-size: 100%;
-    }
-  }
-
-  & + .photo-container .photo-inner:after {
-    background-color: $purple;
-  }
-}
-
-.project-bede {
-  .project-item-inner {
-    background-color: $aqua;
-    // background-image: url(../img/projects/flexible.svg);
-  }
-
-  & + .photo-container .photo-inner:after {
-    background-color: $aqua;
-  }
-}
-
-.project-azinno {
-  .project-item-img-feat {
-    max-height: 300px;
-  }
-
-  .project-item-inner {
-    background-color: $blue;
-    // background-image: url(../img/projects/trophy.svg);
-  }
-
-  & + .photo-container .photo-inner:after {
-    background-color: $blue;
-  }
-}
-
-
-
