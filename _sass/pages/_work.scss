@@ -255,13 +255,22 @@
   }
 
   @media screen and (max-width: 650px) {
-      height: 240px;
+      height: 230px;
   }
+
+  @media screen and (min-width: 1500px ) {
+      height: 500px;
+  }
+
 
   .photo-inner{
     height: 400px;
     @media screen and ( max-width: $medium ) {
     // height: 261px;
+    }
+
+    @media screen and ( min-width: 1500px ) {
+    height: 500px;
     }
 
     &:after {
