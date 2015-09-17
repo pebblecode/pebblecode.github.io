@@ -1,6 +1,17 @@
 (function () {
     "use strict";
     function createWidget() {
+        function createIntroText() {
+            var container = document.createElement('div');
+            container.setAttribute('id', 'cruksearchwidget-intro');
+            var textA = document.createElement('p');
+            textA.appendChild(document.createTextNode('Clinical trials are medical research studies that involve people.\n\r'));
+            var textB = document.createElement('p');
+            textB.appendChild(document.createTextNode('Search our database of cancer clinical trials to see if there are open trials for you to join.'));
+            container.appendChild(textA);
+            container.appendChild(textB);
+            return container; }
+
         function createSearchInput() {
             function createSearchLabel() {
                 var searchLabel = document.createElement('label');
@@ -104,6 +115,15 @@
             searchButton.setAttribute('value', 'Search');
             return searchButton; }
 
+        function createCrukLogo() {
+            var logo = document.createElement('img');
+            logo.setAttribute('class', 'cruksearchwidget-logo');
+            logo.setAttribute('src', '../img/cruk-clinical-trials/cruk-logo.png');
+            logo.setAttribute('alt', 'CRUK logo');
+            logo.setAttribute('width', '200');
+            return logo;
+        }
+
         function addAutocomplete() {
             var availableTags = ["All cancer types","Brain (and spinal cord) tumours","Cancer spread to the brain","Adrenal gland cancer","Bile duct cancer","Gallbladder cancer","Bladder cancer","Bone sarcoma","Ewing\u0027s sarcoma","Cancer spread to the bone","Bowel (colorectal) cancer","Anal cancer","Breast cancer","Cervical cancer","Children\u0027s cancers","Gestational trophoblastic tumour","Choriocarcinoma","Head and neck cancers","Ear cancer","Eye cancer","Retinoblastoma","Mouth (oral) cancer","Nasal and paranasal sinus cancer","Nasopharyngeal cancer","Pharyngeal cancer","Salivary gland cancer","Kidney cancer","Renal cell carcinoma","Wilms\u0027 tumour","Laryngeal cancer","Leukaemia","Acute leukaemia","Chronic leukaemia","Chronic lymphocytic leukaemia (CLL)","Chronic myeloid leukaemia (CML)","Liver cancer","Lung cancer","Non small cell lung cancer","Small cell lung cancer","Lymphoma","Non-Hodgkin lymphoma","Hodgkin lymphoma","Mesothelioma","Myeloma","Neuroblastoma","Neuroendocrine tumour (NET)","Carcinoid","Oesophageal cancer","Ovarian cancer","Pancreatic cancer","Penis cancer","Prostate cancer","Skin cancer","Melanoma","Non melanoma skin cancer","Basal cell skin cancer","Squamous cell skin cancer","Sarcoma","Soft tissue sarcoma","Stomach cancer","Testicular cancer","Thyroid cancer","Cancer of unknown primary (CUP)","Vaginal cancer","Vulval cancer","Womb (uterine or endometrial) cancer","Cancer spread to the liver","Cancer spread to the lung","Hairy cell leukaemia","Acute lymphoblastic leukaemia (ALL)","Acute myeloid leukaemia (AML)","Myelodysplastic syndrome (MDS)","Myelofibrosis","Polycythaemia","Thrombocythaemia","Transitional cell cancer","High grade lymphoma","Low grade lymphoma","Secondary cancers","Colon cancer","Rectal cancer","Small bowel cancer"];
             $('#cruksearchwidget-edit-keyword').autocomplete({ source: availableTags });
@@ -116,8 +136,8 @@
 
         var paneHeader = document.createElement('h2');
         paneHeader.setAttribute('class', 'cruksearchwidget-pane-title');
-        paneHeader.appendChild(document.createTextNode('Find a trial'));
-            
+        paneHeader.appendChild(document.createTextNode('Find a cancer clinical trial'));
+
         var paneContent = document.createElement('div');
         paneContent.setAttribute('class', 'cruksearchwidget-pane-content');
 
@@ -138,12 +158,14 @@
         pane.appendChild(paneHeader);
         pane.appendChild(paneContent);
         paneContent.appendChild(form);
+        form.appendChild(createIntroText());
         form.appendChild(div);
         div.appendChild(createSearchInput());
         div.appendChild(createHiddenFormBuildId());
         div.appendChild(createHiddenFormId());
         div.appendChild(createCheckboxOptions());
         form.appendChild(createSearchButton());
+        form.appendChild(createCrukLogo());
         addAutocomplete();
     }
 
