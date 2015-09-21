@@ -54,7 +54,7 @@
             var input = document.createElement('input');
             input.setAttribute('type', 'hidden');
             input.setAttribute('name', 'form_id');
-            input.setAttribute('value', 'get_cruk_clinical_trial_search');
+            input.setAttribute('value', 'get_cruk_clinical_trial_search_form');
             return input; }
 
         function createSearchButton() {
