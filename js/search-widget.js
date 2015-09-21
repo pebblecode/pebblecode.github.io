@@ -57,55 +57,6 @@
             input.setAttribute('value', 'get_cruk_clinical_trial_search');
             return input; }
 
-        function createCheckboxOptions() {
-            function createCheckbox(value, checked, text) {
-                var container = document.createElement('div');
-                var id = 'cruksearchwidget-edit-trial-checkboxes-' + value.toLowerCase();
-
-                var checkbox = document.createElement('input');
-                checkbox.setAttribute('type', 'checkbox');
-                checkbox.setAttribute('id', id);
-                checkbox.setAttribute('name', 'trial_checkboxes[' + value + ']');
-                checkbox.setAttribute('value', value);
-                if (checked) {
-                        checkbox.setAttribute('checked', 'checked');
-                }
-
-                var label = document.createElement('label');
-                label.setAttribute('for', id);
-                label.appendChild(document.createTextNode(text));
-
-                container.appendChild(checkbox);
-                container.appendChild(label);
-                return container; }
-
-            var fieldset = document.createElement('fieldset');
-            fieldset.setAttribute('id', 'cruksearchwidget-edit-trial-select');
-
-            var legend = document.createElement('legend');
-            legend.appendChild(document.createTextNode('Include trials that'));
-
-            var wrapper = document.createElement('div');
-            wrapper.setAttribute('class', 'cruksearchwidget-fieldset-wrapper');
-
-            var description = document.createElement('div');
-            description.setAttribute('class', 'cruksearchwidget-fieldset-description');
-            description.appendChild(document.createTextNode('(select all that apply)'));
-
-            var checkboxContainer = document.createElement('div');
-            checkboxContainer.setAttribute('id', 'cruksearchwidget-edit-trial-checkboxes');
-            checkboxContainer.setAttribute('class', 'cruksearchwidget-form-checkboxes');
-            checkboxContainer.appendChild(createCheckbox('Open', true, 'Are currently recruiting people'));
-            checkboxContainer.appendChild(createCheckbox('Closed', false, 'Are closed to recruitment but are ongoing'));
-            checkboxContainer.appendChild(createCheckbox('Results', false, 'Have results available'));
-
-            wrapper.appendChild(description);
-            wrapper.appendChild(checkboxContainer);
-
-            fieldset.appendChild(legend);
-            fieldset.appendChild(wrapper);
-            return fieldset; }
-
         function createSearchButton() {
             var searchButton = document.createElement('input');
             searchButton.setAttribute('class', 'cruksearchwidget-result-button');
@@ -163,8 +114,7 @@
         div.appendChild(createSearchInput());
         div.appendChild(createHiddenFormBuildId());
         div.appendChild(createHiddenFormId());
-        div.appendChild(createCheckboxOptions());
-        form.appendChild(createSearchButton());
+        div.appendChild(createSearchButton());
         form.appendChild(createCrukLogo());
         addAutocomplete();
     }
