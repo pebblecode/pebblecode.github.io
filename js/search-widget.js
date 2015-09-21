@@ -19,7 +19,7 @@
                 searchLabel.appendChild(document.createTextNode('Search by cancer type, drug name, trial name, or '));
 
                 var chooseLink = document.createElement('a');
-                chooseLink.setAttribute('href', 'http://www.cancerresearchuk.org/about-cancer/find-a-clinical-trial/clinical-trials-search?Tbrowser=open&search_api_aggregation_1=5f510abh&amp;f%5B0%5D=field_trial_status%253A422');
+                chooseLink.setAttribute('href', 'http://www.cancerresearchuk.org/about-cancer/find-a-clinical-trial/trials-by-cancer-type');
                 chooseLink.appendChild(document.createTextNode('choose from a list of cancer types'));
                 searchLabel.appendChild(chooseLink);
                 return searchLabel; }
