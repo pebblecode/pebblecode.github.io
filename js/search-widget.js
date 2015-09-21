@@ -146,7 +146,7 @@
 
         var form = document.createElement('form');
         form.setAttribute('method', 'post');
-        form.setAttribute('action', 'http://www.cancerresearchuk.org/about-cancer/find-a-clinical-trial');
+        form.setAttribute('action', 'http://www.cancerresearchuk.org/about-cancer/find-a-clinical-trial/clinical-trials-search');
         form.setAttribute('id', 'cruksearchwidget-form');
         form.setAttribute('accept-charset', 'UTF-8');
         form.setAttribute('autocomplete', 'on');
