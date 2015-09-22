@@ -4,22 +4,25 @@ The Jekyll based website for pebblecode.com.
 
 ## Getting Started
 
-#####1. Install [jekyll](http://jekyllrb.com/):
+#####1. Install [bundler](http://bundler.io/):
 
-`gem install jekyll`
-
+`gem install bundler`
 
 You may need to include sudo at the start if there is a permissions error.
 
+#####2. Install jekyll bundle:
 
-#####2. Build and view the website locally:
+`bundle install`
+
+
+#####3. Build and view the website locally:
 
 `cd [project folder]`
 
 `jekyll serve`
 
 
-#####3. View the website:
+#####4. View the website:
 
 `http://localhost:4000`
 
@@ -53,3 +56,4 @@ Once you are happy, push this file to the `master` branch to go LIVE.
 #### Tips
 - Always wrap video elements in a `<div class="video"></div>` element if you want it to look awesome.
 - Use an h3 at the start of articles to give a summary of the post.
+
