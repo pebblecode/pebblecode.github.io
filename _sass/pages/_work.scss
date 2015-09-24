@@ -11,6 +11,11 @@
   background-color: white;
 }
 
+.project-item {
+  padding-top:20px;
+  padding-bottom:20px;
+}
+
 .project-title {
   padding-top: 15px;
   margin: 0;
@@ -50,7 +55,7 @@
   }
 
   p {
-    font-size: $gamma;
+    font-size: $delta;
     line-height: 1.4;
 
     @media screen and ( max-width: $medium ) {
@@ -93,104 +98,400 @@
   }
 }
 
-.project-item-img-feat {
-  margin-bottom: 30px;
-  max-width: 50%;
+.project-item-text {
 
-  @media screen and ( max-width: $medium ) {
-    margin-bottom: 20px;
+  @media screen and ( max-width: $medium + 150px ) {
+    float: none;
+    display: block;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+}
+
+.project-item-img {
+  position: relative;
+  z-index: 1;
+
+  @media screen and ( max-width: $medium + 150px ) {
+    float: none;
+    display: block;
+    max-width: 100%;
+    padding-top: 30px;
+  }
+
+}
+
+.projects-item-inner {
+  @media screen and ( max-width: $medium + 150px ) {
+    position: relative;
+    top: auto;
+    left: auto;
+    transform: none;
+    -ms-transform: none;
+    -webkit-transform: none;
+    padding-top: 175px;
+  }
+
+  @media screen and ( max-width: $small) {
+  padding-top: 230px
+  }
+
+  @media (min-width: 312px) and (max-width: 400px){
+  padding-top: 280px
+  }
+
+  @media (min-width: 0px) and (max-width: 312px){
+  padding-top: 380px
   }
 }
 
-.project-item-aside {
-  position: relative;
-  z-index: 3;
-  margin: 40px 0 0;
-  padding: 40px 200px 30px 40px;
+@media screen and ( max-width: $medium + 150px ) {
+  .project-container [class*='col-'] {
+    width: 100%;
+    float: none;
+    }
+}
 
-  &:after {
-    @include shadow-pseudo;
-    height: 100%;
-    top: 0;
-    background-color: rgba(black, 0.1);
-    z-index: -1;
-    transform: rotate(0.3deg) skew(-0.6deg);  
-    -ms-transform: rotate(0.3deg) skew(-0.6deg);  
-    -webkit-transform: rotate(0.3deg) skew(-0.6deg);  
-  }
-
-  @media screen and ( max-width: $medium ) {
-    padding: 30px 25px 20px;
-    background-color: rgba(black, 0.1);
+.project-aqua {
+  .project-item-inner {
+    background-color: $aqua;
 
     &:after {
-      display: none;
+      background-color:$pink;
     }
-  }
-
-  p:last-of-type {
-    margin-bottom: 0;
   }
 }
 
-.project-item-aside-img {
+.project-last {
+    .project-item-inner {
+      background-image: url(../img/tile-white.png);
+      background-repeat: repeat-x;
+      background-position: bottom;
+      background-size: 500px;
+      position: relative;
+    }
+}
+
+.project-blue {
+  .project-item-inner {
+    background-color: $blue;
+
+  }
+    & + .photo-container:after {
+    background-color:$green;
+  }
+
+  .photo-inner:after {
+    background-color: $blue;
+  }
+}
+
+.project-pink {
+  .project-item-inner {
+    background-color: $pink;
+
+    &:after {
+      background-color:$orange;
+    }
+   }
+}
+
+.project-green {
+  .project-item-inner {
+    background-color: $green;
+
+    &:after {
+      background-color:$blue;
+    }
+  }
+}
+
+.project-orange {
+  .project-item-inner {
+    background-color: $orange;
+
+    &:after {
+      background-color:$orange;
+    }
+
+    &:before {
+      background-color:$orange;
+    }
+  }
+}
+
+.project-purple {
+  .project-item-inner {
+    background-color: $purple;
+
+    &:after {
+      background-color:$orange;
+    }
+  }
+}
+
+
+.work-photo-container {
+  background-color: $aqua;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+
+  &:before {
+    //photo shadows background: transparent;
+    transform: rotate(1.2deg) scale(1.2);
+    -ms-transform: rotate(1.2deg) scale(1.2);
+    -webkit-transform: rotate(1.2deg) scale(1.2);
+  }
+
+  &:after {
+    background-color: white;
+    transform: rotate(0.8deg) scale(1.2);
+    -ms-transform: rotate(0.8deg) scale(1.2);
+    -webkit-transform: rotate(0.8deg) scale(1.2);
+  }
+
+  @media screen and (max-width: 650px) {
+      height: 230px;
+  }
+
+  @media screen and (min-width: 1500px ) {
+      height: 500px;
+  }
+
+
+  .photo-inner{
+    height: 400px;
+    @media screen and ( max-width: $medium ) {
+    // height: 261px;
+    }
+
+    @media screen and ( min-width: 1500px ) {
+    height: 500px;
+    }
+
+    &:after {
+      background-color: $aqua;
+    }
+    &:before {
+      //photo shadows background: transparent;
+    }
+  }
+}
+
+.pink-top {
+  .project-item-inner {
+    background-color: $pink;
+
+    &:before {
+      background-color:$pink;
+    }
+    &:after {
+      background-color:$pink;
+    }
+   }
+  .photo-container:after {
+      background-color: $pink;
+  }
+}
+
+.green-top {
+    background-color: $green;
+    .photo-inner:after {
+      background-color: $green;
+    }
+}
+
+.green-top.photo-container:after {
+    background-color: $orange;
+  }
+
+  .purple-top{
+    background-color:$purple;
+      .photo-inner:after {
+      background-color: $purple;
+    }
+}
+
+.purple-top.photo-container:after {
+    background-color: $pink;
+  }
+
+
+// Video Full Width
+video {
+  width: 100%    !important;
+  height: auto   !important;
+
+  @media screen and (min-width: 632px) {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  }
+}
+
+#gif1,
+#gif2,
+#gif3 {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+// Gifs & Images
+.project-img-small {
+  width: 80%;
+
+  @media screen and ( max-width: $medium + 150px ) {
+    width: 45%;
+  }
+  @media screen and ( max-width: $small ) {
+    width: 80%;
+  }
+}
+
+.project-img-large {
+  width: 90%;
+
+  @media (min-width: $medium) and (max-width: $medium + 150px){
+    width: 70%;
+  }
+  @media screen and ( max-width: $small ) {
+    width: 100%;
+  }
+}
+
+.audio-icon {
+  width: 25%;
+
+  @media screen and ( max-width: $medium + 150px ) {
+    width: 15%;
+  }
+
+  @media screen and ( max-width: $small) {
+    width:25%;
+  }
+}
+
+.audio-mobile {
+  width: 40%;
+
+  @media screen and ( max-width: $medium + 150px ) {
+    width: 30%;
+  }
+
+  @media screen and ( max-width: $small) {
+    width:40%;
+  }
+}
+
+.alignme
+{
+    display:inline-block;
+    float:none;
+    margin-right:-4px;
+    vertical-align:middle;
+}
+
+.intranet-desktop {
+  width:80%;
+}
+
+.intranet-mobile {
+  width:20%;
   position: absolute;
-  max-height: 300px;
-  right: -80px;
-  top: -40px;
+  bottom: 0;
+  left: 515px;
+
+  @media (min-width: 1000px) and (max-width: 1087px){
+    left: 422px;
+  }
+
+  @media (min-width: 928px) and (max-width: 1000px){
+    left: 386px;
+  }
+
+  @media (min-width: 800px) and (max-width: 928px){
+    left: 380px;
+  }
+
+  @media (min-width: 500px) and (max-width: 700px){
+    left: 400px;
+  }
+
+  @media (min-width: 535px) and (max-width: 519px){
+    left: 350px;
+  }
+
+  @media (min-width: 366px) and (max-width: 535px){
+    left: 233px;
+  }
+
+  @media (min-width: 0px) and (max-width: 366px){
+    left: 191px;
+  }
+
+}
+
+.project-container img .intranet-mobile {
+
+  @media screen and ( max-width: $medium) {
+    width:20%;
+  }
+}
+
+
+.photo-inner.mobile {
+  visibility: hidden;
+}
+
+
+// White Text Box
+
+.aside-container.work-container {
+    margin: 40px 15%;
+    width: 70%;
+
+    p {
+      text-align:center;
+    }
+
+    @media screen and ( max-width: $small) {
+    margin: 40px 10%;
+    width: 80%;
+    font-size: 16px;
+    }
+
+}
+
+.ink {
+  color: $ink;
+}
+
+.work-container {
+  color: $ink;
+  margin-top: $gutter + 5px;
+  margin-bottom: $gutter + 10px;
+
+  &:after {
+    @include clearfix;
+    background-color: white;
+    border: 5px solid #f5f6f7;
+    box-shadow: none;
+  }
 
   @media screen and ( max-width: $medium ) {
-    position: relative;
-    right: auto;
-    top: 0;
-    max-width: 70%;
-    margin-bottom: 20px;
-  }
-}
-
-.project-azsearch {
-  .project-title {
-    padding-top: 5px;
-  }
-  .project-item-inner {
-    // background-image: url(../img/projects/hand.svg);
-    z-index: 5;
-    position: relative;
-    background-position: top;
-    background-size: 100% 100%;
-
-    @media screen and ( max-width: $medium ) {
-      background-size: 100%;
+    &:after {
+      border: 0px;
     }
+    background-color: white;
+    margin-top: 0;
+    margin-bottom: $gutter;
+    border: 5px solid #f5f6f7;
+    box-shadow: none;
   }
 
-  & + .photo-container .photo-inner:after {
-    background-color: $purple;
-  }
-}
-
-.project-bede {
-  .project-item-inner {
-    background-color: $aqua;
-    // background-image: url(../img/projects/flexible.svg);
-  }
-
-  & + .photo-container .photo-inner:after {
-    background-color: $aqua;
-  }
-}
-
-.project-azinno {
-  .project-item-img-feat {
-    max-height: 300px;
-  }
-
-  .project-item-inner {
-    background-color: $blue;
-    // background-image: url(../img/projects/trophy.svg);
-  }
-
-  & + .photo-container .photo-inner:after {
-    background-color: $blue;
-  }
 }
