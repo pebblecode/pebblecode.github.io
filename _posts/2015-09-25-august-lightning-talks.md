@@ -4,7 +4,7 @@ title:  August Lightning Talks
 author: Jonny Li
 categories: lightning talks
 ---
-In August, Mark gives us a crash course in Visual Hierarchy. If you ever wondered how to make certain elements more prominent or  draw more attention to a specific area of the page, this talks for you. 
+In August, Mark gives us a crash course in Visual Hierarchy. If you've ever wondered how certain elements seem more prominent or want to draw more attention to a specific area of the page, this talks for you. 
 
 <div class="video"><iframe width="532" height="400" src="//www.youtube.com/watch?v=RXP_rTVTVr4" frameborder="0" allowfullscreen="allowfullscreen"></iframe></div>
 
