@@ -4,11 +4,7 @@
 // Hero
 .blog, .blog-by-tag {
   .gbl-head {
-    background-color: transparent;
-
-    @media screen and ( max-width: $medium + 100px ) {
-      background-color: $aqua;
-    }
+    background-color: $aqua;
   }
 
   .content-container {
