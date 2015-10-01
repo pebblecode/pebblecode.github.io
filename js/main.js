@@ -106,7 +106,7 @@
     var aboutDirectors;
 
     var scrollPositions = debounce(function () {
-      aboutDirectors = $('#aboutDirectors').offset().top - 200;
+      aboutDirectors = $('#about-directors').offset().top - 200;
     }, 100);
 
     var headerBG = debounce(function () {
@@ -135,14 +135,14 @@
     var servicesCollab;
 
     var scrollPositions = debounce(function () {
-      servicesStrategy = $('#servicesStrategy').offset().top - 200;
-      servicesHacking = $('#servicesHacking').offset().top - 200;
-      servicesUX = $('#servicesUX').offset().top - 200;
-      servicesUXdesign = $('#servicesUXdesign').offset().top - 200;
-      servicesDesign = $('#servicesDesign').offset().top - 200;
-      servicesAgile = $('#servicesAgile').offset().top - 200;
-      servicesTests = $('#servicesTests').offset().top - 200;
-      servicesCollab = $('#servicesCollab').offset().top - 200;
+      servicesStrategy = $('#services-strategy').offset().top - 200;
+      servicesHacking = $('#services-hacking').offset().top - 200;
+      servicesUX = $('#services-UX').offset().top - 200;
+      servicesUXdesign = $('#services-UX-design').offset().top - 200;
+      servicesDesign = $('#services-design').offset().top - 200;
+      servicesAgile = $('#services-agile').offset().top - 200;
+      servicesTests = $('#services-tests').offset().top - 200;
+      servicesCollab = $('#services-collab').offset().top - 200;
     }, 100);
 
     var headerBG = debounce(function () {
@@ -185,13 +185,13 @@
     var workHighFrequency;
 
     var scrollPositions = debounce(function () {
-      workPharmaceutical = $('#workPharmaceutical').offset().top - 200;
-      workIntranets = $('#workIntranets').offset().top - 200;
-      workSelfDirected = $('#workSelfDirected').offset().top - 200;
-      workNextGen = $('#workNextGen').offset().top - 200;
-      workEnterpriseMobile = $('#workEnterpriseMobile').offset().top - 200;
-      workRailTravel = $('#workRailTravel').offset().top - 200;
-      workHighFrequency = $('#workHighFrequency').offset().top - 200;
+      workPharmaceutical = $('#work-pharmaceutical').offset().top - 200;
+      workIntranets = $('#work-intranets').offset().top - 200;
+      workSelfDirected = $('#work-self-directed').offset().top - 200;
+      workNextGen = $('#work-next-gen').offset().top - 200;
+      workEnterpriseMobile = $('#work-enterprise-mobile').offset().top - 200;
+      workRailTravel = $('#work-rail-travel').offset().top - 200;
+      workHighFrequency = $('#work-high-frequency').offset().top - 200;
     }, 100);
 
     var headerBG = debounce(function () {
@@ -226,8 +226,8 @@
     var careersKaizen;
 
     var scrollPositions = debounce(function () {
-      careersBenefits = $('#careersBenefits').offset().top - 200;
-      careersKaizen = $('#careersKaizen').offset().top - 200;
+      careersBenefits = $('#careers-benefits').offset().top - 200;
+      careersKaizen = $('#careers-kaizen').offset().top - 200;
     }, 100);
 
     var headerBG = debounce(function () {
