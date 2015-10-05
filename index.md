@@ -1,6 +1,6 @@
 ---
 layout: home
-title: 
+title:
 permalink: /
 
 ## Hero Content
@@ -10,8 +10,8 @@ hero-subtitle: We enable organisations to go digital by default, using a combina
 ## Main background image
 cover-img: features/couch.jpg
 
-## Featured case study:
-feat-client: Astrazeneca
-feat-title: Universal Access Search Portal
-feat-excerpt: AstraZeneca had over 200 million documents. Printed out on paper, that would weigh more than the Titanic. So we built a simple search portal - providing universal access to all the documents through one application.
+## Featured project:
+feat-client:
+feat-title: Rail Travel Customer Experience System
+feat-excerpt: A tablet-based quality system allows a national rail company to make a quantum leap in the quality of the experience of passengers in stations and on their trains.
 ---

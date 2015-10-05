@@ -20,11 +20,17 @@
         text-transform: none;
         font-style: normal;
         padding: 10px 0;
+        color: #EC008C;
+}
+
+#cancerresearch-search-widget .cruksearchwidget-pane-content {
+        overflow: hidden;
 }
 
 #cruksearchwidget-form {
         margin: 0;
         padding: 0;
+        float: left;
 }
 
 #cruksearchwidget-form label {
@@ -69,33 +75,8 @@
         float: left;
 }
 
-#cancerresearch-search-widget .cruksearchwidget-form-checkboxes {
-        float: left;
-        padding-left: 20px;
-        margin-top: -9px;
-}
-
-#cancerresearch-search-widget .cruksearchwidget-form-checkboxes div {
-        width: 100%;
-}
-
-#cancerresearch-search-widget .cruksearchwidget-form-checkboxes div input {
-        margin: 15px 0 0;
-        float: left;
-        clear: left;
-        padding: 0;
-}
-
-#cancerresearch-search-widget .cruksearchwidget-form-checkboxes div label {
-        width: auto;
-        padding: 10px 0 0 5px;
-        display: inline;
-        font-weight: normal;
-        float: left;
-}
-
 #cancerresearch-search-widget .cruksearchwidget-result-button {
-        width: 30%;
+        width: 80%;
         display: inline-block;
         padding: 9px;
         margin-top: 27px;
@@ -113,13 +94,13 @@
         vertical-align: top;
 }
 
-#cancerresearch-search-widget .cruksearchwidget-search-options {
-        display: inline-block;
+#cancerresearch-search-widget .cruksearchwidget-logo {
+        float: right;
 }
 
-#cancerresearch-search-widget input[type="checkbox"] {
-        -webkit-appearance: checkbox;
-}  
+#cancerresearch-search-widget .cruksearchwidget-search-options {
+        float: left;
+}
 
 #cancerresearch-search-widget input[type="submit"] {
         -webkit-appearance: submit;
