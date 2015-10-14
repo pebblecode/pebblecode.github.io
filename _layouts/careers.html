@@ -74,6 +74,20 @@
     RT.jQuery(document).ready(function() {
       RT.recruitee.init({company: 418, language: "en"});
       RT.recruitee.renderOffers("#recruitee-offers");
+      RT.recruitee.subscribeListener("opened",
+          function(offer) {
+            analytics.track('JobOfferFormOpened', {
+              id: offer.id,
+              title: offer.title
+            });
+          });
+      RT.recruitee.subscribeListener("applied",
+          function(offer) {
+            analytics.track('JobOfferFormSubmitted', {
+              id: offer.id,
+              title: offer.title
+            });
+          })
     });
     </script>
     <!-- /scripts-->
