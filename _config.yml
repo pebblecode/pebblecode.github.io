@@ -21,3 +21,13 @@ permalink: "/blog/:title"
 # Pagination
 paginate: 8
 paginate_path: "/blog/:num"
+
+#tag blog posts for analytics
+defaults:
+  -
+    scope:
+      path: ""
+      type: "post"
+    values:
+      analytics_category: "blog"
+
