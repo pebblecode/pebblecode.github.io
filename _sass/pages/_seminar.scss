@@ -1,0 +1,124 @@
+//===============================================================================
+// SEMINAR
+//===============================================================================
+.seminar {
+
+
+  .gbl-head {
+    background-color: transparent;
+  }
+
+  &.pink {
+    background-color: $pink;
+
+    @media screen and ( max-width: $medium + 100px ) {
+      .gbl-head {
+        background-color: $pink;
+      }
+    }
+  }
+}
+.seminar-container {
+  margin: 0 auto 40px;
+  padding-top: 150px;
+  padding-bottom: 40px;
+}
+
+.seminar-content {
+ @include clearfix;
+  position: relative;
+  margin: 70px 10%;
+  width: 80%;
+  padding: 50px 40px 40px;
+  z-index: 2;
+  background-color: white;
+
+  p {
+    font-size: 20px;
+  }
+}
+
+
+.seminar-titlestack {
+    text-align: center;
+    transform: skewY(-5deg);
+    text-shadow: 3px 4px 0 rgba(black, 0.2);
+
+    h3.seminar-titlestack-top {
+      font-size: 90px;
+      margin-bottom: 0px;
+      font-style: normal;
+      line-height: 1;
+    }
+    h3.seminar-titlestack-bottom {
+      font-size: 77px;
+      margin-top: 0px;
+      line-height: 1;
+    }
+}
+
+h4.seminar-titlestack-sub {
+  font-weight: normal;
+  font-size: 42px;
+  text-align: center;
+  // border-bottom: 6px solid $pink;
+}
+
+.seminar-speakers-container {
+  &:after{
+    z-index: -3;
+  }
+}
+
+.seminar-speaker-image {
+    height: 200px;
+    width: 200px;
+    float: left;
+    // display: block;
+    background-image: url(../img/directors/alex.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 26% 50%;
+    position: relative;
+    margin-right: 32px;
+
+    &:after {
+      @include shadow-pseudo;
+      height: 100%;
+      top: 0;
+      // border: 20px solid blue;
+      background-color: #ddd;
+      // box-shadow: 0 0 10px rgba(black, 0.5);
+      z-index: -1;
+      transform: rotate(-5deg) skew(1deg) ;//scale(1.05);
+    }
+}
+
+.seminar-speakers {
+  margin-top: 48px;
+
+  li {
+    @include clearfix;
+    margin-bottom: 48px;
+  }
+}
+
+h4.seminar-speaker-title {
+    font-size: 32px;
+    line-height: 1;
+    color: $pink;
+}
+
+
+h3.seminar-date {
+  color: $pink;
+  text-align: center;
+  text-transform: none;
+  font-weight: normal;
+  padding: 12px 4px;
+}
+
+.seminar-map-container {
+  position: relative;
+  height: 500px;
+}
