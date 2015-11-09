@@ -31,7 +31,7 @@ We have InOffice, OutOfOffice, Sick and Holiday. All statuses last for a full wo
 ###Integrations
 The api has full CRUD functionality, see the docs for more details. So this is open for your own integrations. We've used this to integrate with [Tribe HR](https://github.com/pebblecode/tribehr-holiday-fetcher) and [send Emails at 10am](https://github.com/pebblecode/wfh-email-cron)
 
-Also its on a TV in the office.
+Also its on a TV in the office, built using react and flux, deployed on s3.
 ![TV](/img/posts/2015-11-03-wfh-slack/tv.jpg)
 
 ###We'd love to hear from you
