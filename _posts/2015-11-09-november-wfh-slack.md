@@ -4,7 +4,7 @@ title:  Working From Home Slack Bot
 author: Mike James
 categories: [hacks,javascript,node, slack]
 ---
-Here at pebble{code} we have the freedom to work remotely. It's been a part of our culture from the early days. So back in June this year we had one of our hackdays and produced a service we call WFH (working from home) bot (see [original post](/blog/hack-day-wfh-bot)). The idea behind the hack day was to try out some new tech and solve some problems along the way. The bot helps prevent long email chains on who is working where. Slack is core to all internal chat communications. 
+Here at pebble{code} we have the freedom to work remotely. It's been a part of our culture from the early days. So back in June this year we had one of our hackdays and produced a service we call WFH (working from home) bot (see [original post](/blog/hack-day-wfh-bot)). The idea behind the hack day was to try out some new tech and solve some problems along the way. The bot helps prevent long email chains on who is working where. Slack is core to all of our internal chat communications, so we've integrated WFH into Slack, and with the power of slash commands we are able to talk directly with our bot. 
 
 The first version of WFH was private, and today we're releasing it as OpenSource. As we figured this useful! So its here for you to play with and [host your own](https://github.com/pebblecode/wfh-api) under [MIT](http://opensource.org/licenses/mit-license.php). 
 
