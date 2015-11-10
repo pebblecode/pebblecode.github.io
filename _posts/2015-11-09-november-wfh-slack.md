@@ -12,7 +12,7 @@ The first version of WFH was private, and today we're releasing it as OpenSource
 ![image of architecture](/img/posts/2015-11-03-wfh-slack/diagram.png)
 
 ###What's changed?
-We've had a play around with the api and had some interations, we've also experimented with one version in Erlang [here](https://github.com/pebblecode/wfh2_backend). We've settled at the moment for a Node.js version, as most of us devs here at pebble write JavaScript. But we're going to continue playing with Erlang as its an interesting platform.
+We've had a play around with the api and had some iterations, we've also experimented with one version in Erlang [here](https://github.com/pebblecode/wfh2_backend). We've settled at the moment for a Node.js version, as most of us devs here at pebble write JavaScript. But we're going to continue playing with Erlang as its an interesting platform.
 
 #### Parameters
 We now have parameters in the slash commands.
