@@ -6,8 +6,6 @@
 
     {% include hero.html %}
 
-    {% include clients.html %}
-
     <section class="photo-container home-photo-container">
       <div class="photo-inner" style="background-image: url({{ site.baseurl }}/img/{{page.cover-img}})"></div>
     </section>
@@ -31,6 +29,8 @@
       </div>
     </section>
     <!-- /.feat-content-container -->
+
+    {% include clients.html %}
 
     {% include footer.html %}
 
