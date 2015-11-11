@@ -48,6 +48,8 @@ You can set whether an article is featured at the top of the blog homepage by se
 
 Images are linked like this: ![Installation](/img/posts/example.jpg). The caption is included within square brackets `![caption]` and the path to the image file included within the regular brackets after.
 
+## Deploying
+
 Once you are happy, push this file to the `master` branch to go LIVE.
 
 #### Tips
