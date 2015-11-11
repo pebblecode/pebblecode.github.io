@@ -4,8 +4,8 @@ title:
 permalink: /
 
 ## Hero Content
-hero-title: Accelerating Digital Transformation
-hero-subtitle: We enable organisations to go digital by default, using a combination of innovation strategy consulting, hacking, rapid prototyping, human-centred design, Agile delivery & measurement.
+hero-title: Technology Innovation Consultancy
+hero-subtitle: Design Thinking, Rapid Prototyping and Agile Software Development
 
 ## Main background image
 cover-img: features/couch.jpg
