@@ -465,6 +465,13 @@
   } 
 
   .rt-body {
+
+    h2 {
+      color: $primary;
+      margin: 20px 0 0;
+      font-size: $beta;
+    }
+
     h3 {
       color: $ink;
     }
