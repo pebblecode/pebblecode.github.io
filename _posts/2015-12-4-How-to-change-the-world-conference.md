@@ -26,6 +26,7 @@ This hollowed out middle section of the income scale is now being joined by a ho
 The arrival of the tech boom of recent years has not been all good. It has been well publicised that WhatsApp, a company that was bought by Facebook for $22billion last year, only employs 55 engineers. This means that there are comparatively few highly skilled and highly paid employees in this sector, and job creation and economic growth is being decoupled. This pattern has been accompanied by a growing service sector that feed off this localised affluence. For example, there are now over 3,000 beach body coaches in the UK, when ten years ago there were none. 
 
 The general rule when it comes to selecting a career that has a minimal risk of being automated is to focus on three factors:
+
 * Creativity: Making products or services, or other intellectual capital that didn’t previously exist.
 * Social Intelligence: Jobs that require a high degree of people/soft skills.
 * Perception and Manipulation: Jobs that require fine manual work that cannot be replicated by machines.
