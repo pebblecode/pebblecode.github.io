@@ -37,7 +37,7 @@ Across the world people are living longer. In developed countries people no long
 There is no reason to believe that the maximum age of humans is limited to the current record of 122. The question becomes whether quality of life can be maintained that long - the main threats being health and loneliness. 
 
 ##Proscribing or Prescribing
-Psychedelic drugs have been illegal in the UK since 1967. This has made research into their effects either hard or possible. Recent developments have seen interesting research findings concerning clinical efficacy in managing psychiatric issues. In particular, psychedelic drugs have a strong and long-lasting positive effect on anxiety and depression. They appear to cause a marked increase in extraversion and openness. Participants in these trials report an enduring spiritual and mystical enlightenment. 
+Psychedelic drugs have been illegal in the UK since 1967. This has made research into their effects either hard or impossible. Recent developments have seen interesting research findings concerning clinical efficacy in managing psychiatric issues. In particular, psychedelic drugs have a strong and long-lasting positive effect on anxiety and depression. They appear to cause a marked increase in extraversion and openness. Participants in these trials report an enduring spiritual and mystical enlightenment. 
 
 Participants in these experiments frequently rate their experience with psychedelic drugs among the top five most meaningful events in their lives. In other words, they are considered similar to births of children or weddings in terms of profundity. 
 
