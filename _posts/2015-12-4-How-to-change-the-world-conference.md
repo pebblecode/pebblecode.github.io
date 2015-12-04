@@ -48,5 +48,5 @@ The possibilities of quantum computers have long been theorised: a calculating d
 
 It seems that quantum effects may be much more widespread than merely robins. In fact, the standard chlorophyll molecule in every plant may use quantum effects to transmit energy. The efficiency of energy transfer within chlorophyll is astonishing. It is anywhere between 95 and 99 percent, which is distinctly abnormal for a biochemical process. Quantum effects could be an explanation for this efficiency. 
 
-These natural natural quantum effects raise the possibility that they could be used to create a quantum computer, and research efforts are underway to make that reality. 
+These natural quantum effects raise the possibility that they could be used to create a quantum computer, and research efforts are underway to make that reality. 
 
