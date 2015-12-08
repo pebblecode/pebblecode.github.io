@@ -42,7 +42,7 @@ Obviously we were going to make something huge, loud and fantastically ambitious
 
 ![Clorama Hacking on the Hardware](/img/posts/2015-12-08-christmas-slack-o-meter/making-a-mess.jpg)
 
-The team consisted of Aisling, fashioning the front-end, Clorama, hacking on the hardware and me bashing away at the backend. In no time we had our own mini-PRISM, our very own internal GCHQ snooping on every message in our public Slack channels. By using Slack's [outgoing webhooks](https://api.slack.com/outgoing-webhooks) we could POST every message to our own serversand analyse the text to find incidences of our trigger keywords.
+The team consisted of Aisling, fashioning the front-end, Clorama, hacking on the hardware and me bashing away at the backend. In no time we had our own mini-PRISM, our very own internal GCHQ snooping on every message in our public Slack channels. By using Slack's [outgoing webhooks](https://api.slack.com/outgoing-webhooks) we could POST every message to our own servers and analyse the text to find incidences of our trigger keywords.
 
 I used [Hapi](hapijs.com), a rich API framework that we've used for Hacks before. I wanted to use this Hackathon to familiarise myself with its structure, and I found it great - a quickly assembled springboard to launch our application from. For persistence we used [MongoDB](https://www.mongodb.org/) and to simplify DB connections and schema we used [Mongoose](http://mongoosejs.com/), both of which play nicely with Hapi.
 
