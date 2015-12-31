@@ -1,0 +1,46 @@
+{% include head.html %}
+
+  <body class="{{ page.layout }}">
+
+    {% include header.html %}
+
+    <section class="hero-container {{ page.colour }}">
+      <div class="hero-inner grid">
+        <h1 class="hero-title col-1-1">{% if page.hero-title %}{{page.hero-title}}{% else %}{{page.title}}{% endif %}</h1>
+        {% if page.hero-subtitle %}
+          <p class="hero-summary col-1-1">{{page.hero-subtitle}}</p>
+        {% endif %}
+        {% if page.hero-btn %}
+          <a href="{{page.hero-btn-url}}" class="btn btn-primary btn-block" data-sr="scale up 20%, vF 0">{{page.hero-btn}}</a>
+        {% endif %}
+      </div>
+      <div class="grid">
+        <div class="vert-bubble"></div>
+        <div class="vert-bubble"></div>
+        <div class="vert-bubble"></div>
+      </div>
+    </section>
+
+    {% include footer.html %}
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-2.1.1.min.js""><\/script>')</script>
+    <script type="text/javascript" src="{{ site.baseurl }}/js/vendor/jquery.lazyload.min.js"></script>
+    <script type="text/javascript" src="{{ site.baseurl }}/js/vendor/scrollReveal.min.js"></script>
+    <script type="text/javascript" src="{{ site.baseurl }}/js/main.js"></script>
+    <script>
+      jQuery(function ($) {
+        $("img.lazy").lazyload({
+          threshold : 600
+          });
+        $("#gif1").attr("src","second.jpg");
+      });
+    </script>
+    <script>
+
+    </script>
+
+    <!-- /scripts-->
+
+  </body>
+</html>

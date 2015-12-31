@@ -1,0 +1,11 @@
+//===============================================================================
+// Vertical
+//===============================================================================
+.vert-bubble {
+  background: $pink;
+  height: 100px;
+  width: 100px;
+  display: inline-block;
+  border-radius: 400px;
+  border: solid darken($pink, 10%) 8px;
+}
