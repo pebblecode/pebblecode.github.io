@@ -6,7 +6,6 @@
 
     <section class="hero-container {{ page.colour }}">
       <div class="hero-inner grid">
-        <h1 class="hero-title col-1-1">{% if page.hero-title %}{{page.hero-title}}{% else %}{{page.title}}{% endif %}</h1>
         {% if page.hero-subtitle %}
           <p class="hero-summary col-1-1">{{page.hero-subtitle}}</p>
         {% endif %}
@@ -18,38 +17,6 @@
         <div class="vert-bubble"></div>
         <div class="vert-bubble"></div>
         <div class="vert-bubble"></div>
-      </div>
-    </section>
-
-    <section class="hero-container {{ page.firstitem-colour }}">
-      <div class="hero-inner grid">
-        <h1 class="hero-title col-1-1">{% if page.hero-title %}{{page.firstitem-title}}{% else %}{{page.title}}{% endif %}</h1>
-        <p class="hero-summary col-1-1">{{page.firstitem-body}}</p>
-        We discovered:
-        {% if page.firstitem-list %}
-          <ul class="col-1-1">
-            {% for list_item in page.firstitem-list %}
-                <li>{{ list_item }}</li>
-            {% endfor %}
-          </ul>
-        {% endif %}
-        <p class="hero-summary col-1-1">{{page.firstitem-2ndpara}}</p>
-      </div>
-    </section>
-
-    <section class="hero-container {{ page.item-2-colour }}">
-      <div class="hero-inner grid">
-        <h1 class="hero-title col-1-1">{% if page.hero-title %}{{page.item-2-title}}{% else %}{{page.title}}{% endif %}</h1>
-        <p class="hero-summary col-1-1">{{page.item-2-body}}</p>
-        We discovered:
-        {% if page.item-2-list %}
-          <ul class="col-1-1">
-            {% for list_item in page.item-2-list %}
-                <li>{{ list_item }}</li>
-            {% endfor %}
-          </ul>
-        {% endif %}
-        <p class="hero-summary col-1-1">{{page.item-2-2ndpara}}</p>
       </div>
     </section>
 

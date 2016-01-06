@@ -44,8 +44,33 @@ item-2-2ndpara: We believe that by formalising a symbiotic relationship between 
 sections:
  - title: Patient Centricity
    color: blue
+   paragraphs:
+    - Health care provision has historically been designed around moving patients through a system as efficiently as possible.
+    - In our primary research with cancer patients we discovered that this top-down approach is not working efficiently for the very people it is meant to serve.
+    - list:
+       - a
+       - b
+       - c
+    - We believe there are numerous opportunities to realise cost-savings, improve patient experience and life expectancies by considering health care as a network around individuals rather than asking a patient to pass through unconnected silos.
+
  - title: Smart Research
    color: pink
+   paragraphs:
+    - In our interactions with the Health sector we have noticed that Research Scientists are increasingly using Computer Science to accelerate processes and discovery and to reduce costs.
+    - list:
+       - Research Scientists are developing programming skills.
+       - Organisations are buying misplaced off-the-shelf data products.
+       - Big Data is being widely espoused but is poorly understood.
+       - An emerging discipline of data visualisation.
+    - We believe that by formalising a symbiotic relationship between the two disciplines of Research Science and Computer Science organisations can realise cost-savings, shorten discovery cycles and deliver a Smart Research capability.
+    - Furthermore for publicly funded organisations and charities we advocate an Open Data Policy where research data is made available to third-parties by default.
+    - We believe that unlocking new meaning from data through openness and collaboration has the potential to accelerate discovery and understanding.
+
+ - title: Bottom-up Innovation
+   color: aqua
+   paragraphs:
+    - To date Government Institutions, Charities and Pharmaceuticals have conceived of digital innovation from a top-down perspective. Simply put large, monolithic organisations struggle to innovate at the speed of the open market. Top-down innovation is also extremely risky, often resulting in high profile failures like the NHS Patient Record system.
+    - We believe by starting small and involving users early and often in the process that innovation projects stand a better chance of success. Gradually, we believe large organisations can learn to innovate like the open market.
 
 ---
 
