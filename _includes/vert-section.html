@@ -1,0 +1,41 @@
+<section class="vert-section-container {{vsecloop.color}}">
+  <div class="vert-section-inner grid">
+    <h2 class="vert-section-title">{{vsecloop.title}}</h2>
+		{% for paragraph in vsecloop.paragraphs %}
+
+				{% if paragraph.list %}
+					<ul class="vert-section-points">
+					{% for paragraphlist in paragraph.list %}
+				      <li>{{paragraphlist}}</li>
+				    {% endfor %}
+					</ul>
+
+				{% elsif paragraph.list-title %}
+					<h3>{{paragraph.list-title}}</h3>
+				{% elsif paragraph.table %}
+				<table class="vert-section-table" style="width:100%">
+					{% for tablerow in paragraph.table %}
+					<tr>
+				    {% for tablecolumn in tablerow.row %}
+				    <td>
+								{{tablecolumn}}
+								</td>
+				    {% endfor %}
+				    </tr>
+				   {% endfor %}
+			   </table>
+				{% else %}
+				   <p>{{paragraph}}</p>
+				{% endif %}
+
+
+	    {% endfor %}
+
+	    {% for casestudy in vsecloop.casestudies %}
+	    <a>
+				{{ casestudy }}
+			</a>
+	    {% endfor %}
+  </div>
+</section>
+<!-- /.vert-section-container -->

@@ -1,15 +1,126 @@
 //===============================================================================
 // Vertical
 //===============================================================================
+
+.vert-bubble-container {
+  text-align: center;
+}
+
 .vert-bubble {
   background: $pink;
-  height: 100px;
-  width: 100px;
+  height: 200px;
+  width: 200px;
   display: inline-block;
   border-radius: 400px;
   border: solid darken($pink, 10%) 8px;
+
+  &:first-child {
+    margin-right: 24px;
+  }
+
+  &:last-child {
+    margin-left:  24px;
+  }
+
+  &.patient-centr {
+    background-image: url(../img/verticals/vert-health-pc.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: top;
+  }
+
+  &.smart-research {
+    background-image: url(../img/verticals/vert-health-sr.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: top;
+  }
+
+  &.bottom-up-innovation {
+    background-image: url(../img/verticals/vert-health-bui.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: top;
+  }
+
 }
 
-.vert-section {
-	color: white;
+.vert-section-points {
+  li {
+    margin-left: 18px;
+    margin-bottom: 12px;
+  }
+}
+
+
+.vert-section-container {
+  background-color: $primary;
+  position: relative;
+  overflow: hidden;
+  color: white;
+
+  &.aqua {
+    background-color: $aqua;
+  }
+
+  &.blue {
+    background-color: $blue;
+  }
+
+  &.purple {
+    background-color: $purple;
+  }
+
+    &.green {
+    background-color: $green;
+  }
+}
+
+.vert-section-inner {
+  padding-top: 45px;
+  padding-bottom: 90px;
+  display: block;
+  position: relative;
+
+  @media screen and ( max-width: $medium + 100px ) {
+    padding: 40px 0 60px
+  }
+}
+
+.vert-section-title {
+  text-shadow: 3px 4px 0 rgba(black, 0.2);
+  color: white;
+  margin: 0 0 10px;
+  line-height: 1;
+  margin-bottom: 48px;
+
+  @media screen and ( max-width: $medium ) {
+    margin: 0 0 10px;
+    line-height: 1;
+  }
+}
+
+.vert-section-table {
+  border: 2px solid darken($aqua, 20%);
+
+  tr {
+    // border: #333 solid 2px;
+    background: #eee;
+    color: #333;
+
+    &:nth-child(odd) {
+      background: #fff;
+    }
+
+    &:first-child {
+      background: darken($aqua, 20%);
+      color: #fff;
+      font-weight: bold;
+    }
+
+  }
+
+  td {
+    padding-left: 8px;
+  }
 }

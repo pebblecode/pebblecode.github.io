@@ -13,17 +13,17 @@
           <a href="{{page.hero-btn-url}}" class="btn btn-primary btn-block" data-sr="scale up 20%, vF 0">{{page.hero-btn}}</a>
         {% endif %}
       </div>
-      <div class="grid">
-        <div class="vert-bubble"></div>
-        <div class="vert-bubble"></div>
-        <div class="vert-bubble"></div>
+      <div class="vert-bubble-container grid">
+        <div class="vert-bubble patient-centr">
+        </div>
+        <div class="vert-bubble smart-research"></div>
+        <div class="vert-bubble bottom-up-innovation"></div>
       </div>
     </section>
 
     {% for vsecloop in page.sections %}
-        <!-- <div>{{ nhtest }}</div> -->
       {% assign vsection = vsecloop %}
-      {% include nh-test.html %}
+      {% include vert-section.html %}
     {% endfor %}
 
 
