@@ -14,6 +14,7 @@ hero-btn-url:
 ## Vertical Sections
 sections:
  - title: Patient Centricity
+   bubbleimage: vert-health-pc.svg
    color: blue
    paragraphs:
     - Health care provision has historically been designed around moving patients through a system as efficiently as possible.
@@ -29,6 +30,7 @@ sections:
     - Patient engagement Hack
     - National Patient Forum
  - title: Smart Research
+   bubbleimage: vert-health-sr.svg
    color: pink
    paragraphs:
     - In our interactions with the Health sector we have noticed that Research Scientists are increasingly using Computer Science to accelerate processes and discovery and to reduce costs.
@@ -42,6 +44,7 @@ sections:
     - Furthermore for publicly funded organisations and charities we advocate an Open Data Policy where research data is made available to third-parties by default.
     - We believe that unlocking new meaning from data through openness and collaboration has the potential to accelerate discovery and understanding.
  - title: Bottom-up Innovation
+   bubbleimage: vert-health-bui.svg
    color: aqua
    paragraphs:
     - To date Government Institutions, Charities and Pharmaceuticals have conceived of digital innovation from a top-down perspective. Simply put large, monolithic organisations struggle to innovate at the speed of the open market. Top-down innovation is also extremely risky, often resulting in high profile failures like the NHS Patient Record system.

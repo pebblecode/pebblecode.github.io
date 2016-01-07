@@ -14,11 +14,14 @@
         {% endif %}
       </div>
       <div class="vert-bubble-container grid">
-        <div class="vert-bubble patient-centr">
-        </div>
-        <div class="vert-bubble smart-research"></div>
-        <div class="vert-bubble bottom-up-innovation"></div>
-      </div>
+
+        {% for sectionbubble in page.sections %}
+          <div class="vert-sec-bubble">
+            <img src= '../img/verticals/{{ sectionbubble.bubbleimage }}' />
+            <h2 class="vert-sec-bubble-title">{{ sectionbubble.title }}</h2>
+          </div>
+        {% endfor %}
+
     </section>
 
     {% for vsecloop in page.sections %}

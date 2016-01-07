@@ -2,17 +2,19 @@
 // Vertical
 //===============================================================================
 
+
+
+// Bubbles
+//===============================================================================
+
 .vert-bubble-container {
   text-align: center;
 }
 
-.vert-bubble {
-  background: $pink;
-  height: 200px;
-  width: 200px;
+.vert-sec-bubble {
+  height: 250px;
+  width: 250px;
   display: inline-block;
-  border-radius: 400px;
-  border: solid darken($pink, 10%) 8px;
 
   &:first-child {
     margin-right: 24px;
@@ -21,37 +23,54 @@
   &:last-child {
     margin-left:  24px;
   }
-
-  &.patient-centr {
-    background-image: url(../img/verticals/vert-health-pc.svg);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-position: top;
-  }
-
-  &.smart-research {
-    background-image: url(../img/verticals/vert-health-sr.svg);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-position: top;
-  }
-
-  &.bottom-up-innovation {
-    background-image: url(../img/verticals/vert-health-bui.svg);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-position: top;
+  img {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    top: 0;
   }
 
 }
+
+.vert-sec-bubble-title {
+  font-size: 22px;
+  text-transform: none;
+  font-weight: bold;
+  font-style: normal;
+  font-family: "museo-sans","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+  color: white;
+  text-shadow: 2px 2px 0 rgba(black, 0.2);
+}
+
+
+// Paragraphs and Points
+//===============================================================================
 
 .vert-section-points {
   li {
-    margin-left: 18px;
     margin-bottom: 12px;
+    font-size: 24px;
+    font-style: italic;
+    margin-left: 24px;
+    &:before{
+      content: "•";
+      color: #ccc;
+      margin-left: -20px;
+    }
   }
 }
 
+.vert-section-point-title {
+  font-size: 16px;
+  text-transform: none;
+  font-family: "museo-sans","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+  letter-spacing: 0;
+  font-weight: bold;
+}
+
+
+// Sections
+//===============================================================================
 
 .vert-section-container {
   background-color: $primary;
@@ -122,5 +141,31 @@
 
   td {
     padding-left: 8px;
+  }
+}
+
+
+
+.vertical .hero-container {
+  background-image: url(../img/tile-white.png);
+  background-repeat: repeat-x;
+  background-position: bottom;
+  background-size: 400px;
+
+  padding-bottom: 128px;
+
+  &:after {
+    background: $blue;
+  }
+
+}
+
+h4.vert-section-breadcrumb {
+  margin-bottom: 4px;
+  color: #ccc;
+  &:after {
+    content: ">";
+    margin-left: 4px;
+    color: #ccc;
   }
 }
