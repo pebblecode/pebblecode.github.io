@@ -17,6 +17,7 @@ sections:
  - title: Patient Centricity
    bubbleimage: vert-health-pc.svg
    color: blue
+   extra-classes:
    paragraphs:
     - Health care provision has historically been designed around moving patients through a system as efficiently as possible.
     - In our primary research with cancer patients we discovered that this top-down approach is not working efficiently for the very people it is meant to serve.
