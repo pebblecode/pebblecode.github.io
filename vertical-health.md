@@ -10,6 +10,7 @@ hero-title: Health
 hero-subtitle: At Pebble, we specialise in building solutions for Health. We believe there’s an exciting transformation ahead driven by three main themes
 hero-btn:
 hero-btn-url:
+hero-image: vert-health-header.svg
 
 ## Vertical Sections
 sections:
@@ -19,7 +20,7 @@ sections:
    paragraphs:
     - Health care provision has historically been designed around moving patients through a system as efficiently as possible.
     - In our primary research with cancer patients we discovered that this top-down approach is not working efficiently for the very people it is meant to serve.
-    - list-title: We discovered
+    - list-title: "We discovered:"
     - list:
        - "<span>Patients</span> regularly carry around huge folders of notes to manage a complex process."
        - "Patients want greater ownership and transparency over their condition."
@@ -29,12 +30,14 @@ sections:
    casestudies:
     - Patient engagement Hack
     - National Patient Forum
+   now-image: vert-health-pc-old
+   future-image: vert-health-pc-new
  - title: Smart Research
    bubbleimage: vert-health-sr.svg
    color: pink
    paragraphs:
     - In our interactions with the Health sector we have noticed that Research Scientists are increasingly using Computer Science to accelerate processes and discovery and to reduce costs.
-    - list-title: We have observed
+    - list-title: "We have observed:"
     - list:
        - "Research Scientists are developing programming skills."
        - "Organisations are buying misplaced off-the-shelf data products."
@@ -43,6 +46,8 @@ sections:
     - We believe that by formalising a symbiotic relationship between the two disciplines of Research Science and Computer Science organisations can realise cost-savings, shorten discovery cycles and deliver a Smart Research capability.
     - Furthermore for publicly funded organisations and charities we advocate an Open Data Policy where research data is made available to third-parties by default.
     - We believe that unlocking new meaning from data through openness and collaboration has the potential to accelerate discovery and understanding.
+   now-image: vert-health-pc-old
+   future-image: vert-health-pc-new
  - title: Bottom-up Innovation
    bubbleimage: vert-health-bui.svg
    color: aqua
@@ -68,6 +73,7 @@ sections:
        - row:
           - Failure is expensive
           - Failure is discovered early
+
 
 ---
 

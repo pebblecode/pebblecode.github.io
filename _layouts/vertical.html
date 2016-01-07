@@ -6,22 +6,30 @@
 
     <section class="hero-container {{ page.colour }}">
       <div class="hero-inner grid">
+        <div class="hero-image-container">
+        {% if page.hero-image %}
+          <img src= '../img/verticals/{{page.hero-image}}' />
+        {% endif %}
+        </div>
+
         {% if page.hero-subtitle %}
           <p class="hero-summary col-1-1">{{page.hero-subtitle}}</p>
         {% endif %}
+
         {% if page.hero-btn %}
           <a href="{{page.hero-btn-url}}" class="btn btn-primary btn-block" data-sr="scale up 20%, vF 0">{{page.hero-btn}}</a>
         {% endif %}
-      </div>
-      <div class="vert-bubble-container grid">
 
-        {% for sectionbubble in page.sections %}
-          <div class="vert-sec-bubble">
-            <img src= '../img/verticals/{{ sectionbubble.bubbleimage }}' />
-            <h2 class="vert-sec-bubble-title">{{ sectionbubble.title }}</h2>
-          </div>
-        {% endfor %}
+        <div class="vert-bubble-container grid">
 
+          {% for sectionbubble in page.sections %}
+            <div class="vert-sec-bubble">
+              <img src= '../img/verticals/{{ sectionbubble.bubbleimage }}' />
+              <h2 class="vert-sec-bubble-title">{{ sectionbubble.title }}</h2>
+            </div>
+          {% endfor %}
+        </div>
+       </div>
     </section>
 
     {% for vsecloop in page.sections %}

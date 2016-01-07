@@ -18,9 +18,9 @@
 					{% for tablerow in paragraph.table %}
 					<tr>
 				    {% for tablecolumn in tablerow.row %}
-				    <td>
-								{{tablecolumn}}
-								</td>
+				    	<td>
+							{{tablecolumn}}
+							</td>
 				    {% endfor %}
 				    </tr>
 				   {% endfor %}
@@ -32,8 +32,26 @@
 
 	    {% endfor %}
 
+			{% if vsecloop.now-image %}
+			<div class="vert-section-prediction-now">
+				<h4 class="vert-section-prediction-title">Now:</h4>
+				<div class="vert-section-prediction-img-wrap">
+					<img src="../img/verticals/{{vsecloop.now-image}}.svg" />
+				</div>
+				</div>
+			{% endif %}
+			{% if vsecloop.future-image %}
+			<div class="vert-section-prediction-future">
+				<h4 class="vert-section-prediction-title">Future:</h4>
+				<div class="vert-section-prediction-img-wrap">
+					<img src="../img/verticals/{{vsecloop.future-image}}.svg" />
+				</div>
+				</div>
+			{% endif %}
+
+
 	    {% for casestudy in vsecloop.casestudies %}
-	    <a>
+	    <a class="vert-section-case-study">
 				{{ casestudy }}
 			</a>
 	    {% endfor %}

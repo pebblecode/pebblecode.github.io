@@ -49,14 +49,30 @@
 .vert-section-points {
   li {
     margin-bottom: 12px;
-    font-size: 24px;
+    // font-size: 24px;
     font-style: italic;
-    margin-left: 24px;
+    margin-left: 20px;
+    position: relative;
+
     &:before{
       content: "•";
       color: #ccc;
       margin-left: -20px;
+      margin-right: 20px;
+      position: absolute;
     }
+
+    //  &:before{
+    //   content: "";
+    //   background-image: url(../img/verticals/vert-health-pencil-bullet.svg);
+    //   height: 40px;
+    //   width: 40px;
+    //   background-size: contain;
+    //   color: #ccc;
+    //   margin-left: -40px;
+    //   // margin-right: 20px;
+    //   position: absolute;
+    // }
   }
 }
 
@@ -65,7 +81,9 @@
   text-transform: none;
   font-family: "museo-sans","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
   letter-spacing: 0;
-  font-weight: bold;
+  font-weight: 800;
+  font-style: normal;
+  margin-bottom: 8px;
 }
 
 
@@ -163,9 +181,50 @@
 h4.vert-section-breadcrumb {
   margin-bottom: 4px;
   color: #ccc;
+  color: rgba(black, 0.2);
   &:after {
     content: ">";
     margin-left: 4px;
-    color: #ccc;
+    // color: #ccc;
   }
+}
+
+.vertical .hero-image-container {
+  height: 250px;
+  text-align: center;
+  img {
+    height: 100%;
+  }
+}
+
+
+// Now & Future
+//===============================================================================
+
+.vert-section-prediction-title {
+  margin-bottom: 6px;
+}
+
+.vert-section-prediction-now {
+  width: 50%;
+  float: left;
+  .vert-section-prediction-img-wrap {
+      background: #aaa;
+  }
+}
+
+.vert-section-prediction-future {
+  width: 50%;
+  float: right;
+  .vert-section-prediction-img-wrap {
+      background: #fff;
+  }
+}
+
+// Case Study
+//===============================================================================
+
+.vert-section-case-study {
+  width: 50%;
+  display: inline-block;
 }
