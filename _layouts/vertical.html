@@ -23,10 +23,10 @@
         <div class="vert-bubble-container grid">
 
           {% for sectionbubble in page.sections %}
-            <div class="vert-sec-bubble">
+            <a href="#{{sectionbubble.sectionid}}" class="vert-sec-bubble">
               <img src= '../img/verticals/{{ sectionbubble.bubbleimage }}' />
               <h2 class="vert-sec-bubble-title">{{ sectionbubble.title }}</h2>
-            </div>
+            </a>
           {% endfor %}
         </div>
        </div>

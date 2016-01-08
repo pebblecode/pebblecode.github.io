@@ -30,6 +30,10 @@
     top: 0;
   }
 
+  &:hover {
+    transform: scale(1.1);
+  }
+
 }
 
 .vert-sec-bubble-title {
@@ -111,6 +115,26 @@
     &.green {
     background-color: $green;
   }
+
+  &:before {
+    @include shadow-pseudo;
+    bottom: 20px;
+    height: 20px;
+    background-color: rgba(black, 0.15);
+    transform: rotate(2.1deg) scale(1.2);
+    -ms-transform: rotate(2.1deg) scale(1.2);
+    -webkit-transform: rotate(2.1deg) scale(1.2);
+  }
+
+  &:after {
+    @include shadow-pseudo;
+    bottom: -25px;
+    height: 50px;
+    background-color: white;
+    transform: rotate(1.3deg) scale(1.2);
+    -ms-transform: rotate(1.3deg) scale(1.2);
+    -webkit-transform: rotate(1.3deg) scale(1.2);
+  }
 }
 
 .vert-section-inner {
@@ -122,6 +146,10 @@
   @media screen and ( max-width: $medium + 100px ) {
     padding: 40px 0 60px
   }
+  p:first-of-type{
+    font-size: 24px;
+  }
+
 }
 
 .vert-section-title {
@@ -203,22 +231,32 @@ h4.vert-section-breadcrumb {
 
 .vert-section-prediction-title {
   margin-bottom: 6px;
+  text-shadow: 2px 2px 0 rgba(black, 0.2);
 }
 
 .vert-section-prediction-now {
   width: 50%;
   float: left;
-  .vert-section-prediction-img-wrap {
-      background: #aaa;
-  }
 }
 
 .vert-section-prediction-future {
   width: 50%;
   float: right;
-  .vert-section-prediction-img-wrap {
-      background: #fff;
-  }
+}
+
+.vert-section-prediction-img-wrap {
+  padding: 18px;
+}
+
+.vert-section-prediction-wrapper {
+  background: #fff;
+  overflow: hidden;
+}
+
+.vert-section-large-image {
+width: 400px;
+height: 400px;
+float: right;
 }
 
 // Case Study

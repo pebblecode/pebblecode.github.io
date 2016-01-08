@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 800 800" style="enable-background:new 0 0 800 800;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:url(#SVGID_1_);}
+	.st1{fill:#A4CE4E;}
+	.st2{fill:#0EA2DC;}
+	.st3{fill:none;stroke:#37BEC0;stroke-width:10;stroke-miterlimit:10;}
+	.st4{fill:none;stroke:#37BEC0;stroke-miterlimit:10;}
+	.st5{opacity:0.1;fill:#37BEC0;stroke:#FFFFFF;stroke-miterlimit:10;}
+	.st6{opacity:0.55;fill:#37BEC0;}
+	.st7{fill:#37BEC0;}
+	.st8{fill:#FFFFFF;stroke:#F2F2F2;stroke-width:9;stroke-miterlimit:10;}
+	.st9{font-family:'MetaOT-Bold';}
+	.st10{font-size:30px;}
+</style>
+<g id="Now">
+</g>
+<radialGradient id="SVGID_1_" cx="24.2344" cy="650.5758" r="308.9365" gradientTransform="matrix(0.7371 0 0 1.3673 378.6902 -490.9447)" gradientUnits="userSpaceOnUse">
+	<stop  offset="0.4663" style="stop-color:#37BEC0"/>
+	<stop  offset="1" style="stop-color:#FFFFFF;stop-opacity:0"/>
+</radialGradient>
+<ellipse class="st0" cx="396.6" cy="398.6" rx="227.7" ry="422.4"/>
+<circle class="st1" cx="261" cy="389" r="215.9"/>
+<circle class="st2" cx="537" cy="389" r="215.9"/>
+<g>
+	<g>
+		<path class="st3" d="M537,173.1c-52.5,0-100.6,18.7-138,49.9c-37.4-31.1-85.5-49.9-138-49.9c-119.3,0-215.9,96.7-215.9,215.9
+			S141.7,604.9,261,604.9c52.5,0,100.6-18.7,138-49.9c37.4,31.1,85.5,49.9,138,49.9c119.3,0,215.9-96.7,215.9-215.9
+			S656.3,173.1,537,173.1z"/>
+	</g>
+</g>
+<path class="st4" d="M321.1,389c0,66.8,30.3,126.5,77.9,166.1c47.6-39.6,77.9-99.3,77.9-166.1c0-66.8-30.3-126.5-77.9-166.1
+	C351.4,262.5,321.1,322.2,321.1,389z"/>
+<g>
+	<path class="st5" d="M249.6,389c0,128,58.1,242.4,149.4,318.4C490.3,631.4,548.4,517,548.4,389c0-128-58.1-242.4-149.4-318.4
+		C307.7,146.6,249.6,261,249.6,389z"/>
+	<path class="st6" d="M285.3,389c0,97.4,44.2,184.5,113.7,242.2c69.4-57.8,113.7-144.8,113.7-242.2c0-97.4-44.2-184.5-113.7-242.2
+		C329.6,204.5,285.3,291.6,285.3,389z"/>
+	<g>
+		<g>
+			<path class="st7" d="M321.1,389c0,66.8,30.3,126.5,77.9,166.1c47.6-39.6,77.9-99.3,77.9-166.1S446.6,262.5,399,222.9
+				C351.4,262.5,321.1,322.2,321.1,389z"/>
+		</g>
+	</g>
+</g>
+<g>
+	<g>
+		<path class="st8" d="M265.4,432.4H125c-12.9,0-23.4-10.5-23.4-23.4v-40c0-12.9,10.5-23.4,23.4-23.4h140.4
+			c12.9,0,23.4,10.5,23.4,23.4v40C288.8,421.9,278.3,432.4,265.4,432.4z"/>
+	</g>
+	<text transform="matrix(1 0 0 1 134.682 382.1991)"><tspan x="0" y="0" class="st9 st10">Research </tspan><tspan x="9.6" y="36" class="st9 st10">Science</tspan></text>
+</g>
+<g>
+	<g>
+		<path class="st8" d="M688.8,432.4H548.3c-12.9,0-23.4-10.5-23.4-23.4v-40c0-12.9,10.5-23.4,23.4-23.4h140.4
+			c12.9,0,23.4,10.5,23.4,23.4v40C712.1,421.9,701.7,432.4,688.8,432.4z"/>
+	</g>
+	<text transform="matrix(1 0 0 1 554.7717 382.1991)"><tspan x="0" y="0" class="st9 st10">Computer </tspan><tspan x="12.9" y="36" class="st9 st10">Science</tspan></text>
+</g>
+<g>
+	<g>
+		<path class="st8" d="M474,431H333.6c-12.9,0-23.4-10.5-23.4-23.4v-40c0-12.9,10.5-23.4,23.4-23.4H474c12.9,0,23.4,10.5,23.4,23.4
+			v40C497.3,420.5,486.9,431,474,431z"/>
+	</g>
+	<text transform="matrix(1 0 0 1 364.3701 380.7928)"><tspan x="0" y="0" class="st9 st10">Smart </tspan><tspan x="-21.1" y="36" class="st9 st10">Research</tspan></text>
+</g>
+</svg>

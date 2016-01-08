@@ -15,7 +15,9 @@ hero-image: vert-health-header.svg
 ## Vertical Sections
 sections:
  - title: Patient Centricity
+   sectionid: patientcentricity
    bubbleimage: vert-health-pc.svg
+   largeimage: vert-health-pc-emblem.svg
    color: blue
    extra-classes:
    paragraphs:
@@ -34,7 +36,9 @@ sections:
    now-image: vert-health-pc-old
    future-image: vert-health-pc-new
  - title: Smart Research
+   sectionid: smartresearch
    bubbleimage: vert-health-sr.svg
+   largeimage: vert-health-pc-emblem.svg
    color: pink
    paragraphs:
     - In our interactions with the Health sector we have noticed that Research Scientists are increasingly using Computer Science to accelerate processes and discovery and to reduce costs.
@@ -47,10 +51,12 @@ sections:
     - We believe that by formalising a symbiotic relationship between the two disciplines of Research Science and Computer Science organisations can realise cost-savings, shorten discovery cycles and deliver a Smart Research capability.
     - Furthermore for publicly funded organisations and charities we advocate an Open Data Policy where research data is made available to third-parties by default.
     - We believe that unlocking new meaning from data through openness and collaboration has the potential to accelerate discovery and understanding.
-   now-image: vert-health-pc-old
-   future-image: vert-health-pc-new
+   now-image: vert-health-sr-old
+   future-image: vert-health-sr-new
  - title: Bottom-up Innovation
+   sectionid: bottomupinnovation
    bubbleimage: vert-health-bui.svg
+   largeimage: vert-health-pc-emblem.svg
    color: aqua
    paragraphs:
     - To date Government Institutions, Charities and Pharmaceuticals have conceived of digital innovation from a top-down perspective. Simply put large, monolithic organisations struggle to innovate at the speed of the open market. Top-down innovation is also extremely risky, often resulting in high profile failures like the NHS Patient Record system.
