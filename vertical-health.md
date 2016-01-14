@@ -7,7 +7,7 @@ colour: aqua
 
 ## Hero Content
 hero-title: We care about Health
-hero-subtitle: At Pebble, we're experts in building solutions for Health. We believe there's an exciting digital transformation on the horizon. Being driven by three main themes
+hero-subtitle: "At Pebble, we're experts in building solutions for Health. We believe there's an exciting digital transformation on the horizon, being driven by three main themes:"
 hero-btn:
 hero-btn-url:
 hero-image: vert-health-header.svg
@@ -31,8 +31,6 @@ sections:
        - "Little or no provision is made for the emotional side for life-changing conditions like cancer."
     - We believe there are numerous opportunities to realise cost-savings, improve patient experience and life expectancies by considering health care as a network around individuals rather than asking a patient to pass through unconnected silos.
    casestudies:
-    - Patient engagement Hack
-    - National Patient Forum
    now-image: vert-health-pc-old
    future-image: vert-health-pc-new
  - title: Smart Research
