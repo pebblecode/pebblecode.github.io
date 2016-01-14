@@ -6,7 +6,7 @@ group: nav
 colour: aqua
 
 ## Hero Content
-hero-title: Health
+hero-title: We care about Health
 hero-subtitle: At Pebble, we specialise in building solutions for Health. We believe there’s an exciting transformation ahead driven by three main themes
 hero-btn:
 hero-btn-url:
@@ -38,7 +38,7 @@ sections:
  - title: Smart Research
    sectionid: smartresearch
    bubbleimage: vert-health-sr.svg
-   largeimage: vert-health-pc-emblem.svg
+   largeimage: vert-health-sr-emblem.svg
    color: pink
    paragraphs:
     - In our interactions with the Health sector we have noticed that Research Scientists are increasingly using Computer Science to accelerate processes and discovery and to reduce costs.
@@ -56,7 +56,7 @@ sections:
  - title: Bottom-up Innovation
    sectionid: bottomupinnovation
    bubbleimage: vert-health-bui.svg
-   largeimage: vert-health-pc-emblem.svg
+   largeimage: vert-health-bui-emblem.svg
    color: aqua
    paragraphs:
     - To date Government Institutions, Charities and Pharmaceuticals have conceived of digital innovation from a top-down perspective. Simply put large, monolithic organisations struggle to innovate at the speed of the open market. Top-down innovation is also extremely risky, often resulting in high profile failures like the NHS Patient Record system.

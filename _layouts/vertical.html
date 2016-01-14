@@ -6,6 +6,7 @@
 
     <section class="hero-container {{ page.colour }}">
       <div class="hero-inner grid">
+      <h1 class="hero-title col-1-1">{% if page.hero-title %}{{page.hero-title}}{% else %}{{page.title}}{% endif %}</h1>
         <div class="hero-image-container">
         {% if page.hero-image %}
           <img src= '../img/verticals/{{page.hero-image}}' />
