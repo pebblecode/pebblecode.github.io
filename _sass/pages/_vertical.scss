@@ -16,6 +16,15 @@
   width: 250px;
   display: inline-block;
 
+  @media screen and ( max-width: $large ) {
+    height: 200px;
+    width: 200px;
+  }
+  @media screen and ( max-width: $medium ) {
+    height: 150px;
+    width: 150px;
+  }
+
   &:first-child {
     margin-right: 24px;
   }
@@ -53,41 +62,82 @@
 .vert-section-points {
   li {
     margin-bottom: 12px;
-    // font-size: 24px;
-    font-style: italic;
-    margin-left: 20px;
     position: relative;
+    font-weight: bold;
+    display: inline-block;
+    max-width: 50%;
+    padding: 6px 12px;
+    z-index: 1;
 
-    &:before{
-      content: "•";
-      color: #ccc;
-      margin-left: -20px;
-      margin-right: 20px;
-      position: absolute;
+    // @media screen and ( max-width: $large) {
+    //   max-width: 100%;
+    //   display: block;
+    // }
+
+    &:before {
+      @include shadow-pseudo;
+      height: 100%;
+      top: 0;
+      background-color: rgba(black, 0.3);
+      box-shadow: 0 0 10px rgba(black, 0.2);
+      z-index: -1;
+      transform: rotate(2deg) skew(1deg);
+      -ms-transform: rotate(2deg) skew(1deg);
+      -webkit-transform: rotate(2deg) skew(1deg);
     }
 
-    //  &:before{
-    //   content: "";
-    //   background-image: url(../img/verticals/vert-health-pencil-bullet.svg);
-    //   height: 40px;
-    //   width: 40px;
-    //   background-size: contain;
-    //   color: #ccc;
-    //   margin-left: -40px;
-    //   // margin-right: 20px;
-    //   position: absolute;
-    // }
+    &:after {
+      @include shadow-pseudo;
+      height: 100%;
+      top: 0;
+      background-color: white;
+      box-shadow: 0 0 10px rgba(black, 0.2);
+      z-index: -1;
+      transform: rotate(-0.3deg) skew(1deg);
+      -ms-transform: rotate(-0.3deg) skew(1deg);
+      -webkit-transform: rotate(-0.3deg) skew(1deg);
+
+
+      .blue &{
+        background-color: darken($blue, 10%);
+      }
+
+      .purple &{
+        background-color: darken($purple, 10%);
+      }
+
+    }
+    &:nth-child(2):before{
+        transform: rotate(-2deg) skew(-1deg);
+        -ms-transform: rotate(-2deg) skew(-1deg);
+        -webkit-transform: rotate(-2deg) skew(-1deg);
+      }
+    &:nth-child(2):after{
+        transform: rotate(0.3deg) skew(-1deg);
+        -ms-transform: rotate(0.3deg) skew(-1deg);
+        -webkit-transform: rotate(0.3deg) skew(-1deg);
+    }
+    &:nth-child(3):before{
+        transform: rotate(1.2deg) skew(0.4deg);
+        -ms-transform: rotate(1.2deg) skew(0.4deg);
+        -webkit-transform: rotate(1.2deg) skew(0.4deg);
+      }
+    &:nth-child(3):after{
+        transform: rotate(1.2deg) skew(0.4deg);
+        -ms-transform: rotate(1.2deg) skew(0.4deg);
+        -webkit-transform: rotate(1.2deg) skew(0.4deg);
+    }
   }
 }
 
 .vert-section-point-title {
-  font-size: 16px;
+  font-size: 22px;
   text-transform: none;
   font-family: "museo-sans","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
   letter-spacing: 0;
   font-weight: 800;
   font-style: normal;
-  margin-bottom: 8px;
+  margin-bottom: 24px;
 }
 
 
@@ -268,19 +318,26 @@ h4.vert-section-breadcrumb {
 // Now & Future
 //===============================================================================
 
+
+
 .vert-section-prediction-title {
   margin-bottom: 6px;
   text-shadow: 2px 2px 0 rgba(black, 0.2);
 }
 
-.vert-section-prediction-now {
+.vert-section-prediction {
   width: 50%;
-  float: left;
-}
+  @media screen and ( max-width: $medium ) {
+    width: 100%;
+  }
 
-.vert-section-prediction-future {
-  width: 50%;
-  float: right;
+  &.now {
+    float: left;
+  }
+
+  &.future {
+    float: right;
+  }
 }
 
 .vert-section-prediction-img-wrap {
@@ -292,11 +349,27 @@ h4.vert-section-breadcrumb {
   overflow: hidden;
 }
 
-.vert-section-large-image {
-width: 400px;
-height: 400px;
-float: right;
+.vert-section-prediction-heading {
+    text-shadow: 2px 3px 0 rgba(black, 0.2);
+    &.blue {
+      color: $blue;
+    }
+    &.purple {
+      color: $purple;
+    }
 }
+
+.vert-section-large-image {
+  width: 400px;
+  height: 400px;
+  float: right;
+  @media screen and ( max-width: $medium ) {
+    height: 200px;
+    width: 200px;
+  }
+}
+
+
 
 // Case Study
 //===============================================================================
