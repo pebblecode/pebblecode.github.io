@@ -6,8 +6,8 @@ group: nav
 colour: aqua
 
 ## Hero Content
-hero-title: Health
-hero-subtitle: At Pebble, we specialise in building solutions for Health. We believe there’s an exciting transformation ahead driven by three main themes
+hero-title: We care about Health
+hero-subtitle: "At Pebble, we're experts in building solutions for Health. We believe there's an exciting digital transformation on the horizon, being driven by three main themes:"
 hero-btn:
 hero-btn-url:
 hero-image: vert-health-header.svg
@@ -31,15 +31,13 @@ sections:
        - "Little or no provision is made for the emotional side for life-changing conditions like cancer."
     - We believe there are numerous opportunities to realise cost-savings, improve patient experience and life expectancies by considering health care as a network around individuals rather than asking a patient to pass through unconnected silos.
    casestudies:
-    - Patient engagement Hack
-    - National Patient Forum
    now-image: vert-health-pc-old
    future-image: vert-health-pc-new
  - title: Smart Research
    sectionid: smartresearch
    bubbleimage: vert-health-sr.svg
-   largeimage: vert-health-pc-emblem.svg
-   color: pink
+   largeimage: vert-health-sr-emblem.svg
+   color: purple
    paragraphs:
     - In our interactions with the Health sector we have noticed that Research Scientists are increasingly using Computer Science to accelerate processes and discovery and to reduce costs.
     - list-title: "We have observed:"
@@ -56,8 +54,8 @@ sections:
  - title: Bottom-up Innovation
    sectionid: bottomupinnovation
    bubbleimage: vert-health-bui.svg
-   largeimage: vert-health-pc-emblem.svg
-   color: aqua
+   largeimage: vert-health-bui-emblem.svg
+   color: pink
    paragraphs:
     - To date Government Institutions, Charities and Pharmaceuticals have conceived of digital innovation from a top-down perspective. Simply put large, monolithic organisations struggle to innovate at the speed of the open market. Top-down innovation is also extremely risky, often resulting in high profile failures like the NHS Patient Record system.
     - We believe by starting small and involving users early and often in the process that innovation projects stand a better chance of success. Gradually, we believe large organisations can learn to innovate like the open market.
