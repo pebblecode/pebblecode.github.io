@@ -205,6 +205,31 @@ a .post-title {
   color: rgba($ink, 0.6);
 }
 
+.post-excerpt {
+  font-size: 16px;
+
+  p {
+    display: inline-block;
+    width: 69%;
+    vertical-align: top;
+  }
+
+  .post-thumbnail {
+    max-width: 30%;
+    display: inline-block;
+    max-height: 200px;
+    float: right;
+    padding: 20px;
+  }
+}
+
+// .post-thumbnail {
+//   background-size: contain;
+//   width: 30%;
+//   height: 100px;
+//   background-repeat: no-repeat;
+// }
+
 .blog-pagination {
   padding-top: 80px;
   padding-bottom: 40px;
