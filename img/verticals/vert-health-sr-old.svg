@@ -1,48 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 800 800" style="enable-background:new 0 0 800 800;" xml:space="preserve">
+	 viewBox="120 81 800 800" style="enable-background:new 120 81 800 800;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:none;stroke:#808080;stroke-width:9;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
 	.st1{fill:#B3B3B3;stroke:#808080;stroke-width:9;stroke-miterlimit:10;}
 	.st2{fill:#F2F2F2;stroke:#B3B3B3;stroke-width:9;stroke-miterlimit:10;}
-	.st3{font-family:'MetaOT-Bold';}
+	.st3{font-family:'MuseoSans-700Italic';}
 	.st4{font-size:30px;}
 </style>
 <g id="Now">
 </g>
 <g>
-	<polyline class="st0" points="281.3,514.9 254,530.2 281.3,545.5 	"/>
-	<line class="st0" x1="635.9" y1="530.7" x2="259.4" y2="529.8"/>
+	<polyline class="st0" points="401.3,595.9 374,611.2 401.3,626.5 	"/>
+	<line class="st0" x1="755.9" y1="611.7" x2="379.4" y2="610.8"/>
 </g>
 <g>
-	<polyline class="st0" points="519.6,265.5 546.9,250.2 519.6,234.9 	"/>
-	<line class="st0" x1="165" y1="249.7" x2="541.5" y2="250.7"/>
+	<polyline class="st0" points="639.6,346.5 666.9,331.2 639.6,315.9 	"/>
+	<line class="st0" x1="285" y1="330.7" x2="661.5" y2="331.7"/>
 </g>
-<circle class="st1" cx="165" cy="390" r="140"/>
-<circle class="st1" cx="635" cy="390" r="140"/>
-<g>
-	<g>
-		<path class="st2" d="M235.2,433.4H94.8c-12.9,0-23.4-10.5-23.4-23.4v-40c0-12.9,10.5-23.4,23.4-23.4h140.4
-			c12.9,0,23.4,10.5,23.4,23.4v40C258.6,422.9,248.1,433.4,235.2,433.4z"/>
-	</g>
-	<text transform="matrix(1 0 0 1 104.4607 383.1991)"><tspan x="0" y="0" class="st3 st4">Research </tspan><tspan x="9.6" y="36" class="st3 st4">Science</tspan></text>
-</g>
-<g>
-	<path class="st2" d="M459.8,310.7H319.3c-12.9,0-23.4-10.5-23.4-23.4v-40c0-12.9,10.5-23.4,23.4-23.4h140.4
-		c12.9,0,23.4,10.5,23.4,23.4v40C483.1,300.2,472.7,310.7,459.8,310.7z"/>
-</g>
-<text transform="matrix(1 0 0 1 356.8221 260.4855)"><tspan x="0" y="0" class="st3 st4">Early </tspan><tspan x="-26.8" y="36" class="st3 st4">Adopters</tspan></text>
-<g>
-	<path class="st2" d="M470.4,574.1H330c-12.9,0-23.4-10.5-23.4-23.4v-40c0-12.9,10.5-23.4,23.4-23.4h140.4
-		c12.9,0,23.4,10.5,23.4,23.4v40C493.8,563.6,483.3,574.1,470.4,574.1z"/>
-</g>
-<text transform="matrix(1 0 0 1 316.4998 523.9163)"><tspan x="0" y="0" class="st3 st4">Off-the-shelf </tspan><tspan x="25.4" y="36" class="st3 st4">Products</tspan></text>
+<circle class="st1" cx="285" cy="471" r="140"/>
+<circle class="st1" cx="755" cy="471" r="140"/>
 <g>
 	<g>
-		<path class="st2" d="M705.2,433.4H564.8c-12.9,0-23.4-10.5-23.4-23.4v-40c0-12.9,10.5-23.4,23.4-23.4h140.4
-			c12.9,0,23.4,10.5,23.4,23.4v40C728.6,422.9,718.1,433.4,705.2,433.4z"/>
+		<path class="st2" d="M355.2,514.4H214.8c-12.9,0-23.4-10.5-23.4-23.4v-40c0-12.9,10.5-23.4,23.4-23.4h140.4
+			c12.9,0,23.4,10.5,23.4,23.4v40C378.6,503.9,368.1,514.4,355.2,514.4z"/>
 	</g>
-	<text transform="matrix(1 0 0 1 571.2205 383.1991)"><tspan x="0" y="0" class="st3 st4">Computer </tspan><tspan x="12.9" y="36" class="st3 st4">Science</tspan></text>
+	<text transform="matrix(1 0 0 1 224.4607 464.1991)" class="st3 st4">Research </text>
+	<text transform="matrix(1 0 0 1 234.0607 500.1991)" class="st3 st4">Science</text>
+</g>
+<g>
+	<path class="st2" d="M599.8,375.1H439.3c-12.9,0-23.4-10.5-23.4-23.4v-40c0-12.9,10.5-23.4,23.4-23.4h160.4
+		c12.9,0,23.4,10.5,23.4,23.4v40C623.1,364.6,612.7,375.1,599.8,375.1z"/>
+</g>
+<text transform="matrix(1 0 0 1 486.65 323.8854)" class="st3 st4">Early </text>
+<text transform="matrix(1 0 0 1 459.85 359.8854)" class="st3 st4">Adopters</text>
+<g>
+	<path class="st2" d="M600.2,655.1H439.8c-12.9,0-23.4-10.5-23.4-23.4v-40c0-12.9,10.5-23.4,23.4-23.4h160.4
+		c12.9,0,23.4,10.5,23.4,23.4v40C623.6,644.6,613.1,655.1,600.2,655.1z"/>
+</g>
+<text transform="matrix(1 0 0 1 427.2998 607.5003)" class="st3 st4">Off-the-shelf </text>
+<text transform="matrix(1 0 0 1 452.6998 643.5003)" class="st3 st4">Products</text>
+<g>
+	<g>
+		<path class="st2" d="M825.2,514.4H684.8c-12.9,0-23.4-10.5-23.4-23.4v-40c0-12.9,10.5-23.4,23.4-23.4h140.4
+			c12.9,0,23.4,10.5,23.4,23.4v40C848.6,503.9,838.1,514.4,825.2,514.4z"/>
+	</g>
+	<text transform="matrix(1 0 0 1 691.2205 464.1991)" class="st3 st4">Computer </text>
+	<text transform="matrix(1 0 0 1 704.1205 500.1991)" class="st3 st4">Science</text>
 </g>
 </svg>

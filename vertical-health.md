@@ -7,7 +7,7 @@ colour: aqua
 
 ## Hero Content
 hero-title: We care about Health
-hero-subtitle: "At Pebble, we're experts in building solutions for Health. We believe there's an exciting digital transformation on the horizon, being driven by three main themes:"
+hero-subtitle: "At pebble, we're experts in building solutions for Health. We believe there's an exciting digital transformation on the horizon, being driven by three main themes:"
 hero-btn:
 hero-btn-url:
 hero-image: vert-health-header.svg
@@ -24,10 +24,10 @@ sections:
     - "Health care provision has historically been designed around moving patients through a system as efficiently as possible.<br /><br />In our primary research with cancer patients we discovered that this top-down approach is not working efficiently for the very people it is meant to serve."
     - list-title: "We discovered:"
     - list:
-       - "<span>Patients</span> regularly carry around huge folders<br />of notes to manage a complex process."
-       - "Patients want greater ownership and transparency<br />over their condition."
-       - "Patients are highly intelligent about their condition and<br />want raw data over dumbed down summaries."
-       - "Little or no provision is made for the emotional<br />side for life-changing conditions like cancer."
+       - "<span>Patients</span> regularly carry around huge folders<span class='line-break'></span>of notes to manage a complex process."
+       - "Patients want greater ownership and transparency<span class='line-break'></span>over their condition."
+       - "Patients are highly intelligent about their condition and<span class='line-break'></span>want raw data over dumbed down summaries."
+       - "Little or no provision is made for the emotional<span class='line-break'></span>side for life-changing conditions like cancer."
     - We believe there are numerous opportunities to realise cost-savings, improve patient experience and life expectancies by considering health care as a network around individuals rather than asking a patient to pass through unconnected silos.
    casestudies:
    now-image: vert-health-pc-old

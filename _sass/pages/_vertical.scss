@@ -9,38 +9,69 @@
 
 .vert-bubble-container {
   text-align: center;
+  @media screen and ( max-width: $medium ) {
+    padding: 12px;
+  }
 }
 
 .vert-sec-bubble {
   height: 250px;
   width: 250px;
   display: inline-block;
+  position: relative;
+
+  img {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    top: 0;
+    @media screen and ( max-width: $medium ) {
+      height: 100%;
+      float: right;
+      width:100px;
+    }
+  }
 
   @media screen and ( max-width: $large ) {
     height: 200px;
     width: 200px;
   }
   @media screen and ( max-width: $medium ) {
-    height: 150px;
-    width: 150px;
+    height: 100px;
+    width: 100%;
+    text-align: left;
+    display: block;
+    padding: 4px 12px ;
+    background: rgba(black, 0.2);
+    border: rgba(white, 0.6) solid 6px;
+    border-radius: 6px;
+    margin-bottom: 8px;
+
+    &:hover {
+      background: $pink;
+    }
   }
 
   &:first-child {
     margin-right: 24px;
+    @media screen and ( max-width: $medium ) {
+      margin-right: 0;
+    }
   }
 
   &:last-child {
     margin-left:  24px;
+    @media screen and ( max-width: $medium ) {
+      margin-left: 0;
+    }
   }
-  img {
-    height: 100%;
-    width: 100%;
-    position: relative;
-    top: 0;
-  }
+
 
   &:hover {
     transform: scale(1.1);
+    @media screen and ( max-width: $medium ) {
+      transform: none;
+    }
   }
 
 }
@@ -53,6 +84,13 @@
   font-family: "museo-sans","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
   color: white;
   text-shadow: 2px 2px 0 rgba(black, 0.2);
+
+  @media screen and ( max-width: $medium ) {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
 }
 
 
@@ -60,19 +98,24 @@
 //===============================================================================
 
 .vert-section-points {
+  max-width: 50%;
+
+  @media screen and ( max-width: $medium) {
+    max-width: 100%;
+  }
+
   li {
     margin-bottom: 12px;
     position: relative;
     font-weight: bold;
     display: inline-block;
-    max-width: 50%;
+    max-width: 100%;
     padding: 6px 12px;
     z-index: 1;
 
-    // @media screen and ( max-width: $large) {
-    //   max-width: 100%;
-    //   display: block;
-    // }
+    @media screen and ( max-width: $medium) {
+      font-size: 14px;
+    }
 
     &:before {
       @include shadow-pseudo;
@@ -127,6 +170,13 @@
         -ms-transform: rotate(1.2deg) skew(0.4deg);
         -webkit-transform: rotate(1.2deg) skew(0.4deg);
     }
+  }
+}
+
+.line-break {
+  display: block;
+  @media screen and ( max-width: $medium ) {
+   display: none;
   }
 }
 
@@ -230,11 +280,15 @@
   position: relative;
 
   @media screen and ( max-width: $medium + 100px ) {
-    padding: 40px 0 60px
+    padding: 20px;
+    padding-bottom: 90px;
   }
   p:first-of-type{
     font-size: 24px;
     line-height: 1.2;
+    @media screen and ( max-width: $medium) {
+      font-size: 18px;
+    }
   }
 
 }
@@ -255,19 +309,19 @@
 }
 
 .vert-section-table {
-  border: 2px solid darken($aqua, 20%);
+  border: 2px solid darken($pink, 20%);
 
   tr {
     // border: #333 solid 2px;
-    background: #eee;
+    background: lighten($pink, 20%);
     color: #333;
 
     &:nth-child(odd) {
-      background: #fff;
+      background: lighten($pink, 30%);
     }
 
     &:first-child {
-      background: darken($aqua, 20%);
+      background: darken($pink, 20%);
       color: #fff;
       font-weight: bold;
     }
@@ -347,6 +401,9 @@ h4.vert-section-breadcrumb {
 .vert-section-prediction-wrapper {
   background: #fff;
   overflow: hidden;
+  @media screen and ( max-width: $medium) {
+    padding: 12px;
+  }
 }
 
 .vert-section-prediction-heading {
@@ -366,6 +423,9 @@ h4.vert-section-breadcrumb {
   @media screen and ( max-width: $medium ) {
     height: 200px;
     width: 200px;
+    float: none;
+    display: block;
+    margin: auto;
   }
 }
 
