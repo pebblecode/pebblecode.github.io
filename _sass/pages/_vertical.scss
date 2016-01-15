@@ -104,12 +104,48 @@
     background-color: $aqua;
   }
 
+  &.pink {
+    &:before {
+      transform: rotate(-1.1deg) scale(1.2);
+      -ms-transform: rotate(-1.1deg) scale(1.2);
+      -webkit-transform: rotate(-1.1deg) scale(1.2);
+    }
+
+    &:after {
+      transform: rotate(-2.4deg) scale(1.2);
+      -ms-transform: rotate(-2.4deg) scale(1.2);
+      -webkit-transform: rotate(-2.4deg) scale(1.2);
+    }
+  }
+
   &.blue {
     background-color: $blue;
+    &:before {
+      transform: rotate(-0.4deg) scale(1.2);
+      -ms-transform: rotate(-0.4deg) scale(1.2);
+      -webkit-transform: rotate(-0.4deg) scale(1.2);
+    }
+
+    &:after {
+      transform: rotate(-1.1deg) scale(1.2);
+      -ms-transform: rotate(-1.1deg) scale(1.2);
+      -webkit-transform: rotate(-1.1deg) scale(1.2);
+    }
   }
 
   &.purple {
     background-color: $purple;
+    &:before {
+      transform: rotate(1.8deg) scale(1.2);
+      -ms-transform: rotate(1.8deg) scale(1.2);
+      -webkit-transform: rotate(1.8deg) scale(1.2);
+    }
+
+    &:after {
+      transform: rotate(2.0deg) scale(1.2);
+      -ms-transform: rotate(2.0deg) scale(1.2);
+      -webkit-transform: rotate(2.0deg) scale(1.2);
+    }
   }
 
     &.green {
@@ -148,6 +184,7 @@
   }
   p:first-of-type{
     font-size: 24px;
+    line-height: 1.2;
   }
 
 }
@@ -158,6 +195,8 @@
   margin: 0 0 10px;
   line-height: 1;
   margin-bottom: 48px;
+  padding-bottom: 24px;
+  border-bottom: 5px solid rgba(black, 0.2);
 
   @media screen and ( max-width: $medium ) {
     margin: 0 0 10px;
