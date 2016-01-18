@@ -21,6 +21,10 @@ You may need to include sudo at the start if there is a permissions error.
 
 `jekyll serve`
 
+To host the site on the network for testing, you'll need
+
+`jekyll serve --host=0.0.0.0`
+
 
 #####4. View the website:
 
@@ -34,7 +38,7 @@ Most of the major editable content can be found in the markdown files (such as 1
 
 
 ## Creating a Blog Post
-Create a Markdown file within the `_posts` folder. The name structure is a backward date followed by the title of your post, for example: `2011-10-18-a-day-with-clojure.md`. All of the content within this file is written using the [Markdown language](http://daringfireball.net/projects/markdown/syntax). 
+Create a Markdown file within the `_posts` folder. The name structure is a backward date followed by the title of your post, for example: `2011-10-18-a-day-with-clojure.md`. All of the content within this file is written using the [Markdown language](http://daringfireball.net/projects/markdown/syntax).
 
 At the top of your markdown file there should be the post information like so:
 
