@@ -2,7 +2,6 @@
 layout: vertical
 title: Health
 permalink: /health/
-group: nav
 colour: aqua
 
 ## Hero Content

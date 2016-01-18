@@ -3,8 +3,8 @@
   <body class="{{ page.layout }}">
 
     {% include header.html %}
-
-    <section class="hero-container {{ page.colour }}">
+    {% capture nextColor %}next-color-{{ page.sections[0].color }}{% endcapture %}
+    <section class="hero-container {{ page.colour }} {{ nextColor }}">
       <div class="hero-inner grid">
       <h1 class="hero-title col-1-1">{% if page.hero-title %}{{page.hero-title}}{% else %}{{page.title}}{% endif %}</h1>
 
@@ -29,7 +29,9 @@
     </section>
 
     {% for vsecloop in page.sections %}
+      {% assign nextIndex = forloop.index %}
       {% assign vsection = vsecloop %}
+      {% assign nextSection = page.sections[nextIndex] %}
       {% include vert-section.html %}
     {% endfor %}
 
