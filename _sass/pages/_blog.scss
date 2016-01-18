@@ -131,6 +131,7 @@
   margin: $gutter 0;
   padding: 25px 0 55px;
   position: relative;
+  @include clearfix;
 
   @media screen and ( max-width: $medium ) {
     padding: 20px 0 40px;
@@ -194,6 +195,7 @@ a .post-title {
   display: block;
   font-size: $gamma;
   font-weight: $font-bold;
+  display: inline;
 
   @media screen and ( max-width: $medium ) {
     font-size: $delta;
@@ -203,6 +205,40 @@ a .post-title {
 .post-date {
   display: block;
   color: rgba($ink, 0.6);
+  display: inline;
+}
+
+
+
+
+//===============================================================================
+// Post Excerpt and Thumbnail
+
+.blog-post-details {
+  margin-bottom: 12px;
+}
+
+
+.post-thumbnail-wrapper {
+  display: inline-block;
+  max-width: 300px;
+  max-height: 100%;
+  float: right;
+  position: relative;
+
+  &:before {
+      content: "";
+      background: rgba(black, 0.2);
+      width: 100%;
+      height: 100%;
+      top: 0;
+      position: absolute;
+      z-index: -1;
+
+      transform: rotate(6deg);
+      -ms-transform: rotate(6deg);
+      -webkit-transform: rotate(6deg);
+    }
 }
 
 .post-excerpt {
@@ -213,22 +249,11 @@ a .post-title {
     width: 69%;
     vertical-align: top;
   }
-
-  .post-thumbnail {
-    max-width: 30%;
-    display: inline-block;
-    max-height: 200px;
-    float: right;
-    padding: 20px;
-  }
 }
 
-// .post-thumbnail {
-//   background-size: contain;
-//   width: 30%;
-//   height: 100px;
-//   background-repeat: no-repeat;
-// }
+
+//===============================================================================
+// Hero
 
 .blog-pagination {
   padding-top: 80px;
@@ -293,7 +318,7 @@ a .post-title {
       color: lighten($ink, 30);
 
       &:hover {
-        color: lighten($ink, 30); 
+        color: lighten($ink, 30);
       }
     }
   }

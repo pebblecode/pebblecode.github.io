@@ -43,15 +43,17 @@ layout: blog
 
     <section class="content-container grid">
       <ul class="content col-1-1 post-list">
-        {% for post in paginator.posts %} 
+        {% for post in paginator.posts %}
           <li class="post-item">
             <a href="{{ post.url }}"><h3 class="post-title">{{ post.title }}</h3></a>
+            <div class="blog-post-details">by <span class="post-author">{{ post.author }}</span> <span class="post-date">{{ post.date | date: '%B %d, %Y' }}</span></div>
             <div class="post-excerpt">
               <p>{{ post.excerpt | strip_html }}</p>
-              <img class="post-thumbnail" src="{{ post.thumbnail }}" />
+              <div class="post-thumbnail-wrapper">
+                <img class="post-thumbnail" src="{{ post.thumbnail }}" />
+              </div>
+              <a href="{{ post.url }}">Read Post</a>
             </div>
-            <span class="post-author">{{ post.author }}</span>
-            <span class="post-date">{{ post.date | date: '%B %d, %Y' }}</span>
           </li>
         {% endfor %}
       </ul>
