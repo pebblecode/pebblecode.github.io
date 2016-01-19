@@ -2,7 +2,6 @@
 layout: vertical
 title: Transport
 permalink: /transport/
-group: nav
 colour: blue
 
 ## Hero Content
@@ -24,8 +23,6 @@ sections:
     - In order to deliver great service to passengers, it’s increasingly important for rail operators to intelligently monitor and report on station and service quality.
     - We built an auditing and reporting platform in the cloud - for mobile devices - using web-location APIs and cutting edge web technologies.
     - This platform enables c2c to track continually how well their stations and trains are delivering on their commitment to provide a great service to their customers.
-
-
    casestudies:
     - Download the Case Study
 
