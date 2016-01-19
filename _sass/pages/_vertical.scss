@@ -479,4 +479,13 @@ h4.vert-section-breadcrumb {
 .vert-section-case-study {
   width: 50%;
   display: inline-block;
+  background: rgba(black, 0.2);
+  padding: 8px 18px;
+  display: inline;
+  border: 4px solid rgba(black, 0.2);
+  color: white;
+  font-weight: bold;
+  &:hover {
+    background: white;
+  }
 }
