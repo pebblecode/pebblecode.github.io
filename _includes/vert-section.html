@@ -1,4 +1,9 @@
-<section id="{{vsecloop.sectionid}}" class="vert-section-container {{vsecloop.color}} {{vsecloop.extra-classes}}">
+{% if vsecloop.now-image %}
+	<section id="{{vsecloop.sectionid}}" class="vert-section-container {{vsecloop.color}} {{vsecloop.extra-classes}}">
+{% else %}
+	{% capture nextColor %}next-color-{{ nextSection.color }}{% endcapture %}
+	<section id="{{vsecloop.sectionid}}" class="vert-section-container {{vsecloop.color}} {{vsecloop.extra-classes}} {{nextColor}}">
+{% endif %}
   <div class="vert-section-inner grid">
   	<h4 class="vert-section-breadcrumb">{{page.title}}</h4>
     <h2 class="vert-section-title">{{vsecloop.title}}</h2>
@@ -38,6 +43,20 @@
 				{{ casestudy }}
 			</a>
 	    {% endfor %}
+
+
+	    {% for bloglink in vsecloop.bloglinks %}
+	    <div class="vert-section-blog-link">
+	    	{% if vsecloop.link-url %}
+	    		<a href="{{vsecloop.link-url}}">
+	    			{{ bloglink }}
+	    		</a>
+				{% endif %}
+
+			</div>
+	    {% endfor %}
+
+
   </div>
 </section>
 	{% if vsecloop.now-image %}
