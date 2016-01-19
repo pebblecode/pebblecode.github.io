@@ -2,39 +2,38 @@
 layout: vertical
 title: Transport
 permalink: /transport/
+group:
 colour: blue
 
 ## Hero Content
-hero-title: Transforming transport services
-hero-subtitle: At pebble, we specialise in building solutions for Health. We believe there’s an exciting transformation ahead driven by three main themes.
+hero-title: Transforming transport
+hero-subtitle: "Whether your challenge is engaging customers, understanding data or building a sustainable culture of innovation - we believe that there are some real challenges facing the transport industry. We've helped with:"
 hero-btn:
 hero-btn-url:
 hero-image: vert-transport-header.svg
 
 ## Vertical Sections
 sections:
- - title: Rail Service Quality Management
+ - title: Service Quality Management
    sectionid: railservice
    bubbleimage: vert-transport-rail-service-b.svg
    largeimage: vert-transport-rail-service.svg
    color: aqua
    extra-classes:
    paragraphs:
-    - In order to deliver great service to passengers, it’s increasingly important for rail operators to intelligently monitor and report on station and service quality.
-    - We built an auditing and reporting platform in the cloud - for mobile devices - using web-location APIs and cutting edge web technologies.
-    - This platform enables c2c to track continually how well their stations and trains are delivering on their commitment to provide a great service to their customers.
-   casestudies:
-    - Download the Case Study
+    - "In order to deliver great service to passengers, it’s increasingly important for  operators to intelligently monitor and report on service quality. <br/><br/>We built a responsive cloud-based auditing and reporting platform using web-location APIs and cutting edge web technologies to enable c2c (National Express) to continually track how well their stations and trains are delivering on their commitment to provide a great service to their customers."
 
 
- - title: Pushing Transport Technology Forward
+
+ - title: Bleeding Edge Technology Adoption
    sectionid: transporttechnology
    bubbleimage: vert-transport-tech-forward-b.svg
    largeimage: vert-transport-tech-forward.svg
    color: green
+   extra-classes:
    paragraphs:
-    - We help organisations to imagine and build the future.
-    - We worked with C2C to prototype intelligent services using iBeacon & mobile technology to enhance the travel experience and provide new services for passengers.
+    - "We help organisations imagine, understand and build the future.<br/><br/>We worked with a rail operator to prototype the use of iBeacon technology and NFC (Near Field Communincation) for a smarter delay/repay solution."
+
 
 
  - title: Imagining the Future
@@ -43,8 +42,13 @@ sections:
    largeimage: vert-transport-future.svg
    color: purple
    paragraphs:
-    - What does the future look like? What are the disruptive technologies that will influence the future of travel?
-    - We discuss the technologies that are likely to have a  major effect on travel in the near future.
+    - list-title: "Questions we've helped answer:"
+    - list:
+        - "What does the future look like?"
+        - "What are the disruptive technologies that will influence the future of travel?"
+        - "How do we collect better data and what do we do with it?"
+        - "What is the Internet of Things and why is it relevant?"
+        - "How do we ensure that innovation is a core part of our DNA?"
 
 ---
 
