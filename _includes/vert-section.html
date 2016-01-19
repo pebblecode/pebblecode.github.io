@@ -40,29 +40,30 @@
 	    {% endfor %}
   </div>
 </section>
-  	<div class="">
-	  <div class="vert-section-prediction-wrapper">
-	    <div class="grid">
-	  		{% if vsecloop.now-image %}
-				<div class="vert-section-prediction-now">
-							<h4 class="vert-section-prediction-title">Currently:</h4>
+	{% if vsecloop.now-image %}
+		  <div class="vert-section-prediction-wrapper">
+		    <div class="grid">
+	    	  <h3 class="vert-section-prediction-heading {{vsecloop.color}}">We predict:</h3>
 
-					<div class="vert-section-prediction-img-wrap">
-						<img src="../img/verticals/{{vsecloop.now-image}}.svg" />
-					</div>
-					</div>
-				{% endif %}
-				{% if vsecloop.future-image %}
-				<div class="vert-section-prediction-future">
-							<h4 class="vert-section-prediction-title">Our Prediction:</h4>
+					<div class="vert-section-prediction now">
+								<h4 class="vert-section-prediction-title">Currently:</h4>
 
-					<div class="vert-section-prediction-img-wrap">
-						<img src="../img/verticals/{{vsecloop.future-image}}.svg" />
-					</div>
-					</div>
-				{% endif %}
+						<div class="vert-section-prediction-img-wrap">
+							<img src="../img/verticals/{{vsecloop.now-image}}.svg" />
+						</div>
+						</div>
+
+					{% if vsecloop.future-image %}
+					<div class="vert-section-prediction future">
+								<h4 class="vert-section-prediction-title">In the future:</h4>
+
+						<div class="vert-section-prediction-img-wrap">
+							<img src="../img/verticals/{{vsecloop.future-image}}.svg" />
+						</div>
+						</div>
+					{% endif %}
+				</div>
 			</div>
-		</div>
-		</div>
+		{% endif %}
 
 <!-- /.vert-section-container -->
