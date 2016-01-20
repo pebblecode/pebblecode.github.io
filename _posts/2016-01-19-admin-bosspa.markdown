@@ -1,10 +1,5 @@
----
-layout: post
-title: "When are Single Page Apps useful?"
-date: 2016-01-19 10:06:53 +0000
-comments: true
-categories: 
----
+--- layout: post title: "Single Page Apps for Admin Backends - Who needs them?"
+date: 2016-01-19 10:06:53 +0000 comments: true categories: ---
 
 ## No app is TodoMVC
 
@@ -55,9 +50,9 @@ better place because of it.
 But do we really need to have global app state in the front end for the use case
 at hand? This answer to this question is one that needs to examine the
 complexity of the state we are dealing with. From the problem description it
-appears to be obvious to me that for such a system the answer would be no.
-So for any given network request that interacts with the API, we need to now
-make sure that on top of validating correctness on the backend, we also need to
+appears to be obvious to me that for such a system the answer would be no.  So
+for any given network request that interacts with the API, we need to now make
+sure that on top of validating correctness on the backend, we also need to
 update the UI separately based on the results from the API. This feels a lot
 like having to do double the work.
 
@@ -104,5 +99,6 @@ actually need composition. For simpler things, a classic RAD tool is good enough
 for me. The benefits of being able to show a rich UI are almost never worth the
 extra effort of having to implement the same state engine in two places.
 
-My next admin Back Office System is almost certainly going to be using
-[boring technology](http://mcfunley.com/choose-boring-technology).
+My next admin Back Office System is almost certainly going to be using [boring
+technology](http://mcfunley.com/choose-boring-technology).
+
