@@ -96,6 +96,32 @@
       padding-bottom: 60px;
     }
   }
+
+    &.green {
+    background-color: $green;
+    margin-bottom: 50px;
+
+    @media screen and ( max-width: $medium ) {
+      margin-bottom: 0;
+    }
+
+    &:before {
+      bottom: 25px;
+      transform: rotate(-2deg) scale(1.4);
+      -ms-transform: rotate(-2deg) scale(1.4);
+      -webkit-transform: rotate(-2deg) scale(1.4);
+    }
+
+    &:after {
+      transform: rotate(-1.2deg) scale(1.2);
+      -ms-transform: rotate(-1.2deg) scale(1.2);
+      -webkit-transform: rotate(-1.2deg) scale(1.2);
+    }
+
+    .hero-inner {
+      padding-bottom: 60px;
+    }
+  }
 }
 
 .hero-inner {

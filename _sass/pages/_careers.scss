@@ -115,46 +115,34 @@
   &.benefit-flexible {
     padding-top: 8px;
 
-    &:after {
-      @extend .i-flexible-white;
-    }
+    &:after { @include sprite($flexible-white); }
   }
 
   &.benefit-10 {
     padding-top: 8px;
 
-    &:after {
-      @extend .i-10-white;
-    }
+    &:after { @include sprite($ten-white); }
   }
 
-  &.benefit-holidays:after {
-    @extend .i-holidays-white;
-  }
+  &.benefit-holidays:after { @include sprite($holiday-white);  }
 
   &.benefit-snacks:after {
-    @extend .i-snacks-white;
+     @include sprite($snacks-white); 
     left: 28px;
   }
 
-  &.benefit-pay:after {
-    @extend .i-pay-white;
-  }
+  &.benefit-pay:after { @include sprite($pay-white); }
 
   &.benefit-gym {
     padding-top: 8px;
 
-    &:after {
-      @extend .i-gym-white;
-    }
+    &:after { @include sprite($gym-white); }
   }
 
-  &.benefit-social:after {
-    @extend .i-social-white;
-  }
+  &.benefit-social:after { @include sprite($beer-white); }
 
   &.benefit-charity:after {
-    @extend .i-charity-white;
+    @include sprite($charity-white); 
     left: 28px;
   }
 }
@@ -415,7 +403,7 @@
 
     &:after {
       @include icon-pseudo;
-      @extend .i-close-grey;
+      @include sprite($close-grey); 
       top: 17px;
       left: 17px;
     }
@@ -465,6 +453,13 @@
   } 
 
   .rt-body {
+
+    h2 {
+      color: $primary;
+      margin: 20px 0 0;
+      font-size: $beta;
+    }
+
     h3 {
       color: $ink;
     }
