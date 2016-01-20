@@ -216,6 +216,21 @@
     background-color: $aqua;
   }
 
+  &.orange {
+      background-color: $orange;
+    &:before {
+      transform: rotate(-1.1deg) scale(1.2);
+      -ms-transform: rotate(-1.1deg) scale(1.2);
+      -webkit-transform: rotate(-1.1deg) scale(1.2);
+    }
+
+    &:after {
+      transform: rotate(-2.4deg) scale(1.2);
+      -ms-transform: rotate(-2.4deg) scale(1.2);
+      -webkit-transform: rotate(-2.4deg) scale(1.2);
+    }
+  }
+
   &.pink {
     &:before {
       transform: rotate(-1.1deg) scale(1.2);
@@ -293,6 +308,16 @@
     }
   }
 
+  &:last-of-type {
+    &:before {
+     content: none;
+    }
+
+    &:after {
+     content: none;
+    }
+  }
+
   &.next-color-green:after {
       background-color: $green;
   }
@@ -343,19 +368,19 @@
 }
 
 .vert-section-table {
-  border: 2px solid darken($pink, 20%);
+  border: 2px solid darken($aqua, 20%);
 
   tr {
     // border: #333 solid 2px;
-    background: lighten($pink, 20%);
+    background: lighten($aqua, 20%);
     color: #333;
 
     &:nth-child(odd) {
-      background: lighten($pink, 30%);
+      background: lighten($aqua, 30%);
     }
 
     &:first-child {
-      background: darken($pink, 20%);
+      background: darken($aqua, 20%);
       color: #fff;
       font-weight: bold;
     }
@@ -363,7 +388,8 @@
   }
 
   td {
-    padding-left: 8px;
+    // padding-left: 8px;
+    padding: 6px 8px;
   }
 }
 
@@ -472,6 +498,7 @@ h4.vert-section-breadcrumb {
 .vert-section-large-image {
   width: 400px;
   height: 400px;
+  max-width: 50%;
   float: right;
   @media screen and ( max-width: $medium ) {
     height: 200px;
@@ -517,4 +544,41 @@ h4.vert-section-breadcrumb {
   font-style: italic;
   color: rgba(black, 0.5);
   font-size: 32px;
+  text-shadow: 2px 2px 0 rgba(black, 0.2);
+}
+
+.vert-contact-title {
+  text-shadow: 4px 4px 0 rgba(black, 0.2);
+}
+
+.vert-contact-email {
+  color: white;
+  font-size: 24px;
+  &:after {
+    @include sprite($mail-black);
+  }
+}
+
+.vert-contact-para {
+  font-size: 24px;
+  margin-bottom: 0;
+}
+
+.vert-section-contact {
+  .location-item {
+    display: inline-block;
+  }
+}
+
+.vert-section-contact {
+
+  .location-item a {
+    margin: 0;
+    margin-top: 40px;
+
+    @media screen and ( max-width: $medium ) {
+      margin-top: 20px;
+    }
+  }
+
 }
