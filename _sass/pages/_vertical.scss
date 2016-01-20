@@ -52,7 +52,7 @@
     width: 100%;
     text-align: left;
     display: block;
-    padding: 4px 12px ;
+    padding: 4px 12px;
     background: rgba(black, 0.2);
     border: rgba(white, 0.6) solid 6px;
     border-radius: 6px;
@@ -100,6 +100,7 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
+    padding-right: 128px;
   }
 
 }
@@ -283,13 +284,12 @@
     -webkit-transform: rotate(1.3deg) scale(1.2);
   }
 
-  &:last-of-type {
+  &:nth-last-of-type(2) {
     &:before {
-      content: none;
     }
 
     &:after {
-       content: none;
+       background-color: $pink;
     }
   }
 
@@ -507,4 +507,14 @@ h4.vert-section-breadcrumb {
     }
   }
 
+}
+
+// Case Study
+//===============================================================================
+
+.vert-contact-sub {
+  font-weight: normal;
+  font-style: italic;
+  color: rgba(black, 0.5);
+  font-size: 32px;
 }
