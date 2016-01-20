@@ -17,7 +17,7 @@ layout: seminar
 
         <img src="{{ site.baseurl }}/img/seminar/seminar-innovation-machine.png" class="seminar-machine-img grid" alt="pebble {code}'s process">
 
-        <h3 class="seminar-date">Tuesday 12th January • 7:30 </h3>
+        <h3 class="seminar-date">{{page.seminar-date}} • {{page.seminar-time}}</h3>
 
         <p>There has been a lot of talk about how companies need to be more innovative, but very little on what stops them from doing so.</p>
         <!-- <div class="seminar-sprite-brain"></div> -->
@@ -31,24 +31,12 @@ layout: seminar
       <!-- <div class="seminar-sprite-lightbulb"></div> -->
       <div class="seminar-sprite-brain"></div>
       <!-- <p>We've assembled an expert team of speakers from a wide variety of backgrounds</p> -->
+
         <ul class="seminar-speakers">
-          <li>
-            <div class="seminar-speaker-image" style="background-image: url({{ site.baseurl }}/img/directors/alex.jpg)"></div>
-            <h4 class="seminar-speaker-title">Alex Butcher</h4>
-            <p class="seminar-speaker-bio">Expert software architect specialising in fault tolerant system design. Passionate about continuous delivery and the application of agile and lean principles to improve processes. Durham University, Computer Science.</p>
-          </li>
-
-          <li>
-            <div class="seminar-speaker-image" style="background-image: url({{ site.baseurl }}/img/directors/george.jpg)"></div>
-            <h4 class="seminar-speaker-title">George Ornbo</h4>
-            <p class="seminar-speaker-bio">Expert software architect specialising in fault tolerant system design. Passionate about continuous delivery and the application of agile and lean principles to improve processes. Durham University, Computer Science.</p>
-          </li>
-
-          <li>
-            <div class="seminar-speaker-image" style="background-image: url({{ site.baseurl }}/img/directors/john.jpg)"></div>
-            <h4 class="seminar-speaker-title">John Mildinhall</h4>
-            <p class="seminar-speaker-bio">Expert software architect specialising in fault tolerant system design. Passionate about continuous delivery and the application of agile and lean principles to improve processes. Durham University, Computer Science.</p>
-          </li>
+          {% for speakerloop in page.speakers %}
+            {% assign speaker = speakerloop %}
+            {% include semi-speaker.html %}
+          {% endfor %}
         </ul>
       </article>
 
@@ -57,21 +45,17 @@ layout: seminar
       <article class="aside-container seminar-location-container">
         <h3>Information</h3>
            <div class="seminar-sprite-lightbulb"></div>
-        <p>7:30<br>Tuesday 12th January</p>
+        <p>{{page.seminar-time}}<br>{{page.seminar-date}}</p>
         <h4>RSVP:</h4>
-        <p><a href="mailto:events@pebblecode.com">events@pebblecode.com</a></p>
+        <p><a href="mailto:{{page.seminar-rsvp-address}}">{{page.seminar-rsvp-address}}</a></p>
         <h4>Where to find us</h4>
         <p class="location-item location-item-address">
-        <a>
-        W214 Westminster Business Square<br> Durham Street<br> London<br> SE11 5JH
-        </a>
+        <a>{{page.seminar-location}}</a>
         </p>
-
         <!-- Map section -->
         <!--[if gt IE 8]><!-->
           <div id="map" class="seminar-map-container"></div>
         <!--<![endif]-->
-
       </article>
 
 
