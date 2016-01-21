@@ -58,7 +58,7 @@ There should be a single space between pebble and {code}. Where possible the cur
 
 ![Example of a heading](/img/brand/pebble-square-logo.png)
 
-This logo is primarily for avatar situations, where a square branded element is required. For example in listings sites, or for Github. It should not be used in place of the retangle logo (e.g. on a print document).
+This logo is primarily for avatar situations, where a square branded element is required. For example in listings sites, or for Github. It should not be used in place of the rectangle logo (e.g. on a print document).
 
 ###Colour
 ![Example of a heading](/img/brand/pebble-colours.png)
