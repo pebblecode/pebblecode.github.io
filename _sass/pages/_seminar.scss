@@ -154,10 +154,20 @@ h4.seminar-titlestack-sub {
       -webkit-transform: rotate(2deg) skew(1deg);
     }
   }
+  p {
+    margin-bottom: 2px;
+  }
+}
+
+.seminar-location-heading {
+  margin-bottom: 2px;
+  margin-top: 8px;
 }
 
 .seminar-location-container .location-item a{
   color: $ink;
+  margin-top: 8px;
+  margin-bottom: 8px;
 }
 
 .seminar-speaker-image {
@@ -270,3 +280,4 @@ h3.seminar-date {
   // go one lower than the total
   100% { background-position: -12097px; }
 }
+

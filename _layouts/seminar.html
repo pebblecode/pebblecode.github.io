@@ -13,17 +13,16 @@ layout: seminar
           <h3 class="seminar-titlestack-top">{{page.seminar-title1}}</h3>
           <h3 class="seminar-titlestack-bottom">{{page.seminar-title2}}</h3>
         </div>
-        <h4 class="seminar-titlestack-sub">in the trenches</h4>
+        <h4 class="seminar-titlestack-sub">{{page.seminar-subtitle}}</h4>
 
         <img src="{{ site.baseurl }}/img/seminar/seminar-innovation-machine.png" class="seminar-machine-img grid" alt="pebble {code}'s process">
 
         <h3 class="seminar-date">{{page.seminar-date}} • {{page.seminar-time}}</h3>
 
-        <p>There has been a lot of talk about how companies need to be more innovative, but very little on what stops them from doing so.</p>
-        <!-- <div class="seminar-sprite-brain"></div> -->
-           <div class="seminar-sprite-testtube"></div>
-        <p>Innovation inside of an existing company is much harder than a startup. For most companies it feels like innovation can only happen by chance, not by design. The question is – why?</p>
-        <p>Join us at “Innovating like a Startup” as we lead an interactive discussion and workshop to identify root causes and bottlenecks companies face when creating a culture of continuous innovation.</p>
+        {% for paragraph in page.seminar-intro-paragraphs %}
+          <p>{{paragraph}}</p>
+        {% endfor %}
+
       </article>
 
       <article class="aside-container seminar-speakers-container">
@@ -46,15 +45,16 @@ layout: seminar
         <h3>Information</h3>
            <div class="seminar-sprite-lightbulb"></div>
         <p>{{page.seminar-time}}<br>{{page.seminar-date}}</p>
-        <h4>RSVP:</h4>
+        <h4 class="seminar-location-heading">RSVP:</h4>
         <p><a href="mailto:{{page.seminar-rsvp-address}}">{{page.seminar-rsvp-address}}</a></p>
-        <h4>Where to find us</h4>
+        <p><a href="mailto:{{page.seminar-eventlink}}">{{page.seminar-eventlink}}</a></p>
+        <h4 class="seminar-location-heading">Location:</h4>
         <p class="location-item location-item-address">
-        <a>{{page.seminar-location}}</a>
+          <a>{{page.seminar-location}}</a>
         </p>
         <!-- Map section -->
         <!--[if gt IE 8]><!-->
-          <div id="map" class="seminar-map-container"></div>
+          <div id="semimap" class="seminar-map-container"></div>
         <!--<![endif]-->
       </article>
 
