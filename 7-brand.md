@@ -169,7 +169,7 @@ This document is set in the correct body copy style, i.e. Meta, pebble ink. Bloc
 ###Lab banner graphics
 
 ![Example of a heading](/img/brand/pebble-lab-banner-logo-pink-white-1500x500.png)
-This branding element is used in places where visual interest is needed to make the branded artefact stand out. Sometimes the pebble pink can become to slab-like and overwhelming. The white-on-pink banner breaks up that effect somewhat. The pink-on-white banner is useful for title pages of documents. 
+This branding element is used in places where visual interest is needed to make the branded artefact stand out. Sometimes the pebble pink can become too slab-like and overwhelming. The white-on-pink banner breaks up that effect somewhat. The pink-on-white banner is useful for title pages of documents. 
 
 
 
