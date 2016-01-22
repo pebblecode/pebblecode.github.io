@@ -306,3 +306,23 @@ h3.seminar-date {
   100% { background-position: -12097px; }
 }
 
+.seminar-vertical-link{
+  text-align: center;
+  padding: 24px 0;
+  a {
+    width: 50%;
+    background: $pink;
+    padding: 8px 18px;
+    display: inline;
+    border: 4px solid rgba(black, 0.2);
+    color: white;
+    font-weight: bold;
+    margin: auto;
+
+    &:hover {
+      background: darken($pink, 10%);
+      color: #888;
+    }
+  }
+
+}

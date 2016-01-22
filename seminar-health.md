@@ -12,9 +12,10 @@ seminar-title2: in
 seminar-title3: Healthcare
 seminar-subtitle: In the trenches
 seminar-intro-paragraphs:
- - There has been a lot of talk about how companies need to be more innovative, but very little on what stops them from doing so.
- - nnovation inside of an existing company is much harder than a startup. For most companies it feels like innovation can only happen by chance, not by design. The question is – why?
- - Join us at “Innovating like a Startup” as we lead an interactive discussion and workshop to identify root causes and bottlenecks companies face when creating a culture of continuous innovation.
+ - The health market is facing increasing challenges from many corners.
+ - We believe the answer lies in innovative digital solutions. A digital transformation is iminent, and the UK is at the forefront.
+ - Join us at the hospital club for our “Health Innovation” seminar. From our knowledge gained over 20 years at the forefront of tech innovation, we'll lead an interactive discussion and workshop to identify root causes and bottlenecks companies face when creating a culture of continuous innovation.
+
 
 ## Speakers
 speakers:
