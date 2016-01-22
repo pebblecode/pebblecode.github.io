@@ -1,7 +1,7 @@
 ---
 layout: seminar
 title: Health Innovation
-permalink: /health-innovation/
+permalink: /events/health/
 colour: pink
 
 ## Hero Content
