@@ -35,7 +35,9 @@ layout: blog
             <a href="{{ post.url }}"><h3 class="post-title">{{ post.title }}</h3></a>
             <div class="post-excerpt">
               <p>{{ post.excerpt | strip_html }}</p>
-              <img class="post-thumbnail" src="{{ post.thumbnail }}" />
+              {% if post.thumbnail %} 
+                <img class="post-thumbnail" src="{{ post.thumbnail }}" />
+              {% endif %} 
             </div>
             <span class="post-author">{{ post.author }}</span>
             <span class="post-date">{{ post.date | date: '%B %d, %Y' }}</span>
