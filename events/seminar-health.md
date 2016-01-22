@@ -4,6 +4,9 @@ title: Health Innovation
 permalink: /events/health/
 colour: pink
 
+seminar-eventlink: "https://www.eventbrite.com/"
+seminar-call-to-action: "Sign up now"
+
 ## Hero Content
 
 ## Seminar Details
@@ -38,7 +41,6 @@ seminar-time: "8am"
 seminar-date: "Tuesday 25th February"
 seminar-rsvp-address: "events@pebblecode.com"
 seminar-location: "The Hospital Club<br />24 Endell St<br />London<br />WC2H 9HQ"
-seminar-eventlink: "https://www.eventbrite.com/"
 
 ## Google Maps URL
 invite-map: https://www.google.co.uk/maps/place/Surrey+County+Cricket+Club/@51.483612,-0.11492,15z/data=!4m2!3m1!1s0x0:0xf09a6ef184954e68?sa=X&ved=0CJABEPwSMA1qFQoTCKatle_TlMYCFckj2wodDEYAbw

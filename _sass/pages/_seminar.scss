@@ -306,9 +306,10 @@ h3.seminar-date {
   100% { background-position: -12097px; }
 }
 
-.seminar-vertical-link{
+.seminar-cta-link {
   text-align: center;
-  padding: 24px 0;
+  margin-top: 48px;
+  margin-bottom: 24px;
   a {
     width: 50%;
     background: $pink;
@@ -318,11 +319,6 @@ h3.seminar-date {
     color: white;
     font-weight: bold;
     margin: auto;
-
-    &:hover {
-      background: darken($pink, 10%);
-      color: #888;
-    }
+    text-transform: uppercase;
   }
-
 }
