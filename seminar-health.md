@@ -1,6 +1,6 @@
 ---
 layout: seminar
-title: Innovating like a Startup
+title: Health Innovation
 permalink: /health-innovation/
 colour: pink
 
