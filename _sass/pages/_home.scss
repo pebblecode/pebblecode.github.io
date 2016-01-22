@@ -2,6 +2,13 @@
 // HOME
 //===============================================================================
 // Hero
+
+// .home .hero-container {
+//    background-image: url(../img/tile-white.png);
+//    background-repeat: repeat-x;
+//    background-position: bottom;
+//    background-size: 400px;
+// }
 .home .hero-container {
   background-image: url(../img/tile-white.png);
   background-repeat: repeat-x;
@@ -45,15 +52,19 @@
   }
 
   &:after {
-    background-color: lighten($ink, 50);
-    background-color: white;
+  width:0;
+  height:0px;
+    transform: rotate(0deg) scale(0)
+  }
+  &:before{
+    transform: rotate(0deg) scale(0)
   }
 }
 
 // Clients
 .client-container {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   background-color: lighten($ink, 45);
   background-color: white;
 
@@ -61,6 +72,15 @@
     padding-top: 0;
     padding-bottom: 0;
   }
+
+  .home {
+
+  }
+}
+
+.home .client-container {
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .client-item {
@@ -150,3 +170,16 @@
   top: -30px;
   max-width: 340px;
 }
+
+
+.home .photo-inner{
+  &:before {
+    transform: rotate(0deg) scale(0)
+  }
+  &:after {
+    transform: rotate(0deg) scale(0)
+  }
+
+}
+
+

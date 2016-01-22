@@ -5,7 +5,7 @@ permalink: /
 
 ## Hero Content
 hero-title: Technology Innovation Consultancy
-hero-subtitle: Design Thinking, Rapid Prototyping and Agile Software Development
+hero-subtitle: Design Thinking, Rapid Prototyping and Agile Software Development. Our areas of foucus are&#58;
 
 ## Main background image
 cover-img: features/couch.jpg
