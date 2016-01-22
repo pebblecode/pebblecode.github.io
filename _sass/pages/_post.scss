@@ -214,7 +214,7 @@
 
     &:after {
       @include icon-pseudo;
-      @extend .i-twitter-pink;
+      @include sprite($twitter-pink);
       top: 2px;
       right: -32px;
     }

@@ -1,4 +1,15 @@
+# Jekyll
 _site/
 .sass-cache/
 .jekyll-metadata
 .idea/
+
+# MacOS
+.DS_Store
+_sass/.DS_store
+img/.DS_Store
+
+
+# NPM files
+node_modules
+npm-debug.log

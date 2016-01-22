@@ -1,0 +1,72 @@
+{% include head.html %}
+
+  <body class="{{ page.layout }}">
+
+    {% include header.html %}
+    {% capture nextColor %}next-color-{{ page.sections[0].color }}{% endcapture %}
+    <section class="hero-container {{ page.colour }} {{ nextColor }}">
+      <div class="hero-inner grid">
+      <h1 class="hero-title col-1-1">{% if page.hero-title %}{{page.hero-title}}{% else %}{{page.title}}{% endif %}</h1>
+
+        {% if page.hero-subtitle %}
+          <p class="hero-summary col-1-1">{{page.hero-subtitle}}</p>
+        {% endif %}
+
+        {% if page.hero-btn %}
+          <a href="{{page.hero-btn-url}}" class="btn btn-primary btn-block" data-sr="scale up 20%, vF 0">{{page.hero-btn}}</a>
+        {% endif %}
+
+        <div class="vert-bubble-container grid">
+
+          {% for sectionbubble in page.sections %}
+            <a href="#{{sectionbubble.sectionid}}" class="vert-sec-bubble">
+              <img src= '../img/verticals/{{ sectionbubble.bubbleimage }}' />
+              <h2 class="vert-sec-bubble-title">{{ sectionbubble.title }}</h2>
+            </a>
+          {% endfor %}
+        </div>
+       </div>
+    </section>
+
+    {% for vsecloop in page.sections %}
+      {% assign nextIndex = forloop.index %}
+      {% assign vsection = vsecloop %}
+      {% assign nextSection = page.sections[nextIndex] %}
+      {% include vert-section.html %}
+    {% endfor %}
+
+
+    <section id="" class="vert-section-container">
+      <div class="vert-section-inner grid vert-section-contact ">
+        <h2 class="vert-section-title">Sound interesting?</h2>
+        <p class="vert-contact-para">Get in contact to discuss how we can help you</p>
+        <div class="location-item location-item-email">
+          <a href="mailto:hello@pebblecode.com">hello@pebblecode.com</a>
+        </div>
+        <div class="location-item location-item-phone">
+          <a href="tel:+442033273940">+44 (0) 20 3327 3940</a>
+        </div>
+      </div>
+    </section>
+
+
+    {% include footer.html %}
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-2.1.1.min.js""><\/script>')</script>
+    <script type="text/javascript" src="{{ site.baseurl }}/js/vendor/jquery.lazyload.min.js"></script>
+    <script type="text/javascript" src="{{ site.baseurl }}/js/vendor/scrollReveal.min.js"></script>
+    <script type="text/javascript" src="{{ site.baseurl }}/js/main.js"></script>
+    <script>
+      jQuery(function ($) {
+        $("img.lazy").lazyload({
+          threshold : 600
+          });
+        $("#gif1").attr("src","second.jpg");
+      });
+    </script>
+
+    <!-- /scripts-->
+
+  </body>
+</html>

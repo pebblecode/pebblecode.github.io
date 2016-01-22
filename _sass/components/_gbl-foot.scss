@@ -91,16 +91,10 @@
       opacity: 0.8;
     }
 
-    &.github:after {
-      @extend .i-github-pink;
-    }
+    &.github:after { @include sprite($octocat-pink); }
 
-    &.twitter:after {
-      @extend .i-twitter-pink;
-    }
+    &.twitter:after { @include sprite($twitter-pink); }
 
-    &.vimeo:after {
-      @extend .i-vimeo-pink;
-    }
+    &.vimeo:after { @include sprite($vimeo-pink); }
   }
 }

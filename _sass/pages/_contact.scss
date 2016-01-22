@@ -126,6 +126,7 @@
 
     &:after {
       @include icon-pseudo;
+      opacity: 0.2;
       top: 0;
       left: 0;
     }
@@ -133,25 +134,19 @@
 }
 
 .location-item-address {
-  & a:after {
-    @extend .i-location-grey;
-  }
+  & a:after { @include sprite($location-black); }
 }
 
 .location-item-phone {
   line-height: 1;
 
-  & a:after {
-    @extend .i-phone-grey;
-  }
+  & a:after { @include sprite($phone-black); }
 }
 
 .location-item-email {
   line-height: 1;
 
-  & a:after {
-    @extend .i-email-grey;
-  }
+  & a:after { @include sprite($mail-black); }
 }
 
 // Map
