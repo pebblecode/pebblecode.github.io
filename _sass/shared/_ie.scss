@@ -3,13 +3,12 @@
 //===============================================================================
 .lt-ie9 {
 
-  // Global Sprite
-  .i-gym-white, .i-10-white, .i-pay-white, .i-charity-white, .i-snacks-white, .i-holidays-white, .i-flexible-white, .i-social-white, .i-vimeo-pink, .i-github-pink, .i-menu-grey, .i-twitter-pink, .i-gbl-logo-white, .i-close-grey, .i-phone-grey, .i-email-grey, .i-location-grey { background: url(../img/gbl-sprite.png); }
-
-
   // Global Header
-  .gbl-head-logo{
-    text-indent: -9999px;
+  .gbl-head-logo {
+    color: white;
+    width: auto;
+    font-size: $gamma;
+    font-weight: $font-bold;
   }
 
   .gbl-head-nav {
