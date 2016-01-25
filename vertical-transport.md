@@ -7,7 +7,7 @@ colour: blue
 
 ## Hero Content
 hero-title: Transforming transport
-hero-subtitle: "Whether your challenge is engaging customers, understanding data or building a sustainable culture of innovation - we believe that there are some real challenges facing the transport industry. We've helped with:"
+hero-subtitle: "Whether your challenge is engaging customers, understanding data or maintaining a reputation of world class efficiency - pebble {code} can provide the sustainable culture of innovation that the transport industry needs. We've helped improve:"
 hero-btn:
 hero-btn-url:
 hero-image: vert-transport-header.svg
@@ -21,10 +21,7 @@ sections:
    color: aqua
    extra-classes:
    paragraphs:
-    - "In order to deliver great service to passengers, it’s increasingly important for  operators to intelligently monitor and report on service quality. <br/><br/>We built a responsive cloud-based auditing and reporting platform using web-location APIs and cutting edge web technologies to enable c2c (National Express) to continually track how well their stations and trains are delivering on their commitment to provide a great service to their customers."
-
-
-
+    - "In order to deliver great service to passengers, it’s increasingly important for operators to take advantage of advancements in tech that help to more intelligently monitor and report on service quality. <br/><br/>Using cutting edge technology, we built a flexible auditing and reporting platform, accessible anywhere and on any device, to give National Express the ability to continuously track trains and station delivery. Maximising their capacity for efficiency to demonstrate their commitment to delivering great service for customers."
  - title: Bleeding Edge Technology Adoption
    sectionid: transporttechnology
    bubbleimage: vert-transport-tech-forward-b.svg
@@ -32,7 +29,7 @@ sections:
    color: green
    extra-classes:
    paragraphs:
-    - "We help organisations imagine, understand and build the future.<br/><br/>We worked with a rail operator to prototype the use of iBeacon technology and NFC (Near Field Communincation) for a smarter delay/repay solution."
+    - "We help organisations imagine, understand and build the future.<br/><br/>We worked with rail operators to prototype a signal using iBeacon Technology that communicates to cellphones of train riders when there's a delay--instantly providing them with a smarter and convenient repay solution."
 
 
 
