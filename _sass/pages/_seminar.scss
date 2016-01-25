@@ -82,7 +82,7 @@
 
 .seminar-presents-title {
   text-align: center;
-  color: white;
+  color: $pink;
   font-weight: normal;
   font-size: 24px;
   margin-top: 12px;
@@ -96,6 +96,7 @@
   .bold {
     font-weight: bold;
   }
+
 }
 
 .seminar-machine-img {
@@ -303,7 +304,7 @@ h4.seminar-speaker-title {
 .seminar-header-details {
   color: $pink;
   text-align: center;
-  padding: 12px 4px;
+  padding: 0;
   h3 {
     font-family: "museo-sans","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
     font-style: normal;
@@ -321,6 +322,16 @@ h4.seminar-speaker-title {
       font-size: 24px;
     }
   }
+}
+
+.seminar-header-location {
+  color: $pink;
+  text-align: center;
+  font-style: normal;
+  font-size: 38px;
+  font-family: "museo-sans","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+  font-weight: bold;
+  text-transform: none;
 }
 
 h3.seminar-header-time {
@@ -431,4 +442,61 @@ h3.seminar-header-time {
   @media screen and ( max-width: $small ) {
     margin-bottom: 48px;
   }
+}
+
+
+
+
+.seminar-form-wrapper {
+  padding: 0 40px;
+  width: 50%;
+  margin: auto;
+  margin-bottom: 48px;
+
+  .seminar-form-input {
+    background: #ddd;
+    border: $pink;
+    width: 100%;
+  }
+
+}
+
+.seminar-form-title {
+  margin-bottom: 0;
+  &:after {
+    content: ":";
+  }
+
+  &.attendance {
+    display: inline;
+  }
+}
+
+.seminar-form-checkbox{
+  input, h4 {
+    display: inline;
+  }
+  margin-bottom: 6px;
+  font-size: 18px;
+  color: #888;
+  font-style: italic;
+
+  padding-left: 24px;
+  input{
+    margin-left: -20px;
+  }
+}
+
+input.seminar-form-submit {
+    width: 100%;
+    position: relative;
+    top: 24px;
+    background: $pink;
+    padding: 8px 18px;
+    display: inline;
+    border: 4px solid rgba(black, 0.2);
+    color: white;
+    font-weight: bold;
+    margin: auto;
+    text-transform: uppercase;
 }
