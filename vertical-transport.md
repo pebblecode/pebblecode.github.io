@@ -29,7 +29,7 @@ sections:
    color: green
    extra-classes:
    paragraphs:
-    - "We help organisations imagine, understand and build the future.<br/><br/>We worked with rail operators to create a signal using iBeacon Technology that communicates to cellphones of train riders when there's a delay--instantly providing them with a smarter and convenient repay solution."
+    - "We help organisations imagine, understand and build the future.<br/><br/>We worked with rail operators to prototype a signal using iBeacon Technology that communicates to cellphones of train riders when there's a delay--instantly providing them with a smarter and convenient repay solution."
 
 
 
