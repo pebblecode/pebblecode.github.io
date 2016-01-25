@@ -23,6 +23,9 @@
   margin: 0 auto 40px;
   padding-top: 100px;
   padding-bottom: 40px;
+  @media screen and ( max-width: $medium ) {
+    padding-top: 20px;
+  }
 }
 
 .seminar-content {
@@ -30,39 +33,50 @@
   position: relative;
   margin: 0px 10%;
   width: 80%;
-  // padding: 50px 40px 40px;
   z-index: 2;
-  // background-color: white;
   padding-top: 30px;
   padding-bottom: 30px;
 
   p {
     font-size: 20px;
     padding: 0 40px;
+    @media screen and ( max-width: $medium ) {
+      font-size: 18px;
+      padding: 0 30px;
+    }
   }
 
-  &:after {
-      @include shadow-pseudo;
-      height: 100%;
-      top: 0;
-      background-color: white;
-      box-shadow: 0 0 10px rgba(black, 0.2);
-      z-index: -1;
-      transform: rotate(-0.3deg) skew(1deg);
-      -ms-transform: rotate(-0.3deg) skew(1deg);
-      -webkit-transform: rotate(-0.3deg) skew(1deg);
-    }
+  @media screen and ( min-width: $medium ) {
+    &:after {
+        @include shadow-pseudo;
+        height: 100%;
+        top: 0;
+        background-color: white;
+        box-shadow: 0 0 10px rgba(black, 0.2);
+        z-index: -1;
+        transform: rotate(-0.3deg) skew(1deg);
+        -ms-transform: rotate(-0.3deg) skew(1deg);
+        -webkit-transform: rotate(-0.3deg) skew(1deg);
+      }
 
-  &:before {
-      @include shadow-pseudo;
-      height: 100%;
-      top: 0;
-      background-color: rgba(white, 0.8);
-      box-shadow: 0 0 10px rgba(black, 0.2);
-      z-index: -5;
-      transform: rotate(2deg) skew(1deg);
-      -ms-transform: rotate(2deg) skew(1deg);
-      -webkit-transform: rotate(2deg) skew(1deg);
+    &:before {
+        @include shadow-pseudo;
+        height: 100%;
+        top: 0;
+        background-color: rgba(white, 0.8);
+        box-shadow: 0 0 10px rgba(black, 0.2);
+        z-index: -5;
+        transform: rotate(2deg) skew(1deg);
+        -ms-transform: rotate(2deg) skew(1deg);
+        -webkit-transform: rotate(2deg) skew(1deg);
+      }
+    }
+    @media screen and ( max-width: $medium ) {
+        background: white;
+        width: calc(100% - 40px);
+        margin: 10px 20px;
+        padding: 0;
+        box-shadow: 0 0 10px rgba(0,0,0,0.2);
     }
 }
 
@@ -72,6 +86,12 @@
   font-weight: normal;
   font-size: 24px;
   margin-top: 12px;
+
+  @media screen and ( max-width: $medium ) {
+      margin-top: 4px;
+      margin-bottom: 4px;
+      font-size: 18px;
+  }
 
   .bold {
     font-weight: bold;
@@ -85,7 +105,13 @@
   position: relative;
   z-index: 1;
   top: 0;
-  margin-top: 32px;
+  margin-top: 150px;
+  @media screen and ( max-width: $medium ) {
+    margin-top: 48px;
+  }
+  @media screen and ( min-width: $large ) {
+    margin-top: 32px;
+  }
 }
 
 .seminar-titlestack {
@@ -96,12 +122,20 @@
     transform: skewY(-5deg);
     text-shadow: 3px 4px 0 rgba(black, 0.2);
     color: #555;
+    z-index: 10;
+
 
     h3.seminar-titlestack-top {
       font-size: 83px;
       margin-bottom: 0px;
       font-style: normal;
       line-height: 1;
+      @media screen and ( max-width: $medium ) {
+        font-size: 48px;
+      }
+      @media screen and ( max-width: $small ) {
+        font-size: 32px;
+      }
     }
     h3.seminar-titlestack-mid {
       font-size: 28px;
@@ -116,6 +150,16 @@
       font-size: 83px;
       margin-top: 0px;
       line-height: 1;
+      @media screen and ( max-width: $medium ) {
+        font-size: 48px;
+      }
+      @media screen and ( max-width: $small ) {
+        font-size: 32px;
+      }
+    }
+
+    @media screen and ( max-width: $medium ) {
+      margin-top: 30px;
     }
 }
 
@@ -211,12 +255,25 @@ h4.seminar-titlestack-sub {
       z-index: -1;
       transform: rotate(-5deg) skew(1deg) ;//scale(1.05);
     }
+
+    @media screen and ( max-width: $medium ) {
+      display: block;
+      float: none;
+      height: 150px;
+      width: 150px;
+      margin: auto;
+      margin-bottom: 24px;
+    }
 }
 
 .seminar-speaker-bio {
     position: relative;
     margin-left: 232px;
     hyphens: none;
+
+    @media screen and ( max-width: $medium ) {
+      margin-left: 0;
+    }
 }
 
 .seminar-speakers {
@@ -226,24 +283,66 @@ h4.seminar-titlestack-sub {
     @include clearfix;
     margin-bottom: 48px;
   }
+
+  @media screen and ( max-width: $medium ) {
+    margin-top: 32px;
+  }
+
 }
 
 h4.seminar-speaker-title {
     font-size: 32px;
     line-height: 1;
     color: $pink;
+    @media screen and ( max-width: $medium ) {
+     font-size: 20px;
+    }
 }
 
 
-h3.seminar-date {
+.seminar-header-details {
   color: $pink;
   text-align: center;
-  text-transform: none;
-  font-weight: normal;
   padding: 12px 4px;
-  font-family: "museo-sans","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
-  font-style: normal;
-  font-size: 38px;
+  h3 {
+    font-family: "museo-sans","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+    font-style: normal;
+    font-size: 38px;
+    font-weight: normal;
+    text-transform: none;
+    display: inline;
+    @media screen and ( max-width: $medium ) {
+      display: block;
+      margin-top: 4px;
+      margin-bottom: 4px;
+      line-height: 1;
+    }
+    @media screen and ( max-width: $small ) {
+      font-size: 24px;
+    }
+  }
+}
+
+h3.seminar-header-time {
+  &:before {
+    content: "•";
+    margin: 0 12px;
+    @media screen and ( max-width: $medium ) {
+      content: "-";
+      margin: 0 12px;
+      color: #aaa;
+    }
+  }
+  &:after {
+    @media screen and ( max-width: $medium ) {
+      content: "-";
+      margin: 0 12px;
+      color: #aaa;
+    }
+  }
+  @media screen and ( max-width: $medium ) {
+    font-weight: bold;
+  }
 }
 
 .seminar-map-container {
@@ -260,10 +359,15 @@ h3.seminar-date {
   // go 1 step above the total
   animation: brainSprite 2s steps(48) infinite;
   float: right;
-    position: absolute;
-    top: -97px;
-    right: -25px;
-    transform: scale(0.6);
+  position: absolute;
+  top: -97px;
+  right: -25px;
+  transform: scale(0.6);
+
+   @media screen and ( max-width: $small ) {
+    right: -67px;
+  }
+
 }
 
 @keyframes brainSprite {
@@ -284,6 +388,9 @@ h3.seminar-date {
   top:-75px;
   right: -60px;
   position: absolute;
+  @media screen and ( max-width: $small ) {
+    display: none;
+  }
 }
 
 @keyframes bulbSprite {
@@ -320,5 +427,8 @@ h3.seminar-date {
     font-weight: bold;
     margin: auto;
     text-transform: uppercase;
+  }
+  @media screen and ( max-width: $small ) {
+    margin-bottom: 48px;
   }
 }

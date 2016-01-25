@@ -18,7 +18,10 @@ layout: seminar
 
         <img src="{{ site.baseurl }}/img/seminar/seminar-health-montage.png" class="seminar-machine-img grid" alt="pebble {code}'s process">
 
-        <h3 class="seminar-date">{{page.seminar-date}} • {{page.seminar-time}}</h3>
+        <div class="seminar-header-details">
+          <h3 class="seminar-header-date">{{page.seminar-date}}</h3>
+          <h3 class="seminar-header-time">{{page.seminar-time}}</h3>
+        </div>
 
         {% for paragraph in page.seminar-intro-paragraphs %}
           <p>{{paragraph}}</p>
