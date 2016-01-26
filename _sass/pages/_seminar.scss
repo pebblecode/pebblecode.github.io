@@ -577,3 +577,9 @@ input.seminar-form-submit {
     margin-bottom: 32px;
   }
 }
+
+.seminar-homelink {
+  &:hover{
+    color: #aaa;
+  }
+}
