@@ -14,4 +14,11 @@ cover-img: features/couch.jpg
 feat-client:
 feat-title: Rail Travel Customer Experience System
 feat-excerpt: A tablet-based quality system allows a national rail company to make a quantum leap in the quality of the experience of passengers in stations and on their trains.
+
+
+## Vertical Section:
+vert-section-title: Industry Innovation
+vert-text-health: Precision medicine, patient centricity, smart research - insights and ideas for bottom up innovation in the health industry.
+vert-text-transport: Customer satisfaction, smart ticketing, internet of things - insights and ideas for innovation in Transport.
+vert-text-insurance: Innovation culture, paper eradication, cyber-security - insights and ideas for innovation in Insurance
 ---

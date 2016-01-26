@@ -319,18 +319,18 @@
 
 .home .projects-item-inner.verticals {
   @media screen and (max-width: 800px) {
-    padding-top: 280px;
+    padding-top: 320px;
   }
   @media screen and (max-width: 500px) {
-    padding-top: 350px;
+    padding-top: 400px;
   }
 
-  @media (max-width: 500px) and (min-width: 350px) {
-      padding-top: 340px;
+  @media (max-width: 400px) and (min-width: 300px) {
+      padding-top: 450px;
   }
 
   @media (max-width: 350px) and (min-width: 0px) {
-    padding-top: 450px;
+    padding-top: 500px;
   }
 }
 
