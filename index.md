@@ -4,7 +4,7 @@ title:
 permalink: /
 
 ## Hero Content
-hero-title: Technology Innovation Consultancy
+hero-title: Innovative Technology Solutions
 hero-subtitle: Design Thinking, Rapid Prototyping and Agile Software Development.
 
 ## Main background image
@@ -20,5 +20,5 @@ feat-excerpt: A tablet-based quality system allows a national rail company to ma
 vert-section-title: Industry Innovation
 vert-text-health: Precision medicine, patient centricity, smart research - insights and ideas for bottom up innovation in the health industry.
 vert-text-transport: Customer satisfaction, smart ticketing, internet of things - insights and ideas for innovation in Transport.
-vert-text-insurance: Innovation culture, paper eradication, cyber-security - insights and ideas for innovation in Insurance
+vert-text-insurance:
 ---

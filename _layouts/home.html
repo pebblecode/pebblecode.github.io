@@ -17,22 +17,24 @@
         <div class="project-item-inner">
           <div class="project-item projects-item-inner verticals grid">
             <div class="col-1-2 project-item-img vert-content-img alignme">
-              <img class="vert-content-img-bg" data-sr="enter left move 300px, vF 0.2, wait 0.8s" src="{{ site.baseurl }}/img/verticals/vert-home.svg">
-              <a href="/transport">
-                <img class="vert-content-img-transport vert-home-bubble" data-sr="enter left move 200px, vF 0.2, wait 0.6s" src="{{ site.baseurl }}/img/verticals/vert-transport-rail-service-b.svg">
-              </a>
-              <a href="/health">
-                <img class="vert-content-img-health vert-home-bubble" data-sr="enter left move 300px, vF 0.2, wait 0.4s" src="{{ site.baseurl }}/img/verticals/vert-health-home.svg">
-              </a>
-              <a href="/insurance">
-                <img class="vert-content-img-insurance vert-home-bubble" data-sr="enter left move 300px, vF 0.2, wait 0.2s" src="{{ site.baseurl }}/img/verticals/vert-insurance-home.svg">
-              </a>
+
+              <div class="cent-test">
+                <a href="{{ site.baseurl }}/transport">
+                  <img class="vert-content-img-transport vert-home-bubble" data-sr="enter left move 200px, vF 0.2, wait 0.6s" src="{{ site.baseurl }}/img/verticals/vert-transport-rail-service-b.svg">
+                </a>
+                <a href="{{ site.baseurl }}/health">
+                  <img class="vert-content-img-health vert-home-bubble" data-sr="enter left move 300px, vF 0.2, wait 0.4s" src="{{ site.baseurl }}/img/verticals/vert-health-home.svg">
+                </a>
+                  <img class="vert-content-img-insurance" data-sr="enter left move 300px, vF 0.2, wait 0.2s" src="{{ site.baseurl }}/img/verticals/vert-insurance-home.svg">
+                </div>
             </div>
             <div class="col-1-2 project-item-text alignme">
               <h3 class="project-item-title">{{page.vert-section-title}}</h3>
-              <p>{{page.vert-text-health}}<a href="/health"> Read More</a> </p>
-              <p>{{page.vert-text-transport}}<a href="/transport"> Read More</a> </p>
-              <p>{{page.vert-text-insurance}}<a href="/insurance"> Read More</a> </p>
+              <p>{{page.vert-text-health}} </p><a href="{{ site.baseurl }}/health" class="btn btn-light btn-block">Read More</a>
+
+              <p class="transport-text">{{page.vert-text-transport}}</p> <a href="{{ site.baseurl }}/health" class="btn btn-light btn-block">Read More</a>
+
+              <p>{{page.vert-text-insurance}}</p>
             </div>
           </div>
         </div>

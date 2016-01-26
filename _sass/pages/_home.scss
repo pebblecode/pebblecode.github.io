@@ -4,10 +4,6 @@
 // Hero
 .home .hero-container {
 
-  background-repeat: repeat-x;
-  background-position: bottom;
-  background-size: 400px;
-
   .hero-title {
     @media screen and ( max-width: 1100px ) {
       font-size: $tera - 10px;
@@ -157,7 +153,7 @@
 }
 
 .feat-content {
-  padding-top: 0;
+  padding-top: 20px;
   padding-bottom: 0;
   color: white;
 
@@ -245,6 +241,8 @@
   left: 0;
   bottom: 0px;
   overflow: hidden;
+  background: no-repeat;
+  background-image: url(../img/verticals/vert-home.svg);
 
   img {
     position: absolute;
@@ -276,11 +274,11 @@
 .vert-content-img-health {
   left:140px;
   top:10px;
-
 }
+
 .vert-content-img-insurance{
   left:70px;
-  top: 165px;
+  top: 140px;
 }
 
 @media (max-width: 799px) and (min-width: 500px) {
@@ -344,4 +342,12 @@
       transform: none;
     }
   }
+}
+
+.home .btn-light {
+  padding: 6px 20px;
+}
+
+.transport-text {
+  margin-top:30px;
 }
