@@ -438,8 +438,8 @@ h3.seminar-header-time {
 
 .seminar-cta-link {
   text-align: center;
-  margin-top: 48px;
-  margin-bottom: 24px;
+  margin-top: 6px;
+  margin-bottom: 48px;
   a {
     width: 50%;
     background: $pink;
@@ -528,7 +528,7 @@ input.seminar-form-submit {
   font-family: "museo-sans","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
   font-style: normal;
   color: $pink;
-  font-weight: normal;
+  // font-weight: normal;
   font-size: 32px;
 }
 
