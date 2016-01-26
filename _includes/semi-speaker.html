@@ -1,7 +1,7 @@
  <li class="seminar-speaker">
   <div class="seminar-speaker-image" style="background-image: url({{ site.baseurl }}/img/seminar/{{speaker.portrait}})"></div>
   <h4 class="seminar-speaker-title">{{speaker.name}}</h4>
-  <h5 class="seminar-speaker-title">{{speaker.jobtitle}}</h5>
+  <h5 class="seminar-speaker-jobtitle">{{speaker.jobtitle}}</h5>
   <div class="seminar-speaker-bio">
     {% for bio in speaker.bio %}
         <p>{{bio}}</p>

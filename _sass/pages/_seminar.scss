@@ -295,10 +295,18 @@ h4.seminar-speaker-title {
     font-size: 32px;
     line-height: 1;
     color: $pink;
+    margin-bottom: 4px;
     @media screen and ( max-width: $medium ) {
      font-size: 20px;
     }
 }
+
+h5.seminar-speaker-jobtitle {
+  font-style: italic;
+  color: #aaa;
+  font-size: 18px;
+}
+
 
 
 .seminar-header-details {
@@ -332,6 +340,10 @@ h4.seminar-speaker-title {
   font-family: "museo-sans","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
   font-weight: bold;
   text-transform: none;
+
+    @media screen and ( max-width: $small ) {
+      font-size: 24px;
+    }
 }
 
 h3.seminar-header-time {
@@ -459,6 +471,14 @@ h3.seminar-header-time {
     width: 100%;
   }
 
+  @media screen and ( max-width: $large ) {
+    width: 75%;
+  }
+
+  @media screen and ( max-width: $medium ) {
+    width: 100%;
+  }
+
 }
 
 .seminar-form-title {
@@ -481,9 +501,11 @@ h3.seminar-header-time {
   color: #888;
   font-style: italic;
 
-  padding-left: 24px;
+  padding-left: 48px;
   input{
-    margin-left: -20px;
+    margin-left: -40px;
+    margin-right: 18px;
+    transform: scale(1.8);
   }
 }
 
@@ -499,4 +521,50 @@ input.seminar-form-submit {
     font-weight: bold;
     margin: auto;
     text-transform: uppercase;
+}
+
+.seminar-form-header {
+  text-transform: none;
+  font-family: "museo-sans","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+  font-style: normal;
+  color: $pink;
+  font-weight: normal;
+  font-size: 32px;
+}
+
+.seminar-social-links {
+  text-align: center;
+  width: 100%;
+  padding: 0 40px;
+  a {
+      position: relative;
+      height: 22px;
+      padding-left: 28px;
+      margin-right: 6px;
+      font-weight: bold;
+      padding-top: 2px;
+
+      @media screen and ( max-width: $medium ) {
+        margin-right: 8px;
+      }
+
+      &:after {
+        @include icon-pseudo;
+        top: 0;
+        left: 0;
+      }
+      &.linkedin:after {
+        @include sprite($linkedin-pink);
+      }
+      &.twitter:after {
+        @include sprite($twitter-pink);
+      }
+      &.vimeo:after {
+        @include sprite($vimeo-pink);
+      }
+    }
+
+  @media screen and ( max-width: $medium ) {
+    font-size: 14px;
+  }
 }

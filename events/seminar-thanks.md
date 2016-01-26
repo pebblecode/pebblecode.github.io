@@ -1,7 +1,7 @@
 ---
-layout: seminar
+layout: seminar-thanks
 title: Health Innovation
-permalink: /events/health/
+permalink: /events/thanks/
 colour: pink
 
 seminar-eventlink: "https://www.eventbrite.com/"

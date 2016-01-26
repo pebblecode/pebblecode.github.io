@@ -1,5 +1,5 @@
 <div class="seminar-form-wrapper">
-  <h3>Sign-up</h3>
+  <h3 class="seminar-form-header">Sign-up</h3>
   <form action="http://formspree.io/niall@pebblecode.com"
         method="POST">
         <div class="seminar-form-checkbox"><input type="checkbox" name="attending" value="yes"> Tick to confirm attendance
@@ -12,6 +12,7 @@
         <input class="seminar-form-input" type="text" name="name">
         <h4 class="seminar-form-title">e-mail</h4>
         <input class="seminar-form-input" type="email" name="_replyto">
+        <input type="hidden" name="_next" value="events/thanks/" />
         <input class="seminar-form-submit" type="submit" value="Sign me up!">
   </form>
 </div>
