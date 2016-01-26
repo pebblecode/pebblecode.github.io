@@ -46,7 +46,11 @@ The team consisted of Aisling, fashioning the front-end, Clorama, hacking on the
 
 ![API diagram](/img/posts/2015-12-08-christmas-slack-o-meter/cristmas-meter-diagram.png)
 
+<<<<<<< HEAD
 For the API I used [Hapi](hapijs.com), a rich API framework that we've used for Hacks before. I wanted to use this Hackathon to familiarise myself with its structure, and I found it great - a quickly assembled springboard to launch our application from. For persistence we used [MongoDB](https://www.mongodb.org/) and to simplify DB connections and schema we used [Mongoose](http://mongoosejs.com/), both of which play nicely with Hapi.
+=======
+For the API I used [Hapi](http://hapijs.com), a rich API framework that we've used for Hacks before. I wanted to use this Hackathon to familiarise myself with its structure, and I found it great - a quickly assembled springboard to launch our application from. For persistence we used [MongoDB](https://www.mongodb.org/) and to simplify DB connections and schema we used [Mongoose](http://mongoosejs.com/), both of which play nicely with Hapi.
+>>>>>>> f46a86a9cfc78ca6cbd0a599b9619f613cdcd1c5
 
 But the hardware was still giving us a headache. After much deliberating and some eating of humble Pi we decided to scale back our ambitions and instead focus on the Live Demo, since 5pm had somehow leapt on us out of nowhere, like an Australian dropbear.
 

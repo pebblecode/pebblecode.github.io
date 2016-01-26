@@ -9,6 +9,18 @@
 
 .vert-bubble-container {
   text-align: center;
+<<<<<<< HEAD
+=======
+  padding: 30px;
+
+  &:before {
+    content: "";
+    display: inline-block;
+    vertical-align: top;
+
+  }
+
+>>>>>>> f46a86a9cfc78ca6cbd0a599b9619f613cdcd1c5
   @media screen and ( max-width: $medium ) {
     padding: 12px;
   }
@@ -19,12 +31,20 @@
   width: 250px;
   display: inline-block;
   position: relative;
+<<<<<<< HEAD
+=======
+  vertical-align: top;
+>>>>>>> f46a86a9cfc78ca6cbd0a599b9619f613cdcd1c5
 
   img {
     height: 100%;
     width: 100%;
     position: relative;
     top: 0;
+<<<<<<< HEAD
+=======
+
+>>>>>>> f46a86a9cfc78ca6cbd0a599b9619f613cdcd1c5
     @media screen and ( max-width: $medium ) {
       height: 100%;
       float: right;
@@ -41,7 +61,11 @@
     width: 100%;
     text-align: left;
     display: block;
+<<<<<<< HEAD
     padding: 4px 12px ;
+=======
+    padding: 4px 12px;
+>>>>>>> f46a86a9cfc78ca6cbd0a599b9619f613cdcd1c5
     background: rgba(black, 0.2);
     border: rgba(white, 0.6) solid 6px;
     border-radius: 6px;
@@ -89,6 +113,10 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
+<<<<<<< HEAD
+=======
+    padding-right: 128px;
+>>>>>>> f46a86a9cfc78ca6cbd0a599b9619f613cdcd1c5
   }
 
 }
@@ -204,6 +232,24 @@
     background-color: $aqua;
   }
 
+<<<<<<< HEAD
+=======
+  &.orange {
+      background-color: $orange;
+    &:before {
+      transform: rotate(-1.1deg) scale(1.2);
+      -ms-transform: rotate(-1.1deg) scale(1.2);
+      -webkit-transform: rotate(-1.1deg) scale(1.2);
+    }
+
+    &:after {
+      transform: rotate(-2.4deg) scale(1.2);
+      -ms-transform: rotate(-2.4deg) scale(1.2);
+      -webkit-transform: rotate(-2.4deg) scale(1.2);
+    }
+  }
+
+>>>>>>> f46a86a9cfc78ca6cbd0a599b9619f613cdcd1c5
   &.pink {
     &:before {
       transform: rotate(-1.1deg) scale(1.2);
@@ -272,6 +318,7 @@
     -webkit-transform: rotate(1.3deg) scale(1.2);
   }
 
+<<<<<<< HEAD
   &:last-of-type {
     &:before {
       content: none;
@@ -279,6 +326,24 @@
 
     &:after {
        content: none;
+=======
+  &:nth-last-of-type(2) {
+    &:before {
+    }
+
+    &:after {
+       background-color: $pink;
+    }
+  }
+
+  &:last-of-type {
+    &:before {
+     content: none;
+    }
+
+    &:after {
+     content: none;
+>>>>>>> f46a86a9cfc78ca6cbd0a599b9619f613cdcd1c5
     }
   }
 
@@ -332,6 +397,7 @@
 }
 
 .vert-section-table {
+<<<<<<< HEAD
   border: 2px solid darken($pink, 20%);
 
   tr {
@@ -345,6 +411,21 @@
 
     &:first-child {
       background: darken($pink, 20%);
+=======
+  border: 2px solid darken($aqua, 20%);
+
+  tr {
+    // border: #333 solid 2px;
+    background: lighten($aqua, 20%);
+    color: #333;
+
+    &:nth-child(odd) {
+      background: lighten($aqua, 30%);
+    }
+
+    &:first-child {
+      background: darken($aqua, 20%);
+>>>>>>> f46a86a9cfc78ca6cbd0a599b9619f613cdcd1c5
       color: #fff;
       font-weight: bold;
     }
@@ -352,7 +433,12 @@
   }
 
   td {
+<<<<<<< HEAD
     padding-left: 8px;
+=======
+    // padding-left: 8px;
+    padding: 6px 8px;
+>>>>>>> f46a86a9cfc78ca6cbd0a599b9619f613cdcd1c5
   }
 }
 
@@ -461,6 +547,10 @@ h4.vert-section-breadcrumb {
 .vert-section-large-image {
   width: 400px;
   height: 400px;
+<<<<<<< HEAD
+=======
+  max-width: 50%;
+>>>>>>> f46a86a9cfc78ca6cbd0a599b9619f613cdcd1c5
   float: right;
   @media screen and ( max-width: $medium ) {
     height: 200px;
@@ -476,6 +566,7 @@ h4.vert-section-breadcrumb {
 // Case Study
 //===============================================================================
 
+<<<<<<< HEAD
 .vert-section-case-study {
   width: 50%;
   display: inline-block;
@@ -488,4 +579,73 @@ h4.vert-section-breadcrumb {
   &:hover {
     background: white;
   }
+=======
+.vert-section-case-study,
+.vert-section-blog-link {
+  margin: 20px auto;
+  display: inline-block;
+
+  a {
+    width: 50%;
+    background: rgba(black, 0.2);
+    padding: 8px 18px;
+    display: inline;
+    border: 4px solid rgba(black, 0.2);
+    color: white;
+    font-weight: bold;
+
+    &:hover {
+      background: white;
+      color: $pink;
+    }
+  }
+
+}
+
+// Case Study
+//===============================================================================
+
+.vert-contact-sub {
+  font-weight: normal;
+  font-style: italic;
+  color: rgba(black, 0.5);
+  font-size: 32px;
+  text-shadow: 2px 2px 0 rgba(black, 0.2);
+}
+
+.vert-contact-title {
+  text-shadow: 4px 4px 0 rgba(black, 0.2);
+}
+
+.vert-contact-email {
+  color: white;
+  font-size: 24px;
+  &:after {
+    @include sprite($mail-black);
+  }
+}
+
+.vert-contact-para {
+  font-size: 24px;
+  margin-bottom: 0;
+}
+
+.vert-section-contact {
+  .location-item {
+    display: inline-block;
+  }
+}
+
+.vert-section-contact {
+
+  .location-item a {
+    margin: 0;
+    margin-top: 40px;
+
+    @media screen and ( max-width: $medium ) {
+      margin-top: 20px;
+    }
+  }
+
+>>>>>>> f46a86a9cfc78ca6cbd0a599b9619f613cdcd1c5
 }

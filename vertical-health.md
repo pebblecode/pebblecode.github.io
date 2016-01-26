@@ -53,14 +53,23 @@ sections:
    sectionid: bottomupinnovation
    bubbleimage: vert-health-bui.svg
    largeimage: vert-health-bui-emblem.svg
+<<<<<<< HEAD
    color: pink
+=======
+   color: aqua
+>>>>>>> f46a86a9cfc78ca6cbd0a599b9619f613cdcd1c5
    paragraphs:
     - "To date Government Institutions, Charities and Pharmaceuticals have conceived of digital innovation from a top-down perspective.<br /><br />Simply put large, monolithic organisations struggle to innovate at the speed of the open market. Top-down innovation is also extremely risky, often resulting in high profile failures like the NHS Patient Record system."
     - We believe by starting small and involving users early and often in the process that innovation projects stand a better chance of success. Gradually, we believe large organisations can learn to innovate like the open market.
     - table:
        - row:
+<<<<<<< HEAD
           - Now
           - Later
+=======
+          - Currently
+          - In the Future
+>>>>>>> f46a86a9cfc78ca6cbd0a599b9619f613cdcd1c5
        - row:
           - Ideas conceived by management layers
           - Ideas come from anywhere

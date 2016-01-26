@@ -73,9 +73,19 @@
 // INVITE: Styles for the invite pages
 @import "pages/_invite.scss";
 
+<<<<<<< HEAD
 // INVITE: Styles for the invite pages
 @import "pages/_vertical.scss";
 
+=======
+// SEMINAR: Styles for the seminar pages
+@import "pages/_seminar.scss";
+
+// INVITE: Styles for the invite pages
+@import "pages/_vertical.scss";
+
+
+>>>>>>> f46a86a9cfc78ca6cbd0a599b9619f613cdcd1c5
 // IE 8
 // ===================================================
 @import "shared/_ie.scss";
