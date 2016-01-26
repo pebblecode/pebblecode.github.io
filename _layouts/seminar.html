@@ -22,17 +22,14 @@ layout: seminar
           <h3 class="seminar-header-time">{{page.seminar-time}}</h3>
         </div>
 
-        <h3 class="seminar-header-location">{{page.seminar-location-shorthand}}</h3>
+        <h3 class="seminar-header-location"><a href="#location">{{page.seminar-location-shorthand}}</a></h3>
 
         {% for paragraph in page.seminar-intro-paragraphs %}
           <p>{{paragraph}}</p>
         {% endfor %}
 
-<!--         <div class="seminar-cta-link">
-          <a href="{{page.seminar-eventlink}}">{{page.seminar-call-to-action}}</a>
-        </div> -->
-
-            {% include semi-form.html %}
+        <!-- Include sign-up form -->
+        {% include semi-form.html %}
 
 
         <div class="seminar-social-links">
@@ -65,7 +62,7 @@ layout: seminar
           <div class="seminar-cta-link">
             <a href="#seminar-signup">RSVP at the top of the page</a>
           </div>
-          <h4 class="seminar-location-heading">Information:</h4>
+          <h4 id="location" class="seminar-location-heading">Information:</h4>
              <div class="seminar-sprite-lightbulb"></div>
           <h3 class="seminar-info-item">{{page.seminar-time}}</h3>
           <h3 class="seminar-info-item">{{page.seminar-date}}</h3>

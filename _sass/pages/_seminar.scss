@@ -525,12 +525,14 @@ input.seminar-form-submit {
 }
 
 .seminar-form-header {
-  text-transform: none;
-  font-family: "museo-sans","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
-  font-style: normal;
+  // text-transform: none;
+  // font-family: "museo-sans","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+  // font-style: normal;
+
   color: $pink;
   // font-weight: normal;
   font-size: 32px;
+  text-shadow: 2px 2px 0 rgba(black, 0.1);
 }
 
 .seminar-social-links {
@@ -601,5 +603,6 @@ h3.seminar-info-item {
   margin-top: 6px;
   &:first-of-type {
     font-weight: bold;
+    text-shadow: 3px 3px 0 rgba(black, 0.2);
   }
 }
