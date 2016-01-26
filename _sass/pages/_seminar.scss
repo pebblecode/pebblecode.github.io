@@ -371,6 +371,7 @@ h3.seminar-header-time {
 .seminar-map-container {
   position: relative;
   height: 500px;
+  margin-top: 32px;
   // border: 8px solid $pink;
 }
 
@@ -581,5 +582,24 @@ input.seminar-form-submit {
 .seminar-homelink {
   &:hover{
     color: #aaa;
+  }
+}
+
+.seminar-location-container {
+  text-align: center;
+}
+
+.seminar-location-wrapper {
+}
+
+h3.seminar-info-item {
+  font-size: 28px;
+  font-weight: normal;
+  color: $pink;
+  font-family: "museo-sans","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+  font-style: normal;
+  margin-top: 6px;
+  &:first-of-type {
+    font-weight: bold;
   }
 }

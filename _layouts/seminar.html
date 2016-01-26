@@ -61,20 +61,23 @@ layout: seminar
       </article>
 
       <article class="aside-container seminar-location-container">
-        <div class="seminar-cta-link">
-          <a href="#seminar-signup">RSVP at the top of the page</a>
+        <div class="seminar-location-wrapper">
+          <div class="seminar-cta-link">
+            <a href="#seminar-signup">RSVP at the top of the page</a>
+          </div>
+          <h4 class="seminar-location-heading">Information:</h4>
+             <div class="seminar-sprite-lightbulb"></div>
+          <h3 class="seminar-info-item">{{page.seminar-time}}</h3>
+          <h3 class="seminar-info-item">{{page.seminar-date}}</h3>
+          <h4 class="seminar-location-heading">Location:</h4>
+          <p class="location-item">
+            <a>{{page.seminar-location}}</a>
+          </p>
+          <!-- Map section -->
+          <!--[if gt IE 8]><!-->
+            <div id="semimap" class="seminar-map-container"></div>
+          <!--<![endif]-->
         </div>
-        <h3>Information</h3>
-           <div class="seminar-sprite-lightbulb"></div>
-        <p>{{page.seminar-time}}<br>{{page.seminar-date}}</p>
-        <h4 class="seminar-location-heading">Location:</h4>
-        <p class="location-item location-item-address">
-          <a>{{page.seminar-location}}</a>
-        </p>
-        <!-- Map section -->
-        <!--[if gt IE 8]><!-->
-          <div id="semimap" class="seminar-map-container"></div>
-        <!--<![endif]-->
       </article>
 
 

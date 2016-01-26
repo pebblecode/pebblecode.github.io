@@ -15,7 +15,7 @@ seminar-subtitle: In the trenches
 seminar-intro-paragraphs:
  - "The health industry is an exciting place to be right now! With advances in personalised medicine and genomics, patient centricity and smart research, innovations are surfacing every day. But how can we continue to achieve innovative solutions for these challenges in the industry in a faster and smarter way?"
  - "<a href='../../health'>We believe</a> that a big part of the answer lies in innovative and open digital solutions, and that digital transformation is imminent - in our view, the UK is at the forefront."
- - "pebble {code} has been working to bridge the two industries for a number of years, providing tech innovations for the health industry. Delivering digital solutions, ranging from competitive intelligence to patient journeys - we are passionate about being part of the conversation."
+ - "<a href='../../'>pebble {code}</a> has been working to bridge the two industries for a number of years, providing tech innovations for the health industry. Delivering digital solutions, ranging from competitive intelligence to patient journeys - we are passionate about being part of the conversation."
  - "Join us at the Hospital Club for our <span>Innovation in Health seminar</span>: A roundtable discussion with peer industry leaders. We'll explore how tech innovation can solve pain points in the health industry. With an introductory keynote from <a href='#asif-qasim'>Asif Qasim</a> (CEO & Founder at MedShr), and chaired by <a href='#stephen-allott'>Stephen Allott</a> (pebble {code} Chairman), we are inviting a small number of industry movers and shakers to take part in an informal breakfast discussion to try and uncover the secret sauce to Innovation in Health."
 
 
