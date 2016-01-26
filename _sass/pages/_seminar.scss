@@ -94,7 +94,7 @@
   }
 
   .bold {
-    font-weight: bold;
+    // font-weight: bold;
   }
 
 }
@@ -536,6 +536,14 @@ input.seminar-form-submit {
   text-align: center;
   width: 100%;
   padding: 0 40px;
+
+  span {
+      @media screen and ( max-width: $small ) {
+        display: block;
+        font-weight: bold;
+      }
+  }
+
   a {
       position: relative;
       height: 22px;
@@ -566,5 +574,6 @@ input.seminar-form-submit {
 
   @media screen and ( max-width: $medium ) {
     font-size: 14px;
+    margin-bottom: 32px;
   }
 }

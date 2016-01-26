@@ -13,9 +13,11 @@ seminar-title2: in
 seminar-title3: Healthcare
 seminar-subtitle: In the trenches
 seminar-intro-paragraphs:
- - The health market is facing increasing challenges from many corners.
- - We believe the answer lies in innovative digital solutions. A digital transformation is iminent, and the UK is at the forefront.
- - Join us at the hospital club for our “Health Innovation” seminar. From our knowledge gained over 20 years at the forefront of tech innovation, we'll lead an interactive discussion and workshop to identify root causes and bottlenecks companies face when creating a culture of continuous innovation.
+ - "The health industry is an exciting place to be right now! With advances in personalised medicine and genomics, patient centricity and smart research, innovations are surfacing every day. But how can we continue to achieve innovative solutions for these challenges in the industry in a faster and smarter way?"
+ - "We believe that a big part of the answer lies in innovative and open digital solutions, and that digital transformation is imminent - in our view, the UK is at the forefront."
+ - "pebble {code} has been working to bridge the two industries for a number of years, providing tech innovations for the health industry. Delivering digital solutions, ranging from competitive intelligence to patient journeys - we are passionate about being part of the conversation."
+ - "Join us at the Hospital Club for our <span>Innovation in Health seminar</span>: A roundtable discussion with peer industry leaders. We'll explore how tech innovation can solve pain points in the health industry. With an introductory keynote from <a href='#asif-qasim'>Asif Qasim</a> (CEO & Founder at MedShr), and chaired by <a href='#stephen-allott'>Stephen Allott</a> (pebble {code} Chairman), we are inviting a small number of industry movers and shakers to take part in an informal breakfast discussion to try and uncover the secret sauce to Innovation in Health."
+
 
 ## Location and Time
 
@@ -29,12 +31,14 @@ seminar-location-shorthand: "The Hospital Club, London"
 ## Speakers
 speakers:
  - name: Asif Qasim
+   id: asif-qasim
    jobtitle: Consultant Cardiologist
    portrait: asif.jpg
    bio:
     - "Founder and CEO of MedShr, Asif Qasim is a consultant cardiologist and NHS Clinical Director based in London, England."
     - "He has over 10 years in online social media, and after successfully launching a case discussion network for cardiologists, he is now leading the MedShr team to build this global, multi-specialty network for doctors."
  - name: Stephen Allott
+   id: stephen-allott
    jobtitle: Innovation Consultant
    portrait: stephen.jpg
    bio:
@@ -43,6 +47,7 @@ speakers:
     - "Founded the Cambridge Computer Lab Ring and co-founded Trinamo. President, CFO and main board director of Micromuse Inc. (NASDAQ: MUSE)."
     - "Worked for McKinsey, Sun Microsystems, Xerox and Essex Court Chambers. Graduate of Trinity College Cambridge, Barrister (Gray’s Inn), Member of the Bar Council of England and Wales, City Fellow of Hughes Hall Cambridge University."
  - name: Victoria Betton
+   id: victoria-betton
    jobtitle: Programme Director of mHabitat
    portrait: victoria.jpg
    bio:
