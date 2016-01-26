@@ -608,18 +608,29 @@ h3.seminar-info-item {
 }
 
 .seminar-speaker-link {
-    // &:after {
-    //       @include icon-pseudo;
-    //       top: 0;
-    //       left: 0;
-    //     }
-    // &.linkedin:after {
-    //   @include sprite($linkedin-pink);
-    // }
-    // &.twitter:after {
-    //   @include sprite($twitter-pink);
-    // }
-    // &.vimeo:after {
-    //   @include sprite($vimeo-pink);
-    // }
+
+    position: relative;
+    height: 22px;
+    padding-left: 28px;
+    margin-right: 6px;
+    font-weight: bold;
+    padding-top: 2px;
+    // display: block;
+    color: #aaa;
+    margin-bottom: 6px;
+
+    &:after {
+          @include icon-pseudo;
+          top: 0;
+          left: 0;
+        }
+    &.linkedin:after {
+      @include sprite($linkedin-pink);
+    }
+    &.twitter:after {
+      @include sprite($twitter-pink);
+    }
+    &.vimeo:after {
+      @include sprite($vimeo-pink);
+    }
 }
