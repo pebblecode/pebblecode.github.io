@@ -2,7 +2,7 @@
 layout: post
 title:  Audio HackDay - Pocket Operator
 author: Martin Schinz
-categories: 
+categories:
   - hack day
 ---
 
@@ -46,5 +46,3 @@ John said that he really enjoyed learning about the [Reactive Extensions](https:
 ## Link to source
 
 You can find the source for this project on [github](https://github.com/pebblecode/pocketOperator).
-
-
