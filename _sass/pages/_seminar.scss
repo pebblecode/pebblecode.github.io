@@ -606,3 +606,20 @@ h3.seminar-info-item {
     text-shadow: 3px 3px 0 rgba(black, 0.2);
   }
 }
+
+.seminar-speaker-link {
+    // &:after {
+    //       @include icon-pseudo;
+    //       top: 0;
+    //       left: 0;
+    //     }
+    // &.linkedin:after {
+    //   @include sprite($linkedin-pink);
+    // }
+    // &.twitter:after {
+    //   @include sprite($twitter-pink);
+    // }
+    // &.vimeo:after {
+    //   @include sprite($vimeo-pink);
+    // }
+}

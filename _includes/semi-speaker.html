@@ -6,6 +6,8 @@
     {% for bio in speaker.bio %}
         <p>{{bio}}</p>
     {% endfor %}
+    <a class="seminar-speaker-link twitter" href="{{speaker.linkedin}}">{{speaker.linkedin}}</a>
+    <a class="seminar-speaker-link facebook" href="{{speaker.twitter}}">{{speaker.twitter}}</a>
     <!-- <p>{{speaker.bio}}</p> -->
   </div>
 </li>
