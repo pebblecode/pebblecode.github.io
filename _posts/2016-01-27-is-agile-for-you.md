@@ -39,7 +39,7 @@ advantage.
 
 ##How certain are you about your assumptions?
 
-Assumptions add risk to your project because they can turn out to be false. In fixed cost  pricing, you have plan up
+Assumptions add risk to your project because they can turn out to be false. In fixed cost pricing, you have plan up
 front and no doubt those costs are passed on to you. Worse is when a false assumption is simply missed and it derails
 your project.
 
