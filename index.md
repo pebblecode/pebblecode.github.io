@@ -18,7 +18,7 @@ feat-excerpt: A tablet-based quality system allows a national rail company to ma
 
 ## Vertical Section:
 vert-section-title: Industry Innovation
-vert-text-health: Precision medicine, patient centricity, smart research - insights and ideas for bottom up innovation in the health industry.
+vert-text-health: Precision medicine, patient centricity, smart research - insights and ideas for bottom up innovation in Health.
 vert-text-transport: Customer satisfaction, smart ticketing, internet of things - insights and ideas for innovation in Transport.
 vert-text-insurance:
 ---
