@@ -3,7 +3,6 @@ layout: post
 title: Single Page Apps for Admin Backends - Who needs them ?
 author: Martin Schinz
 categories: spa
-featured: true
 ---
 
 ## No app is TodoMVC
