@@ -9,8 +9,7 @@
 
 .vert-bubble-container {
   text-align: center;
-<<<<<<< HEAD
-=======
+
   padding: 30px;
 
   &:before {
@@ -20,7 +19,6 @@
 
   }
 
->>>>>>> f46a86a9cfc78ca6cbd0a599b9619f613cdcd1c5
   @media screen and ( max-width: $medium ) {
     padding: 12px;
   }
@@ -31,20 +29,15 @@
   width: 250px;
   display: inline-block;
   position: relative;
-<<<<<<< HEAD
-=======
   vertical-align: top;
->>>>>>> f46a86a9cfc78ca6cbd0a599b9619f613cdcd1c5
 
   img {
     height: 100%;
     width: 100%;
     position: relative;
     top: 0;
-<<<<<<< HEAD
-=======
 
->>>>>>> f46a86a9cfc78ca6cbd0a599b9619f613cdcd1c5
+
     @media screen and ( max-width: $medium ) {
       height: 100%;
       float: right;
@@ -61,11 +54,7 @@
     width: 100%;
     text-align: left;
     display: block;
-<<<<<<< HEAD
-    padding: 4px 12px ;
-=======
     padding: 4px 12px;
->>>>>>> f46a86a9cfc78ca6cbd0a599b9619f613cdcd1c5
     background: rgba(black, 0.2);
     border: rgba(white, 0.6) solid 6px;
     border-radius: 6px;
@@ -113,10 +102,7 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-<<<<<<< HEAD
-=======
     padding-right: 128px;
->>>>>>> f46a86a9cfc78ca6cbd0a599b9619f613cdcd1c5
   }
 
 }
@@ -232,8 +218,7 @@
     background-color: $aqua;
   }
 
-<<<<<<< HEAD
-=======
+
   &.orange {
       background-color: $orange;
     &:before {
@@ -249,7 +234,6 @@
     }
   }
 
->>>>>>> f46a86a9cfc78ca6cbd0a599b9619f613cdcd1c5
   &.pink {
     &:before {
       transform: rotate(-1.1deg) scale(1.2);
@@ -318,15 +302,7 @@
     -webkit-transform: rotate(1.3deg) scale(1.2);
   }
 
-<<<<<<< HEAD
-  &:last-of-type {
-    &:before {
-      content: none;
-    }
 
-    &:after {
-       content: none;
-=======
   &:nth-last-of-type(2) {
     &:before {
     }
@@ -343,7 +319,6 @@
 
     &:after {
      content: none;
->>>>>>> f46a86a9cfc78ca6cbd0a599b9619f613cdcd1c5
     }
   }
 
@@ -397,21 +372,6 @@
 }
 
 .vert-section-table {
-<<<<<<< HEAD
-  border: 2px solid darken($pink, 20%);
-
-  tr {
-    // border: #333 solid 2px;
-    background: lighten($pink, 20%);
-    color: #333;
-
-    &:nth-child(odd) {
-      background: lighten($pink, 30%);
-    }
-
-    &:first-child {
-      background: darken($pink, 20%);
-=======
   border: 2px solid darken($aqua, 20%);
 
   tr {
@@ -425,7 +385,6 @@
 
     &:first-child {
       background: darken($aqua, 20%);
->>>>>>> f46a86a9cfc78ca6cbd0a599b9619f613cdcd1c5
       color: #fff;
       font-weight: bold;
     }
@@ -433,12 +392,8 @@
   }
 
   td {
-<<<<<<< HEAD
-    padding-left: 8px;
-=======
     // padding-left: 8px;
     padding: 6px 8px;
->>>>>>> f46a86a9cfc78ca6cbd0a599b9619f613cdcd1c5
   }
 }
 
@@ -547,10 +502,7 @@ h4.vert-section-breadcrumb {
 .vert-section-large-image {
   width: 400px;
   height: 400px;
-<<<<<<< HEAD
-=======
   max-width: 50%;
->>>>>>> f46a86a9cfc78ca6cbd0a599b9619f613cdcd1c5
   float: right;
   @media screen and ( max-width: $medium ) {
     height: 200px;
@@ -566,20 +518,6 @@ h4.vert-section-breadcrumb {
 // Case Study
 //===============================================================================
 
-<<<<<<< HEAD
-.vert-section-case-study {
-  width: 50%;
-  display: inline-block;
-  background: rgba(black, 0.2);
-  padding: 8px 18px;
-  display: inline;
-  border: 4px solid rgba(black, 0.2);
-  color: white;
-  font-weight: bold;
-  &:hover {
-    background: white;
-  }
-=======
 .vert-section-case-study,
 .vert-section-blog-link {
   margin: 20px auto;
@@ -647,5 +585,4 @@ h4.vert-section-breadcrumb {
     }
   }
 
->>>>>>> f46a86a9cfc78ca6cbd0a599b9619f613cdcd1c5
 }
