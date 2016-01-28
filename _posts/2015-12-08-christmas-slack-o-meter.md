@@ -32,13 +32,13 @@ The format should be fairly recognisable to anyone that has been to a hackathon,
 
 ### The Project
 
-One of the topics for this Hackathon was Christmas, so we chose a simple Hack that would reflect the ubiquitous festive sentiment around Pebble Towers. 
+One of the topics for this Hackathon was Christmas, so we chose a simple Hack that would reflect the ubiquitous festive sentiment around Pebble Towers.
 
 ![Ubiquitous Festive Excitement](https://pbs.twimg.com/media/CVF1N6pWwAAWdue.jpg:large)
 
 ### The First Idea
 
-Obviously we were going to make something huge, loud and fantastically ambitious. We wanted a massive sign with flashing lights, sound, and a HTML front-end displayed on the big monitor in the corner of our office. This would sound a klaxon and go crazy every time a certain keyword was mentioned on one of the public channels on Slack. Since the Hackathon's topic was Christmas, our keywords would be christmassy things like 'turkey', 'sleigh bells', or 'over-commercialised'. We We lost no time in making a big mess and covering our desks in wires, arduinos, raspberry pis and coffee. 
+Obviously we were going to make something huge, loud and fantastically ambitious. We wanted a massive sign with flashing lights, sound, and a HTML front-end displayed on the big monitor in the corner of our office. This would sound a klaxon and go crazy every time a certain keyword was mentioned on one of the public channels on Slack. Since the Hackathon's topic was Christmas, our keywords would be christmassy things like 'turkey', 'sleigh bells', or 'over-commercialised'. We We lost no time in making a big mess and covering our desks in wires, arduinos, raspberry pis and coffee.
 
 ![George Hiding His Face](/img/posts/2015-12-08-christmas-slack-o-meter/george-hiding.jpg)
 
@@ -47,6 +47,7 @@ The team consisted of Aisling, fashioning the front-end, Clorama, hacking on the
 ![API diagram](/img/posts/2015-12-08-christmas-slack-o-meter/cristmas-meter-diagram.png)
 
 For the API I used [Hapi](hapijs.com), a rich API framework that we've used for Hacks before. I wanted to use this Hackathon to familiarise myself with its structure, and I found it great - a quickly assembled springboard to launch our application from. For persistence we used [MongoDB](https://www.mongodb.org/) and to simplify DB connections and schema we used [Mongoose](http://mongoosejs.com/), both of which play nicely with Hapi.
+
 
 But the hardware was still giving us a headache. After much deliberating and some eating of humble Pi we decided to scale back our ambitions and instead focus on the Live Demo, since 5pm had somehow leapt on us out of nowhere, like an Australian dropbear.
 
@@ -58,7 +59,7 @@ We decided to make something interactive, a simple challenge that we could issue
 
 Now with a suitably re-scoped idea, we set to work on the front-end. We made a simple script that would poll our API and translate our Christmas metric into a `transform: rotate(x)` css declaration for the needle.
 
-With a bit of frantic typing right up until the last moment, we managed to do it. And here's a screencapture of the amazing, exhilirating moment when we declared the winner. 
+With a bit of frantic typing right up until the last moment, we managed to do it. And here's a screencapture of the amazing, exhilirating moment when we declared the winner.
 
 ![Gif of Hack ending](/img/posts/2015-12-08-christmas-slack-o-meter/christmas-hack.gif)
 
