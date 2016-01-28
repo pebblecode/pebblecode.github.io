@@ -24,6 +24,15 @@
               <h2 class="vert-sec-bubble-title">{{ sectionbubble.title }}</h2>
             </a>
           {% endfor %}
+
+          <!-- Insurance Bubbles -->
+          {% for insurancebubble in page.insurance-sections %}
+            <a href="#{{sectionbubble.sectionid}}" class="vert-sec-bubble">
+              <img src= '../img/verticals/{{ insurancebubble.bubbleimage }}' />
+              <h2 class="vert-sec-bubble-title">{{ insurancebubble.title }}</h2>
+            </a>
+          {% endfor %}
+
         </div>
        </div>
     </section>
