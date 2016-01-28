@@ -16,7 +16,7 @@ In London, TfL has led the smart ticketing charge with Oyster, Contactless Cards
 
 From plastic Smart Cards and NFC payments to digital ticketing using smartphones and wearable tech - we’re using smart devices to replace the paper ticket that we’ve relied on for the last 100 years.
 
-Digital Ticketing provides an opportunity to not only replace paper, but enhance the experience through data. A ticket stored on a smart device can provide a more personalised experience: contextual information, such as account balance and renewal notifications. It can learn your travel habits integrate with your digital assistant and provide pro-active service notifications.
+Digital Ticketing provides an opportunity to not only replace paper, but enhance the experience through data. A ticket stored on a smart device can provide a more personalised experience: contextual information, such as account balance and renewal notifications. It can learn your travel habits, integrate with your digital assistant and provide pro-active service notifications.
 
 ##Automated refunds
 Location-aware smart devices, coupled with iBeacons will allow you to automatically track the progress of your journey (we’ve prototyped exactly this concept). When your train is late, this data can be used to automatically credit you when a service is delayed. A recent [super complaint](http://www.bbc.co.uk/news/business-35134682) is likely to force this type of innovation sooner rather than later.
