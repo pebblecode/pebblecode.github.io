@@ -5,8 +5,8 @@ author: Dave Hillier
 categories: [code reviews, pair programming, coding]
 ---
 
-Code reviews are a widely accepted practice in both enterprise and open source. In the words of Coding Horror: Just Do
-it. As we use Github for VCS, this is built into our tooling with Pull Requests. However, sometimes making the most of
+Code reviews are a widely accepted practice in both enterprise and open source. In the words of [Coding Horror: Just Do
+it](http://blog.codinghorror.com/code-reviews-just-do-it/). As we use Github for VCS, this is built into our tooling with Pull Requests. However, sometimes making the most of
 a code review can be hard and feel like you’re just going through the motions.
 I’ve had developers struggle and lose sight of why we’re doing them so I attempted to write a list of some points to
 think about.
