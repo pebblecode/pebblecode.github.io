@@ -8,6 +8,7 @@ categories: [design]
 We are always pushing links each others' ways in the design team at pebble {code}. A healthy level of discussion and debate is stimulating, fun, and keeps us interested. We decided that it was about time we share some of these discussions with the wider world. 
 
 ![dragon](/img/blog/dragon-test.png)
+Dragon, by Niall
 
 ##Debate of the Month
 
