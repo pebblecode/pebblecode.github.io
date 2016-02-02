@@ -7,7 +7,17 @@ categories: react
 In this post I'll go through how to get enzyme setup to test your presentational components.
 ---
 
-# Unit testing React Components and Redux reducers
+---
+layout: post
+title:  Unit Testing React Components and Redux Containers
+author: Mike James
+categories: react
+---
+In this post I'll go through how to get enzyme setup to test your presentational components.
+---
+
+### Unit testing React Components and Redux reducers
+
 NB: this post assumes knowledge of react, redux and webpack.
 
 I recently started working on a new project, the task; to build your standard single page app with a rich user experience. We decided to go for React and Redux as we're also using it on a few other client and internal projects, plus its my goto tool for client side development. However I was interested in this move to more functional languages for clientside development such as [Elm](http://elm-lang.org) but not quite ready to use it in anger yet; stay tuned for for another blogpost ;).
@@ -16,7 +26,7 @@ Whilst in the initial setup phase of the project I decided to include [Enzyme](h
 
 In this post we'll go through the setup of a React, Redux Webpack application with a focus on getting your reducers tested via mocha and your react components being tested in PhantomJS by using karma. With a focus on being able to keep development fast, structure clean and easy to navigate. Whilst embracing the redux way in structuring your application.
 
-## Folder Structure of our application.
+### Folder Structure of our application.
 .
 ├── dist
 ├── README.md
@@ -48,7 +58,7 @@ containers, react components that have very little if any styling. With the glue
 
 actions contains our functions that are triggered by user actions or workers in our application. 
 
-##Testing our reducers
+### Testing our reducers
 This is trivial, redux has no coupling to the browser here, so we can test our application like a state machine. 
 
 Example Test:
@@ -98,7 +108,7 @@ export default createReducer(initialState, {
 ```
 If you're interested in what createReducer does [see](https://github.com/joshgeller/react-redux-jwt-auth-example/blob/master/src/utils/index.js#L12) it gives a nicer switch structure.
 
-## Testing react components with enzyme
+### Testing react components with enzyme
 Enzyme gives us a simple jQuery like selector interface which is really powerful for asserting whats been rendered.
 
 Example Test:
@@ -163,10 +173,11 @@ NotificationTab.defaultProps = {
 export default NotificationTab;
 ```
 
-## Karma Setup
+### Karma Setup
 This bit was rather fiddly as sinon the mocking library was breaking karma Issue 47 on (github)[https://github.com/airbnb/enzyme/issues/47] helped with this.
 
 karma.config.js
+
 ```
 const webpack = require('webpack');
 // See issues for details on parts of this config.
@@ -267,6 +278,12 @@ We can now test our react components in silo and with the power of PhantomJS, we
 And thats it! in the coming week I'll release a bare bones boilerplate project, complete with postcss, hot module replacement with the testing config shown here.
 
 voice you're opinion at me [@export_mike](https://twitter.com/@export_mike) on twitter or [@pebblecode](https://twitter.com/@pebblecode). Thanks for reading, oh! I almost forgot we're [hiring](http://pebblecode.com/careers/#job-1220)!
+
+
+
+
+
+
 
 
 
