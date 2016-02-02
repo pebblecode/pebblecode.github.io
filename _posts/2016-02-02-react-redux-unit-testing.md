@@ -6,6 +6,7 @@ categories: react
 ---
 In this post I'll go through how to get enzyme setup to test your presentational components.
 ---
+
 # Unit testing React Components and Redux reducers
 NB: this post assumes knowledge of react, redux and webpack.
 
