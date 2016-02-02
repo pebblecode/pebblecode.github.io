@@ -1,6 +1,6 @@
 {% include head.html %}
 
-  <body class="{{ page.layout }}">
+  <body class="{{ page.layout }} {{ page.extraclasses }}">
 
     {% include header.html %}
     {% capture nextColor %}next-color-{{ page.sections[0].color }}{% endcapture %}
@@ -26,6 +26,14 @@
           {% endfor %}
 
 
+
+
+          {% if page.insurance-sections %}
+            <div class="vert-insur-bubble-container">
+              {% include vert-insurance-svg.html %}
+            </div>
+          {% endif %}
+
           <div class="vert-insur-list-container">
             <!-- Insurance Bubbles -->
             {% for insurancebubble in page.insurance-sections %}
@@ -33,13 +41,29 @@
             {% endfor %}
           </div>
 
-          {% if page.insurance-sections %}
-          <div class="vert-insur-bubble-container">
-            {% include vert-insurance-svg.html %}
-          </div>
-          {% endif %}
-
         </div>
+          {% for insurpara in page.insurance-paragraphs %}
+
+            {% if insurpara.insurance-thoughts %}
+                <div class="vert-insur-thoughts-container grid">
+                  {% for insurthought in insurpara.insurance-thoughts %}
+                    <div class="vert-insur-thoughts-inner">
+                      <div class="vert-insur-thoughts-image-container">
+                        <img src= '../img/verticals/{{ insurthought.image }}' />
+                      </div>
+                      <h4 class="vert-sec-thoughts-title">
+                        {{ insurthought.text }}
+                      </h4>
+                    </div>
+                  {% endfor %}
+                </div>
+            {% else %}
+              <p class="hero-summary col-1-1">
+                {{ insurpara }}
+              </p>
+            {% endif %}
+
+          {% endfor %}
        </div>
     </section>
 
@@ -50,11 +74,7 @@
       {% include vert-section.html %}
     {% endfor %}
 
-    {% for insurloop in page.insursub %}
-      {% for insurpara in insursub.paragraphs %}
-        {{ insurpara }}
-      {% endfor %}
-    {% endfor %}
+
 
 
 

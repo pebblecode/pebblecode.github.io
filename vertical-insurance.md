@@ -3,9 +3,10 @@ layout: vertical
 title: Insurance
 permalink: /insurance/
 colour: blue
+extraclasses: insurance
 
 ## Hero Content
-hero-title: DIGITAL TRANSFORMATION IN INSURANCE IS COMING...
+hero-title: Insuring the future...
 hero-subtitle: "At pebble {code} we have been part of the digital transformation revolution for years and we have learnt a lot about what works, and what does not. We have also seen industries that have embraced the change early, and those that still have a long way to go.<br /><br />
 It is common knowledge that there are a lot of big businesses in the insurance industry that are only now starting to look at the true competitive advantage you can have by embracing and pushing the boundaries of digital.
 <br /><br />
@@ -39,11 +40,14 @@ insurance-sections:
    bubbleclass: emergingtech
 
 ## Vertical Sections
-insursub:
-   paragraphs:
-    - title: aaa
-    - list-title: "We discovered:"
-
+insurance-paragraphs:
+ - "pebble {code} are already thinking about solutions in the following areas:"
+ - insurance-thoughts:
+   - text: "CMC calls (unsolicited) (fraud)<span>(Claims management companies)</span>"
+     image: vert-insur-cmccalls.svg
+   - text: "App-based / digital claims journey <span>How can apps streamline the claims process...</span>"
+     image: vert-insur-claimjourney.svg
+ - "We are holding an innovation seminar in March 2016 - if interested, <a>get in touch.</a>"
 
 ---
 

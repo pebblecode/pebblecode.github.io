@@ -3,6 +3,11 @@
 //===============================================================================
 
 
+.hero-title {
+  .insurance & {
+  }
+}
+
 
 // Bubbles
 //===============================================================================
@@ -21,6 +26,10 @@
 
   @media screen and ( max-width: $medium ) {
     padding: 12px;
+  }
+
+  .insurance & {
+    padding: 0 30px;
   }
 }
 
@@ -114,6 +123,19 @@
   text-align: left;
   width: 50%;
   float: left;
+  margin-top: 50px;
+
+  @media screen and ( max-width: $medium ) {
+   width: 100%;
+   float: none;
+   h2 {
+    position: relative;
+    font-size: 18px;
+    width: 100%;
+    padding-right: 0;
+    margin-bottom: 8px;
+   }
+  }
 }
 
 .vert-sec-bubble-title {
@@ -145,6 +167,44 @@
     cursor: pointer;
   &:hover{
     transform: scale(1.1);
+  }
+}
+
+.vert-insur-thoughts-container {
+  padding: 30px;
+  @media screen and ( max-width: $medium ) {
+   h2 {
+    position: relative;
+    font-size: 18px;
+    width: 100%;
+    padding-right: 0;
+    margin-bottom: 8px;
+   }
+  }
+}
+
+.vert-insur-thoughts-inner {
+  width: 50%;
+  float: left;
+  text-align: center;
+  padding: 10px;
+}
+
+.vert-insur-thoughts-image-container {
+  height: 250px;
+  width: 250px;
+  margin: auto;
+}
+
+.vert-sec-thoughts-title {
+  color: white;
+  text-shadow: 2px 2px 0 rgba(black, 0.2);
+  border-top: 4px solid rgba(black, 0.2);
+  span {
+    display: block;
+    font-weight: normal;
+    color: darken($blue, 20%);
+    text-shadow: none;
   }
 }
 
@@ -362,7 +422,6 @@
      content: none;
     }
   }
-
   &.next-color-green:after {
       background-color: $green;
   }
@@ -451,7 +510,9 @@
   &:after {
     background: $blue;
   }
-
+  &.next-color-:after {
+      background-color: $pink;
+  }
   &.next-color-aqua:after {
     background: $aqua;
   }
