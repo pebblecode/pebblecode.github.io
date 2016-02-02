@@ -27,29 +27,8 @@ Whilst in the initial setup phase of the project I decided to include [Enzyme](h
 In this post we'll go through the setup of a React, Redux Webpack application with a focus on getting your reducers tested via mocha and your react components being tested in PhantomJS by using karma. With a focus on being able to keep development fast, structure clean and easy to navigate. Whilst embracing the redux way in structuring your application.
 
 ### Folder Structure of our application.
-  
-  ```
-  .
-  ├── dist
-  ├── README.md
-  ├── karma.config.js
-  ├── package.json
-  ├── server.dev.js
-  ├── server.js
-  ├── server.prod.js
-  ├── src
-  │   ├── actions
-  │   ├── colors.js
-  │   ├── components
-  │   ├── containers
-  │   ├── index.html
-  │   ├── index.js
-  │   ├── reducers
-  │   ├── store
-  │   └── utils
-  ├── tests.webpack.js
-  └── webpack.config.js
-```
+![http://i.imgur.com/43wv76d.png](http://i.imgur.com/43wv76d.png)
+
 karma.config we'll need to load up our components and containers into a browser for testing as we're using postcss and other loaders that don't work natively in node.js. So to get our tests to run in browser we will also include a copy of our webpack config to get karma to load it up. If you load up your tests which rely on webpack loaders down the line you'll get Unexpected token errors.
 
 server.js selects an appropriate .dev.js, .prod.js file on startup. server.dev.js uses webpack dev server. prod.js uses just express to host the static output in the dist folder.
