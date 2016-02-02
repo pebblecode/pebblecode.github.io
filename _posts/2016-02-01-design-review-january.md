@@ -10,7 +10,7 @@ We are always pushing links each others' ways in the design team at pebble {code
 ![dragon](/img/blog/dragon-test.png)
 Dragon, by Niall
 
-##Debate of the Month
+## Debate of the Month
 
 **Designs should return to being more playful**
 
@@ -35,28 +35,28 @@ Further arguments for and against this motion:
 
 For: [Is the internet killing creativity?](https://www.smashingmagazine.com/2016/01/is-the-internet-killing-creativity/)
 
-Against: [Design != Art](http://austinknight.com/writing/design-is-not-art)
+Against: [Design != Art](http://austinknight.com/writing/design-is-not-art/)
 
 
 
-##Tools
+## Tools
 
 Getting images to look right on all sorts of devices can be a pain. [Responsive image breakpoints generator](http://www.responsivebreakpoints.com/) is a service that aims to be the aspirin, if not the morphine.
 
 We sometimes find it hard to find the right unicode character. Here's something that can help: [Draw a shape, get the closest unicode character](http://shapecatcher.com/)
 
-###Colour names
+### Colour names
 
 It can be hard dealing with named colour variables in SASS. There are two general approaches - 1) name all the colours yourself (e.g. beige, taupe, cerulean). 2) Give them semantic names (e.g. $button-cancel). Here is a third and possibly better method by [Sorting out your SASS colour names](https://davidwalsh.name/sass-color-variables-dont-suck), using [Name that colour](http://chir.ag/projects/name-that-color/#D0006F).
 
 
-##General CSS
+## General CSS
 
-###Pedantic CSS
+### Pedantic CSS
 
 The book you need to read to become [The One at CSS](http://book.mixu.net/css/).
 
-###Blend modes became a hot topic.
+### Blend modes became a hot topic.
 
 Sadly blend modes are not available in IE, if you need to support that. But what if you have an angry client asking for pop and pizzaz? Maybe blend modes are your answer. Sometimes they [don't work so well](https://css-tricks.com/snippets/sass/tint-shade-functions/), but there are ways to fix them. A good introduction to how they work in theory and practice is [here](http://webdesign.tutsplus.com/tutorials/blending-modes-in-css-color-theory-and-practical-application--cms-25201?ref=webdesignernews.com). You can do some pretty advanced effects with blend-mode, including [Instagram effects](http://www.cssfilters.co/).
 
@@ -65,7 +65,7 @@ Blend modes can also be used with two images (rather than a single image and a s
 ![blend modes](https://camo.githubusercontent.com/4326984b4beb9894291a0f5c8604e867ab31b3a8/68747470733a2f2f646c2e64726f70626f7875736572636f6e74656e742e636f6d2f732f7a6b7037686c65676b327a61356c742f63616765312e706e673f646c3d30)
 
 
-##Templates
+## Templates
 
 Our very own Peter Tait has created a [simple SASS grid](https://github.com/petertait/GRID).
 
@@ -75,7 +75,7 @@ Our very own Peter Tait has created a [simple SASS grid](https://github.com/pete
 <br>- minimal amount of sass code
 <br><br>Peter
 
-##Graphic Design
+## Graphic Design
 Highlights include a flash new logo for a favourite chicken restaurant, [Nandos](http://www.designweek.co.uk/nandos-global-rebrand-looks-to-re-connect-with-south-african-roots/), and a fancy new identity for an [Argentinian gym](http://www.itsnicethat.com/articles/julian-villagra-le-club-gym-190116?utm_source=twitter&utm_medium=social&utm_campaign=intsocial).
 
 This post about [lovely cartographic lines](https://mapzen.com/blog/lines) includes an interesting discourse on the possible meaning of lines, and plenty of inspiration that can be taken outside of cartography.
@@ -100,14 +100,14 @@ Finally, we enjoyed the presentation of the new [UAL Prospectus identity](http:/
 ![prospectus](http://res.cloudinary.com/uwp/image/upload/c_fill,w_1400/qvns76oqfe3d7tkgjilu)
 
 
-##CMS
+## CMS
 
 It is a designer fact of life that at some point, you will be dealing with a CMS. We liked this post concerning [how to make the difficult choice of which CMS to go for](http://coryetzkorn.com/blog/choosing-the-best-cms/).
 
 Hugo is apparently the [new hotness in CMS-land](https://gohugo.io/overview/introduction/). By pre-processing the html, rather than doing it on the fly, it is supposed to be faster than your normal one (and believe me, we've come across some super-slow CMSs in our time). We will try it out and report back.
 
 
-##Typography
+## Typography
 
 We are always delighted to see new things in the field of typography. Here are some of our favourites for the month:
 
@@ -118,18 +118,18 @@ We are always delighted to see new things in the field of typography. Here are s
 * [The 10 most popular fonts of the year](https://www.typewolf.com/blog/most-popular-fonts-of-the-year)
 * [A flag building typeface](http://www.flagsmithfont.com/)
 
-##Speak your brainz
+## Speak your brainz
 
 [Nobody wants to use your product](https://www.smashingmagazine.com/2016/01/nobody-wants-use-your-product/)
 
 
-##Careers
+## Careers
 The need for designers to have a degree is a hot topic at pebble {code} at the moment. Increasingly, we are not seeing any difference in the skill level of those with and without degrees. The additional three years of work experience may mean that candidates without a degree are pound-for-pound more experienced and independent at the same age as those who do. We were interested to read that [Penguin have dropped the degree requirement for their candidates](http://www.theguardian.com/books/2016/jan/18/penguin-ditches-the-need-for-job-seekers-to-have-university-degrees).
 
 
-##Design / Science
+## Design / Science
 
-###Not the way to do it.
+### Not the way to do it.
 
 This [UI Evidence website](http://www.goodui.org/evidence/) was bandied around earlier in the month.
 
@@ -137,19 +137,19 @@ This [UI Evidence website](http://www.goodui.org/evidence/) was bandied around e
 > Summarising evidence in user research should be a good thing, but this is not the way to do it. The designer does not appear to understand p values. Making p < .25 the threshold for significance is ludicrous. The very fact that these tests are lumped together means that you should have a more stringent p threshold (and the standard is .05). This can be achieved with the [Bonferroni correction](https://en.wikipedia.org/wiki/Bonferroni_correction). If this was applied to the data, I doubt whether there would be many significant tests at all. This site on the other hand is supporting [p hacking](https://en.wikipedia.org/wiki/Data_dredging).
 <br><br>John
 
-###The way to do it
+### The way to do it
 Nielsen-Norman group have discovered that flat design results in [loss of efficiency for users](https://www.nngroup.com/articles/flat-design-long-exposure/).
 
 
 
-##General
+## General
 
-###UX Timeline
+### UX Timeline
 
 Go [back in time](http://uxtimeline.com/spotify.html ) to see how the UX of famous brands such as Vimeo and Spotify have changed over time.
 
 
-##And finally:
+## And finally:
 
 <blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">I call this one “The impossibility of using more instructions to fix user design flaws.” <a href="https://t.co/P5FTtLoN6j">pic.twitter.com/P5FTtLoN6j</a></p>&mdash; mudge (@mudge) <a href="https://twitter.com/mudge/status/685418851262173184">January 8, 2016</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
