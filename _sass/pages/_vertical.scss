@@ -107,6 +107,47 @@
 
 }
 
+// Insurance Bubbles
+//===============================================================================
+
+.vert-insur-list-container {
+  text-align: left;
+  width: 50%;
+  float: left;
+}
+
+.vert-sec-bubble-title {
+  &:before {
+    content: "•";
+    margin-right: 12px;
+    color: $orange;
+  }
+}
+
+.vert-insur-bubble-container {
+  float: right;
+  width: 50%;
+  position: relative;
+}
+
+.vert-insur-bubble {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+[id*='vert-insur-bbl-'] {
+    transform: scale(1);
+    transform-origin: 50% 50%;
+    transition: 0.2s;
+    cursor: pointer;
+  &:hover{
+    transform: scale(1.1);
+  }
+}
+
 
 // Paragraphs and Points
 //===============================================================================
@@ -537,7 +578,6 @@ h4.vert-section-breadcrumb {
       color: $pink;
     }
   }
-
 }
 
 // Case Study

@@ -25,13 +25,19 @@
             </a>
           {% endfor %}
 
-          <!-- Insurance Bubbles -->
-          {% for insurancebubble in page.insurance-sections %}
-            <a href="#{{sectionbubble.sectionid}}" class="vert-sec-bubble">
-              <img src= '../img/verticals/{{ insurancebubble.bubbleimage }}' />
-              <h2 class="vert-sec-bubble-title">{{ insurancebubble.title }}</h2>
-            </a>
-          {% endfor %}
+
+          <div class="vert-insur-list-container">
+            <!-- Insurance Bubbles -->
+            {% for insurancebubble in page.insurance-sections %}
+                <h2 class="vert-sec-bubble-title">{{ insurancebubble.title }}</h2>
+            {% endfor %}
+          </div>
+
+          {% if page.insurance-sections %}
+          <div class="vert-insur-bubble-container">
+            {% include vert-insurance-svg.html %}
+          </div>
+          {% endif %}
 
         </div>
        </div>
@@ -42,6 +48,12 @@
       {% assign vsection = vsecloop %}
       {% assign nextSection = page.sections[nextIndex] %}
       {% include vert-section.html %}
+    {% endfor %}
+
+    {% for insurloop in page.insursub %}
+      {% for insurpara in insursub.paragraphs %}
+        {{ insurpara }}
+      {% endfor %}
     {% endfor %}
 
 

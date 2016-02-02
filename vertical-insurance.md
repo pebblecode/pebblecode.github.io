@@ -18,18 +18,31 @@ hero-image: vert-health-header.svg
 insurance-sections:
  - title: Internet of Things
    bubbleimage: vert-insur-iot-b.svg
+   bubbleclass: iot
  - title: Cyber-security
    bubbleimage: vert-insur-onlinesec-b.svg
+   bubbleclass: onlinesec
  - title: Mobile
    bubbleimage: vert-insur-mobile-b.svg
+   bubbleclass: mobile
  - title: Customer First Experience (UX)
    bubbleimage: vert-insur-customerfirst-b.svg
+   bubbleclass: customerfirst
  - title: Speed to market
    bubbleimage: vert-insur-speedtomarket-b.svg
+   bubbleclass: speedtomarket
  - title: Hacking, rapid prototyping & Agile
    bubbleimage: vert-insur-hacking-b.svg
+   bubbleclass: hacking
  - title: Emerging technologies
-   bubbleimage: vert-insur-iot-b.svg
+   bubbleimage: vert-insur-emergingtech-b.svg
+   bubbleclass: emergingtech
+
+## Vertical Sections
+insursub:
+   paragraphs:
+    - title: aaa
+    - list-title: "We discovered:"
 
 
 ---
