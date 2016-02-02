@@ -5,7 +5,7 @@ author: John Mildinhall
 categories: [design]
 ---
 
-We are always pushing links each others' ways in the design team at pebble {code}. A healthy level of discussion and debate is stimulating, fun, and keeps us interested. We decided that it was about time we share some of these discussions with the wider world. 
+We are always pushing links each others' ways in the design team at pebble {code}. A healthy level of discussion and debate is stimulating, fun, and keeps us interested. We decided that it was about time we share some of these discussions with the wider world.
 
 ![dragon](/img/blog/dragon-test.png)
 Dragon, by Niall
@@ -19,15 +19,15 @@ How much whimsical decoration should we put around our designs? How beneficial i
 **For**
 
 > I think sometimes people undervalue the role of aesthetics and beauty in design.
-Particularly in the Digital space, where so much is focussed on tools, reduction, and measured behaviours. Empathy and excitement are important tools to hold a viewer's attention, and the dressing you put around a message doesn't have to diminish that message. In most cases it will actually improve it. I'm in favour of a more balanced approach to UX, where form and function are considered more equal. 
+Particularly in the Digital space, where so much is focussed on tools, reduction, and measured behaviours. Empathy and excitement are important tools to hold a viewer's attention, and the dressing you put around a message doesn't have to diminish that message. In most cases it will actually improve it. I'm in favour of a more balanced approach to UX, where form and function are considered more equal.
 <br><br>*TL;DR people like playful, shiny things.*
 <br><br>Niall
 
 **Against**
 
-> We often talk about design in terms of style vs substance or beauty vs utility. However I believe this to be a false dichotomy. We need to address the idea that style has to be sacrificed for us to create substantial work. Or that it’s impossible to create something truly creative that has a focus on usability. 
-<br><br>When we talk about web design in this context people often cite the perceived homogeneity of modern web design verses the ‘creative’ flash sites of yesteryear as a negative consequence of more designers optimising for utility. 
-<br><br>Firstly we’ve got to understand the motivations for these designs. There’s certainly a divide between designs that are optimised for sales, information, or entertainment. A site optimised for sales may not be very interesting to the user but could still provide an excellent user experience. Similarly a site created to entertain could be confusing yet interesting and still fulfil its goals. 
+> We often talk about design in terms of style vs substance or beauty vs utility. However I believe this to be a false dichotomy. We need to address the idea that style has to be sacrificed for us to create substantial work. Or that it’s impossible to create something truly creative that has a focus on usability.
+<br><br>When we talk about web design in this context people often cite the perceived homogeneity of modern web design verses the ‘creative’ flash sites of yesteryear as a negative consequence of more designers optimising for utility.
+<br><br>Firstly we’ve got to understand the motivations for these designs. There’s certainly a divide between designs that are optimised for sales, information, or entertainment. A site optimised for sales may not be very interesting to the user but could still provide an excellent user experience. Similarly a site created to entertain could be confusing yet interesting and still fulfil its goals.
 <br><br>*TL;DR You don't have to sacrifice utility to make beautiful things.*
 <br><br>Mark
 
@@ -35,7 +35,7 @@ Further arguments for and against this motion:
 
 For: [Is the internet killing creativity?](https://www.smashingmagazine.com/2016/01/is-the-internet-killing-creativity/)
 
-Against: [Design != Art](http://austinknight.com/writing/design-is-not-art/?utm_source=designernews)
+Against: [Design != Art](http://austinknight.com/writing/design-is-not-art)
 
 
 
@@ -56,7 +56,7 @@ It can be hard dealing with named colour variables in SASS. There are two genera
 
 The book you need to read to become [The One at CSS](http://book.mixu.net/css/).
 
-###Blend modes became a hot topic. 
+###Blend modes became a hot topic.
 
 Sadly blend modes are not available in IE, if you need to support that. But what if you have an angry client asking for pop and pizzaz? Maybe blend modes are your answer. Sometimes they [don't work so well](https://css-tricks.com/snippets/sass/tint-shade-functions/), but there are ways to fix them. A good introduction to how they work in theory and practice is [here](http://webdesign.tutsplus.com/tutorials/blending-modes-in-css-color-theory-and-practical-application--cms-25201?ref=webdesignernews.com). You can do some pretty advanced effects with blend-mode, including [Instagram effects](http://www.cssfilters.co/).
 
@@ -76,11 +76,11 @@ Our very own Peter Tait has created a [simple SASS grid](https://github.com/pete
 <br><br>Peter
 
 ##Graphic Design
-Highlights include a flash new logo for a favourite chicken restaurant, [Nandos](http://www.designweek.co.uk/nandos-global-rebrand-looks-to-re-connect-with-south-african-roots/), and a fancy new identity for an [Argentinian gym](http://www.itsnicethat.com/articles/julian-villagra-le-club-gym-190116?utm_source=twitter&utm_medium=social&utm_campaign=intsocial). 
+Highlights include a flash new logo for a favourite chicken restaurant, [Nandos](http://www.designweek.co.uk/nandos-global-rebrand-looks-to-re-connect-with-south-african-roots/), and a fancy new identity for an [Argentinian gym](http://www.itsnicethat.com/articles/julian-villagra-le-club-gym-190116?utm_source=twitter&utm_medium=social&utm_campaign=intsocial).
 
 This post about [lovely cartographic lines](https://mapzen.com/blog/lines) includes an interesting discourse on the possible meaning of lines, and plenty of inspiration that can be taken outside of cartography.
 
-We always enjoy people doing radical things to stay creative, so this 
+We always enjoy people doing radical things to stay creative, so this
 [One month gif-a-thon](https://vimeo.com/channels/staffpicks/151850021) was right up our street. This gif:![Animated Op Art](https://49.media.tumblr.com/fbf9bf87b095352e5d418417f8cb7d5f/tumblr_nyhi39spuZ1tl8u0ko1_500.gif) made our eyes go funny... We asked science, and science said:
 
 > Each blink of the eyelids is associated with a concurrent suppression of vision that lasts as long as 200 msec. <br><br> [Ridder & Tomlinson, 1993](http://www.ncbi.nlm.nih.gov/pubmed/8266635)
@@ -131,7 +131,7 @@ The need for designers to have a degree is a hot topic at pebble {code} at the m
 
 ###Not the way to do it.
 
-This [UI Evidence website](http://www.goodui.org/evidence/) was bandied around earlier in the month. 
+This [UI Evidence website](http://www.goodui.org/evidence/) was bandied around earlier in the month.
 
 
 > Summarising evidence in user research should be a good thing, but this is not the way to do it. The designer does not appear to understand p values. Making p < .25 the threshold for significance is ludicrous. The very fact that these tests are lumped together means that you should have a more stringent p threshold (and the standard is .05). This can be achieved with the [Bonferroni correction](https://en.wikipedia.org/wiki/Bonferroni_correction). If this was applied to the data, I doubt whether there would be many significant tests at all. This site on the other hand is supporting [p hacking](https://en.wikipedia.org/wiki/Data_dredging).
