@@ -27,6 +27,7 @@ Whilst in the initial setup phase of the project I decided to include [Enzyme](h
 In this post we'll go through the setup of a React, Redux Webpack application with a focus on getting your reducers tested via mocha and your react components being tested in PhantomJS by using karma. With a focus on being able to keep development fast, structure clean and easy to navigate. Whilst embracing the redux way in structuring your application.
 
 ### Folder Structure of our application.
+  
   ```
   .
   ├── dist
