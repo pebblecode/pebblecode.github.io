@@ -35,50 +35,48 @@ This is trivial, redux has no coupling to the browser here, so we can test our a
 
 Example Test:
 
-```
-import {expect} from 'chai';
-import reducer from '../counter';
 
-describe('Counter Reducer', () => {
-  it('Should handle INCREMENT', () => {
-    const initialState = {count: 0};
+    import {expect} from 'chai';
+    import reducer from '../counter';
 
-    const newState = reducer(initialState, {type: 'INCREMENT'});
-
-    expect(newState).to.eql({
-      count: 1
+    describe('Counter Reducer', () => {
+      it('Should handle INCREMENT', () => {
+        const initialState = {count: 0};
+    
+        const newState = reducer(initialState, {type: 'INCREMENT'});
+    
+        expect(newState).to.eql({
+          count: 1
+        });
+      });
+    
+      it('Should handle DECREMENT', () => {
+        const initialState = {count: 1};
+    
+        const newState = reducer(initialState, {type: 'DECREMENT'});
+    
+        expect(newState).to.eql({
+          count: 0
+        });
+      });
     });
-  });
 
-  it('Should handle DECREMENT', () => {
-    const initialState = {count: 1};
-
-    const newState = reducer(initialState, {type: 'DECREMENT'});
-
-    expect(newState).to.eql({
-      count: 0
-    });
-  });
-});
-
-```
 
 Reducer:
 
-```
-import {createReducer} from '../utils';
-
-const initialState = {count: 0};
-
-export default createReducer(initialState, {
-  ['INCREMENT']: (state) => ({
-    count: state.count + 1
-  }),
-  ['DECREMENT']: (state) => ({
-    count: state.count - 1
-  })
-});
-```
+    import {createReducer} from '../utils';
+    
+    const initialState = {count: 0};
+    
+    export default createReducer(initialState, {
+      ['INCREMENT']: (state) => ({
+        count: state.count + 1
+      }),
+      ['DECREMENT']: (state) => ({
+        count: state.count - 1
+      })
+    });
+    
 If you're interested in what createReducer does [see here](https://github.com/joshgeller/react-redux-jwt-auth-example/blob/master/src/utils/index.js#L12) - it gives a nicer switch structure. I quite like it.
 
 ### Testing react components with enzyme
@@ -86,163 +84,158 @@ Enzyme gives us a simple jQuery like selector interface which is really powerful
 
 Example Test:
 
-```
-import React from 'react';
-import {expect} from 'chai';
-import {shallow} from 'enzyme';
-import sinon from 'sinon';
-
-import NotificationTab from '../';
-describe('Notification Tab', () => {
-  it('Should render one notification', () => {
-    const wrapper = shallow(<NotificationTab count={2}/>);
-    expect(wrapper.text()).to.contain('2');
-  });
-
-  it('Should handle onClick', () => {
-
-    const handleButtonClick = sinon.spy();
-    const wrapper = shallow(
-      <NotificationTab count={3} onClick={handleButtonClick} />
-    );
-    wrapper.find('div').simulate('click', {preventDefault: () => {}});
-    expect(handleButtonClick.calledOnce).to.equal(true);
-  });
-
-});
-```
+    import React from 'react';
+    import {expect} from 'chai';
+    import {shallow} from 'enzyme';
+    import sinon from 'sinon';
+    
+    import NotificationTab from '../';
+    describe('Notification Tab', () => {
+      it('Should render one notification', () => {
+        const wrapper = shallow(<NotificationTab count={2}/>);
+        expect(wrapper.text()).to.contain('2');
+      });
+    
+      it('Should handle onClick', () => {
+    
+        const handleButtonClick = sinon.spy();
+        const wrapper = shallow(
+          <NotificationTab count={3} onClick={handleButtonClick} />
+        );
+        wrapper.find('div').simulate('click', {preventDefault: () => {}});
+        expect(handleButtonClick.calledOnce).to.equal(true);
+      });
+    
+    });
 
 See more info on [Enzymes API](http://airbnb.io/enzyme/docs/api/index.html)
 
 Our Component:
 ![http://i.imgur.com/eMwEWVG.png](http://i.imgur.com/eMwEWVG.png)
 
-```
-import React, {Component, PropTypes} from 'react';
-import Icon from '../Icon';
+    import React, {Component, PropTypes} from 'react';
+    import Icon from '../Icon';
+    
+    import styles from './styles.css';
+    class NotificationTab extends Component {
+      render() {
+        const {count} = this.props;
+    
+        return (
+          <div className={styles.notification} {...this.props} onClick={(e) => {e.preventDefault(); this.props.onClick();}}>
+            {count > 0 ? <span className={styles.count}>{count}</span> : null}
+            <Icon name={'notification'} width={25} height={30}/>
+          </div>);
+      }
+    }
+    
+    NotificationTab.propTypes = {
+      count: PropTypes.number.isRequired,
+      onClick: PropTypes.func
+    };
+    
+    NotificationTab.defaultProps = {
+      onClick: () => {}
+    };
+    
+    export default NotificationTab;
 
-import styles from './styles.css';
-class NotificationTab extends Component {
-  render() {
-    const {count} = this.props;
-
-    return (
-      <div className={styles.notification} {...this.props} onClick={(e) => {e.preventDefault(); this.props.onClick();}}>
-        {count > 0 ? <span className={styles.count}>{count}</span> : null}
-        <Icon name={'notification'} width={25} height={30}/>
-      </div>);
-  }
-}
-
-NotificationTab.propTypes = {
-  count: PropTypes.number.isRequired,
-  onClick: PropTypes.func
-};
-
-NotificationTab.defaultProps = {
-  onClick: () => {}
-};
-
-export default NotificationTab;
-```
 
 ### Karma Setup
 This bit was rather fiddly as sinon the mocking library was breaking karma. Issue 47 on [github](https://github.com/airbnb/enzyme/issues/47) helped with this.
 
 karma.config.js
 
-```
-const webpack = require('webpack');
-// See issues for details on parts of this config.
-// https://github.com/airbnb/enzyme/issues/47
-// had issues loading sinon as its a dep of enzyme
-var argv = require('minimist')(process.argv.slice(2));
-
-
-module.exports = (config) => {
-  config.set({
-    browsers: [ 'PhantomJS' ], // run in Chrome
-    singleRun: argv.watch ? false : true, // just run once by default
-    frameworks: [ 'mocha' ], // use the mocha test framework
-    files: [
-      'tests.webpack.js' // just load this file
-    ],
-    preprocessors: {
-      'tests.webpack.js': [ 'webpack', 'sourcemap' ] // preprocess with webpack and our sourcemap loader
-    },
-    reporters: [ 'dots' ], // report results in this format
-    webpack: { // kind of a copy of your webpack config
-      devtool: 'inline-source-map', // just do inline source maps instead of the default
-      module: {
-        preLoaders: [{
-          test: /\.(js|jsx)$/,
-          include: /src/,
-          exclude: /node_modules/,
-          loader: 'isparta'
-        }],
-        loaders: [{
-          test: /\.jsx?$/,
-          exclude: /(node_modules)/,
-          loaders: ['babel']
-        }, {
-          test: /\.jpe?g$|\.gif$|\.png$|\.ico$/,
-          loader: 'url-loader?name=[path][name].[ext]&context=./src'
-        }, {
-          test: /\.html/,
-          loader: 'file?name=[name].[ext]'
-        }, {
-          test: /\.css$/,
-          loader: 'style-loader!css-loader?modules&importLoaders=1!postcss-loader'
-        }, {
-          test: /\.json$/,
-          loader: 'json'
+    const webpack = require('webpack');
+    // See issues for details on parts of this config.
+    // https://github.com/airbnb/enzyme/issues/47
+    // had issues loading sinon as its a dep of enzyme
+    var argv = require('minimist')(process.argv.slice(2));
+    
+    
+    module.exports = (config) => {
+      config.set({
+        browsers: [ 'PhantomJS' ], // run in Chrome
+        singleRun: argv.watch ? false : true, // just run once by default
+        frameworks: [ 'mocha' ], // use the mocha test framework
+        files: [
+          'tests.webpack.js' // just load this file
+        ],
+        preprocessors: {
+          'tests.webpack.js': [ 'webpack', 'sourcemap' ] // preprocess with webpack and our sourcemap loader
         },
-        {test: /\.eot(\?v=\d+\.\d+\.\d+)?$/, loader: 'file?mimetype=application/vnd.ms-fontobject'},
-        {test: /\.woff(2)?(\?v=\d+\.\d+\.\d+)?$/, loader: 'url?limit=10000&mimetype=application/font-woff' },
-        {test: /\.ttf(\?v=\d+\.\d+\.\d+)?$/, loader: 'url?limit=10000&mimetype=application/octet-stream' },
-        {test: /.svg(\?v=\d+\.\d+\.\d+)?$|.svg$/, loader: 'url?name=[path][name].[ext]&context=./src&mimetype=image/svg+xml'},
-        {
-          test: /sinon\.js$/,
-          loader: 'imports?define=>false,require=>false'
-        }
-        ]
-      },
-      postcss: () => {
-        return [
-          require('precss'),
-          require('postcss-simple-vars')({
-            variables: () => {
-              return require('./src/colors');
+        reporters: [ 'dots' ], // report results in this format
+        webpack: { // kind of a copy of your webpack config
+          devtool: 'inline-source-map', // just do inline source maps instead of the default
+          module: {
+            preLoaders: [{
+              test: /\.(js|jsx)$/,
+              include: /src/,
+              exclude: /node_modules/,
+              loader: 'isparta'
+            }],
+            loaders: [{
+              test: /\.jsx?$/,
+              exclude: /(node_modules)/,
+              loaders: ['babel']
+            }, {
+              test: /\.jpe?g$|\.gif$|\.png$|\.ico$/,
+              loader: 'url-loader?name=[path][name].[ext]&context=./src'
+            }, {
+              test: /\.html/,
+              loader: 'file?name=[name].[ext]'
+            }, {
+              test: /\.css$/,
+              loader: 'style-loader!css-loader?modules&importLoaders=1!postcss-loader'
+            }, {
+              test: /\.json$/,
+              loader: 'json'
+            },
+            {test: /\.eot(\?v=\d+\.\d+\.\d+)?$/, loader: 'file?mimetype=application/vnd.ms-fontobject'},
+            {test: /\.woff(2)?(\?v=\d+\.\d+\.\d+)?$/, loader: 'url?limit=10000&mimetype=application/font-woff' },
+            {test: /\.ttf(\?v=\d+\.\d+\.\d+)?$/, loader: 'url?limit=10000&mimetype=application/octet-stream' },
+            {test: /.svg(\?v=\d+\.\d+\.\d+)?$|.svg$/, loader: 'url?name=[path][name].[ext]&context=./src&mimetype=image/svg+xml'},
+            {
+              test: /sinon\.js$/,
+              loader: 'imports?define=>false,require=>false'
             }
-          }),
-          require('autoprefixer')({ browsers: ['last 2 versions'] })
-        ];
-      },
-      isparta: {
-        embedSource: true,
-        noAutoWrap: true
-        // these babel options will be passed only to isparta and not to babel-loader
-      },
-      externals: {
-        jsdom: 'window',
-        cheerio: 'window',
-        'react/lib/ExecutionEnvironment': true,
-        'react/lib/ReactContext': 'window',
-        'text-encoding': 'window'
-      },
-      resolve: {
-        alias: {
-          sinon: 'sinon/pkg/sinon'
+            ]
+          },
+          postcss: () => {
+            return [
+              require('precss'),
+              require('postcss-simple-vars')({
+                variables: () => {
+                  return require('./src/colors');
+                }
+              }),
+              require('autoprefixer')({ browsers: ['last 2 versions'] })
+            ];
+          },
+          isparta: {
+            embedSource: true,
+            noAutoWrap: true
+            // these babel options will be passed only to isparta and not to babel-loader
+          },
+          externals: {
+            jsdom: 'window',
+            cheerio: 'window',
+            'react/lib/ExecutionEnvironment': true,
+            'react/lib/ReactContext': 'window',
+            'text-encoding': 'window'
+          },
+          resolve: {
+            alias: {
+              sinon: 'sinon/pkg/sinon'
+            }
+          }
+        },
+    
+        webpackServer: {
+          noInfo: false // please don't spam the console when running in karma!
         }
-      }
-    },
-
-    webpackServer: {
-      noInfo: false // please don't spam the console when running in karma!
-    }
-  });
-};
-```
+      });
+    };
 
 You'll notice we're doing some funky stuff with sinon to stop it breaking require. Yeah we can share `webpack.config` here to reduce duplication but for this example we've copied and pasted it.
 
