@@ -6,8 +6,12 @@
     {% for bio in speaker.bio %}
         <p>{{bio}}</p>
     {% endfor %}
-    <a class="seminar-speaker-link linkedin" href="{{speaker.linkedin}}">linkedIn</a>
-    <a class="seminar-speaker-link twitter" href="{{speaker.twitter}}">twitter</a>
+    {% if speaker.linkedin %}
+      <a class="seminar-speaker-link linkedin" href="{{speaker.linkedin}}">linkedIn</a>
+    {% endif %}
+    {% if speaker.twitter %}
+      <a class="seminar-speaker-link twitter" href="{{speaker.twitter}}">twitter</a>
+    {% endif %}
     <!-- <p>{{speaker.bio}}</p> -->
   </div>
 </li>
