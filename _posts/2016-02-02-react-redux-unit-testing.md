@@ -20,15 +20,15 @@ In this post we'll go through the setup of a React, Redux Webpack application wi
 ### Folder Structure of our application.
 ![http://i.imgur.com/43wv76d.png](http://i.imgur.com/43wv76d.png)
 
-karma.config we'll need to load up our components and containers into a browser for testing as we're using postcss and other loaders that don't work natively in node.js. So to get our tests to run in browser we will also include a copy of our webpack config to get karma to load it up. If you load up your tests normally withouy karma, down the line you'll get Unexpected token errors.
+*karma.config.js* - we'll need to load up our components and containers into a browser for testing as we're using postcss and other loaders that don't work natively in node.js. So to get our tests to run in browser we will also include a copy of our webpack config to get karma to load it up. If you load up your tests normally withouy karma, down the line you'll get Unexpected token errors.
 
-server.js selects an appropriate .dev.js, .prod.js file on startup. server.dev.js uses webpack dev server. prod.js is a very simple express app hosting static output in the dist folder.
+*server.js* - selects an appropriate .dev.js, .prod.js file on startup. server.dev.js uses webpack dev server. prod.js is a very simple express app hosting static output in the dist folder.
 
-src is where our application code lives. Components contain our presentational components such as TextBox, Button(s), ListItem etc. All components are decoupled from redux. With styles being loaded in ```import styles from './styles.css'``` by using [Css Modules](https://github.com/css-modules/css-modules). Redux provides us with top down rendering so we keep our components clean and stateless.
+*src* - is where our application code lives. Components contain our presentational components such as TextBox, Button(s), ListItem etc. All components are decoupled from redux. With styles being loaded in ```import styles from './styles.css'``` by using [Css Modules](https://github.com/css-modules/css-modules). Redux provides us with top down rendering so we keep our components clean and stateless.
 
-containers (redux glue), react components that have very little if any styling. With the glue to pass down state to its child components. Within this directory we create our top level routes, such as home, about etc. In here we're also making use of redux-forms higher order component to give us validation and state management as forms generally behave is the same way. This library has dramatically helped reduce boilerplate.
+*containers* - (redux glue), react components that have very little if any styling. With the glue to pass down state to its child components. Within this directory we create our top level routes, such as home, about etc. In here we're also making use of redux-forms higher order component to give us validation and state management as forms generally behave is the same way. This library has dramatically helped reduce boilerplate.
 
-actions contains our functions that are triggered by user actions or workers in our application. We can use these actions later in our reducer tests. 
+*actions* - contains our functions that are triggered by user actions or workers in our application. We can use these actions later in our reducer tests. 
 
 ### Testing our reducers
 This is trivial, redux has no coupling to the browser here, so we can test our application like a state machine with simple input output. With tests running fast in node environment.
@@ -79,10 +79,10 @@ export default createReducer(initialState, {
   })
 });
 ```
-If you're interested in what createReducer does [see](https://github.com/joshgeller/react-redux-jwt-auth-example/blob/master/src/utils/index.js#L12) it gives a nicer switch structure. I quite like it.
+If you're interested in what createReducer does [see here](https://github.com/joshgeller/react-redux-jwt-auth-example/blob/master/src/utils/index.js#L12) - it gives a nicer switch structure. I quite like it.
 
 ### Testing react components with enzyme
-Enzyme gives us a simple jQuery like selector interface which is really powerful for asserting whats been rendered.
+Enzyme gives us a simple jQuery like selector interface which is really powerful for asserting what's been rendered.
 
 Example Test:
 
@@ -147,7 +147,7 @@ export default NotificationTab;
 ```
 
 ### Karma Setup
-This bit was rather fiddly as sinon the mocking library was breaking karma Issue 47 on [github](https://github.com/airbnb/enzyme/issues/47) helped with this.
+This bit was rather fiddly as sinon the mocking library was breaking karma. Issue 47 on [github](https://github.com/airbnb/enzyme/issues/47) helped with this.
 
 karma.config.js
 
@@ -244,13 +244,13 @@ module.exports = (config) => {
 };
 ```
 
-you'll notice we're doing some funky stuff with sinon to stop it breaking require. Yeah we can share webpack.config here to reduce duplication but for this example we've copied and pasted it.
+You'll notice we're doing some funky stuff with sinon to stop it breaking require. Yeah we can share `webpack.config` here to reduce duplication but for this example we've copied and pasted it.
 
 We can now test our react components in silo and with the power of PhantomJS, we're able to test our components very fast. Setup a ```npm run karma:watch``` task to run in the background whilst developing. Here we're currently testing a dumb presentational component, but we can go further and test our redux containers for more functional testing.
 
 And thats it! in the coming week I'll release a bare bones boilerplate project, complete with postcss, hot module replacement and the testing config shown here.
 
-voice you're opinion at me [@export_mike](https://twitter.com/@export_mike) on twitter or [@pebblecode](https://twitter.com/@pebblecode). I'm just scratching the surface of the react testing story, I'd be interested if you've had any pains or gains in testing your React components. Is this useful information? Let me know. Thanks for reading, oh! I almost forgot we're [hiring](http://pebblecode.com/careers/#job-1220)!
+Voice you're opinion at me [@export_mike](https://twitter.com/@export_mike) on twitter or [@pebblecode](https://twitter.com/@pebblecode). I'm just scratching the surface of the react testing story, I'd be interested if you've had any pains or gains in testing your React components. Is this useful information? Let me know. Thanks for reading, oh! I almost forgot we're [hiring](http://pebblecode.com/careers/#job-1220)!
 
 
 
