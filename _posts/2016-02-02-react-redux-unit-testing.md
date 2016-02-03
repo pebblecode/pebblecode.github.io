@@ -147,7 +147,7 @@ export default NotificationTab;
 ```
 
 ### Karma Setup
-This bit was rather fiddly as sinon the mocking library was breaking karma Issue 47 on (github)[https://github.com/airbnb/enzyme/issues/47] helped with this.
+This bit was rather fiddly as sinon the mocking library was breaking karma Issue 47 on [github](https://github.com/airbnb/enzyme/issues/47) helped with this.
 
 karma.config.js
 
