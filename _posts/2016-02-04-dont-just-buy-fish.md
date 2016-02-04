@@ -13,7 +13,7 @@ In 2016, Business Owners are very aware that an increasingly digital world bring
 
 It’s no longer provocative to talk about ‘disruption’ - even the most traditional of thinkers accept that every product or service we encounter has been, or will be, threatened by a new, innovative, digital businesses. Even businesses that were the original ‘disruptors’ are now facing new challenges from the latest hipster-shoreditch-silicon-valley upstarts.
 
-It’s not about to slow down either - we’re in an age where teenagers are building Redstone CPUs in Minecraft; Youtube stars are earning more than Hollywood stars, and toddlers understand how to surf YouTube on their iPads.
+It’s not about to slow down either - we’re in an age where teenagers are [building Redstone CPUs in Minecraft](https://www.youtube.com/watch?v=aQqWorbrAaY); Youtube stars are [earning more than Hollywood stars](http://www.polygon.com/2015/10/9/9490109/minecraft-streamer-buys-4-5m-hollywood-home-notch-captain-sparklez), and toddlers understand how to surf [YouTube on their iPads](http://www.dailymail.co.uk/sciencetech/article-3149025/The-iPad-really-child-s-play-half-toddlers-use-Apple-s-tablet-just-ONE-researchers-say.html).
 
 Even more significantly, kids can code before they finish school. Creating a website or simple mobile application; hooking up a Raspberry Pi to sensors - these are increasingly core competencies of today’s school kids, where 10 years ago this sort of digital understanding was still the domain of niche tech enthusiasts.
 
