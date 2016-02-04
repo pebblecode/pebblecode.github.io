@@ -7,7 +7,7 @@ categories: digital transformation agile
 Do you need a Product or a Capability Upgrade?
 ---
 
-##Don’t Just Buy Fish.
+## Don’t Just Buy Fish.
 
 In 2016, Business Owners are very aware that an increasingly digital world brings with it a smorgasbord of enticing opportunities and an equal number of worrying threats.
 
@@ -23,7 +23,7 @@ Smart Businesses are aware of the exponentially advancing world we live in, and 
 
 Thankfully, the majority of people we speak to realise that this means a great deal more than ‘jazzing up the website’ or giving their app a ‘lick of paint’. Even so, you’d be surprised by how often we’re asked by prospective clients to do exactly that.
 
-##Give a Man A Fish
+## Give a Man A Fish
 
 There are any number of software houses out there that hire the brightest young minds and produce excellent software. We’re not unique in that respect. We do Design Thinking; we operate with Agility (and we know that means more than ‘knowing how to do Scrum’) and our output is to a consistently high standard. We Deliver Great Software.
 
@@ -32,7 +32,7 @@ But then, so do lots of companies. Ultimately, how does that alone help our clie
 Give a man a Fish and he’ll feed his family for a day.
 
 
-##But teach him how to fish…
+## But teach him how to fish…
 
 We teach our clients how to fish (not literally - though if that’s your bag, sure let’s get on a boat).
 
