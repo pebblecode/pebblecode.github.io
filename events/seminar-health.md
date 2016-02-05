@@ -24,7 +24,7 @@ seminar-intro-paragraphs:
 ## Location and Time
 
 seminar-time: "8am - 9:30am"
-seminar-date: "Tuesday 25th February"
+seminar-date: "Thursday 25th February"
 seminar-rsvp-address: "events@pebblecode.com"
 seminar-location: "The Hospital Club<br />24 Endell St<br />London<br />WC2H 9HQ"
 seminar-location-shorthand: "The Hospital Club, London"
