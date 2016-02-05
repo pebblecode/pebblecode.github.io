@@ -15,7 +15,7 @@ markdown: kramdown
 redirects: yes
 sass:
     style: :compressed
-permalink: "/blog/:title"
+permalink: "/blog/:title/"
 
 
 # Pagination
