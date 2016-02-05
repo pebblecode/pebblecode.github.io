@@ -65,10 +65,17 @@ speakers:
    jobtitle: Head of Med Schools UK
    portrait: katie.jpg
    linkedin: https://uk.linkedin.com/in/katie-petty-saphon-74a31b23
-   twitter: 
+   twitter:
    bio:
     - "An inspirational strategic leader having a major impact on medical education in the UK, Katie has led Med Schools UK for over 12 years."
-
+ - name: "Katherine Benjamin"
+   id: katherine-benjamin
+   jobtitle: Digital  Services Manager at NHS England
+   portrait: katherine.jpg
+   linkedin: https://www.linkedin.com/in/mskatiebenjamin
+   twitter:
+   bio:
+    - "Katherine has been working for NHS England for 2 and a half years. She is involved in work related to the use of digital tools to empower patients to exercise greater control in their health and care journeys."
 
 ## Google Maps URL
 invite-map: https://www.google.co.uk/maps/place/Surrey+County+Cricket+Club/@51.483612,-0.11492,15z/data=!4m2!3m1!1s0x0:0xf09a6ef184954e68?sa=X&ved=0CJABEPwSMA1qFQoTCKatle_TlMYCFckj2wodDEYAbw
