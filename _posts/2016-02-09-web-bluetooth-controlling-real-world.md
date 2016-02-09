@@ -67,6 +67,10 @@ This simple example is not all that exciting though, so I thought I'd introduce 
 I wrote a little [Drone Controller app](https://github.com/poshaughnessy/web-bluetooth-parrot-drone) that lets you 
 connect to the drone, make it take off, flip and land. It's in pure JavaScript and runs just in your mobile web browser:
 
+<div class="video">
+  <iframe width="420" height="315" src="https://www.youtube.com/embed/-FO9thLaiug" frameborder="0" allowfullscreen></iframe>
+</div>
+
 I think the fact it's just a web app is pretty cool - imagine in the future just visiting *controlmydrone.com*...
 
 It's only for Chrome for Android Dev right now, but hopefully browser support will get better over the next few months. 
@@ -78,4 +82,4 @@ start controlling the physical world around us. It's an exciting time to be a we
 
 --
 
-*For more Web Bluetooth demos, [check out the list here](https://github.com/WebBluetoothCG/demos#/web-bluetooth-demos)*
+*The [slides from my talk are here](http://www.slideshare.net/pebblecode/web-bluetooth-controlling-the-real-world-from-your-browser) and check out [more Web Bluetooth demos here](https://github.com/WebBluetoothCG/demos#/web-bluetooth-demos)*
