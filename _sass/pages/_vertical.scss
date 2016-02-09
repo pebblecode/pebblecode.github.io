@@ -81,7 +81,7 @@
     }
   }
 
-  &:last-child {
+  &:nth-child(3) {
     margin-left:  24px;
     @media screen and ( max-width: $medium ) {
       margin-left: 0;
@@ -138,7 +138,7 @@
   }
 }
 
-.vert-sec-bubble-title {
+.insurance .vert-sec-bubble-title {
   &:before {
     content: "•";
     margin-right: 12px;

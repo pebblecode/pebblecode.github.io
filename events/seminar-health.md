@@ -76,6 +76,17 @@ speakers:
    twitter:
    bio:
     - "Katherine has been working for NHS England for 2 and a half years. She is involved in work related to the use of digital tools to empower patients to exercise greater control in their health and care journeys."
+ - name: "Lloyd Price"
+   id: lloyd-price
+   jobtitle: Chief Marketing Officer of Zesty
+   portrait: lloyd.jpg
+   linkedin: https://www.linkedin.com/in/lloydgprice
+   twitter:
+   bio:
+    - "Tech Entrepreneur & Corporate Executive with 17+ years experience; Lloyd co-founded Zesty in 2012, quickly turning it into one of the leading Digital Health brands in Europe."
+
+
+
 
 ## Google Maps URL
 invite-map: https://www.google.co.uk/maps/place/Surrey+County+Cricket+Club/@51.483612,-0.11492,15z/data=!4m2!3m1!1s0x0:0xf09a6ef184954e68?sa=X&ved=0CJABEPwSMA1qFQoTCKatle_TlMYCFckj2wodDEYAbw
