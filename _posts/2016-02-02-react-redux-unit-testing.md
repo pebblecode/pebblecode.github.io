@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Unit Testing React Components and Redux Containers
+title:  Unit Testing React Components and Redux Reducers
 author: Mike James
 categories: react
 ---
@@ -10,6 +10,7 @@ In this post I'll go through how to get enzyme setup to test your presentational
 ### Unit testing React Components and Redux reducers
 
 NB: this post assumes knowledge of react, redux and webpack.
+(Update, as promised heres a boilerplate: [See boilerplate](https://github.com/export-mike/react-redux-boilerplate))
 
 I recently started working on a new project, the task; to build your standard single page app with a rich user experience. We decided to go for React and Redux as we're also using it on a few other client and internal projects, plus its my goto tool for client side development. However I was interested in this move to more functional languages for clientside development such as [Elm](http://elm-lang.org) but not quite ready to use it in anger yet; stay tuned for for another blogpost ;).
 

@@ -19,7 +19,7 @@ Even more significantly, kids can code before they finish school. Creating a web
 
 As this digitally-aware, code-capable generation reaches work age, they will simultaneously increase the demand for innovative product, and be the driving force behind creating it.
 
-Smart Businesses are aware of the exponentially advancing world we live in, and accept that their is an increasing need to evolve, or die. That’s often where our conversations being - organisations seek our expertise to help them innovate and change their product.
+Smart Businesses are aware of the exponentially advancing world we live in, and accept that there is an increasing need to evolve, or die. That’s often where our conversations begin - organisations seek our expertise to help them innovate and change their product.
 
 Thankfully, the majority of people we speak to realise that this means a great deal more than ‘jazzing up the website’ or giving their app a ‘lick of paint’. Even so, you’d be surprised by how often we’re asked by prospective clients to do exactly that.
 
