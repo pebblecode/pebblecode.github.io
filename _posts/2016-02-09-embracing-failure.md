@@ -26,7 +26,8 @@ I've been a climber on and off for the last 10 years, and with new walls popping
 Some view failure as the loss of control, and this is certainly true when you come flying off a climb into the faces of the spectators below. When this happens you have to adjust the way you approach the problem, or how you handle the aftermath of the event. Shifting your weight this way or that, pinching a hold differently, resting longer or pulling harder. It doesn't always work, but more often than not you manage to progress a little further the next time.
  
 The same applies at work. You have to take on new challenges and learn new things all the time, some of which might make you feel a little out of control. It’s how you react to these events that matters.
-Iterate on your ideas
+
+## Iterate on your ideas
  
 As a designer, when I work on a problem, I do my best not to just stride straight along a single path to a solution. It might be that by picking one route, I could end on an alright outcome, but without testing other ideas, I have no way to identify its benefits over any other. By trying multiple routes, I can disregard some as failures, and then continue to refine the successes. By repeating this process continually, I am more likely to end up with a well designed result.
  
@@ -34,7 +35,8 @@ As a designer, when I work on a problem, I do my best not to just stride straigh
 ![Diagram of a design process](/img/blog/embracing-failure/blog-illustrations-01.png)
  
 That's not to say that creating endless failures is useful. I could spend an unlimited amount of time coming up with wrong solutions, but really that would be nothing more than poor time management. Through experience, you learn where to draw the line (Or stop drawing it).
-Get Feedback
+
+## Get Feedback
  
 Honest feedback can be tricky, especially if it comes across as negative. We are emotional creatures, and form attachments to our work such that a criticism of it can feel like a criticism of ourselves.
  
