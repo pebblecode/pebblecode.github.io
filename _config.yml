@@ -15,12 +15,14 @@ markdown: kramdown
 redirects: yes
 sass:
     style: :compressed
-permalink: "/blog/:title"
+permalink: "/blog/:title/"
 
 
 # Pagination
 paginate: 8
 paginate_path: "/blog/:num"
+
+relative_permalinks: false
 
 #tag blog posts for analytics
 defaults:

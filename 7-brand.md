@@ -19,8 +19,10 @@ The purpose of brand is to strongly identify things that are consistent with the
 
 By taking every opportunity to reinforce the brand, we strengthen ourselves as a team. This contributes directly to the success of the company, and by association you as an individual. 
 
-
-
+<br>
+<br>
+<br>
+<br>
 
 ##Visual Guidelines
 
@@ -61,7 +63,7 @@ There should be a single space between pebble and {code}. Where possible the cur
 This logo is primarily for avatar situations, where a square branded element is required. For example in listings sites, or for Github. It should not be used in place of the rectangle logo (e.g. on a print document).
 
 ###Colour
-![Example of a heading](/img/brand/pebble-colours.png)
+![Example of a heading](/img/brand/pebble-colours.svg)
 
 ####Primary Colour
 
@@ -170,6 +172,14 @@ This document is set in the correct body copy style, i.e. Meta, pebble ink. Bloc
 
 ![Example of a heading](/img/brand/pebble-lab-banner-logo-pink-white-1500x500.png)
 This branding element is used in places where visual interest is needed to make the branded artefact stand out. Sometimes the pebble pink can become too slab-like and overwhelming. The white-on-pink banner breaks up that effect somewhat. The pink-on-white banner is useful for title pages of documents. 
+
+##Writing on-brand
+
+It is easier to specify visual guidelines for a brand than written ones. But the brand should have a specific 'voice'. In particular, the brand voice should be:
+
+* **Not overly formal**. This means that we should avoid overly wordy formulations. We should avoid words like 'formulations' - here it would be better to say something like 'phrases'. There is enough jargon in the technology world for anyone - adding a stuffy feeling to our writing does not help to clarify matters.
+* **Not too informal**. In general we should not use shortened forms that are common in speech, for example "you're", "they're", "don't". The voice does not employ slang unless absolutely necessary. 
+
 
 
 

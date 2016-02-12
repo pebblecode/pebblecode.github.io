@@ -45,17 +45,16 @@
 	    {% endfor %}
 
 
+
 	    {% for bloglink in vsecloop.bloglinks %}
-	    <div class="vert-section-blog-link">
-	    	{% if vsecloop.link-url %}
-	    		<a href="{{vsecloop.link-url}}">
-	    			{{ bloglink }}
-	    		</a>
-				{% endif %}
-
-			</div>
+		    <div class="vert-section-blog-link">
+		    	{% if vsecloop.link-url %}
+		    		<a href="{{vsecloop.link-url}}">
+		    			{{ bloglink }}
+		    		</a>
+					{% endif %}
+				</div>
 	    {% endfor %}
-
 
   </div>
 </section>
