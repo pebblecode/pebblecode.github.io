@@ -92,7 +92,16 @@ speakers:
    twitter: https://twitter.com/Becky_Slack
    bio:
     - "With an 18-year career in media of all channels, Becky now runs slack communications alongside writing for The Guardian, The Independent, and New Statesman."
-
+ - name: "Dr. Lawrence Petalidis"
+   id: lawrence-petalidis
+   jobtitle: Head of Innovation and Impact, CW+ Cheslea and Westminster NHS Foundation Trust Health Charity
+   portrait: lawrence.jpg
+   linkedin: https://www.linkedin.com/in/lawrencepetalidis
+   twitter:
+   bio:
+    - "Following a Cambridge PhD in molecular neuro-oncology and brain tumour biomarker identification, Lawrence spent 8 years in Business Development, international technical project management and process digitalisation."
+    - "He has more recently worked with London academia, promoting science and technology enterprise, knowledge transfer, new product development, innovation and consulting services."
+    - "In his current role at CW+, Lawrence focuses on healthcare innovation, with an aim at improving Chelsea and Westminster Hospital care provision and patient experience."
 
 
 
