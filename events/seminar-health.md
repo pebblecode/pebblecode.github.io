@@ -84,6 +84,14 @@ speakers:
    twitter:
    bio:
     - "Tech Entrepreneur & Corporate Executive with 17+ years experience; Lloyd co-founded Zesty in 2012, quickly turning it into one of the leading Digital Health brands in Europe."
+ - name: "Becky Slack"
+   id: becky-slack
+   jobtitle: Managing Director/ Founder of Slack Communications
+   portrait: becky.jpg
+   linkedin: https://www.linkedin.com/in/becky-slack-b88a952
+   twitter: https://twitter.com/Becky_Slack
+   bio:
+    - "With an 18-year career in media of all channels, Becky now runs slack communications alongside writing for The Guardian, The Independent, and New Statesman."
 
 
 
