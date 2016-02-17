@@ -109,8 +109,8 @@ speakers:
    linkedin:
    twitter:
    bio:
-    - "My first degree was in dentistry then returned back to medical school to qualify in medicine - I am currently the senior partner of a large general medical practice in Winchester and one of the directors of an NHS/Private general dental pratice group."
-    - "My drive for some considerable period now has been to explore how to breakdown many of the barriers patients have to get through to access medicine both in the NHS and private sector, we need to provide real choice, thereby adding capacity in the 'system'."
+    - "My first degree was in dentistry then returned back to medical school to qualify in medicine - I am currently the senior partner of a large general medical practice in Winchester and one of the directors of an NHS/Private general dental practice group."
+    - "My drive for some considerable period now has been to explore how to breakdown many of the barriers patients have to get through to access medical care both in the NHS and private sector, we need to provide real choice, thereby adding capacity in the 'system'."
     - "I do feel perpetuating the idea of private versus NHS is not the way forward - we are developing a 'patient driven health service' - so provide excellent information and choice - it could be just what the doctor ordered!"
  - name: "Michael Levens"
    id: michael-levans
