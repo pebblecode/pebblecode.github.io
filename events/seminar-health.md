@@ -84,7 +84,42 @@ speakers:
    twitter:
    bio:
     - "Tech Entrepreneur & Corporate Executive with 17+ years experience; Lloyd co-founded Zesty in 2012, quickly turning it into one of the leading Digital Health brands in Europe."
-
+ - name: "Becky Slack"
+   id: becky-slack
+   jobtitle: Managing Director/ Founder of Slack Communications
+   portrait: becky.jpg
+   linkedin: https://www.linkedin.com/in/becky-slack-b88a952
+   twitter: https://twitter.com/Becky_Slack
+   bio:
+    - "With an 18-year career in media of all channels, Becky now runs slack communications alongside writing for The Guardian, The Independent, and New Statesman."
+ - name: "Dr. Lawrence Petalidis"
+   id: lawrence-petalidis
+   jobtitle: Head of Innovation and Impact, CW+ Cheslea and Westminster NHS Foundation Trust Health Charity
+   portrait: lawrence.jpg
+   linkedin: https://www.linkedin.com/in/lawrencepetalidis
+   twitter:
+   bio:
+    - "Following a Cambridge PhD in molecular neuro-oncology and brain tumour biomarker identification, Lawrence spent 8 years in Business Development, international technical project management and process digitalisation."
+    - "He has more recently worked with London academia, promoting science and technology enterprise, knowledge transfer, new product development, innovation and consulting services."
+    - "In his current role at CW+, Lawrence focuses on healthcare innovation, with an aim at improving Chelsea and Westminster Hospital care provision and patient experience."
+ - name: "Simon Chaplin-Rogers"
+   id: simon-cr
+   jobtitle: Principle - Marlfield House Dental Centre.
+   portrait: simon.jpg
+   linkedin:
+   twitter:
+   bio:
+    - "My first degree was in dentistry then returned back to medical school to qualify in medicine - I am currently the senior partner of a large general medical practice in Winchester and one of the directors of an NHS/Private general dental practice group."
+    - "My drive for some considerable period now has been to explore how to breakdown many of the barriers patients have to get through to access medical care both in the NHS and private sector, we need to provide real choice, thereby adding capacity in the 'system'."
+    - "I do feel perpetuating the idea of private versus NHS is not the way forward - we are developing a 'patient driven health service' - so provide excellent information and choice - it could be just what the doctor ordered!"
+ - name: "Michael Levens"
+   id: michael-levans
+   jobtitle: Found and Director of Active Health Tech
+   portrait: michael.jpg
+   linkedin: https://www.linkedin.com/in/michael-levens-57aa04b
+   twitter: https://twitter.com/michaellevens
+   bio:
+    - "Founder and Director of Active Health Tech, Michael Levens has 15+ years experience in creating and running large-scale global technology businesses."
 
 
 

@@ -24,17 +24,17 @@ By taking every opportunity to reinforce the brand, we strengthen ourselves as a
 <br>
 <br>
 
-##Visual Guidelines
+## Visual Guidelines
 
 The brand assets are kept [here](https://drive.google.com/a/pebblecode.com/folderview?id=0B4mkyflO8zoEb0lwZzQxUW1hT0E&usp=sharing). Do not keep a local copy of branded elements such as templates or logos as these are liable to be updated.
 
 **If in doubt about the use of these assets, ask a member of the design team.**
 
-###Logo
+### Logo
 
 There are two logos, the square logo and the rectangle logo. The pebble {code} logo is set in FF Meta Bold.
 
-####Rectangle Logo
+#### Rectangle Logo
 
 ![Example of a heading](/img/brand/pebble-logo.png)
 
@@ -56,16 +56,16 @@ There should be a single space between pebble and {code}. Where possible the cur
 * pebble code ✘
 
 
-####Square Logo
+#### Square Logo
 
 ![Example of a heading](/img/brand/pebble-square-logo.png)
 
 This logo is primarily for avatar situations, where a square branded element is required. For example in listings sites, or for Github. It should not be used in place of the rectangle logo (e.g. on a print document).
 
-###Colour
+### Colour
 ![Example of a heading](/img/brand/pebble-colours.svg)
 
-####Primary Colour
+#### Primary Colour
 
 **pebble pink**
 
@@ -77,7 +77,7 @@ This logo is primarily for avatar situations, where a square branded element is 
 `HSL:  342, 82, 62`
 
 
-####Secondary Colours
+#### Secondary Colours
 
 **pebble ink**
 
@@ -143,7 +143,7 @@ This logo is primarily for avatar situations, where a square branded element is 
 `HSB: 214, 48, 44`
 
 
-###Typography
+### Typography
 
 The pebble {code} fonts are:
 
@@ -152,7 +152,7 @@ The pebble {code} fonts are:
 
 The fonts can be accessed [here](https://drive.google.com/drive/u/0/folders/0B4mkyflO8zoEUFZSV2VKQ29WNjg).
 
-####Headings
+#### Headings
 
 <h1 style="background-color:#EE4F7E;color:white;padding:2vw">Jet from Gladiators to host a millennium barn dance at Yeovil aerodrome.</h1>
 
@@ -160,7 +160,7 @@ Notice that headings are always capitalised. Drop Shadows can be used optionally
 
 `text-shadow: 3px 4px 0 rgba(0,0,0,0.2);`
 
-####Body Copy
+#### Body Copy
 This document is set in the correct body copy style, i.e. Meta, pebble ink. Blockquotes may be highlighted in pebble pink: 
 
 > Big Yellow Taxi there by Joni Mitchell, a song in which she complains that they 'paved paradise to put up a parking lot' - a measure which actually would have alleviated traffic congestion on the outskirts of paradise. Something which Joni singularly fails to point out, perhaps because it doesn't quite fit in with her blinkered view of the world. Nevertheless, nice song. 
@@ -168,12 +168,12 @@ This document is set in the correct body copy style, i.e. Meta, pebble ink. Bloc
 
 
 
-###Lab banner graphics
+### Lab banner graphics
 
 ![Example of a heading](/img/brand/pebble-lab-banner-logo-pink-white-1500x500.png)
 This branding element is used in places where visual interest is needed to make the branded artefact stand out. Sometimes the pebble pink can become too slab-like and overwhelming. The white-on-pink banner breaks up that effect somewhat. The pink-on-white banner is useful for title pages of documents. 
 
-##Writing on-brand
+## Writing on-brand
 
 It is easier to specify visual guidelines for a brand than written ones. But the brand should have a specific 'voice'. In particular, the brand voice should be:
 
