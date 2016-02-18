@@ -2,7 +2,7 @@
 layout: post
 title:  Don't Just Buy Fish
 author: Paul Addicott-Evans
-categories: digital transformation agile
+categories: [digital transformation, agile, innovation]
 ---
 Do you need a Product or a Capability Upgrade?
 ---
