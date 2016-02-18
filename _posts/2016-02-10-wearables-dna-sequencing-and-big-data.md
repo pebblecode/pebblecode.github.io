@@ -2,16 +2,16 @@
 layout: post
 title: Wearables, DNA sequencing and big data
 author: George Ornbo
-categories: [Health]
+tags: [Health]
 ---
 
 Are we brave enough to imagine a self-learning medical research platform?
 
-## Standing in the future 
+## Standing in the future
 
-Let us suppose that somehow a not-for-profit organisation has been established to allow anyone that wanted to to sequence and share their DNA profile. I am not interested at this stage in discussing all of the problems associated with that - I would just like you to imagine it. 
+Let us suppose that somehow a not-for-profit organisation has been established to allow anyone that wanted to to sequence and share their DNA profile. I am not interested at this stage in discussing all of the problems associated with that - I would just like you to imagine it.
 
-Let us also suppose that those who are willing to share their DNA are also willing to continuously submit data from their bodies by way of wearable technologies. Again there are complex issues here but please ignore them for now. I just want you to focus on the idea. 
+Let us also suppose that those who are willing to share their DNA are also willing to continuously submit data from their bodies by way of wearable technologies. Again there are complex issues here but please ignore them for now. I just want you to focus on the idea.
 
 We already have a mature market in wearables, particularly in relation to fitness and for a relatively low-cost it is already possible to wear a device that can gather data on
 
@@ -28,7 +28,7 @@ Furthermore there are already low-cost devices that can measure
 * respiration rate
 * respiration effectiveness (e.g., blood oxygen saturation)
 
-Input devices are becoming smaller and cheaper all the time and by bridging hardware devices to smartphones via something like [Low Energy Bluetooth][4] we suddenly open incredible opportunities. 
+Input devices are becoming smaller and cheaper all the time and by bridging hardware devices to smartphones via something like [Low Energy Bluetooth][4] we suddenly open incredible opportunities.
 
 Already devices like [Fitbit][5] and [Apple Watch][6] gather data from the body and push it to a cloud platform that analyses and reports back to the user. This gives data scientists the ability to analyse the network of users as a whole and draw meaning from it.
 
@@ -40,7 +40,7 @@ What would happen if we combined DNA sequences with rich and frequent data from 
 
 The platform we are imagining understands the DNA profile of an individual and is gathering large amounts of data from users. Let us suppose that it is possible for users to grant access to their health care professionals. During a consultation a wealth of data and the DNA profile of the patient is available. As medical conditions become apparent users can choose to notify the platform that they have a condition. Perhaps in five years thousands of conditions will be registered on the platform along with user data and DNA profiles.
 
-The resulting platform becomes a self-learning research platform. Machine learning and data science could extract deep meaning from user data and align it to DNA and medical conditions. I would hazard a guess that within a few years a major breakthrough would be uncovered or at the very least deep knowledge around conditions and profiles would be gained. 
+The resulting platform becomes a self-learning research platform. Machine learning and data science could extract deep meaning from user data and align it to DNA and medical conditions. I would hazard a guess that within a few years a major breakthrough would be uncovered or at the very least deep knowledge around conditions and profiles would be gained.
 
 ## The problems are not technical
 
@@ -48,11 +48,11 @@ This is not a deep technical challenge. Wearables, smartphones and big data are 
 
 Blockchain has the potential to [protect personal data][3] and decentralise it from any central organisation but in reality this area is nascent and problematic.
 
-Considering the upsides of accelerating medical knowledge and discovery and ultimately humanity's ability to understand disease and illness my question is this: 
+Considering the upsides of accelerating medical knowledge and discovery and ultimately humanity's ability to understand disease and illness my question is this:
 
-Are we brave enough to imagine the idea of a real time global self-learning medical research platform? 
+Are we brave enough to imagine the idea of a real time global self-learning medical research platform?
 
-It is technically possible. 
+It is technically possible.
 
 [1]: http://siliconangle.com/blog/2014/09/17/wearable-sensor-eliminates-painful-prick-for-blood-glucose-monitoring/
 [2]: https://www.healthline.com/health-news/tech-blood-pressure-monitor-in-the-form-of-a-watch-062213

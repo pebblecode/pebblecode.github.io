@@ -36,7 +36,7 @@ layout: blog
             <div class="blog-post-details">by <span class="post-author">{{ post.author }}</span> <span class="post-date">{{ post.date | date: '%B %d, %Y' }}</span></div>
             <div class="post-excerpt">
               <p>{{ post.excerpt | strip_html }}</p>
-              {% if post.thumbnail %} 
+              {% if post.thumbnail %}
                 <div class="post-thumbnail-wrapper">
                   <img class="post-thumbnail" src="{{ post.thumbnail }}" />
                 </div>
