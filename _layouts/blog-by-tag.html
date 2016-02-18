@@ -9,10 +9,6 @@ layout: blog-by-tag
 
     <section class="hero-container hero-container-blog {{ page.colour }}">
       <div class="hero-inner grid">
-      <h1> test </h1>
-           {% for post in site.posts %}
-                <h1>{{post.title}}</h1>
-              {% endfor %}
       </div>
     </section>
     <!-- /.hero-container -->
@@ -20,8 +16,36 @@ layout: blog-by-tag
     <section class="content-container grid">
 
 
+        <ul class="content col-1-1 post-list">
+            <h4>Posts tagged: {{ page.category }}</h4>
 
+            {% for post in site.posts %}
 
+              {% if post.categories contains page.category %}
+
+                <li class="post-item">
+                    <a href="{{ post.url }}"><h3 class="post-title">{{ post.title }}</h3></a>
+                    <div class="blog-post-details">by <span class="post-author">{{ post.author }}</span> <span class="post-date">{{ post.date | date: '%B %d, %Y' }}</span></div>
+                    <div class="post-excerpt">
+                      <p>{{ post.excerpt | strip_html }}</p>
+                      {% if post.thumbnail %}
+                        <div class="post-thumbnail-wrapper">
+                          <img class="post-thumbnail" src="{{ post.thumbnail }}" />
+                        </div>
+                      {% endif %}
+                      <a href="{{ post.url }}">Read Post</a>
+                    </div>
+
+                  {% for category in post.categories %}
+                    {{category}}
+                  {% endfor %}
+
+                </li>
+
+              {% endif %}
+
+            {% endfor %}
+        </ul>
     </section>
     <!-- /.content-container -->
 

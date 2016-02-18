@@ -2,7 +2,7 @@
 layout: post
 title: Wearables, DNA sequencing and big data
 author: George Ornbo
-tags: [Health]
+categories: [Health]
 ---
 
 Are we brave enough to imagine a self-learning medical research platform?

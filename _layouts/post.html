@@ -39,6 +39,18 @@ layout: post
     </section> -->
     <!-- /.related-post-container -->
 
+           {% for category in page.categories %}
+              {{category}}
+           {% endfor %}
+
+            {% for post in site.posts %}
+
+               <a href="{{ post.url }}"><h3 class="post-title">{{ post.title }}</h3></a>
+
+
+            {% endfor %}
+
+
     {% include footer.html %}
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
