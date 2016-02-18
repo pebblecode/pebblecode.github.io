@@ -24,16 +24,29 @@
                 <a href="{{ site.baseurl }}/health">
                   <img class="vert-content-img-health vert-home-bubble" data-sr="enter left move 300px, vF 0.2, wait 0.4s" src="{{ site.baseurl }}/img/verticals/vert-health-home.svg">
                 </a>
-                  <img class="vert-content-img-insurance" data-sr="enter left move 300px, vF 0.2, wait 0.2s" src="{{ site.baseurl }}/img/verticals/vert-insurance-home.svg">
+                <a href="{{ site.baseurl }}/insurance">
+                  <img class="vert-content-img-insurance vert-home-bubble" data-sr="enter left move 300px, vF 0.2, wait 0.2s" src="{{ site.baseurl }}/img/verticals/vert-insurance-home.svg">
+                </a>
                 </div>
             </div>
             <div class="col-1-2 project-item-text alignme" data-sr="enter right move 100px, vF 0.5">
               <h3 class="project-item-title">{{page.vert-section-title}}</h3>
-              <p>{{page.vert-text-health}} </p><a href="{{ site.baseurl }}/health" class="btn btn-light btn-block">Read More</a>
 
-              <p class="transport-text">{{page.vert-text-transport}}</p> <a href="{{ site.baseurl }}/transport" class="btn btn-light btn-block">Read More</a>
+              <p class="home-vert-text">{{page.vert-text-health}} </p>
+              <div class="home-vert-btn-wrap">
+                <a href="{{ site.baseurl }}/health" class="btn btn-light btn-block home-vert-btn health">Read More</a>
+              </div>
 
-              <p>{{page.vert-text-insurance}}</p>
+              <p class="home-vert-text">{{page.vert-text-transport}}</p>
+              <div class="home-vert-btn-wrap">
+                <a href="{{ site.baseurl }}/transport" class="btn btn-light btn-block home-vert-btn transport">Read More</a>
+              </div>
+
+              <p class="home-vert-text">{{page.vert-text-insurance}}</p>
+              <div class="home-vert-btn-wrap">
+                <a href="{{ site.baseurl }}/insurance" class="btn btn-light btn-block home-vert-btn insurance">Read More</a>
+              </div>
+
             </div>
           </div>
         </div>

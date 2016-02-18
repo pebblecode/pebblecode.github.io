@@ -177,6 +177,9 @@ h4.seminar-titlestack-sub {
 .seminar-speakers-container {
   &:after{
     z-index: -3;
+    transform: none;
+    -ms-transform: none;
+    -webkit-transform: none;
   }
     @media screen and ( min-width: $medium ) {
     &:before {

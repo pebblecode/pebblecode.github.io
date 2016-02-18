@@ -24,7 +24,7 @@ seminar-intro-paragraphs:
 ## Location and Time
 
 seminar-time: "8am - 9:30am"
-seminar-date: "Tuesday 25th February"
+seminar-date: "Thursday 25th February"
 seminar-rsvp-address: "events@pebblecode.com"
 seminar-location: "The Hospital Club<br />24 Endell St<br />London<br />WC2H 9HQ"
 seminar-location-shorthand: "The Hospital Club, London"
@@ -65,9 +65,62 @@ speakers:
    jobtitle: Head of Med Schools UK
    portrait: katie.jpg
    linkedin: https://uk.linkedin.com/in/katie-petty-saphon-74a31b23
-   twitter: 
+   twitter:
    bio:
     - "An inspirational strategic leader having a major impact on medical education in the UK, Katie has led Med Schools UK for over 12 years."
+ - name: "Katherine Benjamin"
+   id: katherine-benjamin
+   jobtitle: Digital  Services Manager at NHS England
+   portrait: katherine.jpg
+   linkedin: https://www.linkedin.com/in/mskatiebenjamin
+   twitter:
+   bio:
+    - "Katherine has been working for NHS England for 2 and a half years. She is involved in work related to the use of digital tools to empower patients to exercise greater control in their health and care journeys."
+ - name: "Lloyd Price"
+   id: lloyd-price
+   jobtitle: Chief Marketing Officer of Zesty
+   portrait: lloyd.jpg
+   linkedin: https://www.linkedin.com/in/lloydgprice
+   twitter:
+   bio:
+    - "Tech Entrepreneur & Corporate Executive with 17+ years experience; Lloyd co-founded Zesty in 2012, quickly turning it into one of the leading Digital Health brands in Europe."
+ - name: "Becky Slack"
+   id: becky-slack
+   jobtitle: Managing Director/ Founder of Slack Communications
+   portrait: becky.jpg
+   linkedin: https://www.linkedin.com/in/becky-slack-b88a952
+   twitter: https://twitter.com/Becky_Slack
+   bio:
+    - "With an 18-year career in media of all channels, Becky now runs slack communications alongside writing for The Guardian, The Independent, and New Statesman."
+ - name: "Dr. Lawrence Petalidis"
+   id: lawrence-petalidis
+   jobtitle: Head of Innovation and Impact, CW+ Cheslea and Westminster NHS Foundation Trust Health Charity
+   portrait: lawrence.jpg
+   linkedin: https://www.linkedin.com/in/lawrencepetalidis
+   twitter:
+   bio:
+    - "Following a Cambridge PhD in molecular neuro-oncology and brain tumour biomarker identification, Lawrence spent 8 years in Business Development, international technical project management and process digitalisation."
+    - "He has more recently worked with London academia, promoting science and technology enterprise, knowledge transfer, new product development, innovation and consulting services."
+    - "In his current role at CW+, Lawrence focuses on healthcare innovation, with an aim at improving Chelsea and Westminster Hospital care provision and patient experience."
+ - name: "Simon Chaplin-Rogers"
+   id: simon-cr
+   jobtitle: Principle - Marlfield House Dental Centre.
+   portrait: simon.jpg
+   linkedin:
+   twitter:
+   bio:
+    - "My first degree was in dentistry then returned back to medical school to qualify in medicine - I am currently the senior partner of a large general medical practice in Winchester and one of the directors of an NHS/Private general dental practice group."
+    - "My drive for some considerable period now has been to explore how to breakdown many of the barriers patients have to get through to access medical care both in the NHS and private sector, we need to provide real choice, thereby adding capacity in the 'system'."
+    - "I do feel perpetuating the idea of private versus NHS is not the way forward - we are developing a 'patient driven health service' - so provide excellent information and choice - it could be just what the doctor ordered!"
+ - name: "Michael Levens"
+   id: michael-levans
+   jobtitle: Found and Director of Active Health Tech
+   portrait: michael.jpg
+   linkedin: https://www.linkedin.com/in/michael-levens-57aa04b
+   twitter: https://twitter.com/michaellevens
+   bio:
+    - "Founder and Director of Active Health Tech, Michael Levens has 15+ years experience in creating and running large-scale global technology businesses."
+
 
 
 ## Google Maps URL

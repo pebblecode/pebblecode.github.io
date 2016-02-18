@@ -1,6 +1,6 @@
 {% include head.html %}
 
-  <body class="{{ page.layout }}">
+  <body class="{{ page.layout }} {{ page.extraclasses }}">
 
     {% include header.html %}
     {% capture nextColor %}next-color-{{ page.sections[0].color }}{% endcapture %}
@@ -24,7 +24,44 @@
               <h2 class="vert-sec-bubble-title">{{ sectionbubble.title }}</h2>
             </a>
           {% endfor %}
+
+
+          {% if page.insurance-sections %}
+            <div class="vert-insur-bubble-container">
+              {% include vert-insurance-svg.html %}
+            </div>
+          {% endif %}
+
+          <div class="vert-insur-list-container">
+            <!-- Insurance Bubbles -->
+            {% for insurancebubble in page.insurance-sections %}
+                <h2 data-bubble="{{insurancebubble.bubbleclass}}" class="vert-sec-bubble-title">{{ insurancebubble.title }}</h2>
+            {% endfor %}
+          </div>
+
         </div>
+          {% for insurpara in page.insurance-paragraphs %}
+
+            {% if insurpara.insurance-thoughts %}
+                <div class="vert-insur-thoughts-container grid">
+                  {% for insurthought in insurpara.insurance-thoughts %}
+                    <div class="vert-insur-thoughts-inner">
+                      <div class="vert-insur-thoughts-image-container">
+                        <img src= '../img/verticals/{{ insurthought.image }}' />
+                      </div>
+                      <h4 class="vert-sec-thoughts-title">
+                        {{ insurthought.text }}
+                      </h4>
+                    </div>
+                  {% endfor %}
+                </div>
+            {% else %}
+              <p class="hero-summary col-1-1">
+                {{ insurpara }}
+              </p>
+            {% endif %}
+
+          {% endfor %}
        </div>
     </section>
 
@@ -34,6 +71,8 @@
       {% assign nextSection = page.sections[nextIndex] %}
       {% include vert-section.html %}
     {% endfor %}
+
+
 
 
 
@@ -57,6 +96,13 @@
     <script type="text/javascript" src="{{ site.baseurl }}/js/vendor/jquery.lazyload.min.js"></script>
     <script type="text/javascript" src="{{ site.baseurl }}/js/vendor/scrollReveal.min.js"></script>
     <script type="text/javascript" src="{{ site.baseurl }}/js/main.js"></script>
+
+    {% for extrascript in page.extrascripts %}
+      <script type="text/javascript" src="{{ site.baseurl }}/js/{{extrascript.link}}">
+      </script>
+    {% endfor %}
+
+
     <script>
       jQuery(function ($) {
         $("img.lazy").lazyload({

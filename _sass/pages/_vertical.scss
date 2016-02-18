@@ -3,6 +3,11 @@
 //===============================================================================
 
 
+.hero-title {
+  .insurance & {
+  }
+}
+
 
 // Bubbles
 //===============================================================================
@@ -21,6 +26,10 @@
 
   @media screen and ( max-width: $medium ) {
     padding: 12px;
+  }
+
+  .insurance & {
+    padding: 0 30px;
   }
 }
 
@@ -72,7 +81,7 @@
     }
   }
 
-  &:last-child {
+  &:nth-child(3) {
     margin-left:  24px;
     @media screen and ( max-width: $medium ) {
       margin-left: 0;
@@ -107,6 +116,106 @@
 
 }
 
+// Insurance Bubbles
+//===============================================================================
+
+.vert-insur-list-container {
+  text-align: left;
+  width: 50%;
+  float: left;
+  margin-top: 50px;
+
+  @media screen and ( max-width: $medium ) {
+   width: 100%;
+   float: none;
+   h2 {
+    position: relative;
+    font-size: 18px;
+    width: 100%;
+    padding-right: 0;
+    margin-bottom: 8px;
+   }
+  }
+}
+
+.insurance .vert-sec-bubble-title {
+  &:before {
+    content: "•";
+    margin-right: 12px;
+    color: $orange;
+  }
+}
+
+.vert-insur-bubble-container {
+  float: right;
+  width: 50%;
+  position: relative;
+}
+
+.vert-insur-bubble {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+[id*='vert-insur-bbl-'] {
+    transform: scale(1);
+    transform-origin: 50% 50%;
+    transition: 0.2s;
+    cursor: pointer;
+  &:hover{
+    transform: scale(1.1);
+  }
+}
+
+.vert-insur-thoughts-container {
+  padding: 30px;
+  @media screen and ( max-width: $medium ) {
+   h2 {
+    position: relative;
+    font-size: 18px;
+    width: 100%;
+    padding-right: 0;
+    margin-bottom: 8px;
+   }
+  }
+}
+
+.vert-insur-thoughts-inner {
+  width: 50%;
+  float: left;
+  text-align: center;
+  padding: 10px;
+}
+
+.vert-insur-thoughts-image-container {
+  height: 250px;
+  width: 250px;
+  margin: auto;
+}
+
+.vert-sec-thoughts-title {
+  color: white;
+  text-shadow: 2px 2px 0 rgba(black, 0.2);
+  border-top: 4px solid rgba(black, 0.2);
+  span {
+    display: block;
+    font-weight: normal;
+    color: darken($blue, 20%);
+    text-shadow: none;
+  }
+}
+
+a.vert-insur-cta-link {
+  display: block;
+  color: #fff;
+  font-weight: bold;
+  &:hover {
+    color: #ddd;
+  }
+}
 
 // Paragraphs and Points
 //===============================================================================
@@ -321,7 +430,6 @@
      content: none;
     }
   }
-
   &.next-color-green:after {
       background-color: $green;
   }
@@ -410,7 +518,9 @@
   &:after {
     background: $blue;
   }
-
+  &.next-color-:after {
+      background-color: $pink;
+  }
   &.next-color-aqua:after {
     background: $aqua;
   }
@@ -537,7 +647,6 @@ h4.vert-section-breadcrumb {
       color: $pink;
     }
   }
-
 }
 
 // Case Study
