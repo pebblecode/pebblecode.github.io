@@ -171,7 +171,7 @@ a .post-title {
   transition: 0.2s;
   line-height: 1;
   max-width: 90%;
-  margin: 0 0 10px;
+  margin: 0 0 0px;
 
   @media screen and ( max-width: $medium ) {
     max-width: 100%;
@@ -239,6 +239,17 @@ a .post-title {
       -ms-transform: rotate(6deg);
       -webkit-transform: rotate(6deg);
     }
+
+  .post-item:nth-of-type(2n+0) &:before{
+      transform: rotate(-4deg);
+      -ms-transform: rotate(-4deg);
+      -webkit-transform: rotate(-4deg);
+  }
+  .post-item:nth-of-type(3n+0) &:before{
+      transform: rotate(1.3deg);
+      -ms-transform: rotate(1.3deg);
+      -webkit-transform: rotate(1.3deg);
+  }
 }
 
 .post-excerpt {
@@ -249,6 +260,22 @@ a .post-title {
     width: 69%;
     vertical-align: top;
   }
+}
+
+.post-item .readmore-btn {
+  background: $pink;
+  color: white;
+  display:table;
+  padding:6px 14px;
+  color:white;
+  border-radius: 4px;
+  font-weight: bold;
+  box-shadow: 2px 4px 0 rgba(0,0,0,0.3);
+
+  &:hover {
+    background: darken($pink, 10%);
+  }
+
 }
 
 //===============================================================================

@@ -33,15 +33,15 @@ layout: blog
         {% for post in paginator.posts %}
           <li class="post-item">
             <a href="{{ post.url }}"><h3 class="post-title">{{ post.title }}</h3></a>
-            <div class="blog-post-details">by <span class="post-author">{{ post.author }}</span> <span class="post-date">{{ post.date | date: '%B %d, %Y' }}</span></div>
+            <div class="blog-post-details">by <span class="post-author">{{ post.author }}</span> <span class="post-date">on {{ post.date | date: '%B %d, %Y' }}</span></div>
             <div class="post-excerpt">
               <p>{{ post.excerpt | strip_html }}</p>
-              {% if post.thumbnail %} 
+              {% if post.thumbnail %}
                 <div class="post-thumbnail-wrapper">
                   <img class="post-thumbnail" src="{{ post.thumbnail }}" />
                 </div>
               {% endif %}
-              <a href="{{ post.url }}">Read Post</a>
+              <a class="readmore-btn" href="{{ post.url }}">Read Post</a>
             </div>
           </li>
         {% endfor %}
