@@ -68,14 +68,6 @@ speakers:
    twitter:
    bio:
     - "An inspirational strategic leader having a major impact on medical education in the UK, Katie has led Med Schools UK for over 12 years."
- - name: "Katherine Benjamin"
-   id: katherine-benjamin
-   jobtitle: Digital  Services Manager at NHS England
-   portrait: katherine.jpg
-   linkedin: https://www.linkedin.com/in/mskatiebenjamin
-   twitter:
-   bio:
-    - "Katherine has been working for NHS England for 2 and a half years. She is involved in work related to the use of digital tools to empower patients to exercise greater control in their health and care journeys."
  - name: "Lloyd Price"
    id: lloyd-price
    jobtitle: Chief Marketing Officer of Zesty
@@ -120,6 +112,56 @@ speakers:
    twitter: https://twitter.com/michaellevens
    bio:
     - "Founder and Director of Active Health Tech, Michael Levens has 15+ years experience in creating and running large-scale global technology businesses."
+ - name: Drew Davy
+   id:
+   jobtitle: Enterprising Health Partnership Executive at CW+ (the Chelsea and Westminster Hospital FT Health Charity)
+   portrait: drew-davy.jpg
+   linkedin:
+   twitter:
+   bio:
+    - ""
+ - name: Luiz Gustavo Martins
+   id:
+   jobtitle: Developer Advocate at Google
+   portrait: luiz.jpg
+   linkedin:
+   twitter:
+   bio:
+    - ""
+ - name: Ian Abbs
+   id:
+   jobtitle: Medical Director Guy's and St. Thomas' NHS Foundation Trust
+   portrait: ian-abbs.jpg
+   linkedin:
+   twitter:
+   bio:
+    - ""
+ - name: Jelena Aleksic
+   id:
+   jobtitle: Founder & CEO at GeneAdviser
+   portrait: jelena-aleksic.jpg
+   linkedin:
+   twitter:
+   bio:
+    - ""
+ - name: Simon Dixon
+   id:
+   jobtitle: Deputy Director of Finance at Kings College Hospital NHS FT
+   portrait: simon-dixon.jpg
+   linkedin:
+   twitter:
+   bio:
+    - ""
+ - name: Kerry Bloxham
+   id:
+   jobtitle: Head of Information Innovation at Cancer Research UK
+   portrait: kerry-bloxham.jpg
+   linkedin:
+   twitter:
+   bio:
+    - ""
+
+
 
 
 
