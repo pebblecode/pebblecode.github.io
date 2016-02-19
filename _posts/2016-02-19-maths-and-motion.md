@@ -5,6 +5,8 @@ author: Niall Henn
 categories: [tutorial]
 ---
 
+![first dot](/img/blog/maths-and-motion/nh-maths-01.jpg)
+
 Hi there,
 
 This is a tutorial aimed at introducing paper.js and basic vector maths. We’re going to go right the way through from making points to making some interactive bits move.
@@ -26,45 +28,45 @@ The important thing to note is that the script tag that calls your paperscript f
 
 So our index.html file:
 
-  <!DOCTYPE html>
-  <html>
-    <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!DOCTYPE html>
+    <html>
+      <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-    <link rel="stylesheet" href="/css/style.css">
-    <script type="text/javascript" src="/js/vendor/paper-full.js"></script>
-    <script type="text/paperscript" canvas="mycanvas" src="myscript.js"></script>
+      <link rel="stylesheet" href="/css/style.css">
+      <script type="text/javascript" src="/js/vendor/paper-full.js"></script>
+      <script type="text/paperscript" canvas="mycanvas" src="myscript.js"></script>
 
-    </head>
-  <body>
-  <canvas id="mycanvas" class="fullwidthbgcanvas" resize></canvas>
-  </body>
-  </html>
+      </head>
+    <body>
+    <canvas id="mycanvas" class="fullwidthbgcanvas" resize></canvas>
+    </body>
+    </html>
 
 
 Our CSS file doesn’t need much in it except canvas and window sizing to make it 100%, and a little background colour.
 
 In our style.css
 
-  html,
-  body {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-  }
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+    }
 
-  .fullwidthbgcanvas {
-    width: 100%;
-    height: 100%;
-    background: #113;
-    position: fixed;
-    z-index: -1;
-    margin: 0;
-    padding: 0;
-    top: 0;
-    left: 0;
-  }`
+    .fullwidthbgcanvas {
+      width: 100%;
+      height: 100%;
+      background: #113;
+      position: fixed;
+      z-index: -1;
+      margin: 0;
+      padding: 0;
+      top: 0;
+      left: 0;
+    }
 
 Now we’re ready to start writing paperJs code!
 
@@ -81,7 +83,7 @@ We’re initialising a new Circle (note the capitalisation) passing it two argum
 
 If we go to our file in the browser, we should see just that.
 
-![first dot](/img/firstdot.png)
+![first dot](/img/blog/maths-and-motion/nh-maths-02.jpg)
 
 It’s pretty basic at the moment, but it’s a fundamental part of what we’re doing so it’s great to get an initial handle on it.
 
@@ -92,24 +94,24 @@ Next we’re going to look at making a few more circles, in order to make a tria
 For this quick walkthrough, we’re going to do it in a very scrappy way and duplicate the code above three times, changing the position of the point each time.
 We’re going to initialise a variable for the centre point, then create 3 points that space out from there.
 
-  var c = view.center;
+      var c = view.center;
 
-  var p1 = new Point(c.x + 100, c.y+100);
-  var myCircle = new Path.Circle(p1, 10);
-  myCircle.fillColor = 'white';
+      var p1 = new Point(c.x + 100, c.y+100);
+      var myCircle = new Path.Circle(p1, 10);
+      myCircle.fillColor = 'white';
 
-  var p2 = new Point(c.x - 100, c.y+100);
-  var myCircle = new Path.Circle(p2, 10);
-  myCircle.fillColor = 'white';
+      var p2 = new Point(c.x - 100, c.y+100);
+      var myCircle = new Path.Circle(p2, 10);
+      myCircle.fillColor = 'white';
 
-  var p3 = new Point(c.x, c.y-100);
-  var myCircle = new Path.Circle(p3, 10);
-  myCircle.fillColor = 'white';
+      var p3 = new Point(c.x, c.y-100);
+      var myCircle = new Path.Circle(p3, 10);
+      myCircle.fillColor = 'white';
 
 You’ll see we get a triangle of dots.
 Lovely!
 
-![three dots](/img/threedots.png)
+![first dot](/img/blog/maths-and-motion/nh-maths-03.jpg)
 
 
 4
@@ -122,42 +124,42 @@ You’ll notice that rather than calling `new Circle`, we’re now calling `new 
 
 We’re also setting up an array of points, which we then pass to the Path initialisation function instead.
 
-  var c = view.center;
-  var Radius = 50;
+      var c = view.center;
+      var Radius = 50;
 
-  var points = [
-    new Point(c.x + Radius, c.y+Radius),
-    new Point(c.x - Radius, c.y+Radius),
-    new Point(c.x, c.y-Radius)
-    ];
+      var points = [
+        new Point(c.x + Radius, c.y+Radius),
+        new Point(c.x - Radius, c.y+Radius),
+        new Point(c.x, c.y-Radius)
+        ];
 
-  var path = new Path(points);
-      path.fillColor = 'white';
+      var path = new Path(points);
+          path.fillColor = 'white';
 
-![filled triangle](/img/threedots.png)
+![first dot](/img/blog/maths-and-motion/nh-maths-04.jpg)
 
 So now we can wrap that code in a function instead, meaning we can create the same triangle wherever we want, as we parse it the centre point when we create it.
 
-  function createTriangle(triangleCenter){
-      var c = triangleCenter;
-      var Radius = 50;
+      function createTriangle(triangleCenter){
+          var c = triangleCenter;
+          var Radius = 50;
 
-    var points = [
-      new Point(c.x + Radius, c.y+Radius),
-      new Point(c.x - Radius, c.y+Radius),
-      new Point(c.x, c.y-Radius)
-      ];
+        var points = [
+          new Point(c.x + Radius, c.y+Radius),
+          new Point(c.x - Radius, c.y+Radius),
+          new Point(c.x, c.y-Radius)
+          ];
 
-    var path = new Path(points);
-      path.fillColor = 'white';
-      // path.fillColor = Color.random();
-  }
+        var path = new Path(points);
+          path.fillColor = 'white';
+          // path.fillColor = Color.random();
+      }
 
-  createTriangle(view.center);
+      createTriangle(view.center);
 
-  function onMouseMove(event) {
-    createTriangle(event.point);
-  }
+      function onMouseMove(event) {
+        createTriangle(event.point);
+      }
 
 You’ll see that we also added paperJs’s onMouseMove event to draw the triangle wherever we wanted. It’s pretty sweet, huh?
 
@@ -172,53 +174,53 @@ So let’s add a bit of order to proceedings.
 We’re going to add a new ability to our create Triangle function, so when we create it change the radius of the triangle.
 So let’s add radius as an argument to the createTriangle function.
 
-  function createTriangle(_triangleCenter, _radius){
-    var c = _triangleCenter;
-    var Radius = _radius;
+    function createTriangle(_triangleCenter, _radius){
+      var c = _triangleCenter;
+      var Radius = _radius;
 
-    var points = [
-      new Point(c.x + Radius, c.y+Radius),
-      new Point(c.x - Radius, c.y+Radius),
-      new Point(c.x, c.y-Radius)
-      ];
+      var points = [
+        new Point(c.x + Radius, c.y+Radius),
+        new Point(c.x - Radius, c.y+Radius),
+        new Point(c.x, c.y-Radius)
+        ];
 
-    var path = new Path(points);
-    var triangleColor = Color.random();
-    path.fillColor = triangleColor;
-  }
+      var path = new Path(points);
+      var triangleColor = Color.random();
+      path.fillColor = triangleColor;
+    }
 
 And instead of drawing one triangle in the middle.
 We’re going to start at the left edge, and draw a triangle at a specified interval until we reach the right edge.
 
-  var triDistance = 50;
+    var triDistance = 50;
 
-  for(var i = 0; i < view.size.width; i+= triDistance) {
-    for(var j = 0; j < view.size.height; j+= triDistance) {
+    for(var i = 0; i < view.size.width; i+= triDistance) {
+      for(var j = 0; j < view.size.height; j+= triDistance) {
 
-      var Radius = triDistance/2;
-      var triangleCenter = new Point(i,j);
-      createTriangle(triangleCenter, Radius);
+        var Radius = triDistance/2;
+        var triangleCenter = new Point(i,j);
+        createTriangle(triangleCenter, Radius);
 
-      var nextTriangleCenter = new Point(i+Radius,j);
-      createTriangle(nextTriangleCenter, -Radius);
+        var nextTriangleCenter = new Point(i+Radius,j);
+        createTriangle(nextTriangleCenter, -Radius);
+      }
     }
-  }
 
 
 And instead of drawing one triangle in the middle.
 We’re going to start at the left edge, and draw a triangle at a specified interval until we reach the right edge.
 
-  var triDistance = 50;
+    var triDistance = 50;
 
-  for(var i = 0; i < view.size.width; i+= triDistance) {
-    for(var j = 0; j < view.size.height; j+= triDistance) {
+    for(var i = 0; i < view.size.width; i+= triDistance) {
+      for(var j = 0; j < view.size.height; j+= triDistance) {
 
-      var Radius = triDistance/2;
-      var triangleCenter = new Point(i,j);
-      createTriangle(triangleCenter, Radius);
+        var Radius = triDistance/2;
+        var triangleCenter = new Point(i,j);
+        createTriangle(triangleCenter, Radius);
 
-      var nextTriangleCenter = new Point(i+Radius,j);
-      createTriangle(nextTriangleCenter, -Radius);
+        var nextTriangleCenter = new Point(i+Radius,j);
+        createTriangle(nextTriangleCenter, -Radius);
+      }
     }
-  }
 
