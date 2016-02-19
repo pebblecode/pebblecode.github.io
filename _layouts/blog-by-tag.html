@@ -9,6 +9,12 @@ layout: blog-by-tag
 
     <section class="hero-container hero-container-blog {{ page.colour }}">
       <div class="hero-inner grid">
+        Blog Posts tagged with:
+        <h1 class="hero-title">{{ page.category }}</h1>
+        View other Tags:
+        <a href="/blog/tag/health/">Health</a>
+        <a href="/blog/tag/design/">Design</a>
+        <a href="/blog/tag/agile/">Agile</a>
       </div>
     </section>
     <!-- /.hero-container -->
@@ -17,7 +23,7 @@ layout: blog-by-tag
 
 
         <ul class="content col-1-1 post-list">
-            <h4>Posts tagged: {{ page.category }}</h4>
+
 
             {% for post in site.posts %}
 

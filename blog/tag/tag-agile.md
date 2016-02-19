@@ -1,7 +1,7 @@
 ---
 layout: blog-by-tag
 title: blog-health
-permalink: /healthposts/
+permalink: blog/tag/agile/
 colour: aqua
-category: design
+category: agile
 ---
