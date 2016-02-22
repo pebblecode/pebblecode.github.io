@@ -3,6 +3,7 @@ layout: post
 title:  How to change the world conference
 author: John Mildinhall
 categories: conferences
+thumbnail: /img/blog/superconductivity.png
 ---
 
 This is a mind-boggling sentence that I never thought I’d write: European Robins have a quantum computer in their eyes. That was just one little fact from an almost overwhelming deluge of fascinating and thought-provoking talks at the How to Change the World Conference. 

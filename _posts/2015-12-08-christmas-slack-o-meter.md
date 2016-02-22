@@ -3,6 +3,7 @@ layout: post
 title:  Christmas Slack Hack
 author: Jonathan King
 categories: [hacks,javascript,node,slack]
+thumbnail: https://pbs.twimg.com/media/CVF1N6pWwAAWdue.jpg:large
 ---
 On December 3rd we held our last Hackathon of 2015 here at Pebble Towers. We hold these fantastic events every quarter, and believe they are a great way to brush up on skills, or learn new ones entirely. This hacakthon was no exception, and we had some really great projects come out of it. I'm going to focus on a simple hack we made using Slack's Outgoing Webhooks and a Hapi API, but we hope to share some of the larger ones with you very soon, too!
 

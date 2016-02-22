@@ -4,6 +4,7 @@ title:  Productivity Hacking for Developers
 author: Peter O'Shaughnessy
 categories: productivity
 featured: true
+thumbnail: /img/posts/2015-12-30-productivity-hacking/habit-loop1.png
 ---
 
 **Gordan was about five months in, working as a developer at a startup, when he started to hit the wall.**

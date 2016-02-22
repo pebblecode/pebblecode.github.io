@@ -3,6 +3,7 @@ layout: post
 title:  A Christmas Carol
 author: C.Dickens
 categories: [hacks,javascript,node,photography]
+thumbnail: /img/blog/xmas-face-diag.png
 ---
 Photography was dead to begin with. There was no doubt whatever about that. At least according to Scrooge. He rejected camera phones, and invitations for Christmas selfies from his jolly nephews & nieces. He yelled at his overworked employees for sharing Instagram photos, and rejected apps of any kind. 
 
