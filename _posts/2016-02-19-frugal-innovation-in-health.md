@@ -6,7 +6,7 @@ categories: [Health]
 thumbnail: /img/posts/2016-02-19-frugal-innovation-in-health/robohand.jpg
 ---
 
-On 18th February I attended the [Global Health Forum][17] session at Imperial College, London on Frugal Innovation. Here are my notes on a fascinating afternoon. 
+On 18th February 2016 I attended the [Global Health Forum][17] session at Imperial College, London on Frugal Innovation. Here are my notes on a fascinating afternoon. 
 
 ## Dr Yasser Bhatti
 
@@ -93,7 +93,7 @@ Matt's research identified the following products were identified as Frugal Inno
 
 Matthew asked the question is it a level playing field? There is lots of innovation but very little adoption. To what extent are the barriers exacerbated by moving from low to high income? He notes the term reverse innovation is problematic and he sees it as a development issue. He notes it is hard to identify innovations that have been developed by people in low income countries. 
 
-Matthew's tried to engage with senior clinicians around adopting the [Brazilian Family Strategy][13]. In the NHS there are a plethora of different HCPs delivering different parts. He identified a wide array of people all operating in a fragmented way. Brazil organises differently. Small teams of GP, Nurse and community health workers live where they work. Community health workers visit every month and will deliver Primary Care Interventions. This is a very efficient model and as they tessellate it scales well.
+Matthew has engaged with senior clinicians around adopting the [Brazilian Family Strategy][13]. In the NHS there are a plethora of different HCPs delivering different parts. He identified a wide array of people all operating in a fragmented way. Brazil organises differently. Small teams of GP, Nurse and community health workers live where they work. Community health workers visit every month and will deliver Primary Care Interventions. This is a very efficient model and as they tessellate it scales well.
 
 Matthew presented some reactions to the proposal.
 
@@ -117,11 +117,11 @@ He found that on strength of evidence they were not influenced. For referral to 
 
 ## Ms Maja Kecman
 
-Maja is a designer from the Helix Centre, the only design studio based in a hospital. They are outward focused and take a collaborative approach to projects. They focus on frugal innovations and have unprecedented access to the healthcare environment. 
+Maja is a designer from the [Helix Centre][18], the only design studio based in a hospital. They are outward focused and take a collaborative approach to projects. They focus on frugal innovations and have unprecedented access to the healthcare environment. 
 
 ### What is design?
 
-Design is the process and thinking. It is the rapid iteration of different solutions. The example of Tongue sucker is shown a product developed by the Helix Centre.It is a way of clearing the airway of an unconscious person. A series of prototyping are shown and Maya talks of lots of thinking and iterations go into the final product. 
+Design is the process and thinking. It is the rapid iteration of different solutions. The example of TongueSucker is shown as an example of rapid prototyping and testing. It is a way of clearing the airway of an unconscious person. A series of prototyping are shown and Maya talks of lots of thinking and iterations go into the final product. 
 
 Maja gives another example of the birthday card that you get from the NHS on your 60th Birthday. This tells you that you are at increased risk of bowel cancer and invites you to poo on a stick. Unsurprisingly the uptake is very low. The Helix Centre have redesigned this card and message and are taking it forward to see if uptake can be improved through simple design and copy changes. 
 
@@ -130,7 +130,7 @@ Maja gives another example of non-attendance of appointment through [differently
 ![Clinical Appointments Missed](/img/posts/2016-02-19-frugal-innovation-in-health/results.jpg)
 
 
-Maja showed [Floot][16], an app they working on in relation to Asthma. The app encourages patients to blow into a peak flow whistle. In an example of how not to trust accepted opinion doctors held that kids wouldn't blow into a peak flow whistle but the app shows they will if incentivised in the right way. 
+Maja showed [Floot][16], an app they working on in relation to Asthma. The app encourages patients to blow into a peak flow whistle. Doctors held that kids wouldn't blow into a peak flow whistle but the app shows they will if incentivised in the right way. 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/hmqaW4VSSHI?start=662" frameborder="0" allowfullscreen></iframe>
 
@@ -157,3 +157,4 @@ In attending the event I learned a huge amount. It was great to understand some 
 [15]: https://www.gov.uk/government/publications/reducing-missed-hospital-appointments-using-text-messages/a-zero-cost-way-to-reduce-missed-hospital-appointments
 [16]: http://www.flootapp.com/
 [17]: http://www.imperial.ac.uk/global-health-innovation/news-and-events/monthly-global-health-forum/
+[18]: http://www.helixcentre.com/
