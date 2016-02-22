@@ -127,7 +127,12 @@
   margin-bottom: 0;
 }
 
+.content li.post-item {
+    padding-top: 0;
+}
+
 .post-item {
+  min-height: 325px;
   margin: $gutter 0;
   padding: 25px 0 55px;
   position: relative;
@@ -140,7 +145,7 @@
   &:after {
     content: "";
     height: 6px;
-    width: 200px;
+    width: 50%;
     background-color: lighten($ink, 48);
     position: absolute;
     bottom: 0;
@@ -220,49 +225,48 @@ a .post-title {
 
 
 .post-thumbnail-wrapper {
+  background-image: url('../img/blog/default-thumb.png');
+  background-size: cover;
+  background-position: center;
   display: inline-block;
-  max-width: 300px;
-  max-height: 100%;
-  float: right;
-  position: relative;
+  width: 250px;
+  height: 250px;
+  border: 2px solid lighten($pink, 30%);
+  position: absolute;
+  left: 0;
+  top: 0;
 
-  &:before {
-      content: "";
-      background: rgba(black, 0.2);
-      width: 100%;
-      height: 100%;
-      top: 0;
-      position: absolute;
-      z-index: -1;
-
-      transform: rotate(4deg);
-      -ms-transform: rotate(4deg);
-      -webkit-transform: rotate(4deg);
-    }
-
-  .post-item:nth-of-type(2n+0) &:before{
-    transform: rotate(-4deg);
-    -ms-transform: rotate(-4deg);
-    -webkit-transform: rotate(-4deg);
+  @media screen and (max-width: $medium) {
+    width: 150px;
+    height: 150px;
   }
-  .post-item:nth-of-type(3n+0) &:before{
-    transform: rotate(1.3deg);
-    -ms-transform: rotate(1.3deg);
-    -webkit-transform: rotate(1.3deg);
-  }
-  img {
-    border: 2px solid #aaa;
+
+  @media screen and (max-width: $small) {
+    width: 100px;
+    height: 100px;
+    float: left;
+    position: relative;
+    margin-right: 12px;
+    margin-bottom: 12px;
   }
 
 }
 
 .post-excerpt {
-  font-size: 16px;
+  // font-size: 10px;
 
   p {
-    display: inline-block;
-    width: 69%;
-    vertical-align: top;
+      // font-size: 12px;
+  }
+}
+
+.post-list-content {
+  padding-left: 250px + 24px;
+  @media screen and (max-width: $medium) {
+    padding-left: 150px + 12px;
+  }
+  @media screen and (max-width: $small) {
+    padding-left: 0px;
   }
 }
 
@@ -275,6 +279,11 @@ a .post-title {
   border-radius: 4px;
   font-weight: bold;
   box-shadow: 2px 4px 0 rgba(0,0,0,0.3);
+
+  @media screen and (max-width: $small) {
+    // top: 12px;
+    @include clearfix;
+  }
 
   &:hover {
     background: darken($pink, 10%);

@@ -32,17 +32,21 @@ layout: blog
       <ul class="content col-1-1 post-list">
         {% for post in paginator.posts %}
           <li class="post-item">
-            <a href="{{ post.url }}"><h3 class="post-title">{{ post.title }}</h3></a>
-            <div class="blog-post-details">by <span class="post-author">{{ post.author }}</span> <span class="post-date">on {{ post.date | date: '%B %d, %Y' }}</span></div>
-            <div class="post-excerpt">
-              <p>{{ post.excerpt | strip_html }}</p>
+              <div class="post-list-content">
+                <a href="{{ post.url }}"><h3 class="post-title">{{ post.title }}</h3></a>
+                <div class="blog-post-details">by <span class="post-author">{{ post.author }}</span> <span class="post-date">on {{ post.date | date: '%B %d, %Y' }}</span></div>
+
               {% if post.thumbnail %}
-                <div class="post-thumbnail-wrapper">
-                  <img class="post-thumbnail" src="{{ post.thumbnail }}" />
-                </div>
+                <div style="background-image: url('{{post.thumbnail}}')" class="post-thumbnail-wrapper"></div>
+              {% else %}
+                <div class="post-thumbnail-wrapper"></div>
               {% endif %}
-              <a class="readmore-btn" href="{{ post.url }}">Read Post</a>
-            </div>
+
+                <div class="post-excerpt">
+                  <p>{{ post.excerpt | strip_html }}</p>
+                </div>
+               <a class="readmore-btn" href="{{ post.url }}">Read Post</a>
+              </div>
           </li>
         {% endfor %}
       </ul>
