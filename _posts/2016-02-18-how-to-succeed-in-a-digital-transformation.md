@@ -3,6 +3,7 @@ layout: post
 title: How to Succeed in a Digital Transformation
 author: Toby Hunt
 categories: [digital transformation, innovation, lean, agile]
+thumbnail: /img/blog/digital-best-practice.png
 ---
 
 If your company was established before the digital revolution - or hasn’t yet embraced it fully - transforming into a digital first company can be hugely daunting. We have all heard tales of industry-leading companies failing to make the transition and [being disrupted](https://www.linkedin.com/pulse/20130227142546-2293140-digital-darwinism-what-killed-borders-blockbuster-and-polaroid-and-how-not-to-end-up-like-them) by young digital upstarts. However, it most definitely is possible for companies to make this journey successfully - and here at [pebble {code}](http://pebblecode.com) we have helped many to do so.

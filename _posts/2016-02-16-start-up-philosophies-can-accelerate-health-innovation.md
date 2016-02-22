@@ -3,6 +3,7 @@ layout: post
 title: Start-up philosophies can accelerate health innovation
 author: George Ornbo
 categories: [Health]
+thumbnail: /img/blog/plato.jpg
 ---
 
 By learning from technology start-ups Health Practitioners can accelerate Digital Transformation.

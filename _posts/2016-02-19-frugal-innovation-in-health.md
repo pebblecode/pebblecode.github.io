@@ -3,6 +3,7 @@ layout: post
 title: Frugal Innovation in Health
 author: George Ornbo
 categories: [Health]
+thumbnail: /img/posts/2016-02-19-frugal-innovation-in-health/robohand.jpg
 ---
 
 On 18th February I attended the [Global Health Forum][17] session at Imperial College, London on Frugal Innovation. Here are my notes on a fascinating afternoon. 
