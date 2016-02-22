@@ -3,6 +3,7 @@ layout: post
 title:  Web Bluetooth - Controlling the Real World from your Browser
 author: Peter O'Shaughnessy
 categories: [bluetooth]
+thumbnail: /img/posts/2016-02-09-web-bluetooth-controlling-real-world/parrot-mini-drone.jpg
 ---
 
 *Last week I gave a presentation at [Front Endgineers](http://www.meetup.com/Front-Endgineers-London/events/228029543/)
