@@ -138,7 +138,7 @@ We’re also setting up an array of points, which we then pass to the Path initi
 
 ![first dot](/img/blog/maths-and-motion/nh-maths-04.jpg)
 
-So now we can wrap that code in a function instead, meaning we can create the same triangle wherever we want, as we parse it the centre point when we create it.
+So now we can wrap that code in a function instead, meaning we can create the same triangle wherever we want, as we pass it the centre point when we create it.
 
       function createTriangle(triangleCenter){
           var c = triangleCenter;
@@ -202,6 +202,7 @@ Note, that we're using a variable for the distance of the triangles, and the rad
         createTriangle(triangleCenter, Radius);
     }
 
+![first dot](/img/blog/maths-and-motion/nh-maths-09.jpg)
 
 Now we're going to do the same loop from top to bottom.
 
@@ -216,6 +217,8 @@ Now we're going to do the same loop from top to bottom.
       }
     }
 
+![first dot](/img/blog/maths-and-motion/nh-maths-10.jpg)
+
 Loooaaaddsss of triangles!
 
 
@@ -223,6 +226,8 @@ Loooaaaddsss of triangles!
 
 But one of the great things about triangles in that they tessalate really well.
 So let's look at fitting new triangles into the gaps left there.
+
+A nice accident of the way that we created the triangles is that if we invert the radius, we invert the triangle, so for the second one let's do that and place it half the distance across (which we already have in the form of the radius variable).
 
     var triDistance = 50;
 
@@ -235,3 +240,163 @@ So let's look at fitting new triangles into the gaps left there.
         createTriangle(nextTriangleCenter, -Radius);
     }
 
+Boom! Doesn't that look lovely!
+
+![first dot](/img/blog/maths-and-motion/nh-maths-11.jpg)
+
+##7
+
+It does look lovely, but some boring people might say it's a little too lurid in the colour scheme.
+They'd be wrong of course, but let's humour them and limit the colours.
+
+We're going to make an array of colours and access a random value from it when we create the triangles.
+
+Let's change our createTriangle function to be something like the following.
+The triangleColor variable is the one we've changed.
+
+    var colours = ['#363938', '#386567', '#5C4134', '#C4A778', '#CE9B59'];
+
+    function createTriangle(_triangleCenter, _radius){
+      var c = _triangleCenter;
+      var Radius = _radius;
+
+      var points = [
+        new Point(c.x + Radius, c.y+Radius),
+        new Point(c.x - Radius, c.y+Radius),
+        new Point(c.x, c.y-Radius)
+        ];
+
+      var path = new Path(points);
+      var triangleColor = colours[Math.floor(Math.random()*colours.length)];
+      path.fillColor = triangleColor;
+    }
+
+
+![first dot](/img/blog/maths-and-motion/nh-maths-06.jpg)
+
+
+##8
+
+So far, so static..
+So let's try and add some movement to it.
+
+One of our first issues is that we have no way of addressing the triangles individually.
+We're pushing a triangle to the canvas, then overwriting it each time, so let's make an array of triangles and push to that instead.
+
+First we're going to amend our createTriangle function so it adds our new triangle to an array rather than just to the canvas. We're going to pass the name of the array as an argument into the function.
+
+
+    var colours = ['#363938', '#386567', '#5C4134', '#C4A778', '#CE9B59'];
+
+    function createTriangle(_triangleArray, _triangleCenter, _radius){
+      var c = _triangleCenter;
+      var Radius = _radius;
+
+      var points = [
+        new Point(c.x + Radius, c.y+Radius),
+        new Point(c.x - Radius, c.y+Radius),
+        new Point(c.x, c.y-Radius)
+        ];
+
+      var path = new Path(points);
+      var triangleColor = colours[Math.floor(Math.random()*colours.length)];
+      path.fillColor = triangleColor;
+
+      _triangleArray.push(path);
+    }
+
+
+So we first create an empty array named triArray, and then when we create our triangles, we pass the name of the array to it like so.
+
+    var triArray = [];
+    var triDistance = 50;
+
+    for(var i = 0; i < view.size.width; i+= triDistance) {
+        var Radius = triDistance/2;
+        var triangleCenter = new Point(i,j);
+        createTriangle(triArray,triangleCenter, Radius);
+
+        var nextTriangleCenter = new Point(i+Radius,j);
+        createTriangle(triArray, nextTriangleCenter, -Radius);
+    }
+
+
+But right now, this just looks the same as before.
+So as a great way of illustrating it, let's take a look at paperJS's onFrame function, which runs the code inside it 30 times a second - this is how movement happens in paperJS.
+
+We're going to use a function of paperJS where we can access the fill colour of our shape, and increase the hue of each individual triangle every frame.
+
+    function onFrame(event) {
+       for(var i = 0; i < triArray.length; i++) {
+            triArray[i].fillColor.hue +=5;
+       }
+    }
+
+
+Wooo... Constantly Changing Colours!
+
+![first dot](/img/blog/maths-and-motion/nh-maths-12.jpg)
+
+
+We can change that to a random colour to get some similar eye burning results.
+
+    function onFrame(event) {
+       for(var i = 0; i < triArray.length; i++) {
+            var triangleColor = Color.random();
+            triArray[i].fillColor = triangleColor;
+        }
+    }
+
+or let's slow the framerate down slightly. Note, there's no way to do this natively in paperJS.
+We have to write our own version by making a count variable that we increment each frame.
+When it gets to 20, we change the colour of the triangles.
+
+    var count = 0;
+
+    function onFrame(event) {
+      count++;
+
+      if (count >= 20){
+          count = 0;
+          for(var i = 0; i < triArray.length; i++) {
+            var triangleColor = Color.random();
+            triArray[i].fillColor = triangleColor;
+          }
+
+      }
+
+That's a lot nicer! Your eyes are very grateful!
+
+
+##9
+
+Colours are nice and all, but we can do a lot more with our triangles!
+
+Let's try something different and vary the size.
+We're going to use a sine function based on the seconds elapsed since the animation.
+Note, we no longer the the framerate moderation as the sine is naturally a lot smoother.
+
+
+    function onFrame(event) {
+       for(var i = 0; i < triArray.length; i++) {
+          var sinus = Math.sin(event.time * 2 + (i*400));
+          triArray[i].scaling = sinus;
+        }
+    }
+
+
+![first dot](/img/blog/maths-and-motion/nh-maths-07.jpg)
+
+
+Pretty lovely huh?
+
+That's about it for this tutorial.
+We made some awesome triangles, then we made them move in some lovely ways.
+
+Tune in next time when we'll look at adding some interaction and a few other techniques for movement.
+Should be a blast.
+
+If you try this tutorial, we'd really love to hear how you got on and any thoughts you might have.
+Let us know on the Twitter!
+
+Niall
