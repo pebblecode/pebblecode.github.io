@@ -18,7 +18,7 @@ If you just want the code, then feel free to pull down the repo and play around 
 
 Otherwise, sit comfortably and I’ll talk you through the process from start to finish. Thanks for joining us!
 
-1
+##1
 
 First step is to set up your document. I’m going to presume you know a little about HTML already, and the below all makes sense to you.
 
@@ -70,7 +70,7 @@ In our style.css
 
 Now we’re ready to start writing paperJs code!
 
-2
+##2
 
 In our myscript.js file.
 
@@ -87,7 +87,7 @@ If we go to our file in the browser, we should see just that.
 
 It’s pretty basic at the moment, but it’s a fundamental part of what we’re doing so it’s great to get an initial handle on it.
 
-3
+##3
 
 Next we’re going to look at making a few more circles, in order to make a triangle.
 
@@ -114,7 +114,7 @@ Lovely!
 ![first dot](/img/blog/maths-and-motion/nh-maths-03.jpg)
 
 
-4
+##4
 
 For our next step, we’re going to upgrade that triangle of circles into an actual triangle, and neaten up some of the code in the process.
 
@@ -168,7 +168,7 @@ And if you uncomment the line that mentions `Color.random()` you’ll see one of
 Lovely stuff.
 
 
-5
+##5
 
 So let’s add a bit of order to proceedings.
 We’re going to add a new ability to our create Triangle function, so when we create it change the radius of the triangle.
@@ -192,23 +192,18 @@ So let’s add radius as an argument to the createTriangle function.
 And instead of drawing one triangle in the middle.
 We’re going to start at the left edge, and draw a triangle at a specified interval until we reach the right edge.
 
+Note, that we're using a variable for the distance of the triangles, and the radius of the triangles is half of this.
+
     var triDistance = 50;
 
     for(var i = 0; i < view.size.width; i+= triDistance) {
-      for(var j = 0; j < view.size.height; j+= triDistance) {
-
         var Radius = triDistance/2;
-        var triangleCenter = new Point(i,j);
+        var triangleCenter = new Point(i,view.center.y);
         createTriangle(triangleCenter, Radius);
-
-        var nextTriangleCenter = new Point(i+Radius,j);
-        createTriangle(nextTriangleCenter, -Radius);
-      }
     }
 
 
-And instead of drawing one triangle in the middle.
-We’re going to start at the left edge, and draw a triangle at a specified interval until we reach the right edge.
+Now we're going to do the same loop from top to bottom.
 
     var triDistance = 50;
 
@@ -218,9 +213,25 @@ We’re going to start at the left edge, and draw a triangle at a specified inte
         var Radius = triDistance/2;
         var triangleCenter = new Point(i,j);
         createTriangle(triangleCenter, Radius);
+      }
+    }
+
+Loooaaaddsss of triangles!
+
+
+##6
+
+But one of the great things about triangles in that they tessalate really well.
+So let's look at fitting new triangles into the gaps left there.
+
+    var triDistance = 50;
+
+    for(var i = 0; i < view.size.width; i+= triDistance) {
+        var Radius = triDistance/2;
+        var triangleCenter = new Point(i,j);
+        createTriangle(triangleCenter, Radius);
 
         var nextTriangleCenter = new Point(i+Radius,j);
         createTriangle(nextTriangleCenter, -Radius);
-      }
     }
 
