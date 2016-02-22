@@ -96,7 +96,7 @@ speakers:
     - "In his current role at CW+, Lawrence focuses on healthcare innovation, with an aim at improving Chelsea and Westminster Hospital care provision and patient experience."
  - name: "Simon Chaplin-Rogers"
    id: simon-cr
-   jobtitle: Principle - Marlfield House Dental Centre.
+   jobtitle: Principal - Marlfield House Dental Centre.
    portrait: simon.jpg
    linkedin:
    twitter:
@@ -168,5 +168,3 @@ speakers:
 ## Google Maps URL
 invite-map: https://www.google.co.uk/maps/place/Surrey+County+Cricket+Club/@51.483612,-0.11492,15z/data=!4m2!3m1!1s0x0:0xf09a6ef184954e68?sa=X&ved=0CJABEPwSMA1qFQoTCKatle_TlMYCFckj2wodDEYAbw
 ---
-
-
