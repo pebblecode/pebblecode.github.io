@@ -21,7 +21,7 @@ If you just want the code, then feel free to pull down the [Repo](https://github
 
 Otherwise, sit comfortably and I’ll talk you through the process from start to finish. Thanks for joining us!
 
-##1
+## 1
 
 First step is to set up your document. I’m going to presume you know a little about HTML already, and the below all makes sense to you.
 
@@ -80,7 +80,7 @@ In our style.css
 WooHoo!
 Now we’re ready to start writing paperJs code!
 
-##2
+## 2
 
 So in the space we put "INSERT CODE HERE"..
 
@@ -97,7 +97,7 @@ If we go to our file in the browser, we should see just that.
 
 It’s pretty basic at the moment, but it’s a fundamental part of what we’re doing so it’s great to get an initial handle on it.
 
-##3
+## 3
 
 Next we’re going to look at making a few more circles, in order to make a triangle.
 
@@ -124,7 +124,7 @@ Lovely!
 ![Image 3](/img/blog/maths-and-motion/nh-maths-03.jpg)
 
 
-##4
+## 4
 
 For our next step, we’re going to upgrade that triangle of circles into an actual triangle, and neaten up some of the code in the process.
 
@@ -178,7 +178,7 @@ And if you uncomment the line that mentions `Color.random()` you’ll see one of
 Lovely stuff.
 
 
-##5
+## 5
 
 So let’s add a bit of order to proceedings.
 We’re going to add a new ability to our create Triangle function, so when we create it change the radius of the triangle.
@@ -233,7 +233,7 @@ Ao let's add another for loop around that code.
 Loooaaaddsss of triangles!
 
 
-##6
+## 6
 
 But one of the great things about triangles in that they tessalate really well.
 So let's look at fitting new triangles into the gaps left there.
@@ -259,7 +259,7 @@ Doesn't that look lovely?
 
 ![Image 6](/img/blog/maths-and-motion/nh-maths-11.jpg)
 
-##7
+## 7
 
 It does look lovely, but some boring people might say it's a little too lurid in the colour scheme.
 They'd be wrong of course, but let's humour them and limit the colours.
@@ -293,7 +293,7 @@ The triangle generating loops will remain the same.
 ![Image 7](/img/blog/maths-and-motion/nh-maths-06.jpg)
 
 
-##8
+## 8
 
 So far, so static..
 So let's try and add some movement to it.
@@ -392,7 +392,7 @@ When it gets to 20, we change the colour of the triangles.
 That's a lot nicer! Your eyes are very grateful!
 
 
-##9
+## 9
 
 Colours are nice and all, but we can do a lot more with our triangles!
 
