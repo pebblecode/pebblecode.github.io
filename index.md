@@ -4,7 +4,7 @@ title:
 permalink: /
 
 ## Hero Content
-hero-title: Technology Innovation Consultancy
+hero-title: Digital Transformation Consultancy
 hero-subtitle: Design Thinking, Rapid Prototyping and Agile Software Development.
 
 ## Main background image

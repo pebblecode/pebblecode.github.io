@@ -127,7 +127,12 @@
   margin-bottom: 0;
 }
 
+.content li.post-item {
+    padding-top: 0;
+}
+
 .post-item {
+  min-height: 325px;
   margin: $gutter 0;
   padding: 25px 0 55px;
   position: relative;
@@ -140,7 +145,7 @@
   &:after {
     content: "";
     height: 6px;
-    width: 200px;
+    width: 50%;
     background-color: lighten($ink, 48);
     position: absolute;
     bottom: 0;
@@ -156,7 +161,7 @@
   }
 
   a {
-    display: block;
+    // display: block;
   }
 }
 
@@ -171,7 +176,7 @@ a .post-title {
   transition: 0.2s;
   line-height: 1;
   max-width: 90%;
-  margin: 0 0 10px;
+  margin: 0 0 0px;
 
   @media screen and ( max-width: $medium ) {
     max-width: 100%;
@@ -215,40 +220,75 @@ a .post-title {
 // Post Excerpt and Thumbnail
 
 .blog-post-details {
-  margin-bottom: 12px;
+  margin-bottom: 0px;
 }
 
 
 .post-thumbnail-wrapper {
+  background-image: url('../img/blog/default-thumb.png');
+  background-size: cover;
+  background-position: center;
   display: inline-block;
-  max-width: 300px;
-  max-height: 100%;
-  float: right;
-  position: relative;
+  width: 250px;
+  height: 250px;
+  border: 2px solid lighten($pink, 30%);
+  position: absolute;
+  left: 0;
+  top: 0;
 
-  &:before {
-      content: "";
-      background: rgba(black, 0.2);
-      width: 100%;
-      height: 100%;
-      top: 0;
-      position: absolute;
-      z-index: -1;
+  @media screen and (max-width: $medium) {
+    width: 150px;
+    height: 150px;
+  }
 
-      transform: rotate(6deg);
-      -ms-transform: rotate(6deg);
-      -webkit-transform: rotate(6deg);
-    }
+  @media screen and (max-width: $small) {
+    width: 100px;
+    height: 100px;
+    float: left;
+    position: relative;
+    margin-right: 12px;
+    margin-bottom: 12px;
+  }
+
 }
 
 .post-excerpt {
-  font-size: 16px;
+  // font-size: 10px;
 
   p {
-    display: inline-block;
-    width: 69%;
-    vertical-align: top;
+      // font-size: 12px;
   }
+}
+
+.post-list-content {
+  padding-left: 250px + 24px;
+  @media screen and (max-width: $medium) {
+    padding-left: 150px + 12px;
+  }
+  @media screen and (max-width: $small) {
+    padding-left: 0px;
+  }
+}
+
+.post-item .readmore-btn {
+  background: $pink;
+  color: white;
+  display:table;
+  padding:6px 14px;
+  color:white;
+  border-radius: 4px;
+  font-weight: bold;
+  box-shadow: 2px 4px 0 rgba(0,0,0,0.3);
+
+  @media screen and (max-width: $small) {
+    // top: 12px;
+    @include clearfix;
+  }
+
+  &:hover {
+    background: darken($pink, 10%);
+  }
+
 }
 
 //===============================================================================
@@ -321,4 +361,58 @@ a .post-title {
       }
     }
   }
+}
+
+
+
+//===============================================================================
+// Post Categories
+
+.post-categories {
+
+  margin-bottom: 6px;
+
+  li {
+    display: inline-block;
+    margin-right: 2px;
+    color: $pink;
+    font-weight: bold;
+    // font-style: italic;
+    text-transform: capitalize;
+    font-size: 16px;
+    padding: 4px 8px;
+    background: #ccc;
+    position: relative;
+    &:before {
+      content: "";
+      display: block;
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      background-color: #ddd;
+      z-index: -5;
+      -webkit-transform: rotate(5deg);
+    }
+
+    a {
+      color: #666;
+    }
+
+    // &:after {
+    //   content: ", ";
+    // }
+    // &:last-of-type {
+    //   &:after {
+    //     content: none;
+    //   }
+    // }
+  }
+
+}
+
+.blog-categories {
+  color: white;
+  font-size: 14px;
 }

@@ -20,40 +20,35 @@ layout: blog-by-tag
     <!-- /.hero-container -->
 
     <section class="content-container grid">
+      <ul class="content col-1-1 post-list">
+        {% for post in site.posts %}
 
+        {% if post.categories contains page.category %}
+          <li class="post-item">
+              <div class="post-list-content">
+                <a href="{{ post.url }}"><h3 class="post-title">{{ post.title }}</h3></a>
+                <div class="blog-post-details">by <span class="post-author">{{ post.author }}</span> <span class="post-date">on {{ post.date | date: '%B %d, %Y' }}</span></div>
 
-        <ul class="content col-1-1 post-list">
-
-
-            {% for post in site.posts %}
-
-              {% if post.categories contains page.category %}
-
-                <li class="post-item">
-                    <a href="{{ post.url }}"><h3 class="post-title">{{ post.title }}</h3></a>
-                    <div class="blog-post-details">by <span class="post-author">{{ post.author }}</span> <span class="post-date">{{ post.date | date: '%B %d, %Y' }}</span></div>
-                    <div class="post-excerpt">
-                      <p>{{ post.excerpt | strip_html }}</p>
-                      {% if post.thumbnail %}
-                        <div class="post-thumbnail-wrapper">
-                          <img class="post-thumbnail" src="{{ post.thumbnail }}" />
-                        </div>
-                      {% endif %}
-                      <a href="{{ post.url }}">Read Post</a>
-                    </div>
-
-                  {% for category in post.categories %}
-                    {{category}}
-                  {% endfor %}
-
-                </li>
-
+              {% if post.thumbnail %}
+                <div style="background-image: url('{{post.thumbnail}}')" class="post-thumbnail-wrapper"></div>
+              {% else %}
+                <div class="post-thumbnail-wrapper"></div>
               {% endif %}
 
-            {% endfor %}
-        </ul>
+                <div class="post-excerpt">
+                  <p>{{ post.excerpt | strip_html }}</p>
+                </div>
+               <a class="readmore-btn" href="{{ post.url }}">Read Post</a>
+              </div>
+          </li>
+
+          {% endif %}
+
+        {% endfor %}
+      </ul>
     </section>
     <!-- /.content-container -->
+
 
     {% include footer.html %}
 

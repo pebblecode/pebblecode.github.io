@@ -48,6 +48,7 @@ layout: post
 title:  On Average, the World is Happy
 author: Ian Black
 categories: hackday
+thumbnail: /img/blog/happy.jpg
 ---
 ```
 

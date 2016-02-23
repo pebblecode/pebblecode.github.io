@@ -3,6 +3,7 @@ layout: post
 title: Design Review, January 2016
 author: John Mildinhall
 categories: [design]
+thumbnail: /img/blog/dragon-test.png
 ---
 
 We are always pushing links each others' ways in the design team at pebble {code}. A healthy level of discussion and debate is stimulating, fun, and keeps us interested. We decided that it was about time we share some of these discussions with the wider world.
