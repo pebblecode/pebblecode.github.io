@@ -63,7 +63,7 @@ Twitter looks like a startup in need of a rapid pivot to realise any kind of bus
 
 ## Leaders need to lead
 
-The relationship between Technology companies and society will face more pressure as we enter the [Second Machine Age][16] or the [Fourth Industrial Revolution][17]. With thousands of jobs set to be automated by technology the pressure on Tech PR department will become heavier and heavier.
+The relationship between Technology companies and society will face more pressure as we enter the [Second Machine Age][16] or the [Fourth Industrial Revolution][17]. With thousands of jobs set to be automated by technology the pressure on Tech PR departments will become heavier and heavier.
 
 The current class of Technology leaders seem uninterested in engaging with mainstream society over the changes that are happening even now. Consider Travis Kalanick, CEO of Uber.
 
