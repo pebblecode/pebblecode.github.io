@@ -3,6 +3,7 @@ layout: post
 title: 'Maths and Motion - An introduction to paperJS'
 author: Niall Henn
 categories: [tutorial]
+thumbnail: /img/blog/maths-and-motion/nh-maths-01.jpg
 ---
 
 ![first dot](/img/blog/maths-and-motion/nh-maths-01.jpg)
