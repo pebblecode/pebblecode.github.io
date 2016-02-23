@@ -12,8 +12,7 @@ Hi there,
 This is a tutorial aimed at introducing [paper.js](http://paperjs.org/) and basic vector maths. We’re going to go right the way through from making points to making some interactive bits move.
 Going over a few techniques common to the creative coding world.
 
-The files are in the [Repo](https://github.com/pebblecode/maths-and-motion-1) below and everything we've done can by done by editting the index.html, but all the stages are there as well if you want to cheat.
-[https://github.com/pebblecode/maths-and-motion-1](https://github.com/pebblecode/maths-and-motion-1)
+The files are in the [Repo](https://github.com/pebblecode/maths-and-motion-1) below and everything we've done can by done by editing the index.html, but all the stages are there as well if you want to cheat.
 
 I’ve optimised for fun and pizzazz over good code, so don’t judge too harshly!
 
@@ -93,7 +92,7 @@ We’re initialising a new Circle (note the capitalisation) passing it two argum
 
 If we go to our file in the browser, we should see just that.
 
-![first dot](/img/blog/maths-and-motion/nh-maths-02.jpg)
+![Image 2](/img/blog/maths-and-motion/nh-maths-02.jpg)
 
 It’s pretty basic at the moment, but it’s a fundamental part of what we’re doing so it’s great to get an initial handle on it.
 
@@ -121,7 +120,7 @@ We’re going to initialise a variable for the centre point, then create 3 point
 You’ll see we get a triangle of dots.
 Lovely!
 
-![first dot](/img/blog/maths-and-motion/nh-maths-03.jpg)
+![Image 3](/img/blog/maths-and-motion/nh-maths-03.jpg)
 
 
 ##4
@@ -146,7 +145,7 @@ We’re also setting up an array of points, which we then pass to the Path initi
       var path = new Path(points);
           path.fillColor = "white";
 
-![first dot](/img/blog/maths-and-motion/nh-maths-04.jpg)
+![Image 4](/img/blog/maths-and-motion/nh-maths-04.jpg)
 
 So now we can wrap that code in a function instead, meaning we can create the same triangle wherever we want, as we pass it the centre point when we create it.
 
@@ -212,7 +211,7 @@ Note, that we're using a variable for the distance of the triangles, and the rad
         createTriangle(triangleCenter, Radius);
     }
 
-![first dot](/img/blog/maths-and-motion/nh-maths-09.jpg)
+![Image 5](/img/blog/maths-and-motion/nh-maths-09.jpg)
 
 Now we're going to do the same loop from top to bottom.
 Ao let's add another for loop around that code.
@@ -228,7 +227,7 @@ Ao let's add another for loop around that code.
       }
     }
 
-![first dot](/img/blog/maths-and-motion/nh-maths-10.jpg)
+![Image 5](/img/blog/maths-and-motion/nh-maths-10.jpg)
 
 Loooaaaddsss of triangles!
 
@@ -257,7 +256,7 @@ A nice accident of the way that we created the triangles is that if we invert th
 
 Doesn't that look lovely?
 
-![first dot](/img/blog/maths-and-motion/nh-maths-11.jpg)
+![Image 6](/img/blog/maths-and-motion/nh-maths-11.jpg)
 
 ##7
 
@@ -290,7 +289,7 @@ The triangle generating loops will remain the same.
 [Niiccee!](https://www.youtube.com/watch?v=GdCNtgOO18E)
 
 
-![first dot](/img/blog/maths-and-motion/nh-maths-06.jpg)
+![Image 7](/img/blog/maths-and-motion/nh-maths-06.jpg)
 
 
 ##8
@@ -357,7 +356,7 @@ Let's write the below code underneath our generation loops.
 
 Wooo... Constantly Changing Colours!
 
-![first dot](/img/blog/maths-and-motion/nh-maths-12.jpg)
+![Image 8](/img/blog/maths-and-motion/nh-maths-12.jpg)
 
 
 We can change that to a random colour to get some similar eye burning results.
@@ -369,7 +368,7 @@ We can change that to a random colour to get some similar eye burning results.
         }
     }
 
-WWWWAAAAAAHHHHHHHHHH!!!! 
+WWWWAAAAAAHHHHHHHHHH!!!!
 
 Let's slow the framerate down slightly. Note, there's no way to do this natively in paperJS.
 We have to write our own version by making a count variable that we increment each frame.
@@ -409,7 +408,7 @@ Note, we no longer the the framerate moderation as the sine is naturally a lot s
     }
 
 
-![first dot](/img/blog/maths-and-motion/nh-maths-07.jpg)
+![Image 9](/img/blog/maths-and-motion/nh-maths-07.jpg)
 
 
 Pretty lovely huh?
@@ -422,6 +421,6 @@ Tune in next time when we'll look at adding some interaction and a few other tec
 Should be a blast.
 
 If you try this tutorial, we'd really love to hear how you got on and any thoughts you might have.
-Let us know on the [https://twitter.com/pebblecode](Twitter!)
+Let us know on the [Twitter!](https://twitter.com/pebblecode)
 
-[https://twitter.com/niallhenn](Niall)
+[Niall](https://twitter.com/niallhenn)
