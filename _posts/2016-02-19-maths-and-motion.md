@@ -9,12 +9,15 @@ categories: [tutorial]
 
 Hi there,
 
-This is a tutorial aimed at introducing paper.js and basic vector maths. We’re going to go right the way through from making points to making some interactive bits move.
+This is a tutorial aimed at introducing [paper.js](http://paperjs.org/) and basic vector maths. We’re going to go right the way through from making points to making some interactive bits move.
 Going over a few techniques common to the creative coding world.
+
+The files are in the [Repo](https://github.com/pebblecode/maths-and-motion-1) below and everything we've done can by done by editting the index.html, but all the stages are there as well if you want to cheat.
+[https://github.com/pebblecode/maths-and-motion-1](https://github.com/pebblecode/maths-and-motion-1)
 
 I’ve optimised for fun and pizzazz over good code, so don’t judge too harshly!
 
-If you just want the code, then feel free to pull down the repo and play around with it.
+If you just want the code, then feel free to pull down the [Repo](https://github.com/pebblecode/maths-and-motion-1) and play around with it.
 
 Otherwise, sit comfortably and I’ll talk you through the process from start to finish. Thanks for joining us!
 
@@ -26,23 +29,29 @@ PaperJs uses its own paperscript syntax, which is essentially an extended versio
 
 The important thing to note is that the script tag that calls your paperscript file needs to specify a canvas, which in this case is the ID of the canvas listed within the body (which can be whatever you want).
 
-So our index.html file:
+For ease of use, we're going to put our code directly into the the index.html file, (as opposed to in an external file) so that'll be set up like so:
 
     <!DOCTYPE html>
-    <html>
-      <head>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+      <html>
+        <head>
+          <meta charset="utf-8">
+          <meta name="mobile-web-app-capable" content="yes">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+          <title>PaperJs Experiments</title>
 
-      <link rel="stylesheet" href="/css/style.css">
-      <script type="text/javascript" src="/js/vendor/paper-full.js"></script>
-      <script type="text/paperscript" canvas="mycanvas" src="myscript.js"></script>
+          <link rel="stylesheet" href="style.css">
+          <script type="text/javascript" src="js/paper-full.js"></script>
 
-      </head>
-    <body>
-    <canvas id="mycanvas" class="fullwidthbgcanvas" resize></canvas>
-    </body>
-    </html>
+            <script type="text/paperscript" canvas="mycanvas">
+               // INSERT CODE HERE
+            </script>
+        </head>
+        <body>
+
+          <canvas id="mycanvas" class="fullwidthbgcanvas" resize></canvas>
+
+        </body>
+      </html>
 
 
 Our CSS file doesn’t need much in it except canvas and window sizing to make it 100%, and a little background colour.
@@ -68,16 +77,17 @@ In our style.css
       left: 0;
     }
 
+WooHoo!
 Now we’re ready to start writing paperJs code!
 
 ##2
 
-In our myscript.js file.
+So in the space we put "INSERT CODE HERE"..
 
 Let’s start by using the very basic currency of paperJS; a circle, placed at a point. The following two lines of code will place one in the centre of the screen, and give it a white colour. (change fillColor to strokeColor to get an outline instead)
 
-  var myCircle = new Path.Circle(view.center, 20);
-  myCircle.fillColor = 'white';
+    var myCircle = new Path.Circle(view.center, 20);
+    myCircle.fillColor = "white";
 
 We’re initialising a new Circle (note the capitalisation) passing it two arguments; one for the centre point of the screen `view.center` and the other for the radius of the circle `20`
 
@@ -98,15 +108,15 @@ We’re going to initialise a variable for the centre point, then create 3 point
 
       var p1 = new Point(c.x + 100, c.y+100);
       var myCircle = new Path.Circle(p1, 10);
-      myCircle.fillColor = 'white';
+      myCircle.fillColor = "white";
 
       var p2 = new Point(c.x - 100, c.y+100);
       var myCircle = new Path.Circle(p2, 10);
-      myCircle.fillColor = 'white';
+      myCircle.fillColor = "white";
 
       var p3 = new Point(c.x, c.y-100);
       var myCircle = new Path.Circle(p3, 10);
-      myCircle.fillColor = 'white';
+      myCircle.fillColor = "white";
 
 You’ll see we get a triangle of dots.
 Lovely!
@@ -118,7 +128,7 @@ Lovely!
 
 For our next step, we’re going to upgrade that triangle of circles into an actual triangle, and neaten up some of the code in the process.
 
-But as any good programmer will tell you, it’s terrible to repeat stuff, so of course we make that code a little neater and more modular.
+But as any good programmer will tell you, it’s terrible form to repeat stuff, so of course we make that code a little neater and more modular.
 
 You’ll notice that rather than calling `new Circle`, we’re now calling `new Path` that creates a (you guessed it!) path.
 
@@ -134,7 +144,7 @@ We’re also setting up an array of points, which we then pass to the Path initi
         ];
 
       var path = new Path(points);
-          path.fillColor = 'white';
+          path.fillColor = "white";
 
 ![first dot](/img/blog/maths-and-motion/nh-maths-04.jpg)
 
@@ -151,7 +161,7 @@ So now we can wrap that code in a function instead, meaning we can create the sa
           ];
 
         var path = new Path(points);
-          path.fillColor = 'white';
+          path.fillColor = "white";
           // path.fillColor = Color.random();
       }
 
@@ -205,6 +215,7 @@ Note, that we're using a variable for the distance of the triangles, and the rad
 ![first dot](/img/blog/maths-and-motion/nh-maths-09.jpg)
 
 Now we're going to do the same loop from top to bottom.
+Ao let's add another for loop around that code.
 
     var triDistance = 50;
 
@@ -232,15 +243,19 @@ A nice accident of the way that we created the triangles is that if we invert th
     var triDistance = 50;
 
     for(var i = 0; i < view.size.width; i+= triDistance) {
-        var Radius = triDistance/2;
-        var triangleCenter = new Point(i,j);
-        createTriangle(triangleCenter, Radius);
+        for(var j = 0; j < view.size.height; j+= triDistance) {
+          var Radius = triDistance/2;
+          var triangleCenter = new Point(i,j);
+          createTriangle(triangleCenter, Radius);
 
-        var nextTriangleCenter = new Point(i+Radius,j);
-        createTriangle(nextTriangleCenter, -Radius);
-    }
+          var nextTriangleCenter = new Point(i+Radius,j);
+          createTriangle(nextTriangleCenter, -Radius);
+        }
+      }
 
-Boom! Doesn't that look lovely!
+[Algebraic!](http://www.webetmascara.ca/wp-content/uploads/2013/09/Think-Geek.jpg)
+
+Doesn't that look lovely?
 
 ![first dot](/img/blog/maths-and-motion/nh-maths-11.jpg)
 
@@ -253,6 +268,7 @@ We're going to make an array of colours and access a random value from it when w
 
 Let's change our createTriangle function to be something like the following.
 The triangleColor variable is the one we've changed.
+The triangle generating loops will remain the same.
 
     var colours = ['#363938', '#386567', '#5C4134', '#C4A778', '#CE9B59'];
 
@@ -270,6 +286,8 @@ The triangleColor variable is the one we've changed.
       var triangleColor = colours[Math.floor(Math.random()*colours.length)];
       path.fillColor = triangleColor;
     }
+
+[Niiccee!](https://www.youtube.com/watch?v=GdCNtgOO18E)
 
 
 ![first dot](/img/blog/maths-and-motion/nh-maths-06.jpg)
@@ -312,19 +330,23 @@ So we first create an empty array named triArray, and then when we create our tr
     var triDistance = 50;
 
     for(var i = 0; i < view.size.width; i+= triDistance) {
-        var Radius = triDistance/2;
-        var triangleCenter = new Point(i,j);
-        createTriangle(triArray,triangleCenter, Radius);
+        for(var j = 0; j < view.size.height; j+= triDistance) {
+          var Radius = triDistance/2;
+          var triangleCenter = new Point(i,j);
+          createTriangle(triArray, triangleCenter, Radius);
 
-        var nextTriangleCenter = new Point(i+Radius,j);
-        createTriangle(triArray, nextTriangleCenter, -Radius);
-    }
+          var nextTriangleCenter = new Point(i+Radius,j);
+          createTriangle(triArray, nextTriangleCenter, -Radius);
+        }
+      }
 
 
 But right now, this just looks the same as before.
 So as a great way of illustrating it, let's take a look at paperJS's onFrame function, which runs the code inside it 30 times a second - this is how movement happens in paperJS.
 
 We're going to use a function of paperJS where we can access the fill colour of our shape, and increase the hue of each individual triangle every frame.
+
+Let's write the below code underneath our generation loops.
 
     function onFrame(event) {
        for(var i = 0; i < triArray.length; i++) {
@@ -347,7 +369,9 @@ We can change that to a random colour to get some similar eye burning results.
         }
     }
 
-or let's slow the framerate down slightly. Note, there's no way to do this natively in paperJS.
+WWWWAAAAAAHHHHHHHHHH!!!! 
+
+Let's slow the framerate down slightly. Note, there's no way to do this natively in paperJS.
 We have to write our own version by making a count variable that we increment each frame.
 When it gets to 20, we change the colour of the triangles.
 
@@ -362,8 +386,8 @@ When it gets to 20, we change the colour of the triangles.
             var triangleColor = Color.random();
             triArray[i].fillColor = triangleColor;
           }
-
       }
+    }
 
 That's a lot nicer! Your eyes are very grateful!
 
@@ -389,14 +413,15 @@ Note, we no longer the the framerate moderation as the sine is naturally a lot s
 
 
 Pretty lovely huh?
+You can now amaze your friends with your triangle creating abilities.
 
-That's about it for this tutorial.
+Aaaannnnnddd that's about it for this tutorial.
 We made some awesome triangles, then we made them move in some lovely ways.
 
 Tune in next time when we'll look at adding some interaction and a few other techniques for movement.
 Should be a blast.
 
 If you try this tutorial, we'd really love to hear how you got on and any thoughts you might have.
-Let us know on the Twitter!
+Let us know on the [https://twitter.com/pebblecode](Twitter!)
 
-Niall
+[https://twitter.com/niallhenn](Niall)
