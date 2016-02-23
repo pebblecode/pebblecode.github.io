@@ -6,7 +6,7 @@ categories: [Health]
 thumbnail: /img/posts/2016-02-19-frugal-innovation-in-health/robohand.jpg
 ---
 
-On 18th February 2016 I attended the [Global Health Forum][17] session at Imperial College, London on Frugal Innovation. Here are my notes on a fascinating afternoon. 
+On 18th February 2016 I attended the [Global Health Forum][17] session at Imperial College, London on Frugal Innovation. Here are my notes on a fascinating afternoon.
 
 ## Dr Yasser Bhatti
 
@@ -18,15 +18,15 @@ Reverse and frugal innovation is primarily concerned with the BRIC (Brasil, Russ
 * Market affordability
 * Institutional voids or complexities
 
-These countries often lack hard and soft institutions. Hard institutions mean things like roads, ports, sanitation. Soft institutions means things like effective governments, the rule of law. With all of this opportunity a lot of businesses are looking to sell into emerging markets. An example of a newly minted entrepreneur is shown who buys a Mercedes but then has to drive it on a dirt road. This is seen as an example of how institutions are often not in place for products from the west to function. 
+These countries often lack hard and soft institutions. Hard institutions mean things like roads, ports, sanitation. Soft institutions means things like effective governments, the rule of law. With all of this opportunity a lot of businesses are looking to sell into emerging markets. An example of a newly minted entrepreneur is shown who buys a Mercedes but then has to drive it on a dirt road. This is seen as an example of how institutions are often not in place for products from the west to function.
 
 These constraints often fuel innovation. [Ratan Tata][10] is an entrepreneur who noticed that most people ride around on mopeds or rickshaws and that often includes 5 people. He set the goal of an affordable car and invented the Tato Nano Car. This is seen as an example of frugal innovation and is documented in the book [Nanovation - How A Little Car Can Teach The World To Think Big][1]. Another example is [Muhammad Yunus][5] and his approach to Microfinance for groups of women.
 
 ![The nano car](/img/posts/2016-02-19-frugal-innovation-in-health/nano.jpg)
 
-The challenge and academic interest is how can you do more with less for many more people. A exemplar project is shown in [Remotion][6], a high performance knee joint for developing world amputees. They looked at high performance US knee joints or the [Jaipur Knee][7] and wanted to produce high quality but at low cost. They came up with $80 high quality knee joint. This is seen as an example of reverse innovation where potentially an innovation driven by constraints can be sold into developed markets. 
+The challenge and academic interest is how can you do more with less for many more people. A exemplar project is shown in [Remotion][6], a high performance knee joint for developing world amputees. They looked at high performance US knee joints or the [Jaipur Knee][7] and wanted to produce high quality but at low cost. They came up with $80 high quality knee joint. This is seen as an example of reverse innovation where potentially an innovation driven by constraints can be sold into developed markets.
 
-The next example is [Peek Vision][9] who took the [Aravind Eye Care System][11] and used it to innovate. The video give a good flavour for the product. 
+The next example is [Peek Vision][9] who took the [Aravind Eye Care System][11] and used it to innovate. The video give a good flavour for the product.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/mHS2sRL8r04" frameborder="0" allowfullscreen></iframe>
 
@@ -44,7 +44,7 @@ Books mentioned:
 
 ## Mr Matt Prime
 
-Matt is Orthopedic Surgeon who spent a year working in Malawi and talked of how the country has a GDP of $1 billion. He notes that Imperial College Healthcare has a budget of $1 billion. Malawi has a population of 15 million. With Malawi having far less resources people innovate. He himself found that surgical drills were in scarce supply and at $30,000 a drill it was not possible to buy one. Instead he took a normal drill from B&Q put it in a bag, tied it up and used that. He notes there is a big price discrepancy between medical grade products and consumer products that can do the same thing. 
+Matt is Orthopedic Surgeon who spent a year working in Malawi and talked of how the country has a GDP of $1 billion. He notes that Imperial College Healthcare has a budget of $1 billion. Malawi has a population of 15 million. With Malawi having far less resources people innovate. He himself found that surgical drills were in scarce supply and at $30,000 a drill it was not possible to buy one. Instead he took a normal drill from B&Q put it in a bag, tied it up and used that. He notes there is a big price discrepancy between medical grade products and consumer products that can do the same thing.
 
 
 There are different drivers on Healthcare depending on the economy.
@@ -61,12 +61,12 @@ There are different drivers on Healthcare depending on the economy.
 * Lack of infrastructure
 * Lack of resources
 
-But for both of these models frugal innovation needs to 
+But for both of these models frugal innovation needs to
 
 * Decrease the cost of care
 * Widening the access of care
 
-The example of GE's Mac 400 ECG is given as frugal innovation. GE's [Healthy Imagination][9] is designed to give high quality and affordable products in healthcare. At the beginning of the century GE turned its focus onto emerging economy, mainly because the market size is three times as big as Western Europe. For the GE Mac 400 they decided to strip back the product to what really mattered. They took a queue from bus tickets and used a cheap printer to print out results. 
+The example of GE's Mac 400 ECG is given as frugal innovation. GE's [Healthy Imagination][9] is designed to give high quality and affordable products in healthcare. At the beginning of the century GE turned its focus onto emerging economy, mainly because the market size is three times as big as Western Europe. For the GE Mac 400 they decided to strip back the product to what really mattered. They took a queue from bus tickets and used a cheap printer to print out results.
 
 ![Mac 400](/img/posts/2016-02-19-frugal-innovation-in-health/mac_400.jpeg)
 
@@ -91,7 +91,7 @@ Matt's research identified the following products were identified as Frugal Inno
 
 ## Mr Matthew Harris
 
-Matthew asked the question is it a level playing field? There is lots of innovation but very little adoption. To what extent are the barriers exacerbated by moving from low to high income? He notes the term reverse innovation is problematic and he sees it as a development issue. He notes it is hard to identify innovations that have been developed by people in low income countries. 
+Matthew asked the question is it a level playing field? There is lots of innovation but very little adoption. To what extent are the barriers exacerbated by moving from low to high income? He notes the term reverse innovation is problematic and he sees it as a development issue. He notes it is hard to identify innovations that have been developed by people in low income countries.
 
 Matthew has engaged with senior clinicians around adopting the [Brazilian Family Strategy][13]. In the NHS there are a plethora of different HCPs delivering different parts. He identified a wide array of people all operating in a fragmented way. Brazil organises differently. Small teams of GP, Nurse and community health workers live where they work. Community health workers visit every month and will deliver Primary Care Interventions. This is a very efficient model and as they tessellate it scales well.
 
@@ -109,32 +109,32 @@ Matthew presented some reactions to the proposal.
 * We couldn't afford it if it worked.
 * Lets start by focusing on high risk groups like diabetes.
 
-Matthew noted that there is an idea that good watches come from Switzerland and not Rwanda. There is evidence that of a product leads to 30% of your view of it. It might be the same product but the source matters. 
+Matthew noted that there is an idea that good watches come from Switzerland and not Rwanda. There is evidence that of a product leads to 30% of your view of it. It might be the same product but the source matters.
 
-Interested by this Matthew ran a survey where he changed the source of medical research that had been independently verify. He changed the sources where one from a high income country and another one from a low one. He wanted to test on strength of evidence and whether it they would refer it to  whether it they would refer it to a colleague. 
+Interested by this Matthew ran a survey where he changed the source of medical research that had been independently verify. He changed the sources where one from a high income country and another one from a low one. He wanted to test on strength of evidence and whether it they would refer it to  whether it they would refer it to a colleague.
 
-He found that on strength of evidence they were not influenced. For referral to a peer they were more likely to refer it to a peer if the research was from a developed country. Using an implicit association test he showed that on average people consider good research to come from rich countries and poor research from poor countries. 
+He found that on strength of evidence they were not influenced. For referral to a peer they were more likely to refer it to a peer if the research was from a developed country. Using an implicit association test he showed that on average people consider good research to come from rich countries and poor research from poor countries.
 
 ## Ms Maja Kecman
 
-Maja is a designer from the [Helix Centre][18], the only design studio based in a hospital. They are outward focused and take a collaborative approach to projects. They focus on frugal innovations and have unprecedented access to the healthcare environment. 
+Maja is a designer from the [Helix Centre][18], the only design studio based in a hospital. They are outward focused and take a collaborative approach to projects. They focus on frugal innovations and have unprecedented access to the healthcare environment.
 
 ### What is design?
 
-Design is the process and thinking. It is the rapid iteration of different solutions. The example of TongueSucker is shown as an example of rapid prototyping and testing. It is a way of clearing the airway of an unconscious person. A series of prototyping are shown and Maya talks of lots of thinking and iterations go into the final product. 
+Design is the process and thinking. It is the rapid iteration of different solutions. The example of TongueSucker is shown as an example of rapid prototyping and testing. It is a way of clearing the airway of an unconscious person. A series of prototyping are shown and Maya talks of lots of thinking and iterations go into the final product.
 
-Maja gives another example of the birthday card that you get from the NHS on your 60th Birthday. This tells you that you are at increased risk of bowel cancer and invites you to poo on a stick. Unsurprisingly the uptake is very low. The Helix Centre have redesigned this card and message and are taking it forward to see if uptake can be improved through simple design and copy changes. 
+Maja gives another example of the birthday card that you get from the NHS on your 60th Birthday. This tells you that you are at increased risk of bowel cancer and invites you to poo on a stick. Unsurprisingly the uptake is very low. The Helix Centre have redesigned this card and message and are taking it forward to see if uptake can be improved through simple design and copy changes.
 
-Maja gives another example of non-attendance of appointment through [differently worded SMS reminders][15]. In the NHS 20% of appointments are missed which is extremely costly to the service. By simply changing the wording of the SMS this was improved. This is cited as an example of Zero Cost Innovation. 
+Maja gives another example of non-attendance of appointment through [differently worded SMS reminders][15]. In the NHS 20% of appointments are missed which is extremely costly to the service. By simply changing the wording of the SMS this was improved. This is cited as an example of Zero Cost Innovation.
 
 ![Clinical Appointments Missed](/img/posts/2016-02-19-frugal-innovation-in-health/results.jpg)
 
 
-Maja showed [Floot][16], an app they working on in relation to Asthma. The app encourages patients to blow into a peak flow whistle. Doctors held that kids wouldn't blow into a peak flow whistle but the app shows they will if incentivised in the right way. 
+Maja showed [Floot][16], an app they working on in relation to Asthma. The app encourages patients to blow into a peak flow whistle. Doctors held that kids wouldn't blow into a peak flow whistle but the app shows they will if incentivised in the right way.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/hmqaW4VSSHI?start=662" frameborder="0" allowfullscreen></iframe>
 
-They are also going to use the Apple healthkit to gather data during the trial. 
+They are also going to use the Apple healthkit to gather data during the trial.
 
 ## Conclusion
 
