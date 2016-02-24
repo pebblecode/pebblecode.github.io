@@ -383,6 +383,8 @@ a .post-title {
     padding: 4px 8px;
     background: #ccc;
     position: relative;
+    margin-bottom: 14px;
+
     &:before {
       content: "";
       display: block;
@@ -394,6 +396,14 @@ a .post-title {
       background-color: #ddd;
       z-index: -5;
       -webkit-transform: rotate(5deg);
+    }
+
+    &:nth-of-type(2n+0):before {
+      -webkit-transform: rotate(-5deg);
+    }
+
+    &:nth-of-type(3n+0):before {
+      -webkit-transform: rotate(-10deg);
     }
 
     a {
@@ -412,7 +422,25 @@ a .post-title {
 
 }
 
-.blog-categories {
+.blog-categories-head {
+  // color: white;
+  font-size: 16px;
+}
+
+.blog-categories-headul {
+  li {
+    font-size: 24px;
+    display: inline-block;
+    font-style: italic;
+    text-transform: uppercase;
+    font-family: $brandon;
+    text-shadow: 2px 2px #000;
+    // width: 25%;
+    // background: #ccc;
+  }
+}
+
+.blog-category-title {
+  font-weight: bold;
   color: white;
-  font-size: 14px;
 }
