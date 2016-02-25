@@ -2,6 +2,6 @@
 layout: blog-by-tag
 title: blog-innovation
 permalink: blog/tag/innovation/
-colour: aqua
+colour:
 category: innovation
 ---

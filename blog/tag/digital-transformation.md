@@ -2,6 +2,6 @@
 layout: blog-by-tag
 title: blog-digital-transformation
 permalink: blog/tag/digital-transformation/
-colour: aqua
+colour:
 category: digital-transformation
 ---

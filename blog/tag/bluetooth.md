@@ -2,6 +2,6 @@
 layout: blog-by-tag
 title: blog-bluetooth
 permalink: blog/tag/bluetooth/
-colour: aqua
+colour:
 category: bluetooth
 ---

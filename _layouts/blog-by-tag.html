@@ -7,40 +7,25 @@ layout: blog-by-tag
 
     {% include header.html %}
 
-    <section class="hero-container hero-container-blog {{ page.colour }}">
+    <section class="hero-container hero-container-blog blue }}">
       <div class="hero-inner grid">
-        Blog Posts tagged with:
-        <h1 class="hero-title">{{ page.category }}</h1>
-        View other Tags:
-        <a href="/blog/tag/health/">Health</a>
-        <a href="/blog/tag/design/">Design</a>
-        <a href="/blog/tag/agile/">Agile</a>
+        <p class="col-1-1 blog-category-head">Blog Posts tagged with:</p>
+        <h1 class="hero-title col-1-1">{{ page.category }}</h1>
       </div>
     </section>
     <!-- /.hero-container -->
 
     <section class="content-container grid">
+
+      {% include blog-sidebar.html %}
+
+
       <ul class="content col-1-1 post-list">
         {% for post in site.posts %}
 
         {% if post.categories contains page.category %}
-          <li class="post-item">
-              <div class="post-list-content">
-                <a href="{{ post.url }}"><h3 class="post-title">{{ post.title }}</h3></a>
-                <div class="blog-post-details">by <span class="post-author">{{ post.author }}</span> <span class="post-date">on {{ post.date | date: '%B %d, %Y' }}</span></div>
 
-              {% if post.thumbnail %}
-                <div style="background-image: url('{{post.thumbnail}}')" class="post-thumbnail-wrapper"></div>
-              {% else %}
-                <div class="post-thumbnail-wrapper"></div>
-              {% endif %}
-
-                <div class="post-excerpt">
-                  <p>{{ post.excerpt | strip_html }}</p>
-                </div>
-               <a class="readmore-btn" href="{{ post.url }}">Read Post</a>
-              </div>
-          </li>
+                    {% include blog-listpost.html %}
 
           {% endif %}
 
