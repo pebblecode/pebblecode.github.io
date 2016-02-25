@@ -24,29 +24,55 @@ layout: blog
           {% endif %}
         {% endfor %}
         {% endif %}
-
-
-        <div class="blog-categories-head">
-          Blog Categories:
-          <ul class="blog-categories-headul">
-            <li>
-              <a class="blog-category-title" href="/blog/tag/health/">Health</a>
-            </li>
-            <li>
-              <a class="blog-category-title" href="/blog/tag/design/">Design</a>
-            </li>
-            <li>
-              <a class="blog-category-title" href="/blog/tag/agile/">Agile</a>
-            </li>
-          </ul>
-        </div>
-
       </div>
 
     </section>
     <!-- /.hero-container -->
 
+
+
     <section class="content-container grid">
+
+       <div class="blog-categories-sidebar">
+
+          <div class="blog-categories-head">
+            <h5 class="blog-categories-title">Top Categories:</h5>
+            <ul class="blog-categories-headul">
+              <li>
+                <a class="blog-category-title" href="/blog/tag/health/">Health</a>
+              </li>
+              <li>
+                <a class="blog-category-title" href="/blog/tag/design/">Design</a>
+              </li>
+              <li>
+                <a class="blog-category-title" href="/blog/tag/agile/">Agile</a>
+              </li>
+            </ul>
+            <h5 class="blog-categories-title">Other Categories:</h5>
+            <ul class="blog-categories-headul">
+              <li>
+                <a class="blog-category-title" href="/blog/tag/tutorial/">Tutorial</a>
+              </li>
+              <li>
+                <a class="blog-category-title" href="/blog/tag/opinion/">Opinion</a>
+              </li>
+              <li>
+                <a class="blog-category-title" href="/blog/tag/digital-transformation/">Digital Transformation</a>
+              </li>
+              <li>
+                <a class="blog-category-title" href="/blog/tag/lean/">Lean</a>
+              </li>
+              <li>
+                <a class="blog-category-title" href="/blog/tag/innovation/">Innovation</a>
+              </li>
+              <li>
+                <a class="blog-category-title" href="/blog/tag/bluetooth/">Bluetooth</a>
+              </li>
+            </ul>
+          </div>
+
+      </div>
+
       <ul class="content col-1-1 post-list">
         {% for post in paginator.posts %}
 

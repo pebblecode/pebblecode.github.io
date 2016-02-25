@@ -129,6 +129,7 @@
 
 .content li.post-item {
     padding-top: 0;
+    padding-right: 200px;
 }
 
 .post-item {
@@ -229,11 +230,11 @@ a .post-title {
   background-size: cover;
   background-position: center;
   display: inline-block;
-  width: 250px;
-  height: 250px;
+  width: 180px;
+  height: 180px;
   border: 2px solid lighten($pink, 30%);
   position: absolute;
-  left: 0;
+  right: 200px;
   top: 0;
 
   @media screen and (max-width: $medium) {
@@ -261,7 +262,7 @@ a .post-title {
 }
 
 .post-list-content {
-  padding-left: 250px + 24px;
+  padding-right: 180px + 24px;
   @media screen and (max-width: $medium) {
     padding-left: 150px + 12px;
   }
@@ -274,11 +275,12 @@ a .post-title {
   background: $pink;
   color: white;
   display:table;
-  padding:6px 14px;
+  padding:4px 8px;
   color:white;
   border-radius: 4px;
   font-weight: bold;
   box-shadow: 2px 4px 0 rgba(0,0,0,0.3);
+  font-size: 16px;
 
   @media screen and (max-width: $small) {
     // top: 12px;
@@ -368,43 +370,44 @@ a .post-title {
 //===============================================================================
 // Post Categories
 
-.post-categories {
 
+.post-categories {
+  margin-top: 8px;
   margin-bottom: 6px;
 
   li {
-    display: inline-block;
-    margin-right: 2px;
-    color: $pink;
-    font-weight: bold;
-    // font-style: italic;
-    text-transform: capitalize;
-    font-size: 16px;
-    padding: 4px 8px;
-    background: #ccc;
-    position: relative;
-    margin-bottom: 14px;
+    // display: inline-block;
+    // margin-right: 2px;
+    // color: $pink;
+    // font-weight: bold;
+    // // font-style: italic;
+    // text-transform: capitalize;
+    // font-size: 16px;
+    // padding: 4px 8px;
+    // background: #ccc;
+    // position: relative;
+    // margin-bottom: 14px;
 
-    &:before {
-      content: "";
-      display: block;
-      position: absolute;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      top: 0;
-      background-color: #ddd;
-      z-index: -5;
-      -webkit-transform: rotate(5deg);
-    }
+    // &:before {
+    //   content: "";
+    //   display: block;
+    //   position: absolute;
+    //   left: 0;
+    //   width: 100%;
+    //   height: 100%;
+    //   top: 0;
+    //   background-color: #ddd;
+    //   z-index: -5;
+    //   -webkit-transform: rotate(5deg);
+    // }
 
-    &:nth-of-type(2n+0):before {
-      -webkit-transform: rotate(-5deg);
-    }
+    // &:nth-of-type(2n+0):before {
+    //   -webkit-transform: rotate(-5deg);
+    // }
 
-    &:nth-of-type(3n+0):before {
-      -webkit-transform: rotate(-10deg);
-    }
+    // &:nth-of-type(3n+0):before {
+    //   -webkit-transform: rotate(-10deg);
+    // }
 
     a {
       color: #666;
@@ -422,6 +425,25 @@ a .post-title {
 
 }
 
+.blog-categories-sidebar {
+  // background: #ddd;
+  position: absolute;
+  right: 0;
+  width: 200px;
+  height: 100%;
+  z-index: 10;
+
+  border-left: 6px solid #eee;
+  padding-left: 12px;
+
+}
+
+.blog-categories-title {
+  font-size: 18px;
+  color: #888;
+  margin-bottom: 2px;
+}
+
 .blog-categories-head {
   // color: white;
   font-size: 16px;
@@ -429,18 +451,19 @@ a .post-title {
 
 .blog-categories-headul {
   li {
-    font-size: 24px;
-    display: inline-block;
-    font-style: italic;
-    text-transform: uppercase;
-    font-family: $brandon;
-    text-shadow: 2px 2px #000;
+    // font-size: 24px;
+    // display: inline-block;
+    // font-style: italic;
+    // text-transform: uppercase;
+    // font-family: $brandon;
+    // text-shadow: 2px 2px #000;
     // width: 25%;
     // background: #ccc;
+    // margin-bottom: 2px;
   }
 }
 
 .blog-category-title {
   font-weight: bold;
-  color: white;
+  // color: white;
 }
