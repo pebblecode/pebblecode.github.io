@@ -6,8 +6,9 @@ tags: []
 author: Ian Black
 tumblr_url: http://blog.pebblecode.com/post/115765249231/putting-pen-to-paper
 ---
-<p>	It’s another early morning in London. A select few members of pebble {code} are gathering on a shady corner in Islington - a far cry from our usual south London home. Some of us clasp at hot cups of coffee. Others stand buzzing from the adrenaline of cycling round the city’s most notoriously dangerous roundabout. But spirits are high all round at the thought of starting our first Design Thinking workshop on patient engagement, with one of the UK’s largest charities. Armed with our wits, stacks of paper and a large stash of 80’s neon Sharpie pens, we head inside to set up.
-</p><figure data-orig-width="700" data-orig-height="1050" class="tmblr-full"><img src="https://40.media.tumblr.com/8235d76cbc3164336597978c444e7885/tumblr_inline_nmfxyv7VDx1qetc8f_540.jpg" alt="image" data-orig-width="700" data-orig-height="1050"/></figure><p>
+It’s another early morning in London. A select few members of pebble {code} are gathering on a shady corner in Islington - a far cry from our usual south London home. Some of us clasp at hot cups of coffee. Others stand buzzing from the adrenaline of cycling round the city’s most notoriously dangerous roundabout. But spirits are high all round at the thought of starting our first Design Thinking workshop on patient engagement, with one of the UK’s largest charities. Armed with our wits, stacks of paper and a large stash of 80’s neon Sharpie pens, we head inside to set up.
+
+<figure data-orig-width="700" data-orig-height="1050" class="tmblr-full"><img src="https://40.media.tumblr.com/8235d76cbc3164336597978c444e7885/tumblr_inline_nmfxyv7VDx1qetc8f_540.jpg" alt="image" data-orig-width="700" data-orig-height="1050"/></figure><p>
 	As 9:00 rolls around, the group from the charity pours through the door, armed with healthy snacks for the day. Moments later, hot beverages arrive, accompanied by a large silver platter of biscuits. I watched closely as willpower crumbled to dust and was swept away in the breeze. The apples and oranges barely stood a chance.
 </p><h2>Let’s Begin.</h2><p>
 	The group was split in to four teams. We planned to work through a series of exercises throughout the day, with each team assisted by a Pebbler. Each activity would lead in to the next, developing, refining and challenging ideas throughout the morning, with a strong focus on drawing as a technique for documenting ideas. This was not about being an artist, but encouraging people to be explicit and specific about their ideas and decisions.</p><p>
@@ -30,7 +31,7 @@ tumblr_url: http://blog.pebblecode.com/post/115765249231/putting-pen-to-paper
 	<br/><br/>
 	And then another&hellip;
 	<br/><br/>
-	And then another&hellip; 
+	And then another&hellip;
 	<br/><br/>
 	Four were played in total, forcing the teams to tweak, refine, flip and distil their thoughts until they could draw no more.
 </p><figure data-orig-width="1000" data-orig-height="667" class="tmblr-full"><img src="https://40.media.tumblr.com/1ff2fb2b76f0fc55677a959479e01530/tumblr_inline_nmfy2krXGb1qetc8f_540.jpg" alt="image" data-orig-width="1000" data-orig-height="667"/></figure><h2>Lessons Learned.</h2><p>

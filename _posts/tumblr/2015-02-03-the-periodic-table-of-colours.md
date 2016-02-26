@@ -6,7 +6,8 @@ tags: []
 tumblr_url: http://blog.pebblecode.com/post/109979021336/the-periodic-table-of-colours
 author: Mark Durrant
 ---
-<p><a href="http://pebblecode.com/periodic-table-of-color/">The Periodic Table of Colours</a> is a simple visualisation of all the colours present in the current HTML <a href="http://www.w3.org/TR/css3-color/#svg-color">extended color keywords</a> spec. I created it at pebble {code}’s recent data visualisation hack day.</p>
+<a href="http://pebblecode.com/periodic-table-of-color/">The Periodic Table of Colours</a> is a simple visualisation of all the colours present in the current HTML <a href="http://www.w3.org/TR/css3-color/#svg-color">extended color keywords</a> spec. I created it at pebble {code}’s recent data visualisation hack day.
+
 <img src="https://31.media.tumblr.com/b6406d3767cdf3a87304bdfb2a7686a9/tumblr_inline_nj71h2qceF1r1hmko.png" alt="Periodic Table of Colours" style="display:block;margin:auto;"/>
 <!-- more -->
 <p>I had originally planed to visualise an entire colour space such as RGB, HSL, or LAB. However these colour spaces have been expertly visualised several times before. For example Tauba Auerbach’s <a href="http://www.taubaauerbach.com/view.php?id=286">RGB Color Space Atlas</a>.</p>
