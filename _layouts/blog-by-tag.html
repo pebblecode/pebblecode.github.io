@@ -7,7 +7,7 @@ layout: blog-by-tag
 
     {% include header.html %}
 
-    <section class="hero-container hero-container-blog blue }}">
+    <section class="hero-container hero-container-blog blue">
       <div class="hero-inner grid">
         <p class="col-1-1 blog-category-head">Blog Posts tagged with:</p>
         <h1 class="hero-title col-1-1">{{ page.category }}</h1>
@@ -21,16 +21,24 @@ layout: blog-by-tag
 
 
       <ul class="content col-1-1 post-list">
+
+        {% assign noblogposts = true %}
+
         {% for post in site.posts %}
 
         {% if post.categories contains page.category %}
 
                     {% include blog-listpost.html %}
 
+                    {% assign noblogposts = false %}
+
           {% endif %}
 
         {% endfor %}
       </ul>
+      {% if noblogposts %}
+          <p class="col-1-1 blog-no-posts">No posts tagged <strong>{{page.category}}</strong></p>
+      {% endif %}
     </section>
     <!-- /.content-container -->
 

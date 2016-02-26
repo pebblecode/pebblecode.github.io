@@ -20,6 +20,12 @@
   }
 }
 
+.blog-by-tag .gbl-head {
+    @media screen and ( max-width: $medium + 100px ) {
+      background-color: $blue;
+    }
+}
+
 .hero-container-blog, .hero-container-blog.aqua {
   background-image: repeating-linear-gradient(-45deg, transparent, transparent 70px, rgba(255,255,255,.1) 70px, rgba(255,255,255,.1) 140px);
 
@@ -127,16 +133,16 @@
 .post-list {
   padding-bottom: 0;
   margin-bottom: 0;
+  float: left;
+  width: calc(100% - 200px);
+
+  @media screen and (max-width: $medium) {
+    width: 100%;
+  }
 }
 
 .content li.post-item {
     padding-top: 0;
-    padding-right: 200px;
-
-    @media screen and (max-width: $medium) {
-      padding-right: 0px;
-    }
-
 }
 
 .post-item {
@@ -191,6 +197,7 @@ a .post-title {
     max-width: 100%;
   }
 
+
   .post-item & {
     font-size: $alpha;
 
@@ -198,6 +205,11 @@ a .post-title {
       font-size: $beta;
       margin-bottom: 5px;
     }
+
+    @media screen and ( max-width: $small ) {
+      font-size: 22px;
+    }
+
   }
 
   &:hover {
@@ -207,7 +219,7 @@ a .post-title {
 
 .post-author {
   display: block;
-  font-size: $gamma;
+  // font-size: $gamma;
   font-weight: $font-bold;
   display: inline;
 
@@ -274,11 +286,12 @@ a .post-title {
   padding-left: 200px + 12px;
   min-height: 140px;
   @media screen and (max-width: $medium) {
+    padding-left: 150px + 12px;
+  }
+  @media screen and (max-width: $small) {
+    padding-top: 100px;
     padding-left: 0;
   }
-  // @media screen and (max-width: $small) {
-  //   padding-left: 0px;
-  // }
 }
 
 .post-item .readmore-btn {
@@ -403,25 +416,31 @@ a .post-title {
 
 
 .blog-categories-sidebar {
-  position: absolute;
-  right: 0;
+  float: right;
+  // position: absolute;
+  // right: 0;
   width: 200px;
   height: 100%;
   z-index: 10;
   font-size: 16px;
   padding-left: 12px;
+
   @media screen and (max-width: $medium) {
     width: 100%;
     position: relative;
     padding: 12px;
   }
+
 }
 
 .blog-categories-sidebarul {
   line-height: 1.4;
   @media screen and (max-width: $medium) {
+    text-align: center;
+    margin-bottom: 0;
     li {
       display: inline-block;
+      font-size: 14px;
     }
   }
 }
@@ -437,6 +456,11 @@ a .post-title {
   font-size: 14px;
   color: #888;
   margin-bottom: 2px;
+
+  @media screen and (max-width: $medium) {
+    text-align: center;
+  }
+
 }
 
 
@@ -453,4 +477,9 @@ a .post-title {
 
 .blog .hero-title, .blog-by-type .herotitle {
   margin-bottom: 12px;
+}
+
+.blog-no-posts {
+  float: left;
+  width: calc(100% - 200px);
 }
