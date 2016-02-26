@@ -315,6 +315,13 @@ a .post-title {
     background: darken($pink, 10%);
   }
 
+  &:active {
+    transform: translate(2px,4px);
+    -ms-transform: translate(2px,4px);
+    -webkit-transform: translate(2px,4px);
+    transition: 0.01s;
+    box-shadow: none;
+  }
 }
 
 //===============================================================================
