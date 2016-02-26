@@ -21,5 +21,5 @@ Then develop the **thing right**. Empower your teams with the capabilities they 
 
 We hope these best practices will help to stand you in good stead. If you would like a hand with your own digital transformation, from digital product innovation to sprinkling a bit of startup over your enterprise, [get in touch](http://pebblecode.com/contact/)!
 
-Our Chairman, [Stephen Allott](https://en.wikipedia.org/wiki/Stephen_Allott), is speaking at [Digital Leaders’ “How to Succeed in a Digital Transformation”](http://digileaders.com/event/how-to-succeed-in-a-digital-transformation/) on the 7th March 2016. [Register here](http://digileaders.com/event/how-to-succeed-in-a-digital-transformation/). 
+Our Chairman, [Stephen Allott](https://en.wikipedia.org/wiki/Stephen_Allott), is speaking at [Digital Leaders’ “How to Succeed in a Digital Transformation”](http://digileaders.com/event/how-to-succeed-in-a-digital-transformation/) on the 7th March 2016. [Register here](http://digileaders.com/event/how-to-succeed-in-a-digital-transformation/).
 

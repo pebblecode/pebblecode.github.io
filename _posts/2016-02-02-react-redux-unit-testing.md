@@ -2,7 +2,7 @@
 layout: post
 title:  Unit Testing React Components and Redux Reducers
 author: Mike James
-categories: react
+categories: [react]
 ---
 In this post I'll go through how to get enzyme setup to test your presentational components.
 ---
@@ -29,7 +29,7 @@ In this post we'll go through the setup of a React, Redux Webpack application wi
 
 *containers* - (redux glue), react components that have very little if any styling. With the glue to pass down state to its child components. Within this directory we create our top level routes, such as home, about etc. In here we're also making use of redux-forms higher order component to give us validation and state management as forms generally behave is the same way. This library has dramatically helped reduce boilerplate.
 
-*actions* - contains our functions that are triggered by user actions or workers in our application. We can use these actions later in our reducer tests. 
+*actions* - contains our functions that are triggered by user actions or workers in our application. We can use these actions later in our reducer tests.
 
 ### Testing our reducers
 This is trivial, redux has no coupling to the browser here, so we can test our application like a state machine with simple input output. With tests running fast in node environment.
@@ -43,19 +43,19 @@ Example Test:
     describe('Counter Reducer', () => {
       it('Should handle INCREMENT', () => {
         const initialState = {count: 0};
-    
+
         const newState = reducer(initialState, {type: 'INCREMENT'});
-    
+
         expect(newState).to.eql({
           count: 1
         });
       });
-    
+
       it('Should handle DECREMENT', () => {
         const initialState = {count: 1};
-    
+
         const newState = reducer(initialState, {type: 'DECREMENT'});
-    
+
         expect(newState).to.eql({
           count: 0
         });
@@ -66,9 +66,9 @@ Example Test:
 Reducer:
 
     import {createReducer} from '../utils';
-    
+
     const initialState = {count: 0};
-    
+
     export default createReducer(initialState, {
       ['INCREMENT']: (state) => ({
         count: state.count + 1
@@ -77,7 +77,7 @@ Reducer:
         count: state.count - 1
       })
     });
-    
+
 If you're interested in what createReducer does [see here](https://github.com/joshgeller/react-redux-jwt-auth-example/blob/master/src/utils/index.js#L12) - it gives a nicer switch structure. I quite like it.
 
 ### Testing react components with enzyme
@@ -89,16 +89,16 @@ Example Test:
     import {expect} from 'chai';
     import {shallow} from 'enzyme';
     import sinon from 'sinon';
-    
+
     import NotificationTab from '../';
     describe('Notification Tab', () => {
       it('Should render one notification', () => {
         const wrapper = shallow(<NotificationTab count={2}/>);
         expect(wrapper.text()).to.contain('2');
       });
-    
+
       it('Should handle onClick', () => {
-    
+
         const handleButtonClick = sinon.spy();
         const wrapper = shallow(
           <NotificationTab count={3} onClick={handleButtonClick} />
@@ -106,7 +106,7 @@ Example Test:
         wrapper.find('div').simulate('click', {preventDefault: () => {}});
         expect(handleButtonClick.calledOnce).to.equal(true);
       });
-    
+
     });
 
 See more info on [Enzymes API](http://airbnb.io/enzyme/docs/api/index.html)
@@ -116,12 +116,12 @@ Our Component:
 
     import React, {Component, PropTypes} from 'react';
     import Icon from '../Icon';
-    
+
     import styles from './styles.css';
     class NotificationTab extends Component {
       render() {
         const {count} = this.props;
-    
+
         return (
           <div className={styles.notification} {...this.props} onClick={(e) => {e.preventDefault(); this.props.onClick();}}>
             {count > 0 ? <span className={styles.count}>{count}</span> : null}
@@ -129,16 +129,16 @@ Our Component:
           </div>);
       }
     }
-    
+
     NotificationTab.propTypes = {
       count: PropTypes.number.isRequired,
       onClick: PropTypes.func
     };
-    
+
     NotificationTab.defaultProps = {
       onClick: () => {}
     };
-    
+
     export default NotificationTab;
 
 
@@ -152,8 +152,8 @@ karma.config.js
     // https://github.com/airbnb/enzyme/issues/47
     // had issues loading sinon as its a dep of enzyme
     var argv = require('minimist')(process.argv.slice(2));
-    
-    
+
+
     module.exports = (config) => {
       config.set({
         browsers: [ 'PhantomJS' ], // run in Chrome
@@ -231,7 +231,7 @@ karma.config.js
             }
           }
         },
-    
+
         webpackServer: {
           noInfo: false // please don't spam the console when running in karma!
         }

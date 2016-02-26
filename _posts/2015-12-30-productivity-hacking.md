@@ -2,7 +2,7 @@
 layout: post
 title:  Productivity Hacking for Developers
 author: Peter O'Shaughnessy
-categories: productivity
+categories: [productivity]
 featured: true
 thumbnail: /img/posts/2015-12-30-productivity-hacking/habit-loop1.png
 ---

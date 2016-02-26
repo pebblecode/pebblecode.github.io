@@ -2,7 +2,7 @@
 layout: post
 title: The importance of a good bug report
 author: George Ornbo
-categories: [Programming]
+categories: [programming]
 ---
 
 Good bug reports offer significant time and cost savings. Not to mention happier developers.
@@ -31,9 +31,9 @@ As a developer reports like this are toxic for several reasons:
 
 The term bug was popularised by [Grace Hopper][1] who referred to moth that had got stuck in the relay of a Mark II Computer in 1947. The moth was causing the computer to malfunction so to fix it had to be removed, or debugged.
 
-A bug is a defect in how software is expected to work. It can be used to desscribe an error, flaw, failure or fault in a computer program. It can also be used to describe unexpected behaviour even if the software is working. 
+A bug is a defect in how software is expected to work. It can be used to desscribe an error, flaw, failure or fault in a computer program. It can also be used to describe unexpected behaviour even if the software is working.
 
-Whilst bugs are a fact of life in software development too often they are dealt with reactively. Developers schedules are often filled to bursting with features offering them little or not time to fix bugs. Bugs will always be present in software so it is important to plan to expect them. 
+Whilst bugs are a fact of life in software development too often they are dealt with reactively. Developers schedules are often filled to bursting with features offering them little or not time to fix bugs. Bugs will always be present in software so it is important to plan to expect them.
 
 ## How to report a bug
 
@@ -58,7 +58,7 @@ Developers are time poor and generally under pressure to solve problems quickly.
 * That isn't a bug
 * That doesn't make sense
 * I don't know how to replicate this
-* This person doesn't understand 
+* This person doesn't understand
 * There are too many things for me to work out
 
 Clearly for the relationship between reporter and developer this is not a good outcome. So how do you write a good bug report?
@@ -71,7 +71,7 @@ A good bug report is about reducing the number of variables for a developer.
 
 Normally developers will work on a couple of environments as the push code out to production. Specifying where the bug happened allows a developer to understand which version of the code they should be looking at. Pasting the URL is a good idea here.
 
-### User Story / Feature 
+### User Story / Feature
 
 If the bug relates to a user story or feature reference it in the bug report. This can help reference the correct behaviour. Referencing a feature like 'Adding a user' can also be useful in reducing the number of variables.
 
@@ -103,7 +103,7 @@ This should be used to describe what actually happened. Screenshots can be very 
 
 ### Steps to replicate
 
-This is perhaps the most useful part of bug report. Assume the developer has no knowledge of the bug you've found. Describe exactly the steps that you took to discover the bug. This can be useful in that if you can't replicate it yourself there is little chance a developer can. 
+This is perhaps the most useful part of bug report. Assume the developer has no knowledge of the bug you've found. Describe exactly the steps that you took to discover the bug. This can be useful in that if you can't replicate it yourself there is little chance a developer can.
 
 Use numbered bullet points to replicate the bug
 
@@ -115,9 +115,9 @@ Use numbered bullet points to replicate the bug
 
 ## Conclusion
 
-Good bug reports can save significant amounts of time and money. It is well worth defining a bug reporting process in your team whether you have a formal QA tester or not. The risks of bad bug reports are that significant waste is introduced into your team. Most developers can tell war stories about bad bug reports but it simply does not need to be this way. Whether or not you use a bug tracker to enforce good bug reports or not investing in a good bug reporting process will increase productivity and developer happiness. 
+Good bug reports can save significant amounts of time and money. It is well worth defining a bug reporting process in your team whether you have a formal QA tester or not. The risks of bad bug reports are that significant waste is introduced into your team. Most developers can tell war stories about bad bug reports but it simply does not need to be this way. Whether or not you use a bug tracker to enforce good bug reports or not investing in a good bug reporting process will increase productivity and developer happiness.
 
-I think I met a happy developer. Once. 
+I think I met a happy developer. Once.
 
 
 

@@ -2,7 +2,7 @@
 layout: post
 title: Frugal Innovation in Health
 author: George Ornbo
-categories: [Health]
+categories: [health]
 thumbnail: /img/posts/2016-02-19-frugal-innovation-in-health/robohand.jpg
 ---
 
