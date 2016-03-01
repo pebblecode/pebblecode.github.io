@@ -2,9 +2,9 @@
 layout: post
 title:  June Lightning Talks
 author: Jonny Li
-categories: lightning talks
+categories: [lightning talks]
 ---
-In Junes lightning talks, our designer Peter Tait shows us how to make fonts from scratch. 
+In Junes lightning talks, our designer Peter Tait shows us how to make fonts from scratch.
 
 <div class="video"><iframe width="532" height="400" src="//www.youtube.com/embed/p703PKE6vKI" frameborder="0" allowfullscreen="allowfullscreen"></iframe></div>
 

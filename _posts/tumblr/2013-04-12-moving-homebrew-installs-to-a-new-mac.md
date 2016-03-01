@@ -2,7 +2,7 @@
 layout: post
 title: Moving homebrew installs to a new Mac
 date: '2013-04-12T09:29:00+01:00'
-tags: []
+categories: []
 tumblr_url: http://blog.pebblecode.com/post/47769475680/moving-homebrew-installs-to-a-new-mac
 author: George Ornbo
 ---

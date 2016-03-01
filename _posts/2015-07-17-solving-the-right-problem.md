@@ -2,16 +2,16 @@
 layout: post
 title: A noobs guide to solving the right problem at 3DS
 author: Jonny Li
-categories: Workshop
+categories: [Workshop]
 ---
 
-### I was recently invited to facilitate a 3DS (3 Day Startup) event for students at Queen Mary University. A 3 day event for students to learn how to find out what it is people want to pay money for. 
+### I was recently invited to facilitate a 3DS (3 Day Startup) event for students at Queen Mary University. A 3 day event for students to learn how to find out what it is people want to pay money for.
 
 ![3DS](/img/posts/2015-07-17-solving-the-right-problem/3ds.jpg)
 
-It’s a little different from Startup Weekend where the end goal is to have a working prototype they can show off to a panelist of judges. 
+It’s a little different from Startup Weekend where the end goal is to have a working prototype they can show off to a panelist of judges.
 
-It’s closer to the lean startup machine model where people focus on validating assumptions about their customers, customers problems, and the kind of solutions that should be built. 
+It’s closer to the lean startup machine model where people focus on validating assumptions about their customers, customers problems, and the kind of solutions that should be built.
 
 By the end of the event, students who have attended this event, will have learnt how to identify the real problems they need to be solving through a process of getting customer feedback, and rapidly prototyped ideas.
 
@@ -36,12 +36,12 @@ Example: Dog Food
 The customer is the dog owner
 The user is the dog
 
-In the context of something you might be more familiar with: 
-You are a Facebook user. 
+In the context of something you might be more familiar with:
+You are a Facebook user.
 Advertisers are Facebook customers.
 
 ## Customer Validation
-We used the lean canvas, a canvas to help us put some order to our ideas which will help us to better understand our base assumptions of the situation. 
+We used the lean canvas, a canvas to help us put some order to our ideas which will help us to better understand our base assumptions of the situation.
 
 #### Customer segments
 A narrow group of people that will buy or use your product
@@ -57,27 +57,27 @@ Defining the MVP (minimal viable product), the minimal set of functionality to s
 
 > “Bind a solution to your problem as late as possible.” -Ash Maurya
 
-As Ash puts it, you want to learn as much about your customers problem before crafting your solution. 
+As Ash puts it, you want to learn as much about your customers problem before crafting your solution.
 
 ## Customer Interviews
-The details added into the lean canvas are not some random exercise that we do, they are there to help us understand what we think we understand about the problem and pinpoint what it is we need to confirm. If your entire solution is based on a false premise, then you will probably waste a lot of time and money building something no one really needs. 
+The details added into the lean canvas are not some random exercise that we do, they are there to help us understand what we think we understand about the problem and pinpoint what it is we need to confirm. If your entire solution is based on a false premise, then you will probably waste a lot of time and money building something no one really needs.
 
 > “Customers don’t care about your solution. They care about their problems.” - Dave McClure, 500Startups
 
-During the customer interview, there are a few key points that to look out for: 
+During the customer interview, there are a few key points that to look out for:
 
 - The customers pain point. Look for big, emotional pains. People don’t take action until it really hurts.
-- What doesn’t work with alternatives? Stuff they’ve already tried to solve their problem. 
-- How big is their problem? 
+- What doesn’t work with alternatives? Stuff they’ve already tried to solve their problem.
+- How big is their problem?
 
-What we are looking for are patterns in their responses. We don’t sell our idea here just yet. We are looking to break our hypothesis. If it looks like your hypothesis is correct, then you are probably on the right track. 
+What we are looking for are patterns in their responses. We don’t sell our idea here just yet. We are looking to break our hypothesis. If it looks like your hypothesis is correct, then you are probably on the right track.
 
 “probably”
 
 ![everybody lies](/img/posts/2015-07-17-solving-the-right-problem/everybody-lies.jpg)
 
 ## The solutions interview
-Hopefully at this point, your hypothesis has either gone through several iterations or remained the same. This in turn will likely affect your solution. 
+Hopefully at this point, your hypothesis has either gone through several iterations or remained the same. This in turn will likely affect your solution.
 
 In the same way the customer interview was used to validate your problem, the solutions interview is for validating your solution. Points to look out for when talking about your solution:
 
@@ -88,17 +88,17 @@ In the same way the customer interview was used to validate your problem, the so
 
 Here’s a sample script the students used to customise for their own projects:
 
-- What’s the hardest part about [problem context] ? 
-- Can you tell me about the last time that happened? 
-- Why was that hard? 
-- What, if anything, have you done to solve that problem? 
+- What’s the hardest part about [problem context] ?
+- Can you tell me about the last time that happened?
+- Why was that hard?
+- What, if anything, have you done to solve that problem?
 - What don’t you love about the solutions you’ve tried?
 
-The customer and solutions interview process is very much like the build, measure, learn process in the learn startup. Where the MVP, is not simply a prototype, but is the cheapest solution you can use to validate an assumption. 
+The customer and solutions interview process is very much like the build, measure, learn process in the learn startup. Where the MVP, is not simply a prototype, but is the cheapest solution you can use to validate an assumption.
 
 Over the course of the 3 days, the students have come to experience the sense of dread when I approach them. They  realised quickly that I will ask them the same question over and over again:
 
-“What's they problem you are trying to solve” 
+“What's they problem you are trying to solve”
 
 ![Tripeezy](/img/posts/2015-07-17-solving-the-right-problem/Tripeezy.jpg)
 

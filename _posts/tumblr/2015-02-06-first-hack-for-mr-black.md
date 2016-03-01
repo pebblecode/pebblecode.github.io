@@ -2,7 +2,7 @@
 layout: post
 title: First hack for Mr Black.
 date: '2015-02-06T17:52:33+00:00'
-tags: []
+categories: [hacks]
 tumblr_url: http://blog.pebblecode.com/post/110263416971/first-hack-for-mr-black
 author: Ian Black
 ---

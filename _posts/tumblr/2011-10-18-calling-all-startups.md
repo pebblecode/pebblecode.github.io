@@ -2,7 +2,7 @@
 layout: post
 title: Calling All Startups
 date: '2011-10-18T10:27:28+01:00'
-tags: []
+categories: []
 tumblr_url: http://blog.pebblecode.com/post/11607809131/calling-all-startups
 author: Toby Hunt
 ---

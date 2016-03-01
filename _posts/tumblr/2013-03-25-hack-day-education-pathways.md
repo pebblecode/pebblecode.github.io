@@ -2,7 +2,7 @@
 layout: post
 title: 'Hack day: Education Pathways'
 date: '2013-03-25T10:54:33+00:00'
-tags: []
+categories: []
 tumblr_url: http://blog.pebblecode.com/post/46243200252/hack-day-education-pathways
 author: Nathan Evans
 ---

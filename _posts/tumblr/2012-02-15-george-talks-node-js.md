@@ -2,10 +2,7 @@
 layout: post
 title: George talks Node.js
 date: '2012-02-15T11:50:00+00:00'
-tags:
-- nodejs
-- frameworks
-- book
+categories: [nodejs, frameworks, book]
 tumblr_url: http://blog.pebblecode.com/post/17653720808/george-talks-node-js
 author: Toby Hunt
 ---

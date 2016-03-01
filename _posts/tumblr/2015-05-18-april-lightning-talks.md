@@ -3,15 +3,7 @@ layout: post
 title: APRIL LIGHTNING TALKS
 date: '2015-05-18T14:11:46+01:00'
 author: Johnny Li
-tags:
-- linux
-- continuous integration
-- docker
-- software development
-- processing.js
-- open frameworks
-- dynamic animation
-- interactive animations
+categories: [lightning talks]
 tumblr_url: http://blog.pebblecode.com/post/119275278526/april-lightning-talks
 ---
 <h2>In Aprils lightning talk, we learnt how to create dynamic animations using tools such as processing.js and open frameworks with Niall Henn.</h2>

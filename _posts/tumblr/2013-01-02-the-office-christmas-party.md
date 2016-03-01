@@ -2,7 +2,7 @@
 layout: post
 title: The Office Christmas Party!
 date: '2013-01-02T12:33:00+00:00'
-tags: []
+categories: []
 tumblr_url: http://blog.pebblecode.com/post/39469824552/the-office-christmas-party
 author: Andrea Ross-Hilton
 ---

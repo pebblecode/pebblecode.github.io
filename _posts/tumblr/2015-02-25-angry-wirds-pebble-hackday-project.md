@@ -2,7 +2,7 @@
 layout: post
 title: Angry wirds - Pebble Hackday Project
 date: '2015-02-25T11:56:52+00:00'
-tags: []
+categories: [hacks]
 tumblr_url: http://blog.pebblecode.com/post/112038396231/angry-wirds-pebble-hackday-project
 author: Niall Henn
 thumbnail: https://31.media.tumblr.com/9b5f136d41b9a1069ce135d4a0c0694c/tumblr_inline_njij9oJdK91rvocwd.gif

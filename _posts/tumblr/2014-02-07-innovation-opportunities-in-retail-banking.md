@@ -2,7 +2,7 @@
 layout: post
 title: Innovation Opportunities in Retail Banking
 date: '2014-02-07T13:19:00+00:00'
-tags: []
+categories: []
 tumblr_url: http://blog.pebblecode.com/post/75894169783/innovation-opportunities-in-retail-banking
 author: George Ornbo
 ---

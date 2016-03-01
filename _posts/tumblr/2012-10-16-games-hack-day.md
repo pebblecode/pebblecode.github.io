@@ -2,7 +2,7 @@
 layout: post
 title: Games hack day
 date: '2012-10-16T14:08:00+01:00'
-tags:
+categories:
 - games
 - hack-day
 tumblr_url: http://blog.pebblecode.com/post/33705863399/games-hack-day

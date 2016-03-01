@@ -2,7 +2,7 @@
 layout: post
 title: Noisy URIs
 date: '2013-02-15T09:39:56+00:00'
-tags:
+categories:
 - CSS
 - Sass
 - LESS

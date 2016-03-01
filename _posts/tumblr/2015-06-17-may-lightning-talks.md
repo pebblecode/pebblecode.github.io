@@ -3,6 +3,7 @@ layout: post
 title:  May Lightning Talks
 date:   2015-06-17 12:20:20
 author: Jonny Li
+categories: [lightning talks]
 tumblr_url: http://blog.pebblecode.com/post/121752831286/may-lightning-talk
 ---
 

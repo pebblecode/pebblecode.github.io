@@ -2,14 +2,14 @@
 layout: post
 title:  July Lightning Talks
 author: Jonny Li
-categories: lightning talks
+categories: [lightning talks]
 ---
-In July’s lighting talk, Peter our Technology Lead and future tech enthusiast shows us how folks are currently hacking their brain to learn new skills more quickly. 
+In July’s lighting talk, Peter our Technology Lead and future tech enthusiast shows us how folks are currently hacking their brain to learn new skills more quickly.
 
 In this talk, Peter will talk about:
 
 - How your brain works
-- Ways to hack your brain 
+- Ways to hack your brain
 - Using virtual reality as a training tool
 
 <div class="video"><iframe width="532" height="400" src="//www.youtube.com/embed/TeoBG3onbjs" frameborder="0" allowfullscreen="allowfullscreen"></iframe></div>

@@ -2,7 +2,7 @@
 layout: post
 title: Happy/Sad Santa. An app from our Hackmas Day
 date: '2013-12-16T17:54:50+00:00'
-tags:
+categories:
 - pebblecode
 - hackmas
 - hack

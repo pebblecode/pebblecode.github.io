@@ -2,7 +2,7 @@
 layout: post
 title: Successful Recruitment
 date: '2013-02-04T16:09:00+00:00'
-tags:
+categories:
 - Recruitment
 tumblr_url: http://blog.pebblecode.com/post/42278903623/successful-recruitment
 author: Toby Hunt

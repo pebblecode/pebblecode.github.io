@@ -2,7 +2,7 @@
 layout: post
 title: Smashing conference
 date: '2012-10-02T11:22:00+01:00'
-tags:
+categories:
 - conference
 - Smashing Magazine
 tumblr_url: http://blog.pebblecode.com/post/32729383827/smashing-conference

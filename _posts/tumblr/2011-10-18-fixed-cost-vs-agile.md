@@ -2,7 +2,7 @@
 layout: post
 title: Fixed Cost vs. Agile
 date: '2011-10-18T10:27:08+01:00'
-tags: []
+categories: []
 tumblr_url: http://blog.pebblecode.com/post/11607804970/fixed-cost-vs-agile
 author: Toby Hunt
 ---

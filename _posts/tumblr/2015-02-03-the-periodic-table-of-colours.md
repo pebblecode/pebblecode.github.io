@@ -2,7 +2,7 @@
 layout: post
 title: The Periodic Table of Colours
 date: '2015-02-03T15:09:00+00:00'
-tags: []
+categories: [hacks]
 tumblr_url: http://blog.pebblecode.com/post/109979021336/the-periodic-table-of-colours
 author: Mark Durrant
 ---

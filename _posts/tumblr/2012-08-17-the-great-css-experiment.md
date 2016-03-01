@@ -2,11 +2,7 @@
 layout: post
 title: The great (CSS) experiment
 date: '2012-08-17T11:10:00+01:00'
-tags:
-- CSS
-- Sass
-- CSS reset
-- Open Source
+categories: [CSS, Sass, CSS reset, Open Source]
 tumblr_url: http://blog.pebblecode.com/post/29614270562/the-great-css-experiment
 author: Mark Durrant
 ---

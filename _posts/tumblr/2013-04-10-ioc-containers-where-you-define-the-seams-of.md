@@ -2,7 +2,7 @@
 layout: post
 title: 'IoC containers: where you define the seams of applications'
 date: '2013-04-10T10:56:17+01:00'
-tags: []
+categories: []
 tumblr_url: http://blog.pebblecode.com/post/47610793806/ioc-containers-where-you-define-the-seams-of
 author: Nathan Evans
 ---

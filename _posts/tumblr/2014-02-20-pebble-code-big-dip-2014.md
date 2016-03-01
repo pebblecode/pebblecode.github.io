@@ -2,7 +2,7 @@
 layout: post
 title: pebble {code} @ Big DiP 2014
 date: '2014-02-20T10:02:00+00:00'
-tags: []
+categories: []
 tumblr_url: http://blog.pebblecode.com/post/77265590767/pebble-code-big-dip-2014
 author: John Mildinhall
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: Think Sprints
 date: '2013-04-02T09:38:08+01:00'
-tags: []
+categories: []
 tumblr_url: http://blog.pebblecode.com/post/46924330235/think-sprints
 author: Mark Durrant
 ---

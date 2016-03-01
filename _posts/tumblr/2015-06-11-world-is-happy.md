@@ -3,7 +3,7 @@ layout: post
 title:  On Average, the World is Happy
 date:   2015-06-11 11:20:20
 author: Ian Black
-tags: []
+categories: [hacks]
 tumblr_url: http://blog.pebblecode.com/post/121279413371/on-average-the-world-is-happy
 ---
 <h3>How far would you agree with the above statement? If you could visualise the emotional state of the world, what would it looks like?</h3>

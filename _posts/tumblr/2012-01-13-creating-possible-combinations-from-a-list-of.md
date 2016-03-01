@@ -2,11 +2,7 @@
 layout: post
 title: Creating possible combinations from a list of lists in F#
 date: '2012-01-13T09:59:35+00:00'
-tags:
-- fsharp
-- listoflist
-- blackjack
-- cards
+categories: [fsharp]
 tumblr_url: http://blog.pebblecode.com/post/15769678315/creating-possible-combinations-from-a-list-of
 author: Daniel Bradley
 ---
@@ -30,7 +26,7 @@ author: Daniel Bradley
     | h::t <span>-&gt;
         </span>combinations t
         |&gt; List.map (<span>fun </span>tOpts <span>-&gt;
-            </span>h |&gt; List.map (<span>fun </span>hOpt <span>-&gt; </span>hOpt ::tOpts)) 
+            </span>h |&gt; List.map (<span>fun </span>hOpt <span>-&gt; </span>hOpt ::tOpts))
         |&gt; List.concat
 </pre>
 <p>Essentially, a quick line by line run through is:</p>

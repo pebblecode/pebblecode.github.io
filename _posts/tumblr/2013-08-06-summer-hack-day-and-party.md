@@ -2,7 +2,7 @@
 layout: post
 title: Summer hack day and party!
 date: '2013-08-06T16:46:00+01:00'
-tags:
+categories:
 - hack-day
 - art
 - innovation

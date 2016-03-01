@@ -2,10 +2,7 @@
 layout: post
 title: Effective Communication
 date: '2012-08-01T17:06:40+01:00'
-tags:
-- collaboration
-- communication
-- tools
+categories: [collaboration, communication, tools]
 tumblr_url: http://blog.pebblecode.com/post/28488558207/effective-communication
 author: Toby Hunt
 ---

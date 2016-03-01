@@ -2,7 +2,7 @@
 layout: post
 title: Building armies of servers with kvm and puppet
 date: '2012-09-21T09:49:39+01:00'
-tags: []
+categories: []
 tumblr_url: http://blog.pebblecode.com/post/31976374462/building-armies-of-servers-with-kvm-and-puppet
 author: George Ornbo
 ---
@@ -55,7 +55,7 @@ addpkg = openssh-server, git, vim, puppet
 #execute firstboot.sh only once
 if [ ! -e /root/firstboot_done ]; then
     echo "[agent]" &gt;&gt; /etc/puppet/puppet.conf
-    echo "server = quimby.pebblecode.net" &gt;&gt; /etc/puppet/puppet.conf 
+    echo "server = quimby.pebblecode.net" &gt;&gt; /etc/puppet/puppet.conf
     # Start puppet on boot?
     echo "START=yes" &gt;&gt; /etc/default/puppet
 

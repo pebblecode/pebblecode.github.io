@@ -2,9 +2,7 @@
 layout: post
 title: New release for Vistazo!
 date: '2012-08-07T15:17:11+01:00'
-tags:
-- vistazo
-- performance
+categories: [vistazo, performance]
 tumblr_url: http://blog.pebblecode.com/post/28908615334/new-release-for-vistazo
 author: Toby Hunt
 ---

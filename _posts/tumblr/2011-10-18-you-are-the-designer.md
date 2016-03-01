@@ -2,9 +2,7 @@
 layout: post
 title: You are the designer
 date: '2011-10-18T10:28:27+01:00'
-tags:
-- browsers
-- design
+categories: [browsers, design]
 tumblr_url: http://blog.pebblecode.com/post/11607821126/you-are-the-designer
 author: George Ornbo
 ---

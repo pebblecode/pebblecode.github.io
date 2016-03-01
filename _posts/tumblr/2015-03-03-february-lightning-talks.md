@@ -2,7 +2,7 @@
 layout: post
 title: February Lightning Talks
 date: '2015-03-03T10:27:06+00:00'
-tags: []
+categories: [lightning talks]
 tumblr_url: http://blog.pebblecode.com/post/112594979696/february-lightning-talks
 author: George Ornbo
 ---

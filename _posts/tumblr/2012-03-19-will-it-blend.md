@@ -2,7 +2,7 @@
 layout: post
 title: Will it blend?
 date: '2012-03-19T13:51:00+00:00'
-tags: []
+categories: []
 tumblr_url: http://blog.pebblecode.com/post/19571810699/will-it-blend
 author: Mark Durrant
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: World Diabetes Day
 date: '2012-11-14T11:39:00+00:00'
-tags: []
+categories: []
 tumblr_url: http://blog.pebblecode.com/post/35700083383/world-diabetes-day
 author: Mark Durrant
 ---

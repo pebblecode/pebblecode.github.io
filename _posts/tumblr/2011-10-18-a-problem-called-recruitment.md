@@ -2,7 +2,7 @@
 layout: post
 title: A Problem Called Recruitment
 date: '2011-10-18T10:27:37+01:00'
-tags: []
+categories: [recruitment]
 tumblr_url: http://blog.pebblecode.com/post/11607810793/a-problem-called-recruitment
 author: Toby Hunt
 ---

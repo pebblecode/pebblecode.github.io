@@ -2,8 +2,7 @@
 layout: post
 title: pebble.it on github
 date: '2011-10-18T10:28:18+01:00'
-tags:
-- git
+categories: [git]
 tumblr_url: http://blog.pebblecode.com/post/11607819225/pebble-it-on-github
 author: George Ornbo
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: MMXII Hackathon - Mark's thoughts.
 date: '2012-08-03T14:05:52+01:00'
-tags: []
+categories: []
 tumblr_url: http://blog.pebblecode.com/post/28625879020/mmxii-hackathon-marks-thoughts
 author: Mark Durrant
 ---

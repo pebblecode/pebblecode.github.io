@@ -2,9 +2,7 @@
 layout: post
 title: Hacking APIs with Node.js
 date: '2012-09-06T09:28:00+01:00'
-tags:
-- node.js
-- apis
+categories: [node.js, apis]
 tumblr_url: http://blog.pebblecode.com/post/30986718926/hacking-apis-with-node-js
 author: George Ornbo
 ---
@@ -33,11 +31,11 @@ url = require('url') ;
 http.createServer(function(request, response) {
   var options = {
     host: 'yourdomain.com',
-    port: 18201,    
-    path: '/api/endpoint',    
-    method: 'POST',    
+    port: 18201,
+    path: '/api/endpoint',
+    method: 'POST',
     headers: {
-      'Content-Type': 'application/json' 
+      'Content-Type': 'application/json'
     }
   }
 

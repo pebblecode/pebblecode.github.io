@@ -12,7 +12,8 @@
 
         <ul class="post-categories">
           {% for category in post.categories %}
-              <li><a class="blog-category-title" href="/blog/tag/{{category}}">{{category}}</a></li>
+              {% assign catLink = category | replace: ' ', '-' %}
+              <li><a class="blog-category-title" href="/blog/tag/{{catLink}}">{{category}}</a></li>
           {% endfor %}
         </ul>
 

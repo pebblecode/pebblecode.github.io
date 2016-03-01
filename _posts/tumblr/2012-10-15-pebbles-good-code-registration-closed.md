@@ -2,7 +2,7 @@
 layout: post
 title: pebble's good code - Registration Closed
 date: '2012-10-15T12:06:16+01:00'
-tags:
+categories:
 - charity
 - open source
 - csr

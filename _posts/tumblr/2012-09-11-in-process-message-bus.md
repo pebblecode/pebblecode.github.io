@@ -2,7 +2,7 @@
 layout: post
 title: In-Process Message Bus
 date: '2012-09-11T09:55:38+01:00'
-tags: []
+categories: []
 tumblr_url: http://blog.pebblecode.com/post/31327518299/in-process-message-bus
 author: Akash Chopra
 ---
@@ -21,18 +21,18 @@ is a mixture of F# and C# code.</p>
 <p>Firstly, the message bus interface has been split into an
 IMessageDispatcher and an IMessageBus:</p>
 
-<pre><code>type IMessageDispatcher = 
-    abstract member Publish : 'TEvent -&gt; unit 
-    abstract member Send : 'TRequest -&gt; Task&lt;'TResponse&gt; 
+<pre><code>type IMessageDispatcher =
+    abstract member Publish : 'TEvent -&gt; unit
+    abstract member Send : 'TRequest -&gt; Task&lt;'TResponse&gt;
 
-type MessageProcessingMode = 
-    | Sequential = 0 
-    | Concurrent = 1 
+type MessageProcessingMode =
+    | Sequential = 0
+    | Concurrent = 1
 
-type IMessageBus 
-    inherit IMessageDispatcher 
-    abstract member RegisterEventHandler: IEventHandler&lt;'TEvent&gt; -&gt; MessageProcessingMode -&gt; unit 
-    abstract member RegisterRequestHandler: IRequestHandler&lt;'TRequest, 'TResponse&gt; -&gt; MessageProcessingMode -&gt; unit 
+type IMessageBus
+    inherit IMessageDispatcher
+    abstract member RegisterEventHandler: IEventHandler&lt;'TEvent&gt; -&gt; MessageProcessingMode -&gt; unit
+    abstract member RegisterRequestHandler: IRequestHandler&lt;'TRequest, 'TResponse&gt; -&gt; MessageProcessingMode -&gt; unit
 </code></pre>
 
 <p>IMessageDispatcher is only concerned with dispatching messages to the
@@ -51,10 +51,10 @@ just need to publish/send messages rather than register new handlers.</p>
 messages to the correct handler implementation whilst ensuring that the
 MessageProcessingMode is enforced:</p>
 
-<pre><code>type IMessageQueue = 
-    abstract member Publish : 'TEvent -&gt; IMessageDispatcher -&gt; unit 
-    abstract member Send : 'TRequest -&gt; IMessageDispatcher -&gt; Task&lt;'TResponse&gt; 
-    abstract member Service : obj 
+<pre><code>type IMessageQueue =
+    abstract member Publish : 'TEvent -&gt; IMessageDispatcher -&gt; unit
+    abstract member Send : 'TRequest -&gt; IMessageDispatcher -&gt; Task&lt;'TResponse&gt;
+    abstract member Service : obj
 </code></pre>
 
 <p>The reason for IMessageDispatcher appearing in the method signatures is
@@ -74,64 +74,64 @@ was registered using MessageProcessingMode.Concurrent).</p>
 
 <h3>MessageQueue</h3>
 
-<pre><code>type internal AgentMessage = 
-    | AsyncAction of (unit-&gt; Async&lt;unit&gt;) 
+<pre><code>type internal AgentMessage =
+    | AsyncAction of (unit-&gt; Async&lt;unit&gt;)
 
-type internal AgentResponse&lt;'T&gt; = 
-    | Response of 'T 
-    | Error of exn 
+type internal AgentResponse&lt;'T&gt; =
+    | Response of 'T
+    | Error of exn
 
-type MessageQueue(service : obj) = 
-    let agent = 
-        Agent.Start(fun inbox -&gt; 
-            let rec loop () = 
-                async { 
-                    let! AsyncAction(forwardMessageToService) = inbox.Receive() 
-                    do! forwardMessageToService() 
-                    return! loop() 
-                } 
-                loop()) 
+type MessageQueue(service : obj) =
+    let agent =
+        Agent.Start(fun inbox -&gt;
+            let rec loop () =
+                async {
+                    let! AsyncAction(forwardMessageToService) = inbox.Receive()
+                    do! forwardMessageToService()
+                    return! loop()
+                }
+                loop())
 
-    let publishExceptionAndReply e (bus : IMessageDispatcher) (replyChannel : AsyncReplyChannel&lt;AgentResponse&lt;'TOut&gt;&gt;) = 
-        bus.Publish (ExceptionMessage(e)) 
-        replyChannel.Reply (Error(e)) 
+    let publishExceptionAndReply e (bus : IMessageDispatcher) (replyChannel : AsyncReplyChannel&lt;AgentResponse&lt;'TOut&gt;&gt;) =
+        bus.Publish (ExceptionMessage(e))
+        replyChannel.Reply (Error(e))
 
-    let sendRequest (request : 'TIn) (replyChannel : AsyncReplyChannel&lt;AgentResponse&lt;'TOut&gt;&gt;) bus (service : obj) = 
-        async { 
-            let handler = service :?&gt; IRequestHandler&lt;'TIn, 'TOut&gt; 
-            try 
-                let! response = Async.AwaitTask (handler.HandleRequest request) 
-                replyChannel.Reply (Response(response)) 
-            with 
-            | :? System.AggregateException as ae -&gt; publishExceptionAndReply ae.InnerException bus replyChannel 
-            | e -&gt; publishExceptionAndReply e bus replyChannel 
-        } 
+    let sendRequest (request : 'TIn) (replyChannel : AsyncReplyChannel&lt;AgentResponse&lt;'TOut&gt;&gt;) bus (service : obj) =
+        async {
+            let handler = service :?&gt; IRequestHandler&lt;'TIn, 'TOut&gt;
+            try
+                let! response = Async.AwaitTask (handler.HandleRequest request)
+                replyChannel.Reply (Response(response))
+            with
+            | :? System.AggregateException as ae -&gt; publishExceptionAndReply ae.InnerException bus replyChannel
+            | e -&gt; publishExceptionAndReply e bus replyChannel
+        }
 
-    let publishEvent (event : 'TIn) (bus : IMessageDispatcher) (service : obj) = 
-        async { 
-            let handler = service :?&gt; IEventHandler&lt;'TIn&gt; 
-            try 
-                handler.HandleEvent event 
-            with 
-            | e -&gt; bus.Publish (ExceptionMessage(e)) 
-        } 
+    let publishEvent (event : 'TIn) (bus : IMessageDispatcher) (service : obj) =
+        async {
+            let handler = service :?&gt; IEventHandler&lt;'TIn&gt;
+            try
+                handler.HandleEvent event
+            with
+            | e -&gt; bus.Publish (ExceptionMessage(e))
+        }
 
-    interface IMessageQueue with 
+    interface IMessageQueue with
         member x.Service = service
 
-        member x.Send&lt;'TIn, 'TOut&gt; (request : 'TIn) bus = 
-            let resp = agent.PostAndAsyncReply&lt;AgentResponse&lt;'TOut&gt;&gt;(fun replyChannel -&gt; AsyncAction(sendRequest request replyChannel bus service)) 
-            Async.StartAsTask ( 
-                async { 
-                    let! res = resp 
-                    match res with 
-                    | Response r -&gt; return r 
-                    | Error e -&gt; return (raise e) 
-                } 
-            ) 
+        member x.Send&lt;'TIn, 'TOut&gt; (request : 'TIn) bus =
+            let resp = agent.PostAndAsyncReply&lt;AgentResponse&lt;'TOut&gt;&gt;(fun replyChannel -&gt; AsyncAction(sendRequest request replyChannel bus service))
+            Async.StartAsTask (
+                async {
+                    let! res = resp
+                    match res with
+                    | Response r -&gt; return r
+                    | Error e -&gt; return (raise e)
+                }
+            )
 
-        member x.Publish&lt;'TIn&gt; (event : 'TIn) bus = 
-            agent.Post (AsyncAction(publishEvent event bus service)) 
+        member x.Publish&lt;'TIn&gt; (event : 'TIn) bus =
+            agent.Post (AsyncAction(publishEvent event bus service))
 </code></pre>
 
 <p>MessageQueue&rsquo;s agent receives messages of type AgentMessage and replies
@@ -148,39 +148,39 @@ behaviour</a>.</p>
 
 <h3>NullMessageQueue</h3>
 
-<pre><code>type NullMessageQueue(service : obj) = 
-    let publishExceptionAndReply (e : exn) (bus : IMessageDispatcher) = 
-        bus.Publish (ExceptionMessage(e)) 
-        raise e 
+<pre><code>type NullMessageQueue(service : obj) =
+    let publishExceptionAndReply (e : exn) (bus : IMessageDispatcher) =
+        bus.Publish (ExceptionMessage(e))
+        raise e
 
-    interface IMessageQueue with 
+    interface IMessageQueue with
         member x.Service = service
 
-        member x.Send&lt;'TIn, 'TOut&gt; request bus = 
-            let handler = service :?&gt; IRequestHandler&lt;'TIn, 'TOut&gt; 
-            let handleAsync = 
-                async { 
-                    try 
-                        let! response = Async.AwaitTask (handler.HandleRequest request) 
-                        return response 
-                    with 
-                    | :? System.AggregateException as ae -&gt; return (publishExceptionAndReply ae.InnerException bus) 
-                    | e -&gt; return (publishExceptionAndReply e bus) 
-                } 
+        member x.Send&lt;'TIn, 'TOut&gt; request bus =
+            let handler = service :?&gt; IRequestHandler&lt;'TIn, 'TOut&gt;
+            let handleAsync =
+                async {
+                    try
+                        let! response = Async.AwaitTask (handler.HandleRequest request)
+                        return response
+                    with
+                    | :? System.AggregateException as ae -&gt; return (publishExceptionAndReply ae.InnerException bus)
+                    | e -&gt; return (publishExceptionAndReply e bus)
+                }
 
-            Async.StartAsTask handleAsync 
+            Async.StartAsTask handleAsync
 
-        member x.Publish&lt;'TIn&gt; event bus = 
-            let handler = service :?&gt; IEventHandler&lt;'TIn&gt; 
-            let handleAsync = 
-                async { 
-                    try 
-                        handler.HandleEvent event 
-                    with 
-                    | e -&gt; bus.Publish (ExceptionMessage(e)) 
-                } 
+        member x.Publish&lt;'TIn&gt; event bus =
+            let handler = service :?&gt; IEventHandler&lt;'TIn&gt;
+            let handleAsync =
+                async {
+                    try
+                        handler.HandleEvent event
+                    with
+                    | e -&gt; bus.Publish (ExceptionMessage(e))
+                }
 
-            Async.Start handleAsync 
+            Async.Start handleAsync
 </code></pre>
 
 <p>NullMessageQueue is just directly forwarding messages to handlers

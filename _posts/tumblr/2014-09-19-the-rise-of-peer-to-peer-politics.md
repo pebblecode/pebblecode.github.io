@@ -2,7 +2,7 @@
 layout: post
 title: The rise of peer-to-peer politics
 date: '2014-09-19T09:47:32+01:00'
-tags: []
+categories: []
 tumblr_url: http://blog.pebblecode.com/post/97876801776/the-rise-of-peer-to-peer-politics
 author: George Ornbo
 ---

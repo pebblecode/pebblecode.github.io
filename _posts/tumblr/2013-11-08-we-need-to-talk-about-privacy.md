@@ -2,7 +2,7 @@
 layout: post
 title: We need to talk about privacy
 date: '2013-11-08T18:01:03+00:00'
-tags: []
+categories: []
 tumblr_url: http://blog.pebblecode.com/post/66384011407/we-need-to-talk-about-privacy
 author: George Ornbo
 ---

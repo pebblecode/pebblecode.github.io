@@ -2,7 +2,7 @@
 layout: post
 title: pebble {code} at Lloyds Innovation jam
 date: '2014-03-10T11:54:00+00:00'
-tags: []
+categories: []
 tumblr_url: http://blog.pebblecode.com/post/79157950014/pebble-code-at-lloyds-innovation-jam
 author: John Mildinhall
 ---

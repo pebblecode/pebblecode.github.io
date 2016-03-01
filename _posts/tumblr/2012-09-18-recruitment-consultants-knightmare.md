@@ -2,7 +2,7 @@
 layout: post
 title: Recruitment Consultants Knightmare
 date: '2012-09-18T16:07:00+01:00'
-tags: []
+categories: []
 tumblr_url: http://blog.pebblecode.com/post/31797124287/recruitment-consultants-knightmare
 author: George Ornbo
 ---

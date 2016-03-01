@@ -2,7 +2,7 @@
 layout: post
 title: Getting started with Docker
 date: '2013-11-15T14:01:00+00:00'
-tags: []
+categories: []
 tumblr_url: http://blog.pebblecode.com/post/67056452254/getting-started-with-docker
 author: George Ornbo
 ---

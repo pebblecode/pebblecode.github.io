@@ -2,7 +2,7 @@
 layout: post
 title: The Self-organising Business
 date: '2013-11-26T15:17:00+00:00'
-tags: []
+categories: []
 tumblr_url: http://blog.pebblecode.com/post/68165423632/the-self-organising-business
 author: George Ornbo
 ---

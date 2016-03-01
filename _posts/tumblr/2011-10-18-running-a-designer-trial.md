@@ -2,7 +2,7 @@
 layout: post
 title: Running a designer trial
 date: '2011-10-18T10:25:00+01:00'
-tags: []
+categories: []
 tumblr_url: http://blog.pebblecode.com/post/11607782275/running-a-designer-trial
 author: George Ornbo
 ---

@@ -2,10 +2,7 @@
 layout: post
 title: How to hire a programmer
 date: '2011-10-18T10:24:42+01:00'
-tags:
-- recruitment
-- hiring
-- developers
+categories: [recruitment, hiring, developers]
 tumblr_url: http://blog.pebblecode.com/post/11607775093/how-to-hire-a-programmer
 author: Alex Butcher
 ---

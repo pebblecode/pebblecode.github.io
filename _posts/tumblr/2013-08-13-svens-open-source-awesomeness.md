@@ -2,7 +2,7 @@
 layout: post
 title: Sven's open source awesomeness
 date: '2013-08-13T18:05:42+01:00'
-tags: []
+categories: []
 tumblr_url: http://blog.pebblecode.com/post/58161370247/svens-open-source-awesomeness
 author: Mark Durrant
 ---

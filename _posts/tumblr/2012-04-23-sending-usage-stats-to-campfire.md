@@ -2,7 +2,7 @@
 layout: post
 title: Sending usage stats to Campfire
 date: '2012-04-23T11:08:00+01:00'
-tags: []
+categories: []
 tumblr_url: http://blog.pebblecode.com/post/21640251325/sending-usage-stats-to-campfire
 author: George Ornbo
 ---

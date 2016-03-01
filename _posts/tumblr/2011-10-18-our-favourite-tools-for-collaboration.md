@@ -2,7 +2,7 @@
 layout: post
 title: Our favourite tools for collaboration
 date: '2011-10-18T10:27:47+01:00'
-tags: []
+categories: []
 tumblr_url: http://blog.pebblecode.com/post/11607812771/our-favourite-tools-for-collaboration
 author: Toby Hunt
 ---

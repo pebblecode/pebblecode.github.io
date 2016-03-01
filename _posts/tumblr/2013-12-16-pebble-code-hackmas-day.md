@@ -2,7 +2,7 @@
 layout: post
 title: pebble {code} Hackmas Day
 date: '2013-12-16T11:13:54+00:00'
-tags: []
+categories: []
 tumblr_url: http://blog.pebblecode.com/post/70181792378/pebble-code-hackmas-day
 author: pebble {code} Team
 ---

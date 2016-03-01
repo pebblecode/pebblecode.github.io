@@ -2,7 +2,7 @@
 layout: post
 title: Hola Node.js
 date: '2013-03-06T09:29:11+00:00'
-tags: []
+categories: []
 tumblr_url: http://blog.pebblecode.com/post/44697677668/hola-node-js
 author: George Ornbo
 ---

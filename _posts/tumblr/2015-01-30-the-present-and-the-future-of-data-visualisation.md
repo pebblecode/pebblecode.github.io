@@ -2,8 +2,7 @@
 layout: post
 title: The present and the future of Data Visualisation
 date: '2015-01-30T12:10:00+00:00'
-tags:
-- dataviz design visualization data
+categories: [dataviz, design, data visualization]
 tumblr_url: http://blog.pebblecode.com/post/109573478461/the-present-and-the-future-of-data-visualisation
 author: John Mildinhall
 ---
