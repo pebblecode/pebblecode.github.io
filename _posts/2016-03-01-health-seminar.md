@@ -12,7 +12,7 @@ Our company has worked in this sector for a number of years now, and it's a topi
 
 ## Issues surrounding the NHS
 
-The NHS is often discussed as a single body, but it is made up of thousands of organisations, who each adapt their working processes to suit their individual needs. To try and standardise even a small part of this system across the country is a complex task, fraught with nuances between different CCGs, hospitals and even wards.
+The NHS is often discussed as a single body, but it is made up of thousands of organisations, that adapt their working processes to suit their individual needs. To try and standardise even a small part of this system across the country is a complex task, fraught with nuances between different CCGs, hospitals and even wards.
 
 On top of this, the biggest driver of cost in the NHS is the long-term care of the elderly, representing two thirds of the total cost. This demographic is not technology literate so how do we innovate here? Is technology even appropriate for this demographic?
 
@@ -26,7 +26,7 @@ Anecdotal evidence also suggests that the web is favoured as a platform over nat
 
 ## Lead by example
 
-There are clearly challenges to overcome, but there is also evidence that high quality consumer-grade apps can change behaviours just by being useful to users. Adoption will happen organically without training or mandating, when the right tool is created. [MedShr][2] is an exemplar on how to create a consumer-grade apps in Healthcare, with strong governance on User Interface and User Experience design.
+There are clearly challenges to overcome, but there is also evidence that high quality consumer-grade apps can change behaviours just by being useful to users. Adoption will happen organically without training or mandating, when the right tool is created. [MedShr][2] is an exemplar on how to create a consumer-grade app in Healthcare, with strong governance on User Interface and User Experience design.
 
 ![MedShr Screenshot](/img/posts/2016-03-01-health-seminar/health-medshr.png)
 
@@ -40,7 +40,7 @@ Unfortunately it seems that very few people are practicing bottom-up innovation 
 
 ## Improving Communication
 
-There are communication challenges in Health Innovation. We need to figure out how to persuade patients to change behaviours, and do this while ensuring confidence in confidentiality and security. We can't do this without engaging with the right people - accessing the support of both medics and patients. But who do we start with?
+There are communication challenges in Health Innovation. We need to figure out how to persuade patients to change behaviours, and do this while ensuring confidence in confidentiality and security. We can't do this without engaging with the right people - accessing the support of both medics and patients. But whom do we start with?
 
 We have a long way to go in answering all the questions that this seminar provoked. But at least the conversation has been started, and everyone in attendance agreed it was a valuable experience. We realised that as a group we must focus on key issues, while involving Doctors and Nurses in the field. 
 
@@ -51,3 +51,4 @@ The team at [pebble {code}][1] don't know exactly what is going to happen next, 
 [2]: https://en.medshr.net/
 [3]: https://www.gov.uk/government/publications/reducing-missed-hospital-appointments-using-text-messages/a-zero-cost-way-to-reduce-missed-hospital-appointments
 [4]: http://pebblecode.com/blog/embracing-failure/
+
