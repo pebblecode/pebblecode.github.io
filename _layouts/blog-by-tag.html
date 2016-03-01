@@ -11,6 +11,7 @@ layout: blog-by-tag
       <div class="hero-inner grid">
         <p class="col-1-1 blog-category-head">Blog Posts tagged with:</p>
         <h1 class="hero-title col-1-1">{{ page.category }}</h1>
+        <!-- <h1> {{newVarr}}</h1> -->
       </div>
     </section>
     <!-- /.hero-container -->
@@ -26,13 +27,17 @@ layout: blog-by-tag
 
         {% for post in site.posts %}
 
-        {% if post.categories contains page.category %}
+        {% for category in post.categories %}
 
-                    {% include blog-listpost.html %}
+            {% assign preCat = category | replace: ' ', '-' %}
+            {% assign newCat = preCat | downcase %}
 
-                    {% assign noblogposts = false %}
+            {% if newCat == page.category %}
+              {% include blog-listpost.html %}
+              {% assign noblogposts = false %}
+            {% endif %}
 
-          {% endif %}
+        {% endfor %}
 
         {% endfor %}
       </ul>
