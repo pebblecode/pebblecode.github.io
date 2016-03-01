@@ -98,6 +98,11 @@ a {
   }
 }
 
+.btn-small {
+  padding: 5px 10px;
+  font-size: $epsilon;
+}
+
 // INPUT, TEXTAREA
 input, textarea {
   padding: 10px;

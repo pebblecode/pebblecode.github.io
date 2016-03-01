@@ -1,0 +1,48 @@
+.cta-container {
+  padding: 65px 20px 30px;
+  background-color: lighten($grey, 65);
+  position: relative;
+
+  &::before,
+  &::after {
+    @include shadow-pseudo;
+  }
+
+  &::before {
+    top: -15px;
+    height: 45px;
+    z-index: 1;
+    background-color: rgba(black, 0.15);
+    transform: rotate(-1.5deg) scale(1.2);
+    -ms-transform: rotate(-1.5deg) scale(1.2);
+    -webkit-transform: rotate(-1.5deg) scale(1.2);
+  }
+
+  &::after {
+    top: -30px;
+    height: 50px;
+    z-index: 1;
+    background-color: white;
+    transform: rotate(-2.2deg) scale(1.2);
+    -ms-transform: rotate(-2.2deg) scale(1.2);
+    -webkit-transform: rotate(-2.2deg) scale(1.2);
+  }
+}
+
+.cta-content {
+  text-align: center;
+}
+
+.cta-title {
+  font-size: $beta;
+  line-height: 1.1;
+
+  @media screen and ( max-width: $medium ) {
+    font-size: $gamma + 2px;
+  }
+}
+
+.cta-btn {
+  display: inline-block;
+  margin: 5px;
+}
