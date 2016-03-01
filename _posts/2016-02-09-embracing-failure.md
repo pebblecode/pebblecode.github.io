@@ -3,7 +3,7 @@ layout: post
 title:  Embracing Failure
 author: Ian Black
 categories: [design, agile, software development, life, failure, learning]
-thumbnail: /img/blog/embracing-failure/blog-illustrations-01.png
+thumbnail: /img/blog/embracing-failure/blog-illustrations-05.png
 ---
 
 When things go wrong for someone I know, I can't help but be reminded of a quote from Christopher Nolan's Batman Begins.
