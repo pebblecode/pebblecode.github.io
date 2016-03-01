@@ -2,16 +2,7 @@
 layout: post
 title: Happy/Sad Santa. An app from our Hackmas Day
 date: '2013-12-16T17:54:50+00:00'
-categories:
-- pebblecode
-- hackmas
-- hack
-- hackday
-- london
-- tech
-- clmtrackr
-- santa
-- app
+categories: [hacks]
 tumblr_url: http://blog.pebblecode.com/post/70204015837/happy-sad-santa-an-app-from-our-hackmas-day
 author: Fergus Hynd
 ---

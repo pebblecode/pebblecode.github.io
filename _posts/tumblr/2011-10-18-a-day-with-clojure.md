@@ -2,7 +2,7 @@
 layout: post
 title: A day with Clojure
 date: '2011-10-18T10:23:55+01:00'
-categories: [clojure]
+categories: []
 tumblr_url: http://blog.pebblecode.com/post/11607765735/a-day-with-clojure
 author: Tak Tran
 ---

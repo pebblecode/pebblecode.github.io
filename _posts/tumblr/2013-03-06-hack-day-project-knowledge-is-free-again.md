@@ -2,7 +2,7 @@
 layout: post
 title: 'Hack Day Project: Knowledge is free again'
 date: '2013-03-06T09:46:31+00:00'
-categories: []
+categories: [hacks]
 tumblr_url: http://blog.pebblecode.com/post/44698078413/hack-day-project-knowledge-is-free-again
 author: George Ornbo
 ---

@@ -2,10 +2,7 @@
 layout: post
 title: Summer hack day and party!
 date: '2013-08-06T16:46:00+01:00'
-categories:
-- hack-day
-- art
-- innovation
+categories: [hacks]
 tumblr_url: http://blog.pebblecode.com/post/57525178521/summer-hack-day-and-party
 author: Mark Durrant
 ---

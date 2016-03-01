@@ -2,7 +2,7 @@
 layout: post
 title: MMXII Hackathon - Tak’s thoughts.
 date: '2012-08-10T14:21:33+01:00'
-categories: []
+categories: [hacks]
 tumblr_url: http://blog.pebblecode.com/post/29122222105/mmxii-hackathon-taks-thoughts
 author: Tak Tran
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: Bah! humbug!
 date: '2013-12-23T12:09:56+00:00'
-categories: []
+categories: [hacks]
 tumblr_url: http://blog.pebblecode.com/post/70889050607/bah-humbug
 author: Mark Durrant
 ---

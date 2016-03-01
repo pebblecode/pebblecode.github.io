@@ -2,7 +2,7 @@
 layout: post
 title: Super Secret Santa List
 date: '2013-12-23T09:29:00+00:00'
-categories: []
+categories: [hacks]
 tumblr_url: http://blog.pebblecode.com/post/70882297862/super-secret-santa-list
 author: John Mildinhall
 ---
