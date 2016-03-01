@@ -37,6 +37,7 @@ colour:
 category: awesome-tag
 —
 ```
-notes:
+Notes:
+
 1. Use all lowercase letters
 2. Use hyphens if the tag is more than one word
