@@ -33,3 +33,5 @@ defaults:
     values:
       analytics_category: "blog"
 
+gems:
+  - octopress-autoprefixer
