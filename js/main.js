@@ -47,7 +47,6 @@
     var servicesDesign;
     var servicesAgile;
     var servicesTests;
-    var servicesCollab;
 
     var scrollPositions = debounce(function () {
       servicesStrategy = $('#servicesStrategy').offset().top - 200;
@@ -57,15 +56,12 @@
       servicesDesign = $('#servicesDesign').offset().top - 200;
       servicesAgile = $('#servicesAgile').offset().top - 200;
       servicesTests = $('#servicesTests').offset().top - 200;
-      servicesCollab = $('#servicesCollab').offset().top - 200;
     }, 100);
 
     var servicesBG = debounce(function () {
       var windowTop = $(window).scrollTop();
 
-      if (windowTop > servicesCollab) {
-        servicesContainer.css({'background-color':'#ed4f7e' });
-      } else if (windowTop > servicesTests) {
+      if (windowTop > servicesTests) {
         servicesContainer.css({'background-color':'#9b5ca4' });
       } else if (windowTop > servicesAgile) {
         servicesContainer.css({'background-color':'#faad40' });
