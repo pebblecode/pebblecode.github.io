@@ -50,9 +50,9 @@
 
   &::after {
     @include icon-pseudo;
-    top: 50%;
-    left: 20px;
-    transform: scale(0.8) translateY(-50%);
+    top: 19px;
+    left: 15px;
+    transform: scale(0.75) translateY(-50%);
   }
 
   &.cta-btn-phone::after { @include sprite($mail-white); }
