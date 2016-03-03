@@ -43,6 +43,18 @@
 }
 
 .cta-btn {
+  position: relative;
   display: inline-block;
   margin: 5px;
+  padding-left: 50px;
+
+  &::after {
+    @include icon-pseudo;
+    top: 50%;
+    left: 20px;
+    transform: scale(0.8) translateY(-50%);
+  }
+
+  &.cta-btn-phone::after { @include sprite($mail-white); }
+  &.cta-btn-email::after { @include sprite($phone-white); }
 }
