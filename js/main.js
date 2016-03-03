@@ -154,5 +154,7 @@
     google.maps.event.addDomListener(window, 'load', semiinit);
   }
 
+  // Console advert
+  console.log('%cHey, console brother! Check out our careers page','font-family: "brandon-grotesque","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;font-weight: 900;font-style: italic;text-transform: uppercase;letter-spacing: -1px;text-shadow: 3px 4px 0 rgba(0,0,0,0.1);font-size:48px;color:#ed4f7e;');
 
 }()); // end 'use strict'
