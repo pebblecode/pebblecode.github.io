@@ -68,6 +68,7 @@ PLATFORMS
 
 DEPENDENCIES
   jekyll (~> 2.5.3)
+  jekyll-paginate
 
 BUNDLED WITH
-   1.10.6
+   1.11.2
