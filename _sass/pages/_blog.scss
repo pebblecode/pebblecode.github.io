@@ -235,18 +235,14 @@ a .post-title {
 }
 
 
-
-
 //===============================================================================
 // Post Excerpt and Thumbnail
-
 .blog-post-details {
   margin-bottom: 0px;
 }
 
-
 .post-thumbnail-wrapper {
-  background-image: url('../img/blog/default-thumb.png');
+  background-image: url('../img/blog/placeholders/pink-phold.svg');
   background-size: cover;
   background-position: center;
   display: inline-block;
@@ -267,6 +263,25 @@ a .post-title {
     height: 80px;
   }
 
+  .post-item:nth-child(even) & {
+    background-image: url('../img/blog/placeholders/blue-phold.svg');
+  }
+
+  .post-item:nth-child(3n+3) & {
+    background-image: url('../img/blog/placeholders/purple-phold.svg');
+  }
+
+  .post-item:nth-child(4n+4) & {
+    background-image: url('../img/blog/placeholders/orange-phold.svg');
+  }
+
+  .post-item:nth-child(5n+5) & {
+    background-image: url('../img/blog/placeholders/green-phold.svg');
+  }
+
+  .post-item:nth-child(6n+6) & {
+    background-image: url('../img/blog/placeholders/aqua-phold.svg');
+  }
 }
 
 .post-excerpt p {
@@ -286,9 +301,11 @@ a .post-title {
 .post-list-meta {
   padding-left: 200px + 12px;
   min-height: 140px;
+
   @media screen and (max-width: $medium) {
     padding-left: 150px + 12px;
   }
+
   @media screen and (max-width: $small) {
     padding-top: 100px;
     padding-left: 0;
@@ -307,7 +324,6 @@ a .post-title {
   font-size: 16px;
 
   @media screen and (max-width: $small) {
-    // top: 12px;
     @include clearfix;
   }
 
@@ -324,9 +340,9 @@ a .post-title {
   }
 }
 
+
 //===============================================================================
 // Hero
-
 .blog-pagination {
   padding-top: 80px;
   padding-bottom: 40px;
@@ -397,13 +413,9 @@ a .post-title {
 }
 
 
-
 //===============================================================================
 // Post Categories
-
-
 .post-categories {
-
   li {
     display: inline-block;
     text-transform: capitalize;
@@ -411,22 +423,18 @@ a .post-title {
     &:after {
       content: ",";
     }
-    &:last-of-type {
-      &:after {
-        content: none;
-      }
+
+    &:last-of-type :after {
+      content: none;
     }
   }
 }
 
+
 //===============================================================================
 // Sidebar
-
-
 .blog-categories-sidebar {
   float: right;
-  // position: absolute;
-  // right: 0;
   width: 200px;
   height: 100%;
   z-index: 10;
@@ -454,10 +462,9 @@ a .post-title {
 }
 
 .blog-categories-other {
-    @media screen and (max-width: $medium) {
-      display: none;
-    }
-
+  @media screen and (max-width: $medium) {
+    display: none;
+  }
 }
 
 .blog-categories-title {
@@ -468,9 +475,7 @@ a .post-title {
   @media screen and (max-width: $medium) {
     text-align: center;
   }
-
 }
-
 
 .blog-category-title {
   font-weight: bold;
@@ -483,7 +488,8 @@ a .post-title {
   margin-bottom: 2px;
 }
 
-.blog .hero-title, .blog-by-type .herotitle {
+.blog .hero-title,
+.blog-by-type .herotitle {
   margin-bottom: 12px;
 }
 
