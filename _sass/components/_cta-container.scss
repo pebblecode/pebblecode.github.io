@@ -55,6 +55,6 @@
     transform: scale(0.75) translateY(-50%);
   }
 
-  &.cta-btn-phone::after { @include sprite($mail-white); }
-  &.cta-btn-email::after { @include sprite($phone-white); }
+  &.cta-btn-phone::after { @include sprite($phone-white); }
+  &.cta-btn-email::after { @include sprite($mail-white); }
 }
