@@ -2,7 +2,8 @@
 // BLOG
 //===============================================================================
 // Hero
-.blog, .blog-by-tag {
+.blog,
+.blog-by-tag {
   .gbl-head {
     background-color: transparent;
 
@@ -21,19 +22,18 @@
 }
 
 .blog-by-tag .gbl-head {
-    @media screen and ( max-width: $medium + 100px ) {
-      background-color: $blue;
-    }
+  @media screen and ( max-width: $medium + 100px ) {
+    background-color: $blue;
+  }
 }
 
-.hero-container-blog, .hero-container-blog.aqua {
+.hero-container-blog,
+.hero-container-blog.aqua {
   background-image: repeating-linear-gradient(-45deg, transparent, transparent 70px, rgba(255,255,255,.1) 70px, rgba(255,255,255,.1) 140px);
 
   @media screen and ( max-width: $medium + 100px ) {
     background-image: none;
   }
-
-
 
   &:before {
     bottom: 25px;
@@ -142,7 +142,7 @@
 }
 
 .content li.post-item {
-    padding-top: 0;
+  padding-top: 0;
 }
 
 .post-item {
@@ -174,10 +174,6 @@
       display: none;
     }
   }
-
-  a {
-    // display: block;
-  }
 }
 
 a .post-title {
@@ -196,7 +192,6 @@ a .post-title {
   @media screen and ( max-width: $medium ) {
     max-width: 100%;
   }
-
 
   .post-item & {
     font-size: $alpha;
@@ -217,28 +212,11 @@ a .post-title {
   }
 }
 
-.post-author {
-  display: block;
-  // font-size: $gamma;
-  font-weight: $font-bold;
-  display: inline;
-
-  @media screen and ( max-width: $medium ) {
-    font-size: $delta;
-  }
-}
-
-.post-date {
-  display: block;
-  color: rgba($ink, 0.6);
-  display: inline;
-}
-
 
 //===============================================================================
 // Post Excerpt and Thumbnail
 .blog-post-details {
-  margin-bottom: 0px;
+  margin-bottom: 0;
 }
 
 .post-thumbnail-wrapper {
@@ -415,18 +393,16 @@ a .post-title {
 
 //===============================================================================
 // Post Categories
-.post-categories {
-  li {
-    display: inline-block;
-    text-transform: capitalize;
+.post-categories li {
+  display: inline-block;
+  text-transform: capitalize;
 
-    &:after {
-      content: ",";
-    }
+  &::after {
+    content: ",";
+  }
 
-    &:last-of-type :after {
-      content: none;
-    }
+  &:last-of-type::after {
+    content: "";
   }
 }
 
@@ -446,17 +422,18 @@ a .post-title {
     position: relative;
     padding: 12px;
   }
-
 }
 
 .blog-categories-sidebarul {
   line-height: 1.4;
+
   @media screen and (max-width: $medium) {
     text-align: center;
     margin-bottom: 0;
+
     li {
       display: inline-block;
-      font-size: 14px;
+      font-size: $epsilon;
     }
   }
 }
@@ -468,7 +445,7 @@ a .post-title {
 }
 
 .blog-categories-title {
-  font-size: 14px;
+  font-size: $epsilon;
   color: #888;
   margin-bottom: 2px;
 
@@ -479,7 +456,7 @@ a .post-title {
 
 .blog-category-title {
   font-weight: bold;
-  font-size: 16px;
+  font-size: $body-font-size;
 }
 
 .blog-category-head {

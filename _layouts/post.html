@@ -15,8 +15,16 @@ layout: post
     <section class="content-container post-container grid">
       <header class="post-header col-1-1">
         <h1 class="post-title">{{ page.title }}</h1>
-        <span class="post-author">{{ page.author }}</span>
-        <span class="post-date">{{ page.date | date: "%B %-d, %Y" }}</span>
+        <div class="post-meta">
+          <span class="post-author">{{ page.author }}</span>
+          <span class="post-date">{{ page.date | date: "%B %-d, %Y" }}</span>
+          <ul class="post-categories">
+            {% for category in page.categories %}
+              {% assign catLink = category | replace: ' ', '-' %}
+              <li><a class="blog-category-title" href="/blog/tag/{{catLink}}">{{category}}</a></li>
+            {% endfor %}
+          </ul>
+        </div>
       </header>
       <article class="content post-content col-1-1">
         {{content}}

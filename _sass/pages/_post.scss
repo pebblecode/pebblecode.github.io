@@ -71,13 +71,36 @@
   }
 }
 
+.post-meta {
+  font-size: $gamma - 2px;
+}
+
+.post-author {
+  font-weight: $font-bold;
+  display: inline;
+
+  @media screen and ( max-width: $medium ) {
+    font-size: $delta;
+  }
+}
+
+.post-date {
+  color: rgba($ink, 0.6);
+  display: inline;
+}
+
+.post-meta .post-categories {
+  display: block;
+  margin-bottom: 0;
+}
+
 .post-content {
   padding-right: 150px;
 
   @media screen and ( max-width: 800px ) {
     padding-right: 20px;
   }
-   
+
   .post-excerpt {
     color: $primary;
     font-size: $gamma + 4px;
