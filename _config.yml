@@ -29,7 +29,7 @@ defaults:
   -
     scope:
       path: ""
-      type: "post"
+      type: "posts"
     values:
       analytics_category: "blog"
 
