@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Design Review, February 2016
+title: Design Review, January 2016
 author: John Mildinhall
 categories: [design]
 thumbnail: /img/blog/dragon-test.png
