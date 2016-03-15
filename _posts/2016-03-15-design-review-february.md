@@ -26,7 +26,7 @@ Some [leaked design documentation](http://imgur.com/a/Y2HV1?utm_source=designern
 
 ![kerning disaster](http://www.logicdesign.co.uk/wp-content/uploads/2014/07/20120912-110906.jpg)
 
-Knowledge of kerning is a ticket to the secret society of designers. Here's [how to do it](https://designschool.canva.com/blog/kerning/), and here's [how not to do it](http://fuckyeahkeming.com/)
+Knowledge of kerning is a ticket to the secret society of designers. Here's [how to do it](https://designschool.canva.com/blog/kerning/), and here's [how not to do it](http://fuckyeahkeming.com/).
 
 **Scrolljacking is evil and we must destroy it**
 
@@ -73,10 +73,13 @@ We're still not at the stage where HTML5 performs as well as native code on tabl
 ). 
 
 **Geek corner**
+
 [Better nth child css](https://github.com/pascalduez/postcss-quantity-queries). (also has sass alternative) 
 
 
 **It's crazy, but it might just work**
+
+![fonts as graphs](https://fontshop-prod-responsive-images.s3.amazonaws.com/uploads/content_image/attachment/292619/mini_magick20160215-18416-15ncz3a.jpg)
 
 Interactive graphs can involve a lot of work. There are many libraries out there that will help, but sometimes you just need something simple. [This idea](https://www.fontshop.com/content/ff-chartwell-making-all-the-charts) involves using fonts to create simple graphs. We haven't tried it yet, but once we have we'll report back.
 
