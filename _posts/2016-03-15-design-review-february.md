@@ -8,6 +8,8 @@ thumbnail: /img/blog/worms.jpg
 
 **Uber redesign shenanigans**
 
+![Uber redesign](https://newsroom.uber.com/wp-content/uploads/2016/02/Launch_Blog_Header-ExecutionIndex_v8-5-01-1834x1032.png)
+
 One of the biggest things to drop in Februrary was the [Uber redesign](https://newsroom.uber.com/celebrating-cities-a-new-look-and-feel-for-uber/). The response has been [mixed at best](http://boingboing.net/2016/02/04/a-close-look-at-the-new-uber-l.html), and plenty of pixels have been spilled in trying to interpret the internal machinations of the company through the redesign.
 
 
@@ -17,9 +19,12 @@ One of the biggest things to drop in Februrary was the [Uber redesign](https://n
 
 **Diagetic is a new one on me**
 
+![The Division](http://i.imgur.com/wJLkkCM.jpg)
 Some [leaked design documentation](http://imgur.com/a/Y2HV1?utm_source=designernews) for Tom Clancy's 'The Division' popped up early in the month. These propose a 'diagetic' UI, i.e. one that rests within the physical world rather than is applied on top of it. This sort of thing is only really possible using the high resolutions that modern consoles can supply, and I expect it will only get more common with the advent of both ubiquitous 4K, and augmented reality which appears to be just round the corner. 
 
 **Kerning ftw**
+
+![kerning disaster](http://www.logicdesign.co.uk/wp-content/uploads/2014/07/20120912-110906.jpg)
 
 Knowledge of kerning is a ticket to the secret society of designers. Here's [how to do it](https://designschool.canva.com/blog/kerning/), and here's [how not to do it](http://fuckyeahkeming.com/)
 
@@ -27,8 +32,8 @@ Knowledge of kerning is a ticket to the secret society of designers. Here's [how
 
 Scrolljacking is the use of DOM scripting to interfere with the regular operation of the native browser scrolling function. For the most part we believe that it actively damamges the user experience. By removing regular scrolling the user has a handrail removed, and they are often unable to easily find items or otherwise navigate the page. 
 
-Here is the archetypal jank-tastic scrolljacked page:
-http://www.apple.com/uk/mac-pro/
+Here is the archetypal jank-tastic scrolljacked page, [courtesy of Apple](http://www.apple.com/uk/mac-pro/):
+
 
 Notice a few things:
 
@@ -53,6 +58,8 @@ So don't do it.
 [A CSS husky](http://codepen.io/davidkpiano/full/wMqXea/) by David Khourshid, and a [CSS Button](http://codepen.io/DeptofJeffAyer/pen/waLYxy) by Jeff Ayer.
 
 **Back of the net**
+
+![premiership](https://s3-eu-central-1.amazonaws.com/centaur-wp/creativereview/prod/content/uploads/2016/02/Premier_League_Rebrands_DesignStudio_01-1200x675.jpg)
 
 England's Premier League has dropped core sponsorship for the next season. That means they need a [re-brand](http://www.creativereview.co.uk/cr-blog/2016/february/designstudio-rebrands-premier-league/). We really like the simplicty and impact of the new branding.
 
