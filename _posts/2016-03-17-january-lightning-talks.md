@@ -3,7 +3,7 @@ layout: post
 title: January's Lightning Talks
 author: Niall Henn
 categories: [lightning talks]
-thumbnail:
+thumbnail: /img/blog/lt-jan-thumb.jpg
 ---
 
 The January edition of our monthly lightning talks saw Martin and I speak about two different topics. Martin spoke about the exciting new possibilities offered by F# and Linux, and I spoke about why I feel it's important to keep web design engaging.
