@@ -34,3 +34,5 @@ defaults:
       analytics_category: "blog"
 
 gems: [jekyll-paginate]
+gems:
+  - octopress-autoprefixer
