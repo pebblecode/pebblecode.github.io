@@ -62,6 +62,11 @@
       font-size: $delta;
     }
   }
+
+  .aside-container h3,
+  .aside-container p {
+    color: $ink;
+  }
 }
 
 .project-item-inner {
@@ -70,10 +75,6 @@
   background-size: 100%;
   background-position: top right;
   padding: 80px $gutter 20px;
-
-  .project-container:last-of-type & {
-    padding-bottom: 50px;
-  }
 
   &:before {
     @include shadow-pseudo;
@@ -108,7 +109,6 @@
     top: 0;
     left: 0;
   }
-
 }
 
 .project-item-img {
