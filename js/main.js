@@ -106,20 +106,24 @@
     marker.setPosition(latLng);
     map.panTo(latLng);
   });
+  
   $('#sofiaBtn').click(function(){
     var latLng = new google.maps.LatLng(42.6742392, 23.3543577);
     marker.setPosition(latLng);
     map.panTo(latLng);
   });
 
-  // Initialise google map
+  // Initialise google maps
   function initialize() {
     initmap("map", 51.485672, -0.118554);
   }
-
-  function semiinit() {
-    initmap("semimap", 51.5148475,-0.1269898);
+  function healthinit() {
+    initmap("healthmap", 51.5148475,-0.1269898);
   }
+  function insureinit() {
+    initmap("insuremap", 51.5144918,-0.0803065);
+  }
+
   // Initialise google map
   function initmap(mapname, lat, lon) {
     var mapProp = {
@@ -145,13 +149,15 @@
       google.maps.event.addListener(marker, "click", function () {
     });
   }
-  // Initialise map if visible
+  // Initialise maps if visible
   if ($('#map').length) {
     google.maps.event.addDomListener(window, 'load', initialize);
   }
-    // Initialise map if visible
-  if ($('#semimap').length) {
-    google.maps.event.addDomListener(window, 'load', semiinit);
+  if ($('#healthmap').length) {
+    google.maps.event.addDomListener(window, 'load', healthinit);
+  }
+  if ($('#insuremap').length) {
+    google.maps.event.addDomListener(window, 'load', insureinit);
   }
 
   // Console advert

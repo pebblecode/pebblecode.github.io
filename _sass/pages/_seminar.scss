@@ -87,6 +87,7 @@
   font-weight: normal;
   font-size: $gamma + 2px;
   margin-top: 12px;
+  margin: 10px 0 0;
 
   @media screen and ( max-width: $medium ) {
     margin-top: 4px;
@@ -97,12 +98,10 @@
 
 .seminar-machine-img {
   width: 100%;
-  margin: 0 auto;
+  margin: 170px auto 0;
   text-align: center;
   position: relative;
   z-index: 1;
-  top: 0;
-  margin-top: 150px;
 
   @media screen and ( max-width: $medium ) {
     margin-top: 48px;
