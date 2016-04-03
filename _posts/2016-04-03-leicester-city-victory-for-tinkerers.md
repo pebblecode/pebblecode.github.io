@@ -55,7 +55,7 @@ the manager though. The mindset of the entire club is to be curious and to think
 > “Even before Leicester broke into the Premier League two seasons ago, the club was curious about the potential of sports science to eke out marginal gains in performance. Players had match data logged on their tablets… Attention to detail in physical conditioning equalled anything at the upper end of the sport.”
 <br/><br/>— [Janan Ganesh, FT](http://www.ft.com/cms/s/2/0f843f1a-f1b7-11e5-aff5-19b4e253664a.html#axzz44mY7lyUz)
 
-That’s probably why the club saw Ranieri as a good fit for their club in the first place.
+That’s probably why the club saw Ranieri as a good fit for them in the first place.
 
 Not only does tinkering help us to learn, it also helps us to *adapt*. I believe that Leicester's 
 adaptivity is one of the most important reasons for their incredible season.
