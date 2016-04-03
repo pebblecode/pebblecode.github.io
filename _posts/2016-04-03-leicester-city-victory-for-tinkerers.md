@@ -42,7 +42,7 @@ These are just the kind of traits we are looking for in our recruitment process.
 our candidates doesn’t have a right answer - it’s much more important for candidates to demonstrate their thought process. 
 
 We believe that these traits help us to keep learning. They help us to ask the right questions and to come up with better solutions. 
-*To build the right thing and build the the thing right*.
+It helps us [to build the right thing and to build the the thing right](http://pebblecode.com/blog/how-to-succeed-in-a-digital-transformation/).
 
 In Leicester’s case, I have no doubt that these traits also helped Ranieri to learn deeply about football. By testing 
 out different formations and players, he will have digested a great deal about how a team can play most effectively 
