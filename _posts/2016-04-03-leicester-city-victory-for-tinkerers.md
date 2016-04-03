@@ -73,7 +73,7 @@ Leicester don’t just change their approach at half time though. Every time the
 between hell-for-leather attacking and hell-for-leather defending. That’s why they are so strong defensively and so 
 successful on the counter-attack.
 
-> “According to Darwin’s Origin of Species, it is not the most intellectual of the species that survives; it is not the strongest that survives; but the species that survives is the one that is able best to adapt and adjust to the changing environment in which it finds itself.”
+> “According to Darwin’s Origin of Species, it is not the most intellectual of the species that survives; it is not the strongest that survives; but the species that survives is the one that is best able to adapt and adjust to the changing environment in which it finds itself.”
 <br/><br/>— Leon C. Megginson
 
 *Innovation* is also all about adapting to a changing environment. That’s why the Lean Startup movement places such 
