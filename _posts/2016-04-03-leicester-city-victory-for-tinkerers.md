@@ -1,6 +1,6 @@
 ---
 layout: post
-title: If Leicester win the league, it will be a victory for tinkerers everywhere
+title: If Leicester win the league, it will be a victory for hackers everywhere
 author: Peter O'Shaughnessy
 categories: [opinion, innovation]
 thumbnail: /img/posts/2016-04-03-leicester-city-victory-for-tinkerers/leicester-city-vardy.jpg
@@ -9,7 +9,8 @@ thumbnail: /img/posts/2016-04-03-leicester-city-victory-for-tinkerers/leicester-
 As you will no doubt have heard - even if you’re not a football fan - Leicester City are now only a few games away from 
 probably the [most unlikely football league title win ever](http://www.theguardian.com/football/2016/mar/13/gary-lineker-leicester-city-premier-league-title). 
 As a Tottenham Hotspur fan, I’m still clinging onto some hope that Spurs can catch them. If we can’t though, I won’t 
-feel too bad losing out to Leicester. After all, a victory for them would be a victory for us tinkerers everywhere...
+feel too bad losing out to Leicester. After all, a victory for them would be a victory for us hackers and tinkerers 
+everywhere...
 
 ## Hackers and tinkerers
 
