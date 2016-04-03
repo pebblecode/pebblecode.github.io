@@ -79,7 +79,7 @@ successful on the counter-attack.
 *Innovation* is also all about adapting to a changing environment. That’s why the Lean Startup movement places such 
 importance on a scientific approach to learning:
 
-> “Once entrepreneurs embrace validated learning, the development process can shrink substantially. When you focus on figuring the right thing to build-the thing customers want and will pay for-you need not spend months waiting for a product beta launch to change the company's direction. Instead, entrepreneurs can adapt their plans incrementally, inch by inch, minute by minute.”
+> “Once entrepreneurs embrace validated learning, the development process can shrink substantially. When you focus on figuring out the right thing to build - the thing customers want and will pay for - you need not spend months waiting for a product beta launch to change the company's direction. Instead, entrepreneurs can adapt their plans incrementally, inch by inch, minute by minute.”
 <br/><br/>— [The Lean Startup Principles](http://theleanstartup.com/principles)
 
 Like Ranieri, we must keep tinkering. We must stay curious, keep learning and keep adapting. If we can do that, we can 
