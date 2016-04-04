@@ -62,11 +62,6 @@
       font-size: $delta;
     }
   }
-
-  .aside-container h3,
-  .aside-container p {
-    color: $ink;
-  }
 }
 
 .project-item-inner {
@@ -75,6 +70,10 @@
   background-size: 100%;
   background-position: top right;
   padding: 80px $gutter 20px;
+
+  .project-container:last-of-type & {
+    padding-bottom: 50px;
+  }
 
   &:before {
     @include shadow-pseudo;
@@ -100,7 +99,6 @@
 }
 
 .project-item-text {
-
   @media screen and ( max-width: $medium + 150px ) {
     float: none;
     display: block;
@@ -449,21 +447,19 @@ video {
 
 
 // White Text Box
-
 .aside-container.work-container {
-    margin: 40px 15%;
-    width: 70%;
+  margin: 40px 15%;
+  width: 70%;
 
-    p {
-      text-align:center;
-    }
+  p {
+    text-align:center;
+  }
 
-    @media screen and ( max-width: $small) {
+  @media screen and ( max-width: $small) {
     margin: 40px 10%;
     width: 80%;
     font-size: 16px;
-    }
-
+  }
 }
 
 .ink {
@@ -483,14 +479,14 @@ video {
   }
 
   @media screen and ( max-width: $medium ) {
-    &:after {
-      border: 0px;
-    }
     background-color: white;
     margin-top: 0;
     margin-bottom: $gutter;
     border: 5px solid #f5f6f7;
     box-shadow: none;
-  }
 
+    &:after {
+      border: 0px;
+    }
+  }
 }
