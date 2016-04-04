@@ -41,6 +41,9 @@
 // GLOBAL FOOTER: Global footer across all pages.
 @import "components/_gbl-foot.scss";
 
+// SHARE: Share buttons that can be reused
+@import "components/_share.scss";
+
 // CALL-TO-ACTION BANNER: Can be reused to for contact call-to-actions
 @import "components/_cta-container.scss";
 
