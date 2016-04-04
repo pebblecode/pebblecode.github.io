@@ -183,6 +183,8 @@ h4.seminar-titlestack-sub {
       box-shadow: 0 0 10px rgba(black, 0.2);
       z-index: -5;
       transform: rotate(2deg) skew(1deg);
+      -ms-transform: rotate(2deg) skew(1deg);
+      -webkit-transform: rotate(2deg) skew(1deg);
     }
   }
 }
@@ -197,6 +199,8 @@ h4.seminar-titlestack-sub {
       box-shadow: 0 0 10px rgba(black, 0.2);
       z-index: -5;
       transform: rotate(2deg) skew(1deg);
+      -ms-transform: rotate(2deg) skew(1deg);
+      -webkit-transform: rotate(2deg) skew(1deg);
     }
   }
 
