@@ -29,8 +29,10 @@ defaults:
   -
     scope:
       path: ""
-      type: "posts"
+      type: "post"
     values:
       analytics_category: "blog"
 
 gems: [jekyll-paginate]
+gems:
+  - octopress-autoprefixer

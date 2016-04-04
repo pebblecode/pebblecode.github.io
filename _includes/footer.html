@@ -12,3 +12,34 @@
   </ul>
   <span class="gbl-foot-tagline">Delivering Awesome!</span>
 </footer>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+{% if include.maps %}
+  <!--[if gt IE 8]><!-->
+  <script type="text/javascript"src="http://maps.google.com/maps/api/js?v=3&amp;sensor=false"></script>
+  <!--<![endif]-->
+{% endif %}
+{% if include.lazyload %}
+  <script type="text/javascript" src="{{ site.baseurl }}/js/vendor/jquery.lazyload.min.js"></script>
+  <script>
+    jQuery(function ($) {
+      $("img.lazy").lazyload({
+        threshold : 600
+        });
+      $("#gif1").attr("src","second.jpg");
+    });
+  </script>
+{% endif %}
+{% if include.prettyprint %}
+  <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+  <script>
+  [].forEach.call(document.getElementsByTagName("pre"), function(el) {
+    el.classList.add("prettyprint");
+  });
+  </script>
+{% endif %}
+<script type="text/javascript" src="{{ site.baseurl }}/js/vendor/scrollReveal.min.js"></script>
+<script type="text/javascript" src="{{ site.baseurl }}/js/main.js"></script>
+{% for extrascript in include.extrascripts %}
+  <script type="text/javascript" src="{{ site.baseurl }}/js/{{extrascript.link}}"></script>
+{% endfor %}
