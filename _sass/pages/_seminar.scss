@@ -462,7 +462,7 @@ h3.seminar-header-time {
     width: 75%;
     margin-bottom: 20px;
 
-    &:after { display: none; }
+    &:before { display: none; }
   }
 
   @media screen and ( max-width: $medium ) {
