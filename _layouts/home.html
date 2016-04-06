@@ -34,17 +34,17 @@
 
               <p class="home-vert-text">{{page.vert-text-health}} </p>
               <div class="home-vert-btn-wrap">
-                <a href="{{ site.baseurl }}/health" class="btn btn-light btn-block home-vert-btn health">Read More</a>
+                <a href="{{ site.baseurl }}/health" class="btn btn-light btn-block btn-small health">Read More</a>
               </div>
 
               <p class="home-vert-text">{{page.vert-text-transport}}</p>
               <div class="home-vert-btn-wrap">
-                <a href="{{ site.baseurl }}/transport" class="btn btn-light btn-block home-vert-btn transport">Read More</a>
+                <a href="{{ site.baseurl }}/transport" class="btn btn-light btn-block btn-small transport">Read More</a>
               </div>
 
               <p class="home-vert-text">{{page.vert-text-insurance}}</p>
               <div class="home-vert-btn-wrap">
-                <a href="{{ site.baseurl }}/insurance" class="btn btn-light btn-block home-vert-btn insurance">Read More</a>
+                <a href="{{ site.baseurl }}/insurance" class="btn btn-light btn-block btn-small insurance">Read More</a>
               </div>
 
             </div>
@@ -53,7 +53,6 @@
       </div>
     </section>
     <!-- /.project-container -->
-
 
     <section class="feat-content-container">
       <div class="feat-content grid">
@@ -74,16 +73,11 @@
     </section>
     <!-- /.feat-content-container -->
 
-
     {% include clients.html %}
 
-    {% include footer.html %}
+    {% include cta-contact.html %}
 
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/vendor/jquery-2.1.1.min.js""><\/script>')</script>
-    <script type="text/javascript" src="{{ site.baseurl }}/js/vendor/scrollReveal.min.js"></script>
-    <script type="text/javascript" src="{{ site.baseurl }}/js/main.js"></script>
-    <!-- /scripts-->
+    {% include footer.html %}
 
   </body>
 </html>

@@ -2,7 +2,7 @@
 layout: post
 title: REST Workshop
 date: '2013-04-25T15:01:41+01:00'
-tags: []
+categories: []
 tumblr_url: http://blog.pebblecode.com/post/48852823724/rest-workshop
 author: George Ornbo
 ---

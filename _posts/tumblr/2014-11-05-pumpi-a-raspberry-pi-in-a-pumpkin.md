@@ -2,7 +2,7 @@
 layout: post
 title: Pumpi - A raspberry pi in a pumpkin
 date: '2014-11-05T20:37:00+00:00'
-tags: []
+categories: [hacks]
 tumblr_url: http://blog.pebblecode.com/post/101866054836/pumpi-a-raspberry-pi-in-a-pumpkin
 author: George Ornbo
 ---

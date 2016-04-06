@@ -2,7 +2,7 @@
 layout: post
 title: What's wrong with scalenpm.org
 date: '2013-12-04T10:50:00+00:00'
-tags: []
+categories: []
 tumblr_url: http://blog.pebblecode.com/post/68968224935/whats-wrong-with-scalenpm-org
 author: George Ornbo
 ---
@@ -18,9 +18,9 @@ author: George Ornbo
 
 <blockquote>
   <p>We are Nodejitsu. We run the npm registry service for you.</p>
-  
+
   <p>We’re a startup. We run npm because we love node and we’re very well qualified for the job. But in the last year, npm has become a giant beast of a project. We run it lean, both from an engineering and hardware perspective, because it’s just too expensive to do otherwise.</p>
-  
+
   <p>We wondered, how could we possibly get the money for the hardware and engineers to do this the right way and keep it free for the community?</p>
 </blockquote>
 

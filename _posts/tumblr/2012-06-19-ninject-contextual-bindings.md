@@ -2,7 +2,7 @@
 layout: post
 title: Contextual bindings with Ninject
 date: '2012-06-19T09:10:00+01:00'
-tags: []
+categories: []
 tumblr_url: http://blog.pebblecode.com/post/25423911537/ninject-contextual-bindings
 author: Joseph Jeganathan
 ---

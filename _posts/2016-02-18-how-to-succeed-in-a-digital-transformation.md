@@ -2,7 +2,7 @@
 layout: post
 title: How to Succeed in a Digital Transformation
 author: Toby Hunt
-categories: [digital-transformation, innovation, lean, agile]
+categories: [digital transformation, innovation, lean, agile]
 thumbnail: /img/blog/digital-best-practice.png
 ---
 

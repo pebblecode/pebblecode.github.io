@@ -2,12 +2,7 @@
 layout: post
 title: The Epic Teleconferencing Gadget!
 date: '2012-08-24T15:34:00+01:00'
-tags:
-- teleconferencing
-- gadgets
-- remote
-- ipads
-- robot
+categories: [teleconferencing, gadgets, remote, ipads, robot]
 tumblr_url: http://blog.pebblecode.com/post/30102959146/the-epic-teleconferencing-gadget
 author: Andrea Ross-Hilton
 ---

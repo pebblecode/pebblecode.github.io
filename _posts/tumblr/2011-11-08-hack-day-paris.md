@@ -2,7 +2,7 @@
 layout: post
 title: Hack Day Paris
 date: '2011-11-08T09:26:52+00:00'
-tags: []
+categories: [hacks]
 tumblr_url: http://blog.pebblecode.com/post/12507455809/hack-day-paris
 author: Alex Butcher
 ---

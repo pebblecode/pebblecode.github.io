@@ -2,7 +2,7 @@
 layout: post
 title: Message Bus In Action
 date: '2013-01-16T15:44:00+00:00'
-tags: []
+categories: []
 tumblr_url: http://blog.pebblecode.com/post/40684551901/message-bus-in-action
 author: Akash Chopra
 ---

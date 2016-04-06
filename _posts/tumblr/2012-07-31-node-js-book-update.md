@@ -2,8 +2,7 @@
 layout: post
 title: Node.js Book Update
 date: '2012-07-31T08:31:00+01:00'
-tags:
-- Node.js
+categories: [Node.js]
 tumblr_url: http://blog.pebblecode.com/post/28398912447/node-js-book-update
 author: George Ornbo
 ---

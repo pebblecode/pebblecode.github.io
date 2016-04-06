@@ -15,14 +15,25 @@ layout: post
     <section class="content-container post-container grid">
       <header class="post-header col-1-1">
         <h1 class="post-title">{{ page.title }}</h1>
-        <span class="post-author">{{ page.author }}</span>
-        <span class="post-date">{{ page.date | date: "%B %-d, %Y" }}</span>
+        <div class="post-meta">
+          <span class="post-author">{{ page.author }}</span>
+          <span class="post-date">{{ page.date | date: "%B %-d, %Y" }}</span>
+          <ul class="post-categories">
+            {% for category in page.categories %}
+              {% assign catLink = category | replace: ' ', '-' %}
+              <li><a class="blog-category-title" href="/blog/tag/{{catLink}}">{{category}}</a></li>
+            {% endfor %}
+          </ul>
+        </div>
       </header>
       <article class="content post-content col-1-1">
         {{content}}
       </article>
-      <aside class="twitter-share col-1-1">
-        <span class="twitter-share-text">Share your thoughts on <a href="https://twitter.com/{{site.twitter}}" class="twitter" target="_blank">Twitter</a></span>
+      <aside class="share-container col-1-1">
+        <h5 class="share-title">Share</h5>
+        <a href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ page.url }}&via={{ site.twitter }}&related={{ site.twitter }}" rel="nofollow" target="_blank" class="share-btn share-twitter">Twitter</a>
+        <a href="http://www.linkedin.com/shareArticle?mini=true&url={{ site.url }}{{ page.url }}&title={{ page.title }}&summary={{ page.excerpt | strip_html }}&source={{ site.url }}" rel="nofollow" target="_blank" class="share-btn share-linkedin">LinkedIn</a>
+        <a href="http://www.facebook.com/sharer.php?u={{ site.url }}{{ page.url }}&p[title]={{ page.title }}" rel="nofollow" target="_blank" class="share-btn share-facebook">Facebook</a>
       </aside>
     </section>
     <!-- /.post-container -->
@@ -47,20 +58,7 @@ layout: post
                <a href="{{ post.url }}"><h3 class="post-title">{{ post.title }}</h3></a>
             {% endfor %} -->
 
-
-    {% include footer.html %}
-
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/vendor/jquery-2.1.1.min.js""><\/script>')</script>
-    <script type="text/javascript" src="{{ site.baseurl }}/js/main.js"></script>
-    <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
-    <script>
-    [].forEach.call(document.getElementsByTagName("pre"), function(el) {
-      el.classList.add("prettyprint");
-    });
-    prettyPrint();
-    </script>
-    <!-- /scripts-->
+    {% include footer.html prettyprint=true %}
 
   </body>
 </html>

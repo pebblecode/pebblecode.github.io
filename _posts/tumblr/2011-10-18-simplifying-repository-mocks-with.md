@@ -2,12 +2,7 @@
 layout: post
 title: Simplifying Repository Mocks with Ninject.MockingKernel
 date: '2011-10-18T10:24:53+01:00'
-tags:
-- codegen
-- moq
-- ninject
-- repository
-- .net
+categories: [codegen, moq, ninject, repository, dotnet]
 tumblr_url: http://blog.pebblecode.com/post/11607777166/simplifying-repository-mocks-with
 author: Alex Butcher
 ---
@@ -21,7 +16,7 @@ author: Alex Butcher
 public void Ensure_price_not_overwritten()
 {
     //Create the Moq mocking kernel.  This will create a Mock object using Moq
-        new Ninject.MockingKernel.Moq.MoqMockingKernel();            
+        new Ninject.MockingKernel.Moq.MoqMockingKernel();
 
     //1. ARRANGE: setup stub
     Price priceStub = new Price
@@ -66,12 +61,12 @@ mockPriceRepo.Setup(repo =&gt; repo.Get(It.IsAny&lt;int&gt;())).Returns(priceStu
 public void Ensure_price_not_overwritten_2()
 {
     //Create the Moq mocking kernel.  This will create a Mock object using Moq
-    Ninject.MockingKernel.Moq.MoqMockingKernel ninjectKernel = 
+    Ninject.MockingKernel.Moq.MoqMockingKernel ninjectKernel =
         new Ninject.MockingKernel.Moq.MoqMockingKernel();
 
-    //1. ARRANGE: quickly wire up a repository so that any 
+    //1. ARRANGE: quickly wire up a repository so that any
     //accessor returning a Price or PriceList will return the stub
-    Mock&lt;PriceRepository&gt; mockPriceRepo = 
+    Mock&lt;PriceRepository&gt; mockPriceRepo =
         AutoWireUpMockRepository&lt;PriceRepository, Price, PriceList&gt;(new Price
     {
         Value = 999,

@@ -47,7 +47,6 @@
     var servicesDesign;
     var servicesAgile;
     var servicesTests;
-    var servicesCollab;
 
     var scrollPositions = debounce(function () {
       servicesStrategy = $('#servicesStrategy').offset().top - 200;
@@ -57,15 +56,12 @@
       servicesDesign = $('#servicesDesign').offset().top - 200;
       servicesAgile = $('#servicesAgile').offset().top - 200;
       servicesTests = $('#servicesTests').offset().top - 200;
-      servicesCollab = $('#servicesCollab').offset().top - 200;
     }, 100);
 
     var servicesBG = debounce(function () {
       var windowTop = $(window).scrollTop();
 
-      if (windowTop > servicesCollab) {
-        servicesContainer.css({'background-color':'#ed4f7e' });
-      } else if (windowTop > servicesTests) {
+      if (windowTop > servicesTests) {
         servicesContainer.css({'background-color':'#9b5ca4' });
       } else if (windowTop > servicesAgile) {
         servicesContainer.css({'background-color':'#faad40' });
@@ -110,20 +106,24 @@
     marker.setPosition(latLng);
     map.panTo(latLng);
   });
+  
   $('#sofiaBtn').click(function(){
     var latLng = new google.maps.LatLng(42.6742392, 23.3543577);
     marker.setPosition(latLng);
     map.panTo(latLng);
   });
 
-  // Initialise google map
+  // Initialise google maps
   function initialize() {
     initmap("map", 51.485672, -0.118554);
   }
-
-  function semiinit() {
-    initmap("semimap", 51.5148475,-0.1269898);
+  function healthinit() {
+    initmap("healthmap", 51.5148475,-0.1269898);
   }
+  function insureinit() {
+    initmap("insuremap", 51.5144918,-0.0803065);
+  }
+
   // Initialise google map
   function initmap(mapname, lat, lon) {
     var mapProp = {
@@ -149,14 +149,18 @@
       google.maps.event.addListener(marker, "click", function () {
     });
   }
-  // Initialise map if visible
+  // Initialise maps if visible
   if ($('#map').length) {
     google.maps.event.addDomListener(window, 'load', initialize);
   }
-    // Initialise map if visible
-  if ($('#semimap').length) {
-    google.maps.event.addDomListener(window, 'load', semiinit);
+  if ($('#healthmap').length) {
+    google.maps.event.addDomListener(window, 'load', healthinit);
+  }
+  if ($('#insuremap').length) {
+    google.maps.event.addDomListener(window, 'load', insureinit);
   }
 
+  // Console advert
+  console.log('%cHey! Love the console? Then check out our careers page.','font-family: "brandon-grotesque","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;font-weight: 900;font-style: italic;text-transform: uppercase;letter-spacing: -1px;text-shadow: 3px 4px 0 rgba(0,0,0,0.1);font-size:42px;color:#ed4f7e;');
 
 }()); // end 'use strict'

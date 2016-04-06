@@ -2,7 +2,7 @@
 layout: post
 title: 'Howl.js: Sharing games through sound'
 date: '2013-11-21T10:55:34+00:00'
-tags: []
+categories: []
 tumblr_url: http://blog.pebblecode.com/post/67649759989/howl-js-sharing-games-through-sound
 author: Tak Tran
 ---

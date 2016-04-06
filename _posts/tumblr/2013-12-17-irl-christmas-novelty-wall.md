@@ -2,7 +2,7 @@
 layout: post
 title: IRL Christmas novelty wall
 date: '2013-12-17T09:39:45+00:00'
-tags: []
+categories: [hacks]
 tumblr_url: http://blog.pebblecode.com/post/70279278010/irl-christmas-novelty-wall
 author: Tak Tran
 ---

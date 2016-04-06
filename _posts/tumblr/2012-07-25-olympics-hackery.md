@@ -2,7 +2,7 @@
 layout: post
 title: Olympics hackery
 date: '2012-07-25T12:19:00+01:00'
-tags: []
+categories: []
 tumblr_url: http://blog.pebblecode.com/post/27976232997/olympics-hackery
 author: Tak Tran
 ---
@@ -22,7 +22,7 @@ author: Tak Tran
 
 <h2>Front end data visualisation</h2>
 
-<p>On the front end side, during the hackday, we did a preliminary round of research in graphing and visualisation libraries available, and we ended up settling on the funky <a href="http://d3js.org/">d3 library</a>. Others we had a quick look at were either too low level and would require more time than was available to learn eg, <a href="http://raphaeljs.com/">Rapael</a>, <a href="http://paperjs.org/">PaperJS</a>, and <a href="http://processingjs.org/">ProcessingJS</a>; or were too high level and restricted what you could visualise eg, <a href="https://developers.google.com/chart/">Google chart tools</a>. <a href="http://misoproject.com/dataset/">Miso Dataset</a> is also worth mentioning too, as it looks interesting for manipulating data, but not what we wanted. D3 was the perfect level of abstraction for our needs. It did have a bit of a learning curve, but it was very flexible in what it can do and quite elegant looking too. Plus it had 
+<p>On the front end side, during the hackday, we did a preliminary round of research in graphing and visualisation libraries available, and we ended up settling on the funky <a href="http://d3js.org/">d3 library</a>. Others we had a quick look at were either too low level and would require more time than was available to learn eg, <a href="http://raphaeljs.com/">Rapael</a>, <a href="http://paperjs.org/">PaperJS</a>, and <a href="http://processingjs.org/">ProcessingJS</a>; or were too high level and restricted what you could visualise eg, <a href="https://developers.google.com/chart/">Google chart tools</a>. <a href="http://misoproject.com/dataset/">Miso Dataset</a> is also worth mentioning too, as it looks interesting for manipulating data, but not what we wanted. D3 was the perfect level of abstraction for our needs. It did have a bit of a learning curve, but it was very flexible in what it can do and quite elegant looking too. Plus it had
 <a href="https://github.com/mbostock/d3/wiki">great documentation</a>, and <a href="https://github.com/mbostock/d3/wiki/Gallery">examples</a>.</p>
 
 <p>As a side note, I later happened to be in San Francisco, at a <a href="http://www.meetup.com/Bay-Area-d3-User-Group/events/63143652/">d3 meetup</a>, where <a href="http://en.wikipedia.org/wiki/Ward_Cunningham">Ward Cunningham</a> presented, and was a <a href="https://groups.google.com/forum/?fromgroups#!topic/d3-js/gIW4DG_bjZs">great fan</a> too.</p>

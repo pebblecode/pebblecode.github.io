@@ -2,12 +2,7 @@
 layout: post
 title: Blocking and non-blocking I/O
 date: '2011-10-18T10:25:04+01:00'
-tags:
-- ruby
-- rails
-- nodejs
-- io
-- async
+categories: [ruby, rails, nodejs, io, async]
 tumblr_url: http://blog.pebblecode.com/post/11607779340/blocking-and-non-blocking-i-o
 author: George Ornbo
 ---

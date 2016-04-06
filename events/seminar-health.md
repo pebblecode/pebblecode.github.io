@@ -11,6 +11,7 @@ seminar-call-to-action: "Sign up now"
 seminar-title1: Innovation
 seminar-title2: in
 seminar-title3: Healthcare
+seminar-hero: health-seminar-hero.png
 seminar-subtitle: In the trenches
 seminar-intro-paragraphs:
  - "The <a href='https://en.medshr.net/'>MedShr</a> smartphone app is revolutionising diagnostics in cardiology, by securely and easily sharing cases amongst leading practitioners. Developed by leading cardiologist <a href='#asif-qasim'>Dr Asif Qasim</a> (Trinity College Cambridge), and with rapid viral adoption, it truly is innovation in action!"
@@ -166,5 +167,6 @@ speakers:
 
 
 ## Google Maps URL
+invite-map-id: healthmap
 invite-map: https://www.google.co.uk/maps/place/Surrey+County+Cricket+Club/@51.483612,-0.11492,15z/data=!4m2!3m1!1s0x0:0xf09a6ef184954e68?sa=X&ved=0CJABEPwSMA1qFQoTCKatle_TlMYCFckj2wodDEYAbw
 ---

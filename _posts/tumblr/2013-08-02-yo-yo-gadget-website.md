@@ -2,7 +2,7 @@
 layout: post
 title: yo yo gadget website
 date: '2013-08-02T17:15:00+01:00'
-tags: []
+categories: []
 tumblr_url: http://blog.pebblecode.com/post/57164281468/yo-yo-gadget-website
 author: Tak Tran
 ---

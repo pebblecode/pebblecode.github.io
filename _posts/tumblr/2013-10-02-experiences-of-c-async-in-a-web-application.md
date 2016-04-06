@@ -2,7 +2,7 @@
 layout: post
 title: Experiences of C# Async in a Web Application
 date: '2013-10-02T10:29:33+01:00'
-tags:
+categories:
 - async
 - .net
 tumblr_url: http://blog.pebblecode.com/post/62889430460/experiences-of-c-async-in-a-web-application
@@ -70,9 +70,9 @@ namespace NUnit.Framework
 {
   using System;
   using System.Threading.Tasks;
- 
+
   using NUnit.Framework;
- 
+
   public static class AsyncAsserts
   {
     ///
@@ -99,7 +99,7 @@ namespace NUnit.Framework
             typeof(T),
             aex.GetBaseException().GetType());
         }
- 
+
         // Continue excecution if base exception was expected.
       }
       catch (T)
@@ -108,7 +108,7 @@ namespace NUnit.Framework
       }
     }
   }
- 
+
   public static class AggregateExceptionExtensions
   {
     public static bool BaseIsOfType(this AggregateException aex)
@@ -122,7 +122,7 @@ namespace NUnit.Framework
 namespace Tests
 {
   using NUnit.Framework;
- 
+
   // Example AsyncAsserts.Throws(testCode) usage.
   [Category("Integration")]
   public class CreateTest

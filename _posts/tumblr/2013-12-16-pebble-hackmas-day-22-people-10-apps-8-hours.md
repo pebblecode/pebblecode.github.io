@@ -2,7 +2,7 @@
 layout: post
 title: pebble Hackmas Day. 22 people, 10 apps, 8 hours!
 date: '2013-12-16T12:25:00+00:00'
-tags: []
+categories: [hacks]
 tumblr_url: http://blog.pebblecode.com/post/70184561422/pebble-hackmas-day-22-people-10-apps-8-hours
 author: Fergus Hynd
 ---

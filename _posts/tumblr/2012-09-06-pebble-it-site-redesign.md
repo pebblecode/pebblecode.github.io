@@ -2,10 +2,7 @@
 layout: post
 title: pebble.it site redesign
 date: '2012-09-06T09:18:47+01:00'
-tags:
-- pebble.it
-- design
-- css
+categories: []
 tumblr_url: http://blog.pebblecode.com/post/30986543254/pebble-it-site-redesign
 author: Mark Durrant
 ---

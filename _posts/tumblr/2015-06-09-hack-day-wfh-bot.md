@@ -2,7 +2,7 @@
 layout: post
 title: Hack Day - WFH Bot
 date: '2015-06-09T12:31:08+01:00'
-tags: []
+categories: [hacks]
 tumblr_url: http://blog.pebblecode.com/post/121098958676/hack-day-wfh-bot
 author: George Ornbo
 ---

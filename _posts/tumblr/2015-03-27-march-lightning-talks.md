@@ -3,15 +3,7 @@ layout: post
 title: March Lightning Talks
 date: '2015-03-27T15:37:34+00:00'
 author: Niall Henn
-tags:
-- tech
-- pebble
-- programming
-- ecmascript
-- javascript
-- js
-- slide
-- powerpoint
+categories: [lightning talks]
 tumblr_url: http://blog.pebblecode.com/post/114760397321/march-lightning-talks
 ---
 <h3>Check out March’s Lightning talks, we had an intriguing talk by Vince on forthcoming ECMAScript6, and a very useful talk by our new face; Jonny on using powerpoint to create engaging slide presentations.</h3>

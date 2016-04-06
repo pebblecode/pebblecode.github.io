@@ -2,10 +2,7 @@
 layout: post
 title: Do taxis go south of the river?
 date: '2011-10-18T09:49:00+01:00'
-tags:
-- rails
-- ruby
-- projects
+categories: [rails, ruby, projects]
 tumblr_url: http://blog.pebblecode.com/post/11607352269/do-taxis-go-south-of-the-river
 author: George Ornbo
 ---

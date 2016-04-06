@@ -2,7 +2,7 @@
 layout: post
 title: Generating boilerplate sites for experimentation with Github and shell aliases.
 date: '2013-04-11T15:10:29+01:00'
-tags: []
+categories: []
 tumblr_url: http://blog.pebblecode.com/post/47700920100/generating-boilerplate-sites-for-experimentation
 author: Mark Durrant
 ---

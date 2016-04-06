@@ -2,7 +2,7 @@
 layout: post
 title: Our Website Redesign
 date: '2012-06-20T13:56:48+01:00'
-tags: []
+categories: []
 tumblr_url: http://blog.pebblecode.com/post/25501648579/our-website-redesign
 author: Mark Durrant
 ---

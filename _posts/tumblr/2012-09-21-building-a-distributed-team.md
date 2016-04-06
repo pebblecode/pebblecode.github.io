@@ -2,7 +2,7 @@
 layout: post
 title: Building a Distributed Team
 date: '2012-09-21T08:11:00+01:00'
-tags:
+categories:
 - distributed team
 tumblr_url: http://blog.pebblecode.com/post/31974563131/building-a-distributed-team
 author: Alex Butcher

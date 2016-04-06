@@ -2,9 +2,7 @@
 layout: post
 title: Working with agencies... grr!
 date: '2012-07-31T19:28:56+01:00'
-tags:
-- business
-- strategy
+categories: [business, strategy]
 tumblr_url: http://blog.pebblecode.com/post/28423381817/working-with-agencies-grr
 author: Toby Hunt
 ---

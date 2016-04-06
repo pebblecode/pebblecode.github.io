@@ -2,7 +2,7 @@
 layout: post
 title: The Agile Organisation
 date: '2013-12-02T08:00:00+00:00'
-tags: []
+categories: []
 tumblr_url: http://blog.pebblecode.com/post/68764644156/the-agile-organisation
 author: Alex Butcher
 ---

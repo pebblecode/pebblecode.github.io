@@ -2,7 +2,7 @@
 layout: post
 title: Innovation != technology
 date: '2014-03-07T15:18:00+00:00'
-tags: []
+categories: []
 tumblr_url: http://blog.pebblecode.com/post/78850896871/innovation-technology
 author: George Ornbo
 ---

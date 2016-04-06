@@ -2,7 +2,7 @@
 layout: post
 title: Work Experience
 date: '2014-04-24T14:22:00+01:00'
-tags: []
+categories: []
 tumblr_url: http://blog.pebblecode.com/post/83715209173/work-experience
 author: Toby Hunt
 ---

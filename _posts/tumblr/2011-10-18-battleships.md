@@ -2,10 +2,7 @@
 layout: post
 title: Battleships
 date: '2011-10-18T10:26:55+01:00'
-tags:
-- .net
-- fSharp
-- games
+categories: [dotnet, fsharp, games]
 tumblr_url: http://blog.pebblecode.com/post/11607802493/battleships
 author: Alex Butcher
 ---

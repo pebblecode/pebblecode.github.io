@@ -2,7 +2,7 @@
 layout: post
 title: Open Source Social Responsibility
 date: '2013-11-29T12:53:00+00:00'
-tags: []
+categories: []
 tumblr_url: http://blog.pebblecode.com/post/68455661669/open-source-social-responsibility
 author: George Ornbo
 ---

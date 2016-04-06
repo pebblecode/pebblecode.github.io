@@ -2,7 +2,7 @@
 layout: post
 title: 'Book Review: The Second Machine Age'
 date: '2015-02-09T12:37:00+00:00'
-tags: []
+categories: []
 tumblr_url: http://blog.pebblecode.com/post/110534477186/book-review-the-second-machine-age
 author: George Ornbo
 ---

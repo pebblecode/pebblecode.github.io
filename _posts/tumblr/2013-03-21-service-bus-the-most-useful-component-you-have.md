@@ -2,7 +2,7 @@
 layout: post
 title: Service bus, the most useful component you have (possibly) never heard of
 date: '2013-03-21T15:58:40+00:00'
-tags: []
+categories: []
 tumblr_url: http://blog.pebblecode.com/post/45917317681/service-bus-the-most-useful-component-you-have
 author: pebble {code} Team
 ---

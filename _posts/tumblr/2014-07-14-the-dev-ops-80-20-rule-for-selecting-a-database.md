@@ -2,7 +2,7 @@
 layout: post
 title: The dev-ops 80-20 rule for selecting a Database Technology
 date: '2014-07-14T15:44:00+01:00'
-tags:
+categories:
 - databases
 - foundationdb
 - devops

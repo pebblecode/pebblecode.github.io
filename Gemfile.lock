@@ -1,6 +1,8 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    autoprefixer-rails (6.3.3.1)
+      execjs
     blankslate (2.1.2.4)
     celluloid (0.16.0)
       timers (~> 4.0.0)
@@ -78,6 +80,12 @@ GEM
     notiffany (0.0.8)
       nenv (~> 0.1)
       shellany (~> 0.0)
+    octopress-autoprefixer (1.0.2)
+      autoprefixer-rails
+      jekyll (>= 2.0)
+      octopress-hooks (~> 2.0)
+    octopress-hooks (2.6.1)
+      jekyll (>= 2.0)
     parslet (1.5.0)
       blankslate (~> 2.0)
     posix-spawn (0.3.11)
@@ -111,6 +119,8 @@ DEPENDENCIES
   guard-jekyll-plus
   guard-livereload
   jekyll (~> 2.5.3)
+  jekyll-paginate
+  octopress-autoprefixer
 
 BUNDLED WITH
    1.11.2

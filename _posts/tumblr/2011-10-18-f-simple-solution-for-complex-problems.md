@@ -2,9 +2,7 @@
 layout: post
 title: F# Simple Solution for Complex Problems
 date: '2011-10-18T10:26:00+01:00'
-tags:
-- .net
-- fSharp
+categories: [dotnet, fSharp]
 tumblr_url: http://blog.pebblecode.com/post/11607795463/f-simple-solution-for-complex-problems
 author: Joseph Jeganathan
 ---
@@ -19,13 +17,13 @@ author: Joseph Jeganathan
 <li>Print out the winner of the game.</li>
 </ol><p><strong>Solution:</strong></p>
 <p><strong>Representation of cards</strong></p>
-<pre><code>type Suit = 
+<pre><code>type Suit =
     | Club
     | Diamond
     | Heart
     | Spade
 
-type Rank = 
+type Rank =
     | Ace
     | King
     | Queen
@@ -36,19 +34,19 @@ type Card = Card of Rank * Suit
 </code></pre>
 <p>Discriminated unions are very useful to represent data that can have many cases. We can use discriminated union type as an alternative to hierarchy too.  I&rsquo;ve use discriminated union types to represent card&rsquo;s suits and ranks.</p>
 <p><strong>Deck of Cards</strong></p>
-<pre><code>let DeckOfCards = 
-    [ 
+<pre><code>let DeckOfCards =
+    [
         for s in [Club; Diamond; Heart; Spade] do
             for r in [Ace; King; Queen; Jack] do
                 yield Card(r,s)
             for v in 2..10 do
-                yield Card(Value v, s) 
+                yield Card(Value v, s)
     ]
 </code></pre>
 <p><strong>Shuffling Deck of Cards</strong></p>
-<pre><code>let shuffle cards = 
+<pre><code>let shuffle cards =
     let rand = new System.Random()
-    cards 
+    cards
         |&gt; List.map (fun c -&gt; (rand.Next(), c))
         |&gt; List.sortBy fst
         |&gt; List.map snd
@@ -58,15 +56,15 @@ let ShuffledCards = shuffle DeckOfCards
 <p>The |&gt; is forward pipe operator and it's a very important operator in F#. This operator allows you to do transformation or iterations in a forward chaining or pipe-lining way; |&gt; is equivalent to:</p>
 <pre>let (|&gt;)  x f = f x</pre>
 <p><strong>Player Type with Hand-Total Calculation</strong></p>
-<pre><code>    member p.HandTotal = 
+<pre><code>    member p.HandTotal =
         let GetTotal (a: int list) (x: int*int) =
             let AddVal (v: int) = List.map (fun lv -&gt; lv + v)
-            List.append 
+            List.append
                 (a |&gt; AddVal (fst x))
                 (a |&gt; AddVal (snd x))
-        Cards 
-        |&gt; List.map CardValue 
-        |&gt; List.fold GetTotal [0] 
+        Cards
+        |&gt; List.map CardValue
+        |&gt; List.fold GetTotal [0]
         |&gt; Set.ofList
 </code></pre>
 <p>Since &ldquo;Ace&rdquo; has two values (10 or 1) there might be more than one hand total value and we must consider all possible combinations of card values. The method above will return all possible hand total for the holding cards, Set.ofList will remove all the duplicate hand total values from the List. For example if the the card values in hand are [(1,10);(2,2);(3,3);(1,10)] (2 aces, and the number cards 2 and 3) the possible hand total values are [7; 16; 25]</p>
@@ -77,7 +75,7 @@ let ShuffledCards = shuffle DeckOfCards
                         p.TakeCard(RandomCard())
                         Play p
                 | _ -&gt; p
-    players 
+    players
     |&gt; List.map Play
     |&gt; List.map (fun p -&gt; printfn "%O" p)
 </code></pre>

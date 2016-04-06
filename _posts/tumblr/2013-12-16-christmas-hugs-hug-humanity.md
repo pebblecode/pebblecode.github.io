@@ -2,7 +2,7 @@
 layout: post
 title: Christmas Hugs - Hug Humanity
 date: '2013-12-16T20:26:00+00:00'
-tags: []
+categories: []
 tumblr_url: http://blog.pebblecode.com/post/70216107299/christmas-hugs-hug-humanity
 author: George Ornbo
 ---

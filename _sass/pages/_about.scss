@@ -1,9 +1,7 @@
 //===============================================================================
 // ABOUT US
 //===============================================================================
-
 $ppl-bgcolor: darken($blue, 6%);
-
 
 .about-photo-container {
 	&:before {
@@ -121,16 +119,13 @@ $ppl-bgcolor: darken($blue, 6%);
 }
 
 .ppl-col.col-1-2{
-
   @media screen and ( max-width: 800px ) {
     width: 100%;
   }
-
 }
 
+
 // ============ Well confusing inner slant section ========= //
-
-
 .ppl-col {
    @media screen and ( min-width: $medium + 100px ) {
     .ppl-item:nth-of-type(3n-1) .ppl-portrait-wrapper {
@@ -140,6 +135,7 @@ $ppl-bgcolor: darken($blue, 6%);
         -ms-transform: rotate(-1.4deg) skew(-1.4deg);
         -webkit-transform: rotate(-1.4deg) skew(-1.4deg);
       }
+
       &:after {
         // background-color: aqua;
         transform: rotate(-1.8deg) skew(-1.8deg);
@@ -154,6 +150,7 @@ $ppl-bgcolor: darken($blue, 6%);
         -ms-transform: rotate(2.2deg) skew(2.2deg);
         -webkit-transform: rotate(2.2deg) skew(2.2deg);
         }
+
         &:after {
           // background-color: aqua;
           transform: rotate(1.4deg) skew(1.4deg);
@@ -166,17 +163,15 @@ $ppl-bgcolor: darken($blue, 6%);
 }
 
 .ppl-col:nth-of-type(2) {
-
   @media screen and ( min-width: $medium + 100px ) {
     .ppl-item:nth-of-type(3n-2) .ppl-portrait-wrapper {
       &:before {
-        // background-color: red;
         transform: rotate(-1.4deg) skew(-1.4deg);
         -ms-transform: rotate(-1.4deg) skew(-1.4deg);
         -webkit-transform: rotate(-1.4deg) skew(-1.4deg);
       }
+
       &:after {
-        // background-color: aqua;
         transform: rotate(-1.6deg) skew(-1.6deg);
         -ms-transform: rotate(-1.6deg) skew(-1.6deg);
         -webkit-transform: rotate(-1.6deg) skew(-1.6deg);
@@ -184,28 +179,26 @@ $ppl-bgcolor: darken($blue, 6%);
 
       .ppl-portrait {
         &:before {
-        // background-color: red;
         transform: rotate(2.4deg) skew(2.4deg);
         -ms-transform: rotate(2.4deg) skew(2.4deg);
         -webkit-transform: rotate(2.4deg) skew(2.4deg);
         }
+
         &:after {
-          // background-color: aqua;
           transform: rotate(0.4deg) skew(0.4deg);
           -ms-transform: rotate(0.4deg) skew(0.4deg);
           -webkit-transform: rotate(0.4deg) skew(0.4deg);
         }
       }
     }
+
     .ppl-item:nth-of-type(3n-1) .ppl-portrait-wrapper {
       &:before {
-        // background-color: red;
         transform: rotate(1.2deg) skew(1.2deg);
         -ms-transform: rotate(1.2deg) skew(1.2deg);
         -webkit-transform: rotate(1.2deg) skew(1.2deg);
       }
       &:after {
-        // background-color: aqua;
         transform: rotate(1.5deg) skew(1.5deg);
         -ms-transform: rotate(1.5deg) skew(1.5deg);
         -webkit-transform: rotate(1.5deg) skew(1.5deg);
@@ -213,13 +206,11 @@ $ppl-bgcolor: darken($blue, 6%);
 
       .ppl-portrait {
         &:before {
-        // background-color: red;
         transform: rotate(-1.2deg) skew(-1.2deg);
         -ms-transform: rotate(-1.2deg) skew(-1.2deg);
         -webkit-transform: rotate(-1.2deg) skew(-0.5deg);
         }
         &:after {
-          // background-color: aqua;
           transform: rotate(-0.2deg) skew(-0.2deg);
           -ms-transform: rotate(-0.2deg) skew(-0.2deg);
           -webkit-transform: rotate(-0.2deg) skew(-0.2deg);
@@ -227,9 +218,7 @@ $ppl-bgcolor: darken($blue, 6%);
       }
     }
   }
-
 }
-
 // ============ </end of well confusing inner slant section ========= //
 
 .ppl-item {
@@ -240,7 +229,6 @@ $ppl-bgcolor: darken($blue, 6%);
 
   @media screen and ( max-width: $medium + 100px ) {
     margin-bottom: 15px;
-    // padding: 30px 25px;
     border: 5px solid rgba(white, 0.2);
   }
 
@@ -249,22 +237,17 @@ $ppl-bgcolor: darken($blue, 6%);
       @include shadow-pseudo;
       top: 0;
       border: 5px solid #31b4e5;
-      // border-top: 0;
       height: 100%;
       z-index: 1;
       box-shadow: 0 0 0 3px $blue;
     }
   }
 
-
-
-
   h3 {
     font-size: $alpha - 6px;
     margin: 5px 5px 0px 5px;
     line-height: 1;
     text-shadow: 2px 3px 0 rgba(black, 0.2);
-
     background-color: $ppl-bgcolor;
     padding: 20px 20px 5px 20px;
 
@@ -277,15 +260,11 @@ $ppl-bgcolor: darken($blue, 6%);
     margin: 0px 5px;
     line-height: 1;
     color: rgba(black, 0.3);
-
     padding: 0px 20px;
-
     background-color: $ppl-bgcolor;
-
   }
 
   p {
-
     padding: 0 20px;
 
     &:last-of-type {
@@ -331,20 +310,15 @@ $ppl-bgcolor: darken($blue, 6%);
     -ms-transform: rotate(-1deg) scale(1.2);
     -webkit-transform: rotate(-1deg) scale(1.2);
   }
-
-
 }
-
 
 .ppl-portrait-wrapper {
   position: relative;
   width: calc(100% - 10px);
   height: 250px;
-
   margin-left: 5px;
   margin-bottom: 10px;
   margin-top: -10px;
-
   overflow: hidden;
 
   &:before {

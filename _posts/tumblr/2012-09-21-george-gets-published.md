@@ -2,7 +2,7 @@
 layout: post
 title: George gets published!
 date: '2012-09-21T16:38:06+01:00'
-tags:
+categories:
 - node.js
 - author
 tumblr_url: http://blog.pebblecode.com/post/31986810238/george-gets-published

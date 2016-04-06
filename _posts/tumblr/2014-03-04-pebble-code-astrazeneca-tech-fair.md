@@ -2,7 +2,7 @@
 layout: post
 title: pebble {code} @ AstraZeneca Tech Fair
 date: '2014-03-04T09:48:00+00:00'
-tags: []
+categories: []
 tumblr_url: http://blog.pebblecode.com/post/78534448614/pebble-code-astrazeneca-tech-fair
 author: John Mildinhall
 ---

@@ -2,12 +2,7 @@
 layout: post
 title: Noisy URIs
 date: '2013-02-15T09:39:56+00:00'
-tags:
-- CSS
-- Sass
-- LESS
-- Design
-- Data URIs
+categories: []
 tumblr_url: http://blog.pebblecode.com/post/43139609779/noisy-uris
 author: Mark Durrant
 ---

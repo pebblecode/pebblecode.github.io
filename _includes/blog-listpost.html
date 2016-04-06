@@ -1,30 +1,26 @@
-  <li class="post-item">
-      <div class="post-list-meta">
+<li class="post-item">
+  <div class="post-list-meta">
 
-        {% if post.thumbnail %}
-          <div style="background-image: url('{{post.thumbnail}}')" class="post-thumbnail-wrapper"></div>
-        {% else %}
-          <div class="post-thumbnail-wrapper"></div>
-        {% endif %}
+    {% if post.thumbnail %}
+      <div style="background-image: url('{{post.thumbnail}}')" class="post-thumbnail-wrapper"></div>
+    {% else %}
+      <div class="post-thumbnail-wrapper"></div>
+    {% endif %}
 
-        <a href="{{ post.url }}"><h3 class="post-title">{{ post.title }}</h3></a>
-        <div class="blog-post-details">by <span class="post-author">{{ post.author }}</span> <span class="post-date">on {{ post.date | date: '%B %d, %Y' }}</span></div>
+    <a href="{{ post.url }}"><h3 class="post-title">{{ post.title }}</h3></a>
+    <div class="blog-post-details">by <span class="post-author">{{ post.author }}</span> <span class="post-date">on {{ post.date | date: '%B %d, %Y' }}</span></div>
 
-        <ul class="post-categories">
-          {% for category in post.categories %}
-              <li><a class="blog-category-title" href="/blog/tag/{{category}}">{{category}}</a></li>
-          {% endfor %}
-        </ul>
+    <ul class="post-categories">
+      {% for category in post.categories %}
+        {% assign catLink = category | replace: ' ', '-' %}
+        <li><a class="blog-category-title" href="/blog/tag/{{catLink}}">{{category}}</a></li>
+      {% endfor %}
+    </ul>
 
-      </div>
+  </div>
+  <div class="post-excerpt">
+    <p>{{ post.excerpt | strip_html }}</p>
+  </div>
 
-
-
-
-        <div class="post-excerpt">
-          <p>{{ post.excerpt | strip_html }}</p>
-        </div>
-       <a class="readmore-btn" href="{{ post.url }}">Read Post</a>
-
-
-  </li>
+ <a class="readmore-btn" href="{{ post.url }}">Read Post</a>
+</li>

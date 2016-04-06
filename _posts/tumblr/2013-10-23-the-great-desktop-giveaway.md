@@ -2,7 +2,7 @@
 layout: post
 title: The Great Desktop Giveaway
 date: '2013-10-23T18:00:49+01:00'
-tags: []
+categories: []
 tumblr_url: http://blog.pebblecode.com/post/64875314524/the-great-desktop-giveaway
 author: George Ornbo
 ---

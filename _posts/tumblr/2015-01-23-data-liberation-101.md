@@ -2,7 +2,7 @@
 layout: post
 title: Data Liberation 101
 date: '2015-01-23T10:00:00+00:00'
-tags: []
+categories: [hacks]
 tumblr_url: http://blog.pebblecode.com/post/108905169945/data-liberation-101
 author: George Ornbo
 ---

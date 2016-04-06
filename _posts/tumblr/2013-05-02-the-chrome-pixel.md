@@ -2,7 +2,7 @@
 layout: post
 title: The Chrome Pixel
 date: '2013-05-02T16:26:43+01:00'
-tags: []
+categories: []
 tumblr_url: http://blog.pebblecode.com/post/49440479980/the-chrome-pixel
 author: Mark Durrant
 ---

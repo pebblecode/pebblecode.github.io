@@ -2,7 +2,7 @@
 layout: post
 title: 'Hackday Project: Code Share during Google Hangout'
 date: '2013-03-21T12:34:00+00:00'
-tags: []
+categories: [hacks]
 tumblr_url: http://blog.pebblecode.com/post/45909331039/hackday-project-code-share-during-google-hangout
 author: Joseph Jeganathan
 ---

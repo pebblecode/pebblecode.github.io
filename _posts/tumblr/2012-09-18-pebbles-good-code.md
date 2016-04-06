@@ -2,7 +2,7 @@
 layout: post
 title: pebble's GOOD {code}
 date: '2012-09-18T12:59:11+01:00'
-tags:
+categories:
 - csr
 - free
 - charity

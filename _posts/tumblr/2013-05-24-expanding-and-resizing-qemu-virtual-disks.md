@@ -2,7 +2,7 @@
 layout: post
 title: Expanding (and resizing) QEMU Virtual Disks
 date: '2013-05-24T16:52:00+01:00'
-tags:
+categories:
 - kvm
 - qemu
 - virtualization
@@ -31,7 +31,7 @@ cd $TMPDIR
 &gt; Found 1 nodes in stdin:
 &gt; -- NODE --
 &gt; &lt;source file="/vms/herman/tmpkdYhWL.qcow2" /&gt;
-$ OLD_DISK=/vms/herman/tmpkdYhWL.qcow2    
+$ OLD_DISK=/vms/herman/tmpkdYhWL.qcow2
 </code></pre>
 <p>It is usefull to know how your existing partitions are layed out. You can find that out with <code>virt-filesystems</code>:</p>
 <pre><code>$ sudo virt-filesystems --long --parts --blkdevs -h -a $OLD_DISK

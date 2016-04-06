@@ -2,10 +2,7 @@
 layout: post
 title: Honey, I Shrunk the SOA
 date: '2012-09-04T13:16:00+01:00'
-tags:
-- F sharp
-- message bus
-- async
+categories: [F sharp, message bus, async]
 tumblr_url: http://blog.pebblecode.com/post/30865686824/honey-i-shrunk-the-soa-fsharp
 author: Mark DUrrant
 ---
@@ -73,15 +70,15 @@ interface.</p>
 <p>So what would such an API look like? First we need the message handling
 interfaces that services can implement:</p>
 
-<pre><code>public interface IEventHandler&lt;TEvent&gt; 
-{ 
-    void HandleEvent(TEvent message); 
-} 
+<pre><code>public interface IEventHandler&lt;TEvent&gt;
+{
+    void HandleEvent(TEvent message);
+}
 
-public interface IRequestHandler&lt;TRequest, TResponse&gt; 
-{ 
-    Task&lt;TResponse&gt; HandleRequest(TRequest message); 
-} 
+public interface IRequestHandler&lt;TRequest, TResponse&gt;
+{
+    Task&lt;TResponse&gt; HandleRequest(TRequest message);
+}
 </code></pre>
 
 <p>By returning a Task the IRequestHandler will integrate nicely with the
@@ -89,35 +86,35 @@ async features of C# 5.</p>
 
 <p>Next we need the message bus interface:</p>
 
-<pre><code>public interface IMessageBus 
-{ 
-    public void RegisterEventHandler&lt;TEvent&gt;(IEventHandler&lt;TEvent&gt; handler); 
-    public void RegisterRequestHandler&lt;TRequest, TResponse&gt;(IRequestHandler&lt;TRequest, TResponse&gt; handler); 
-    public void Publish&lt;TEvent&gt;(TEvent message); public Task&lt;TResponse&gt; 
-    Send&lt;TRequest, TResponse&gt;(TRequest message); 
-} 
+<pre><code>public interface IMessageBus
+{
+    public void RegisterEventHandler&lt;TEvent&gt;(IEventHandler&lt;TEvent&gt; handler);
+    public void RegisterRequestHandler&lt;TRequest, TResponse&gt;(IRequestHandler&lt;TRequest, TResponse&gt; handler);
+    public void Publish&lt;TEvent&gt;(TEvent message); public Task&lt;TResponse&gt;
+    Send&lt;TRequest, TResponse&gt;(TRequest message);
+}
 </code></pre>
 
 <p>Then at the application root we can configure the system by registering
 services with the message bus:</p>
 
-<pre><code>var serviceA = new ServiceA; // implements IEventHandler 
-bus.RegisterEventHandler(serviceA); 
-var serviceB = new ServiceB; // implements IRequestHandler 
-bus.RegisterRequestHandler(serviceB); 
+<pre><code>var serviceA = new ServiceA; // implements IEventHandler
+bus.RegisterEventHandler(serviceA);
+var serviceB = new ServiceB; // implements IRequestHandler
+bus.RegisterRequestHandler(serviceB);
 </code></pre>
 
 <p>And services can interact with the bus like so:</p>
 
-<pre><code>public async void DoStuff() 
-{ 
-    // some actions... 
+<pre><code>public async void DoStuff()
+{
+    // some actions...
 
-    // this will send the ReqA message and asynchronously await the response 
-    var result = await bus.Send(new ReqA()); 
+    // this will send the ReqA message and asynchronously await the response
+    var result = await bus.Send(new ReqA());
 
-    // do other stuff with the result... 
-} 
+    // do other stuff with the result...
+}
 </code></pre>
 
 <p>Whilst it is a nice idea to avoid concurrent message processing in the
@@ -126,18 +123,18 @@ cannot process the messages quickly enough. The solution comes from
 considering the SOA approach: simply add multiple service instances
 behind a load balancer! For example:</p>
 
-<pre><code>public class EventLoadBalancer : IEventHandler&lt;TEvent&gt; 
-{ 
-    public LoadBalancer(Func&lt;IEventHandler&lt;TEvent&gt;&gt; slaveFactory) 
-    { 
-        // set up appropriate queues etc to hold slave instances 
-    } 
+<pre><code>public class EventLoadBalancer : IEventHandler&lt;TEvent&gt;
+{
+    public LoadBalancer(Func&lt;IEventHandler&lt;TEvent&gt;&gt; slaveFactory)
+    {
+        // set up appropriate queues etc to hold slave instances
+    }
 
-    public void HandleEvent(TEvent message) 
-    { 
-        // forward message to chosen slave instance 
-    } 
-} 
+    public void HandleEvent(TEvent message)
+    {
+        // forward message to chosen slave instance
+    }
+}
 </code></pre>
 
 <p>Because the load balancer is itself an IEventHandler<tevent>, we can simply pass it to the RegisterEventHandler method on the message bus instead of passing the service instance.</tevent></p>

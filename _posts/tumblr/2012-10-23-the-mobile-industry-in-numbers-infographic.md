@@ -2,7 +2,7 @@
 layout: post
 title: The Mobile Industry in Numbers [Infographic]
 date: '2012-10-23T15:20:27+01:00'
-tags:
+categories:
 - mobile
 tumblr_url: http://blog.pebblecode.com/post/34164759854/the-mobile-industry-in-numbers-infographic
 author: Toby Hunt

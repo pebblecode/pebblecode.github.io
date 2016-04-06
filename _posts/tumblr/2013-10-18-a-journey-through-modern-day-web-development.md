@@ -2,7 +2,7 @@
 layout: post
 title: A journey through modern day web development
 date: '2013-10-18T11:14:00+01:00'
-tags:
+categories:
 - web development presentation d3
 tumblr_url: http://blog.pebblecode.com/post/64376987671/a-journey-through-modern-day-web-development
 author: Tak Tran

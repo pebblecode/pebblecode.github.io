@@ -2,13 +2,7 @@
 layout: post
 title: Styling for Tricklr 1.0
 date: '2012-01-17T17:52:00+00:00'
-tags:
-- css
-- twitter
-- design
-- ui
-- tricklr
-- product
+categories: [tricklr]
 tumblr_url: http://blog.pebblecode.com/post/16013229022/styling-for-tricklr-1-0
 author: Mark Durrant
 ---

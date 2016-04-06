@@ -2,7 +2,7 @@
 layout: post
 title: Education Hackday
 date: '2013-03-05T09:09:00+00:00'
-tags: []
+categories: []
 tumblr_url: http://blog.pebblecode.com/post/44610102308/education-hackday
 author: Paul Addicott-Evans
 ---

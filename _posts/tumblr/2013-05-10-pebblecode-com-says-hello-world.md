@@ -2,7 +2,7 @@
 layout: post
 title: pebblecode.com says “Hello world”
 date: '2013-05-10T17:11:37+01:00'
-tags:
+categories:
 - pebblecode.com
 tumblr_url: http://blog.pebblecode.com/post/50094817025/pebblecode-com-says-hello-world
 author: Tak Tran
@@ -17,13 +17,13 @@ author: Tak Tran
 bundle exec rake server
 
 # deploy to staging (and generating optimized assets beforehand)
-bundle exec rake shipit[staging]   
+bundle exec rake shipit[staging]
 
 # run all tests
 bundle exec rake test:all[http://localhost:7100/]
 
 # build optimized assets
-grunt build 
+grunt build
 </code></pre>
 
 <p>If you are curious, you can have a look at the <a href="https://github.com/pebblecode/pebblecode.com-site/tree/master/lib/tasks">Rake tasks</a> and the <a href="https://github.com/pebblecode/pebblecode.com-site/blob/master/Gruntfile.js">Gruntfile.js file</a>.</p>

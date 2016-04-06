@@ -2,8 +2,7 @@
 layout: post
 title: Vistazo goes live!
 date: '2012-04-11T14:58:05+01:00'
-tags:
-- vistazo
+categories: [vistazo]
 tumblr_url: http://blog.pebblecode.com/post/20902818823/vistazo-goes-live
 author: George Ornbo
 ---

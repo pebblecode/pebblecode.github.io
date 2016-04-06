@@ -2,7 +2,7 @@
 layout: post
 title: 'Vistazo: The making of our new baby'
 date: '2012-04-20T14:40:00+01:00'
-tags: []
+categories: []
 tumblr_url: http://blog.pebblecode.com/post/21434355185/vistazo-the-making-of-our-new-baby
 author: Tak Tran
 ---

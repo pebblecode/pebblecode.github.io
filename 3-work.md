@@ -4,6 +4,8 @@ title: work
 permalink: /work/
 group: nav
 colour: blue
+extrascripts:
+ - link: "work.js"
 
 ## Hero Content
 hero-title:

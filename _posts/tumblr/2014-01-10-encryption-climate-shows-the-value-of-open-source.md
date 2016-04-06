@@ -2,7 +2,7 @@
 layout: post
 title: Encryption climate shows the value of Open Source
 date: '2014-01-10T12:22:00+00:00'
-tags: []
+categories: []
 tumblr_url: http://blog.pebblecode.com/post/72863405116/encryption-climate-shows-the-value-of-open-source
 author: George Ornbo
 ---

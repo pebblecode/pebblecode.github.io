@@ -2,7 +2,7 @@
 layout: post
 title: Winning new business with Hack Days
 date: '2013-10-21T21:23:10+01:00'
-tags: []
+categories: [hacks]
 tumblr_url: http://blog.pebblecode.com/post/64705931344/winning-new-business-with-hack-days
 author: George Ornbo
 ---

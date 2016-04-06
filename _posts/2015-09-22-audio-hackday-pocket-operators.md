@@ -2,8 +2,7 @@
 layout: post
 title:  Audio HackDay - Pocket Operator
 author: Martin Schinz
-categories:
-  - hack day
+categories: [hacks]
 ---
 
 # Pocket Operator Hack

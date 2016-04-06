@@ -2,7 +2,7 @@
 layout: post
 title: External Disruption for Tech Innovation
 date: '2014-01-03T12:29:07+00:00'
-tags: []
+categories: []
 tumblr_url: http://blog.pebblecode.com/post/72079411673/external-disruption-for-tech-innovation
 author: Toby Hunt
 ---

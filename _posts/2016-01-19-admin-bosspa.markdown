@@ -2,7 +2,7 @@
 layout: post
 title: Single Page Apps for Admin Backends - Who needs them ?
 author: Martin Schinz
-categories: spa
+categories: [spa]
 ---
 
 ## No app is TodoMVC
@@ -49,7 +49,7 @@ container for JavaScript apps.&rdquo;
 The goal here is not to be bashing Redux, I think Redux is a great library, and
 does much for being able to deal with concurrency and state transformations in a
 simplified manner in frontend apps.  The JavaScript browser app world is a
-better place because of it. 
+better place because of it.
 
 But do we really need to have global app state in the front end for the use case
 at hand? This answer to this question is one that needs to examine the

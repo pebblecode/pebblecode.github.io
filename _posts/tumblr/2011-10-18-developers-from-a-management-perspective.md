@@ -2,7 +2,7 @@
 layout: post
 title: Developers, from a Management Perspective
 date: '2011-10-18T10:26:47+01:00'
-tags: []
+categories: []
 tumblr_url: http://blog.pebblecode.com/post/11607800910/developers-from-a-management-perspective
 author: Paul Addicott-Evans
 ---

@@ -2,12 +2,7 @@
 layout: post
 title: Titanium - native mobile apps with JavaScript
 date: '2011-10-18T10:28:12+01:00'
-tags:
-- andriod
-- iOS
-- iPad
-- iPhone
-- mobile
+categories: [android, iOS, iPad, iPhone, mobile]
 tumblr_url: http://blog.pebblecode.com/post/11607817717/titanium-native-mobile-apps-with-javascript
 author: George Ornbo
 ---
@@ -28,11 +23,11 @@ author: George Ornbo
 <pre><code>//
 // create base UI tab and root window
 //
-var win1 = Titanium.UI.createWindow({  
+var win1 = Titanium.UI.createWindow({
     title:'Window 1',
     backgroundColor:'#fff'
 });
-var tab1 = Titanium.UI.createTab({  
+var tab1 = Titanium.UI.createTab({
     icon:'KS_nav_views.png',
     title:'Foo!',
     window:win1
@@ -44,7 +39,7 @@ var label1 = Titanium.UI.createLabel({
     font:{fontSize:20,fontFamily:'Helvetica Neue'},
     textAlign:'center',
     width:'auto'
-}); 
+});
 </code></pre>
 
 <p>This is the code behind creating a tabbed window with a label for both iOS and Android:</p>

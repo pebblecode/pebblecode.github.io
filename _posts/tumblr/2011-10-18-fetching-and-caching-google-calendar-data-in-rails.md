@@ -2,9 +2,7 @@
 layout: post
 title: Fetching and caching Google Calendar data in Rails
 date: '2011-10-18T10:28:35+01:00'
-tags:
-- Google Calendar
-- Rails
+categories: [Google Calendar, Rails]
 tumblr_url: http://blog.pebblecode.com/post/11607822701/fetching-and-caching-google-calendar-data-in-rails
 author: George Ornbo
 ---
@@ -22,15 +20,15 @@ author: George Ornbo
 
 service.authenticate("USERNAME", "PASSWORD")
 cal = GCal4Ruby::Calendar.find(
-    service, 
+    service,
     'YOUR_CALENDAR',
     {:scope =&gt; :first}
 )
 events = GCal4Ruby::Event.find(
-    cal, 
-    "", 
+    cal,
+    "",
     {
-     :range =&gt; {:start =&gt; Time.parse("08/04/2000"), 
+     :range =&gt; {:start =&gt; Time.parse("08/04/2000"),
      :end =&gt; Time.parse("09/04/2010")}
     }
 )
@@ -40,7 +38,7 @@ events = GCal4Ruby::Event.find(
 
 <pre><code>for event in events
     #do stuff here
-    puts event.title 
+    puts event.title
 end
 </code></pre>
 
@@ -55,18 +53,18 @@ end
     gservice.authenticate("USERNAME", "PASSWORD")
     calendar = GCal4Ruby::Calendar.find(gservice, 'your calendar',  {:scope =&gt; :first})
     events = GCal4Ruby::Event.find(calendar, "", {
-        :range =&gt; {:start =&gt; Time.now.beginning_of_day, :end =&gt; Time.now.advance(:days =&gt; 7)}, 
-        :singleevents =&gt; true, 
-        :max_results =&gt; 1000, 
+        :range =&gt; {:start =&gt; Time.now.beginning_of_day, :end =&gt; Time.now.advance(:days =&gt; 7)},
+        :singleevents =&gt; true,
+        :max_results =&gt; 1000,
         :sortorder =&gt; "ascending" })
         upcoming_events = {}
         # We're saving the next 7 days of events
         days = Date.today..Date.today.advance(:days =&gt; 7)
         # initialize the hash
-        days.each{ |day| upcoming_events["#{day.to_s}"] = [] 
+        days.each{ |day| upcoming_events["#{day.to_s}"] = []
     }
     events.each do |e|
-        # should find out if its an all day event or a recurring event. 
+        # should find out if its an all day event or a recurring event.
         event = Hash.from_xml(e.to_xml)["entry"]
         days.each do |day|
             current_event = {}

@@ -2,7 +2,8 @@
 // BLOG
 //===============================================================================
 // Hero
-.blog, .blog-by-tag {
+.blog,
+.blog-by-tag {
   .gbl-head {
     background-color: transparent;
 
@@ -21,19 +22,18 @@
 }
 
 .blog-by-tag .gbl-head {
-    @media screen and ( max-width: $medium + 100px ) {
-      background-color: $blue;
-    }
+  @media screen and ( max-width: $medium + 100px ) {
+    background-color: $blue;
+  }
 }
 
-.hero-container-blog, .hero-container-blog.aqua {
+.hero-container-blog,
+.hero-container-blog.aqua {
   background-image: repeating-linear-gradient(-45deg, transparent, transparent 70px, rgba(255,255,255,.1) 70px, rgba(255,255,255,.1) 140px);
 
   @media screen and ( max-width: $medium + 100px ) {
     background-image: none;
   }
-
-
 
   &:before {
     bottom: 25px;
@@ -142,7 +142,7 @@
 }
 
 .content li.post-item {
-    padding-top: 0;
+  padding-top: 0;
 }
 
 .post-item {
@@ -174,10 +174,6 @@
       display: none;
     }
   }
-
-  a {
-    // display: block;
-  }
 }
 
 a .post-title {
@@ -196,7 +192,6 @@ a .post-title {
   @media screen and ( max-width: $medium ) {
     max-width: 100%;
   }
-
 
   .post-item & {
     font-size: $alpha;
@@ -217,36 +212,15 @@ a .post-title {
   }
 }
 
-.post-author {
-  display: block;
-  // font-size: $gamma;
-  font-weight: $font-bold;
-  display: inline;
-
-  @media screen and ( max-width: $medium ) {
-    font-size: $delta;
-  }
-}
-
-.post-date {
-  display: block;
-  color: rgba($ink, 0.6);
-  display: inline;
-}
-
-
-
 
 //===============================================================================
 // Post Excerpt and Thumbnail
-
 .blog-post-details {
-  margin-bottom: 0px;
+  margin-bottom: 0;
 }
 
-
 .post-thumbnail-wrapper {
-  background-image: url('../img/blog/default-thumb.png');
+  background-image: url('../img/blog/placeholders/pink-phold.svg');
   background-size: cover;
   background-position: center;
   display: inline-block;
@@ -267,6 +241,25 @@ a .post-title {
     height: 80px;
   }
 
+  .post-item:nth-child(even) & {
+    background-image: url('../img/blog/placeholders/blue-phold.svg');
+  }
+
+  .post-item:nth-child(3n+3) & {
+    background-image: url('../img/blog/placeholders/purple-phold.svg');
+  }
+
+  .post-item:nth-child(4n+4) & {
+    background-image: url('../img/blog/placeholders/orange-phold.svg');
+  }
+
+  .post-item:nth-child(5n+5) & {
+    background-image: url('../img/blog/placeholders/green-phold.svg');
+  }
+
+  .post-item:nth-child(6n+6) & {
+    background-image: url('../img/blog/placeholders/aqua-phold.svg');
+  }
 }
 
 .post-excerpt p {
@@ -286,9 +279,11 @@ a .post-title {
 .post-list-meta {
   padding-left: 200px + 12px;
   min-height: 140px;
+
   @media screen and (max-width: $medium) {
     padding-left: 150px + 12px;
   }
+
   @media screen and (max-width: $small) {
     padding-top: 100px;
     padding-left: 0;
@@ -307,7 +302,6 @@ a .post-title {
   font-size: 16px;
 
   @media screen and (max-width: $small) {
-    // top: 12px;
     @include clearfix;
   }
 
@@ -324,9 +318,9 @@ a .post-title {
   }
 }
 
+
 //===============================================================================
 // Hero
-
 .blog-pagination {
   padding-top: 80px;
   padding-bottom: 40px;
@@ -397,36 +391,26 @@ a .post-title {
 }
 
 
-
 //===============================================================================
 // Post Categories
+.post-categories li {
+  display: inline-block;
+  text-transform: capitalize;
 
+  &::after {
+    content: ",";
+  }
 
-.post-categories {
-
-  li {
-    display: inline-block;
-    text-transform: capitalize;
-
-    &:after {
-      content: ",";
-    }
-    &:last-of-type {
-      &:after {
-        content: none;
-      }
-    }
+  &:last-of-type::after {
+    content: "";
   }
 }
 
+
 //===============================================================================
 // Sidebar
-
-
 .blog-categories-sidebar {
   float: right;
-  // position: absolute;
-  // right: 0;
   width: 200px;
   height: 100%;
   z-index: 10;
@@ -438,43 +422,41 @@ a .post-title {
     position: relative;
     padding: 12px;
   }
-
 }
 
 .blog-categories-sidebarul {
   line-height: 1.4;
+
   @media screen and (max-width: $medium) {
     text-align: center;
     margin-bottom: 0;
+
     li {
       display: inline-block;
-      font-size: 14px;
+      font-size: $epsilon;
     }
   }
 }
 
 .blog-categories-other {
-    @media screen and (max-width: $medium) {
-      display: none;
-    }
-
+  @media screen and (max-width: $medium) {
+    display: none;
+  }
 }
 
 .blog-categories-title {
-  font-size: 14px;
+  font-size: $epsilon;
   color: #888;
   margin-bottom: 2px;
 
   @media screen and (max-width: $medium) {
     text-align: center;
   }
-
 }
-
 
 .blog-category-title {
   font-weight: bold;
-  font-size: 16px;
+  font-size: $body-font-size;
 }
 
 .blog-category-head {
@@ -483,7 +465,8 @@ a .post-title {
   margin-bottom: 2px;
 }
 
-.blog .hero-title, .blog-by-type .herotitle {
+.blog .hero-title,
+.blog-by-type .herotitle {
   margin-bottom: 12px;
 }
 

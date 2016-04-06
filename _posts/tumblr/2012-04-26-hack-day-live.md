@@ -2,10 +2,7 @@
 layout: post
 title: Hack Day Live
 date: '2012-04-26T08:19:00+01:00'
-tags:
-- hackday
-- olympics
-- agile
+categories: [hacks, olympics, agile]
 tumblr_url: http://blog.pebblecode.com/post/21838814065/hack-day-live
 author: Toby Hunt
 ---

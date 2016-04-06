@@ -2,8 +2,7 @@
 layout: post
 title: Getting a startup off the ground
 date: '2011-10-18T10:28:44+01:00'
-tags:
-- startups
+categories: [startups]
 tumblr_url: http://blog.pebblecode.com/post/11607824403/getting-a-startup-off-the-ground
 author: George Ornbo
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: pebblecode.com gets a makeover | part one design
 date: '2014-03-17T14:24:00+00:00'
-tags: []
+categories: []
 tumblr_url: http://blog.pebblecode.com/post/79869055766/pebblecode-com-gets-a-makeover-part-one-design
 author: Mark Durrant
 ---

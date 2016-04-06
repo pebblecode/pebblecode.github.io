@@ -2,9 +2,7 @@
 layout: post
 title: On Technical Debt
 date: '2011-10-18T10:24:00+01:00'
-tags:
-- agile
-- programming
+categories: []
 tumblr_url: http://blog.pebblecode.com/post/11607771989/on-technical-debt
 author: George Ornbo
 ---

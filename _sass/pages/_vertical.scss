@@ -2,19 +2,10 @@
 // Vertical
 //===============================================================================
 
-
-.hero-title {
-  .insurance & {
-  }
-}
-
-
 // Bubbles
 //===============================================================================
-
 .vert-bubble-container {
   text-align: center;
-
   padding: 30px;
 
   &:before {
@@ -58,6 +49,7 @@
     height: 200px;
     width: 200px;
   }
+
   @media screen and ( max-width: $medium ) {
     height: 100px;
     width: 100%;
@@ -118,7 +110,6 @@
 
 // Insurance Bubbles
 //===============================================================================
-
 .vert-insur-list-container {
   text-align: left;
   width: 50%;
@@ -219,7 +210,6 @@ a.vert-insur-cta-link {
 
 // Paragraphs and Points
 //===============================================================================
-
 .vert-section-points {
   max-width: 50%;
 

@@ -158,37 +158,16 @@
             </div>
           </div>
           <!-- /.ppl-col -->
-        <aside class="aside-container ppl-join-container">
-          <p class="ink">What we do is only one part of the story; what makes all of this possible is the top notch people who work here.</p>
-          <a href="{{ site.baseurl }}/careers" class="btn btn-primary btn-block">Join us</a>
-        </aside>
+          <aside class="aside-container ppl-join-container">
+            <h3>Join the Team</h3>
+            <p>What we do is only one part of the story; what makes all of this possible is the top notch people who work here.</p>
+            <a href="{{ site.baseurl }}/careers" class="btn btn-primary btn-block">Join us</a>
+          </aside>
         </div>
       </div>
     </section>
     <!-- /.project-container -->
-
-
-    {% include footer.html %}
-
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/vendor/jquery-2.1.1.min.js""><\/script>')</script>
-    <script type="text/javascript" src="{{ site.baseurl }}/js/vendor/jquery.lazyload.min.js"></script>
-    <script type="text/javascript" src="{{ site.baseurl }}/js/vendor/scrollReveal.min.js"></script>
-    <script type="text/javascript" src="{{ site.baseurl }}/js/main.js"></script>
-    <script type="text/javascript" src="{{ site.baseurl }}/js/work.js"></script>
-    <script>
-      jQuery(function ($) {
-        $("img.lazy").lazyload({
-          threshold : 600
-          });
-        $("#gif1").attr("src","second.jpg");
-      });
-    </script>
-    <script>
-
-    </script>
-
-    <!-- /scripts-->
+    {% include footer.html extrascripts=page.extrascripts lazyload=true %}
 
   </body>
 </html>
