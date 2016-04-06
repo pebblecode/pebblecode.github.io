@@ -63,7 +63,7 @@
 
   .content-title {
     color: white;
-    border-bottom-color: rgba(white, 0.2); 
+    border-bottom-color: rgba(white, 0.2);
     text-shadow: 3px 4px 0 rgba(black, 0.2);
   }
 }
@@ -73,7 +73,6 @@
 }
 
 .benefits-list-title {
-  font-size: $beta;
   text-shadow: 2px 2px 0 rgba(black, 0.2);
   position: relative;
 
@@ -127,22 +126,21 @@
   &.benefit-holidays:after { @include sprite($holiday-white);  }
 
   &.benefit-snacks:after {
-     @include sprite($snacks-white); 
+     @include sprite($snacks-white);
     left: 28px;
   }
 
   &.benefit-pay:after { @include sprite($pay-white); }
 
-  &.benefit-gym {
-    padding-top: 8px;
-
-    &:after { @include sprite($gym-white); }
+  &.benefit-gym:after {
+    @include sprite($gym-white);
+    top: 20px;
   }
 
   &.benefit-social:after { @include sprite($beer-white); }
 
   &.benefit-charity:after {
-    @include sprite($charity-white); 
+    @include sprite($charity-white);
     left: 28px;
   }
 }
@@ -375,7 +373,7 @@
 
 .rt-modal {
   -webkit-overflow-scrolling: touch;
-  
+
   .rt-brand-color {
     color: $primary;
   }
@@ -403,7 +401,7 @@
 
     &:after {
       @include icon-pseudo;
-      @include sprite($close-grey); 
+      @include sprite($close-grey);
       top: 17px;
       left: 17px;
     }
@@ -450,7 +448,7 @@
       top: 0;
       left: 0;
     }
-  } 
+  }
 
   .rt-body {
 

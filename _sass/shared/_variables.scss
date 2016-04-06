@@ -18,12 +18,10 @@ $primary: $pink;
 
 // TYPOGRAPHY
 $base-font: 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
-$museo: 'museo-sans', $base-font;
 $brandon: 'brandon-grotesque', $base-font;
 
-$body-font-size: 16px;
-$font-regular: 300; // $museo only
-$font-bold: 700; // $museo only
+$font-regular: 300; // $brandon only
+$font-bold: 700; // $brandon only
 $font-black: 900; // $brandon only
 
 $tera: 78px;
@@ -31,10 +29,12 @@ $giga: 60px;
 $mega: 52px;
 $alpha: 42px;
 $beta: 32px;
-$gamma: 22px;
-$delta: 18px;
-$epsilon: 14px;
-$zeta: 12px;
+$gamma: 24px;
+$delta: 20px;
+$epsilon: 16px;
+$zeta: 14px;
+
+$body-font-size: $delta;
 
 
 // SPACING: Grid, Viewports etc

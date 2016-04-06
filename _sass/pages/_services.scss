@@ -75,7 +75,6 @@
   position: relative;
   min-height: 90vh;
   color: white;
-  font-size: $delta;
   padding-top: 50px;
   padding-bottom: 50px;
 
@@ -84,7 +83,7 @@
   }
 
   @media screen and ( max-width: 900px ) {
-    font-size: $delta - 2px;
+    font-size: $delta;
     line-height: 1.4;
   }
 
