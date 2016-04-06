@@ -21,7 +21,7 @@
   var scrollCurrent = 0;
   $(window).scroll(function() {
     var scrollDiff = $(this).scrollTop();
-    if(scrollDiff > scrollCurrent && scrollDiff > 100) {
+    if(scrollDiff > scrollCurrent && scrollDiff > 100 && gblHeadNav.hasClass("active") === false) {
        $('header').addClass('hide').removeClass('show');
     } else {
        $('header').addClass('show').removeClass('hide');
