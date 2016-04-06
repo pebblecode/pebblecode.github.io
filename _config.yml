@@ -11,6 +11,7 @@ vimeo:  pebblecode
 
 
 # Build settings
+exclude: [node_modules]
 markdown: kramdown
 redirects: yes
 sass:
