@@ -7,81 +7,84 @@
 // SHARED
 // ===================================================
 // VARIABLES: Colours, Type sizes etc.
-@import "shared/_variables.scss";
+@import "shared/_variables";
 
 // NORMALIZE v3.0.0: Normalise across browsers
-@import "shared/_normalize.scss";
+@import "shared/_normalize";
 
 // SPRITE: Global sprite used across all pages.
-@import "shared/_sprite.scss";
+@import "shared/_sprite";
 
 // MIXINS: Fixes, Recurring blocks of styling etc.
-@import "shared/_mixins.scss";
+@import "shared/_mixins";
 
 // ANIMATIONS: CSS Animations
-@import "shared/_animations.scss";
+@import "shared/_animations";
 
 // LAYOUT: Base layout, Grid
-@import "shared/_layout.scss";
+@import "shared/_layout";
 
 // CODE: Styles for the pre code blocks
-@import "shared/_code.scss";
+@import "shared/_code";
 
 // TYPOGRAPHY: Headings, Hierarchy etc.
-@import "shared/_typography.scss";
+@import "shared/_typography";
 
 // ELEMENTS: Links, Buttons, Forms, Lists etc.
-@import "shared/_elements.scss";
+@import "shared/_elements";
 
 // COMPONENTS
 // ===================================================
 // GLOBAL HEADER: Global header across all pages.
-@import "components/_gbl-head.scss";
+@import "components/_gbl-head";
 
 // GLOBAL FOOTER: Global footer across all pages.
-@import "components/_gbl-foot.scss";
+@import "components/_gbl-foot";
 
 // SHARE: Share buttons that can be reused
-@import "components/_share.scss";
+@import "components/_share";
+
+// RELATED: Related posts component
+@import "components/_related";
 
 // PAGES
 // ===================================================
 // PAGE BASE: Base styles used for most pages.
-@import "pages/_page-base.scss";
+@import "pages/_page-base";
 
 // HOME: Styles for the home page
-@import "pages/_home.scss";
+@import "pages/_home";
 
 // SERVICES: Styles for the services page
-@import "pages/_services.scss";
+@import "pages/_services";
 
 // CONTACT: Styles for the contact page
-@import "pages/_contact.scss";
+@import "pages/_contact";
 
 // WORK: Styles for the work page
-@import "pages/_work.scss";
+@import "pages/_work";
 
 // ABOUT: Styles for the about page
-@import "pages/_about.scss";
+@import "pages/_about";
 
 // CAREERS: Styles for the careers page
-@import "pages/_careers.scss";
+@import "pages/_careers";
 
 // BLOG: Styles for the blog page
-@import "pages/_blog.scss";
+@import "pages/_blog";
 
 // POST: Styles for the blog post
-@import "pages/_post.scss";
+@import "pages/_post";
 
 // INVITE: Styles for the invite pages
-@import "pages/_invite.scss";
+@import "pages/_invite";
 
 // SEMINAR: Styles for the seminar pages
-@import "pages/_seminar.scss";
+@import "pages/_seminar";
 
 // INVITE: Styles for the invite pages
-@import "pages/_vertical.scss";
+@import "pages/_vertical";
 
 // IE 8
 // ===================================================
-@import "shared/_ie.scss";
+@import "shared/_ie";

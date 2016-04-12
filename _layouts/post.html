@@ -39,28 +39,7 @@ layout: post
     <!-- /.post-container -->
 
 
-
-    {% for pcategory in page.categories %}
-
-      {% assign pcatrep = pcategory | replace: ' ', '-' %}
-
-      {% for post in site.posts %}
-
-        {% for category in post.categories %}
-
-            {% assign preCat = category | replace: ' ', '-' %}
-            {% assign newCat = preCat | downcase %}
-
-            {% if newCat == pcatrep limit:3 %}
-              {% include blog-related.html %}
-              {% assign noblogposts = false %}
-            {% endif %}
-
-        {% endfor %}
-
-      {% endfor %}
-
-    {% endfor %}
+    {% include blog-related.html %}
 
     {% include footer.html %}
 
