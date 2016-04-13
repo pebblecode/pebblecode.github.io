@@ -12,10 +12,11 @@
           {% assign preCat = category | replace: ' ', '-' %}
           {% assign newCat = preCat | downcase %}
 
-          {% if newCat == pcatrep limit:3 %}
-                {% include blog-related-post.html %}
-                {% assign noblogposts = false %}
-
+          {% if post.url != page.url %}
+            {% if newCat == pcatrep limit:3 %}
+              {% include blog-related-post.html %}
+              {% assign noblogposts = false %}
+            {% endif %}
           {% endif %}
 
       {% endfor %}
