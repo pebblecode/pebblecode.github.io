@@ -10,7 +10,7 @@
 
     <section class="project-container">
       <div class="project-item-container photo">
-        <div class="project-item-inner photo">
+        <div class="project-item-inner photo" id="workPharmaceutical">
           <div class="project-item photo grid">
             <div class="col-1-1">
               <h3 class="project-item-title">Pharmaceutical Intelligence Platform</h3>
@@ -30,7 +30,7 @@
 
     <section class="project-container project-blue pink-top">
       <div class="project-item-container">
-        <div class="project-item-inner">
+        <div class="project-item-inner" id="workIntranets">
           <div class="project-item projects-item-inner grid">
             <div class="col-2-3 project-item-img alignme">
               <img class="lazy" data-original="{{ site.baseurl }}/img/projects/intranet.png" alt="The mother of all intranets">
@@ -47,7 +47,7 @@
 
     <section class="project-container project-aqua">
       <div class="project-item-container photo">
-        <div class="project-item-inner photo">
+        <div class="project-item-inner photo" id="workSelfDirected">
           <div class="project-item photo grid">
             <div class="col-1-1">
               <h3 class="project-item-title">Self-directed Learning</h3>
@@ -73,7 +73,7 @@
 
     <section class="project-container project-blue">
       <div class="project-item-container">
-        <div class="project-item-inner">
+        <div class="project-item-inner" id="workNextGen">
           <div class="project-item grid">
             <div class=" col-2-3 alignme">
               <h3 class="project-item-title">Next Generation Delivery Experience</h3>
@@ -90,7 +90,7 @@
 
     <section class="project-container project-green">
       <div class="project-item-container photo">
-        <div class="project-item-inner photo">
+        <div class="project-item-inner photo" id="workEnterpriseMobile">
           <div class="project-item photo grid">
 
             <div class="col-1-1">
@@ -112,7 +112,7 @@
 
     <section class="project-container project-orange">
       <div class="project-item-container">
-        <div class="project-item-inner">
+        <div class="project-item-inner" id="workRailTravel">
           <div class="project-item grid">
             <div class="col-1-2 alignme">
               <h3 class="project-item-title">Rail Travel Customer Experience System</h3>
@@ -146,7 +146,7 @@
 
     <section class="project-container project-pink project-last">
       <div class="project-item-container">
-        <div class="project-item-inner">
+        <div class="project-item-inner" id="workHighFrequency">
           <div class="project-item grid">
             <div class="col-1-2 alignme">
               <h3 class="project-item-title">High Frequency Audio Tagging</h3>
@@ -158,37 +158,16 @@
             </div>
           </div>
           <!-- /.ppl-col -->
-        <aside class="aside-container ppl-join-container">
-          <p class="ink">What we do is only one part of the story; what makes all of this possible is the top notch people who work here.</p>
-          <a href="{{ site.baseurl }}/careers" class="btn btn-primary btn-block">Join us</a>
-        </aside>
+          <aside class="aside-container ppl-join-container">
+            <h3>Join the Team</h3>
+            <p>What we do is only one part of the story; what makes all of this possible is the top notch people who work here.</p>
+            <a href="{{ site.baseurl }}/careers" class="btn btn-primary btn-block">Join us</a>
+          </aside>
         </div>
       </div>
     </section>
     <!-- /.project-container -->
-
-
-    {% include footer.html %}
-
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/vendor/jquery-2.1.1.min.js""><\/script>')</script>
-    <script type="text/javascript" src="{{ site.baseurl }}/js/vendor/jquery.lazyload.min.js"></script>
-    <script type="text/javascript" src="{{ site.baseurl }}/js/vendor/scrollReveal.min.js"></script>
-    <script type="text/javascript" src="{{ site.baseurl }}/js/main.js"></script>
-    <script type="text/javascript" src="{{ site.baseurl }}/js/work.js"></script>
-    <script>
-      jQuery(function ($) {
-        $("img.lazy").lazyload({
-          threshold : 600
-          });
-        $("#gif1").attr("src","second.jpg");
-      });
-    </script>
-    <script>
-
-    </script>
-
-    <!-- /scripts-->
+    {% include footer.html extrascripts=page.extrascripts lazyload=true %}
 
   </body>
 </html>

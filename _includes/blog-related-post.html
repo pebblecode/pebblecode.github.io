@@ -1,7 +1,7 @@
 <li class="related-post-item col-1-3">
-  <h3 class="related-post-title">{{ post.title }}</h3>
-  <div class="related-post-list-meta">
-    <div class="blog-post-details"><span class="post-author">{{ post.author }}</span> <span class="post-date">{{ post.date | date: '%B %d, %Y' }}</span></div>
+  <a href="{{ post.url }}"><h3 class="related-post-title">{{ post.title }}</h3></a>
+  <a href="{{ post.url }}" class="related-post-list-meta">
+    <div class="blog-post-details"><span class="post-author">{{ post.author }}</span> <span class="post-date">{{ post.date | date: '%B %d, %Y' }}</span></a>
     <ul class="post-categories">
       {% for category in post.categories %}
         {% assign catLink = category | replace: ' ', '-' %}

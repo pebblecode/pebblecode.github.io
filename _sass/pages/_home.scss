@@ -3,7 +3,6 @@
 //===============================================================================
 // Hero
 .home .hero-container {
-
   .hero-title {
     @media screen and ( max-width: 1100px ) {
       font-size: $tera - 10px;
@@ -41,10 +40,10 @@
   }
 
   &:after {
-  width:0;
-  height:0px;
-  transform: rotate(0deg) scale(0);
-  background-color: $pink;
+    width:0;
+    height: 0;
+    transform: rotate(0deg) scale(0);
+    background-color: $pink;
   }
 
   &:before {
@@ -60,7 +59,6 @@
   transform-style: preserve-3d;
 
   &:before {
-    //photo shadows background: transparent;
     transform: rotate(1.2deg) scale(1.2);
     -ms-transform: rotate(1.2deg) scale(1.2);
     -webkit-transform: rotate(1.2deg) scale(1.2);
@@ -74,34 +72,26 @@
   }
 
   @media screen and (max-width: 650px) {
-      height: 230px;
+    height: 230px;
   }
 
   @media screen and (min-width: 1500px ) {
-      height: 500px;
+    height: 500px;
   }
 
 
   .photo-inner{
     height: 400px;
-    @media screen and ( max-width: $medium ) {
-    // height: 261px;
-    }
 
     @media screen and ( min-width: 1500px ) {
-    height: 500px;
+      height: 500px;
     }
 
     &:after {
       background-color: $pink;
     }
-    &:before {
-      //photo shadows background: transparent;
-    }
   }
 }
-
-
 
 // Clients
 .client-container {
@@ -109,20 +99,47 @@
   padding-bottom: 10px;
   background-color: lighten($ink, 45);
   background-color: white;
+  position: relative;
 
   @media screen and ( max-width: $medium ) {
     padding-top: 0;
     padding-bottom: 0;
   }
-
-  .home {
-
-  }
 }
 
 .home .client-container {
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 70px;
+  padding-bottom: 20px;
+
+  @media screen and ( max-width: $medium ) {
+    padding-top: 50px;
+    padding-bottom: 0;
+  }
+
+  &::before,
+  &::after {
+    @include shadow-pseudo;
+  }
+
+  &::before {
+    top: 0;
+    height: 20px;
+    z-index: 1;
+    background-color: rgba(black, 0.15);
+    transform: rotate(1.4deg) scale(1.2);
+    -ms-transform: rotate(1.4deg) scale(1.2);
+    -webkit-transform: rotate(1.4deg) scale(1.2);
+  }
+
+  &::after {
+    top: -40px;
+    height: 50px;
+    z-index: 1;
+    background-color: $aqua;
+    transform: rotate(1deg) scale(1.2);
+    -ms-transform: rotate(1deg) scale(1.2);
+    -webkit-transform: rotate(1deg) scale(1.2);
+  }
 }
 
 .client-item {
@@ -131,10 +148,11 @@
   position: relative;
   text-align: center;
   vertical-align: vertical;
+  z-index: 2;
 }
 
 .client-item img {
-  width:100%
+  width: 100%;
 }
 
 // Featured Case Study
@@ -146,6 +164,7 @@
   &.blue-bg {
     background-color: $blue;
   }
+
   @media screen and ( max-width: $medium ) {
     padding-top: 0;
     padding-bottom: 40px;
@@ -173,6 +192,8 @@
     margin: 30px 0 0;
     padding: 12px 25px;
     display: table;
+    position: relative;
+    z-index: 2;
   }
 
   h3 {
@@ -217,11 +238,7 @@
   max-width: 340px;
 }
 
-
-
-
 // Vertical Section
-
 .home .blue-top {
   .project-item-inner {
     background-color: $blue;
@@ -230,6 +247,7 @@
     &:before {
       background-color:$blue;
     }
+
     &:after {
       background-color:$blue;
     }
@@ -267,23 +285,24 @@
 }
 
 .vert-content-img-transport {
-  left:10px;
+  left: 10px;
 }
 
 .vert-content-img-health {
-  left:140px;
-  top:10px;
+  left: 140px;
+  top: 10px;
 }
 
 .vert-content-img-insurance{
-  left:70px;
+  left: 70px;
   top: 140px;
 }
 
 @media (max-width: 799px) and (min-width: 500px) {
   .vert-content-img-health {
-    left:300px;
+    left: 300px;
   }
+
   .vert-content-img-insurance {
     left: 200px;
     top: 195px;
@@ -302,9 +321,8 @@
   }
   .vert-content-img-transport {
     max-width: 162px;
-    top:50px;
+    top: 50px;
   }
-
 }
 
 @media (max-width: 920px) and (min-width: 799px)  {
@@ -313,11 +331,11 @@
   }
 }
 
-
 .home .projects-item-inner.verticals {
   @media screen and (max-width: 800px) {
     padding-top: 320px;
   }
+
   @media screen and (max-width: 500px) {
     padding-top: 400px;
   }
@@ -339,14 +357,11 @@
 
   &:hover {
   transform: scale(1.1);
+
     @media screen and ( max-width: $medium ) {
       transform: none;
     }
   }
-}
-
-.home .btn-light {
-  padding: 6px 20px;
 }
 
 .home-vert-text {
@@ -356,6 +371,7 @@
   &:first-of-type {
     margin-top: 0;
   }
+
   .bold {
     font-family: $brandon;
     text-transform: uppercase;
@@ -369,23 +385,8 @@ $insurcolor1: $purple;
 $insurcolor2: #3A5173;
 $insurcolor3: #F24A7D;
 
-.home .home-vert-btn {
-  // float: right;
-  background: $purple;
-  // text-decoration: underline;
-  padding: 2px 6px;
-
-  &:hover {
-    background: darken($purple, 20%);
-  }
-  // &.health { background: $purple; }
-  // &.transport { background: $insurcolor2; }
-  // &.insurance { background: $insurcolor3; }
-}
-
 .home-vert-btn-wrap {
   padding-right: 32px;
-  text-align: right;
-  margin-top: 4px;
-  margin-bottom: 8px;
+  margin-top: 10px;
+  margin-bottom: 25px;
 }

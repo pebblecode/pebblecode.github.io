@@ -26,6 +26,14 @@ To host the site on the network for testing, you'll need
 `jekyll serve --host=0.0.0.0`
 
 
+#####3.5. Build and view the website locally with live reloading:
+
+`cd [project folder]`
+
+`guard`
+
+This will start up a server on port 4000, and it will reload on any changes to SASS, JS, and content.
+
 #####4. View the website:
 
 `http://localhost:4000`

@@ -11,6 +11,7 @@ vimeo:  pebblecode
 
 
 # Build settings
+exclude: [node_modules]
 markdown: kramdown
 redirects: yes
 sass:
@@ -29,8 +30,10 @@ defaults:
   -
     scope:
       path: ""
-      type: "posts"
+      type: "post"
     values:
       analytics_category: "blog"
 
 gems: [jekyll-paginate]
+gems:
+  - octopress-autoprefixer
