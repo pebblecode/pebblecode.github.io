@@ -7,8 +7,8 @@
   padding: 10px 0 50px;
   margin-top: 40px;
 
-  @media screen and ( max-width: $large ) {
-    padding-bottom: 20px;
+  @media screen and ( max-width: $medium + 250px ) {
+    padding: 10px 20px 30px;
   }
 
   &::before {
@@ -29,12 +29,12 @@
   z-index: 1;
 
   @media screen and ( max-width: $medium + 250px ) {
-    padding: 0 20px 20px;
+    padding: 0 0 20px;
   }
 }
 
 .related-post-item {
-  padding: 35px 50px 35px 40px;
+  padding: 30px;
   position: relative;
   z-index: 1;
   transition: 0.3s transform;
@@ -49,29 +49,39 @@
   &::before {
     @include shadow-pseudo;
     z-index: -1;
-    height: calc(100% - 40px);
-    width: calc(100% - 80px);
-    top: 20px;
-    left: 35px;
+    height: calc(100% + 10px);
+    width: calc(100% + 10px);
+    top: -5px;
+    left: -5px;
     background-color: white;
     box-shadow: 0 0 10px 0 rgba(black, 0.1);
-    transform: rotate(-0.6deg) scale(1.2);
-    -ms-transform: rotate(-0.6deg) scale(1.2);
-    -webkit-transform: rotate(-0.6deg) scale(1.2);
+    transform: rotate(-0.6deg);
+    -ms-transform: rotate(-0.6deg);
+    -webkit-transform: rotate(-0.6deg);
   }
 
   &:not(:nth-child(-n+3)) { display: none; }
 
+  &:nth-child(2) {
+    top: -8px;
+    z-index: 2;
+
+    @media screen and ( max-width: $medium + 250px ) {
+      top: 0;
+      left: 8px;
+    }
+  }
+
   &:nth-child(2)::before {
-    transform: rotate(0.3deg) scale(1.2);
-    -ms-transform: rotate(0.3deg) scale(1.2);
-    -webkit-transform: rotate(0.3deg) scale(1.2);
+    transform: rotate(0.3deg);
+    -ms-transform: rotate(0.3deg);
+    -webkit-transform: rotate(0.3deg);
   }
 
   &:nth-child(3)::before {
-    transform: rotate(-0.7deg) scale(1.2);
-    -ms-transform: rotate(-0.7deg) scale(1.2);
-    -webkit-transform: rotate(-0.7deg) scale(1.2);
+    transform: rotate(-0.7deg);
+    -ms-transform: rotate(-0.7deg);
+    -webkit-transform: rotate(-0.7deg);
   }
 
   .btn {
@@ -79,16 +89,14 @@
     display: table;
     padding: 12px 18px;
     font-size: $epsilon;
+
+    @media screen and ( max-width: $medium + 250px ) {
+      display: none;
+    }
   }
 
   @media screen and ( max-width: $medium + 250px ) {
-    background-color: white;
-    box-shadow: 0 0 10px 0 rgba(black, 0.1);
-    padding: 35px 30px 30px;
-    margin: 0 20px 15px;
-    width: calc(100% - 40px);
-
-    &::before { display: none; }
+    width: 100%;
   }
 }
 
@@ -98,10 +106,6 @@
   line-height: 1.1;
   margin-bottom: 10px;
   transition: 0.2s;
-
-  @media screen and ( max-width: $medium + 250px ) {
-    font-size: $beta - 6px;
-  }
 }
 
 .related-post-list-meta {
