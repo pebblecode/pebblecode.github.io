@@ -270,7 +270,7 @@
     marker.setPosition(latLng);
     map.panTo(latLng);
   });
-  
+
   $('#sofiaBtn').click(function(){
     var latLng = new google.maps.LatLng(42.6742392, 23.3543577);
     marker.setPosition(latLng);
@@ -286,6 +286,9 @@
   }
   function insureinit() {
     initmap("insuremap", 51.5144918,-0.0803065);
+  }
+  function digitalinit() {
+    initmap("digitalmap", 51.5074754,-0.1389263);
   }
 
   // Initialise google map
@@ -322,6 +325,9 @@
   }
   if ($('#insuremap').length) {
     google.maps.event.addDomListener(window, 'load', insureinit);
+  }
+  if ($('#digitalmap').length) {
+    google.maps.event.addDomListener(window, 'load', digitalinit);
   }
 
   // Console advert
