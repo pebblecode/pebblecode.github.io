@@ -43,8 +43,6 @@
       box-shadow: 0 0 10px rgba(black, 0.2);
       z-index: -5;
       transform: rotate(2deg) skew(1deg);
-      -ms-transform: rotate(2deg) skew(1deg);
-      -webkit-transform: rotate(2deg) skew(1deg);
     }
 
     &:after {
@@ -55,8 +53,6 @@
       box-shadow: 0 0 10px rgba(black, 0.2);
       z-index: -1;
       transform: rotate(-0.3deg) skew(1deg);
-      -ms-transform: rotate(-0.3deg) skew(1deg);
-      -webkit-transform: rotate(-0.3deg) skew(1deg);
     }
   }
 
@@ -86,9 +82,7 @@
   margin-top: -130px;
   left: -12px;
   position: relative;
-  -webkit-transform: rotate(-0.3deg) skew(1deg);
   transform: rotate(-0.3deg) skew(1deg);
-  -ms-transform: rotate(-0.3deg) skew(1deg);
 
   @media screen and ( max-width: $large ) {
     margin-top: -100px;
@@ -170,8 +164,6 @@ h4.seminar-titlestack-sub {
       box-shadow: 0 0 10px rgba(black, 0.2);
       z-index: -5;
       transform: rotate(2deg) skew(1deg);
-      -ms-transform: rotate(2deg) skew(1deg);
-      -webkit-transform: rotate(2deg) skew(1deg);
     }
   }
 }
@@ -186,8 +178,6 @@ h4.seminar-titlestack-sub {
       box-shadow: 0 0 10px rgba(black, 0.2);
       z-index: -5;
       transform: rotate(2deg) skew(1deg);
-      -ms-transform: rotate(2deg) skew(1deg);
-      -webkit-transform: rotate(2deg) skew(1deg);
     }
   }
 }
@@ -321,7 +311,7 @@ h5.seminar-speaker-jobtitle {
   font-style: normal;
   font-size: $alpha - 4px;
   font-family: $museo;
-  font-weight: bold;
+  font-weight: $font-bold;
   text-transform: none;
 
   @media screen and ( max-width: $small ) {
@@ -381,7 +371,7 @@ h3.seminar-header-time::before {
   background: url(../img/seminar/lightbulb-sprite2.png) left center;
   // go 1 step above the total
   animation: bulbSprite 1s steps(18) infinite;
-             // bulbRotate 2000ms linear infinite;
+  // bulbRotate 2000ms linear infinite;
   transform: scale(0.5) rotate(24deg);
   top: -60px;
   right: -50px;
@@ -429,14 +419,10 @@ h3.seminar-header-time::before {
   &::before {
     background-color: lighten($ink, 50);
     transform: rotate(0.8deg) scale(1.2);
-    -ms-transform: rotate(0.8deg) scale(1.2);
-    -webkit-transform: rotate(0.8deg) scale(1.2);
   }
 
   &::after {
     transform: rotate(-1.8deg) scale(1.2);
-    -ms-transform: rotate(-1.8deg) scale(1.2);
-    -webkit-transform: rotate(-1.8deg) scale(1.2);
   }
 
   .seminar-form-input {
@@ -540,17 +526,9 @@ input.seminar-form-submit {
       left: 0;
     }
 
-    &.linkedin:after {
-      @include sprite($linkedin-pink);
-    }
-
-    &.twitter:after {
-      @include sprite($twitter-pink);
-    }
-
-    &.vimeo:after {
-      @include sprite($vimeo-pink);
-    }
+    &.linkedin:after { @include sprite($linkedin-pink); }
+    &.twitter:after { @include sprite($twitter-pink); }
+    &.vimeo:after { @include sprite($vimeo-pink); }
   }
 }
 
@@ -589,15 +567,7 @@ h3.seminar-info-item {
     left: 0;
   }
 
-  &.linkedin:after {
-    @include sprite($linkedin-pink);
-  }
-
-  &.twitter:after {
-    @include sprite($twitter-pink);
-  }
-
-  &.vimeo:after {
-    @include sprite($vimeo-pink);
-  }
+  &.linkedin:after { @include sprite($linkedin-pink); }
+  &.twitter:after { @include sprite($twitter-pink); }
+  &.vimeo:after { @include sprite($vimeo-pink); }
 }
