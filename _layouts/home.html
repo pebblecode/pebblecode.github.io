@@ -11,63 +11,50 @@
     </section>
     <!-- /.photo-container -->
 
-
-    <section class="project-container blue-top">
-      <div class="project-item-container">
-        <div class="project-item-inner">
-          <div class="project-item projects-item-inner verticals grid">
-            <div class="col-1-2 project-item-img vert-content-img alignme">
-              <div class="cent-test">
-                <a href="{{ site.baseurl }}/transport">
-                  <img class="vert-content-img-transport vert-home-bubble" data-sr="enter left move 200px, vF 0.2, wait 0.6s" src="{{ site.baseurl }}/img/verticals/vert-transport-rail-service-b.svg">
-                </a>
-                <a href="{{ site.baseurl }}/health">
-                  <img class="vert-content-img-health vert-home-bubble" data-sr="enter left move 300px, vF 0.2, wait 0.4s" src="{{ site.baseurl }}/img/verticals/vert-health-home.svg">
-                </a>
-                <a href="{{ site.baseurl }}/insurance">
-                  <img class="vert-content-img-insurance vert-home-bubble" data-sr="enter left move 300px, vF 0.2, wait 0.2s" src="{{ site.baseurl }}/img/verticals/vert-insurance-home.svg">
-                </a>
-                </div>
-            </div>
-            <div class="col-1-2 project-item-text alignme" data-sr="enter right move 100px, vF 0.5">
-              <h3 class="project-item-title">{{page.vert-section-title}}</h3>
-
-              <p class="home-vert-text">{{page.vert-text-health}} </p>
-              <div class="home-vert-btn-wrap">
-                <a href="{{ site.baseurl }}/health" class="btn btn-light btn-block btn-small health">Read More</a>
-              </div>
-
-              <p class="home-vert-text">{{page.vert-text-transport}}</p>
-              <div class="home-vert-btn-wrap">
-                <a href="{{ site.baseurl }}/transport" class="btn btn-light btn-block btn-small transport">Read More</a>
-              </div>
-
-              <p class="home-vert-text">{{page.vert-text-insurance}}</p>
-              <div class="home-vert-btn-wrap">
-                <a href="{{ site.baseurl }}/insurance" class="btn btn-light btn-block btn-small insurance">Read More</a>
-              </div>
-
-            </div>
-          </div>
+    <section class="feat-content-container verticals-content-container blue-bg">
+      <div class="feat-content grid">
+        <h2 class="feat-content-title col-1-1">{{page.vert-section-title}}</h2>
+        <div class="feat-content-text col-1-2" data-sr="enter right move 100px, vF 0.5">
+          <ul class="feat-content-list">
+            <li class="feat-content-list-item">
+              <h3 class="feat-content-list-title">Health</h3>
+              <p class="feat-content-list-text">{{page.vert-text-health}} </p>
+              <a href="{{ site.baseurl }}/health" class="btn btn-light btn-block">Read More</a>
+            </li>
+            <li class="feat-content-list-item">
+              <h3 class="feat-content-list-title">Transport</h3>
+              <p class="feat-content-list-text">{{page.vert-text-transport}}</p>
+              <a href="{{ site.baseurl }}/transport" class="btn btn-light btn-block">Read More</a>
+            </li>
+            <li class="feat-content-list-item">
+              <h3 class="feat-content-list-title">Insurance</h3>
+              <p class="feat-content-list-text">{{page.vert-text-insurance}}</p>
+              <a href="{{ site.baseurl }}/insurance" class="btn btn-light btn-block">Read More</a>
+            </li>
+          </ul>
+        </div>
+        <div class="verticals-content-icons col-1-2">
+          <a href="{{ site.baseurl }}/transport" class="verticals-home-bubble verticals-bubble-transport">Transport</a>
+          <a href="{{ site.baseurl }}/health" class="verticals-home-bubble verticals-bubble-health">Health</a>
+          <a href="{{ site.baseurl }}/insurance" class="verticals-home-bubble verticals-bubble-insurance">Insurance</a>
         </div>
       </div>
     </section>
-    <!-- /.project-container -->
+    <!-- /.feat-content-container -->
 
-    <section class="feat-content-container">
+    <section class="feat-content-container aqua-bg">
       <div class="feat-content grid">
-        <div class="feat-content-text col-1-2" data-sr="enter left move 100px, vF 0.5">
+        <div class="feat-content-img col-1-2">
+          <img class="feat-content-img-iphone" data-sr="wait 0.3s, enter left move 200px, vF 0.2" src="{{ site.baseurl }}/img/services/featured-iphone.png">
+          <img class="feat-content-img-ipad" data-sr="enter left move 200px, vF 0.2" src="{{ site.baseurl }}/img/services/featured-ipad.png">
+        </div>
+        <div class="feat-content-text col-1-2" data-sr="enter right move 100px, vF 0.5">
           <div class="meta-title-container">
             <span class="meta-title">Featured Project</span>
-           <!--  <span class="meta-subtitle">{{page.feat-client}}</span> -->
           </div>
           <h3>{{page.feat-title}}</h3>
           <p>{{page.feat-excerpt}}</p>
           <a href="{{ site.baseurl }}/work" class="btn btn-light btn-block">View More Projects</a>
-        </div>
-        <div class="feat-content-img col-1-2">
-          <img class="feat-content-img-iphone" data-sr="wait 0.3s, enter right move 200px, vF 0.2" src="{{ site.baseurl }}/img/services/featured-iphone.png">
-          <img class="feat-content-img-ipad" data-sr="enter right move 200px, vF 0.2" src="{{ site.baseurl }}/img/services/featured-ipad.png">
         </div>
       </div>
     </section>
