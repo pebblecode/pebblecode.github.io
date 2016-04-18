@@ -3,6 +3,8 @@
 //===============================================================================
 .gbl-head {
   background-color: $primary;
+  box-shadow: 0 0 10px rgba(black, 0.2);
+  opacity: 0.98;
   border-bottom: 1px solid rgba(white, 0.25);
   padding: 40px $gutter * 2 20px;
   position: fixed;
@@ -40,12 +42,8 @@
   }
 }
 
-.show {
-    top: 0;
-}
-.hide {
-    top: -92px;
-}
+.show { top: 0; }
+.hide { top: -92px; } 
 
 .gbl-head-logo {
   position: relative;
