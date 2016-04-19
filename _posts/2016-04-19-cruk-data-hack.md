@@ -54,6 +54,6 @@ Over the course of a just a few days we were able to create an accessible API, a
 
 The finished website is available [here](https://cruk.pebblecode.net). It contains a map of England showing how different CCGs compare against each other on various metrics. When you select a CCG you can view summary info - this is similar to what was previously hand-made, except it is auto-generated using the API.
 
-On top of that we created an API which makes the data easily accessible. It is publicly available at https://pebblecode-cruk-api.herokuapp.com (documentation [here](https://github.com/pebblecode/cruk-api/wiki)). This makes working with the data programmatically extremely easy, so anyone can get involved with the data if they have an interesting idea.
+On top of that we created an API which makes the data easily accessible. It is publicly available at [https://pebblecode-cruk-api.herokuapp.com](https://pebblecode-cruk-api.herokuapp.com) (documentation [here](https://github.com/pebblecode/cruk-api/wiki)). This makes working with the data programmatically extremely easy, so anyone can get involved with the data if they have an interesting idea.
 
 Here at pebble, we love helping organisations make sense of their data - this hack took us just a few days, showing that value can be quickly derived without the need for heavy investment. We’d love to see what other uses could be found for this data. If you have an idea, or can use this data to create new insights, we’d love to hear from you - drop us a line at [hello@pebblecode.com](hello@pebblecode.com).
