@@ -6,7 +6,6 @@ categories: [hacks]
 thumbnail: /img/blog/crukhack.png
 ---
 
-
 From time to time, the team here at pebble has the opportunity to take a step back from client-facing work, and undertake a ‘hack’ - we’ll typically put aside a few days or a week to work on a project that scratches an itch, or is otherwise interesting to a team of developers and designers. If we can use this time to produce something of value, then even better.
 
 A recent opportunity was presented to us by our friends at Cancer Research UK. We offered them some time, and they offered us a problem.
@@ -49,7 +48,7 @@ Creating an API also enables participants to integrate other sources of data fro
 
 Through investigating various data sources, we discovered that the majority of NHS data can be related to the PCT and/or CCG - this enables reports and data from different sources to be linked and connected - meaning greater insight into potential correlations. This also enables additional data to be added at a later date, if organised by one of these two keys.
 
-##The Results
+## The Results
 
 Over the course of a just a few days we were able to create an accessible API, and build an app on top of that data to enable users to investigate Cancer statistics.
 
