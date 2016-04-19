@@ -13,30 +13,30 @@
 
     <section class="feat-content-container verticals-content-container blue-bg">
       <div class="feat-content grid">
-        <h2 class="feat-content-title col-1-1">{{page.vert-section-title}}</h2>
-        <div class="feat-content-text col-1-2" data-sr="enter right move 100px, vF 0.5">
+        <div class="verticals-content-icons col-1-2">
+          <a data-sr="wait 0.1s, vF 0.5" href="{{ site.baseurl }}/transport" class="verticals-home-bubble verticals-bubble-transport">Transport</a>
+          <a data-sr="wait 0.2s, vF 0.5" href="{{ site.baseurl }}/health" class="verticals-home-bubble verticals-bubble-health">Health</a>
+          <a data-sr="wait 0.3s, vF 0.5" href="{{ site.baseurl }}/insurance" class="verticals-home-bubble verticals-bubble-insurance">Insurance</a>
+        </div>
+        <div class="feat-content-text col-1-2">
+          <h3 data-sr="enter right move 100px, vF 0.5">{{page.vert-section-title}}</h3>
           <ul class="feat-content-list">
-            <li class="feat-content-list-item">
+            <li class="feat-content-list-item" data-sr="wait 0.1s, enter right move 100px, vF 0.5">
               <h3 class="feat-content-list-title">Health</h3>
               <p class="feat-content-list-text">{{page.vert-text-health}} </p>
               <a href="{{ site.baseurl }}/health" class="btn btn-light btn-block">Read More</a>
             </li>
-            <li class="feat-content-list-item">
+            <li class="feat-content-list-item" data-sr="wait 0.2s, enter right move 100px, vF 0.5">
               <h3 class="feat-content-list-title">Transport</h3>
               <p class="feat-content-list-text">{{page.vert-text-transport}}</p>
               <a href="{{ site.baseurl }}/transport" class="btn btn-light btn-block">Read More</a>
             </li>
-            <li class="feat-content-list-item">
+            <li class="feat-content-list-item" data-sr="wait 0.3s, enter right move 100px, vF 0.5">
               <h3 class="feat-content-list-title">Insurance</h3>
               <p class="feat-content-list-text">{{page.vert-text-insurance}}</p>
               <a href="{{ site.baseurl }}/insurance" class="btn btn-light btn-block">Read More</a>
             </li>
           </ul>
-        </div>
-        <div class="verticals-content-icons col-1-2">
-          <a href="{{ site.baseurl }}/transport" class="verticals-home-bubble verticals-bubble-transport">Transport</a>
-          <a href="{{ site.baseurl }}/health" class="verticals-home-bubble verticals-bubble-health">Health</a>
-          <a href="{{ site.baseurl }}/insurance" class="verticals-home-bubble verticals-bubble-insurance">Insurance</a>
         </div>
       </div>
     </section>
@@ -44,17 +44,17 @@
 
     <section class="feat-content-container aqua-bg">
       <div class="feat-content grid">
-        <div class="feat-content-img col-1-2">
-          <img class="feat-content-img-iphone" data-sr="wait 0.3s, enter left move 200px, vF 0.2" src="{{ site.baseurl }}/img/services/featured-iphone.png">
-          <img class="feat-content-img-ipad" data-sr="enter left move 200px, vF 0.2" src="{{ site.baseurl }}/img/services/featured-ipad.png">
-        </div>
-        <div class="feat-content-text col-1-2" data-sr="enter right move 100px, vF 0.5">
+        <div class="feat-content-text col-1-2" data-sr="enter left move 100px, vF 0.5">
           <div class="meta-title-container">
             <span class="meta-title">Featured Project</span>
           </div>
           <h3>{{page.feat-title}}</h3>
           <p>{{page.feat-excerpt}}</p>
           <a href="{{ site.baseurl }}/work" class="btn btn-light btn-block">View More Projects</a>
+        </div>
+        <div class="feat-content-img col-1-2">
+          <img class="feat-content-img-iphone" data-sr="wait 0.3s, enter right move 200px, vF 0.2" src="{{ site.baseurl }}/img/services/featured-iphone.png">
+          <img class="feat-content-img-ipad" data-sr="enter right move 200px, vF 0.2" src="{{ site.baseurl }}/img/services/featured-ipad.png">
         </div>
       </div>
     </section>

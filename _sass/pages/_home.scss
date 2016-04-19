@@ -57,10 +57,14 @@
 
   @media screen and (max-width: 650px) {
     height: 230px;
+
+    .photo-inner { height: 230px; }
   }
 
   @media screen and (min-width: 1500px ) {
     height: 500px;
+
+    .photo-inner { height: 500px; }
   }
 
   &::after { background-color: $blue; }
@@ -81,7 +85,6 @@
 // Featured Case Study
 .feat-content-container {
   position: relative;
-  padding-bottom: 100px;
 
   @media screen and ( max-width: $medium ) {
     padding-top: 0;
@@ -111,11 +114,10 @@
 
 .feat-content {
   padding-top: 20px;
-  padding-bottom: 0;
   color: white;
 
   .meta-title-container {
-    padding: 30px 0 40px;
+    padding: 40px 0;
   }
 }
 
@@ -131,17 +133,11 @@
     float: none;
   }
 
-  .feat-content-img + & {
-    margin-left: 50%;
-  }
-
   .btn-block {
     font-size: $epsilon;
-    margin: 30px 0 0;
-    padding: 12px 20px;
+    margin-top: 30px;
     display: table;
     position: relative;
-    z-index: 2;
   }
 
   h3 {
@@ -154,10 +150,9 @@
 }
 
 .feat-content-img {
+  top: -10px;
   z-index: 2;
-  height: 540px;
-  left: 0;
-  top: -20px;
+  height: 480px;
   position: relative;
 
   img {
@@ -189,7 +184,7 @@
 .feat-content-list-item {
   position: relative;
   padding: 20px;
-  margin-top: -5px;
+  margin-top: -7px;
 
   &::before {
     @include shadow-pseudo;
@@ -206,11 +201,14 @@
   &:nth-of-type(2n) { transform: rotate(0.6deg) skew(0.5deg); }
   &:nth-of-type(3n) { transform: rotate(-0.5deg) skew(0.5deg); }
 
-  .btn { margin: 0; }
+  .btn {
+    margin: 0;
+    padding: 10px 12px;
+  }
 }
 
 .feat-content-list-title {
-  font-size: $beta - 2px;
+  font-size: $gamma + 4px;
   letter-spacing: 0;
   margin-bottom: 5px;
 }
@@ -222,8 +220,7 @@
 
 // Vertical Section
 .verticals-content-container {
-  padding: 20px 0 50px;
-  position: relative;
+  padding: 10px 0 40px;
 
   &::before {
     bottom: 0;
@@ -265,21 +262,21 @@
 }
 
 .verticals-bubble-transport {
-  top: 30px;
+  top: 40px;
   animation: pulse 1.8s infinite alternate;
   background-image: url(../img/verticals/vert-transport-home.svg);
 }
 
 .verticals-bubble-health {
   animation: pulse 1.8s 0.5s infinite alternate;
-  top: -100px;
+  top: -90px;
   left: 280px;
   background-image: url(../img/verticals/vert-health-home.svg);
 }
 
 .verticals-bubble-insurance {
   animation: pulse 1.8s 1s infinite alternate;
-  top: -100px;
+  top: -90px;
   left: 90px;
   background-image: url(../img/verticals/vert-insurance-home.svg);
 }
