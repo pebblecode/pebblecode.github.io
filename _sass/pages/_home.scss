@@ -3,11 +3,6 @@
 //===============================================================================
 // Hero
 .home .hero-container {
-  background-image: url(../img/tile-white.png);
-  background-repeat: repeat-x;
-  background-position: bottom;
-  background-size: 400px;
-
   .hero-title {
     @media screen and ( max-width: 1100px ) {
       font-size: $tera - 10px;
@@ -32,10 +27,10 @@
   }
 
   .hero-inner {
-    padding-bottom: 110px;
+    padding-bottom: 40px;
 
     @media screen and ( max-width: $medium ) {
-      padding-bottom: 80px;
+      padding-bottom: 20px;
     }
   }
 
@@ -45,8 +40,56 @@
   }
 
   &:after {
-    background-color: lighten($ink, 50);
-    background-color: white;
+    width:0;
+    height: 0;
+    transform: rotate(0deg) scale(0);
+    background-color: $pink;
+  }
+
+  &:before {
+    transform: rotate(0deg) scale(0);
+    background-color: $pink;
+  }
+}
+
+.home-photo-container {
+  background-color: $blue;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+
+  &:before {
+    transform: rotate(1.2deg) scale(1.2);
+    -ms-transform: rotate(1.2deg) scale(1.2);
+    -webkit-transform: rotate(1.2deg) scale(1.2);
+  }
+
+  &:after {
+    background-color: $blue;
+    transform: rotate(0.8deg) scale(1.2);
+    -ms-transform: rotate(0.8deg) scale(1.2);
+    -webkit-transform: rotate(0.8deg) scale(1.2);
+  }
+
+  @media screen and (max-width: 650px) {
+    height: 230px;
+  }
+
+  @media screen and (min-width: 1500px ) {
+    height: 500px;
+  }
+
+
+  .photo-inner{
+    height: 400px;
+
+    @media screen and ( min-width: 1500px ) {
+      height: 500px;
+    }
+
+    &:after {
+      background-color: $pink;
+    }
   }
 }
 
@@ -56,10 +99,46 @@
   padding-bottom: 10px;
   background-color: lighten($ink, 45);
   background-color: white;
+  position: relative;
 
   @media screen and ( max-width: $medium ) {
     padding-top: 0;
     padding-bottom: 0;
+  }
+}
+
+.home .client-container {
+  padding-top: 70px;
+  padding-bottom: 20px;
+
+  @media screen and ( max-width: $medium ) {
+    padding-top: 50px;
+    padding-bottom: 0;
+  }
+
+  &::before,
+  &::after {
+    @include shadow-pseudo;
+  }
+
+  &::before {
+    top: 0;
+    height: 20px;
+    z-index: 1;
+    background-color: rgba(black, 0.15);
+    transform: rotate(1.4deg) scale(1.2);
+    -ms-transform: rotate(1.4deg) scale(1.2);
+    -webkit-transform: rotate(1.4deg) scale(1.2);
+  }
+
+  &::after {
+    top: -40px;
+    height: 50px;
+    z-index: 1;
+    background-color: $aqua;
+    transform: rotate(1deg) scale(1.2);
+    -ms-transform: rotate(1deg) scale(1.2);
+    -webkit-transform: rotate(1deg) scale(1.2);
   }
 }
 
@@ -69,10 +148,11 @@
   position: relative;
   text-align: center;
   vertical-align: vertical;
+  z-index: 2;
 }
 
 .client-item img {
-  width:100%
+  width: 100%;
 }
 
 // Featured Case Study
@@ -81,6 +161,10 @@
   position: relative;
   padding-bottom: 50px;
 
+  &.blue-bg {
+    background-color: $blue;
+  }
+
   @media screen and ( max-width: $medium ) {
     padding-top: 0;
     padding-bottom: 40px;
@@ -88,13 +172,14 @@
 }
 
 .feat-content {
-  padding-top: 0;
+  padding-top: 20px;
   padding-bottom: 0;
   color: white;
 
   .meta-title-container {
     padding: 30px 0 40px;
   }
+
 }
 
 .feat-content-text {
@@ -107,6 +192,8 @@
     margin: 30px 0 0;
     padding: 12px 25px;
     display: table;
+    position: relative;
+    z-index: 2;
   }
 
   h3 {
@@ -149,4 +236,157 @@
   left: -20px;
   top: -30px;
   max-width: 340px;
+}
+
+// Vertical Section
+.home .blue-top {
+  .project-item-inner {
+    background-color: $blue;
+    padding: 60px 20px 35px 20px;
+
+    &:before {
+      background-color:$blue;
+    }
+
+    &:after {
+      background-color:$blue;
+    }
+   }
+}
+
+.vert-content-img {
+  height: 351px;
+  left: 0;
+  bottom: 0px;
+  background: no-repeat;
+  background-image: url(../img/verticals/vert-home.svg);
+
+  img {
+    position: absolute;
+  }
+
+  @media screen and ( max-width: $medium + 100px ) {
+    display: none;
+  }
+}
+
+.vert-content-img-bg {
+  height:100%;
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.vert-content-img-insurance,
+.vert-content-img-health,
+.vert-content-img-transport {
+  max-width: 120px;
+  max-height:200px;
+}
+
+.vert-content-img-transport {
+  left: 10px;
+}
+
+.vert-content-img-health {
+  left: 140px;
+  top: 10px;
+}
+
+.vert-content-img-insurance{
+  left: 70px;
+  top: 140px;
+}
+
+@media (max-width: 799px) and (min-width: 500px) {
+  .vert-content-img-health {
+    left: 300px;
+  }
+
+  .vert-content-img-insurance {
+    left: 200px;
+    top: 195px;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .vert-content-img-insurance {
+    left: 150px;
+    max-width: 140px;
+    top: 165px;
+  }
+  .vert-content-img-health {
+    max-width: 155px;
+    left: 250px;
+  }
+  .vert-content-img-transport {
+    max-width: 162px;
+    top: 50px;
+  }
+}
+
+@media (max-width: 920px) and (min-width: 799px)  {
+  .vert-content-img-health {
+    left: 200px;
+  }
+}
+
+.home .projects-item-inner.verticals {
+  @media screen and (max-width: 800px) {
+    padding-top: 320px;
+  }
+
+  @media screen and (max-width: 500px) {
+    padding-top: 400px;
+  }
+
+  @media (max-width: 400px) and (min-width: 300px) {
+      padding-top: 450px;
+  }
+
+  @media (max-width: 350px) and (min-width: 0px) {
+    padding-top: 500px;
+  }
+}
+
+.vert-home-bubble {
+  display: inline-block;
+  max-height:200px;
+  transition: 0.2s;
+  transform: scale(1.0);
+
+  &:hover {
+  transform: scale(1.1);
+
+    @media screen and ( max-width: $medium ) {
+      transform: none;
+    }
+  }
+}
+
+.home-vert-text {
+  margin-top: 12px;
+  margin-bottom: 0;
+
+  &:first-of-type {
+    margin-top: 0;
+  }
+
+  .bold {
+    font-family: $brandon;
+    text-transform: uppercase;
+    font-style: italic;
+    font-weight: bold;
+    text-shadow: 2px 2px 0 rgba($grey, 0.4);
+  }
+}
+
+$insurcolor1: $purple;
+$insurcolor2: #3A5173;
+$insurcolor3: #F24A7D;
+
+.home-vert-btn-wrap {
+  padding-right: 32px;
+  margin-top: 10px;
+  margin-bottom: 25px;
 }

@@ -101,9 +101,9 @@
       background-color: rgba(white, 0.8);
       box-shadow: 0 0 10px rgba(black, 0.2);
       z-index: -1;
-      transform: rotate(2deg) skew(1deg); 
-      -ms-transform: rotate(2deg) skew(1deg); 
-      -webkit-transform: rotate(2deg) skew(1deg);  
+      transform: rotate(2deg) skew(1deg);
+      -ms-transform: rotate(2deg) skew(1deg);
+      -webkit-transform: rotate(2deg) skew(1deg);
     }
   }
 
@@ -158,7 +158,7 @@ p.invite-details {
   }
 }
 
-.invite-date, 
+.invite-date,
 .invite-time,
 .invite-where,
 .invite-rsvp {

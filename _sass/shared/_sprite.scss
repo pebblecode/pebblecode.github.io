@@ -1,43 +1,33 @@
 //===============================================================================
 // SPRITE
 //===============================================================================
-// GLOBAL
-.i-gym-white, .i-10-white, .i-pay-white, .i-charity-white, .i-snacks-white, .i-holidays-white, .i-flexible-white, .i-social-white, .i-vimeo-pink, .i-github-pink, .i-menu-grey, .i-twitter-pink, .i-gbl-logo-white, .i-close-grey, .i-phone-grey, .i-email-grey, .i-location-grey { background: url($gbl-sprite); }
+@mixin sprite( $spriteVals ) {
+  width: nth( $spriteVals, 1 );
+  height: nth( $spriteVals, 2 );
+  background-repeat: no-repeat;
+  background-image: url( #{ nth( $spriteVals, 3 ) } );
+  background-position: nth( $spriteVals, 4 ) nth( $spriteVals, 5 );
+}
 
-.i-flexible-white, .i-vimeo-pink, .i-location-grey, .i-github-pink { width: 26px; }
-
-.i-10-white { width: 26px; }
-
-.i-snacks-white, .i-menu-grey { width: 20px; }
-
-.i-phone-grey, .i-email-grey { width: 31px; }
-
-.i-10-white, .i-charity-white, .i-email-grey { height: 27px; }
-
-.i-vimeo-pink, .i-twitter-pink { height: 22px; }
-
-.i-pay-white, .i-holidays-white { width: 28px; height: 26px; }
-
-.i-pay-white { width: 30px; height: 26px; }
-
-.i-gym-white, .i-social-white { width: 28px; }
-
-.i-social-white, .i-flexible-white { height: 28px; } 
-
-.i-gym-white { background-position: -467px 0px; height: 20px; }
-.i-10-white { background-position: -521px 0px; }
-.i-pay-white { background-position: -579px 0px; }
-.i-charity-white { background-position: -610px 0px; width: 24px; }
-.i-snacks-white { background-position: -498px 0px; height: 25px; }
-.i-holidays-white { background-position: -437px 0px; }
-.i-flexible-white { background-position: -406px 0px; }
-.i-social-white { background-position: -549px 0px; }
-.i-vimeo-pink { background-position: -177px 0px; }
-.i-github-pink { background-position: -235px 0px; height: 23px; }
-.i-menu-grey { background-position: -264px 0px; height: 19px; }
-.i-twitter-pink { background-position: -202px 0px; width: 29px; }
-.i-gbl-logo-white { background-position: 0px 0px; width: 175px; height: 31px; }
-.i-close-grey { background-position: -288px 0px; width: 18px; height: 18px; }
-.i-phone-grey { background-position: -338px 0px; height: 30px; }
-.i-email-grey { background-position: -372px 0px; }
-.i-location-grey { background-position: -309px 0px; height: 33px; }
+$gbl-sprite-path: '../img/gbl-sprite.svg';
+$logo-white: 170px 29px $gbl-sprite-path 0px 0px;
+$charity-white: 21px 26px $gbl-sprite-path -164px -69px;
+$gym-white: 26px 19px $gbl-sprite-path -188px -69px;
+$pay-white: 26px 26px $gbl-sprite-path -136px -69px;
+$beer-white: 25px 26px $gbl-sprite-path -108px -69px;
+$ten-white: 24px 26px $gbl-sprite-path -81px -69px;
+$snacks-white: 20px 25px $gbl-sprite-path -58px -69px;
+$holiday-white: 26px 25px $gbl-sprite-path -28px -69px;
+$flexible-white: 25px 26px $gbl-sprite-path 0px -69px;
+$mail-white: 29px 25px $gbl-sprite-path -276px -33px;
+$phone-white: 30px 30px $gbl-sprite-path -244px -33px;
+$mail-black: 29px 25px $gbl-sprite-path -170px -33px;
+$phone-black: 30px 30px $gbl-sprite-path -138px -33px;
+$location-black: 23px 32px $gbl-sprite-path -112px -33px;
+$close-grey: 17px 17px $gbl-sprite-path -224px -33px;
+$menu-grey: 19px 19px $gbl-sprite-path -202px -33px;
+$linkedin-pink: 23px 22px $gbl-sprite-path -80px -34px;
+$octocat-pink: 23px 23px $gbl-sprite-path -53px -33px;
+$twitter-pink: 26px 21px $gbl-sprite-path -26px -33px;
+$vimeo-pink: 24px 22px $gbl-sprite-path 0px -33px;
+$facebook-pink: 22px 22px $gbl-sprite-path -217px -69px;

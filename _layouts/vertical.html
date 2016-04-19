@@ -1,0 +1,93 @@
+{% include head.html %}
+
+  <body class="{{ page.layout }} {{ page.extraclasses }}">
+
+    {% include header.html %}
+    {% capture nextColor %}next-color-{{ page.sections[0].color }}{% endcapture %}
+    <section class="hero-container {{ page.colour }} {{ nextColor }}">
+      <div class="hero-inner grid">
+      <h1 class="hero-title col-1-1">{% if page.hero-title %}{{page.hero-title}}{% else %}{{page.title}}{% endif %}</h1>
+
+        {% if page.hero-subtitle %}
+          <p class="hero-summary col-1-1">{{page.hero-subtitle}}</p>
+        {% endif %}
+
+        {% if page.hero-btn %}
+          <a href="{{page.hero-btn-url}}" class="btn btn-primary btn-block" data-sr="scale up 20%, vF 0">{{page.hero-btn}}</a>
+        {% endif %}
+
+        <div class="vert-bubble-container grid">
+
+          {% for sectionbubble in page.sections %}
+            <a href="#{{sectionbubble.sectionid}}" class="vert-sec-bubble">
+              <img src= '../img/verticals/{{ sectionbubble.bubbleimage }}' />
+              <h2 class="vert-sec-bubble-title">{{ sectionbubble.title }}</h2>
+            </a>
+          {% endfor %}
+
+
+          {% if page.insurance-sections %}
+            <div class="vert-insur-bubble-container">
+              {% include vert-insurance-svg.html %}
+            </div>
+          {% endif %}
+
+          <div class="vert-insur-list-container">
+            <!-- Insurance Bubbles -->
+            {% for insurancebubble in page.insurance-sections %}
+                <h2 data-bubble="{{insurancebubble.bubbleclass}}" class="vert-sec-bubble-title">{{ insurancebubble.title }}</h2>
+            {% endfor %}
+          </div>
+
+        </div>
+          {% for insurpara in page.insurance-paragraphs %}
+
+            {% if insurpara.insurance-thoughts %}
+                <div class="vert-insur-thoughts-container grid">
+                  {% for insurthought in insurpara.insurance-thoughts %}
+                    <div class="vert-insur-thoughts-inner">
+                      <div class="vert-insur-thoughts-image-container">
+                        <img src= '../img/verticals/{{ insurthought.image }}' />
+                      </div>
+                      <h4 class="vert-sec-thoughts-title">
+                        {{ insurthought.text }}
+                      </h4>
+                    </div>
+                  {% endfor %}
+                </div>
+            {% else %}
+              <p class="hero-summary col-1-1">
+                {{ insurpara }}
+              </p>
+            {% endif %}
+
+          {% endfor %}
+       </div>
+    </section>
+
+    {% for vsecloop in page.sections %}
+      {% assign nextIndex = forloop.index %}
+      {% assign vsection = vsecloop %}
+      {% assign nextSection = page.sections[nextIndex] %}
+      {% include vert-section.html %}
+    {% endfor %}
+
+
+
+
+
+    <section id="" class="vert-section-container">
+      <div class="vert-section-inner grid vert-section-contact ">
+        <h2 class="vert-section-title">Sound interesting?</h2>
+        <p class="vert-contact-para">Get in contact to discuss how we can help you</p>
+        <div class="location-item location-item-email">
+          <a href="mailto:hello@pebblecode.com">hello@pebblecode.com</a>
+        </div>
+        <div class="location-item location-item-phone">
+          <a href="tel:+442033273940">+44 (0) 20 3327 3940</a>
+        </div>
+      </div>
+    </section>
+    {% include footer.html extrascripts=page.extrascripts lazyload=true %}
+  </body>
+</html>

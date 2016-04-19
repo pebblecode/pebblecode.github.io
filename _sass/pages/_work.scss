@@ -99,7 +99,6 @@
 }
 
 .project-item-text {
-
   @media screen and ( max-width: $medium + 150px ) {
     float: none;
     display: block;
@@ -108,7 +107,6 @@
     top: 0;
     left: 0;
   }
-
 }
 
 .project-item-img {
@@ -121,7 +119,6 @@
     max-width: 100%;
     padding-top: 30px;
   }
-
 }
 
 .projects-item-inner {
@@ -136,15 +133,15 @@
   }
 
   @media screen and ( max-width: $small) {
-  padding-top: 230px
+    padding-top: 230px
   }
 
   @media (min-width: 312px) and (max-width: 400px){
-  padding-top: 280px
+    padding-top: 280px
   }
 
   @media (min-width: 0px) and (max-width: 312px){
-  padding-top: 380px
+    padding-top: 380px
   }
 }
 
@@ -152,7 +149,7 @@
   .project-container [class*='col-'] {
     width: 100%;
     float: none;
-    }
+  }
 }
 
 .project-aqua {
@@ -166,19 +163,18 @@
 }
 
 .project-last {
-    .project-item-inner {
-      background-image: url(../img/tile-white.png);
-      background-repeat: repeat-x;
-      background-position: bottom;
-      background-size: 500px;
-      position: relative;
-    }
+  .project-item-inner {
+    background-image: url(../img/tile-white.png);
+    background-repeat: repeat-x;
+    background-position: bottom;
+    background-size: 500px;
+    position: relative;
+  }
 }
 
 .project-blue {
   .project-item-inner {
     background-color: $blue;
-
   }
     & + .photo-container:after {
     background-color:$green;
@@ -233,7 +229,6 @@
   }
 }
 
-
 .work-photo-container {
   background-color: $aqua;
   -webkit-transform-style: preserve-3d;
@@ -255,29 +250,23 @@
   }
 
   @media screen and (max-width: 650px) {
-      height: 230px;
+    height: 230px;
   }
 
   @media screen and (min-width: 1500px ) {
-      height: 500px;
+    height: 500px;
   }
 
 
   .photo-inner{
     height: 400px;
-    @media screen and ( max-width: $medium ) {
-    // height: 261px;
-    }
 
     @media screen and ( min-width: 1500px ) {
-    height: 500px;
+      height: 500px;
     }
 
     &:after {
       background-color: $aqua;
-    }
-    &:before {
-      //photo shadows background: transparent;
     }
   }
 }
@@ -289,37 +278,40 @@
     &:before {
       background-color:$pink;
     }
+
     &:after {
       background-color:$pink;
     }
-   }
+  }
+
   .photo-container:after {
-      background-color: $pink;
+    background-color: $pink;
   }
 }
 
 .green-top {
+  background-color: $green;
+
+  .photo-inner:after {
     background-color: $green;
-    .photo-inner:after {
-      background-color: $green;
-    }
+  }
 }
 
 .green-top.photo-container:after {
-    background-color: $orange;
-  }
+  background-color: $orange;
+}
 
-  .purple-top{
-    background-color:$purple;
-      .photo-inner:after {
-      background-color: $purple;
-    }
+.purple-top {
+  background-color:$purple;
+
+  .photo-inner:after {
+    background-color: $purple;
+  }
 }
 
 .purple-top.photo-container:after {
-    background-color: $pink;
-  }
-
+  background-color: $pink;
+}
 
 // Video Full Width
 video {
@@ -388,8 +380,7 @@ video {
   }
 }
 
-.alignme
-{
+.alignme {
     display:inline-block;
     float:none;
     margin-right:-4px;
@@ -450,21 +441,19 @@ video {
 
 
 // White Text Box
-
 .aside-container.work-container {
-    margin: 40px 15%;
-    width: 70%;
+  margin: 40px 15%;
+  width: 70%;
 
-    p {
-      text-align:center;
-    }
+  p {
+    text-align:center;
+  }
 
-    @media screen and ( max-width: $small) {
+  @media screen and ( max-width: $small) {
     margin: 40px 10%;
     width: 80%;
     font-size: 16px;
-    }
-
+  }
 }
 
 .ink {
@@ -484,14 +473,14 @@ video {
   }
 
   @media screen and ( max-width: $medium ) {
-    &:after {
-      border: 0px;
-    }
     background-color: white;
     margin-top: 0;
     margin-bottom: $gutter;
     border: 5px solid #f5f6f7;
     box-shadow: none;
-  }
 
+    &:after {
+      border: 0;
+    }
+  }
 }

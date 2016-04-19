@@ -9,46 +9,19 @@ layout: blog
 
     <section class="hero-container hero-container-blog {{ page.colour }}">
       <div class="hero-inner grid">
-        {% if paginator.next_page == 2 %}
-        {% for post in site.posts %}
-          {% if post.featured == true %}
-            {% capture count %}{{ count | plus: '1' }}{% endcapture %}
-            {% if count == '1' %}
-              <div class="meta-title-container col-1-1">
-                <span class="meta-title">Featured Post</span>
-              </div>
-              <a href="{{ post.url }}"><h1 class="hero-title col-1-1">{{ post.title }}</h1></a>
-              <span class="post-author col-1-1">{{ post.author }}</span>
-              <span class="post-date col-1-1">{{ post.date | date: '%B %d, %Y' }}</span>
-            {% endif %}
-          {% endif %}
-        {% endfor %}
-        {% for post in site.posts %}
-          {% if post.featured == true %}
-            {% capture counttwo %}{{ counttwo | plus: '1' }}{% endcapture %}
-            {% if counttwo == '2' or counttwo == '3'%}
-              <div class="meta-title-container">
-                <span class="meta-title">Featured Post</span>
-              </div>
-              <a href="{{ post.url }}"><h1 class="hero-title">{{ post.title }}</h1></a>
-              <span class="post-author">{{ post.author }}</span>
-              <span class="post-date">{{ post.date | date: '%B %d, %Y' }}</span>
-            {% endif %}
-          {% endif %}
-        {% endfor %}
-        {% endif %}
+          <h1 class="hero-title col-1-1">{% if page.hero-title %}{{page.hero-title}}{% else %}{{page.title}}{% endif %}</h1>
       </div>
+
     </section>
     <!-- /.hero-container -->
 
     <section class="content-container grid">
+
+      {% include blog-sidebar.html %}
+
       <ul class="content col-1-1 post-list">
-        {% for post in paginator.posts %} 
-          <li class="post-item">
-            <a href="{{ post.url }}"><h3 class="post-title">{{ post.title }}</h3></a>
-            <span class="post-author">{{ post.author }}</span>
-            <span class="post-date">{{ post.date | date: '%B %d, %Y' }}</span>
-          </li>
+        {% for post in paginator.posts %}
+          {% include blog-listpost.html %}
         {% endfor %}
       </ul>
     </section>
@@ -72,14 +45,6 @@ layout: blog
       </div>
     </section>
     {% endif %}
-
     {% include footer.html %}
-
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/vendor/jquery-2.1.1.min.js""><\/script>')</script>
-    <script type="text/javascript" src="{{ site.baseurl }}/js/vendor/scrollReveal.min.js"></script>
-    <script type="text/javascript" src="{{ site.baseurl }}/js/main.js"></script>
-    <!-- /scripts-->
-
   </body>
 </html>

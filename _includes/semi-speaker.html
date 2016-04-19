@@ -1,0 +1,16 @@
+ <li class="seminar-speaker" id="{{speaker.id}}">
+  <div class="seminar-speaker-image" style="background-image: url({{ site.baseurl }}/img/seminar/{{speaker.portrait}})"></div>
+  <h4 class="seminar-speaker-title">{{speaker.name}}</h4>
+  <h5 class="seminar-speaker-jobtitle">{{speaker.jobtitle}}</h5>
+  <div class="seminar-speaker-bio">
+    {% for bio in speaker.bio %}
+        <p>{{bio}}</p>
+    {% endfor %}
+    {% if speaker.linkedin %}
+      <a class="seminar-speaker-link linkedin" href="{{speaker.linkedin}}">linkedIn</a>
+    {% endif %}
+    {% if speaker.twitter %}
+      <a class="seminar-speaker-link twitter" href="{{speaker.twitter}}">twitter</a>
+    {% endif %}
+  </div>
+</li>

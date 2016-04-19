@@ -17,7 +17,7 @@
     </section>
     <!-- /.hero-container -->
 
-    <section class="content-container grid">
+    <section class="content-container grid" id="careersKaizen">
       <h2 class="content-title">{{page.content-title}}</h2>
       <article class="content-intro col-1-1">
         {{content}}
@@ -33,7 +33,7 @@
     {% include photos.html %}
 
     <section class="content-container benefits-container">
-      <div class="benefits-inner grid">
+      <div class="benefits-inner grid" id="careersBenefits">
         <h2 class="content-title">Awesome Benefits</h2>
         <article class="content-intro col-1-1">
           <p>Everyone in the company benefits from 10% time to work on what they are passionate about, have additional days off for volunteering, is encouraged to go to events and conferences and is empowered to help make pebble a great place to work.</p>
@@ -64,32 +64,6 @@
     {% include recruitee.html %}
 
     {% include footer.html %}
-
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/vendor/jquery-2.1.1.min.js""><\/script>')</script>
-    <script type="text/javascript" src="{{ site.baseurl }}/js/vendor/scrollReveal.min.js"></script>
-    <script type="text/javascript" src="{{ site.baseurl }}/js/main.js"></script>
-    <script src='https://recruitee.com/assets/widget.js' type='text/javascript'></script>
-    <script type='text/javascript' charset='utf-8'>
-    RT.jQuery(document).ready(function() {
-      RT.recruitee.init({company: 418, language: "en"});
-      RT.recruitee.renderOffers("#recruitee-offers");
-      RT.recruitee.subscribeListener("opened",
-          function(offer) {
-            analytics.track('JobOfferFormOpened', {
-              id: offer.id,
-              title: offer.title
-            });
-          });
-      RT.recruitee.subscribeListener("applied",
-          function(offer) {
-            analytics.track('JobOfferFormSubmitted', {
-              id: offer.id,
-              title: offer.title
-            });
-          })
-    });
-    </script>
     <!-- /scripts-->
 
   </body>

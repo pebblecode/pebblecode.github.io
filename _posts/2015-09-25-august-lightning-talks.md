@@ -2,7 +2,7 @@
 layout: post
 title:  August Lightning Talks
 author: Jonny Li
-categories: lightning talks
+categories: [lightning talks]
 ---
 In August, Mark gives us a crash course in Visual Hierarchy. If you've ever wondered how certain elements seem more prominent or want to draw more attention to a specific area of the page, this talks for you.
 

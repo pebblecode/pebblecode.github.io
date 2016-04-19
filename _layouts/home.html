@@ -6,12 +6,53 @@
 
     {% include hero.html %}
 
-    {% include clients.html %}
-
-    <section class="photo-container home-photo-container">
+    <section class="photo-container home-photo-container pink-top">
       <div class="photo-inner" style="background-image: url({{ site.baseurl }}/img/{{page.cover-img}})"></div>
     </section>
     <!-- /.photo-container -->
+
+
+    <section class="project-container blue-top">
+      <div class="project-item-container">
+        <div class="project-item-inner">
+          <div class="project-item projects-item-inner verticals grid">
+            <div class="col-1-2 project-item-img vert-content-img alignme">
+              <div class="cent-test">
+                <a href="{{ site.baseurl }}/transport">
+                  <img class="vert-content-img-transport vert-home-bubble" data-sr="enter left move 200px, vF 0.2, wait 0.6s" src="{{ site.baseurl }}/img/verticals/vert-transport-rail-service-b.svg">
+                </a>
+                <a href="{{ site.baseurl }}/health">
+                  <img class="vert-content-img-health vert-home-bubble" data-sr="enter left move 300px, vF 0.2, wait 0.4s" src="{{ site.baseurl }}/img/verticals/vert-health-home.svg">
+                </a>
+                <a href="{{ site.baseurl }}/insurance">
+                  <img class="vert-content-img-insurance vert-home-bubble" data-sr="enter left move 300px, vF 0.2, wait 0.2s" src="{{ site.baseurl }}/img/verticals/vert-insurance-home.svg">
+                </a>
+                </div>
+            </div>
+            <div class="col-1-2 project-item-text alignme" data-sr="enter right move 100px, vF 0.5">
+              <h3 class="project-item-title">{{page.vert-section-title}}</h3>
+
+              <p class="home-vert-text">{{page.vert-text-health}} </p>
+              <div class="home-vert-btn-wrap">
+                <a href="{{ site.baseurl }}/health" class="btn btn-light btn-block btn-small health">Read More</a>
+              </div>
+
+              <p class="home-vert-text">{{page.vert-text-transport}}</p>
+              <div class="home-vert-btn-wrap">
+                <a href="{{ site.baseurl }}/transport" class="btn btn-light btn-block btn-small transport">Read More</a>
+              </div>
+
+              <p class="home-vert-text">{{page.vert-text-insurance}}</p>
+              <div class="home-vert-btn-wrap">
+                <a href="{{ site.baseurl }}/insurance" class="btn btn-light btn-block btn-small insurance">Read More</a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /.project-container -->
 
     <section class="feat-content-container">
       <div class="feat-content grid">
@@ -32,13 +73,11 @@
     </section>
     <!-- /.feat-content-container -->
 
-    {% include footer.html %}
+    {% include clients.html %}
 
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/vendor/jquery-2.1.1.min.js""><\/script>')</script>
-    <script type="text/javascript" src="{{ site.baseurl }}/js/vendor/scrollReveal.min.js"></script>
-    <script type="text/javascript" src="{{ site.baseurl }}/js/main.js"></script>
-    <!-- /scripts-->
+    {% include cta-contact.html %}
+
+    {% include footer.html %}
 
   </body>
 </html>

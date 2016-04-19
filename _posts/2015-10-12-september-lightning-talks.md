@@ -2,7 +2,7 @@
 layout: post
 title:  September Lightning Talks
 author: Jonny Li
-categories: lightning talks
+categories: [lightning talks]
 ---
 In September's lightning talks, Ian Black talks about how sketches can be both a starting point and a final product, why we should embrace roughness and the benefits for both our professional and personal lives.
 
