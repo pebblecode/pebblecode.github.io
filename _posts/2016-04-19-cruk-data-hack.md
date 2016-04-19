@@ -1,7 +1,7 @@
 ---
 layout: post
 title: The price of light is less than the cost of darkness
-author: Emma Nash and Aisling Foley
+author: Emma Nash, Aisling Foley & Paul Addicott-Evans
 categories: [hacks]
 thumbnail: /img/blog/crukhack.png
 ---
