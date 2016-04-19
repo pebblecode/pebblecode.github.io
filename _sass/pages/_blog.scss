@@ -17,11 +17,7 @@
   }
 }
 
-.blog-by-tag .gbl-head {
-  @media screen and ( max-width: $medium + 100px ) {
-    background-color: $blue;
-  }
-}
+.blog-by-tag .gbl-head { background-color: $blue; }
 
 .hero-container-blog,
 .hero-container-blog.aqua {
