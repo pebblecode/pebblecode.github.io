@@ -43,7 +43,7 @@ Taking inspiration from other open data initiatives, we used the data made avail
 * Impact measurement of policies
 * New knowledge from combined data sources and patterns in large data volumes
 
-Specifically for Cancer Research UK, reducing the effort required to produce useful profiles and infographics is of benefit to the organisation - increasing the freshness of data available, whilst reducing the effort required to share it in a useful way. By creating an API on top of the existing data, profiles and infographics can be automatically generated and updated with the most recent information, without having the re-engage designers.
+Specifically for Cancer Research UK, reducing the effort required to produce useful profiles and infographics is of benefit to the organisation - increasing the freshness of data available, whilst reducing the effort required to share it in a useful way. By creating an API on top of the existing data, profiles and infographics can be automatically generated and updated with the most recent information, without having to re-engage the design team.
 
 Creating an API also enables participants to integrate other sources of data from the NHS, UK government and virtually any other source, providing there is some commonality (typically [CCG](http://www.nhscc.org/ccgs/)). The combination of these data sources allows simple querying, comparison and analysis of correlating factors - for example, statistical relationships between obesity in a specific area, or comparison of detection rates between CCGs.
 
