@@ -214,7 +214,7 @@
   }
 
   @media screen and ( min-width: $medium + 100px ) {
-    &:nth-of-type(even) { top: 10px; }
+    &:nth-of-type(even) { top: 5px; }
   }
 
   &:nth-of-type(2n)::before { transform: rotate(0.6deg) scale(0.98); }
