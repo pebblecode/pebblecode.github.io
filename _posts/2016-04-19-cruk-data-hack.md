@@ -10,7 +10,7 @@ From time to time, the team here at pebble has the opportunity to take a step ba
 
 A recent opportunity was presented to us by our friends at Cancer Research UK. We offered them some time, and they offered us a problem.
 
-##The Business Problem
+## The Business Problem
 
 CRUK manage a database of extremely useful information, relating to the incidence and treatment of cancer across the UK. At present, this data is mostly static, and held in a database. It’s not interactive, or externally accessible.
 
@@ -24,7 +24,7 @@ The process of creating these materials is relatively labour intensive for the C
 
 We believe that the concept of ‘open data’ is very powerful for ensuring information can be shared in a useful way. By creating open data-based tools you can increase exposure and enhance citizen participation, contribute to better public services and improve the way communities work.
 
-##The Case for Open Data
+## The Case for Open Data
 
 The recent publication of the Open government Manifesto includes a focus on open data:
 
