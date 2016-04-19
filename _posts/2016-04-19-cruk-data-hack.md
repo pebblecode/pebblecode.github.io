@@ -46,7 +46,7 @@ Specifically for Cancer Research UK, reducing the effort required to produce use
 
 Creating an API also enables participants to integrate other sources of data from the NHS, UK government and virtually any other source, providing there is some commonality (typically [CCG](http://www.nhscc.org/ccgs/)). The combination of these data sources allows simple querying, comparison and analysis of correlating factors - for example, statistical relationships between obesity in a specific area, or comparison of detection rates between CCGs.
 
-Through investigating various data sources, we discovered that the majority of NHS data can be related to the PCT and/or CCG - this enables reports and data from different sources to be linked and connected - meaning greater insight into potential correlations. This also enables additional data to be added at a later date, if organised by one of these two keys.
+Through investigating various data sources, we discovered that the majority of NHS data can be related to the [PCT](https://en.wikipedia.org/wiki/NHS_primary_care_trust) and/or CCG - this enables reports and data from different sources to be linked and connected - meaning greater insight into potential correlations. This also enables additional data to be added at a later date, if organised by one of these two keys.
 
 ## The Results
 
