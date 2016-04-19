@@ -192,32 +192,58 @@
 
 .feat-content-list-item {
   position: relative;
+  margin-top: 20px;
   padding: 20px;
-  margin-top: -7px;
+  transition: 0.5s;
+
+  @media screen and ( max-width: $medium + 100px ) {
+    width: 100%;
+    display: block;
+  }
 
   &::before {
     @include shadow-pseudo;
     top: 0;
     left: 0;
-    background-color: rgba(white, 0.1);
     width: 100%;
     height: 100%;
-    transform: rotate(-0.3deg) skew(0.5deg);
-    box-shadow: 0 0 10px rgba(black, 0.05);
+    transition: 0.3s;
+    transform: rotate(-0.3deg) scale(0.98);
+    background-color: rgba(white, 0.2);
+    box-shadow: 0 0 10px rgba(black, 0.1);
   }
 
-  &:nth-of-type(even) { left: -10px; }
-  &:nth-of-type(2n) { transform: rotate(0.6deg) skew(0.5deg); }
-  &:nth-of-type(3n) { transform: rotate(-0.5deg) skew(0.5deg); }
+  @media screen and ( min-width: $medium + 100px ) {
+    &:nth-of-type(even) { top: 10px; }
+  }
 
-  .btn {
-    margin: 0;
-    padding: 10px 12px;
+  &:nth-of-type(2n)::before { transform: rotate(0.6deg) scale(0.98); }
+  &:nth-of-type(3n)::before { transform: rotate(-0.5deg) scale(0.98); }
+
+  &:hover {
+    transform: scale(1.03);
+
+    .verticals-home-bubble { transform: scale(1.1); }
+
+    &::before {
+      background-color: rgba(white, 0.3);
+      box-shadow: 0 0 10px rgba(black, 0.2);
+    }
+  }
+
+  .btn-block {
+    margin: 20px auto 10px;
+    display: table;
+    position: relative;
+    padding: 11px 15px 10px;
+
+    &:hover { background-color: rgba(white, 0.3); }
   }
 }
 
 .feat-content-list-title {
-  font-size: $gamma + 4px;
+  font-size: $beta;
+  position: relative;
   letter-spacing: 0;
   margin-bottom: 5px;
 }
@@ -229,7 +255,15 @@
 
 // Vertical Section
 .verticals-content-container {
-  padding: 10px 0 40px;
+  padding: 15px 0 30px;
+  text-align: center;
+
+  @media screen and ( max-width: $medium + 100px ) {
+    text-align: center;
+    padding: 5px 10px 30px;
+
+    h2 { margin-bottom: 40px; }
+  }
 
   &::before {
     bottom: 0;
@@ -244,12 +278,13 @@
     background-color: $aqua;
     transform: rotate(-1deg) scale(1.2);
   }
-}
 
-.verticals-content-icons {
-  height: 350px;
-  left: 0;
-  bottom: 0;
+  h2, h3 {
+    text-shadow: 2px 2px 0 rgba($grey, 0.4);
+    line-height: 1.1;
+  }
+
+  .feat-content-list-item { color: white; }
 }
 
 .verticals-home-bubble {
@@ -259,33 +294,26 @@
   position: relative;
   width: 200px;
   height: 200px;
-  display: block;
-  transition: 0.3s;
-  box-shadow: 0 0 30px rgba(black, 0.2);
+  display: inline-block;
+  transition: 0.7s;
+  box-shadow: 0 0 20px rgba(black, 0.3);
   border-radius: 50%;
+  margin: -35px auto 15px;
 
-  &:hover {
-    opacity: 0.9;
-    box-shadow: 0 0 30px rgba(black, 0.4);
+  @media screen and ( max-width: $medium ) {
+    width: 150px;
+    height: 150px;
   }
 }
 
 .verticals-bubble-transport {
-  top: 40px;
-  animation: pulse 1.8s infinite alternate;
   background-image: url(../img/verticals/vert-transport-home.svg);
 }
 
 .verticals-bubble-health {
-  animation: pulse 1.8s 0.5s infinite alternate;
-  top: -90px;
-  left: 280px;
   background-image: url(../img/verticals/vert-health-home.svg);
 }
 
 .verticals-bubble-insurance {
-  animation: pulse 1.8s 1s infinite alternate;
-  top: -90px;
-  left: 90px;
   background-image: url(../img/verticals/vert-insurance-home.svg);
 }

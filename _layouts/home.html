@@ -13,30 +13,26 @@
 
     <section class="feat-content-container verticals-content-container blue-bg">
       <div class="feat-content grid">
-        <div class="verticals-content-icons col-1-2">
-          <a data-sr="wait 0.1s, vF 0.5" href="{{ site.baseurl }}/transport" class="verticals-home-bubble verticals-bubble-transport">Transport</a>
-          <a data-sr="wait 0.2s, vF 0.5" href="{{ site.baseurl }}/health" class="verticals-home-bubble verticals-bubble-health">Health</a>
-          <a data-sr="wait 0.3s, vF 0.5" href="{{ site.baseurl }}/insurance" class="verticals-home-bubble verticals-bubble-insurance">Insurance</a>
-        </div>
-        <div class="feat-content-text col-1-2">
-          <h3 data-sr="enter right move 100px, vF 0.5">{{page.vert-section-title}}</h3>
-          <ul class="feat-content-list">
-            <li class="feat-content-list-item" data-sr="wait 0.1s, enter right move 100px, vF 0.5">
-              <h3 class="feat-content-list-title">Health</h3>
-              <p class="feat-content-list-text">{{page.vert-text-health}} </p>
-              <a href="{{ site.baseurl }}/health" class="btn btn-light btn-block">Read More</a>
-            </li>
-            <li class="feat-content-list-item" data-sr="wait 0.2s, enter right move 100px, vF 0.5">
-              <h3 class="feat-content-list-title">Transport</h3>
-              <p class="feat-content-list-text">{{page.vert-text-transport}}</p>
-              <a href="{{ site.baseurl }}/transport" class="btn btn-light btn-block">Read More</a>
-            </li>
-            <li class="feat-content-list-item" data-sr="wait 0.3s, enter right move 100px, vF 0.5">
-              <h3 class="feat-content-list-title">Insurance</h3>
-              <p class="feat-content-list-text">{{page.vert-text-insurance}}</p>
-              <a href="{{ site.baseurl }}/insurance" class="btn btn-light btn-block">Read More</a>
-            </li>
-          </ul>
+        <h2>{{page.vert-section-title}}</h2>
+        <div class="feat-content-list">
+          <a href="{{ site.baseurl }}/transport" class="feat-content-list-item col-1-3" data-sr="wait 0.1s, scale up 20%">
+            <span class="verticals-home-bubble verticals-bubble-transport">Transport</span>
+            <h3 class="feat-content-list-title">Health</h3>
+            <p class="feat-content-list-text">{{page.vert-text-health}} </p>
+            <button class="btn-light btn-block">Read More</button>
+          </a>
+          <a href="{{ site.baseurl }}/health" class="feat-content-list-item col-1-3" data-sr="wait 0.2s, scale up 20%">
+            <span class="verticals-home-bubble verticals-bubble-health">Health</span>
+            <h3 class="feat-content-list-title">Transport</h3>
+            <p class="feat-content-list-text">{{page.vert-text-transport}}</p>
+            <button class="btn-light btn-block">Read More</button>
+          </a>
+          <a href="{{ site.baseurl }}/insrance" class="feat-content-list-item col-1-3" data-sr="wait 0.3s, scale up 20%">
+            <span class="verticals-home-bubble verticals-bubble-insurance">Insurance</span>
+            <h3 class="feat-content-list-title">Insurance</h3>
+            <p class="feat-content-list-text">{{page.vert-text-insurance}}</p>
+            <button class="btn-light btn-block">Read More</button>
+          </a>
         </div>
       </div>
     </section>
