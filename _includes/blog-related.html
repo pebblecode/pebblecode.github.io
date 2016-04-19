@@ -1,6 +1,10 @@
 <aside class="related-container">
   <h4 class="related-title grid">Related Posts</h4>
   <ul class="related-posts grid">
+
+  {% assign pstCnt = 0 %}
+
+
   {% for pcategory in page.categories %}
 
     {% assign pcatrep = pcategory | replace: ' ', '-' %}
@@ -14,8 +18,18 @@
 
           {% if post.url != page.url %}
             {% if newCat == pcatrep limit:3 %}
-              {% include blog-related-post.html %}
-              {% assign noblogposts = false %}
+
+              {% if pstCnt < 3 %}
+
+                {% include blog-related-post.html %}
+                {% assign noblogposts = false %}
+
+
+                {% assign pstCnt = pstCnt | plus: 1 %}
+
+                {% endif %}
+
+
             {% endif %}
           {% endif %}
 
