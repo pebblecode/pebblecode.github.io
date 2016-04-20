@@ -10,8 +10,6 @@ $ppl-bgcolor: darken($blue, 6%);
 		background-color: $blue;
     transform: rotate(0.8deg) scale(1.2);
 	}
-
-	.photo-inner::after { background-color: lighten($ink, 50);}
 }
 
 // People

@@ -43,15 +43,11 @@
   & + .photo-container .photo-inner  {
     &:before {
       transform: rotate(1deg) scale(1.2);
-      -ms-transform: rotate(1deg) scale(1.2);
-      -webkit-transform: rotate(1deg) scale(1.2);
     }
 
     &:after {
       background-color: $blue;
       transform: rotate(1.6deg) scale(1.2);
-      -ms-transform: rotate(1.6deg) scale(1.2);
-      -webkit-transform: rotate(1.6deg) scale(1.2);
     }
   }
 }
@@ -63,7 +59,7 @@
 
   .content-title {
     color: white;
-    border-bottom-color: rgba(white, 0.2); 
+    border-bottom-color: rgba(white, 0.2);
     text-shadow: 3px 4px 0 rgba(black, 0.2);
   }
 }
@@ -127,7 +123,7 @@
   &.benefit-holidays:after { @include sprite($holiday-white);  }
 
   &.benefit-snacks:after {
-     @include sprite($snacks-white); 
+     @include sprite($snacks-white);
     left: 28px;
   }
 
@@ -142,7 +138,7 @@
   &.benefit-social:after { @include sprite($beer-white); }
 
   &.benefit-charity:after {
-    @include sprite($charity-white); 
+    @include sprite($charity-white);
     left: 28px;
   }
 }
@@ -178,8 +174,6 @@
     z-index: 1;
     background-color: rgba(black, 0.15);
     transform: rotate(-1.2deg) scale(1.2);
-    -ms-transform: rotate(-1.2deg) scale(1.2);
-    -webkit-transform: rotate(-1.2deg) scale(1.2);
   }
 
   &:after {
@@ -189,8 +183,6 @@
     z-index: 2;
     background-color: $blue;
     transform: rotate(-0.8deg) scale(1.2);
-    -ms-transform: rotate(-0.8deg) scale(1.2);
-    -webkit-transform: rotate(-0.8deg) scale(1.2);
   }
 }
 
@@ -375,7 +367,7 @@
 
 .rt-modal {
   -webkit-overflow-scrolling: touch;
-  
+
   .rt-brand-color {
     color: $primary;
   }
@@ -403,7 +395,7 @@
 
     &:after {
       @include icon-pseudo;
-      @include sprite($close-grey); 
+      @include sprite($close-grey);
       top: 17px;
       left: 17px;
     }
@@ -450,7 +442,7 @@
       top: 0;
       left: 0;
     }
-  } 
+  }
 
   .rt-body {
 

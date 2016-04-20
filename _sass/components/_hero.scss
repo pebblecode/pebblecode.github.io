@@ -1,0 +1,164 @@
+//===============================================================================
+// HERO
+//===============================================================================
+// Hero Section
+.hero-container {
+  background-color: $primary;
+  position: relative;
+  overflow: hidden;
+
+  &::before,
+  &::after {
+    @include shadow-pseudo;
+  }
+
+  &::before {
+    bottom: 20px;
+    height: 20px;
+    background-color: rgba(black, 0.15);
+    transform: rotate(2.1deg) scale(1.2);
+  }
+
+  &::after {
+    bottom: -25px;
+    height: 50px;
+    background-color: white;
+    transform: rotate(1.3deg) scale(1.2);
+  }
+
+  .btn {
+    margin: 30px $gutter;
+    display: table;
+    box-shadow: 0 4px 0 rgba(black, 0.1);
+  }
+
+  &.aqua {
+    background-color: $aqua;
+
+    &:before {
+      bottom: 25px;
+      transform: rotate(1.8deg) scale(1.2);
+      -ms-transform: rotate(1.8deg) scale(1.2);
+      -webkit-transform: rotate(1.8deg) scale(1.2);
+    }
+
+    &:after {
+      transform: rotate(1.2deg) scale(1.2);
+      -ms-transform: rotate(1.2deg) scale(1.2);
+      -webkit-transform: rotate(1.2deg) scale(1.2);
+    }
+  }
+
+  &.blue {
+    background-color: $blue;
+
+    &:before {
+      bottom: 25px;
+      transform: rotate(-2.2deg) scale(1.4);
+      -ms-transform: rotate(-2.2deg) scale(1.4);
+      -webkit-transform: rotate(-2.2deg) scale(1.4);
+    }
+
+    &:after {
+      transform: rotate(-1.2deg) scale(1.2);
+      -ms-transform: rotate(-1.2deg) scale(1.2);
+      -webkit-transform: rotate(-1.2deg) scale(1.2);
+    }
+
+    .hero-inner {
+      padding-bottom: 60px;
+    }
+  }
+
+  &.purple {
+    background-color: $purple;
+    margin-bottom: 50px;
+
+    @media screen and ( max-width: $medium ) {
+      margin-bottom: 0;
+    }
+
+    &:before {
+      bottom: 25px;
+      transform: rotate(-2deg) scale(1.4);
+      -ms-transform: rotate(-2deg) scale(1.4);
+      -webkit-transform: rotate(-2deg) scale(1.4);
+    }
+
+    &:after {
+      transform: rotate(-1.2deg) scale(1.2);
+      -ms-transform: rotate(-1.2deg) scale(1.2);
+      -webkit-transform: rotate(-1.2deg) scale(1.2);
+    }
+
+    .hero-inner {
+      padding-bottom: 60px;
+    }
+  }
+
+    &.green {
+    background-color: $green;
+    margin-bottom: 50px;
+
+    @media screen and ( max-width: $medium ) {
+      margin-bottom: 0;
+    }
+
+    &:before {
+      bottom: 25px;
+      transform: rotate(-2deg) scale(1.4);
+      -ms-transform: rotate(-2deg) scale(1.4);
+      -webkit-transform: rotate(-2deg) scale(1.4);
+    }
+
+    &:after {
+      transform: rotate(-1.2deg) scale(1.2);
+      -ms-transform: rotate(-1.2deg) scale(1.2);
+      -webkit-transform: rotate(-1.2deg) scale(1.2);
+    }
+
+    .hero-inner {
+      padding-bottom: 60px;
+    }
+  }
+}
+
+.hero-inner {
+  padding-top: 150px;
+  padding-bottom: 90px;
+  display: block;
+  position: relative;
+
+  @media screen and ( max-width: $medium + 100px ) {
+    padding: 90px 0 60px
+  }
+}
+
+.hero-title {
+  text-shadow: 3px 4px 0 rgba(black, 0.2);
+  color: white;
+  margin: 0 0 10px;
+  line-height: 1;
+
+  @media screen and ( max-width: $medium ) {
+    margin: 0 0 10px;
+    line-height: 1;
+  }
+}
+
+.hero-summary {
+  font-size: $beta - 6px;
+  color: white;
+  padding: 15px $gutter * 2 10px $gutter;
+  line-height: 1.4;
+
+  @media screen and ( max-width: $medium ) {
+    font-size: $delta + 2px;
+    line-height: 1.4;
+    padding: 10px $gutter;
+  }
+
+  @media screen and ( max-width: $small ) {
+    font-size: $delta;
+  }
+}
