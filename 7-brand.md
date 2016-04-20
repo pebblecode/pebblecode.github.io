@@ -154,7 +154,7 @@ The fonts can be accessed [here](https://drive.google.com/drive/u/0/folders/0B4m
 
 #### Headings
 
-<h1 style="background-color:#EE4F7E;color:white;padding:2vw">Jet from Gladiators to host a millennium barn dance at Yeovil aerodrome.</h1>
+<h1 style="background-color:#Ed4F7E;color:white;padding:2vw">Jet from Gladiators to host a millennium barn dance at Yeovil aerodrome.</h1>
 
 Notice that headings are always capitalised. Drop Shadows can be used optionally. The drop shadow values are:
 
