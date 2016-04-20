@@ -2,7 +2,7 @@
 // WORK
 //===============================================================================
 .project-container {
-  background-color: white;
+  background-color: $purple;
   z-index: 1;
   overflow-x: hidden;
 }
@@ -12,8 +12,9 @@
 }
 
 .project-item {
-  padding-top:20px;
-  padding-bottom:20px;
+  color: white;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .project-title {
@@ -30,7 +31,6 @@
 
 .project-item-container {
   position: relative;
-  color: white;
 
   hr {
     border-color: rgba(white, 0.2);
@@ -65,36 +65,34 @@
 }
 
 .project-item-inner {
-  background-color: $purple;
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: top right;
-  padding: 80px $gutter 20px;
+  padding-top: 80px;
+  padding-bottom: 20px;
 
   .project-container:last-of-type & {
     padding-bottom: 50px;
   }
 
-  &:before {
+  &::before,
+  &::after {
     @include shadow-pseudo;
-    top: 20px;
     width: 100%;
+  }
+
+  &:before {
+    top: 20px;
     height: 20px;
     background-color: rgba(black, 0.15);
     transform: rotate(1.8deg) scale(1.2);
-    -ms-transform: rotate(1.8deg) scale(1.2);
-    -webkit-transform: rotate(1.8deg) scale(1.2);
   }
 
   &:after {
-    @include shadow-pseudo;
     top: -25px;
-    width: 100%;
     height: 50px;
     background-color: white;
     transform: rotate(1deg) scale(1.2);
-    -ms-transform: rotate(1deg) scale(1.2);
-    -webkit-transform: rotate(1deg) scale(1.2);
   }
 }
 
@@ -127,8 +125,6 @@
     top: auto;
     left: auto;
     transform: none;
-    -ms-transform: none;
-    -webkit-transform: none;
     padding-top: 175px;
   }
 
@@ -153,13 +149,9 @@
 }
 
 .project-aqua {
-  .project-item-inner {
-    background-color: $aqua;
+  background-color: $aqua;
 
-    &:after {
-      background-color:$pink;
-    }
-  }
+  .project-item-inner::after { background-color: $pink; }
 }
 
 .project-last {
@@ -173,48 +165,30 @@
 }
 
 .project-blue {
-  .project-item-inner {
-    background-color: $blue;
-  }
-    & + .photo-container:after {
-    background-color:$green;
-  }
+  background-color: $blue;
 
-  .photo-inner:after {
-    background-color: $blue;
-  }
+  & + .photo-container:after { background-color: $green; }
 }
 
 .project-pink {
-  .project-item-inner {
-    background-color: $pink;
+  background-color: $pink;
 
-    &:after {
-      background-color:$orange;
-    }
-   }
+  .project-item-inner::after { background-color: $orange; }
 }
 
 .project-green {
-  .project-item-inner {
-    background-color: $green;
+  background-color: $green;
 
-    &:after {
-      background-color:$blue;
-    }
-  }
+  .project-item-inner::after { background-color: $blue; }
 }
 
 .project-orange {
   .project-item-inner {
     background-color: $orange;
 
-    &:after {
-      background-color:$orange;
-    }
-
-    &:before {
-      background-color:$orange;
+    &::after,
+    &::before {
+      background-color: $orange;
     }
   }
 }
@@ -224,29 +198,31 @@
     background-color: $purple;
 
     &:after {
-      background-color:$orange;
+      background-color: $orange;
     }
+  }
+}
+
+.project-item-img-feat {
+  margin-bottom: 30px;
+  max-width: 50%;
+
+  @media screen and ( max-width: $medium ) {
+    margin-bottom: 20px;
   }
 }
 
 .work-photo-container {
   background-color: $aqua;
-  -webkit-transform-style: preserve-3d;
-  -moz-transform-style: preserve-3d;
   transform-style: preserve-3d;
 
   &:before {
-    //photo shadows background: transparent;
     transform: rotate(1.2deg) scale(1.2);
-    -ms-transform: rotate(1.2deg) scale(1.2);
-    -webkit-transform: rotate(1.2deg) scale(1.2);
   }
 
   &:after {
     background-color: white;
     transform: rotate(0.8deg) scale(1.2);
-    -ms-transform: rotate(0.8deg) scale(1.2);
-    -webkit-transform: rotate(0.8deg) scale(1.2);
   }
 
   @media screen and (max-width: 650px) {
@@ -257,8 +233,7 @@
     height: 500px;
   }
 
-
-  .photo-inner{
+  .photo-inner {
     height: 400px;
 
     @media screen and ( min-width: 1500px ) {
@@ -272,19 +247,11 @@
 }
 
 .pink-top {
-  .project-item-inner {
-    background-color: $pink;
+  background-color: $pink;
 
-    &:before {
-      background-color:$pink;
-    }
-
-    &:after {
-      background-color:$pink;
-    }
-  }
-
-  .photo-container:after {
+  .project-item-inner::before,
+  .project-item-inner::after,
+  .photo-container::after {
     background-color: $pink;
   }
 }
@@ -302,7 +269,7 @@
 }
 
 .purple-top {
-  background-color:$purple;
+  background-color: $purple;
 
   .photo-inner:after {
     background-color: $purple;
@@ -315,8 +282,8 @@
 
 // Video Full Width
 video {
-  width: 100%    !important;
-  height: auto   !important;
+  width: 100% !important;
+  height: auto !important;
 
   @media screen and (min-width: 632px) {
   position: relative;
@@ -381,10 +348,10 @@ video {
 }
 
 .alignme {
-    display:inline-block;
-    float:none;
-    margin-right:-4px;
-    vertical-align:middle;
+  display: inline-block;
+  float: none;
+  margin-right: -4px;
+  vertical-align: middle;
 }
 
 .intranet-desktop {
@@ -424,7 +391,6 @@ video {
   @media (min-width: 0px) and (max-width: 366px){
     left: 191px;
   }
-
 }
 
 .project-container img .intranet-mobile {
@@ -434,11 +400,9 @@ video {
   }
 }
 
-
 .photo-inner.mobile {
   visibility: hidden;
 }
-
 
 // White Text Box
 .aside-container.work-container {
@@ -454,10 +418,6 @@ video {
     width: 80%;
     font-size: 16px;
   }
-}
-
-.ink {
-  color: $ink;
 }
 
 .work-container {
