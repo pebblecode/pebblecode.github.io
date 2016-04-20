@@ -70,11 +70,11 @@ This logo is primarily for avatar situations, where a square branded element is 
 **pebble pink**
 
 
-`RGB: 238, 079, 126`
+`RGB: 237, 079, 126`
 
 `HEX: #ED4F7E`
 
-`HSL:  342, 82, 62`
+`HSL:  342, 81, 62`
 
 
 #### Secondary Colours
