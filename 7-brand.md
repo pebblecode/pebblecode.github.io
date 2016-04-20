@@ -15,9 +15,9 @@ hero-btn-url:
 ---
 
 
-The purpose of brand is to strongly identify things that are consistent with the company ethic. A lot of this is visual, but text, audio, and physical artefacts can all contribute to the brand. 
+The purpose of brand is to strongly identify things that are consistent with the company ethic. A lot of this is visual, but text, audio, and physical artefacts can all contribute to the brand.
 
-By taking every opportunity to reinforce the brand, we strengthen ourselves as a team. This contributes directly to the success of the company, and by association you as an individual. 
+By taking every opportunity to reinforce the brand, we strengthen ourselves as a team. This contributes directly to the success of the company, and by association you as an individual.
 
 <br>
 <br>
@@ -72,7 +72,7 @@ This logo is primarily for avatar situations, where a square branded element is 
 
 `RGB: 238, 079, 126`
 
-`HEX: #EE4F7E`
+`HEX: #ED4F7E`
 
 `HSL:  342, 82, 62`
 
@@ -161,9 +161,9 @@ Notice that headings are always capitalised. Drop Shadows can be used optionally
 `text-shadow: 3px 4px 0 rgba(0,0,0,0.2);`
 
 #### Body Copy
-This document is set in the correct body copy style, i.e. Meta, pebble ink. Blockquotes may be highlighted in pebble pink: 
+This document is set in the correct body copy style, i.e. Meta, pebble ink. Blockquotes may be highlighted in pebble pink:
 
-> Big Yellow Taxi there by Joni Mitchell, a song in which she complains that they 'paved paradise to put up a parking lot' - a measure which actually would have alleviated traffic congestion on the outskirts of paradise. Something which Joni singularly fails to point out, perhaps because it doesn't quite fit in with her blinkered view of the world. Nevertheless, nice song. 
+> Big Yellow Taxi there by Joni Mitchell, a song in which she complains that they 'paved paradise to put up a parking lot' - a measure which actually would have alleviated traffic congestion on the outskirts of paradise. Something which Joni singularly fails to point out, perhaps because it doesn't quite fit in with her blinkered view of the world. Nevertheless, nice song.
 
 
 
@@ -171,14 +171,14 @@ This document is set in the correct body copy style, i.e. Meta, pebble ink. Bloc
 ### Lab banner graphics
 
 ![Example of a heading](/img/brand/pebble-lab-banner-logo-pink-white-1500x500.png)
-This branding element is used in places where visual interest is needed to make the branded artefact stand out. Sometimes the pebble pink can become too slab-like and overwhelming. The white-on-pink banner breaks up that effect somewhat. The pink-on-white banner is useful for title pages of documents. 
+This branding element is used in places where visual interest is needed to make the branded artefact stand out. Sometimes the pebble pink can become too slab-like and overwhelming. The white-on-pink banner breaks up that effect somewhat. The pink-on-white banner is useful for title pages of documents.
 
 ## Writing on-brand
 
 It is easier to specify visual guidelines for a brand than written ones. But the brand should have a specific 'voice'. In particular, the brand voice should be:
 
 * **Not overly formal**. This means that we should avoid overly wordy formulations. We should avoid words like 'formulations' - here it would be better to say something like 'phrases'. There is enough jargon in the technology world for anyone - adding a stuffy feeling to our writing does not help to clarify matters.
-* **Not too informal**. In general we should not use shortened forms that are common in speech, for example "you're", "they're", "don't". The voice does not employ slang unless absolutely necessary. 
+* **Not too informal**. In general we should not use shortened forms that are common in speech, for example "you're", "they're", "don't". The voice does not employ slang unless absolutely necessary.
 
 
 
