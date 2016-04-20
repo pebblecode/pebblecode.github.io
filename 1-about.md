@@ -18,7 +18,7 @@ cover-img: features/stickies.jpg
 
 ## Promoting autonomy, mastery and purpose
 
-In 2010 Alex and George were programming and renting desks from [pebble.it][2] and quickly began to have too much work for themselves. Shortly after that Toby bounded over to them and suggested they start a business. 
+In 2010 Alex and George were programming and renting desks from [pebble.it][2] and quickly began to have too much work for themselves. Shortly after that Toby bounded over to them and suggested they start a business. Thus pebble {code} was born.
 
 The common vision of pebble's founders is to build the company that they wanted to work at. They knew that designers and developers are smart, self-organising people who crave autonomy and hate heavy management layers. They knew that for innovation to thrive collaboration, teamwork and an inspiring environment were all that mattered. 
 
