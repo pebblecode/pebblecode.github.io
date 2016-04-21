@@ -147,7 +147,8 @@ This logo is primarily for avatar situations, where a square branded element is 
 
 The pebble {code} fonts are:
 
-* **Brandon Grotesque** (for headings)
+* **Brandon Grotesque** (for headings on pebblecode.com)
+* **Brandon Text** (for headings everywhere else)
 * **Meta** (for body text)
 
 The fonts can be accessed [here](https://drive.google.com/drive/u/0/folders/0B4mkyflO8zoEUFZSV2VKQ29WNjg).
