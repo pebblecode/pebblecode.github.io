@@ -3,6 +3,7 @@
 //===============================================================================
 // Services Navigation
 .services-nav-container {
+  margin-top: -150px;
   background-color: white;
   position: relative;
   text-align: center;
@@ -10,14 +11,21 @@
   &::after {
     @include shadow-pseudo;
     top: -20px;
-    height: 50px;
-    background-color: white;
-    transform: rotate(-1.8deg) scale(1.2);
+    height: 100px;
+    background-color: lighten($ink, 50);
+    transform: rotate(1.8deg) scale(1.2);
   }
 }
 
+.services-nav-header {
+  top: 115px;
+  z-index: 1;
+  position: relative;
+  text-align: left;
+}
+
 .services-nav {
-  padding: 30px 20px 10px;
+  padding: 130px 20px 10px;
   margin-bottom: 0;
   position: relative;
   z-index: 1;
@@ -25,6 +33,10 @@
   overflow-y: hidden;
   overflow-x: scroll;
   -webkit-overflow-scrolling: touch;
+
+  @media screen and ( max-width: $medium ) {
+    padding-top: 110px;
+  }
 
   &::-webkit-scrollbar {
     width: 15px;
@@ -48,26 +60,86 @@
 
 .services-nav-item {
   display: inline-block;
+  position: relative;
   text-align: center;
-  padding: 0 10px;
-  width: 180px;
+  width: 160px;
   line-height: 1.2;
   vertical-align: top;
-  transition: 0.4s;
 
-  &:hover { transform: scale(1.1); }
+  @media screen and ( max-width: $medium ) {
+    width: 110px;
+  }
+
+  &:hover {
+    .services-nav-bubble { transform: scale(1.1) rotate(5deg); }
+
+    .services-nav-title {
+      opacity: 1;
+      bottom: 160px;
+
+      @media screen and ( max-width: $medium ) {
+        bottom: 110px;
+      }
+    }
+  }
+
+  &:nth-of-type(even):hover {
+    .services-nav-bubble { transform: scale(1.1) rotate(-5deg); }
+  }
 }
 
 .services-nav-bubble {
+  transition: 0.6s;
   display: block;
-  margin-bottom: 10px;
   width: 160px;
   height: 160px;
+
+  @media screen and ( max-width: $medium ) {
+    width: 110px;
+    height: 110px;
+  }
 }
 
 .services-nav-title {
   white-space: normal;
+  max-width: 160px;
   color: $ink;
+  display: block;
+  padding: 10px 5px 0;
+
+  @media screen and ( max-width: $medium ) {
+    max-width: 110px;
+    font-size: $epsilon;
+  }
+
+  .touch-device & {}
+
+  .click-device & {
+    bottom: 180px;
+    position: absolute;
+    opacity: 0;
+    transition: 0.4s;
+    background-color: white;
+    box-shadow: 0 0 6px rgba(black, 0.1);
+    padding: 12px 8px;
+
+    @media screen and ( max-width: $medium ) {
+      bottom: 120px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      z-index: 1;
+      width: 18px;
+      height: 18px;
+      bottom: -7px;
+      left: 50%;
+      transform: translateX(-50%) rotate(45deg);
+      background-color: white;
+      box-shadow: 2px 2px 6px -2px rgba(black, 0.1);
+    }
+  }
 }
 
 // Services Process
@@ -79,7 +151,8 @@
   padding-bottom: 40px;
 
   @media screen and ( max-width: $medium + 150px ) {
-    margin-top: 20px;
+    margin-top: -30px;
+    padding-bottom: 70px;
   }
 
   &:after {
@@ -88,7 +161,7 @@
     width: 100%;
     height: 50px;
     background-color: white;
-    transform: rotate(-1.3deg) scale(1.2);
+    transform: rotate(-2deg) scale(1.2);
   }
 }
 
@@ -106,7 +179,7 @@
   background-color: $purple;
   position: relative;
   margin: 0;
-  padding-top: 30px;
+  padding-top: 20px;
   padding-bottom: 50px;
   transition: background-color 0.8s;
   transform: translateZ(0);
@@ -119,18 +192,18 @@
   &:before {
     @include shadow-pseudo;
     top: 0;
-    height: 20px;
+    height: 30px;
     background-color: rgba(black, 0.15);
-    transform: rotate(1.5deg) scale(1.2);
+    transform: rotate(-1.5deg) scale(1.2);
     z-index: 1;
   }
 
   &:after {
     @include shadow-pseudo;
     top: -25px;
-    height: 30px;
+    height: 40px;
     background-color: white;
-    transform: rotate(1.3deg) scale(1.2);
+    transform: rotate(-1.3deg) scale(1.2);
     z-index: 1;
   }
 }
