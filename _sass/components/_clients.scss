@@ -1,0 +1,26 @@
+//===============================================================================
+// CLIENTS GRID
+//===============================================================================
+.client-container {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: lighten($ink, 45);
+  background-color: white;
+  position: relative;
+
+  @media screen and ( max-width: $medium ) {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
+.client-item {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  position: relative;
+  text-align: center;
+  vertical-align: vertical;
+  z-index: 2;
+
+  img { display: block; }
+}
