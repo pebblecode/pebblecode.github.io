@@ -110,8 +110,6 @@
     box-shadow: 0 0 8px rgba(black, 0.3);
     z-index: -1;
     transform: rotate(-0.4deg) skew(1.2deg);
-    -ms-transform: rotate(-0.4deg) skew(1.2deg);
-    -webkit-transform: rotate(-0.4deg) skew(1.2deg);
   }
 }
 
@@ -135,8 +133,6 @@
     box-shadow: 0 0 6px rgba(black, 0.15);
     z-index: -1;
     transform: rotate(-0.8deg) skew(0.8deg);
-    -ms-transform: rotate(-0.8deg) skew(0.8deg);
-    -webkit-transform: rotate(-0.8deg) skew(0.8deg);
   }
 }
 
@@ -171,8 +167,6 @@
     z-index: 1;
     background-color: rgba(black, 0.15);
     transform: rotate(-1.2deg) scale(1.2);
-    -ms-transform: rotate(-1.2deg) scale(1.2);
-    -webkit-transform: rotate(-1.2deg) scale(1.2);
   }
 
   &:after {
@@ -182,23 +176,17 @@
     z-index: 2;
     background-color: white;
     transform: rotate(-0.8deg) scale(1.2);
-    -ms-transform: rotate(-0.8deg) scale(1.2);
-    -webkit-transform: rotate(-0.8deg) scale(1.2);
   }
 }
 
 .home-photo-container {
   &:before {
     transform: rotate(1.2deg) scale(1.2);
-    -ms-transform: rotate(1.2deg) scale(1.2);
-    -webkit-transform: rotate(1.2deg) scale(1.2);
   }
 
   &:after {
     background-color: $aqua;
     transform: rotate(0.8deg) scale(1.2);
-    -ms-transform: rotate(0.8deg) scale(1.2);
-    -webkit-transform: rotate(0.8deg) scale(1.2);
   }
 }
 
@@ -228,8 +216,6 @@
     z-index: 1;
     background-color: rgba(black, 0.15);
     transform: rotate(-1.6deg) scale(1.2);
-    -ms-transform: rotate(-1.6deg) scale(1.2);
-    -webkit-transform: rotate(-1.6deg) scale(1.2);
   }
 
   &:after {
@@ -239,8 +225,6 @@
     z-index: 2;
     background-color: white;
     transform: rotate(-1deg) scale(1.2);
-    -ms-transform: rotate(-1deg) scale(1.2);
-    -webkit-transform: rotate(-1deg) scale(1.2);
   }
 }
 
@@ -275,8 +259,6 @@
       box-shadow: 0 0 10px rgba(black, 0.2);
       z-index: -1;
       transform: rotate(-0.3deg) skew(1deg);
-      -ms-transform: rotate(-0.3deg) skew(1deg);
-      -webkit-transform: rotate(-0.3deg) skew(1deg);
     }
   }
 

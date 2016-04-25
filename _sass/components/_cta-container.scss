@@ -6,26 +6,21 @@
   &::before,
   &::after {
     @include shadow-pseudo;
+    z-index: 1;
   }
 
   &::before {
     top: -15px;
     height: 45px;
-    z-index: 1;
     background-color: rgba(black, 0.15);
     transform: rotate(-1.5deg) scale(1.2);
-    -ms-transform: rotate(-1.5deg) scale(1.2);
-    -webkit-transform: rotate(-1.5deg) scale(1.2);
   }
 
   &::after {
     top: -30px;
     height: 50px;
-    z-index: 1;
     background-color: white;
     transform: rotate(-2.2deg) scale(1.2);
-    -ms-transform: rotate(-2.2deg) scale(1.2);
-    -webkit-transform: rotate(-2.2deg) scale(1.2);
   }
 }
 

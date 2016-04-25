@@ -214,8 +214,6 @@
     z-index: 1;
     background-color: rgba(black, 0.15);
     transform: rotate(1.6deg) scale(1.2);
-    -ms-transform: rotate(1.6deg) scale(1.2);
-    -webkit-transform: rotate(1.6deg) scale(1.2);
   }
 
   &:after {
@@ -225,8 +223,6 @@
     background-color: white;
     z-index: 2;
     transform: rotate(1deg) scale(1.2);
-    -ms-transform: rotate(1deg) scale(1.2);
-    -webkit-transform: rotate(1deg) scale(1.2);
   }
 }
 
@@ -248,8 +244,6 @@
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    -webkit-transform: translateX(-50%);
   }
 
   @media screen and ( min-width: 1500px ) {
@@ -403,8 +397,6 @@
     &:hover {
       background: lighten($ink, 48);
       transform: scale(1.1);
-      -ms-transform: scale(1.1);
-      -webkit-transform: scale(1.1);
     }
   }
 

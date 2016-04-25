@@ -55,8 +55,6 @@
       box-shadow: 0 0 10px rgba(black, 0.2);
       z-index: -1;
       transform: rotate(-0.3deg) skew(1deg);
-      -ms-transform: rotate(-0.3deg) skew(1deg);
-      -webkit-transform: rotate(-0.3deg) skew(1deg);
     }
 
     &:before {
@@ -67,8 +65,6 @@
       box-shadow: 0 0 10px rgba(black, 0.2);
       z-index: -5;
       transform: rotate(2deg) skew(1deg);
-      -ms-transform: rotate(2deg) skew(1deg);
-      -webkit-transform: rotate(2deg) skew(1deg);
     }
   }
 
@@ -183,8 +179,6 @@ h4.seminar-titlestack-sub {
       box-shadow: 0 0 10px rgba(black, 0.2);
       z-index: -5;
       transform: rotate(2deg) skew(1deg);
-      -ms-transform: rotate(2deg) skew(1deg);
-      -webkit-transform: rotate(2deg) skew(1deg);
     }
   }
 }
@@ -199,8 +193,6 @@ h4.seminar-titlestack-sub {
       box-shadow: 0 0 10px rgba(black, 0.2);
       z-index: -5;
       transform: rotate(2deg) skew(1deg);
-      -ms-transform: rotate(2deg) skew(1deg);
-      -webkit-transform: rotate(2deg) skew(1deg);
     }
   }
 
@@ -406,7 +398,7 @@ h3.seminar-header-time {
              // bulbRotate 2000ms linear infinite;
   transform: scale(0.5) rotate(24deg);
   float: right;
-  top:-75px;
+  top: -75px;
   right: -60px;
   position: absolute;
 
@@ -444,8 +436,6 @@ h3.seminar-header-time {
     border: 5px solid lighten($ink, 48);
     height: 100%;
     transform: rotate(-1.2deg) scale(1.2);
-    -ms-transform: rotate(-1.2deg) scale(1.2);
-    -webkit-transform: rotate(-1.2deg) scale(1.2);
   }
 
   .seminar-form-input {
@@ -559,7 +549,6 @@ input.seminar-form-submit {
       @include sprite($vimeo-pink);
     }
   }
-
 }
 
 .seminar-location-container {
