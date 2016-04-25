@@ -220,12 +220,13 @@
   &:nth-of-type(3n)::before { transform: rotate(-0.5deg) scale(0.98); }
 
   &:hover {
+    z-index: 1;
     transform: scale(1.03);
 
     .verticals-home-bubble { transform: scale(1.1); }
 
     &::before {
-      background-color: rgba(white, 0.3);
+      background-color: lighten($blue, 17);
       box-shadow: 0 0 10px rgba(black, 0.2);
     }
   }
@@ -248,6 +249,7 @@
 }
 
 .feat-content-list-text {
+  position: relative;
   margin-bottom: 10px;
   line-height: 1.3;
 }
