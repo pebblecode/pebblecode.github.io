@@ -53,133 +53,87 @@
 }
 
 .home-photo-container {
-  background-color: $blue;
-  -webkit-transform-style: preserve-3d;
-  -moz-transform-style: preserve-3d;
-  transform-style: preserve-3d;
-
-  &:before {
-    transform: rotate(1.2deg) scale(1.2);
-    -ms-transform: rotate(1.2deg) scale(1.2);
-    -webkit-transform: rotate(1.2deg) scale(1.2);
-  }
-
-  &:after {
-    background-color: $blue;
-    transform: rotate(0.8deg) scale(1.2);
-    -ms-transform: rotate(0.8deg) scale(1.2);
-    -webkit-transform: rotate(0.8deg) scale(1.2);
-  }
+  background-color: $pink;
 
   @media screen and (max-width: 650px) {
     height: 230px;
+
+    .photo-inner { height: 230px; }
   }
 
   @media screen and (min-width: 1500px ) {
     height: 500px;
+
+    .photo-inner { height: 500px; }
   }
 
+  &::after { background-color: $blue; }
 
-  .photo-inner{
-    height: 400px;
-
-    @media screen and ( min-width: 1500px ) {
-      height: 500px;
-    }
-
-    &:after {
-      background-color: $pink;
-    }
-  }
-}
-
-// Clients
-.client-container {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  background-color: lighten($ink, 45);
-  background-color: white;
-  position: relative;
-
-  @media screen and ( max-width: $medium ) {
-    padding-top: 0;
-    padding-bottom: 0;
-  }
+  .photo-inner::after { background-color: $pink; }
 }
 
 .home .client-container {
-  padding-top: 70px;
+  padding-top: 30px;
   padding-bottom: 20px;
 
   @media screen and ( max-width: $medium ) {
     padding-top: 50px;
     padding-bottom: 0;
   }
-
-  &::before,
-  &::after {
-    @include shadow-pseudo;
-  }
-
-  &::before {
-    top: 0;
-    height: 20px;
-    z-index: 1;
-    background-color: rgba(black, 0.15);
-    transform: rotate(1.4deg) scale(1.2);
-    -ms-transform: rotate(1.4deg) scale(1.2);
-    -webkit-transform: rotate(1.4deg) scale(1.2);
-  }
-
-  &::after {
-    top: -40px;
-    height: 50px;
-    z-index: 1;
-    background-color: $aqua;
-    transform: rotate(1deg) scale(1.2);
-    -ms-transform: rotate(1deg) scale(1.2);
-    -webkit-transform: rotate(1deg) scale(1.2);
-  }
-}
-
-.client-item {
-  padding-top: 5px;
-  padding-bottom: 5px;
-  position: relative;
-  text-align: center;
-  vertical-align: vertical;
-  z-index: 2;
-}
-
-.client-item img {
-  width: 100%;
 }
 
 // Featured Case Study
 .feat-content-container {
-  background-color: $aqua;
   position: relative;
-  padding-bottom: 50px;
-
-  &.blue-bg {
-    background-color: $blue;
-  }
 
   @media screen and ( max-width: $medium ) {
     padding-top: 0;
     padding-bottom: 40px;
   }
+
+  &::before,
+  &::after {
+    @include shadow-pseudo;
+    z-index: 1;
+  }
+
+  &::before {
+    bottom: 0;
+    height: 20px;
+    background-color: rgba(black, 0.15);
+    transform: rotate(1.5deg) scale(1.2);
+  }
+
+  &::after {
+    bottom: -40px;
+    height: 50px;;
+    background-color: white;
+    transform: rotate(1.4deg) scale(1.2);
+  }
 }
 
 .feat-content {
   padding-top: 20px;
-  padding-bottom: 0;
+  padding-bottom: 50px;
   color: white;
 
-  .meta-title-container {
-    padding: 30px 0 40px;
+  @media screen and ( max-width: $medium ) {
+    padding-bottom: 30px;
   }
 
+  .meta-title-container {
+    padding: 50px 0 40px;
+
+    @media screen and ( max-width: $medium ) {
+      padding: 20px 0 30px;
+    }
+  }
+}
+
+.feat-content-title {
+  text-shadow: 2px 2px 0 rgba($grey, 0.4);
+  line-height: 1;
+  margin-bottom: 30px;
 }
 
 .feat-content-text {
@@ -189,11 +143,9 @@
   }
 
   .btn-block {
-    margin: 30px 0 0;
-    padding: 12px 25px;
+    margin-top: 30px;
     display: table;
     position: relative;
-    z-index: 2;
   }
 
   h3 {
@@ -202,18 +154,14 @@
     line-height: 1.1;
   }
 
-  p {
-    font-size: $delta;
-  }
+  p { font-size: $delta; }
 }
 
 .feat-content-img {
+  top: 10px;
   z-index: 2;
-  height: 540px;
-  right: 0;
-  bottom: -70px;
-  position: absolute;
-  overflow: hidden;
+  height: 450px;
+  position: relative;
 
   img {
     position: absolute;
@@ -238,155 +186,135 @@
   max-width: 340px;
 }
 
-// Vertical Section
-.home .blue-top {
-  .project-item-inner {
-    background-color: $blue;
-    padding: 60px 20px 35px 20px;
+// Featured Content Lists
+.feat-content-list {}
 
-    &:before {
-      background-color:$blue;
-    }
-
-    &:after {
-      background-color:$blue;
-    }
-   }
-}
-
-.vert-content-img {
-  height: 351px;
-  left: 0;
-  bottom: 0px;
-  background: no-repeat;
-  background-image: url(../img/verticals/vert-home.svg);
-
-  img {
-    position: absolute;
-  }
+.feat-content-list-item {
+  position: relative;
+  margin-top: 20px;
+  padding: 20px;
+  transition: 0.5s;
 
   @media screen and ( max-width: $medium + 100px ) {
-    display: none;
-  }
-}
-
-.vert-content-img-bg {
-  height:100%;
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
-.vert-content-img-insurance,
-.vert-content-img-health,
-.vert-content-img-transport {
-  max-width: 120px;
-  max-height:200px;
-}
-
-.vert-content-img-transport {
-  left: 10px;
-}
-
-.vert-content-img-health {
-  left: 140px;
-  top: 10px;
-}
-
-.vert-content-img-insurance{
-  left: 70px;
-  top: 140px;
-}
-
-@media (max-width: 799px) and (min-width: 500px) {
-  .vert-content-img-health {
-    left: 300px;
+    width: 100%;
+    display: block;
   }
 
-  .vert-content-img-insurance {
-    left: 200px;
-    top: 195px;
-  }
-}
-
-@media screen and (min-width: 500px) {
-  .vert-content-img-insurance {
-    left: 150px;
-    max-width: 140px;
-    top: 165px;
-  }
-  .vert-content-img-health {
-    max-width: 155px;
-    left: 250px;
-  }
-  .vert-content-img-transport {
-    max-width: 162px;
-    top: 50px;
-  }
-}
-
-@media (max-width: 920px) and (min-width: 799px)  {
-  .vert-content-img-health {
-    left: 200px;
-  }
-}
-
-.home .projects-item-inner.verticals {
-  @media screen and (max-width: 800px) {
-    padding-top: 320px;
+  &::before {
+    @include shadow-pseudo;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: 0.3s;
+    transform: rotate(-0.3deg) scale(0.98);
+    background-color: rgba(white, 0.2);
+    box-shadow: 0 0 10px rgba(black, 0.1);
   }
 
-  @media screen and (max-width: 500px) {
-    padding-top: 400px;
+  @media screen and ( min-width: $medium + 100px ) {
+    &:nth-of-type(even) { top: 5px; }
   }
 
-  @media (max-width: 400px) and (min-width: 300px) {
-      padding-top: 450px;
-  }
-
-  @media (max-width: 350px) and (min-width: 0px) {
-    padding-top: 500px;
-  }
-}
-
-.vert-home-bubble {
-  display: inline-block;
-  max-height:200px;
-  transition: 0.2s;
-  transform: scale(1.0);
+  &:nth-of-type(2n)::before { transform: rotate(0.6deg) scale(0.98); }
+  &:nth-of-type(3n)::before { transform: rotate(-0.5deg) scale(0.98); }
 
   &:hover {
-  transform: scale(1.1);
+    z-index: 1;
+    transform: scale(1.03);
 
-    @media screen and ( max-width: $medium ) {
-      transform: none;
+    .verticals-home-bubble { transform: scale(1.1); }
+
+    &::before {
+      background-color: lighten($blue, 17);
+      box-shadow: 0 0 10px rgba(black, 0.2);
     }
   }
+
+  .btn-block {
+    margin: 20px auto 10px;
+    display: table;
+    position: relative;
+    padding: 11px 15px 10px;
+
+    &:hover { background-color: rgba(white, 0.3); }
+  }
 }
 
-.home-vert-text {
-  margin-top: 12px;
-  margin-bottom: 0;
+.feat-content-list-title {
+  font-size: $beta;
+  position: relative;
+  letter-spacing: 0;
+  margin-bottom: 5px;
+}
 
-  &:first-of-type {
-    margin-top: 0;
+.feat-content-list-text {
+  position: relative;
+  margin-bottom: 10px;
+  line-height: 1.3;
+}
+
+// Vertical Section
+.verticals-content-container {
+  padding: 15px 0 30px;
+  text-align: center;
+
+  @media screen and ( max-width: $medium + 100px ) {
+    text-align: center;
+    padding: 5px 10px 30px;
+
+    h2 { margin-bottom: 40px; }
   }
 
-  .bold {
-    font-family: $brandon;
-    text-transform: uppercase;
-    font-style: italic;
-    font-weight: bold;
+  &::before {
+    bottom: 0;
+    height: 20px;
+    background-color: rgba(black, 0.15);
+    transform: rotate(-1.4deg) scale(1.2);
+  }
+
+  &::after {
+    bottom: -40px;
+    height: 50px;;
+    background-color: $aqua;
+    transform: rotate(-1deg) scale(1.2);
+  }
+
+  h2, h3 {
     text-shadow: 2px 2px 0 rgba($grey, 0.4);
+    line-height: 1.1;
+  }
+
+  .feat-content-list-item { color: white; }
+}
+
+.verticals-home-bubble {
+  @include hide-text;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: relative;
+  width: 200px;
+  height: 200px;
+  display: inline-block;
+  transition: 0.7s;
+  box-shadow: 0 0 20px rgba(black, 0.3);
+  border-radius: 50%;
+  margin: -35px auto 15px;
+
+  @media screen and ( max-width: $medium ) {
+    width: 150px;
+    height: 150px;
   }
 }
 
-$insurcolor1: $purple;
-$insurcolor2: #3A5173;
-$insurcolor3: #F24A7D;
+.verticals-bubble-transport {
+  background-image: url(../img/verticals/vert-transport-home.svg);
+}
 
-.home-vert-btn-wrap {
-  padding-right: 32px;
-  margin-top: 10px;
-  margin-bottom: 25px;
+.verticals-bubble-health {
+  background-image: url(../img/verticals/vert-health-home.svg);
+}
+
+.verticals-bubble-insurance {
+  background-image: url(../img/verticals/vert-insurance-home.svg);
 }

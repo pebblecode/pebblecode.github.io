@@ -21,6 +21,9 @@
 // ANIMATIONS: CSS Animations
 @import "shared/_animations.scss";
 
+// THEMES: Themes that can be reused.
+@import "shared/_themes.scss";
+
 // LAYOUT: Base layout, Grid
 @import "shared/_layout.scss";
 
@@ -35,14 +38,17 @@
 
 // COMPONENTS
 // ===================================================
-// GLOBAL HEADER: Global header across all pages.
+// GLOBAL HEADER: Global header across all pages
 @import "components/_gbl-head.scss";
 
-// GLOBAL FOOTER: Global footer across all pages.
+// GLOBAL FOOTER: Global footer across all pages
 @import "components/_gbl-foot.scss";
 
 // HERO: Used globally
 @import "components/_hero.scss";
+
+// CLIENTS GRID: Grid of client icons
+@import "components/_clients.scss";
 
 // SHARE: Share buttons that can be reused
 @import "components/_share.scss";

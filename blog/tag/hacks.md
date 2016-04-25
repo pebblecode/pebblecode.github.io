@@ -1,7 +1,7 @@
 ---
 layout: blog-by-tag
-title: blog-Hacks
-permalink: blog/tag/Hacks/
+title: blog-hacks
+permalink: blog/tag/hacks/
 colour:
-category: Hacks
+category: hacks
 ---

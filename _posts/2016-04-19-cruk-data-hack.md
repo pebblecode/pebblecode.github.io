@@ -52,7 +52,7 @@ Through investigating various data sources, we discovered that the majority of N
 
 Over the course of a just a few days we were able to create an accessible API, and build an app on top of that data to enable users to investigate Cancer statistics.
 
-The finished website is available [here](https://cruk.pebblecode.net). It contains a map of England showing how different CCGs compare against each other on various metrics. When you select a CCG you can view summary info - this is similar to what was previously hand-made, except it is auto-generated using the API.
+The finished website is available [here](http://cruk.pebblecode.net). It contains a map of England showing how different CCGs compare against each other on various metrics. When you select a CCG you can view summary info - this is similar to what was previously hand-made, except it is auto-generated using the API.
 
 On top of that we created an API which makes the data easily accessible. It is publicly available at [https://pebblecode-cruk-api.herokuapp.com](https://pebblecode-cruk-api.herokuapp.com) (documentation [here](https://github.com/pebblecode/cruk-api/wiki)). This makes working with the data programmatically extremely easy, so anyone can get involved with the data if they have an interesting idea.
 
