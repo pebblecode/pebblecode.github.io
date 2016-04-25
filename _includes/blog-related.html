@@ -4,6 +4,7 @@
 
   {% assign pstCnt = 0 %}
 
+  {% assign relatedArray = "" | split:"|"  %}
 
   {% for pcategory in page.categories %}
 
@@ -24,10 +25,13 @@
                 {% include blog-related-post.html %}
                 {% assign noblogposts = false %}
 
+                {% assign relatedArray = relatedArray | push: post.title %}
+
 
                 {% assign pstCnt = pstCnt | plus: 1 %}
 
                 {% endif %}
+
 
 
             {% endif %}
@@ -38,5 +42,7 @@
     {% endfor %}
 
   {% endfor %}
+
+  {{ relatedArray }}
   </ul>
 </aside>
