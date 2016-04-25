@@ -364,7 +364,7 @@ h3.seminar-header-time {
   }
 
   @media screen and ( max-width: $medium ) {
-    font-weight: $font-bold;
+    font-weight: $font-black;
   }
 }
 
@@ -520,7 +520,7 @@ input.seminar-form-submit {
   @media screen and ( max-width: $small ) {
     span {
       display: block;
-      font-weight: $font-bold;
+      font-weight: $font-black;
     }
   }
 
@@ -529,7 +529,7 @@ input.seminar-form-submit {
     height: 22px;
     padding-left: 28px;
     margin-right: 6px;
-    font-weight: $font-bold;
+    font-weight: $font-black;
     padding-top: 2px;
 
     @media screen and ( max-width: $medium ) {
@@ -580,7 +580,7 @@ h3.seminar-info-item {
   margin-top: 6px;
 
   &:first-of-type {
-    font-weight: $font-bold;
+    font-weight: $font-black;
   }
 }
 

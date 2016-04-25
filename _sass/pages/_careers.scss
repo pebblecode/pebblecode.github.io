@@ -373,10 +373,9 @@
 
 .rt-modal {
   -webkit-overflow-scrolling: touch;
+  -webkit-font-smoothing: subpixel-antialiased;
 
-  .rt-brand-color {
-    color: $primary;
-  }
+  .rt-brand-color { color: $primary; }
 
   .rt-dialog {
     border-radius: 0;
@@ -451,29 +450,16 @@
   }
 
   .rt-body {
-
     h2 {
       color: $primary;
       margin: 20px 0 0;
       font-size: $beta;
     }
 
-    h3 {
-      color: $ink;
-    }
-
-    p {
-      line-height: 1.4;
-      margin-bottom: 18px;
-    }
-
-    ul {
-      margin-left: $gutter;
-    }
-
-    ul li p {
-      line-height: 1;
-    }
+    h3 { color: $ink; }
+    p { margin-bottom: 18px; }
+    ul { margin-left: $gutter; }
+    ul li p { line-height: 1; }
   }
 
   .rt-footer {
@@ -488,8 +474,6 @@
       display: table;
     }
 
-    .rt-btn-link {
-      display: none;
-    }
+    .rt-btn-link { display: none; }
   }
 }

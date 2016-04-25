@@ -150,11 +150,9 @@
   font-size: $beta - 6px;
   color: white;
   padding: 15px $gutter * 2 10px $gutter;
-  line-height: 1.4;
 
   @media screen and ( max-width: $medium ) {
     font-size: $delta + 2px;
-    line-height: 1.4;
     padding: 10px $gutter;
   }
 

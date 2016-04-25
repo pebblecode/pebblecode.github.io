@@ -32,35 +32,9 @@
   position: relative;
   color: white;
 
-  hr {
-    border-color: rgba(white, 0.2);
-    margin-bottom: 30px;
-  }
-
   .project-item-title {
     text-shadow: 2px 3px 0 rgba(black, 0.2);
     line-height: 1;
-  }
-
-  .project-item-intro {
-    font-size: $gamma + 6px;
-    margin-bottom: 40px;
-    color: rgba(black, 0.4);
-    line-height: 1.2;
-    font-family: $brandon;
-    font-weight: $font-black;
-    font-style: italic;
-    text-transform: uppercase;
-    letter-spacing: -1px;
-  }
-
-  p {
-    font-size: $delta;
-    line-height: 1.4;
-
-    @media screen and ( max-width: $medium ) {
-      font-size: $delta;
-    }
   }
 }
 

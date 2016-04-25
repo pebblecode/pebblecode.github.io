@@ -5,7 +5,7 @@
 *::before,
 *:after{
   box-sizing: border-box;
-  font-family: $brandon;
+  font-family: $brandon-text;
   text-rendering: optimizeSpeed;
   box-sizing: border-box;
   padding: 0;
@@ -25,7 +25,7 @@ body {
   background-color: white;
   font-size: $body-font-size;
   font-weight: $font-regular;
-  line-height: 1.5;
+  line-height: 1.4;
   color: $ink;
   overflow-x: hidden;
 }

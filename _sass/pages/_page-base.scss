@@ -23,12 +23,13 @@
   }
 }
 
-.content-intro {
+.content-intro,
+.content {
   font-size: $delta + 2px;
   line-height: 1.5;
 
   @media screen and ( max-width: $medium ) {
-    font-size: $delta - 2px;
+    font-size: $delta;
   }
 }
 
@@ -136,7 +137,7 @@
 }
 
 .meta-author {
-  font-weight: $font-bold;
+  font-weight: $font-black;
   display: block;
   color: white;
 }

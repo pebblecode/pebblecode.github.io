@@ -81,7 +81,7 @@ abbr[title] {
 // Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
 b,
 strong {
-  font-weight: $font-bold;
+  font-weight: $font-black;
 }
 
 // Address styling not present in Safari 5 and Chrome.
@@ -286,7 +286,7 @@ textarea {
 // Don't inherit the `font-weight` (applied by a rule above).
 // NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
 optgroup {
-  font-weight: $font-bold;
+  font-weight: $font-black;
 }
 
 // Tables
