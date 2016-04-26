@@ -18,12 +18,11 @@
     z-index: 1;
     background-color: lighten($ink, 50);
     transform: rotate(1.2deg) scale(1.2);
-    -ms-transform: rotate(1.2deg) scale(1.2);
-    -webkit-transform: rotate(1.2deg) scale(1.2);
   }
 }
 
 .related-title {
+  font-size: $beta - 2px;
   padding: 0 40px 30px;
   position: relative;
   z-index: 1;
@@ -34,7 +33,7 @@
 }
 
 .related-post-item {
-  padding: 30px;
+  padding: 35px 30px;
   position: relative;
   z-index: 1;
   transition: 0.3s transform;
@@ -49,15 +48,13 @@
   &::before {
     @include shadow-pseudo;
     z-index: -1;
-    height: calc(100% + 10px);
-    width: calc(100% + 10px);
-    top: -5px;
-    left: -5px;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
     background-color: white;
     box-shadow: 0 0 10px 0 rgba(black, 0.1);
     transform: rotate(-0.6deg);
-    -ms-transform: rotate(-0.6deg);
-    -webkit-transform: rotate(-0.6deg);
   }
 
   &:not(:nth-child(-n+3)) { display: none; }
@@ -74,14 +71,10 @@
 
   &:nth-child(2)::before {
     transform: rotate(0.3deg);
-    -ms-transform: rotate(0.3deg);
-    -webkit-transform: rotate(0.3deg);
   }
 
   &:nth-child(3)::before {
     transform: rotate(-0.7deg);
-    -ms-transform: rotate(-0.7deg);
-    -webkit-transform: rotate(-0.7deg);
   }
 
   .btn {
@@ -115,8 +108,13 @@
   .post-categories {
     display: table;
     margin-top: 8px;
+
+    li { margin-right: 5px; }
+  }
+
+  .blog-category-title {
     position: relative;
-    z-index: 2;
+    z-index: 3;
   }
 
   .post-author { color: $ink; }

@@ -1,9 +1,8 @@
 <aside class="related-container">
-  <h4 class="related-title grid">Related Posts</h4>
+  <h3 class="related-title grid">Related Posts</h3>
   <ul class="related-posts grid">
 
   {% assign pstCnt = 0 %}
-
 
   {% for pcategory in page.categories %}
 
@@ -24,11 +23,9 @@
                 {% include blog-related-post.html %}
                 {% assign noblogposts = false %}
 
-
                 {% assign pstCnt = pstCnt | plus: 1 %}
 
                 {% endif %}
-
 
             {% endif %}
           {% endif %}
