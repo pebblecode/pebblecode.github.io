@@ -4,7 +4,7 @@ title:
 permalink: /
 
 ## Hero Content
-hero-title: Innovate like a startup
+hero-title: Innovate like a start-up
 hero-subtitle: We help businesses propel their digital capability and enable innovation.
 
 ## Main background image
