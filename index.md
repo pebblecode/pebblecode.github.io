@@ -4,8 +4,8 @@ title:
 permalink: /
 
 ## Hero Content
-hero-title: Digital Transformation Consultancy
-hero-subtitle: Design Thinking, Rapid Prototyping and Agile Software Development.
+hero-title: Innovate like a startup
+hero-subtitle: We help businesses propel their digital capability and enable innovation.
 
 ## Main background image
 cover-img: features/couch.jpg
