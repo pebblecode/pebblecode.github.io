@@ -2,7 +2,7 @@
 layout: post
 title: Putting Pen to Paper
 date: '2015-04-07T16:10:12+01:00'
-categories: []
+categories: [hacks]
 author: Ian Black
 tumblr_url: http://blog.pebblecode.com/post/115765249231/putting-pen-to-paper
 ---
