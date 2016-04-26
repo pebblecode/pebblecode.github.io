@@ -102,7 +102,6 @@
 }
 
 // Insurance Bubbles
-//===============================================================================
 .vert-insur-list-container {
   text-align: left;
   width: 50%;
@@ -208,7 +207,6 @@ a.vert-insur-cta-link {
 }
 
 // Paragraphs and Points
-//===============================================================================
 .vert-section-points {
   max-width: 50%;
 
@@ -292,10 +290,7 @@ a.vert-insur-cta-link {
   margin-bottom: 24px;
 }
 
-
 // Sections
-//===============================================================================
-
 .vert-section-container {
   background-color: $primary;
   position: relative;
@@ -382,10 +377,7 @@ a.vert-insur-cta-link {
   }
 
   &:last-of-type {
-    &:before {
-     content: none;
-    }
-
+    &:before,
     &:after {
      content: none;
     }
@@ -459,7 +451,6 @@ a.vert-insur-cta-link {
       color: white;
       font-weight: $font-bold;
     }
-
   }
 
   td {
@@ -504,10 +495,10 @@ a.vert-insur-cta-link {
 
 h4.vert-section-breadcrumb {
   margin-bottom: 4px;
-  color: rgba(black, 0.2);
+  color: rgba(black, 0.3);
 
   &:after {
-    content: ">";
+    content: "›";
     margin-left: 4px;
   }
 }
