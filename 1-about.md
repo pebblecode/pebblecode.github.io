@@ -22,6 +22,8 @@ In 2010 Alex and George were programming and renting desks from [pebble.it][2] a
 
 The common vision of pebble's founders is to build the company that they wanted to work at. They knew that designers and developers are smart, self-organising people who crave autonomy and hate heavy management layers. They knew that for innovation to thrive collaboration, teamwork and an inspiring environment were all that mattered. 
 
+Embracing Lean and Agile philosophies we put highly talented creative technologists into small cross-functional teams and watch great things happen. 
+
 ## Learning Together
 
 Promoting innovation expresses itself in a strong culture of experimentation, learning and hacking. Staff are able to take 10% time to experiment with new techniques and technologies. The business runs regular hack days that promote innovation and collaboration. Each month anyone is free to present a [lightning talk][1] on a topic of interest. We are interested in learning together and continuing to explore. 
