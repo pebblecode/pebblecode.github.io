@@ -4,41 +4,54 @@
 .gbl-head {
   background-color: $primary;
   border-bottom: 1px solid rgba(white, 0.25);
-  padding: 40px $gutter * 2 20px;
   position: fixed;
   width: 100%;
   z-index: 10;
   transition: all 0.3s linear;
 
-  @media screen and ( max-width: $medium + 100px ) {
-    position: fixed;
-    padding: 20px 0 15px;
+  &.pink { background-color: $pink; }
+  &.aqua { background-color: $aqua; }
+  &.blue { background-color: $blue; }
+  &.purple { background-color: $purple; }
+
+  &.show { top: 0; }
+  &.hide { top: -120px; }
+}
+
+.gbl-head.gbl-head-scroll {
+  background-color: white;
+  box-shadow: 0 0 20px rgba(black, 0.2);
+  border: none;
+
+  .gbl-head-logo::after {
+    @include sprite($logo-pink);
   }
 
-  &.pink {
-    background-color: $pink;
+  .gbl-head-nav-item {
+    color: $ink;
+
+    &:hover {
+      border-top-color: rgba($pink, 0.2);
+      color: $pink;
+    }
   }
 
-  &.aqua {
-    background-color: $aqua;
-  }
-
-  &.blue {
-    background-color: $blue;
-  }
-
-  &.purple {
-    background-color: $purple;
-  }
-
-  &.transparent {
-    background-color: transparent;
-    box-shadow: none;
+  .gbl-head-nav-item.active,
+  .blog & .gbl-head-nav-item:last-child,
+  .post & .gbl-head-nav-item:last-child {
+    color: $pink;
+    border-color: $pink;
   }
 }
 
-.show { top: 0; }
-.hide { top: -92px; }
+.gbl-head-inner {
+  padding: 40px $gutter * 2 20px;
+  position: relative;
+
+  @media screen and ( max-width: $medium + 100px ) {
+    padding: 20px 0 15px;
+  }
+}
 
 .gbl-head-logo {
   position: relative;
@@ -49,7 +62,7 @@
   height: 31px;
   transition: 0.2s;
 
-  &:after {
+  &::after {
     @include icon-pseudo;
     @include sprite($logo-white);
     bottom: 0;
@@ -107,6 +120,8 @@
     padding: 10px $gutter;
     margin: 1px 0 0;
 
+    .gbl-head.gbl-head-scroll & { background-color: lighten($ink, 50); }
+
     &:first-child {
       margin-top: 9px;
 
@@ -127,6 +142,9 @@
       &:hover:after {
         border-bottom-color: rgba(black, 0.12);
       }
+
+      .gbl-head.gbl-head-scroll &:after { border-bottom-color: lighten($ink, 50); }
+      .gbl-head.gbl-head-scroll &:hover:after{ border-bottom-color: lighten($ink, 47); }
     }
   }
 
@@ -136,6 +154,8 @@
 
     @media screen and ( max-width: $medium ) {
       background-color: rgba(black, 0.12);
+
+      .gbl-head.gbl-head-scroll & { background-color: lighten($ink, 47); }
     }
   }
 
@@ -160,6 +180,11 @@
   border-radius: 50%;
   box-shadow: 0 4px 0 rgba(black, 0.1);
   transition: box-shadow 0.2s, opacity 0.2s;
+
+  .gbl-head.gbl-head-scroll & {
+    background-color: lighten($ink, 45);
+    box-shadow: none;
+  }
 
   &:after {
     @include icon-pseudo;

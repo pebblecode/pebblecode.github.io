@@ -1,10 +1,11 @@
 .post {
-  .gbl-head,
+  .gbl-head:not(.gbl-head-scroll),
   .hero-container {
     background-color: $aqua;
   }
 
   .content-container { margin-top: 10px; }
+  .hero-inner { padding-bottom: 50px; }
 }
 
 .post-header {
