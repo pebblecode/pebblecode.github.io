@@ -2,7 +2,7 @@
 layout: post
 title: Single Page Apps for Admin Backends - Who needs them ?
 author: Martin Schinz
-categories: [spa]
+categories: [coding]
 ---
 
 ## No app is TodoMVC
@@ -105,4 +105,3 @@ extra effort of having to implement the same state engine in two places.
 
 My next admin Back Office System is almost certainly going to be using [boring
 technology](http://mcfunley.com/choose-boring-technology).
-

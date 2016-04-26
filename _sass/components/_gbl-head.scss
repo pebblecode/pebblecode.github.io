@@ -9,9 +9,6 @@
   width: 100%;
   z-index: 10;
   transition: all 0.3s linear;
-    -moz-transition: all 0.3s linear;
-    -webkit-transition: all 0.3s linear;
-
 
   @media screen and ( max-width: $medium + 100px ) {
     position: fixed;
@@ -40,12 +37,8 @@
   }
 }
 
-.show {
-    top: 0;
-}
-.hide {
-    top: -92px;
-}
+.show { top: 0; }
+.hide { top: -92px; }
 
 .gbl-head-logo {
   position: relative;

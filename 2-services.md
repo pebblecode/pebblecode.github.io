@@ -6,7 +6,7 @@ group: nav
 colour: aqua
 
 ## Hero Content
-hero-title:
+hero-title: Services
 hero-subtitle:
 hero-btn:
 hero-btn-url:

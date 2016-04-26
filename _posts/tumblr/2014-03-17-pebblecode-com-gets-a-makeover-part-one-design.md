@@ -21,7 +21,7 @@ This post is going to focus on the design process for the new site. You can read
 
 <p>The pebble {code} logo was slightly revamped. Our logo is set in the excellent <a href="https://www.fontfont.com/fonts/meta">FF Meta</a> by Erik Spiekermann. With the previous logo we made some edits to make the type more geometric. This was definitely a mistake. We are now using an un-edited version of FF Meta that looks much better and is more closely aligned with the pebble.it logo (also set in meta).</p>
 
-<p>We have also made some changes to the pebble {code} colour palette. When the previous version of the site was released we used six colours interchangeably and had no single primary brand colour. Over time we naturally started to favour ‘pebble pink’ in brand assets. We’ve now made this change official focusing on ‘pebble pink’ (#EE4F7E) but still using the other 5 colours for accents.</p>
+<p>We have also made some changes to the pebble {code} colour palette. When the previous version of the site was released we used six colours interchangeably and had no single primary brand colour. Over time we naturally started to favour ‘pebble pink’ in brand assets. We’ve now made this change official focusing on ‘pebble pink’ (#ED4F7E) but still using the other 5 colours for accents.</p>
 
 <h3>pebblecode.com</h3>
 

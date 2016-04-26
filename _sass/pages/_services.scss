@@ -1,6 +1,87 @@
 //===============================================================================
 // SERVICES
 //===============================================================================
+// Services List
+.services-list-container {
+  width: 90%;
+  padding: 35px 30px 30px;
+  margin: -10px 5% 50px;
+
+  &::after {
+    border: 1px solid white;
+    background-color: lighten($ink, 50);
+
+    @media screen and ( max-width: $medium + 150px ) {
+      display: none;
+    }
+  }
+
+  @media screen and ( max-width: $medium + 150px ) {
+    box-shadow: none;
+    width: 100%;
+    padding: 0 20px 0;
+    margin: -20px 0 30px;
+  }
+
+  .services-list-header {
+    padding: 0 0 $gutter;
+    line-height: 1;
+    text-align: center;
+
+    @media screen and ( max-width: $medium + 150px ) {
+      text-align: left;
+      border-bottom: 5px solid lighten($ink, 50);
+      margin-bottom: 20px;
+    }
+
+    @media screen and ( max-width: $medium ) {
+      padding-bottom: 10px;
+    }
+  }
+}
+
+.services-list { padding: 0; }
+
+.services-list-item {
+  padding-right: 0;
+  height: 80px;
+
+  @media screen and ( max-width: $medium + 150px ) {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin-bottom: 10px;
+  }
+}
+
+.services-list-inner {
+  display: block;
+
+  &:hover {
+    .services-list-bubble { transform: scale(1.15); }
+    .services-list-title { color: $pink; }
+  }
+}
+
+.services-list-bubble {
+  transition: 0.4s;
+  width: 70px;
+  height: 70px;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.services-list-title {
+  transition: 0.2s;
+  color: $ink;
+  padding: 0 5px;
+  display: inline-block;
+  width: calc(100% - 90px);
+  vertical-align: middle;
+  line-height: 1.3;
+  font-size: $delta;
+}
+
 // Services Process
 .services-process-container {
   background-color: lighten($ink, 50);
@@ -8,19 +89,13 @@
   position: relative;
   overflow-x: hidden;
 
-  @media screen and ( max-width: $medium + 150px ) {
-    margin-top: 20px;
-  }
-
   &:after {
     @include shadow-pseudo;
     top: -25px;
     width: 100%;
     height: 50px;
     background-color: white;
-    transform: rotate(-1.3deg) scale(1.2);
-    -ms-transform: rotate(-1.3deg) scale(1.2);
-    -webkit-transform: rotate(-1.3deg) scale(1.2);
+    transform: rotate(-2deg) scale(1.2);
   }
 }
 
@@ -38,23 +113,22 @@
   background-color: $purple;
   position: relative;
   margin: 0;
-  padding-top: 50px;
   padding-bottom: 50px;
   transition: background-color 0.8s;
   transform: translateZ(0);
+  z-index: 1;
 
   @media screen and ( max-width: $medium + 150px ) {
+    padding-top: 40px;
     padding-bottom: 0;
   }
 
   &:before {
     @include shadow-pseudo;
-    top: 10px;
-    height: 25px;
+    top: 0;
+    height: 30px;
     background-color: rgba(black, 0.15);
-    transform: rotate(2deg) scale(1.2);
-    -ms-transform: rotate(2deg) scale(1.2);
-    -webkit-transform: rotate(2deg) scale(1.2);
+    transform: rotate(1.5deg) scale(1.2);
     z-index: 1;
   }
 
@@ -64,8 +138,6 @@
     height: 40px;
     background-color: lighten($ink, 50);
     transform: rotate(1.3deg) scale(1.2);
-    -ms-transform: rotate(1.3deg) scale(1.2);
-    -webkit-transform: rotate(1.3deg) scale(1.2);
     z-index: 1;
   }
 }
@@ -100,8 +172,6 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
   width: 100%;
 
   @media screen and ( max-width: $medium + 150px ) {
@@ -109,8 +179,6 @@
     top: auto;
     left: auto;
     transform: none;
-    -ms-transform: none;
-    -webkit-transform: none;
     padding-top: 200px;
   }
 }

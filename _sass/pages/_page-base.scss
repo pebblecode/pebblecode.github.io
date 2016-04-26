@@ -1,169 +1,6 @@
 //===============================================================================
 // PAGE BASE
 //===============================================================================
-// Hero Section
-.hero-container {
-  background-color: $primary;
-  position: relative;
-  overflow: hidden;
-
-  &:before {
-    @include shadow-pseudo;
-    bottom: 20px;
-    height: 20px;
-    background-color: rgba(black, 0.15);
-    transform: rotate(2.1deg) scale(1.2);
-    -ms-transform: rotate(2.1deg) scale(1.2);
-    -webkit-transform: rotate(2.1deg) scale(1.2);
-  }
-
-  &:after {
-    @include shadow-pseudo;
-    bottom: -25px;
-    height: 50px;
-    background-color: white;
-    transform: rotate(1.3deg) scale(1.2);
-    -ms-transform: rotate(1.3deg) scale(1.2);
-    -webkit-transform: rotate(1.3deg) scale(1.2);
-  }
-
-  .btn {
-    margin: 30px $gutter;
-    display: table;
-    box-shadow: 0 4px 0 rgba(black, 0.1);
-  }
-
-  &.aqua {
-    background-color: $aqua;
-
-    &:before {
-      bottom: 25px;
-      transform: rotate(1.8deg) scale(1.2);
-      -ms-transform: rotate(1.8deg) scale(1.2);
-      -webkit-transform: rotate(1.8deg) scale(1.2);
-    }
-
-    &:after {
-      transform: rotate(1.2deg) scale(1.2);
-      -ms-transform: rotate(1.2deg) scale(1.2);
-      -webkit-transform: rotate(1.2deg) scale(1.2);
-    }
-  }
-
-  &.blue {
-    background-color: $blue;
-
-    &:before {
-      bottom: 25px;
-      transform: rotate(-2.2deg) scale(1.4);
-      -ms-transform: rotate(-2.2deg) scale(1.4);
-      -webkit-transform: rotate(-2.2deg) scale(1.4);
-    }
-
-    &:after {
-      transform: rotate(-1.2deg) scale(1.2);
-      -ms-transform: rotate(-1.2deg) scale(1.2);
-      -webkit-transform: rotate(-1.2deg) scale(1.2);
-    }
-
-    .hero-inner {
-      padding-bottom: 60px;
-    }
-  }
-
-  &.purple {
-    background-color: $purple;
-    margin-bottom: 50px;
-
-    @media screen and ( max-width: $medium ) {
-      margin-bottom: 0;
-    }
-
-    &:before {
-      bottom: 25px;
-      transform: rotate(-2deg) scale(1.4);
-      -ms-transform: rotate(-2deg) scale(1.4);
-      -webkit-transform: rotate(-2deg) scale(1.4);
-    }
-
-    &:after {
-      transform: rotate(-1.2deg) scale(1.2);
-      -ms-transform: rotate(-1.2deg) scale(1.2);
-      -webkit-transform: rotate(-1.2deg) scale(1.2);
-    }
-
-    .hero-inner {
-      padding-bottom: 60px;
-    }
-  }
-
-    &.green {
-    background-color: $green;
-    margin-bottom: 50px;
-
-    @media screen and ( max-width: $medium ) {
-      margin-bottom: 0;
-    }
-
-    &:before {
-      bottom: 25px;
-      transform: rotate(-2deg) scale(1.4);
-      -ms-transform: rotate(-2deg) scale(1.4);
-      -webkit-transform: rotate(-2deg) scale(1.4);
-    }
-
-    &:after {
-      transform: rotate(-1.2deg) scale(1.2);
-      -ms-transform: rotate(-1.2deg) scale(1.2);
-      -webkit-transform: rotate(-1.2deg) scale(1.2);
-    }
-
-    .hero-inner {
-      padding-bottom: 60px;
-    }
-  }
-}
-
-.hero-inner {
-  padding-top: 150px;
-  padding-bottom: 90px;
-  display: block;
-  position: relative;
-
-  @media screen and ( max-width: $medium + 100px ) {
-    padding: 90px 0 60px
-  }
-}
-
-.hero-title {
-  text-shadow: 3px 4px 0 rgba(black, 0.2);
-  color: white;
-  margin: 0 0 10px;
-  line-height: 1;
-
-  @media screen and ( max-width: $medium ) {
-    margin: 0 0 10px;
-    line-height: 1;
-  }
-}
-
-.hero-summary {
-  font-size: $beta - 6px;
-  color: white;
-  padding: 15px $gutter * 2 10px $gutter;
-  line-height: 1.4;
-
-  @media screen and ( max-width: $medium ) {
-    font-size: $delta + 2px;
-    line-height: 1.4;
-    padding: 10px $gutter;
-  }
-
-  @media screen and ( max-width: $small ) {
-    font-size: $delta;
-  }
-}
-
 // Content
 .content-container {
   margin-top: 30px;
@@ -273,8 +110,6 @@
     box-shadow: 0 0 8px rgba(black, 0.3);
     z-index: -1;
     transform: rotate(-0.4deg) skew(1.2deg);
-    -ms-transform: rotate(-0.4deg) skew(1.2deg);
-    -webkit-transform: rotate(-0.4deg) skew(1.2deg);
   }
 }
 
@@ -298,8 +133,6 @@
     box-shadow: 0 0 6px rgba(black, 0.15);
     z-index: -1;
     transform: rotate(-0.8deg) skew(0.8deg);
-    -ms-transform: rotate(-0.8deg) skew(0.8deg);
-    -webkit-transform: rotate(-0.8deg) skew(0.8deg);
   }
 }
 
@@ -334,8 +167,6 @@
     z-index: 1;
     background-color: rgba(black, 0.15);
     transform: rotate(-1.2deg) scale(1.2);
-    -ms-transform: rotate(-1.2deg) scale(1.2);
-    -webkit-transform: rotate(-1.2deg) scale(1.2);
   }
 
   &:after {
@@ -345,23 +176,17 @@
     z-index: 2;
     background-color: white;
     transform: rotate(-0.8deg) scale(1.2);
-    -ms-transform: rotate(-0.8deg) scale(1.2);
-    -webkit-transform: rotate(-0.8deg) scale(1.2);
   }
 }
 
 .home-photo-container {
   &:before {
     transform: rotate(1.2deg) scale(1.2);
-    -ms-transform: rotate(1.2deg) scale(1.2);
-    -webkit-transform: rotate(1.2deg) scale(1.2);
   }
 
   &:after {
     background-color: $aqua;
     transform: rotate(0.8deg) scale(1.2);
-    -ms-transform: rotate(0.8deg) scale(1.2);
-    -webkit-transform: rotate(0.8deg) scale(1.2);
   }
 }
 
@@ -391,8 +216,6 @@
     z-index: 1;
     background-color: rgba(black, 0.15);
     transform: rotate(-1.6deg) scale(1.2);
-    -ms-transform: rotate(-1.6deg) scale(1.2);
-    -webkit-transform: rotate(-1.6deg) scale(1.2);
   }
 
   &:after {
@@ -402,8 +225,6 @@
     z-index: 2;
     background-color: white;
     transform: rotate(-1deg) scale(1.2);
-    -ms-transform: rotate(-1deg) scale(1.2);
-    -webkit-transform: rotate(-1deg) scale(1.2);
   }
 }
 
@@ -438,8 +259,6 @@
       box-shadow: 0 0 10px rgba(black, 0.2);
       z-index: -1;
       transform: rotate(-0.3deg) skew(1deg);
-      -ms-transform: rotate(-0.3deg) skew(1deg);
-      -webkit-transform: rotate(-0.3deg) skew(1deg);
     }
   }
 
