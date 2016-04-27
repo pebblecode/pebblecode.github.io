@@ -19,21 +19,12 @@
 
   // Navigation appear on scroll up
   var gblHead = $('.gbl-head');
-  var scrollCurrent = 0;
   $(window).scroll(function() {
-    var scrollDiff = $(this).scrollTop();
-    if(scrollDiff > scrollCurrent && scrollDiff > 100 && gblHeadNav.hasClass("active") === false) {
-       gblHead.addClass('hide').removeClass('show');
-    } else {
-       gblHead.addClass('show').removeClass('hide');
-    }
-    scrollCurrent = scrollDiff;
-
-    if ($(this).scrollTop() >= 290) {
+    if ($(this).scrollTop() >= 50) {
       gblHead.addClass('gbl-head-scroll');
     }
     else {
-      gblHead.removeClass('gbl-head-scroll hide');
+      gblHead.removeClass('gbl-head-scroll');
     }
   });
 

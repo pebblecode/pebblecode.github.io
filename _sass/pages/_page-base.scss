@@ -45,6 +45,8 @@
       margin-bottom: 30px;
       padding-bottom: 10px;
     }
+
+    &:not(:first-of-type) { margin-top: 50px; }
   }
 
   h3 {
