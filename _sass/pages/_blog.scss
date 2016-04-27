@@ -17,7 +17,7 @@
   .hero-inner { padding-bottom: 50px; }
 }
 
-.blog-by-tag .gbl-head { background-color: $blue; }
+.blog-by-tag .gbl-head:not(.gbl-head-scroll) { background-color: $blue; }
 
 .hero-container-blog,
 .hero-container-blog.aqua {
