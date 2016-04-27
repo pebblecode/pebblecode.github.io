@@ -57,6 +57,8 @@
 .post-meta {}
 
 .post-author {
+  font-weight: $font-bold;
+  
   @media screen and ( max-width: $medium ) {
     font-size: $delta;
   }
