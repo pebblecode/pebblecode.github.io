@@ -130,12 +130,6 @@
   }
 }
 
-.feat-content-title {
-  text-shadow: 2px 2px 0 rgba($grey, 0.4);
-  line-height: 1;
-  margin-bottom: 30px;
-}
-
 .feat-content-text {
   @media screen and ( max-width: $medium + 100px ) {
     width: 100%;
@@ -151,7 +145,6 @@
   h3 {
     color: white;
     text-shadow: 2px 2px 0 rgba($grey, 0.4);
-    line-height: 1.1;
   }
 
   p { font-size: $delta; }
@@ -282,7 +275,6 @@
 
   h2, h3 {
     text-shadow: 2px 2px 0 rgba($grey, 0.4);
-    line-height: 1.1;
   }
 
   .feat-content-list-item { color: white; }

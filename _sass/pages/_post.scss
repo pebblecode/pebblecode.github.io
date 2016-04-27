@@ -36,7 +36,6 @@
   .post-title {
     margin-bottom: 40px;
     color: $primary;
-    line-height: 1;
 
     @media screen and ( max-width: $large ) {
       font-size: $mega + 4px;
@@ -58,7 +57,7 @@
 
 .post-author {
   font-weight: $font-bold;
-  
+
   @media screen and ( max-width: $medium ) {
     font-size: $delta;
   }

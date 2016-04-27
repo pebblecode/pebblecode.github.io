@@ -102,8 +102,6 @@
       box-shadow: 0 0 10px rgba(black, 0.2);
       z-index: -1;
       transform: rotate(2deg) skew(1deg);
-      -ms-transform: rotate(2deg) skew(1deg);
-      -webkit-transform: rotate(2deg) skew(1deg);
     }
   }
 
@@ -113,14 +111,9 @@
   }
 }
 
-.invite-section {
-  margin: 30px auto;
-}
+.invite-section { margin: 30px auto; }
 
-h3.invite-title {
-  margin-bottom: 0;
-  line-height: 1;
-}
+h3.invite-title { margin-bottom: 0; }
 
 p.invite-details {
   margin-top: 15px;

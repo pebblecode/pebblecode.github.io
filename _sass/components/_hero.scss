@@ -121,19 +121,13 @@
   text-shadow: 3px 4px 0 rgba(black, 0.2);
   color: white;
   margin: 0 0 10px;
-  line-height: 1;
-
-  @media screen and ( max-width: $medium ) {
-    margin: 0 0 10px;
-    line-height: 1;
-  }
 }
 
 .hero-summary {
   font-size: $beta - 6px;
   color: white;
   padding: 15px $gutter * 2 10px $gutter;
-  
+
   @media screen and ( max-width: $medium ) {
     font-size: $delta + 2px;
     padding: 10px $gutter;

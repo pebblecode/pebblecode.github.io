@@ -14,7 +14,6 @@
 .content-title {
   padding: 0 0 $gutter;
   margin: 0 $gutter 40px;
-  line-height: 1;
   border-bottom: 5px solid lighten($ink, 50);
 
   @media screen and ( max-width: $medium ) {
@@ -39,7 +38,6 @@
   h2 {
     padding: 0 0 30px;
     margin: 0 0 30px;
-    line-height: 1;
     border-bottom: 5px solid lighten($ink, 50);
 
     @media screen and ( max-width: $medium ) {
@@ -50,7 +48,6 @@
 
   h3 {
     font-size: $beta;
-    line-height: 1;
 
     @media screen and ( max-width: $medium ) {
       font-size: $beta - 4px;
@@ -256,7 +253,6 @@
 
   h3 {
     font-size: $alpha - 2px;
-    line-height: 1;
     margin-bottom: 10px;
 
     @media screen and ( max-width: $medium ) {

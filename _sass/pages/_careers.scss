@@ -329,6 +329,7 @@
     }
 
     h3 {
+      font-weight: $font-black;
       font-size: $beta;
       color: $primary;
       margin-bottom: 5px;
@@ -398,6 +399,7 @@
   }
 
   .rt-title {
+    font-weight: $font-black;
     font-size: $alpha;
     line-height: 1;
     margin: 0 0 10px;
@@ -418,6 +420,7 @@
   }
 
   .rt-offer-heading {
+    font-weight: $font-black;
     position: relative;
     margin-top: $gutter;
     padding-top: 40px;
@@ -434,6 +437,11 @@
   }
 
   .rt-body {
+    .rt-offer-heading,
+    .rt-offer-text strong {
+      font-weight: $font-black;
+    }
+
     h2 {
       color: $primary;
       margin: 20px 0 0;

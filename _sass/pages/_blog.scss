@@ -155,15 +155,11 @@
 }
 
 a .post-title {
+  line-height: 1;
   display: table;
-  font-family: $brandon;
-  font-weight: $font-black;
-  font-style: italic;
-  text-transform: uppercase;
   letter-spacing: -1px;
   color: $primary;
   transition: 0.2s;
-  line-height: 1;
   max-width: 90%;
   margin: 0 0 0px;
 

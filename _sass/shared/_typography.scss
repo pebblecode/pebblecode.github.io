@@ -24,12 +24,13 @@ h1, h2, h3, .h1, .h2, .h3, strong {
 
 h1, h2, h3, .h1, .h2, .h3 {
   @include display-text;
-  line-height: 1.3;
+  line-height: 1.1;
   font-family: $brandon;
 }
 
 h1, .h1 {
   font-size: $tera;
+  line-height: 1;
 
   @media screen and ( max-width: $medium ) {
     font-size: $mega;

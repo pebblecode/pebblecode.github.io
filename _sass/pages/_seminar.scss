@@ -120,10 +120,8 @@
 
   h3.seminar-titlestack-top,
   h3.seminar-titlestack-bottom {
-    font-size: 83px;
-
+    font-size: $tera + 5px;;
     font-style: normal;
-    line-height: 1;
 
     @media screen and ( max-width: $medium ) {
       font-size: $mega - 4px;
@@ -308,7 +306,6 @@ h5.seminar-speaker-jobtitle {
       display: block;
       margin-top: 4px;
       margin-bottom: 4px;
-      line-height: 1;
     }
 
     @media screen and ( max-width: $small ) {
