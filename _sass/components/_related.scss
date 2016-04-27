@@ -1,0 +1,130 @@
+//===============================================================================
+// RELATED POSTS
+//===============================================================================
+.related-container {
+  background-color: lighten($ink, 50);
+  position: relative;
+  padding: 10px 0 50px;
+  margin-top: 40px;
+
+  @media screen and ( max-width: $medium + 250px ) {
+    padding: 10px 20px 40px;
+  }
+
+  &::before {
+    @include shadow-pseudo;
+    top: -20px;
+    height: 40px;
+    z-index: 1;
+    background-color: lighten($ink, 50);
+    transform: rotate(1.2deg) scale(1.2);
+  }
+}
+
+.related-title {
+  font-size: $beta - 2px;
+  padding: 0 40px 30px;
+  position: relative;
+  z-index: 1;
+
+  @media screen and ( max-width: $medium + 250px ) {
+    padding: 0 0 20px;
+  }
+}
+
+.related-post-item {
+  padding: 35px 30px;
+  position: relative;
+  z-index: 1;
+  transition: 0.3s transform;
+
+  &:hover {
+    transform: scale(1.03);
+
+    .btn { @extend .btn-primary:hover; }
+    .related-post-title { color: darken($primary, 8); }
+  }
+
+  &::before {
+    @include shadow-pseudo;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: white;
+    box-shadow: 0 0 10px 0 rgba(black, 0.1);
+    transform: rotate(-0.6deg);
+  }
+
+  &:not(:nth-child(-n+3)) { display: none; }
+
+  &:nth-child(2) {
+    top: -8px;
+    z-index: 2;
+
+    @media screen and ( max-width: $medium + 250px ) {
+      top: 0;
+      left: 8px;
+    }
+  }
+
+  &:nth-child(2)::before {
+    transform: rotate(0.3deg);
+  }
+
+  &:nth-child(3)::before {
+    transform: rotate(-0.7deg);
+  }
+
+  .btn {
+    margin-top: 25px;
+    display: table;
+    padding: 12px 18px;
+    font-size: $epsilon;
+
+    @media screen and ( max-width: $medium + 250px ) {
+      display: none;
+    }
+  }
+
+  @media screen and ( max-width: $medium + 250px ) {
+    width: 100%;
+  }
+}
+
+.related-post-title {
+  font-size: $beta - 2px;
+  color: $primary;
+  line-height: 1.1;
+  margin-bottom: 10px;
+  transition: 0.2s;
+}
+
+.related-post-list-meta {
+  padding: 0;
+  line-height: 1.3;
+
+  .post-categories {
+    display: table;
+    margin-top: 8px;
+
+    li { margin-right: 5px; }
+  }
+
+  .blog-category-title {
+    position: relative;
+    z-index: 3;
+  }
+
+  .post-author { color: $ink; }
+}
+
+.related-post-link {
+  position: absolute;
+  top: -20px;
+  left: -10px;
+  width: calc(100% + 10px);
+  height: calc(100% + 20px);
+  z-index: 1;
+}
