@@ -23,17 +23,17 @@
   $(window).scroll(function() {
     var scrollDiff = $(this).scrollTop();
     if(scrollDiff > scrollCurrent && scrollDiff > 100 && gblHeadNav.hasClass("active") === false) {
-       $(gblHead).addClass('hide').removeClass('show');
+       gblHead.addClass('hide').removeClass('show');
     } else {
-       $(gblHead).addClass('show').removeClass('hide');
+       gblHead.addClass('show').removeClass('hide');
     }
     scrollCurrent = scrollDiff;
 
     if ($(this).scrollTop() >= 290) {
-      $(gblHead).addClass('gbl-head-scroll');
+      gblHead.addClass('gbl-head-scroll');
     }
     else {
-      $(gblHead).removeClass('gbl-head-scroll hide');
+      gblHead.removeClass('gbl-head-scroll hide');
     }
   });
 
@@ -47,9 +47,9 @@
 
   // Detect touch/click devices
   if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-    $( 'body' ).addClass( 'touch-device' );
+    $('body').addClass('touch-device');
   } else {
-    $( 'body' ).addClass( 'click-device' );
+    $('body').addClass('click-device');
   }
 
   // Tabs
@@ -116,7 +116,7 @@
       var target = $(this.hash);
       target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
       if (target.length) {
-        $('html,body').animate({
+        $('html, body').animate({
           scrollTop: target.offset().top
         }, 1000);
         return false;
@@ -142,13 +142,13 @@
 
   // Initialise google maps
   function initialize() {
-    initmap("map", 51.485672, -0.118554);
+    initmap('map', 51.485672, -0.118554);
   }
   function healthinit() {
-    initmap("healthmap", 51.5148475,-0.1269898);
+    initmap('healthmap', 51.5148475,-0.1269898);
   }
   function insureinit() {
-    initmap("insuremap", 51.5144918,-0.0803065);
+    initmap('insuremap', 51.5144918,-0.0803065);
   }
 
   // Initialise google map
