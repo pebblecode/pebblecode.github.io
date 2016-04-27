@@ -25,33 +25,32 @@
   padding-bottom: 30px;
 
   p {
-    font-size: 20px;
+    font-size: $delta + 2px;
     padding: 0 40px;
 
     @media screen and ( max-width: $medium ) {
-      font-size: 18px;
+      font-size: $delta;
       padding: 0 30px;
     }
   }
 
   @media screen and ( min-width: $medium ) {
-    &:before {
+    &::before,
+    &::after {
       @include shadow-pseudo;
+      box-shadow: 0 0 10px rgba(black, 0.2);
       height: 100%;
       top: 0;
+      z-index: -1;
+    }
+
+    &:before {
       background-color: rgba(white, 0.8);
-      box-shadow: 0 0 10px rgba(black, 0.2);
-      z-index: -5;
       transform: rotate(2deg) skew(1deg);
     }
 
     &:after {
-      @include shadow-pseudo;
-      height: 100%;
-      top: 0;
       background-color: white;
-      box-shadow: 0 0 10px rgba(black, 0.2);
-      z-index: -1;
       transform: rotate(-0.3deg) skew(1deg);
     }
   }
@@ -61,7 +60,7 @@
     width: calc(100% - 40px);
     margin: 10px 20px;
     padding: 0;
-    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    box-shadow: 0 0 10px rgba(black, 0.2);
   }
 }
 
@@ -110,7 +109,7 @@
 
   h3.seminar-titlestack-top,
   h3.seminar-titlestack-bottom {
-    font-size: 83px;
+    font-size: $tera + 5px;
     font-style: normal;
     line-height: 1;
 

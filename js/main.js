@@ -37,6 +37,13 @@
     gblHeadNav.toggleClass('active');
   });
 
+  // Detect touch/click devices
+  if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+    $( 'body' ).addClass( 'touch-device' );
+  } else {
+    $( 'body' ).addClass( 'click-device' );
+  }
+
   // Tabs
   var tabHeadItem = $('.tab-head-item');
   var tabContent = $('.tab-content');
@@ -172,7 +179,6 @@
     $(window).resize(scrollPositions).scroll(headerBG);
     scrollPositions();
     headerBG();
-
   }
 
   if ($(workHeaderContainer).length > 0) {

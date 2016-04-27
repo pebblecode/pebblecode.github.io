@@ -3,7 +3,7 @@ layout: post
 title:  Hack Day - Hackball
 date:   2015-06-17 11:20:20
 author: Niall Henn
-categories: [hacks, fussball, table football, raspberry pi, node js, socket io, soccer]
+categories: [hacks, fussball, node js, soccer]
 tumblr_url: http://blog.pebblecode.com/post/121746844291/hack-day-hackball
 
 ---
