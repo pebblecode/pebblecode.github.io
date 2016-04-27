@@ -18,17 +18,14 @@ p, ul, ol, dl, blockquote, pre, button {
 .zeta    { font-size: $zeta; }
 
 // HEADINGS
-h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, strong {
+h1, h2, h3, .h1, .h2, .h3, strong {
   font-weight: $font-black;
 }
 
 h1, h2, h3, .h1, .h2, .h3 {
+  @include display-text;
   line-height: 1.3;
   font-family: $brandon;
-  font-weight: $font-black;
-  font-style: italic;
-  text-transform: uppercase;
-  letter-spacing: -1px;
 }
 
 h1, .h1 {
@@ -55,14 +52,10 @@ h3, .h3 {
   }
 }
 
-h4, .h4 {
-  font-size: $gamma;
+h4, .h4, h5, .h5, h6, .h6 {
+  font-weight: $font-bold;
 }
 
-h5, .h5 {
-  font-size: $epsilon;
-}
-
-h6, .h6 {
-  font-size: $zeta;
-}
+h4, .h4 { font-size: $gamma; }
+h5, .h5 { font-size: $epsilon; }
+h6, .h6 { font-size: $zeta; }

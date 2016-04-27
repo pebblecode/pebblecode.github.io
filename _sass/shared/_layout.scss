@@ -5,7 +5,7 @@
 *::before,
 *:after{
   box-sizing: border-box;
-  font-family: $brandon-text;
+  font-family: $brandon;
   text-rendering: optimizeSpeed;
   box-sizing: border-box;
   padding: 0;
@@ -17,8 +17,6 @@ html {
   width: 100%;
   height: 100%;
   position: relative;
-  margin: 0;
-  padding: 0;
 }
 
 body {
@@ -44,13 +42,7 @@ body {
   }
 }
 
-.padded {
-  padding: $gutter;
-}
-
-.clear {
-  @include clearfix;
-}
+.clear { @include clearfix; }
 
 [class*='col-'] {
   float: left;
@@ -85,7 +77,5 @@ body {
   .mobile-col-1-4 { width: 25%; }
   .mobile-col-1-8 { width: 12.5%; }
 
-  .show-small {
-    display: none;
-  }
+  .show-small { display: none; }
 }

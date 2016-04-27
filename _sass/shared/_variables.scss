@@ -18,12 +18,11 @@ $primary: $pink;
 
 // TYPOGRAPHY
 $base-font: 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
-$brandon: 'brandon-grotesque', $base-font;
-$brandon-text: 'brandon text', $base-font;
+$brandon: 'brandon text', $base-font;
 
-$font-regular: 400; // $brandon-text only
-$font-bold: 600; // $brandon-text only
-$font-black: 900; // $brandon only
+$font-regular: 400;
+$font-bold: 600;
+$font-black: 900;
 
 $tera: 78px;
 $giga: 60px;
