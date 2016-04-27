@@ -1,21 +1,7 @@
 //===============================================================================
 // SEMINAR
 //===============================================================================
-.seminar {
-  .gbl-head {
-    background-color: transparent;
-  }
-
-  &.pink {
-    background-color: $pink;
-
-    @media screen and ( max-width: $medium + 100px ) {
-      .gbl-head {
-        background-color: $pink;
-      }
-    }
-  }
-}
+.seminar.pink { background-color: $pink; }
 
 .seminar-container {
   margin: 0 auto 40px;
