@@ -4,17 +4,11 @@
 $ppl-bgcolor: darken($blue, 6%);
 
 .about-photo-container {
-	&:before {
-    transform: rotate(1.2deg) scale(1.2);
-    -ms-transform: rotate(1.2deg) scale(1.2);
-    -webkit-transform: rotate(1.2deg) scale(1.2);
-  }
+	&::before { transform: rotate(1.2deg) scale(1.2); }
 
-	&:after {
+	&::after {
 		background-color: $blue;
     transform: rotate(0.8deg) scale(1.2);
-    -ms-transform: rotate(0.8deg) scale(1.2);
-    -webkit-transform: rotate(0.8deg) scale(1.2);
 	}
 }
 
@@ -70,20 +64,14 @@ $ppl-bgcolor: darken($blue, 6%);
   @media screen and ( min-width: $medium + 100px ) {
     .ppl-item:nth-of-type(3n-2):after {
       transform: rotate(0.3deg) skew(-0.4deg);
-      -ms-transform: rotate(0.3deg) skew(-0.4deg);
-      -webkit-transform: rotate(0.3deg) skew(-0.4deg);
     }
 
     .ppl-item:nth-of-type(3n-1):after {
       transform: rotate(-0.3deg) skew(0.5deg);
-      -ms-transform: rotate(-0.3deg) skew(0.5deg);
-      -webkit-transform: rotate(-0.3deg) skew(0.5deg);
     }
 
     .ppl-item:nth-of-type(3n):after {
       transform: rotate(0.3deg) skew(0.8deg);
-      -ms-transform: rotate(0.3deg) skew(0.8deg);
-      -webkit-transform: rotate(0.3deg) skew(0.8deg);
     }
   }
 
@@ -95,20 +83,14 @@ $ppl-bgcolor: darken($blue, 6%);
     @media screen and ( min-width: $medium + 100px ) {
       .ppl-item:nth-of-type(3n-2):after {
         transform: rotate(-0.5deg) skew(-0.5deg);
-        -ms-transform: rotate(-0.5deg) skew(-0.5deg);
-        -webkit-transform: rotate(-0.5deg) skew(-0.5deg);
       }
 
       .ppl-item:nth-of-type(3n-1):after {
         transform: rotate(0.7deg) skew(1.2deg);
-        -ms-transform: rotate(0.7deg) skew(1.2deg);
-        -webkit-transform: rotate(0.7deg) skew(1.2deg);
       }
 
       .ppl-item:nth-of-type(3n):after {
         transform: rotate(0.3deg) skew(-0.7deg);
-        -ms-transform: rotate(0.3deg) skew(-0.7deg);
-        -webkit-transform: rotate(0.3deg) skew(-0.7deg);
       }
     }
 
@@ -124,39 +106,16 @@ $ppl-bgcolor: darken($blue, 6%);
   }
 }
 
-
 // ============ Well confusing inner slant section ========= //
 .ppl-col {
    @media screen and ( min-width: $medium + 100px ) {
     .ppl-item:nth-of-type(3n-1) .ppl-portrait-wrapper {
-      &:before {
-        // background-color: red;
-        transform: rotate(-1.4deg) skew(-1.4deg);
-        -ms-transform: rotate(-1.4deg) skew(-1.4deg);
-        -webkit-transform: rotate(-1.4deg) skew(-1.4deg);
-      }
-
-      &:after {
-        // background-color: aqua;
-        transform: rotate(-1.8deg) skew(-1.8deg);
-        -ms-transform: rotate(-1.8deg) skew(-1.8deg);
-        -webkit-transform: rotate(-1.8deg) skew(-1.8deg);
-      }
+      &:before { transform: rotate(-1.4deg) skew(-1.4deg); }
+      &:after { transform: rotate(-1.8deg) skew(-1.8deg); }
 
       .ppl-portrait {
-        &:before {
-        // background-color: red;
-        transform: rotate(2.2deg) skew(2.2deg);
-        -ms-transform: rotate(2.2deg) skew(2.2deg);
-        -webkit-transform: rotate(2.2deg) skew(2.2deg);
-        }
-
-        &:after {
-          // background-color: aqua;
-          transform: rotate(1.4deg) skew(1.4deg);
-          -ms-transform: rotate(1.4deg) skew(1.4deg);
-          -webkit-transform: rotate(1.4deg) skew(1.4deg);
-        }
+        &:before { transform: rotate(2.2deg) skew(2.2deg); }
+        &:after { transform: rotate(1.4deg) skew(1.4deg); }
       }
     }
   }
@@ -165,56 +124,22 @@ $ppl-bgcolor: darken($blue, 6%);
 .ppl-col:nth-of-type(2) {
   @media screen and ( min-width: $medium + 100px ) {
     .ppl-item:nth-of-type(3n-2) .ppl-portrait-wrapper {
-      &:before {
-        transform: rotate(-1.4deg) skew(-1.4deg);
-        -ms-transform: rotate(-1.4deg) skew(-1.4deg);
-        -webkit-transform: rotate(-1.4deg) skew(-1.4deg);
-      }
-
-      &:after {
-        transform: rotate(-1.6deg) skew(-1.6deg);
-        -ms-transform: rotate(-1.6deg) skew(-1.6deg);
-        -webkit-transform: rotate(-1.6deg) skew(-1.6deg);
-      }
+      &:before { transform: rotate(-1.4deg) skew(-1.4deg); }
+      &:after { transform: rotate(-1.6deg) skew(-1.6deg); }
 
       .ppl-portrait {
-        &:before {
-        transform: rotate(2.4deg) skew(2.4deg);
-        -ms-transform: rotate(2.4deg) skew(2.4deg);
-        -webkit-transform: rotate(2.4deg) skew(2.4deg);
-        }
-
-        &:after {
-          transform: rotate(0.4deg) skew(0.4deg);
-          -ms-transform: rotate(0.4deg) skew(0.4deg);
-          -webkit-transform: rotate(0.4deg) skew(0.4deg);
-        }
+        &:before { transform: rotate(2.4deg) skew(2.4deg); }
+        &:after { transform: rotate(0.4deg) skew(0.4deg); }
       }
     }
 
     .ppl-item:nth-of-type(3n-1) .ppl-portrait-wrapper {
-      &:before {
-        transform: rotate(1.2deg) skew(1.2deg);
-        -ms-transform: rotate(1.2deg) skew(1.2deg);
-        -webkit-transform: rotate(1.2deg) skew(1.2deg);
-      }
-      &:after {
-        transform: rotate(1.5deg) skew(1.5deg);
-        -ms-transform: rotate(1.5deg) skew(1.5deg);
-        -webkit-transform: rotate(1.5deg) skew(1.5deg);
-      }
+      &:before { transform: rotate(1.2deg) skew(1.2deg); }
+      &:after { transform: rotate(1.5deg) skew(1.5deg); }
 
       .ppl-portrait {
-        &:before {
-        transform: rotate(-1.2deg) skew(-1.2deg);
-        -ms-transform: rotate(-1.2deg) skew(-1.2deg);
-        -webkit-transform: rotate(-1.2deg) skew(-0.5deg);
-        }
-        &:after {
-          transform: rotate(-0.2deg) skew(-0.2deg);
-          -ms-transform: rotate(-0.2deg) skew(-0.2deg);
-          -webkit-transform: rotate(-0.2deg) skew(-0.2deg);
-        }
+        &:before { transform: rotate(-1.2deg) skew(-1.2deg); }
+        &:after { transform: rotate(-0.2deg) skew(-0.2deg); }
       }
     }
   }
@@ -296,8 +221,6 @@ $ppl-bgcolor: darken($blue, 6%);
     z-index: 1;
     background-color: rgba(black, 0.15);
     transform: rotate(-1.6deg) scale(1.2);
-    -ms-transform: rotate(-1.6deg) scale(1.2);
-    -webkit-transform: rotate(-1.6deg) scale(1.2);
   }
 
   &:after {
@@ -307,8 +230,6 @@ $ppl-bgcolor: darken($blue, 6%);
     z-index: 2;
     background-color: $ppl-bgcolor;
     transform: rotate(-1deg) scale(1.2);
-    -ms-transform: rotate(-1deg) scale(1.2);
-    -webkit-transform: rotate(-1deg) scale(1.2);
   }
 }
 
@@ -328,8 +249,6 @@ $ppl-bgcolor: darken($blue, 6%);
     z-index: 1;
     background-color: rgba(black, 0.15);
     transform: rotate(1.2deg) scale(1.2);
-    -ms-transform: rotate(1.2deg) scale(1.2);
-    -webkit-transform: rotate(1.2deg) scale(1.2);
   }
 
   &:after {
@@ -339,8 +258,5 @@ $ppl-bgcolor: darken($blue, 6%);
     z-index: 2;
     background-color: $blue;
     transform: rotate(0.8deg) scale(1.2);
-    -ms-transform: rotate(0.8deg) scale(1.2);
-    -webkit-transform: rotate(0.8deg) scale(1.2);
   }
-
 }

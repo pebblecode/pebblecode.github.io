@@ -21,6 +21,9 @@
 // ANIMATIONS: CSS Animations
 @import "shared/_animations";
 
+// THEMES: Themes that can be reused.
+@import "shared/_themes.scss";
+
 // LAYOUT: Base layout, Grid
 @import "shared/_layout";
 
@@ -41,8 +44,17 @@
 // GLOBAL FOOTER: Global footer across all pages.
 @import "components/_gbl-foot";
 
+// HERO: Used globally
+@import "components/_hero";
+
+// CLIENTS GRID: Grid of client icons
+@import "components/_clients";
+
 // SHARE: Share buttons that can be reused
 @import "components/_share";
+
+// RELATED: Related posts component
+@import "components/_related";
 
 // CALL-TO-ACTION BANNER: Can be reused to for contact call-to-actions
 @import "components/_cta-container";

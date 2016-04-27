@@ -6,24 +6,23 @@
   position: relative;
   overflow: hidden;
 
-  &:before {
+  &::before,
+  &::after {
     @include shadow-pseudo;
+  }
+
+  &::before {
     bottom: 20px;
     height: 20px;
     background-color: rgba(black, 0.15);
     transform: rotate(2.1deg) scale(1.2);
-    -ms-transform: rotate(2.1deg) scale(1.2);
-    -webkit-transform: rotate(2.1deg) scale(1.2);
   }
 
-  &:after {
-    @include shadow-pseudo;
+  &::after {
     bottom: -25px;
     height: 50px;
     background-color: white;
     transform: rotate(1.3deg) scale(1.2);
-    -ms-transform: rotate(1.3deg) scale(1.2);
-    -webkit-transform: rotate(1.3deg) scale(1.2);
   }
 
   .btn {
@@ -38,14 +37,10 @@
     &:before {
       bottom: 25px;
       transform: rotate(1.8deg) scale(1.2);
-      -ms-transform: rotate(1.8deg) scale(1.2);
-      -webkit-transform: rotate(1.8deg) scale(1.2);
     }
 
     &:after {
       transform: rotate(1.2deg) scale(1.2);
-      -ms-transform: rotate(1.2deg) scale(1.2);
-      -webkit-transform: rotate(1.2deg) scale(1.2);
     }
   }
 
@@ -55,14 +50,10 @@
     &:before {
       bottom: 25px;
       transform: rotate(-2.2deg) scale(1.4);
-      -ms-transform: rotate(-2.2deg) scale(1.4);
-      -webkit-transform: rotate(-2.2deg) scale(1.4);
     }
 
     &:after {
       transform: rotate(-1.2deg) scale(1.2);
-      -ms-transform: rotate(-1.2deg) scale(1.2);
-      -webkit-transform: rotate(-1.2deg) scale(1.2);
     }
 
     .hero-inner {
@@ -81,14 +72,10 @@
     &:before {
       bottom: 25px;
       transform: rotate(-2deg) scale(1.4);
-      -ms-transform: rotate(-2deg) scale(1.4);
-      -webkit-transform: rotate(-2deg) scale(1.4);
     }
 
     &:after {
       transform: rotate(-1.2deg) scale(1.2);
-      -ms-transform: rotate(-1.2deg) scale(1.2);
-      -webkit-transform: rotate(-1.2deg) scale(1.2);
     }
 
     .hero-inner {
@@ -107,14 +94,10 @@
     &:before {
       bottom: 25px;
       transform: rotate(-2deg) scale(1.4);
-      -ms-transform: rotate(-2deg) scale(1.4);
-      -webkit-transform: rotate(-2deg) scale(1.4);
     }
 
     &:after {
       transform: rotate(-1.2deg) scale(1.2);
-      -ms-transform: rotate(-1.2deg) scale(1.2);
-      -webkit-transform: rotate(-1.2deg) scale(1.2);
     }
 
     .hero-inner {
@@ -150,7 +133,7 @@
   font-size: $beta - 6px;
   color: white;
   padding: 15px $gutter * 2 10px $gutter;
-
+  
   @media screen and ( max-width: $medium ) {
     font-size: $delta + 2px;
     padding: 10px $gutter;

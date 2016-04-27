@@ -4,8 +4,8 @@ title:
 permalink: /
 
 ## Hero Content
-hero-title: Digital Transformation Consultancy
-hero-subtitle: Design Thinking, Rapid Prototyping and Agile Software Development.
+hero-title: Innovate like a start-up
+hero-subtitle: We help businesses propel their digital capability and enable innovation.
 
 ## Main background image
 cover-img: features/couch.jpg
@@ -18,7 +18,7 @@ feat-excerpt: A tablet-based quality system allows a national rail company to ma
 
 ## Vertical Section:
 vert-section-title: Industry Innovation
-vert-text-health: "Precision medicine, patient centricity, smart research - insights and ideas for bottom up innovation in <span class='bold'>Health.</span>"
-vert-text-transport: "Customer satisfaction, smart ticketing, internet of things - insights and ideas for innovation in <span class='bold'>Transport.</span>"
-vert-text-insurance: "Internet of Things, cyber-security, speed to market - insights and ideas for innovation in <span class='bold'>Insurance.</span>"
+vert-text-health: "Precision medicine, patient centricity, smart research."
+vert-text-transport: "Customer satisfaction, smart ticketing, internet of things."
+vert-text-insurance: "Internet of Things, cyber-security, speed to market."
 ---

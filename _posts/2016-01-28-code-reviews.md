@@ -2,7 +2,7 @@
 layout: post
 title: Thoughts on Code Reviews
 author: Dave Hillier
-categories: [code reviews, pair programming, coding]
+categories: [coding]
 ---
 
 Code reviews are a widely accepted practice in both enterprise and open source. In the words of [Coding Horror: Just Do
@@ -87,4 +87,3 @@ should fail!
 
 Relating to the above. Are your coding standards too big to enforce? Will only the rules-lawyers do it? Avoid standards
 that can’t be enforced automatically.
-
