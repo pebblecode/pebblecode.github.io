@@ -70,8 +70,10 @@
   font-weight: normal;
   font-size: $gamma + 2px;
   padding: 10px;
+  line-height: 1.1;
 
   @media screen and ( max-width: $medium ) {
+    padding-top: 20px;
     font-size: $delta;
   }
 }
