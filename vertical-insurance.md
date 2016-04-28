@@ -2,6 +2,7 @@
 layout: vertical
 title: Insurance
 permalink: /insurance/
+categories: [innovation, insurance]
 colour: blue
 extraclasses: insurance
 extrascripts:
@@ -54,4 +55,3 @@ insurance-paragraphs:
 ---
 
 This renders as content
-

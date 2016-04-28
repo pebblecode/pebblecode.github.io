@@ -369,11 +369,7 @@ a.vert-insur-cta-link {
 
 
   &:nth-last-of-type(2) {
-    &:before {}
-
-    &:after {
-       background-color: $pink;
-    }
+    &:after { background-color: $pink; }
   }
 
   &:last-of-type {
