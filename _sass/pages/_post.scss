@@ -196,15 +196,11 @@
   &:before {
     top: 15px;
     transform: rotate(-2deg) scale(1.2);
-    -ms-transform: rotate(-2deg) scale(1.2);
-    -webkit-transform: rotate(-2deg) scale(1.2);
   }
 
   &:after {
     top: -30px;
     transform: rotate(-1.4deg) scale(1.2);
-    -ms-transform: rotate(-1.4deg) scale(1.2);
-    -webkit-transform: rotate(-1.4deg) scale(1.2);
   }
 
   .hero-inner {
