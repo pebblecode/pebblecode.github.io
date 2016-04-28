@@ -2,6 +2,7 @@
 layout: careers
 title: careers
 permalink: /careers/
+categories: [hacks]
 group: nav
 colour: purple
 
