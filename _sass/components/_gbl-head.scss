@@ -106,7 +106,9 @@
   color: white;
   display: block;
   float: left;
-  padding: 40px 15px 23px;
+  padding-top: 40px;
+  padding-bottom: 23px;
+  margin-left: $gutter + 5px;
   color: rgba(white, 0.6);
   transition: 0.2s;
   text-transform: capitalize;
