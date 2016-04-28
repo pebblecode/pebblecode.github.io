@@ -108,12 +108,11 @@
   float: left;
   padding: 40px 15px 23px;
   color: rgba(white, 0.6);
-  border-top: 5px solid transparent;
   transition: 0.2s;
   text-transform: capitalize;
 
   .gbl-head-scroll & {
-    padding-top: 17px;
+    padding-top: 21px;
     padding-bottom: 18px;
   }
 
@@ -161,7 +160,6 @@
 
   &:hover {
     color: rgba(white, 0.9);
-    border-color: rgba(white, 0.4);
 
     @media screen and ( max-width: $medium ) {
       background-color: rgba(black, 0.12);
@@ -174,7 +172,6 @@
   .blog &:last-child,
   .post &:last-child {
     color: white;
-    border-color: white;
   }
 }
 
