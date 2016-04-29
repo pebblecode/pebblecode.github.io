@@ -1,6 +1,7 @@
 ---
 layout: vertical
 title: Health
+categories: [health]
 permalink: /health/
 colour: aqua
 
@@ -81,4 +82,3 @@ sections:
 ---
 
 This renders as content
-
