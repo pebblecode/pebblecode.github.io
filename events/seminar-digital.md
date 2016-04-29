@@ -15,12 +15,16 @@ seminar-title3: Transformation
 seminar-hero: digital-seminar-hero.png
 seminar-subtitle: In the trenches
 seminar-intro-paragraphs:
-- "<a href='http://pebblecode.com'>pebble {code}</a> invite you to join us for a dinner at <a href='http://www.quaglinos-restaurant.co.uk/'>Quaglino's </a> on Bury Street to discuss the key issues in delivering successful digital transformation."
-- "The dinner will be a relaxed way to engage with peers in roundtable discussion. The dinner will be chaired by <a href='http://pebblecode.com'>pebble {code}'s</a> Chairman, <a href='https://en.wikipedia.org/wiki/Stephen_Allott'>Stephen Allott</a> who holds a long and distinguished career building technology companies and championing the digital revolution (bio below). The discussion will facilitate connections, challenge ideas and ideally uncover the secret sauce for succeeding in digital transformation."
-- "<a href='http://pebblecode.com'>pebble {code}</a> enables businesses to identify the right problems and build the right bespoke software to solve them. Specifically we help clients with user experience design, software development, adoption of Agile, adoption of cloud, digital capability building and speed to market."
-- "Technology is changing our world so fast, it is hard for big businesses to stay ahead, and we know that companies that fail to innovate, fail. Uncovering the secret sauce to sustainable digital transformation and innovation is key, and we look forward to discussing it with you."
-- "We hope you can join us - please register below."
-
+- "Please join me for a small informal dinner with peers at <a href='http://www.quaglinos-restaurant.co.uk/'>Quaglino's</a> to discuss the latest in Digital Transformation and hear some case studies."
+- "The Digital revolution is gathering pace. Are you interested in:"
+- "<ul>
+   <li>What does it take to succeed in a digital transformation?</li>
+   <li>Where are the biggest wins? Process re-design? Channel shift? Added value? Other things?</li>
+   <li>How does that vary between corporate and government?</li>
+   <li>What should be the role of the Chief Digital Officer and the centre: driver or coach?</li>
+   <li>Should you use big suppliers as primes or manage inhouse and use smaller suppliers? When is big beautiful and when is small beautiful?</li>
+   </ul>"
+- "I first worked in IT in 1976. In my 40 years in the industry this is the most exciting time. Please let me know if you would like to come or you can register below."
 
 ## Location and Time
 seminar-time: "6pm"

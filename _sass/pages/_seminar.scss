@@ -24,13 +24,24 @@
   padding-top: 30px;
   padding-bottom: 30px;
 
-  p {
+  p, ul {
     font-size: $delta + 2px;
     padding: 0 40px;
 
     @media screen and ( max-width: $medium ) {
       font-size: $delta;
       padding: 0 30px;
+    }
+  }
+
+  li {
+    margin: 0 0 10px 20px;
+    list-style-type: disc;
+    list-style-position: outside;
+    font-size: $delta + 2px;
+
+    @media screen and ( max-width: $medium ) {
+      font-size: $delta;
     }
   }
 
