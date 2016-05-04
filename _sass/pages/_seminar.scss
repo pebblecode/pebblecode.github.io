@@ -1,24 +1,12 @@
 //===============================================================================
 // SEMINAR
 //===============================================================================
-.seminar {
-  .gbl-head {
-    background-color: transparent;
-  }
-
-  &.pink {
-    background-color: $pink;
-
-    @media screen and ( max-width: $medium + 100px ) {
-      .gbl-head {
-        background-color: $pink;
-      }
-    }
-  }
+.seminar.pink {
+  background-color: $pink;
 }
 
 .seminar-container {
-  margin: 0 auto 40px;
+  margin: 50px auto 0;
   padding-top: 100px;
   padding-bottom: 40px;
 
@@ -36,35 +24,45 @@
   padding-top: 30px;
   padding-bottom: 30px;
 
-  p {
-    font-size: 20px;
+  p, ul {
+    font-size: $delta + 2px;
     padding: 0 40px;
 
     @media screen and ( max-width: $medium ) {
-      font-size: 18px;
+      font-size: $delta;
       padding: 0 30px;
     }
   }
 
+  li {
+    margin: 0 0 10px 20px;
+    list-style-type: disc;
+    list-style-position: outside;
+    font-size: $delta + 2px;
+
+    @media screen and ( max-width: $medium ) {
+      font-size: $delta;
+    }
+  }
+
   @media screen and ( min-width: $medium ) {
-    &:after {
+    &::before,
+    &::after {
       @include shadow-pseudo;
+      box-shadow: 0 0 10px rgba(black, 0.2);
       height: 100%;
       top: 0;
-      background-color: white;
-      box-shadow: 0 0 10px rgba(black, 0.2);
       z-index: -1;
-      transform: rotate(-0.3deg) skew(1deg);
     }
 
     &:before {
-      @include shadow-pseudo;
-      height: 100%;
-      top: 0;
       background-color: rgba(white, 0.8);
-      box-shadow: 0 0 10px rgba(black, 0.2);
-      z-index: -5;
       transform: rotate(2deg) skew(1deg);
+    }
+
+    &:after {
+      background-color: white;
+      transform: rotate(-0.3deg) skew(1deg);
     }
   }
 
@@ -73,7 +71,7 @@
     width: calc(100% - 40px);
     margin: 10px 20px;
     padding: 0;
-    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    box-shadow: 0 0 10px rgba(black, 0.2);
   }
 }
 
@@ -82,51 +80,54 @@
   color: $pink;
   font-weight: normal;
   font-size: $gamma + 2px;
-  margin-top: 12px;
-  margin: 10px 0 0;
+  padding: 10px;
+  line-height: 1.1;
 
   @media screen and ( max-width: $medium ) {
-    margin-top: 4px;
-    margin-bottom: 4px;
+    padding-top: 20px;
     font-size: $delta;
   }
 }
 
 .seminar-machine-img {
   width: 100%;
-  margin: 170px auto 0;
-  text-align: center;
+  margin-top: -130px;
+  left: -12px;
   position: relative;
-  z-index: 1;
+  transform: rotate(-0.3deg) skew(1deg);
 
-  @media screen and ( max-width: $medium ) {
-    margin-top: 48px;
+  @media screen and ( max-width: $large ) {
+    margin-top: -100px;
   }
 
-  @media screen and ( min-width: $large ) {
-    margin-top: 32px;
+  @media screen and ( max-width: $medium ) {
+    margin-top: -70px;
+    left: -2px;
   }
 }
 
 .seminar-titlestack {
-  margin-top: 40px;
-  position: absolute;
-  width: 100%;
+  margin: 40px auto;
   text-align: center;
   transform: skewY(-5deg);
-  text-shadow: 3px 4px 0 rgba(black, 0.2);
+  text-shadow: 3px 4px 0 rgba(black, 0.15);
   color: $ink;
-  z-index: 10;
+  position: relative;
+  z-index: 2;
+
+  @media screen and ( max-width: $medium ) {
+    margin: 20px auto 40px;
+    text-shadow: 2px 3px 0 rgba(black, 0.1);
+  }
 
   h3.seminar-titlestack-top,
   h3.seminar-titlestack-bottom {
-    font-size: 83px;
-
+    font-size: $tera + 5px;
     font-style: normal;
     line-height: 1;
 
-    @media screen and ( max-width: $medium ) {
-      font-size: $mega - 4px;
+    @media screen and ( max-width: $large ) {
+      font-size: $mega;
     }
 
     @media screen and ( max-width: $small ) {
@@ -149,14 +150,10 @@
       content: "-";
     }
   }
-
-  @media screen and ( max-width: $medium ) {
-    margin-top: 30px;
-  }
 }
 
 h4.seminar-titlestack-sub {
-  font-weight: normal;
+  font-weight: $font-regular;
   font-size: $alpha;
   text-align: center;
   position: absolute;
@@ -195,21 +192,18 @@ h4.seminar-titlestack-sub {
       transform: rotate(2deg) skew(1deg);
     }
   }
-
-  p {
-    margin-bottom: 2px;
-  }
 }
 
-.seminar-location-heading {
-  margin-bottom: 2px;
-  margin-top: 8px;
-}
+.seminar-location-heading { margin-bottom: 0; }
 
 .seminar-location-container .location-item a {
   color: $ink;
-  margin-top: 8px;
+  margin-top: 0;
   margin-bottom: 8px;
+
+  @media screen and (max-width: $medium) {
+    padding-left: 0;
+  }
 }
 
 .seminar-speaker {
@@ -226,10 +220,11 @@ h4.seminar-titlestack-sub {
   height: 200px;
   width: 200px;
   float: left;
-  background-image: url(../img/directors/alex.jpg);
+  border: 1px solid white;
+  box-shadow: 0 0 5px rgba(black, 0.2);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 26% 50%;
+  background-position: center;
   position: relative;
   margin-right: 32px;
 
@@ -237,14 +232,14 @@ h4.seminar-titlestack-sub {
     @include shadow-pseudo;
     height: 100%;
     top: 0;
-    background-color: rgba($ink, 0.3);
+    background-color: lighten($ink, 45);
     z-index: -1;
-    transform: rotate(-5deg) skew(1deg) ;//scale(1.05);
+    transform: rotate(-5deg) skew(1deg);
   }
 
   @media screen and ( max-width: $medium ) {
     display: block;
-    float: none;
+    float: left;
     height: 150px;
     width: 150px;
     margin: auto;
@@ -276,20 +271,21 @@ h4.seminar-titlestack-sub {
 }
 
 h4.seminar-speaker-title {
-  font-size: 32px;
+  font-size: $beta;
   line-height: 1;
   color: $pink;
   margin-bottom: 4px;
 
   @media screen and ( max-width: $medium ) {
-    font-size: 20px;
+    clear: both;
+    font-size: $gamma;
   }
 }
 
 h5.seminar-speaker-jobtitle {
   font-weight: $font-regular;
   color: lighten($ink, 20);
-  font-size: 18px;
+  font-size: $delta;
 }
 
 .seminar-header-details {
@@ -327,7 +323,7 @@ h5.seminar-speaker-jobtitle {
   font-style: normal;
   font-size: $alpha - 4px;
   font-family: $museo;
-  font-weight: bold;
+  font-weight: $font-bold;
   text-transform: none;
 
   @media screen and ( max-width: $small ) {
@@ -335,35 +331,27 @@ h5.seminar-speaker-jobtitle {
   }
 }
 
-h3.seminar-header-time {
-  &:before {
-    content: "•";
-    margin: 0 12px;
-
-    @media screen and ( max-width: $medium ) {
-      content: "-";
-      margin: 0 12px;
-      color: #aaa;
-    }
-  }
-
-  &:after {
-    @media screen and ( max-width: $medium ) {
-      content: "-";
-      margin: 0 12px;
-      color: #aaa;
-    }
-  }
+h3.seminar-header-time::before {
+  margin: 0 12px;
+  content: "•";
 
   @media screen and ( max-width: $medium ) {
-    font-weight: $font-bold;
+    display: none;
   }
 }
 
 .seminar-map-container {
+  display: block;
   position: relative;
   height: 500px;
-  margin-top: 32px;
+  width: 100%;
+  margin-top: 30px;
+  border: 2px solid white;
+  box-shadow: 0 0 15px rgba(black, 0.1);
+
+  @media screen and ( max-width: $medium ) {
+    height: 300px;
+  }
 }
 
 .seminar-sprite-brain {
@@ -378,6 +366,7 @@ h3.seminar-header-time {
   top: -97px;
   right: -25px;
   transform: scale(0.6);
+  z-index: 2;
 
    @media screen and ( max-width: $small ) {
     right: -67px;
@@ -391,18 +380,16 @@ h3.seminar-header-time {
 .seminar-sprite-lightbulb {
   width: 350px;
   height: 350px;
-  margin: 2% auto;
   background: url(../img/seminar/lightbulb-sprite2.png) left center;
   // go 1 step above the total
   animation: bulbSprite 1s steps(18) infinite;
-             // bulbRotate 2000ms linear infinite;
+  // bulbRotate 2000ms linear infinite;
   transform: scale(0.5) rotate(24deg);
-  float: right;
-  top: -75px;
-  right: -60px;
+  top: -60px;
+  right: -50px;
   position: absolute;
 
-  @media screen and ( max-width: $small ) {
+  @media screen and ( max-width: $medium ) {
     display: none;
   }
 }
@@ -425,34 +412,50 @@ h3.seminar-header-time {
 }
 
 .seminar-form-wrapper {
-  padding: 0 40px;
+  padding: 5px 40px 0;
   width: 50%;
-  margin: 50px auto 40px;
+  margin: 70px auto 40px;
   position: relative;
+  z-index: 1;
 
-  &:before {
+  &::before,
+  &::after {
+    z-index: -1;
     @include shadow-pseudo;
     top: 5px;
-    border: 5px solid lighten($ink, 48);
+    background-color: white;
+    box-shadow: 0 0 5px rgba(black, 0.2);
     height: 100%;
-    transform: rotate(-1.2deg) scale(1.2);
+  }
+
+  &::before {
+    background-color: lighten($ink, 50);
+    transform: rotate(0.8deg) scale(1.2);
+  }
+
+  &::after {
+    transform: rotate(-1.8deg) scale(1.2);
   }
 
   .seminar-form-input {
-    background: lighten($ink, 40);
+    background-color: lighten($ink, 47);
     border-radius: 3px;
     border: $pink;
     width: 100%;
     margin-bottom: 10px;
     z-index: 1;
+    transition: 0.2s;
     position: relative;
+
+    &:focus { background-color: lighten($ink, 43); }
   }
 
   @media screen and ( max-width: $large ) {
+    margin: 40px auto 20px;
     width: 75%;
-    margin-bottom: 20px;
 
-    &:before { display: none; }
+    &::before,
+    &::after { display: none; }
   }
 
   @media screen and ( max-width: $medium ) {
@@ -461,15 +464,12 @@ h3.seminar-header-time {
 }
 
 .seminar-form-title {
-  margin-bottom: 0;
+  margin: 15px 0 0;
+  font-size: $delta;
 
-  &:after {
-    content: ":";
-  }
+  &:after { content: ":"; }
 
-  &.attendance {
-    display: inline;
-  }
+  &.attendance { display: inline; }
 }
 
 .seminar-form-checkbox {
@@ -498,20 +498,21 @@ input.seminar-form-submit {
 
 .seminar-form-header {
   color: $pink;
-  font-size: $beta;
-  text-shadow: 2px 2px 0 rgba(black, 0.1);
+
+  @media screen and ( max-width: $small ) {
+    font-size: $beta;
+  }
 }
 
 .seminar-social-links {
   text-align: center;
-  width: 100%;
-  padding: 20px 40px;
+  padding: 30px 40px 20px;
 
   @media screen and ( max-width: $small ) {
-    span {
-      display: block;
-      font-weight: $font-bold;
-    }
+    text-align: left;
+    padding: 10px 40px 30px;
+
+    span { display: block; }
   }
 
   a {
@@ -537,17 +538,9 @@ input.seminar-form-submit {
       left: 0;
     }
 
-    &.linkedin:after {
-      @include sprite($linkedin-pink);
-    }
-
-    &.twitter:after {
-      @include sprite($twitter-pink);
-    }
-
-    &.vimeo:after {
-      @include sprite($vimeo-pink);
-    }
+    &.linkedin:after { @include sprite($linkedin-pink); }
+    &.twitter:after { @include sprite($twitter-pink); }
+    &.vimeo:after { @include sprite($vimeo-pink); }
   }
 }
 
@@ -561,16 +554,14 @@ input.seminar-form-submit {
 }
 
 h3.seminar-info-item {
+  text-transform: none;
+  letter-spacing: normal;
   font-size: $beta - 4px;
   font-weight: $font-regular;
   color: $pink;
   font-family: $museo;
   font-style: normal;
   margin-top: 6px;
-
-  &:first-of-type {
-    font-weight: $font-bold;
-  }
 }
 
 .seminar-speaker-link {
@@ -578,9 +569,8 @@ h3.seminar-info-item {
   height: 22px;
   padding-left: 28px;
   margin-right: 6px;
-  font-weight: bold;
+  font-weight: $font-bold;
   padding-top: 2px;
-  color: $ink;
   margin-bottom: 6px;
 
   &:after {
@@ -589,15 +579,7 @@ h3.seminar-info-item {
     left: 0;
   }
 
-  &.linkedin:after {
-    @include sprite($linkedin-pink);
-  }
-
-  &.twitter:after {
-    @include sprite($twitter-pink);
-  }
-
-  &.vimeo:after {
-    @include sprite($vimeo-pink);
-  }
+  &.linkedin:after { @include sprite($linkedin-pink); }
+  &.twitter:after { @include sprite($twitter-pink); }
+  &.vimeo:after { @include sprite($vimeo-pink); }
 }

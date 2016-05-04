@@ -293,6 +293,9 @@
   function insureinit() {
     initmap("insuremap", 51.5144918,-0.0803065);
   }
+  function digitalinit() {
+    initmap("digitalmap", 51.5074754,-0.1389263);
+  }
 
   // Initialise google map
   function initmap(mapname, lat, lon) {
@@ -328,6 +331,9 @@
   }
   if ($('#insuremap').length) {
     google.maps.event.addDomListener(window, 'load', insureinit);
+  }
+  if ($('#digitalmap').length) {
+    google.maps.event.addDomListener(window, 'load', digitalinit);
   }
 
   // Console advert
