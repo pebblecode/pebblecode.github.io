@@ -4,6 +4,16 @@ layout: post
 {% include head.html %}
 
   <body class="{{ page.layout }}">
+    <script type="application/ld+json">
+      { "@context": "http://schema.org",
+      "@type": "Article",
+      "headline": "{{ page.title }}",
+      "image": "{{ page.thumbnail }}",
+      "author": "{{ page.author }}",
+      "datePublished": "{{ page.date | date: "%F" }}",
+      "description": "{{ page.excerpt | strip_html | strip_newlines | truncate : 160 }}"
+      }
+    </script>
 
     {% include header.html %}
 
