@@ -1,6 +1,6 @@
 ---
 layout: about
-title: about
+title: About
 permalink: /about/
 group: nav
 colour: purple

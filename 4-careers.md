@@ -1,6 +1,6 @@
 ---
 layout: careers
-title: careers
+title: Careers
 permalink: /careers/
 categories: [hacks]
 group: nav

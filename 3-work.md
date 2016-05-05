@@ -1,6 +1,6 @@
 ---
 layout: work
-title: work
+title: Work
 permalink: /work/
 group: nav
 colour: blue
