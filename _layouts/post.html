@@ -5,13 +5,32 @@ layout: post
 
   <body class="{{ page.layout }}">
     <script type="application/ld+json">
-      { "@context": "http://schema.org",
-      "@type": "Article",
-      "headline": "{{ page.title }}",
-      "image": "{% if page.thumbnail %}http://pebblecode.com{{ page.thumbnail }}{% else %}http://pebblecode.com/img/blog/placeholders/blue-phold.svg{% endif %}",
-      "author": "{{ page.author }}",
-      "datePublished": "{{ page.date | date: "%F" }}",
-      "description": "{{ page.excerpt | strip_html | strip_newlines | truncate : 160 }}"
+      { 
+        "@context": "http://schema.org",
+        "@type": "Article",
+        "headline": "{{ page.title }}",
+        "mainEntityOfPage": {
+          "@type":"WebPage",
+          "@id" : "http://pebblecode.com{{ page.url }}"
+          },
+          "image": { 
+            "@type": "ImageObject",
+            "url" : "{% if page.thumbnail %}http://pebblecode.com{{ page.thumbnail }}{% else %}http://pebblecode.com/img/blog/placeholders/blue-phold.svg{% endif %}"
+          },
+          "author": "{{ page.author }}",
+          "publisher": {
+            "@type": "Organization",
+            "name": "pebble {code}",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://avatars2.githubusercontent.com/u/437686?v=3&s=200",
+              "width": 200,
+              "height": 200 
+            }
+            },
+          "datePublished": "{{ page.date}}",
+          "dateModified": "{{ page.date}}",
+          "description": "{{ page.excerpt | strip_html | strip_newlines | truncate : 160 }}"
       }
     </script>
 
