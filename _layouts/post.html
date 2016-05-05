@@ -8,7 +8,7 @@ layout: post
       { "@context": "http://schema.org",
       "@type": "Article",
       "headline": "{{ page.title }}",
-      "image": "{{ page.thumbnail }}",
+      "image": "{% if page.thumbnail %}http://pebblecode.com{{ page.thumbnail }}{% else %}http://pebblecode.com/img/blog/placeholders/blue-phold.svg{% endif %}",
       "author": "{{ page.author }}",
       "datePublished": "{{ page.date | date: "%F" }}",
       "description": "{{ page.excerpt | strip_html | strip_newlines | truncate : 160 }}"
