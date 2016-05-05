@@ -8,6 +8,15 @@
   <link rel="shortcut icon" type="image/x-icon" href="{{ site.baseurl }}/img/favicon.ico">
   <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@pebblecode" />
+  <meta name="twitter:creator" content="@pebblecode" />
+  {% if page.url %}
+  <meta property="og:url" content="http://pebblecode.com/{{ page.url }}" />
+  {% endif %}
+  <meta property="og:title" content="{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}" />
+  <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}" />
+  <meta property="og:image" content="{% if page.thumbnail %}http://pebblecode.com{{ page.thumbnail }}{% else %}http://pebblecode.com/img/blog/placeholders/blue-phold.svg{% endif %}" />
   <meta name="analytics-tags" content="{{ page.analytics_category }}">
   <link rel="stylesheet" href="https://recruitee.com/assets/widget.css">
   <link rel="stylesheet" href="{{ site.baseurl }}/css/main.css">
