@@ -1,6 +1,6 @@
 ---
 layout: home
-title: Home
+title: Agile Development, Design Thinking and Rapid Prototyping
 permalink: /
 
 ## Hero Content
