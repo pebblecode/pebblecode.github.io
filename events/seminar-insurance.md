@@ -41,6 +41,14 @@ speakers:
    bio:
     - "“A visionary and strategic thinker with an excellent network of key industry connections, Manjit is one of those rare individuals who has innovation at the heart of everything he does. He thinks in different ways and looks at problems and opportunities through a different lens which means that he is challenging and creative. This is helped enormously by his engaging and highly energetic personality.”"
     - "<em>– David Williams, Managing Director Underwriting @ AXA Insurance</em>"
+ - name: Greg Gladwell
+   id: greg-gladwell
+   jobtitle: Owner and Founder Gladwell Enterprises Ltd
+   portrait: greg-gladwell.jpg
+   linkedin: https://www.linkedin.com/in/greggladwell
+   twitter: https://twitter.com/greggladwell
+   bio:
+    - "A creative, results driven ex CEO of a £75m turnover,1,500+ FTE business. Inspired more than 50% improvement in margin, staff engagement and Net Promoter scores. Led market share growth, change programmes, governance oversight and introduced innovation and technology solutions. Now pursuing a portfolio career and engaging in NED, Adviser, Consultant opportunities."
  - name: Stephen Allott
    id: stephen-allott
    jobtitle: Chairman, pebble {code}
