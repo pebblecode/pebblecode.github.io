@@ -60,7 +60,21 @@ speakers:
     - "Chaired BACFI, Jacobs Rimell, Parc Technology, Inforsense, Applied Generics, COE Group Plc, The Red Gate Council of Advisers, Tideway Systems and Trinamo. NXD on Bright Computing, Trampoline and Zeus."
     - "Founded the Cambridge Computer Lab Ring and co-founded Trinamo. President, CFO and main board director of Micromuse Inc. (NASDAQ: MUSE)."
     - "Worked for McKinsey, Sun Microsystems, Xerox and Essex Court Chambers. Graduate of Trinity College Cambridge, Barrister (Gray’s Inn), Member of the Bar Council of England and Wales, City Fellow of Hughes Hall Cambridge University."
-
+ - name: Paul Pancham
+   id: paul-pancham
+   jobtitle: CEO, DWS Automotive Repair Solutions
+   portrait: paul-pancham.jpg
+   linkedin: https://www.linkedin.com/in/paul-pancham-0a60911a
+   bio:
+    - "30 years experience in the Automotive and Insurance sectors."
+    - "Established record in new business start up and transformation."
+    - "Proven record of developing strategic partnerships and evolving industry changing business models."
+    - "Specialist in individual customer and client management. Customer sponsor for DWS Group."
+ - name: Alan Horton
+   id: alan-horton
+   jobtitle: Non Executive Chairman, Independent Group
+   portrait: alan-horton.jpg
+   linkedin: https://www.linkedin.com/in/alan-horton-05a53010
 
 ## Google Maps URL
 invite-map-id: insuremap
