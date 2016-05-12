@@ -44,6 +44,9 @@
 // GLOBAL FOOTER: Global footer across all pages
 @import "components/_gbl-foot.scss";
 
+// RECRUITEE: Custom styles to avoid extra request
+@import "components/_recruitee.scss";
+
 // HERO: Used globally
 @import "components/_hero.scss";
 
