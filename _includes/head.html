@@ -12,7 +12,7 @@
   <meta name="twitter:site" content="@pebblecode" />
   <meta name="twitter:creator" content="@pebblecode" />
   {% if page.url %}
-  <meta property="og:url" content="http://pebblecode.com/{{ page.url }}" />
+  <meta property="og:url" content="http://pebblecode.com{{ page.url }}" />
   {% endif %}
   <meta property="og:title" content="{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}" />
   <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}" />
