@@ -21,8 +21,20 @@
   <link rel="stylesheet" href="https://recruitee.com/assets/widget.css">
   <link rel="stylesheet" href="{{ site.baseurl }}/css/main.css">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-  <script src="//use.typekit.net/sxt3lcz.js"></script>
-  <script>try{Typekit.load();}catch(e){}</script>
+
+  <!-- Async Typekit Embed: https://gist.github.com/skddc/9134225 -->
+  <script>
+    (function(d) {
+      var tkTimeout=3000;
+      if(window.sessionStorage){if(sessionStorage.getItem('useTypekit')==='false'){tkTimeout=0;}}
+      var config = {
+        kitId: 'sxt3lcz',
+        scriptTimeout: tkTimeout
+      },
+      h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+"wf-inactive";if(window.sessionStorage){sessionStorage.setItem("useTypekit","false")}},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+="wf-loading";tk.src='//use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+    })(document);
+  </script>
+
   <!--[if lt IE 9]>
     <script>
       document.createElement('header');
@@ -34,7 +46,7 @@
     </script>
   <![endif]-->
 
-
+  <!-- Google Analytics -->
   <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -47,7 +59,6 @@
   <!-- segment.io -->
   <script type="text/javascript">!function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t){var e=document.createElement("script");e.type="text/javascript";e.async=!0;e.src=("https:"===document.location.protocol?"https://":"http://")+"cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(e,n)};analytics.SNIPPET_VERSION="3.1.0";
 
-
     {% if jekyll.environment == "production" %}
       analytics.load("oYxl7b92cjkh5Et7feoBTtVp4jfknzS2");
     {% else %}
@@ -58,7 +69,6 @@
   }}();
   </script>
   <!-- /segment.io -->
-
 
   {% if jekyll.environment == 'development' %}
     <!-- Adds live reload to development -->

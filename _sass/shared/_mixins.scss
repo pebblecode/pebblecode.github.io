@@ -75,3 +75,15 @@
   left: 0;
   width: 100%;
 }
+
+// Hide FOUT
+@mixin foutfix {
+  .wf-loading & {
+    opacity: 0;
+    transition: 0.1s;
+  }
+
+  .wf-active & {
+    opacity: 1;
+  }
+}

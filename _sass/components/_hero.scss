@@ -131,6 +131,7 @@
 }
 
 .hero-summary {
+  @include foutfix;
   font-size: $beta - 6px;
   color: white;
   padding: 15px $gutter * 2 10px $gutter;
