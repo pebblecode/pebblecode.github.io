@@ -1,7 +1,9 @@
 //===============================================================================
 // RELATED POSTS
 //===============================================================================
-.related-container {
+.related-container { overflow: hidden; }
+
+.related {
   background-color: lighten($ink, 50);
   position: relative;
   padding: 10px 0 50px;
@@ -23,9 +25,13 @@
   .vertical & {
     background-color: #da4975;
     margin-top: 0;
+    padding-top: 40px;
 
-    &::before { background-color: #da4975; }
-    .related-post-item::before { box-shadow: 0 0 10px 0 rgba(black, 0.2); }
+    &::before { display: none; }
+
+    .related-post-item::before {
+      box-shadow: 0 0 10px 0 rgba(black, 0.2);
+    }
 
     .related-title {
       color: white;
