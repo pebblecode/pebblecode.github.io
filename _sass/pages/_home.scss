@@ -72,16 +72,6 @@
   .photo-inner::after { background-color: $pink; }
 }
 
-.home .client-container {
-  padding-top: 30px;
-  padding-bottom: 20px;
-
-  @media screen and ( max-width: $medium ) {
-    padding-top: 10px;
-    padding-bottom: 0;
-  }
-}
-
 // Featured Case Study
 .feat-content-container {
   position: relative;
