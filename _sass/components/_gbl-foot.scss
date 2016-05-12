@@ -43,11 +43,11 @@
 
   a {
     color: $pink;
+    padding: 5px;
     transition: 0.2s;
+    padding: 10px;
 
-    &:hover {
-      color: rgba($pink, 0.8);
-    }
+    &:hover { color: rgba($pink, 0.8); }
   }
 }
 
