@@ -82,9 +82,10 @@
   }
 }
 
-// Featured Case Study
+// Featured Content
 .feat-content-container {
   position: relative;
+  overflow: hidden;
 
   @media screen and ( max-width: $medium ) {
     padding-top: 0;
