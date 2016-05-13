@@ -18,7 +18,7 @@ The people that make up pebble {code} are our most important asset, so our organ
 As an organisation, we wax lyrical on the benefits of continuous improvement; build/measure/learn; failing fast and often. Yet, until recently, we followed the traditional, well trodden path of annual assessments and pay reviews. It was ineffective, un-inspirational and felt out of sync with our core values.
 We knew this had to change, so we applied some of the tools we use with our clients to try and solve this problem.
 
-##Improvement Kata
+## Improvement Kata
 
 Toyota are famous for applying the Improvement Kata to their business. The essence of the Improvement Kata is a four part model:
 
