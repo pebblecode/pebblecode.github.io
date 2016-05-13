@@ -1,12 +1,6 @@
 //===============================================================================
 // STYLES FIXES BEFORE MAIN.CSS LOADS
 //===============================================================================
-html { transition: 0.2s opacity; }
-
-.wf-loading { opacity: 0; }
-
-.wf-active { opacity: 1; }
-
 .feat-content-img { display: none; }
 
 // Fix touch sizing
@@ -22,3 +16,5 @@ html { transition: 0.2s opacity; }
 }
 
 .gbl-head-btn { margin: 10px; }
+
+.photo-container { height: 400px; }

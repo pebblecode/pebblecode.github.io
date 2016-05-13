@@ -1,7 +1,12 @@
-// INLINE STYLES
-// ===================================================
+//===============================================================================
+// CRITICAL INLINE STYLES
+//===============================================================================
+// SHARED
 @import "shared/_abstracts";
 
+// CRITICAL
 @import "inline/_fixes";
+@import "inline/_layout";
+@import "inline/_typography";
 @import "inline/_header";
 @import "inline/_hero";

@@ -11,10 +11,14 @@
   }
 }
 
+.client-inner {
+  position: relative;
+  z-index: 2;
+}
+
 .client-item {
   height: 110px;
   position: relative;
-  z-index: 2;
   margin-top: -15px;
 
   @media screen and ( max-width: $large ) {

@@ -1,5 +1,5 @@
 //===============================================================================
-// TYPOGRAPHY
+// TYPOGRAPHY - CRITICAL STYLES
 //===============================================================================
 h1, h2, h3, h4, h5, h6,
 p, ul, ol, dl, blockquote, pre, button {
@@ -18,11 +18,11 @@ p, ul, ol, dl, blockquote, pre, button {
 .zeta    { font-size: $zeta; }
 
 // HEADINGS
-h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, strong {
+h1, h2, h3, h4, h5, h6, strong {
   font-weight: $font-bold;
 }
 
-h1, h2, h3, .h1, .h2, .h3 {
+h1, h2, h3 {
   @include foutfix;
   line-height: 1.3;
   font-family: $brandon;
@@ -32,7 +32,7 @@ h1, h2, h3, .h1, .h2, .h3 {
   letter-spacing: -1px;
 }
 
-h1, .h1 {
+h1 {
   font-size: $tera;
 
   @media screen and ( max-width: $medium ) {
@@ -40,7 +40,7 @@ h1, .h1 {
   }
 }
 
-h2, .h2 {
+h2 {
   font-size: $mega;
 
   @media screen and ( max-width: $medium ) {
@@ -48,7 +48,7 @@ h2, .h2 {
   }
 }
 
-h3, .h3 {
+h3 {
   font-size: $alpha;
 
   @media screen and ( max-width: $medium ) {
@@ -56,14 +56,6 @@ h3, .h3 {
   }
 }
 
-h4, .h4 {
-  font-size: $gamma;
-}
-
-h5, .h5 {
-  font-size: $epsilon;
-}
-
-h6, .h6 {
-  font-size: $zeta;
-}
+h4 { font-size: $gamma; }
+h5 { font-size: $epsilon; }
+h6 { font-size: $zeta; }

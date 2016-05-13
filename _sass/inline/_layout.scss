@@ -1,5 +1,5 @@
 //===============================================================================
-// LAYOUT
+// LAYOUT - CRITICAL STYLES
 //===============================================================================
 *,
 *::before,
@@ -44,13 +44,7 @@ body {
   }
 }
 
-.padded {
-  padding: $gutter;
-}
-
-.clear {
-  @include clearfix;
-}
+.padded { padding: $gutter; }
 
 [class*='col-'] {
   float: left;
