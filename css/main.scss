@@ -4,35 +4,36 @@
 @charset "utf-8";
 // Import partials from `sass_dir` (defaults to `_sass`)
 
-// ABSTRACT
-// ===================================================
-// VARIABLES: Colours, Type sizes etc.
-@import "abstract/_variables";
-
-// SPRITE: Global sprite used across all pages.
-@import "abstract/_sprite";
-
-// MIXINS: Fixes, Recurring blocks of styling etc.
-@import "abstract/_mixins";
-
 // SHARED
 // ===================================================
+// Abstracts: Colours, Type sizes etc.
+@import "shared/_abstracts";
+
+// NORMALIZE v3.0.0: Normalise across browsers
+@import "shared/_normalize";
+
+// LAYOUT: Base layout, Grid
+@import "shared/_layout";
+
+// TYPOGRAPHY: Headings, Hierarchy etc.
+@import "shared/_typography";
 
 // THEMES: Themes that can be reused.
 @import "shared/_themes.scss";
 
-
 // CODE: Styles for the pre code blocks
 @import "shared/_code";
-
 
 // ELEMENTS: Links, Buttons, Forms, Lists etc.
 @import "shared/_elements";
 
 // COMPONENTS
 // ===================================================
+// GLOBAL HEADER: Global header across all pages
+@import "components/_header.scss";
+
 // GLOBAL FOOTER: Global footer across all pages
-@import "components/_gbl-foot.scss";
+@import "components/_footer.scss";
 
 // RECRUITEE: Custom styles to avoid extra request
 @import "components/_recruitee.scss";

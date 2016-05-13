@@ -1,42 +1,6 @@
 //===============================================================================
 // GLOBAL HEADER
 //===============================================================================
-.gbl-head {
-  background-color: $primary;
-  border-bottom: 1px solid rgba(white, 0.25);
-  padding: 40px $gutter * 2 20px;
-  position: fixed;
-  width: 100%;
-  z-index: 10;
-  transition: all 0.3s linear;
-
-  @media screen and ( max-width: $medium + 100px ) {
-    position: fixed;
-    padding: 20px 0 15px;
-  }
-
-  &.pink {
-    background-color: $pink;
-  }
-
-  &.aqua {
-    background-color: $aqua;
-  }
-
-  &.blue {
-    background-color: $blue;
-  }
-
-  &.purple {
-    background-color: $purple;
-  }
-
-  &.transparent {
-    background-color: transparent;
-    box-shadow: none;
-  }
-}
-
 .show { top: 0; }
 .hide { top: -92px; }
 
@@ -150,6 +114,7 @@
 .gbl-head-btn {
   display: none;
   position: absolute;
+  margin: 0;
   top: 10px;
   right: $gutter - 5px;
   height: 45px;

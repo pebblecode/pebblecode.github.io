@@ -27,7 +27,8 @@
     {{ include_to_scssify | scssify }}
   </style>
 
-  <link rel="stylesheet" href="{{ site.baseurl }}/css/main.css">
+  <link rel="preload" href="{{ site.baseurl }}/css/main.css" as="style" onload="this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="{{ site.baseurl }}/css/main.css"></noscript>
 
   <!-- Async Typekit Embed: https://gist.github.com/skddc/9134225 -->
   <script>

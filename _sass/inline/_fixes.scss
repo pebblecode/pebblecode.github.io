@@ -1,0 +1,24 @@
+//===============================================================================
+// STYLES FIXES BEFORE MAIN.CSS LOADS
+//===============================================================================
+html { transition: 0.2s opacity; }
+
+.wf-loading { opacity: 0; }
+
+.wf-active { opacity: 1; }
+
+.feat-content-img { display: none; }
+
+// Fix touch sizing
+.feat-content-list-item,
+.cta-btn,
+.gbl-foot-links a,
+.gbl-foot-social a,
+.gbl-head-btn,
+.gbl-head-nav-item,
+.gbl-head-logo {
+  padding: 10px;
+  display: block;
+}
+
+.gbl-head-btn { margin: 10px; }
