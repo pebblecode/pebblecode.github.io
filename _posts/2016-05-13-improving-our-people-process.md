@@ -36,6 +36,7 @@ We began by defining what we considered ‘The Definition of Awesome’. What do
 * More and better quality feedback. It’s hard, even in a small company, for a manager to have a detailed insight into the achievements, wins and losses of 20+ people. At best, they have an ‘overall’ idea, which is perhaps not representative of an individual’s true strength and value. We need to improve the information we have by querying more sources.
 
 With ‘Awesome’ now defined, we examined our current conditions and broke down the problem into clear, definable issues that we needed to tackle:
+
 * We had no clearly defined or well documented careers paths;
 * Annual reviews were the sole responsibility of the leadership team, and they are often busy.
 * When they happened, reviews were often unproductive, as the line managers didn’t always have detailed insight into an individual's performance;
