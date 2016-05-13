@@ -39,8 +39,11 @@ speakers:
    linkedin: https://uk.linkedin.com/in/manjitrana
    twitter: https://twitter.com/manjitrana
    bio:
-    - "“A visionary and strategic thinker with an excellent network of key industry connections, Manjit is one of those rare individuals who has innovation at the heart of everything he does. He thinks in different ways and looks at problems and opportunities through a different lens which means that he is challenging and creative. This is helped enormously by his engaging and highly energetic personality.”"
-    - "<em>– David Williams, Managing Director Underwriting @ AXA Insurance</em>"
+    - "Manjit is a founder and CEO of Ingenin, a multi-award winning innovation consultancy created to help insurers grow their businesses through the adoption of disruptive technologies and innovative business models."
+    - "An innovative and creative thinker with a strong understanding of trends, developments and issues in the insurance sector in the UK and internationally having worked in the UK, USA and APAC regions and widely considered an expert and thought leader on technology based innovation in the insurance sector."
+    - "A seasoned senior executive and dynamic leader with a proven track record of management success in both start-up and corporate arena’s and over 25 years experience of technology based proposition development."
+    - "He has created a number of start-ups as well as working for large corporates such as CSC, Fujitsu Consulting and AXA Insurance where he was recruited to help create the AXA Innovation Hub."
+    - "Manjit is a regular speaker at industry events, sits on the judging panels of industry awards and is an advisor and mentor to several start-ups."
  - name: Greg Gladwell
    id: greg-gladwell
    jobtitle: Owner and Founder Gladwell Enterprises Ltd
