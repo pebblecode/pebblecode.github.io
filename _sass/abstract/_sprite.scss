@@ -9,7 +9,7 @@
   background-position: nth( $spriteVals, 4 ) nth( $spriteVals, 5 );
 }
 
-$gbl-sprite-path: '../img/gbl-sprite.svg';
+$gbl-sprite-path: '../../../../img/gbl-sprite.svg';
 $logo-white: 170px 29px $gbl-sprite-path 0px 0px;
 $charity-white: 21px 26px $gbl-sprite-path -164px -69px;
 $gym-white: 26px 19px $gbl-sprite-path -188px -69px;
@@ -32,7 +32,7 @@ $octocat-pink: 23px 23px $gbl-sprite-path -53px -33px;
 $twitter-pink: 26px 21px $gbl-sprite-path -26px -33px;
 $vimeo-pink: 24px 21px $gbl-sprite-path 0px -33px;
 
-$client-sprite-path: '../img/client-sprite.svg';
+$client-sprite-path: '../../../../img/client-sprite.svg';
 $bybox-logo: 220px 94px $client-sprite-path -438px -94px;
 $express-logo: 219px 94px $client-sprite-path -658px -94px;
 $pearson-logo: 219px 94px $client-sprite-path -439px 0px;

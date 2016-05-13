@@ -8,7 +8,7 @@
   position: fixed;
   width: 100%;
   z-index: 10;
-  transition: all 0.3s linear;
+  transition: top 0.3s;
 
   @media screen and ( max-width: $medium + 100px ) {
     position: fixed;
@@ -16,9 +16,18 @@
   }
 
   &.pink { background-color: $pink }
-  &.aqua { background-color: $aqua; }
-  &.blue { background-color: $blue; }
   &.purple { background-color: $purple; }
+
+  &.blue
+  .blog-by-tag & {
+    background-color: $blue;
+  }
+
+  &.aqua,
+  .blog &,
+  .post & {
+    background-color: $aqua;
+  }
 
   &.transparent {
     background-color: transparent;
