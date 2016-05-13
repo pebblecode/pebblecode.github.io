@@ -1,10 +1,7 @@
 //===============================================================================
 // ELEMENTS
 //===============================================================================
-// SELECTION
-::selection {
-  background: rgba($ink, 0.3);
-}
+::selection { background: rgba($ink, 0.3); }
 
 // LINKS
 a {
@@ -28,9 +25,7 @@ a {
   transition: 0.2s;
   line-height: 1;
 
-  &:focus {
-    outline: none;
-  }
+  &:focus { outline: none; }
 }
 
 .btn-primary {
@@ -109,9 +104,7 @@ input, textarea {
   display: block;
   border-radius: 0;
 
-  &:focus{
-    outline: none;
-  }
+  &:focus { outline: none; }
 }
 
 input[type="radio"] {
@@ -120,6 +113,7 @@ input[type="radio"] {
 
 // IMAGES
 img {
+  display: block;
   max-width: 100%;
 }
 

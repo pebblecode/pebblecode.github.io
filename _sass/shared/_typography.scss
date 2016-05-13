@@ -1,0 +1,24 @@
+//===============================================================================
+// TYPOGRAPHY - CRITICAL STYLES
+//===============================================================================
+h1, h2, h3, h4, h5, h6,
+p, ul, ol, dl, blockquote, pre, button {
+  margin: 0 0 20px 0;
+}
+
+// FONT SIZES
+.tera    { font-size: $tera; }
+.giga    { font-size: $giga; }
+.mega    { font-size: $mega; }
+.alpha   { font-size: $alpha; }
+.beta    { font-size: $beta; }
+.gamma   { font-size: $gamma; }
+.delta   { font-size: $delta; }
+.epsilon { font-size: $epsilon; }
+.zeta    { font-size: $zeta; }
+
+// HEADINGS
+h4, h5, h6, strong { font-weight: $font-bold; }
+h4 { font-size: $gamma; }
+h5 { font-size: $epsilon; }
+h6 { font-size: $zeta; }

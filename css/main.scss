@@ -7,12 +7,14 @@
 // SHARED
 @import "shared/_abstracts";
 @import "shared/_normalize";
+@import "shared/_typography";
 @import "shared/_themes";
 @import "shared/_code";
 @import "shared/_elements";
 
 // COMPONENTS
 @import "components/_hero";
+@import "components/_header";
 @import "components/_footer";
 @import "components/_recruitee";
 @import "components/_clients";

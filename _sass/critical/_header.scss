@@ -18,7 +18,7 @@
   &.pink { background-color: $pink }
   &.purple { background-color: $purple; }
 
-  &.blue
+  &.blue,
   .blog-by-tag & {
     background-color: $blue;
   }
@@ -33,9 +33,6 @@
     background-color: transparent;
     box-shadow: none;
   }
-
-  &.show { top: 0; }
-  &.hide { top: -92px; }
 }
 
 .gbl-head-logo {
@@ -56,11 +53,6 @@
 
   @media screen and ( max-width: $medium + 100px ) {
     margin-left: $gutter;
-  }
-
-  &:hover {
-    color: transparent;
-    opacity: 0.8;
   }
 }
 
@@ -91,6 +83,7 @@
   padding: 40px 15px 23px;
   color: rgba(white, 0.6);
   border-top: 5px solid transparent;
+  text-decoration: none;
   transition: 0.2s;
   text-transform: capitalize;
 
@@ -104,44 +97,6 @@
     color: rgba(white, 0.9);
     padding: 10px $gutter;
     margin: 1px 0 0;
-
-    &:first-child {
-      margin-top: 9px;
-
-      &:after {
-        content: "";
-        display: block;
-        position: absolute;
-        top: 0;
-        right: 28px;
-        width: 0;
-        height: 0;
-        border-left: 9px solid transparent;
-        border-right: 9px solid transparent;
-        border-bottom: 9px solid rgba(black, 0.07);
-        transition: 0.2s;
-      }
-
-      &:hover:after {
-        border-bottom-color: rgba(black, 0.12);
-      }
-    }
-  }
-
-  &:hover {
-    color: rgba(white, 0.9);
-    border-color: rgba(white, 0.4);
-
-    @media screen and ( max-width: $medium ) {
-      background-color: rgba(black, 0.12);
-    }
-  }
-
-  &.active,
-  .blog &:last-child,
-  .post &:last-child {
-    color: white;
-    border-color: white;
   }
 }
 
@@ -165,17 +120,6 @@
     @include sprite($menu-grey);
     top: 13px;
     left: 13px;
-  }
-
-  &:active {
-    opacity: 0.9;
-    box-shadow: 0 1px 0 rgba(black, 0.1);
-  }
-
-  &.active:after {
-    @include sprite($close-grey);
-    top: 14px;
-    left: 15px;
   }
 
   @media screen and ( max-width: $medium + 100px ) {

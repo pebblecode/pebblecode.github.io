@@ -3,11 +3,10 @@
 //===============================================================================
 *,
 *::before,
-*:after{
+*:after {
   box-sizing: border-box;
   font-family: $museo;
   text-rendering: optimizeSpeed;
-  box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
@@ -17,8 +16,6 @@ html {
   width: 100%;
   height: 100%;
   position: relative;
-  margin: 0;
-  padding: 0;
 }
 
 body {
