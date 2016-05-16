@@ -7,7 +7,7 @@
   border-bottom: 1px solid rgba(white, 0.25);
 
   &.show { top: 0; }
-  &.hide { top: -92px; }
+  &.hide { top: -100px; }
   &:not(.top) { box-shadow: 0 3px 0 rgba(black, 0.06); }
 }
 
@@ -17,12 +17,27 @@
 }
 
 .gbl-head-nav-item {
+  border-bottom: 5px solid transparent;
+  transition: 0.2s;
+
+  @media screen and ( max-width: $medium + 100px ) {
+    display: block;
+    float: none;
+    border: none;
+    text-align: right;
+    font-size: $delta;
+    background-color: rgba(black, 0.1);
+    color: rgba(white, 0.9);
+    padding: 10px $gutter;
+    margin: 1px 0 0;
+  }
+
   &:hover {
     color: rgba(white, 0.9);
     border-color: rgba(white, 0.4);
 
     @media screen and ( max-width: $medium ) {
-      background-color: rgba(black, 0.12);
+      background-color: rgba(black, 0.2);
     }
   }
 

@@ -75,41 +75,41 @@
     var servicesTests;
 
     var scrollPositions = function () {
-      servicesContent = $('#services-content').offset().top - 150;
-      servicesStrategy = $('#services-strategy').offset().top - 150;
-      servicesHacking = $('#services-hacking').offset().top - 150;
-      servicesUX = $('#services-ux').offset().top - 150;
-      servicesUXdesign = $('#services-ux-design').offset().top - 150;
-      servicesDesign = $('#services-design').offset().top - 150;
-      servicesAgile = $('#services-agile').offset().top - 150;
-      servicesTests = $('#services-tests').offset().top - 150;
+      servicesContent = $('#services-content');
+      servicesStrategy = $('#services-strategy');
+      servicesHacking = $('#services-hacking');
+      servicesUX = $('#services-ux');
+      servicesUXdesign = $('#services-ux-design');
+      servicesDesign = $('#services-design');
+      servicesAgile = $('#services-agile');
+      servicesTests = $('#services-tests');
     };
 
     var servicesBG = function () {
       var windowTop = $(window).scrollTop();
 
-      if (windowTop > servicesTests) {
+      if (windowTop > servicesTests.offset().top - 100 || servicesTests.offset().bottom) {
         servicesContainer.css({'background-color':'#9b5ca4' });
         servicesHeaderContainer.css({'background-color':'#9b5ca4' });
-      } else if (windowTop > servicesAgile) {
+      } else if (windowTop > servicesAgile.offset().top - 100 || servicesAgile.offset().bottom) {
         servicesContainer.css({'background-color':'#faad40' });
         servicesHeaderContainer.css({'background-color':'#faad40' });
-      } else if (windowTop > servicesDesign) {
+      } else if (windowTop > servicesDesign.offset().top - 100 || servicesDesign.offset().bottom) {
         servicesContainer.css({'background-color':'#a4ce4e' });
         servicesHeaderContainer.css({'background-color':'#a4ce4e' });
-      } else if (windowTop > servicesUXdesign) {
+      } else if (windowTop > servicesUXdesign.offset().top - 100 || servicesUXdesign.offset().bottom) {
         servicesContainer.css({'background-color':'#37bec0' });
         servicesHeaderContainer.css({'background-color':'#37bec0' });
-      } else if (windowTop > servicesUX) {
+      } else if (windowTop > servicesUX.offset().top - 100 || servicesUX.offset().bottom) {
         servicesContainer.css({'background-color':'#0ea2dc' });
         servicesHeaderContainer.css({'background-color':'#0ea2dc' });
-      } else if (windowTop > servicesHacking) {
+      } else if (windowTop > servicesHacking.offset().top - 100 || servicesHacking.offset().bottom) {
         servicesContainer.css({'background-color':'#ed4f7e' });
         servicesHeaderContainer.css({'background-color':'#ed4f7e' });
-      } else if (windowTop > servicesStrategy) {
+      } else if (windowTop > servicesStrategy.offset().top - 100 || servicesStrategy.offset().bottom) {
         servicesContainer.css({'background-color':'#9b5ca4' });
         servicesHeaderContainer.css({'background-color':'#9b5ca4' });
-      } else if (windowTop > servicesContent) {
+      } else {
         servicesHeaderContainer.css({'background-color':'#37bec0' });
       }
     };
@@ -131,19 +131,19 @@
     var homeFeatProject;
 
     var scrollPositions = function () {
-      homeIndustry = $('#home-industry').offset().top - 200;
-      homeProject = $('#home-project').offset().top - 200;
+      homeIndustry = $('#home-industry');
+      homeProject = $('#home-project');
     };
 
     var headerBG = function () {
       var windowTop = $(window).scrollTop();
 
-      if (windowTop > homeProject) {
-        homeHeaderContainer.css({'background-color':'#37bec0' });
-      } else if (windowTop > homeIndustry) {
-        homeHeaderContainer.css({'background-color':'#0ea2dc' });
+      if (windowTop > homeProject.offset().top - 100 || homeProject.offset().bottom) {
+        homeHeaderContainer.css({'background-color':'#37bec0'});
+      } else if (windowTop > homeIndustry.offset().top - 300 || homeIndustry.offset().bottom) {
+        homeHeaderContainer.css({'background-color':'#0ea2dc'});
       } else {
-        homeHeaderContainer.css({'background-color':'#ed4f7e' });
+        homeHeaderContainer.css({'background-color':'#ed4f7e'});
       }
     };
 
@@ -156,16 +156,16 @@
     var aboutDirectors;
 
     var scrollPositions = function () {
-      aboutDirectors = $('#about-directors').offset().top - 200;
+      aboutDirectors = $('#about-directors');
     };
 
     var headerBG = function () {
       var windowTop = $(window).scrollTop();
 
-     if (windowTop > aboutDirectors) {
-        aboutHeaderContainer.css({'background-color':'#0ea2dc' });
+     if (windowTop > aboutDirectors.offset().top - 400 || aboutDirectors.offset().bottom) {
+        aboutHeaderContainer.css({'background-color':'#0ea2dc'});
       } else {
-        aboutHeaderContainer.css({'background-color':'' });
+        aboutHeaderContainer.css({'background-color':''});
       }
      };
 
@@ -184,34 +184,34 @@
     var workHighFrequency;
 
     var scrollPositions = function () {
-      workPharmaceutical = $('#work-pharmaceutical').offset().top - 200;
-      workIntranets = $('#work-intranets').offset().top - 200;
-      workSelfDirected = $('#work-self-directed').offset().top - 200;
-      workNextGen = $('#work-next-gen').offset().top - 200;
-      workEnterpriseMobile = $('#work-enterprise-mobile').offset().top - 200;
-      workRailTravel = $('#work-rail-travel').offset().top - 200;
-      workHighFrequency = $('#work-high-frequency').offset().top - 200;
+      workPharmaceutical = $('#work-pharmaceutical');
+      workIntranets = $('#work-intranets');
+      workSelfDirected = $('#work-self-directed');
+      workNextGen = $('#work-next-gen');
+      workEnterpriseMobile = $('#work-enterprise-mobile');
+      workRailTravel = $('#work-rail-travel');
+      workHighFrequency = $('#work-high-frequency');
     };
 
     var headerBG = function () {
       var windowTop = $(window).scrollTop();
 
-     if (windowTop > workHighFrequency) {
-        workHeaderContainer.css({'background-color':'#ed4f7e' });
-      } else if (windowTop > workRailTravel) {
-        workHeaderContainer.css({'background-color':'#faad40' });
-      } else if (windowTop > workEnterpriseMobile) {
-        workHeaderContainer.css({'background-color':'#a4ce4e' });
-      } else if (windowTop > workNextGen) {
-        workHeaderContainer.css({'background-color':'#0ea2dc' });
-      } else if (windowTop > workSelfDirected) {
-        workHeaderContainer.css({'background-color':'#37bec0' });
-      } else if (windowTop > workIntranets) {
-        workHeaderContainer.css({'background-color':'#ed4f7e' });
-      } else if (windowTop > workPharmaceutical) {
-        workHeaderContainer.css({'background-color':'#9b5ca4' });
+     if (windowTop > workHighFrequency.offset().top - 100 || workHighFrequency.offset().bottom) {
+        workHeaderContainer.css({'background-color':'#ed4f7e'});
+      } else if (windowTop > workRailTravel.offset().top - 100 || workRailTravel.offset().bottom) {
+        workHeaderContainer.css({'background-color':'#faad40'});
+      } else if (windowTop > workEnterpriseMobile.offset().top - 100 || workEnterpriseMobile.offset().bottom) {
+        workHeaderContainer.css({'background-color':'#a4ce4e'});
+      } else if (windowTop > workNextGen.offset().top - 100 || workNextGen.offset().bottom) {
+        workHeaderContainer.css({'background-color':'#0ea2dc'});
+      } else if (windowTop > workSelfDirected.offset().top - 100 || workSelfDirected.offset().bottom) {
+        workHeaderContainer.css({'background-color':'#37bec0'});
+      } else if (windowTop > workIntranets.offset().top - 100 || workIntranets.offset().bottom) {
+        workHeaderContainer.css({'background-color':'#ed4f7e'});
+      } else if (windowTop > workPharmaceutical.offset().top - 100 || workPharmaceutical.offset().bottom) {
+        workHeaderContainer.css({'background-color':'#9b5ca4'});
       } else {
-        workHeaderContainer.css({'background-color':'' });
+        workHeaderContainer.css({'background-color':''});
       }
      };
 
@@ -225,19 +225,19 @@
     var careersKaizen;
 
     var scrollPositions = function () {
-      careersBenefits = $('#careers-benefits').offset().top - 200;
-      careersKaizen = $('#careers-kaizen').offset().top - 200;
+      careersBenefits = $('#careers-benefits');
+      careersKaizen = $('#careers-kaizen');
     };
 
     var headerBG = function () {
       var windowTop = $(window).scrollTop();
 
-     if (windowTop > careersBenefits) {
-        careersHeaderContainer.css({'background-color':'#0ea2dc' });
-      } else if (windowTop > careersKaizen) {
-        careersHeaderContainer.css({'background-color':'#37bec0' });
+     if (windowTop > careersBenefits.offset().top - 500 || careersBenefits.offset().bottom) {
+        careersHeaderContainer.css({'background-color':'#0ea2dc'});
+      } else if (windowTop > careersKaizen.offset().top || careersKaizen.offset().bottom) {
+        careersHeaderContainer.css({'background-color':'#37bec0'});
       } else {
-        careersHeaderContainer.css({'background-color':'' });
+        careersHeaderContainer.css({'background-color':''});
       }
      };
 

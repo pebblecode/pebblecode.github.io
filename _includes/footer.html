@@ -25,10 +25,10 @@
   <script type="text/javascript" src="{{ site.baseurl }}/js/vendor/jquery.lazyload.min.js"></script>
   <script>
     jQuery(function ($) {
-      $("img.lazy").lazyload({
-        threshold : 600
-        });
-      $("#gif1").attr("src","second.jpg");
+      $('img.lazyload').lazyload({
+        effect: 'fadeIn',
+        threshold: 200
+      });
     });
   </script>
 {% endif %}

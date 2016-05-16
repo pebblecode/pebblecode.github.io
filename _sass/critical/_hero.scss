@@ -33,11 +33,8 @@
   }
 
   &.aqua { background-color: $aqua; }
-
   &.blue { background-color: $blue; }
-
   &.purple { background-color: $purple; }
-
   &.green { background-color: $green; }
 }
 
@@ -56,11 +53,11 @@
   text-shadow: 3px 4px 0 rgba(black, 0.2);
   color: white;
   margin: 0 0 10px;
-  line-height: 1;
+  line-height: 1.1;
 
   @media screen and ( max-width: $medium ) {
+    text-shadow: 2px 2px 0 rgba($grey, 0.4);
     margin: 0 0 10px;
-    line-height: 1;
   }
 }
 
@@ -73,7 +70,6 @@
 
   @media screen and ( max-width: $medium ) {
     font-size: $delta + 2px;
-    line-height: 1.4;
     padding: 10px $gutter;
   }
 }

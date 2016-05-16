@@ -8,7 +8,7 @@
   margin: -10px 5% 50px;
 
   &::after {
-    border: 1px solid white;
+    box-shadow: none;
     background-color: lighten($ink, 50);
 
     @media screen and ( max-width: $medium + 150px ) {
