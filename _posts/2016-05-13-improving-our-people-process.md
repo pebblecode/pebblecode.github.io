@@ -76,7 +76,7 @@ The sentence that seemed to exemplify our goals was simple:
 
 *It’s all about self-directed learning with feedback from your peers.*
 
-The underlying message was that you we the architect of your own career progression. If you felt it was time to move up the ladder, it was within your power to gather feedback, measure yourself, and bring it to the team.
+The underlying message was that you were the architect of your own career progression. If you felt it was time to move up the ladder, it was within your power to gather feedback, measure yourself, and bring it to the team.
 
 ## Measure
 
