@@ -1,10 +1,12 @@
 //===============================================================================
 // STYLES FIXES BEFORE MAIN.CSS LOADS
 //===============================================================================
-img,
-.hero-container .btn {
+.hero-container .btn ,
+.services-process-img {
   display: none;
 }
+
+img { max-width: 100%; }
 
 // Fix touch sizing
 .btn,
@@ -14,7 +16,10 @@ img,
 .gbl-head-btn,
 .gbl-head-nav-item,
 .gbl-head-logo,
-.services-list-inner {
+.services-list-inner,
+.blog-category-title,
+.blog-post-details,
+.readmore-btn {
   padding: 10px;
   display: block;
 }
