@@ -3,17 +3,9 @@
 //===============================================================================
 .gbl-head {
   background-color: $primary;
-  border-bottom: 1px solid rgba(white, 0.25);
-  padding: 40px $gutter * 2 20px;
   position: fixed;
   width: 100%;
   z-index: 10;
-  transition: top 0.3s;
-
-  @media screen and ( max-width: $medium + 100px ) {
-    position: fixed;
-    padding: 20px 0 15px;
-  }
 
   &.pink { background-color: $pink }
   &.purple { background-color: $purple; }
@@ -28,10 +20,14 @@
   .post & {
     background-color: $aqua;
   }
+}
 
-  &.transparent {
-    background-color: transparent;
-    box-shadow: none;
+.gbl-head-inner {
+  padding: 40px $gutter * 2 20px;
+  position: relative;
+
+  @media screen and ( max-width: $medium + 100px ) {
+    padding: 20px 0 15px;
   }
 }
 

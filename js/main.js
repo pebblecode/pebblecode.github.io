@@ -19,12 +19,18 @@
 
   // Navigation appear on scroll up
   var scrollCurrent = 0;
+  var gblHead = $('.gbl-head');
   $(window).scroll(function() {
     var scrollDiff = $(this).scrollTop();
-    if(scrollDiff > scrollCurrent && scrollDiff > 100 && gblHeadNav.hasClass("active") === false) {
-       $('header').addClass('hide').removeClass('show');
+    if(scrollDiff > scrollCurrent && scrollDiff > 100 && gblHeadNav.hasClass('active') === false) {
+      gblHead.addClass('hide').removeClass('show');
     } else {
-       $('header').addClass('show').removeClass('hide');
+      gblHead.addClass('show').removeClass('hide');
+    }
+    if (scrollDiff > 100) {
+      gblHead.removeClass('top');
+    } else {
+      gblHead.addClass('top');
     }
     scrollCurrent = scrollDiff;
   });
@@ -55,8 +61,9 @@
     $('#' + tabID).addClass('active');
   });
 
-  // Change services bg colour on scroll
+  // Change services page + services header bg colour on scroll
   var servicesContainer = $('.services-container');
+  var servicesHeaderContainer = $('.services .gbl-head');
 
   if ($(servicesContainer).length > 0) {
     var servicesStrategy;
@@ -67,35 +74,45 @@
     var servicesAgile;
     var servicesTests;
 
-    var scrollPositions = debounce(function () {
-      servicesStrategy = $('#servicesStrategy').offset().top - 200;
-      servicesHacking = $('#servicesHacking').offset().top - 200;
-      servicesUX = $('#servicesUX').offset().top - 200;
-      servicesUXdesign = $('#servicesUXdesign').offset().top - 200;
-      servicesDesign = $('#servicesDesign').offset().top - 200;
-      servicesAgile = $('#servicesAgile').offset().top - 200;
-      servicesTests = $('#servicesTests').offset().top - 200;
-    }, 100);
+    var scrollPositions = function () {
+      servicesContent = $('#services-content').offset().top - 150;
+      servicesStrategy = $('#services-strategy').offset().top - 150;
+      servicesHacking = $('#services-hacking').offset().top - 150;
+      servicesUX = $('#services-ux').offset().top - 150;
+      servicesUXdesign = $('#services-ux-design').offset().top - 150;
+      servicesDesign = $('#services-design').offset().top - 150;
+      servicesAgile = $('#services-agile').offset().top - 150;
+      servicesTests = $('#services-tests').offset().top - 150;
+    };
 
-    var servicesBG = debounce(function () {
+    var servicesBG = function () {
       var windowTop = $(window).scrollTop();
 
       if (windowTop > servicesTests) {
         servicesContainer.css({'background-color':'#9b5ca4' });
+        servicesHeaderContainer.css({'background-color':'#9b5ca4' });
       } else if (windowTop > servicesAgile) {
         servicesContainer.css({'background-color':'#faad40' });
+        servicesHeaderContainer.css({'background-color':'#faad40' });
       } else if (windowTop > servicesDesign) {
         servicesContainer.css({'background-color':'#a4ce4e' });
+        servicesHeaderContainer.css({'background-color':'#a4ce4e' });
       } else if (windowTop > servicesUXdesign) {
         servicesContainer.css({'background-color':'#37bec0' });
+        servicesHeaderContainer.css({'background-color':'#37bec0' });
       } else if (windowTop > servicesUX) {
         servicesContainer.css({'background-color':'#0ea2dc' });
+        servicesHeaderContainer.css({'background-color':'#0ea2dc' });
       } else if (windowTop > servicesHacking) {
         servicesContainer.css({'background-color':'#ed4f7e' });
-      } else {
+        servicesHeaderContainer.css({'background-color':'#ed4f7e' });
+      } else if (windowTop > servicesStrategy) {
         servicesContainer.css({'background-color':'#9b5ca4' });
+        servicesHeaderContainer.css({'background-color':'#9b5ca4' });
+      } else if (windowTop > servicesContent) {
+        servicesHeaderContainer.css({'background-color':'#37bec0' });
       }
-    }, 100);
+    };
 
     $(window).resize(scrollPositions).scroll(servicesBG);
     scrollPositions();
@@ -103,20 +120,46 @@
   }
 
   // Change nav bg colour on scroll
+  var homeHeaderContainer = $('.home .gbl-head');
   var aboutHeaderContainer = $('.about .gbl-head');
-  var servicesHeaderContainer = $('.services .gbl-head');
   var workHeaderContainer = $('.work .gbl-head');
   var careersHeaderContainer = $('.careers .gbl-head');
   var blogHeaderContainer = $('.blog .gbl-head');
 
+  if ($(homeHeaderContainer).length > 0) {
+    var homeIndustry;
+    var homeFeatProject;
+
+    var scrollPositions = function () {
+      homeIndustry = $('#home-industry').offset().top - 200;
+      homeProject = $('#home-project').offset().top - 200;
+    };
+
+    var headerBG = function () {
+      var windowTop = $(window).scrollTop();
+
+      if (windowTop > homeProject) {
+        homeHeaderContainer.css({'background-color':'#37bec0' });
+      } else if (windowTop > homeIndustry) {
+        homeHeaderContainer.css({'background-color':'#0ea2dc' });
+      } else {
+        homeHeaderContainer.css({'background-color':'#ed4f7e' });
+      }
+    };
+
+    $(window).resize(scrollPositions).scroll(headerBG);
+    scrollPositions();
+    headerBG();
+  }
+
   if ($(aboutHeaderContainer).length > 0) {
     var aboutDirectors;
 
-    var scrollPositions = debounce(function () {
+    var scrollPositions = function () {
       aboutDirectors = $('#about-directors').offset().top - 200;
-    }, 100);
+    };
 
-    var headerBG = debounce(function () {
+    var headerBG = function () {
       var windowTop = $(window).scrollTop();
 
      if (windowTop > aboutDirectors) {
@@ -124,57 +167,7 @@
       } else {
         aboutHeaderContainer.css({'background-color':'' });
       }
-     }, 100);
-
-    $(window).resize(scrollPositions).scroll(headerBG);
-    scrollPositions();
-    headerBG();
-  }
-
-  if ($(servicesHeaderContainer).length > 0) {
-    var servicesStrategy;
-    var servicesHacking;
-    var servicesUX;
-    var servicesUXdesign;
-    var servicesDesign;
-    var servicesAgile;
-    var servicesTests;
-    var servicesCollab;
-
-    var scrollPositions = debounce(function () {
-      servicesStrategy = $('#services-strategy').offset().top - 200;
-      servicesHacking = $('#services-hacking').offset().top - 200;
-      servicesUX = $('#services-UX').offset().top - 200;
-      servicesUXdesign = $('#services-UX-design').offset().top - 200;
-      servicesDesign = $('#services-design').offset().top - 200;
-      servicesAgile = $('#services-agile').offset().top - 200;
-      servicesTests = $('#services-tests').offset().top - 200;
-      servicesCollab = $('#services-collab').offset().top - 200;
-    }, 100);
-
-    var headerBG = debounce(function () {
-      var windowTop = $(window).scrollTop();
-
-      if (windowTop > servicesCollab) {
-        servicesHeaderContainer.css({'background-color':'#ed4f7e' });
-      } else if (windowTop > servicesTests) {
-        servicesHeaderContainer.css({'background-color':'#9b5ca4' });
-      } else if (windowTop > servicesAgile) {
-        servicesHeaderContainer.css({'background-color':'#faad40' });
-      } else if (windowTop > servicesDesign) {
-        servicesHeaderContainer.css({'background-color':'#a4ce4e' });
-      } else if (windowTop > servicesUXdesign) {
-        servicesHeaderContainer.css({'background-color':'#37bec0' });
-      } else if (windowTop > servicesUX) {
-        servicesHeaderContainer.css({'background-color':'#0ea2dc' });
-      } else if (windowTop > servicesHacking) {
-        servicesHeaderContainer.css({'background-color':'#ed4f7e' });
-      } else if (windowTop > servicesStrategy) {
-        servicesHeaderContainer.css({'background-color':'#9b5ca4' });
-      } else {
-        servicesHeaderContainer.css({'background-color':'' });
-      }
-    }, 100);
+     };
 
     $(window).resize(scrollPositions).scroll(headerBG);
     scrollPositions();
@@ -190,7 +183,7 @@
     var workRailTravel;
     var workHighFrequency;
 
-    var scrollPositions = debounce(function () {
+    var scrollPositions = function () {
       workPharmaceutical = $('#work-pharmaceutical').offset().top - 200;
       workIntranets = $('#work-intranets').offset().top - 200;
       workSelfDirected = $('#work-self-directed').offset().top - 200;
@@ -198,9 +191,9 @@
       workEnterpriseMobile = $('#work-enterprise-mobile').offset().top - 200;
       workRailTravel = $('#work-rail-travel').offset().top - 200;
       workHighFrequency = $('#work-high-frequency').offset().top - 200;
-    }, 100);
+    };
 
-    var headerBG = debounce(function () {
+    var headerBG = function () {
       var windowTop = $(window).scrollTop();
 
      if (windowTop > workHighFrequency) {
@@ -220,7 +213,7 @@
       } else {
         workHeaderContainer.css({'background-color':'' });
       }
-     }, 100);
+     };
 
     $(window).resize(scrollPositions).scroll(headerBG);
     scrollPositions();
@@ -231,12 +224,12 @@
     var careersBenefits;
     var careersKaizen;
 
-    var scrollPositions = debounce(function () {
+    var scrollPositions = function () {
       careersBenefits = $('#careers-benefits').offset().top - 200;
       careersKaizen = $('#careers-kaizen').offset().top - 200;
-    }, 100);
+    };
 
-    var headerBG = debounce(function () {
+    var headerBG = function () {
       var windowTop = $(window).scrollTop();
 
      if (windowTop > careersBenefits) {
@@ -246,7 +239,7 @@
       } else {
         careersHeaderContainer.css({'background-color':'' });
       }
-     }, 100);
+     };
 
     $(window).resize(scrollPositions).scroll(headerBG);
     scrollPositions();
@@ -271,13 +264,13 @@
   var marker;
   var map;
 
-  $('#londonBtn').click( function() {
+  $('#london-btn').click( function() {
     var latLng = new google.maps.LatLng(51.485672, -0.118554);
     marker.setPosition(latLng);
     map.panTo(latLng);
   });
 
-  $('#sofiaBtn').click(function(){
+  $('#sofia-btn').click(function(){
     var latLng = new google.maps.LatLng(42.6742392, 23.3543577);
     marker.setPosition(latLng);
     map.panTo(latLng);

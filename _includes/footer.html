@@ -1,16 +1,18 @@
 <footer class="gbl-foot">
-  <ul class="gbl-foot-links">
-    <li><a href="tel:+442033273940">+44 (0) 20 3327 3940</a></li>
-    <li><a href="mailto:{{site.email}}">{{site.email}}</a></li>
-    <li><a href="{{ site.baseurl }}/contact">Find us</a></li>
-    <li><a href="{{ site.baseurl }}/careers">Join us</a></li>
-  </ul>
-  <ul class="gbl-foot-social">
-    <li><a href="https://github.com/{{site.github}}" class="github" target="_blank">Github</a></li>
-    <li><a href="https://twitter.com/{{site.twitter}}" class="twitter" target="_blank">Twitter</a></li>
-    <li><a href="https://vimeo.com/{{site.vimeo}}" class="vimeo" target="_blank">Vimeo</a></li>
-  </ul>
-  <span class="gbl-foot-tagline">Delivering Awesome!</span>
+  <div class="gbl-foot-inner grid">
+    <ul class="gbl-foot-links">
+      <li><a href="tel:+442033273940">+44 (0) 20 3327 3940</a></li>
+      <li><a href="mailto:{{site.email}}">{{site.email}}</a></li>
+      <li><a href="{{ site.baseurl }}/contact">Find us</a></li>
+      <li><a href="{{ site.baseurl }}/careers">Join us</a></li>
+    </ul>
+    <ul class="gbl-foot-social">
+      <li><a href="https://github.com/{{site.github}}" class="github" target="_blank">Github</a></li>
+      <li><a href="https://twitter.com/{{site.twitter}}" class="twitter" target="_blank">Twitter</a></li>
+      <li><a href="https://vimeo.com/{{site.vimeo}}" class="vimeo" target="_blank">Vimeo</a></li>
+    </ul>
+    <span class="gbl-foot-tagline">Delivering Awesome!</span>
+  </div>
 </footer>
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
@@ -39,7 +41,7 @@
   </script>
 {% endif %}
 <script type="text/javascript" src="{{ site.baseurl }}/js/vendor/scrollReveal.min.js"></script>
-<script type="text/javascript" src="{{ site.baseurl }}/js/main.min.js"></script>
+<script type="text/javascript" src="{{ site.baseurl }}/js/main.js"></script>
 {% for extrascript in include.extrascripts %}
   <script type="text/javascript" src="{{ site.baseurl }}/js/{{extrascript.link}}"></script>
 {% endfor %}
