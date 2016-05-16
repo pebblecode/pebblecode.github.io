@@ -4,8 +4,8 @@
 img { display: none; }
 
 // Fix touch sizing
+.btn,
 .feat-content-list-item,
-.cta-btn,
 .gbl-foot-links a,
 .gbl-foot-social a,
 .gbl-head-btn,
@@ -15,6 +15,9 @@ img { display: none; }
   display: block;
 }
 
-.gbl-head-btn { margin: 10px; }
+.btn,
+.gbl-head-btn {
+  margin: 10px;
+}
 
 .photo-container { height: 400px; }
