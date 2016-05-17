@@ -1,0 +1,33 @@
+//===============================================================================
+// LAYOUT - CRITICAL STYLES
+//===============================================================================
+html {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+  font-family: $museo;
+  font-size: $body-font-size;
+  font-weight: $font-regular;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  color: $ink;
+  overflow-x: hidden;
+  position: relative;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+.grid {
+  @include clearfix;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1100px;
+}

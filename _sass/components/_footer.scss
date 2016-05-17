@@ -2,9 +2,12 @@
 // GLOBAL FOOTER
 //===============================================================================
 .gbl-foot {
-  position: relative;
   background-color: white;
   border-top: 1px solid $primary;
+}
+
+.gbl-foot-inner {
+  position: relative;
   padding: 20px $gutter * 2 40px;
 
   @media screen and ( max-width: $medium + 100px ) {
@@ -38,16 +41,16 @@
 
     @media screen and ( max-width: $medium + 100px ) {
       display: block;
+      margin-bottom: 10px;
     }
   }
 
   a {
     color: $pink;
     transition: 0.2s;
+    padding: 0;
 
-    &:hover {
-      color: rgba($pink, 0.8);
-    }
+    &:hover { color: rgba($pink, 0.8); }
   }
 }
 

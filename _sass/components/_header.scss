@@ -1,0 +1,62 @@
+//===============================================================================
+// GLOBAL HEADER
+//===============================================================================
+.gbl-head {
+  transition: 0.3s box-shadow, 0.3s background-color;
+  opacity: 0.99;
+  border-bottom: 1px solid rgba(white, 0.25);
+  transform: translateZ(0);
+
+  &:not(.top) { box-shadow: 0 3px 0 rgba(black, 0.06); }
+}
+
+.gbl-head-logo:hover {
+  color: transparent;
+  opacity: 0.8;
+}
+
+.gbl-head-nav {
+  @media screen and ( max-width: $medium + 100px ) {
+    transition: 0.3s max-height ease-out, 0.3s box-shadow;
+
+    &.active {
+      box-shadow: 0 4px 0 rgba(black, 0.06);
+      max-height: 500px;
+    }
+  }
+}
+
+.gbl-head-nav-item {
+  border-bottom: 5px solid transparent;
+  transition: 0.2s;
+
+  @media screen and ( max-width: $medium + 100px ) {
+    border: none;
+    text-align: right;
+    font-size: $delta;
+    background-color: rgba(black, 0.1);
+    margin: 1px 0 0;
+  }
+
+  &:hover {
+    color: rgba(white, 0.9);
+    border-color: rgba(white, 0.4);
+
+    @media screen and ( max-width: $medium ) {
+      background-color: rgba(black, 0.2);
+    }
+  }
+
+  &.active,
+  .blog &:last-child,
+  .post &:last-child {
+    color: white;
+    border-color: white;
+  }
+}
+
+.gbl-head-btn.active::after {
+  @include sprite($close-grey);
+  top: 14px;
+  left: 15px;
+}

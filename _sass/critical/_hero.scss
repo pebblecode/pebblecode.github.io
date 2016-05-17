@@ -1,0 +1,75 @@
+//===============================================================================
+// HERO
+//===============================================================================
+// Hero Section
+.hero-container {
+  background-color: $primary;
+  position: relative;
+  overflow: hidden;
+
+  &::before,
+  &::after {
+    @include shadow-pseudo;
+  }
+
+  &::before {
+    bottom: 20px;
+    height: 20px;
+    background-color: rgba(black, 0.15);
+    transform: rotate(2.1deg) scale(1.2);
+  }
+
+  &::after {
+    bottom: -25px;
+    height: 50px;
+    background-color: white;
+    transform: rotate(1.3deg) scale(1.2);
+  }
+
+  .btn {
+    margin: 30px $gutter;
+    display: table;
+    box-shadow: 0 4px 0 rgba(black, 0.1);
+  }
+
+  &.aqua { background-color: $aqua; }
+  &.blue { background-color: $blue; }
+  &.purple { background-color: $purple; }
+  &.green { background-color: $green; }
+}
+
+.hero-inner {
+  padding-top: 150px;
+  padding-bottom: 90px;
+  display: block;
+  position: relative;
+
+  @media screen and ( max-width: $medium + 100px ) {
+    padding: 90px 0 60px
+  }
+}
+
+.hero-title {
+  text-shadow: 3px 4px 0 rgba(black, 0.2);
+  color: white;
+  margin: 0 0 10px;
+  line-height: 1.1;
+
+  @media screen and ( max-width: $medium ) {
+    text-shadow: 2px 2px 0 rgba($grey, 0.4);
+    margin: 0 0 10px;
+  }
+}
+
+.hero-summary {
+  @include foutfix;
+  font-size: $beta - 6px;
+  color: white;
+  padding: 15px $gutter * 2 10px $gutter;
+  line-height: 1.4;
+
+  @media screen and ( max-width: $medium ) {
+    font-size: $delta + 2px;
+    padding: 10px $gutter;
+  }
+}

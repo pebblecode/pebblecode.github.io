@@ -1,0 +1,60 @@
+//===============================================================================
+// TYPOGRAPHY - CRITICAL STYLES
+//===============================================================================
+h1, h2, h3 {
+  @include foutfix;
+  line-height: 1.3;
+  font-family: $brandon;
+  font-weight: $font-black;
+  font-style: italic;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+}
+
+h1 {
+  font-size: $tera;
+
+  @media screen and ( max-width: $medium ) {
+    font-size: $mega;
+  }
+}
+
+h2 {
+  font-size: $mega;
+
+  @media screen and ( max-width: $medium ) {
+    font-size: $alpha;
+  }
+}
+
+h3 {
+  font-size: $alpha;
+
+  @media screen and ( max-width: $medium ) {
+    font-size: $alpha - 8px;
+  }
+}
+
+a {
+  color: $primary;
+  text-decoration: none;
+  transition: 0.2s;
+
+  &:hover {
+    cursor: pointer;
+    color: lighten($primary, 10);
+  }
+}
+
+blockquote {
+  border-left: 10px solid $primary;
+  padding-left: 20px;
+  font-style: normal;
+  margin: 45px 30px;
+  color: $primary;
+  font-size: $gamma + 4px;
+
+  @media screen and ( max-width: $medium ) {
+    margin: 30px 0;
+  }
+}

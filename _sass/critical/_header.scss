@@ -1,0 +1,108 @@
+//===============================================================================
+// GLOBAL HEADER - CRITICAL STYLES
+//===============================================================================
+.gbl-head {
+  background-color: $primary;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+
+  &.pink { background-color: $pink }
+  &.purple { background-color: $purple; }
+
+  &.blue,
+  .blog-by-tag & {
+    background-color: $blue;
+  }
+
+  &.aqua,
+  .blog &,
+  .post & {
+    background-color: $aqua;
+  }
+}
+
+.gbl-head-inner {
+  padding: 40px $gutter * 2 20px;
+  position: relative;
+
+  @media screen and ( max-width: $medium + 100px ) {
+    padding: 20px 0 15px;
+  }
+}
+
+.gbl-head-logo {
+  position: relative;
+  color: transparent;
+  overflow: hidden;
+  display: block;
+  width: 175px;
+  height: 31px;
+  transition: 0.2s;
+
+  &:after {
+    @include icon-pseudo;
+    @include sprite($logo-white);
+    bottom: 0;
+    left: 0;
+  }
+
+  @media screen and ( max-width: $medium + 100px ) {
+    margin-left: $gutter;
+  }
+}
+
+.gbl-head-nav {
+  position: absolute;
+  right: $gutter * 2;
+  top: 0;
+
+  @media screen and ( max-width: $medium + 100px ) {
+    position: relative;
+    top: 15px;
+    right: 0;
+    max-height: 0;
+    overflow: hidden;
+  }
+}
+
+.gbl-head-nav-item {
+  color: white;
+  display: block;
+  float: left;
+  padding: 45px 15px 18px;
+  color: rgba(white, 0.5);
+  text-decoration: none;
+
+  @media screen and ( max-width: $medium + 100px ) {
+    float: none;
+    padding: 10px $gutter;
+  }
+}
+
+.gbl-head-btn {
+  display: none;
+  position: absolute;
+  margin: 0;
+  top: 10px;
+  right: $gutter - 5px;
+  height: 45px;
+  width: 45px;
+  color: transparent;
+  overflow: hidden;
+  background-color: white;
+  border-radius: 50%;
+  box-shadow: 0 4px 0 rgba(black, 0.1);
+  transition: box-shadow 0.2s, opacity 0.2s;
+
+  &:after {
+    @include icon-pseudo;
+    @include sprite($menu-grey);
+    top: 13px;
+    left: 13px;
+  }
+
+  @media screen and ( max-width: $medium + 100px ) {
+    display: block;
+  }
+}

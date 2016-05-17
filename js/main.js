@@ -2,31 +2,14 @@
 
   window.sr = new scrollReveal();
 
-  function debounce(func, wait, immediate) {
-    var timeout;
-    return function() {
-      var context = this, args = arguments;
-      var later = function() {
-        timeout = null;
-        if (!immediate) func.apply(context, args);
-      };
-      var callNow = immediate && !timeout;
-      clearTimeout(timeout);
-      timeout = setTimeout(later, wait);
-      if (callNow) func.apply(context, args);
-    };
-  };
-
   // Navigation appear on scroll up
-  var scrollCurrent = 0;
+  var gblHead = $('.gbl-head');
   $(window).scroll(function() {
-    var scrollDiff = $(this).scrollTop();
-    if(scrollDiff > scrollCurrent && scrollDiff > 100 && gblHeadNav.hasClass("active") === false) {
-       $('header').addClass('hide').removeClass('show');
+    if ($(this).scrollTop() > 100) {
+      gblHead.removeClass('top');
     } else {
-       $('header').addClass('show').removeClass('hide');
+      gblHead.addClass('top');
     }
-    scrollCurrent = scrollDiff;
   });
 
   // Mobile nav
@@ -55,8 +38,9 @@
     $('#' + tabID).addClass('active');
   });
 
-  // Change services bg colour on scroll
+  // Change services page + services header bg colour on scroll
   var servicesContainer = $('.services-container');
+  var servicesHeaderContainer = $('.services .gbl-head');
 
   if ($(servicesContainer).length > 0) {
     var servicesStrategy;
@@ -67,35 +51,45 @@
     var servicesAgile;
     var servicesTests;
 
-    var scrollPositions = debounce(function () {
-      servicesStrategy = $('#servicesStrategy').offset().top - 200;
-      servicesHacking = $('#servicesHacking').offset().top - 200;
-      servicesUX = $('#servicesUX').offset().top - 200;
-      servicesUXdesign = $('#servicesUXdesign').offset().top - 200;
-      servicesDesign = $('#servicesDesign').offset().top - 200;
-      servicesAgile = $('#servicesAgile').offset().top - 200;
-      servicesTests = $('#servicesTests').offset().top - 200;
-    }, 100);
+    var scrollPositions = function () {
+      servicesContent = $('#services-content');
+      servicesStrategy = $('#services-strategy');
+      servicesHacking = $('#services-hacking');
+      servicesUX = $('#services-ux');
+      servicesUXdesign = $('#services-ux-design');
+      servicesDesign = $('#services-design');
+      servicesAgile = $('#services-agile');
+      servicesTests = $('#services-tests');
+    };
 
-    var servicesBG = debounce(function () {
+    var servicesBG = function () {
       var windowTop = $(window).scrollTop();
 
-      if (windowTop > servicesTests) {
+      if (windowTop > servicesTests.offset().top - 200 || servicesTests.offset().bottom) {
         servicesContainer.css({'background-color':'#9b5ca4' });
-      } else if (windowTop > servicesAgile) {
+        servicesHeaderContainer.css({'background-color':'#9b5ca4' });
+      } else if (windowTop > servicesAgile.offset().top - 200 || servicesAgile.offset().bottom) {
         servicesContainer.css({'background-color':'#faad40' });
-      } else if (windowTop > servicesDesign) {
+        servicesHeaderContainer.css({'background-color':'#faad40' });
+      } else if (windowTop > servicesDesign.offset().top - 200 || servicesDesign.offset().bottom) {
         servicesContainer.css({'background-color':'#a4ce4e' });
-      } else if (windowTop > servicesUXdesign) {
+        servicesHeaderContainer.css({'background-color':'#a4ce4e' });
+      } else if (windowTop > servicesUXdesign.offset().top - 200 || servicesUXdesign.offset().bottom) {
         servicesContainer.css({'background-color':'#37bec0' });
-      } else if (windowTop > servicesUX) {
+        servicesHeaderContainer.css({'background-color':'#37bec0' });
+      } else if (windowTop > servicesUX.offset().top - 200 || servicesUX.offset().bottom) {
         servicesContainer.css({'background-color':'#0ea2dc' });
-      } else if (windowTop > servicesHacking) {
+        servicesHeaderContainer.css({'background-color':'#0ea2dc' });
+      } else if (windowTop > servicesHacking.offset().top - 200 || servicesHacking.offset().bottom) {
         servicesContainer.css({'background-color':'#ed4f7e' });
-      } else {
+        servicesHeaderContainer.css({'background-color':'#ed4f7e' });
+      } else if (windowTop > servicesStrategy.offset().top - 200 || servicesStrategy.offset().bottom) {
         servicesContainer.css({'background-color':'#9b5ca4' });
+        servicesHeaderContainer.css({'background-color':'#9b5ca4' });
+      } else {
+        servicesHeaderContainer.css({'background-color':'#37bec0' });
       }
-    }, 100);
+    };
 
     $(window).resize(scrollPositions).scroll(servicesBG);
     scrollPositions();
@@ -103,78 +97,54 @@
   }
 
   // Change nav bg colour on scroll
+  var homeHeaderContainer = $('.home .gbl-head');
   var aboutHeaderContainer = $('.about .gbl-head');
-  var servicesHeaderContainer = $('.services .gbl-head');
   var workHeaderContainer = $('.work .gbl-head');
   var careersHeaderContainer = $('.careers .gbl-head');
   var blogHeaderContainer = $('.blog .gbl-head');
 
-  if ($(aboutHeaderContainer).length > 0) {
-    var aboutDirectors;
+  if ($(homeHeaderContainer).length > 0) {
+    var homeIndustry;
+    var homeFeatProject;
 
-    var scrollPositions = debounce(function () {
-      aboutDirectors = $('#about-directors').offset().top - 200;
-    }, 100);
+    var scrollPositions = function () {
+      homeIndustry = $('#home-industry');
+      homeProject = $('#home-project');
+    };
 
-    var headerBG = debounce(function () {
+    var headerBG = function () {
       var windowTop = $(window).scrollTop();
 
-     if (windowTop > aboutDirectors) {
-        aboutHeaderContainer.css({'background-color':'#0ea2dc' });
+      if (windowTop > homeProject.offset().top - 100 || homeProject.offset().bottom) {
+        homeHeaderContainer.css({'background-color':'#37bec0'});
+      } else if (windowTop > homeIndustry.offset().top - 200 || homeIndustry.offset().bottom) {
+        homeHeaderContainer.css({'background-color':'#0ea2dc'});
       } else {
-        aboutHeaderContainer.css({'background-color':'' });
+        homeHeaderContainer.css({'background-color':'#ed4f7e'});
       }
-     }, 100);
+    };
 
     $(window).resize(scrollPositions).scroll(headerBG);
     scrollPositions();
     headerBG();
   }
 
-  if ($(servicesHeaderContainer).length > 0) {
-    var servicesStrategy;
-    var servicesHacking;
-    var servicesUX;
-    var servicesUXdesign;
-    var servicesDesign;
-    var servicesAgile;
-    var servicesTests;
-    var servicesCollab;
+  if ($(aboutHeaderContainer).length > 0) {
+    var aboutDirectors;
 
-    var scrollPositions = debounce(function () {
-      servicesStrategy = $('#services-strategy').offset().top - 200;
-      servicesHacking = $('#services-hacking').offset().top - 200;
-      servicesUX = $('#services-UX').offset().top - 200;
-      servicesUXdesign = $('#services-UX-design').offset().top - 200;
-      servicesDesign = $('#services-design').offset().top - 200;
-      servicesAgile = $('#services-agile').offset().top - 200;
-      servicesTests = $('#services-tests').offset().top - 200;
-      servicesCollab = $('#services-collab').offset().top - 200;
-    }, 100);
+    var scrollPositions = function () {
+      aboutDirectors = $('#about-directors');
+    };
 
-    var headerBG = debounce(function () {
+    var headerBG = function () {
       var windowTop = $(window).scrollTop();
 
-      if (windowTop > servicesCollab) {
-        servicesHeaderContainer.css({'background-color':'#ed4f7e' });
-      } else if (windowTop > servicesTests) {
-        servicesHeaderContainer.css({'background-color':'#9b5ca4' });
-      } else if (windowTop > servicesAgile) {
-        servicesHeaderContainer.css({'background-color':'#faad40' });
-      } else if (windowTop > servicesDesign) {
-        servicesHeaderContainer.css({'background-color':'#a4ce4e' });
-      } else if (windowTop > servicesUXdesign) {
-        servicesHeaderContainer.css({'background-color':'#37bec0' });
-      } else if (windowTop > servicesUX) {
-        servicesHeaderContainer.css({'background-color':'#0ea2dc' });
-      } else if (windowTop > servicesHacking) {
-        servicesHeaderContainer.css({'background-color':'#ed4f7e' });
-      } else if (windowTop > servicesStrategy) {
-        servicesHeaderContainer.css({'background-color':'#9b5ca4' });
+     if (windowTop > aboutDirectors.offset().top - 200 || aboutDirectors.offset().bottom) {
+        aboutHeaderContainer.css({'background-color':'#0ea2dc'});
       } else {
-        servicesHeaderContainer.css({'background-color':'' });
+        aboutHeaderContainer.css({'background-color':''});
       }
-    }, 100);
+     };
 
     $(window).resize(scrollPositions).scroll(headerBG);
     scrollPositions();
@@ -190,37 +160,37 @@
     var workRailTravel;
     var workHighFrequency;
 
-    var scrollPositions = debounce(function () {
-      workPharmaceutical = $('#work-pharmaceutical').offset().top - 200;
-      workIntranets = $('#work-intranets').offset().top - 200;
-      workSelfDirected = $('#work-self-directed').offset().top - 200;
-      workNextGen = $('#work-next-gen').offset().top - 200;
-      workEnterpriseMobile = $('#work-enterprise-mobile').offset().top - 200;
-      workRailTravel = $('#work-rail-travel').offset().top - 200;
-      workHighFrequency = $('#work-high-frequency').offset().top - 200;
-    }, 100);
+    var scrollPositions = function () {
+      workPharmaceutical = $('#work-pharmaceutical');
+      workIntranets = $('#work-intranets');
+      workSelfDirected = $('#work-self-directed');
+      workNextGen = $('#work-next-gen');
+      workEnterpriseMobile = $('#work-enterprise-mobile');
+      workRailTravel = $('#work-rail-travel');
+      workHighFrequency = $('#work-high-frequency');
+    };
 
-    var headerBG = debounce(function () {
+    var headerBG = function () {
       var windowTop = $(window).scrollTop();
 
-     if (windowTop > workHighFrequency) {
-        workHeaderContainer.css({'background-color':'#ed4f7e' });
-      } else if (windowTop > workRailTravel) {
-        workHeaderContainer.css({'background-color':'#faad40' });
-      } else if (windowTop > workEnterpriseMobile) {
-        workHeaderContainer.css({'background-color':'#a4ce4e' });
-      } else if (windowTop > workNextGen) {
-        workHeaderContainer.css({'background-color':'#0ea2dc' });
-      } else if (windowTop > workSelfDirected) {
-        workHeaderContainer.css({'background-color':'#37bec0' });
-      } else if (windowTop > workIntranets) {
-        workHeaderContainer.css({'background-color':'#ed4f7e' });
-      } else if (windowTop > workPharmaceutical) {
-        workHeaderContainer.css({'background-color':'#9b5ca4' });
+     if (windowTop > workHighFrequency.offset().top - 100 || workHighFrequency.offset().bottom) {
+        workHeaderContainer.css({'background-color':'#ed4f7e'});
+      } else if (windowTop > workRailTravel.offset().top - 100 || workRailTravel.offset().bottom) {
+        workHeaderContainer.css({'background-color':'#faad40'});
+      } else if (windowTop > workEnterpriseMobile.offset().top - 100 || workEnterpriseMobile.offset().bottom) {
+        workHeaderContainer.css({'background-color':'#a4ce4e'});
+      } else if (windowTop > workNextGen.offset().top - 100 || workNextGen.offset().bottom) {
+        workHeaderContainer.css({'background-color':'#0ea2dc'});
+      } else if (windowTop > workSelfDirected.offset().top - 100 || workSelfDirected.offset().bottom) {
+        workHeaderContainer.css({'background-color':'#37bec0'});
+      } else if (windowTop > workIntranets.offset().top - 100 || workIntranets.offset().bottom) {
+        workHeaderContainer.css({'background-color':'#ed4f7e'});
+      } else if (windowTop > workPharmaceutical.offset().top - 100 || workPharmaceutical.offset().bottom) {
+        workHeaderContainer.css({'background-color':'#9b5ca4'});
       } else {
-        workHeaderContainer.css({'background-color':'' });
+        workHeaderContainer.css({'background-color':''});
       }
-     }, 100);
+     };
 
     $(window).resize(scrollPositions).scroll(headerBG);
     scrollPositions();
@@ -229,24 +199,20 @@
 
   if ($(careersHeaderContainer).length > 0) {
     var careersBenefits;
-    var careersKaizen;
 
-    var scrollPositions = debounce(function () {
-      careersBenefits = $('#careers-benefits').offset().top - 200;
-      careersKaizen = $('#careers-kaizen').offset().top - 200;
-    }, 100);
+    var scrollPositions = function () {
+      careersBenefits = $('#careers-benefits');
+    };
 
-    var headerBG = debounce(function () {
+    var headerBG = function () {
       var windowTop = $(window).scrollTop();
 
-     if (windowTop > careersBenefits) {
-        careersHeaderContainer.css({'background-color':'#0ea2dc' });
-      } else if (windowTop > careersKaizen) {
-        careersHeaderContainer.css({'background-color':'#37bec0' });
+     if (windowTop > careersBenefits.offset().top - 300 || careersBenefits.offset().bottom) {
+        careersHeaderContainer.css({'background-color':'#0ea2dc'});
       } else {
-        careersHeaderContainer.css({'background-color':'' });
+        careersHeaderContainer.css({'background-color':''});
       }
-     }, 100);
+     };
 
     $(window).resize(scrollPositions).scroll(headerBG);
     scrollPositions();
@@ -267,62 +233,76 @@
     }
   });
 
-  // Google Maps: Pan between different Locations
-  var marker;
-  var map;
-
-  $('#londonBtn').click( function() {
-    var latLng = new google.maps.LatLng(51.485672, -0.118554);
-    marker.setPosition(latLng);
-    map.panTo(latLng);
-  });
-
-  $('#sofiaBtn').click(function(){
-    var latLng = new google.maps.LatLng(42.6742392, 23.3543577);
-    marker.setPosition(latLng);
-    map.panTo(latLng);
-  });
-
-  // Initialise google maps
-  function initialize() {
-    initmap("map", 51.485672, -0.118554);
-  }
-  function healthinit() {
-    initmap("healthmap", 51.5148475,-0.1269898);
-  }
-  function insureinit() {
-    initmap("insuremap", 51.5144918,-0.0803065);
-  }
-  function digitalinit() {
-    initmap("digitalmap", 51.5074754,-0.1389263);
-  }
-
-  // Initialise google map
-  function initmap(mapname, lat, lon) {
-    var mapProp = {
-      center: new google.maps.LatLng(lat, lon),
-      zoom: 15,
-      panControl: false,
-      zoomControl: false,
-      mapTypeControl: false,
-      scaleControl: true,
-      streetViewControl: false,
-      overviewMapControl: false,
-      rotateControl: true,
-      scrollwheel: false,
-      mapTypeId: google.maps.MapTypeId.ROADMAP
-    };
-    map = new google.maps.Map(document.getElementById(mapname), mapProp);
-    marker = new google.maps.Marker({
-      position: new google.maps.LatLng(lat, lon),
-      animation: google.maps.Animation.DROP
-    });
-      marker.setMap(map);
-      map.panTo(marker.position);
-      google.maps.event.addListener(marker, "click", function () {
-    });
-  }
   // Initialise maps if visible
+  if ($('.location-map-container').length) {
+
+    // Google Maps: Pan between different Locations
+    var marker;
+    var map;
+
+    $('#london-btn').click( function() {
+      var latLng = new google.maps.LatLng(51.485672, -0.118554);
+      marker.setPosition(latLng);
+      map.panTo(latLng);
+    });
+
+    $('#sofia-btn').click(function(){
+      var latLng = new google.maps.LatLng(42.6742392, 23.3543577);
+      marker.setPosition(latLng);
+      map.panTo(latLng);
+    });
+
+    // Initialise google maps
+    function initialize() {
+      initmap("map", 51.485672, -0.118554);
+    }
+    function healthinit() {
+      initmap("healthmap", 51.5148475,-0.1269898);
+    }
+    function insureinit() {
+      initmap("insuremap", 51.5144918,-0.0803065);
+    }
+    function digitalinit() {
+      initmap("digitalmap", 51.5074754,-0.1389263);
+    }
+
+    // Initialise google map
+    function initmap(mapname, lat, lon) {
+      var mapProp = {
+        center: new google.maps.LatLng(lat, lon),
+        zoom: 15,
+        panControl: false,
+        zoomControl: false,
+        mapTypeControl: false,
+        scaleControl: true,
+        streetViewControl: false,
+        overviewMapControl: false,
+        rotateControl: true,
+        scrollwheel: false,
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+      };
+      map = new google.maps.Map(document.getElementById(mapname), mapProp);
+      marker = new google.maps.Marker({
+        position: new google.maps.LatLng(lat, lon),
+        animation: google.maps.Animation.DROP
+      });
+        marker.setMap(map);
+        map.panTo(marker.position);
+        google.maps.event.addListener(marker, "click", function () {
+      });
+    }
+
+    // Prevent Google Maps loading Roboto
+    var head = document.getElementsByTagName('head')[0];
+    var insertBefore = head.insertBefore;
+    head.insertBefore = function (newElement, referenceElement) {
+      if (newElement.href && newElement.href.indexOf('http://fonts.googleapis.com/css?family=Roboto') === 0) {
+        return;
+      }
+      insertBefore.call(head, newElement, referenceElement);
+    };
+  }
+
   if ($('#map').length) {
     google.maps.event.addDomListener(window, 'load', initialize);
   }

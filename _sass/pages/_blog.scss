@@ -21,11 +21,6 @@
 
 .hero-container-blog,
 .hero-container-blog.aqua {
-  background-image: repeating-linear-gradient(-45deg, transparent, transparent 70px, rgba(255,255,255,.1) 70px, rgba(255,255,255,.1) 140px);
-
-  @media screen and ( max-width: $medium + 100px ) {
-    background-image: none;
-  }
 
   &:before {
     bottom: 25px;
@@ -65,19 +60,6 @@
     @media screen and ( max-width: 600px ) {
       font-size: $alpha;
     }
-
-    &:hover {
-      transform: scale(1.03);
-    }
-  }
-
-  .post-author {
-    color: white;
-  }
-
-  .post-date {
-    color: white;
-    margin-bottom: 10px;
   }
 }
 

@@ -17,12 +17,11 @@
     </section>
     <!-- /.hero-container -->
 
-    <section class="content-container grid" id="careersKaizen">
+    <section class="content-container grid" id="careers-kaizen">
       <h2 class="content-title">{{page.content-title}}</h2>
       <article class="content-intro col-1-1">
         {{content}}
       </article>
-      <br class="clear">
       <aside class="aside-container kaizen-container" data-sr="wait 0.1s, scale up 10%">
         <h3>{{page.kaizen-title}}</h3>
         <p>{{page.kaizen-content}}</p>
@@ -33,7 +32,7 @@
     {% include photos.html %}
 
     <section class="content-container benefits-container">
-      <div class="benefits-inner grid" id="careersBenefits">
+      <div class="benefits-inner grid" id="careers-benefits">
         <h2 class="content-title">Awesome Benefits</h2>
         <article class="content-intro col-1-1">
           <p>Everyone in the company benefits from 10% time to work on what they are passionate about, have additional days off for volunteering, is encouraged to go to events and conferences and is empowered to help make pebble a great place to work.</p>
@@ -64,9 +63,8 @@
     {% include recruitee.html %}
 
     {% include blog-related.html %}
-    
-    {% include footer.html %}
-    <!-- /scripts-->
+
+    {% include footer.html lazyload=true %}
 
   </body>
 </html>

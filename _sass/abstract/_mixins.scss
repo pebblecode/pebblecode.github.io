@@ -2,7 +2,6 @@
 // MIXINS
 //===============================================================================
 // CLEAR FIX
-// @include clearfix;
 @mixin clearfix {
   clear: both;
 
@@ -14,7 +13,6 @@
 }
 
 // HIDE TEXT
-// @include hide-text;
 @mixin hide-text {
   overflow: hidden;
 
@@ -27,23 +25,12 @@
 }
 
 // MARGIN AUTO
-// @include margin-auto;
 @mixin margin-auto {
   margin-left: auto;
   margin-right: auto;
 }
 
-// If more than one of same, add margin
-// @include doubly(20px);
-@mixin doubly($margin) {
-  & + & {
-    margin-left: $margin;
-    @content;
-  }
-}
-
 // SPRITE ICON
-// @include icon;
 @mixin icon {
   color: transparent;
   overflow: hidden;
@@ -56,7 +43,6 @@
 }
 
 // SPRITE ICON (PSEUDO)
-// @include icon-pseudo;
 @mixin icon-pseudo {
   content: "";
   overflow: hidden;
@@ -66,7 +52,6 @@
 }
 
 // BEFORE/AFTER SHADOWS
-// @include shadow-pseudo;
 @mixin shadow-pseudo {
   content: "";
   overflow: hidden;
@@ -74,4 +59,16 @@
   position: absolute;
   left: 0;
   width: 100%;
+}
+
+// Hide FOUT
+@mixin foutfix {
+  .wf-loading & {
+    opacity: 0;
+  }
+
+  .wf-active & {
+    opacity: 1;
+    transition: 0.2s;
+  }
 }
