@@ -12,7 +12,7 @@ In February's lightning talks, Clo tells us about bias and why diversity is impo
 
 Clo delves into the ways that our personal backgrounds influence our view of the world, and explains why it's important to consider all viewpoints.
 
-{% include youtube.html id="QmAl2cg3C5U" caption="This is a caption" %}
+{% include youtube.html id="QmAl2cg3C5U" %}
 
 ---
 
