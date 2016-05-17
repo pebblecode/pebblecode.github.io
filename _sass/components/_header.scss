@@ -15,6 +15,17 @@
   opacity: 0.8;
 }
 
+.gbl-head-nav {
+  @media screen and ( max-width: $medium + 100px ) {
+    transition: 0.3s max-height ease-out, 0.3s box-shadow;
+
+    &.active {
+      box-shadow: 0 4px 0 rgba(black, 0.06);
+      max-height: 500px;
+    }
+  }
+}
+
 .gbl-head-nav-item {
   border-bottom: 5px solid transparent;
   transition: 0.2s;
