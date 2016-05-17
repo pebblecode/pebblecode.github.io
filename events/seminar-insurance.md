@@ -39,8 +39,11 @@ speakers:
    linkedin: https://uk.linkedin.com/in/manjitrana
    twitter: https://twitter.com/manjitrana
    bio:
-    - "“A visionary and strategic thinker with an excellent network of key industry connections, Manjit is one of those rare individuals who has innovation at the heart of everything he does. He thinks in different ways and looks at problems and opportunities through a different lens which means that he is challenging and creative. This is helped enormously by his engaging and highly energetic personality.”"
-    - "<em>– David Williams, Managing Director Underwriting @ AXA Insurance</em>"
+    - "Manjit is a founder and CEO of Ingenin, a multi-award winning innovation consultancy created to help insurers grow their businesses through the adoption of disruptive technologies and innovative business models."
+    - "An innovative and creative thinker with a strong understanding of trends, developments and issues in the insurance sector in the UK and internationally having worked in the UK, USA and APAC regions and widely considered an expert and thought leader on technology based innovation in the insurance sector."
+    - "A seasoned senior executive and dynamic leader with a proven track record of management success in both start-up and corporate arena’s and over 25 years experience of technology based proposition development."
+    - "He has created a number of start-ups as well as working for large corporates such as CSC, Fujitsu Consulting and AXA Insurance where he was recruited to help create the AXA Innovation Hub."
+    - "Manjit is a regular speaker at industry events, sits on the judging panels of industry awards and is an advisor and mentor to several start-ups."
  - name: Greg Gladwell
    id: greg-gladwell
    jobtitle: Owner and Founder Gladwell Enterprises Ltd
@@ -60,7 +63,21 @@ speakers:
     - "Chaired BACFI, Jacobs Rimell, Parc Technology, Inforsense, Applied Generics, COE Group Plc, The Red Gate Council of Advisers, Tideway Systems and Trinamo. NXD on Bright Computing, Trampoline and Zeus."
     - "Founded the Cambridge Computer Lab Ring and co-founded Trinamo. President, CFO and main board director of Micromuse Inc. (NASDAQ: MUSE)."
     - "Worked for McKinsey, Sun Microsystems, Xerox and Essex Court Chambers. Graduate of Trinity College Cambridge, Barrister (Gray’s Inn), Member of the Bar Council of England and Wales, City Fellow of Hughes Hall Cambridge University."
-
+ - name: Paul Pancham
+   id: paul-pancham
+   jobtitle: CEO, DWS Automotive Repair Solutions
+   portrait: paul-pancham.jpg
+   linkedin: https://www.linkedin.com/in/paul-pancham-0a60911a
+   bio:
+    - "30 years experience in the Automotive and Insurance sectors."
+    - "Established record in new business start up and transformation."
+    - "Proven record of developing strategic partnerships and evolving industry changing business models."
+    - "Specialist in individual customer and client management. Customer sponsor for DWS Group."
+ - name: Alan Horton
+   id: alan-horton
+   jobtitle: Non Executive Chairman, Independent Group
+   portrait: alan-horton.jpg
+   linkedin: https://www.linkedin.com/in/alan-horton-05a53010
 
 ## Google Maps URL
 invite-map-id: insuremap
