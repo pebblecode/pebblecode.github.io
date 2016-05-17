@@ -1,6 +1,6 @@
 GIT
   remote: git@github.com:pebblecode/autoprefixer.git
-  revision: 3fe5041154b39b1fce9094040fb13daa87d18ae4
+  revision: 58209256b50203d8ef6d599ea4d85b3648678c27
   branch: pebble
   specs:
     octopress-autoprefixer (1.0.2)
