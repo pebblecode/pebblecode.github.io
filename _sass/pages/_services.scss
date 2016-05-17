@@ -1,6 +1,8 @@
 //===============================================================================
 // SERVICES
 //===============================================================================
+.services .gbl-head { transition: 0.3s box-shadow, 0.6s background-color; }
+
 // Services List
 .services-list-container {
   width: 90%;
@@ -115,7 +117,7 @@
   margin: 0;
   padding-top: 50px;
   padding-bottom: 50px;
-  transition: background-color 0.8s;
+  transition: background-color 0.6s;
   transform: translateZ(0);
   z-index: 1;
 

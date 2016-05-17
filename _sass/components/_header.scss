@@ -2,12 +2,11 @@
 // GLOBAL HEADER
 //===============================================================================
 .gbl-head {
-  transition: 0.3s box-shadow, 0.3s top, 0.3s background-color;
+  transition: 0.3s box-shadow, 0.3s background-color;
   opacity: 0.99;
   border-bottom: 1px solid rgba(white, 0.25);
+  transform: translateZ(0);
 
-  &.show { top: 0; }
-  &.hide { top: -100px; }
   &:not(.top) { box-shadow: 0 3px 0 rgba(black, 0.06); }
 }
 
@@ -45,7 +44,7 @@
   }
 }
 
-.gbl-head-btn:active::after {
+.gbl-head-btn.active::after {
   @include sprite($close-grey);
   top: 14px;
   left: 15px;

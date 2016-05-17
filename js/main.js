@@ -2,37 +2,14 @@
 
   window.sr = new scrollReveal();
 
-  function debounce(func, wait, immediate) {
-    var timeout;
-    return function() {
-      var context = this, args = arguments;
-      var later = function() {
-        timeout = null;
-        if (!immediate) func.apply(context, args);
-      };
-      var callNow = immediate && !timeout;
-      clearTimeout(timeout);
-      timeout = setTimeout(later, wait);
-      if (callNow) func.apply(context, args);
-    };
-  };
-
   // Navigation appear on scroll up
-  var scrollCurrent = 0;
   var gblHead = $('.gbl-head');
   $(window).scroll(function() {
-    var scrollDiff = $(this).scrollTop();
-    if(scrollDiff > scrollCurrent && scrollDiff > 100 && gblHeadNav.hasClass('active') === false) {
-      gblHead.addClass('hide').removeClass('show');
-    } else {
-      gblHead.addClass('show').removeClass('hide');
-    }
-    if (scrollDiff > 100) {
+    if ($(this).scrollTop() > 100) {
       gblHead.removeClass('top');
     } else {
       gblHead.addClass('top');
     }
-    scrollCurrent = scrollDiff;
   });
 
   // Mobile nav
@@ -88,25 +65,25 @@
     var servicesBG = function () {
       var windowTop = $(window).scrollTop();
 
-      if (windowTop > servicesTests.offset().top - 100 || servicesTests.offset().bottom) {
+      if (windowTop > servicesTests.offset().top - 200 || servicesTests.offset().bottom) {
         servicesContainer.css({'background-color':'#9b5ca4' });
         servicesHeaderContainer.css({'background-color':'#9b5ca4' });
-      } else if (windowTop > servicesAgile.offset().top - 100 || servicesAgile.offset().bottom) {
+      } else if (windowTop > servicesAgile.offset().top - 200 || servicesAgile.offset().bottom) {
         servicesContainer.css({'background-color':'#faad40' });
         servicesHeaderContainer.css({'background-color':'#faad40' });
-      } else if (windowTop > servicesDesign.offset().top - 100 || servicesDesign.offset().bottom) {
+      } else if (windowTop > servicesDesign.offset().top - 200 || servicesDesign.offset().bottom) {
         servicesContainer.css({'background-color':'#a4ce4e' });
         servicesHeaderContainer.css({'background-color':'#a4ce4e' });
-      } else if (windowTop > servicesUXdesign.offset().top - 100 || servicesUXdesign.offset().bottom) {
+      } else if (windowTop > servicesUXdesign.offset().top - 200 || servicesUXdesign.offset().bottom) {
         servicesContainer.css({'background-color':'#37bec0' });
         servicesHeaderContainer.css({'background-color':'#37bec0' });
-      } else if (windowTop > servicesUX.offset().top - 100 || servicesUX.offset().bottom) {
+      } else if (windowTop > servicesUX.offset().top - 200 || servicesUX.offset().bottom) {
         servicesContainer.css({'background-color':'#0ea2dc' });
         servicesHeaderContainer.css({'background-color':'#0ea2dc' });
-      } else if (windowTop > servicesHacking.offset().top - 100 || servicesHacking.offset().bottom) {
+      } else if (windowTop > servicesHacking.offset().top - 200 || servicesHacking.offset().bottom) {
         servicesContainer.css({'background-color':'#ed4f7e' });
         servicesHeaderContainer.css({'background-color':'#ed4f7e' });
-      } else if (windowTop > servicesStrategy.offset().top - 100 || servicesStrategy.offset().bottom) {
+      } else if (windowTop > servicesStrategy.offset().top - 200 || servicesStrategy.offset().bottom) {
         servicesContainer.css({'background-color':'#9b5ca4' });
         servicesHeaderContainer.css({'background-color':'#9b5ca4' });
       } else {
@@ -140,7 +117,7 @@
 
       if (windowTop > homeProject.offset().top - 100 || homeProject.offset().bottom) {
         homeHeaderContainer.css({'background-color':'#37bec0'});
-      } else if (windowTop > homeIndustry.offset().top - 300 || homeIndustry.offset().bottom) {
+      } else if (windowTop > homeIndustry.offset().top - 200 || homeIndustry.offset().bottom) {
         homeHeaderContainer.css({'background-color':'#0ea2dc'});
       } else {
         homeHeaderContainer.css({'background-color':'#ed4f7e'});
@@ -162,7 +139,7 @@
     var headerBG = function () {
       var windowTop = $(window).scrollTop();
 
-     if (windowTop > aboutDirectors.offset().top - 400 || aboutDirectors.offset().bottom) {
+     if (windowTop > aboutDirectors.offset().top - 200 || aboutDirectors.offset().bottom) {
         aboutHeaderContainer.css({'background-color':'#0ea2dc'});
       } else {
         aboutHeaderContainer.css({'background-color':''});
@@ -222,20 +199,16 @@
 
   if ($(careersHeaderContainer).length > 0) {
     var careersBenefits;
-    var careersKaizen;
 
     var scrollPositions = function () {
       careersBenefits = $('#careers-benefits');
-      careersKaizen = $('#careers-kaizen');
     };
 
     var headerBG = function () {
       var windowTop = $(window).scrollTop();
 
-     if (windowTop > careersBenefits.offset().top - 500 || careersBenefits.offset().bottom) {
+     if (windowTop > careersBenefits.offset().top - 300 || careersBenefits.offset().bottom) {
         careersHeaderContainer.css({'background-color':'#0ea2dc'});
-      } else if (windowTop > careersKaizen.offset().top || careersKaizen.offset().bottom) {
-        careersHeaderContainer.css({'background-color':'#37bec0'});
       } else {
         careersHeaderContainer.css({'background-color':''});
       }
