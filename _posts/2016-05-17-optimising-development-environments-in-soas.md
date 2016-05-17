@@ -63,7 +63,7 @@ It should be feasible that developers working on different components can collab
 
 ### Expose Deployment Status
 
-Waiting is not fun. Waiting when you know how long it is for is more bearable. It is worth exposing continuous integration and deployment tools to developers so they can see the status of builds and deployments. This might let them get on with something else or just maintain morale. 
+Waiting is not fun. Waiting when you know how long it is for is more bearable. It is worth exposing continuous integration and continuous deployment tools to developers so they can see the status of builds and deployments. This might let them get on with something else or just maintain morale. 
 
 ### Connect the team
 
