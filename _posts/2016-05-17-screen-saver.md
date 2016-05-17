@@ -2,7 +2,7 @@
 layout: post
 title: Screen Savers
 author: Paul Addicott-Evans
-categories: [technology]
+categories: [technology, digital, Raspberry Pi]
 thumbnail: /img/blog/samosa.png
 ---
 We’ve had TVs mounted on the wall in the pebble office as far back as I can remember. In meeting rooms, these screens have a clear and definite purpose - we can hook up our laptops via HDMI cables to share presentations, and we have Chrome boxes attached for video Hangouts.
