@@ -19,6 +19,6 @@ Here’s our setup:
 
 Propsboard hooks into our Slack channels, enabling anyone to give ‘Props’ to slack messages worthy of praise or sharing.
 
-![Screen Saver](/img/posts/2016-05-17-screen-saver/screen.gif)
+{% include image.html url="/img/posts/2016-05-17-screen-saver/screen.gif" caption="Our Propsboard dashboard in action" %}
 
 All in all, it’s a great, cheap way to turn screens into useful digital signs, that the whole team can interact with and use to share what’s going on across the office.
