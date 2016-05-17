@@ -51,7 +51,11 @@ speakers:
    linkedin: https://www.linkedin.com/in/greggladwell
    twitter: https://twitter.com/greggladwell
    bio:
-    - "A creative, results driven ex CEO of a £75m turnover,1,500+ FTE business. Inspired more than 50% improvement in margin, staff engagement and Net Promoter scores. Led market share growth, change programmes, governance oversight and introduced innovation and technology solutions. Now pursuing a portfolio career and engaging in NED, Adviser, Consultant opportunities."
+    - "Greg adds unique insurance business insight to both pebble {code} and Ingenin as one of the few people to have successfully delivered in profile leadership roles on both the insurer and supplier sides of the market."
+    - "Joining  Aviva at the ground floor and working his way up to a senior level, Greg experienced  many varied senior leadership roles that embraced operational, central service function and change programme management activities."
+    - "Seeking to experience more entrepreneurial and market facing challenge he progressed to lead 3 businesses in and around the claims management sector, the most visible of these being as CEO UK & Ireland for Crawford & Company for 3.5 years."
+    - "Recently Greg has moved on to follow a portfolio career providing mentoring support to some leaders of tomorrow, consultancy services to existing businesses and advisory insight to a number of start ups."
+    - "He has a real interest in emerging technology opportunities, and a large network of contacts from 30+ years in the insurance industry to connect with. His ability to translate ideas and possibilities into valued commercial outcomes completes our tri-party partnership perfectly."
  - name: Stephen Allott
    id: stephen-allott
    jobtitle: Chairman, pebble {code}
