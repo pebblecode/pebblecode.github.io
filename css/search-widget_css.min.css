@@ -1,0 +1,111 @@
+#cancerresearch-search-widget .cruksearchwidget-pane {
+        display: block;
+        color: #333333;
+        font-family: "Arial", sans-serif;
+        font-size: 14px;
+        line-height: 1.5;
+        margin: 0 0 15px;
+        padding: 15px 20px 20px;
+        background-color: white;
+        border: 1px solid #e3e3e3;
+        border-radius: 3px;
+        position: relative;
+}
+
+#cancerresearch-search-widget .cruksearchwidget-pane-title {
+        line-height: 1;
+        font-family: "MuseoSans-700","Arial","Helvetica",sans-serif;
+        font-weight: bold;
+        margin: 0 0 0.5em;
+        text-transform: none;
+        font-style: normal;
+        padding: 10px 0;
+        color: #EC008C;
+}
+
+#cancerresearch-search-widget .cruksearchwidget-pane-content {
+        overflow: hidden;
+}
+
+#cruksearchwidget-form {
+        margin: 0;
+        padding: 0;
+        float: left;
+}
+
+#cruksearchwidget-form label {
+        display: block;
+}
+
+#cruksearchwidget-form a:visited {
+        color: #6C5C99;
+}
+
+#cruksearchwidget-form a:link {
+        color: #2E008B;
+}
+
+#cruksearchwidget-edit-keyword {
+        width: 95%;
+        padding: 9px;
+        margin: 6px 0;
+        background-position: 99% 8px !important;
+        font-size: 100%;
+        border-radius: 3px;
+        border: 1px solid #E3E3E3;
+        line-height: normal;
+}
+
+#cruksearchwidget-edit-trial-select {
+        border: none;
+        padding: 0;
+        margin: 0 0 5px 0;
+        border-radius: 3px;
+        clear: both;
+}
+
+#cruksearchwidget-edit-trial-select legend {
+        padding: 0 5px 0 0;
+        float: left;
+        font-weight: bold;
+        border: 0;
+}
+
+#cancerresearch-search-widget .cruksearchwidget-fieldset-wrapper #cancerresearch-search-widget .cruksearchwidget-fieldset-description {
+        float: left;
+}
+
+#cancerresearch-search-widget .cruksearchwidget-result-button {
+        width: 80%;
+        display: inline-block;
+        padding: 9px;
+        margin-top: 27px;
+        background-color: #E40085;
+        color: #FFFFFF;
+        border: none;
+        border-radius: 3px;
+        font-size: 1.2em;
+        font-weight:bold;
+        font-family: "MuseoSans-700","Arial","Helvetica",sans-serif;
+        text-align: center;
+        white-space: normal;
+        cursor: pointer;
+        min-width: 150px;
+        vertical-align: top;
+}
+
+#cancerresearch-search-widget .cruksearchwidget-logo {
+        float: right;
+}
+
+#cancerresearch-search-widget .cruksearchwidget-search-options {
+        float: left;
+}
+
+#cancerresearch-search-widget input[type="submit"] {
+        -webkit-appearance: submit;
+}  
+
+#cancerresearch-search-widget input[type="text"] {
+        -webkit-appearance: text;
+}
