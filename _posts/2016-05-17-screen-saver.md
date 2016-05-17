@@ -9,9 +9,9 @@ We’ve had TVs mounted on the wall in the pebble office as far back as I can re
 
 We also have a number of other screens in the main office areas, but for a long time they have been dark. We’ve just not had a reliable, accessible way of displaying anything on them, or to be honest, any bright ideas on what to display.
 
-Recently, this has changed. When the Raspberry Pi Zero (a $5 computer) was launched recently, we bought quite a few of them - not with any particular usage in mind, but we knew we’d use them in our hack days, and find other uses for this tiny, cheap piece of hardware.
+Recently, this has changed. When the Raspberry Pi Zero (a $5 computer) was launched, we bought quite a few of them - not with any particular usage in mind, but we knew we’d use them in our hack days, and find other uses for this tiny, cheap piece of hardware.
 
-We’ve also discovered a couple of neat services, that combined with the Pi Zero, provide a great way for us to use our office screens to announce the cool things happening in the office, and to share general information in a quick and easy way.
+We’ve also discovered a couple of neat services, that combined with the Pi Zero provide a great way for us to use our office screens to announce the cool things happening in the office, and to share general information in a quick and easy way.
 
 Here’s our setup:
 
