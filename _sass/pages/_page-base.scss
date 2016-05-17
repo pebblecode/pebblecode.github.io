@@ -154,13 +154,8 @@
 
 // Photo sections
 .photo-container {
-  height: 400px;
   position: relative;
   overflow: hidden;
-
-  @media screen and ( max-width: $medium ) {
-    height: 200px;
-  }
 
   &:before {
     @include shadow-pseudo;

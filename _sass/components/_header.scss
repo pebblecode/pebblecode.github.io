@@ -21,14 +21,10 @@
   transition: 0.2s;
 
   @media screen and ( max-width: $medium + 100px ) {
-    display: block;
-    float: none;
     border: none;
     text-align: right;
     font-size: $delta;
     background-color: rgba(black, 0.1);
-    color: rgba(white, 0.9);
-    padding: 10px $gutter;
     margin: 1px 0 0;
   }
 

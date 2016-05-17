@@ -7,6 +7,7 @@
 // SHARED
 @import "shared/_abstracts";
 @import "shared/_normalize";
+@import "shared/_grid";
 @import "shared/_typography";
 @import "shared/_themes";
 @import "shared/_code";
@@ -32,9 +33,9 @@
 @import "pages/_careers";
 @import "pages/_blog";
 @import "pages/_post";
-@import "pages/_invite";
 @import "pages/_seminar";
 @import "pages/_vertical";
+// @import "pages/_invite";
 
 // IE 8
 @import "shared/_ie";

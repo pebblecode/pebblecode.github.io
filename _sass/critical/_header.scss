@@ -79,6 +79,11 @@
   padding: 45px 15px 18px;
   color: rgba(white, 0.5);
   text-decoration: none;
+
+  @media screen and ( max-width: $medium + 100px ) {
+    float: none;
+    padding: 10px $gutter;
+  }
 }
 
 .gbl-head-btn {

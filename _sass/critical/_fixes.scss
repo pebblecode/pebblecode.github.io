@@ -1,32 +1,12 @@
 //===============================================================================
 // STYLES FIXES BEFORE MAIN.CSS LOADS
 //===============================================================================
-.hero-container .btn ,
-.services-process-img {
-  display: none;
-}
-
 img { max-width: 100%; }
 
-// Fix touch sizing
-.btn,
-.feat-content-list-item,
-.gbl-foot-links a,
-.gbl-foot-social a,
-.gbl-head-btn,
-.gbl-head-nav-item,
-.gbl-head-logo,
-.services-list-inner,
-.blog-category-title,
-.blog-post-details,
-.readmore-btn {
-  padding: 10px;
-  display: block;
-}
+.photo-container {
+  height: 400px;
 
-.btn,
-.gbl-head-btn {
-  margin: 10px;
+  @media screen and ( max-width: $medium ) {
+    height: 200px;
+  }
 }
-
-.photo-container { height: 400px; }

@@ -43,24 +43,17 @@
   &::before { display: none; }
 }
 
-.home-photo-container {
+.home .photo-container {
   background-color: $pink;
 
-  @media screen and (max-width: 650px) {
-    height: 230px;
-
-    .photo-inner { height: 230px; }
-  }
-
-  @media screen and (min-width: 1500px ) {
-    height: 500px;
-
-    .photo-inner { height: 500px; }
-  }
-
   &::after { background-color: $blue; }
-
   .photo-inner::after { background-color: $pink; }
+}
+
+// Clients
+.home .client-container {
+  padding-top: 20px;
+  padding-bottom: 0;
 }
 
 // Featured Case Study
