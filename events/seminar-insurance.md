@@ -44,6 +44,17 @@ speakers:
     - "A seasoned senior executive and dynamic leader with a proven track record of management success in both start-up and corporate arena’s and over 25 years experience of technology based proposition development."
     - "He has created a number of start-ups as well as working for large corporates such as CSC, Fujitsu Consulting and AXA Insurance where he was recruited to help create the AXA Innovation Hub."
     - "Manjit is a regular speaker at industry events, sits on the judging panels of industry awards and is an advisor and mentor to several start-ups."
+ - name: Stephen Allott
+   id: stephen-allott
+   jobtitle: Chairman, pebble {code}
+   portrait: stephen.jpg
+   linkedin: https://www.linkedin.com/in/stephen-allott-77992b24
+   twitter: https://twitter.com/smecrownrep
+   bio:
+    - "Some time Crown Representative for Small & Medium Enterprises in the Cabinet Office and UK delegate for the D5."
+    - "Chaired BACFI, Jacobs Rimell, Parc Technology, Inforsense, Applied Generics, COE Group Plc, The Red Gate Council of Advisers, Tideway Systems and Trinamo. NXD on Bright Computing, Trampoline and Zeus."
+    - "Founded the Cambridge Computer Lab Ring and co-founded Trinamo. President, CFO and main board director of Micromuse Inc. (NASDAQ: MUSE)."
+    - "Worked for McKinsey, Sun Microsystems, Xerox and Essex Court Chambers. Graduate of Trinity College Cambridge, Barrister (Gray’s Inn), Member of the Bar Council of England and Wales, City Fellow of Hughes Hall Cambridge University."
  - name: Greg Gladwell
    id: greg-gladwell
    jobtitle: Owner and Founder Gladwell Enterprises Ltd
@@ -56,17 +67,6 @@ speakers:
     - "Seeking to experience more entrepreneurial and market facing challenge he progressed to lead 3 businesses in and around the claims management sector, the most visible of these being as CEO UK & Ireland for Crawford & Company for 3.5 years."
     - "Recently Greg has moved on to follow a portfolio career providing mentoring support to some leaders of tomorrow, consultancy services to existing businesses and advisory insight to a number of start ups."
     - "He has a real interest in emerging technology opportunities, and a large network of contacts from 30+ years in the insurance industry to connect with. His ability to translate ideas and possibilities into valued commercial outcomes completes our tri-party partnership perfectly."
- - name: Stephen Allott
-   id: stephen-allott
-   jobtitle: Chairman, pebble {code}
-   portrait: stephen.jpg
-   linkedin: https://www.linkedin.com/in/stephen-allott-77992b24
-   twitter: https://twitter.com/smecrownrep
-   bio:
-    - "Some time Crown Representative for Small & Medium Enterprises in the Cabinet Office and UK delegate for the D5."
-    - "Chaired BACFI, Jacobs Rimell, Parc Technology, Inforsense, Applied Generics, COE Group Plc, The Red Gate Council of Advisers, Tideway Systems and Trinamo. NXD on Bright Computing, Trampoline and Zeus."
-    - "Founded the Cambridge Computer Lab Ring and co-founded Trinamo. President, CFO and main board director of Micromuse Inc. (NASDAQ: MUSE)."
-    - "Worked for McKinsey, Sun Microsystems, Xerox and Essex Court Chambers. Graduate of Trinity College Cambridge, Barrister (Gray’s Inn), Member of the Bar Council of England and Wales, City Fellow of Hughes Hall Cambridge University."
  - name: Paul Pancham
    id: paul-pancham
    jobtitle: CEO, DWS Automotive Repair Solutions
@@ -82,6 +82,35 @@ speakers:
    jobtitle: Non Executive Chairman, Independent Group
    portrait: alan-horton.jpg
    linkedin: https://www.linkedin.com/in/alan-horton-05a53010
+ - name: Ruth Polyblank
+   id: ruth-polyblank
+   jobtitle: Head of Marketing and Customer Strategy, ACE Group
+   portrait: ruth-polyblank.jpg
+   linkedin: https://www.linkedin.com/in/ruth-polyblank-18575513
+   bio:
+    - "Chartered Marketer, heading marketing and customer strategy for a global organisation in the insurance industry. "
+    - "B2B insurance marketing expert, devotee and enthusiast of all things Marketing and Communications and customer centricity."
+    - "Coined the phrase 'Customer tenacity' - the art of pursuing the ultimate customer experience with absolute determination."
+ - name: Rob Basinger
+   id: rob-basinger
+   jobtitle: Managing Director, Assurant Direct Ltd
+   portrait: rob-basinger.jpg
+   linkedin: https://www.linkedin.com/in/robbasinger?
+   bio:
+    - "Financial services business leader with 15 years blue-chip experience in retail banking, general insurance and wealth management."
+    - "Chartered Banker (MCIBS) and Member of the Chartered Institute of Marketing (MCIM)"
+ - name: Beverley Russell
+   id: beverley-russell
+   jobtitle: Managing Partner, Resourceful Marketing Ltd
+   portrait: beverley-russell.jpg
+   linkedin: https://www.linkedin.com/in/beverleyjrussell
+   bio:
+    - "Beverley is passionate about the difference inbound marketing can make to tech businesses Tech through and through – started her career in hardware giants like Sony and Canon and then literally went into the cloud at start up MyQuickCloud and then to Cobweb a key Microsoft partner. Fully qualified in Marketing MA, CIM and fully accredited in inbound with Hubspot."
+ - name: Nic Sproul
+   id: nic-sproul
+   jobtitle: Managing Partner, Resourceful Marketing Ltd
+   portrait: nic-sproul.jpg
+   linkedin: https://uk.linkedin.com/in/nic-sproul-77b7003
 
 ## Google Maps URL
 invite-map-id: insuremap
