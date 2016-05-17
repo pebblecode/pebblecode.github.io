@@ -1,0 +1,12 @@
+//===============================================================================
+// STYLES FIXES BEFORE MAIN.CSS LOADS
+//===============================================================================
+img { max-width: 100%; }
+
+.photo-container {
+  height: 400px;
+
+  @media screen and ( max-width: $medium ) {
+    height: 200px;
+  }
+}

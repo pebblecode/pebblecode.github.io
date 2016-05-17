@@ -336,15 +336,8 @@ video {
 }
 
 .audio-mobile {
-  width: 40%;
-
-  @media screen and ( max-width: $medium + 150px ) {
-    width: 30%;
-  }
-
-  @media screen and ( max-width: $small) {
-    width:40%;
-  }
+  max-height: 300px;
+  margin: auto;
 }
 
 .alignme {

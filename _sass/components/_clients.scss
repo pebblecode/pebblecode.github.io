@@ -1,26 +1,66 @@
 //===============================================================================
-// CLIENTS GRID
+// CLIENTS
 //===============================================================================
 .client-container {
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
   background-color: lighten($ink, 45);
   background-color: white;
-  position: relative;
 
   @media screen and ( max-width: $medium ) {
-    padding-top: 0;
-    padding-bottom: 0;
+    padding-bottom: 10px;
   }
 }
 
-.client-item {
-  padding-top: 5px;
-  padding-bottom: 5px;
+.client-inner {
   position: relative;
-  text-align: center;
-  vertical-align: vertical;
   z-index: 2;
+}
 
-  img { display: block; }
+.client-item {
+  height: 110px;
+  position: relative;
+  margin-top: -15px;
+
+  @media screen and ( max-width: $large ) {
+    width: 33.33%;
+  }
+
+  @media screen and ( max-width: $medium ) {
+    float: left;
+    width: 50%;
+    transform: scale(0.9);
+    margin-top: -20px;
+  }
+
+  @media screen and ( max-width: $small ) {
+    transform: scale(0.8);
+  }
+}
+
+.client-logo {
+  color: transparent;
+  font-size: 1px;
+
+  &::after {
+    @include icon-pseudo;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &.az-logo {
+    &::after { @include sprite($az-logo); }
+
+    @media screen and ( max-width: $small ) {
+      transform: scale(0.7);
+    }
+  }
+
+  &.pearson-logo::after { @include sprite($pearson-logo); }
+  &.bede-logo::after { @include sprite($bede-logo); }
+  &.cancer-logo::after { @include sprite($cancer-logo); }
+  &.aljazeera-logo::after { @include sprite($aljazeera-logo); }
+  &.lloyds-logo::after { @include sprite($lloyds-logo); }
+  &.bybox-logo::after { @include sprite($bybox-logo); }
+  &.express-logo::after { @include sprite($express-logo); }
 }

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: brand guidelines
+title: Brand Guidelines
 permalink: /brand/
 colour: pink
 

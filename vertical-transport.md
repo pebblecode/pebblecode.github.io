@@ -2,6 +2,7 @@
 layout: vertical
 title: Transport
 permalink: /transport/
+categories: [transport]
 group:
 colour: blue
 
@@ -48,4 +49,3 @@ sections:
 ---
 
 This renders as content
-

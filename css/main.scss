@@ -1,105 +1,42 @@
 ---
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
+
 @charset "utf-8";
-// Import partials from `sass_dir` (defaults to `_sass`)
 
 // SHARED
-// ===================================================
-// VARIABLES: Colours, Type sizes etc.
-@import "shared/_variables";
-
-// NORMALIZE v3.0.0: Normalise across browsers
+@import "shared/_abstracts";
 @import "shared/_normalize";
-
-// SPRITE: Global sprite used across all pages.
-@import "shared/_sprite";
-
-// MIXINS: Fixes, Recurring blocks of styling etc.
-@import "shared/_mixins";
-
-// ANIMATIONS: CSS Animations
-@import "shared/_animations";
-
-// THEMES: Themes that can be reused.
-@import "shared/_themes.scss";
-
-// LAYOUT: Base layout, Grid
-@import "shared/_layout";
-
-// CODE: Styles for the pre code blocks
-@import "shared/_code";
-
-// TYPOGRAPHY: Headings, Hierarchy etc.
+@import "shared/_grid";
 @import "shared/_typography";
-
-// ELEMENTS: Links, Buttons, Forms, Lists etc.
+@import "shared/_themes";
+@import "shared/_code";
 @import "shared/_elements";
 
 // COMPONENTS
-// ===================================================
-// GLOBAL HEADER: Global header across all pages
-@import "components/_gbl-head.scss";
-
-// GLOBAL FOOTER: Global footer across all pages
-@import "components/_gbl-foot.scss";
-
-// HERO: Used globally
-@import "components/_hero.scss";
-
-// CLIENTS GRID: Grid of client icons
-@import "components/_clients.scss";
-
-// SHARE: Share buttons that can be reused
+@import "components/_hero";
+@import "components/_header";
+@import "components/_footer";
+@import "components/_recruitee";
+@import "components/_clients";
 @import "components/_share";
-
-// RELATED: Related posts component
 @import "components/_related";
+@import "components/_cta";
+@import "components/_media";
 
-// CALL-TO-ACTION BANNER: Can be reused to for contact call-to-actions
-@import "components/_cta.scss";
-
-// CALL-TO-ACTION BANNER: Can be reused to for contact call-to-actions
-@import "components/_media.scss";
-
-// PAGES
-// ===================================================
-// PAGE BASE: Base styles used for most pages.
+// PAGE TEMPLATES
 @import "pages/_page-base";
-
-// HOME: Styles for the home page
 @import "pages/_home";
-
-// SERVICES: Styles for the services page
 @import "pages/_services";
-
-// CONTACT: Styles for the contact page
 @import "pages/_contact";
-
-// WORK: Styles for the work page
 @import "pages/_work";
-
-// ABOUT: Styles for the about page
 @import "pages/_about";
-
-// CAREERS: Styles for the careers page
 @import "pages/_careers";
-
-// BLOG: Styles for the blog page
 @import "pages/_blog";
-
-// POST: Styles for the blog post
 @import "pages/_post";
-
-// INVITE: Styles for the invite pages
-@import "pages/_invite";
-
-// SEMINAR: Styles for the seminar pages
 @import "pages/_seminar";
-
-// INVITE: Styles for the invite pages
 @import "pages/_vertical";
+// @import "pages/_invite";
 
 // IE 8
-// ===================================================
 @import "shared/_ie";

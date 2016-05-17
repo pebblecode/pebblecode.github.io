@@ -1,7 +1,11 @@
+//===============================================================================
+// CALL-TO-ACTION
+//===============================================================================
 .cta-container {
   padding: 65px 20px 30px;
   background-color: lighten($ink, 50);
   position: relative;
+  overflow: hidden;
 
   &::before {
     @include shadow-pseudo;

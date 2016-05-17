@@ -30,7 +30,7 @@
     padding-bottom: 40px;
 
     @media screen and ( max-width: $medium ) {
-      padding-bottom: 20px;
+      padding: 100px 0 10px;
     }
   }
 
@@ -39,52 +39,27 @@
     padding-bottom: 0;
   }
 
-  &:after {
-    width:0;
-    height: 0;
-    transform: rotate(0deg) scale(0);
-    background-color: $pink;
-  }
-
-  &:before {
-    transform: rotate(0deg) scale(0);
-    background-color: $pink;
-  }
+  &::after,
+  &::before { display: none; }
 }
 
-.home-photo-container {
+.home .photo-container {
   background-color: $pink;
 
-  @media screen and (max-width: 650px) {
-    height: 230px;
-
-    .photo-inner { height: 230px; }
-  }
-
-  @media screen and (min-width: 1500px ) {
-    height: 500px;
-
-    .photo-inner { height: 500px; }
-  }
-
   &::after { background-color: $blue; }
-
   .photo-inner::after { background-color: $pink; }
 }
 
+// Clients
 .home .client-container {
-  padding-top: 30px;
-  padding-bottom: 20px;
-
-  @media screen and ( max-width: $medium ) {
-    padding-top: 10px;
-    padding-bottom: 0;
-  }
+  padding-top: 20px;
+  padding-bottom: 0;
 }
 
-// Featured Case Study
+// Featured Content
 .feat-content-container {
   position: relative;
+  overflow: hidden;
 
   @media screen and ( max-width: $medium ) {
     padding-top: 0;
@@ -158,6 +133,7 @@
 }
 
 .feat-content-img {
+  display: block;
   top: 10px;
   z-index: 2;
   height: 450px;

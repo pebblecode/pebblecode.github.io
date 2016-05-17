@@ -8,6 +8,7 @@ seminar-eventlink: "https://www.eventbrite.com/"
 seminar-call-to-action: "Sign up now"
 
 ## Seminar Details
+seminar-intro: pebble {code} chairs a breakfast seminar on
 seminar-title1: Innovation
 seminar-title2: in
 seminar-title3: Healthcare

@@ -1,6 +1,6 @@
 ---
 layout: services
-title: services
+title: Services
 permalink: /services/
 group: nav
 colour: aqua

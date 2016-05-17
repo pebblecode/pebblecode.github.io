@@ -47,6 +47,8 @@
     }
   }
 
+  p + h2 { margin-top: 70px; }
+
   h3 {
     font-size: $beta;
     line-height: 1;
@@ -138,13 +140,8 @@
 
 // Photo sections
 .photo-container {
-  height: 400px;
   position: relative;
   overflow: hidden;
-
-  @media screen and ( max-width: $medium ) {
-    height: 200px;
-  }
 
   &:before {
     @include shadow-pseudo;

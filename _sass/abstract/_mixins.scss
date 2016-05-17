@@ -1,0 +1,74 @@
+//===============================================================================
+// MIXINS
+//===============================================================================
+// CLEAR FIX
+@mixin clearfix {
+  clear: both;
+
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+// HIDE TEXT
+@mixin hide-text {
+  overflow: hidden;
+
+  &:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 100%;
+  }
+}
+
+// MARGIN AUTO
+@mixin margin-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// SPRITE ICON
+@mixin icon {
+  color: transparent;
+  overflow: hidden;
+  display: block;
+  background-repeat: no-repeat;
+
+  &:hover {
+    color: transparent;
+  }
+}
+
+// SPRITE ICON (PSEUDO)
+@mixin icon-pseudo {
+  content: "";
+  overflow: hidden;
+  display: block;
+  position: absolute;
+  background-repeat: no-repeat;
+}
+
+// BEFORE/AFTER SHADOWS
+@mixin shadow-pseudo {
+  content: "";
+  overflow: hidden;
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 100%;
+}
+
+// Hide FOUT
+@mixin foutfix {
+  .wf-loading & {
+    opacity: 0;
+  }
+
+  .wf-active & {
+    opacity: 1;
+    transition: 0.2s;
+  }
+}

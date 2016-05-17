@@ -1,12 +1,12 @@
 ---
 layout: about
-title: about
+title: About
 permalink: /about/
 group: nav
 colour: purple
 
 ## Hero Content
-hero-title: about
+hero-title: About
 hero-subtitle: pebble {code} was founded by Alex, George and Toby to be the technology company that they wanted to work at. They continue to strive to create an environment where exceptional technologists can just get on and do exceptional things. 
 
 hero-btn:

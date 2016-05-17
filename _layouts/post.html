@@ -4,6 +4,37 @@ layout: post
 {% include head.html %}
 
   <body class="{{ page.layout }}">
+    <script type="application/ld+json">
+      { 
+        "@context": "http://schema.org",
+        "@type": "Article",
+        "headline": "{{ page.title }}",
+        "mainEntityOfPage": {
+          "@type":"WebPage",
+          "@id" : "http://pebblecode.com{{ page.url }}"
+          },
+          "image": { 
+            "@type": "ImageObject",
+            "url" : "{% if page.thumbnail %}http://pebblecode.com{{ page.thumbnail }}{% else %}http://pebblecode.com/img/blog/placeholders/blue-phold.svg{% endif %}",
+            "width": 696,
+            "height": 140
+          },
+          "author": "{{ page.author }}",
+          "publisher": {
+            "@type": "Organization",
+            "name": "pebble {code}",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://avatars2.githubusercontent.com/u/437686?v=3&s=200",
+              "width": 600,
+              "height": 60 
+            }
+            },
+          "datePublished": "{{ page.date}}",
+          "dateModified": "{{ page.date}}",
+          "description": "{{ page.excerpt | strip_html | strip_newlines | truncate : 160 }}"
+      }
+    </script>
 
     {% include header.html %}
 
