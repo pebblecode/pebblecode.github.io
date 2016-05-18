@@ -23,15 +23,7 @@
   <!--<![endif]-->
 {% endif %}
 {% if include.lazyload %}
-  <script src="{{ site.baseurl }}/js/vendor/jquery.lazyload.min.js"></script>
-  <script>
-    $(function ($) {
-      $('img.lazyload').lazyload({
-        effect: 'fadeIn',
-        threshold: 200
-      });
-    });
-  </script>
+  <script src="{{ site.baseurl }}/js/lazy.js"></script>
 {% endif %}
 {% if include.prettyprint %}
   <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js" defer></script>
@@ -42,10 +34,9 @@
   </script>
 {% endif %}
 {% if include.scrollreveal %}
-  <script src="{{ site.baseurl }}/js/vendor/scrollReveal.min.js"></script>
-  <script>window.sr = new scrollReveal();</script>
+  <script src="{{ site.baseurl }}/js/scrollReveal.js"></script>
 {% endif %}
-<script src="{{ site.baseurl }}/js/main.min.js" defer></script>
+<script src="{{ site.baseurl }}/js/main.js" defer></script>
 {% for extrascript in include.extrascripts %}
   <script src="{{ site.baseurl }}/js/{{extrascript.link}}" defer></script>
 {% endfor %}

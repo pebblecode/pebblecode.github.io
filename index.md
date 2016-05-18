@@ -22,3 +22,4 @@ vert-text-health: "Precision medicine, patient centricity, smart research."
 vert-text-transport: "Customer satisfaction, smart ticketing, internet of things."
 vert-text-insurance: "Internet of Things, cyber-security, speed to market."
 ---
+

@@ -53,11 +53,6 @@
     ga('send', 'pageview');
   </script>
 
-  {% if jekyll.environment == 'development' %}
-    <!-- Adds live reload to development -->
-    <!-- <script src="http://127.0.0.1:35729/livereload.js"></script> -->
-  {% endif %}
-
   <!-- loadCSS: load a CSS file asynchronously. [c]2016 @scottjehl, Filament Group, Inc. Licensed MIT -->
   <link rel="preload" href="{{ site.baseurl }}/css/main.css" as="style" onload="this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="{{ site.baseurl }}/css/main.css"></noscript>
@@ -68,9 +63,9 @@
   <!-- Critical Inline CSS -->
   <style type="text/css">
     {% capture include_to_scssify %}
-     {% include critical.scss %}
+     {% include critical.css %}
     {% endcapture %}
-    {{ include_to_scssify | scssify }}
+    {{ include_to_scssify }}
   </style>
 
 </head>
