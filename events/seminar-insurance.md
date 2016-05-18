@@ -111,6 +111,13 @@ speakers:
    jobtitle: Managing Partner, Resourceful Marketing Ltd
    portrait: nic-sproul.jpg
    linkedin: https://uk.linkedin.com/in/nic-sproul-77b7003
+ - name: Jodi Cartwright
+   id: jodi-cartwright
+   jobtitle: CEO, 1919 Insurance
+   portrait: jodi-cartwright.jpg
+   linkedin: https://www.linkedin.com/in/jodigrattidge123
+   bio:
+    - "Senior commercially focused Insurance professional with 20 years experience specifically in the UK commercial and personal lines market."
 
 ## Google Maps URL
 invite-map-id: insuremap
