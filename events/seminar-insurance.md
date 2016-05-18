@@ -118,6 +118,13 @@ speakers:
    linkedin: https://www.linkedin.com/in/jodigrattidge123
    bio:
     - "Senior commercially focused Insurance professional with 20 years experience specifically in the UK commercial and personal lines market."
+ - name: Michael Wolfe
+   id: michael-wolfe
+   jobtitle: Marketing Director, XL Catlin
+   portrait: michael-wolfe.jpg
+   linkedin: https://www.linkedin.com/in/michael-wolfe-ba57645
+   bio:
+    - "An experienced marketing professional with proven success across leadership roles. Commercially driven with a genuine passion to continually create value through marketing effectiveness."
 
 ## Google Maps URL
 invite-map-id: insuremap
