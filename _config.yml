@@ -2,7 +2,7 @@
 title: pebble {code}
 email: hello@pebblecode.com
 description: > # this means to ignore newlines until "baseurl:"
-  Digital Innovation Consultancy - Agile Development, Design Thinking and Rapid Prototyping. 
+  Digital Innovation Consultancy - Agile Development, Design Thinking and Rapid Prototyping.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://pebblecode.com" # the base hostname & protocol for your site
 twitter: pebblecode
@@ -11,11 +11,10 @@ vimeo:  pebblecode
 
 
 # Build settings
-exclude: [node_modules]
+incremental: true
+exclude: [node_modules, _js, _stylesheets]
 markdown: kramdown
 redirects: yes
-sass:
-    style: :compressed
 permalink: "/blog/:title/"
 
 
@@ -35,6 +34,5 @@ defaults:
       analytics_category: "blog"
 
 gems:
-  - octopress-autoprefixer
   - jekyll-paginate
   - jekyll-sitemap
