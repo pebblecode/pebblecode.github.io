@@ -171,7 +171,68 @@
     </ul>
     <!-- /.services-item-container -->
 
-    {% include footer.html %}
+    {% include footer.html scrollreveal=true %}
+
+    <script>
+      // Change services page + services header bg colour on scroll
+      var servicesContainer = $('.services-container');
+      var servicesHeaderContainer = $('.services .gbl-head');
+
+      if ($(servicesContainer).length > 0) {
+        var servicesStrategy;
+        var servicesHacking;
+        var servicesUX;
+        var servicesUXdesign;
+        var servicesDesign;
+        var servicesAgile;
+        var servicesTests;
+        var servicesContainer;
+
+        var scrollPositions = function () {
+          servicesContent = $('#services-content');
+          servicesStrategy = $('#services-strategy');
+          servicesHacking = $('#services-hacking');
+          servicesUX = $('#services-ux');
+          servicesUXdesign = $('#services-ux-design');
+          servicesDesign = $('#services-design');
+          servicesAgile = $('#services-agile');
+          servicesTests = $('#services-tests');
+          servicesContainer = $('.services-container');
+        };
+
+        var servicesBG = function () {
+          var windowTop = $(window).scrollTop();
+          if (windowTop > servicesTests.offset().top - 200 || servicesTests.offset().bottom) {
+            servicesContainer.css({'background-color':'#9b5ca4' });
+            servicesHeaderContainer.css({'background-color':'#9b5ca4' });
+          } else if (windowTop > servicesAgile.offset().top - 200 || servicesAgile.offset().bottom) {
+            servicesContainer.css({'background-color':'#faad40' });
+            servicesHeaderContainer.css({'background-color':'#faad40' });
+          } else if (windowTop > servicesDesign.offset().top - 200 || servicesDesign.offset().bottom) {
+            servicesContainer.css({'background-color':'#a4ce4e' });
+            servicesHeaderContainer.css({'background-color':'#a4ce4e' });
+          } else if (windowTop > servicesUXdesign.offset().top - 200 || servicesUXdesign.offset().bottom) {
+            servicesContainer.css({'background-color':'#37bec0' });
+            servicesHeaderContainer.css({'background-color':'#37bec0' });
+          } else if (windowTop > servicesUX.offset().top - 200 || servicesUX.offset().bottom) {
+            servicesContainer.css({'background-color':'#0ea2dc' });
+            servicesHeaderContainer.css({'background-color':'#0ea2dc' });
+          } else if (windowTop > servicesHacking.offset().top - 200 || servicesHacking.offset().bottom) {
+            servicesContainer.css({'background-color':'#ed4f7e' });
+            servicesHeaderContainer.css({'background-color':'#ed4f7e' });
+          } else if (windowTop > servicesStrategy.offset().top - 200 || servicesStrategy.offset().bottom) {
+            servicesContainer.css({'background-color':'#9b5ca4' });
+            servicesHeaderContainer.css({'background-color':'#9b5ca4' });
+          } else {
+            servicesHeaderContainer.css({'background-color':'#37bec0' });
+          }
+        };
+
+        $(window).resize(scrollPositions).scroll(servicesBG);
+        scrollPositions();
+        servicesBG();
+      }
+    </script>
 
   </body>
 </html>

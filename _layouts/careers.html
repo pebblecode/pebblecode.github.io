@@ -64,7 +64,32 @@
 
     {% include blog-related.html %}
 
-    {% include footer.html lazyload=true %}
+    {% include footer.html lazyload=true scrollreveal=true %}
+
+    <script>
+    // Careers
+    var careersHeaderContainer = $('.careers .gbl-head');
+    if ($(careersHeaderContainer).length > 0) {
+      var careersBenefits;
+
+      var scrollPositions = function () {
+        careersBenefits = $('#careers-benefits');
+      };
+
+      var headerBG = function () {
+        var windowTop = $(window).scrollTop();
+        if (windowTop > careersBenefits.offset().top - 300 || careersBenefits.offset().bottom) {
+          careersHeaderContainer.css({'background-color':'#0ea2dc'});
+        } else {
+          careersHeaderContainer.css({'background-color':''});
+        }
+       };
+
+      $(window).resize(scrollPositions).scroll(headerBG);
+      scrollPositions();
+      headerBG();
+    }
+    </script>
 
   </body>
 </html>

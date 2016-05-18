@@ -86,5 +86,30 @@
     <!-- /.ppl-container -->
 
     {% include footer.html %}
+
+    <script>
+    // About - header change colour
+    var aboutHeaderContainer = $('.about .gbl-head');
+    if ($(aboutHeaderContainer).length > 0) {
+      var aboutDirectors;
+
+      var scrollPositions = function () {
+        aboutDirectors = $('#about-directors');
+      };
+
+      var headerBG = function () {
+        var windowTop = $(window).scrollTop();
+        if (windowTop > aboutDirectors.offset().top - 200 || aboutDirectors.offset().bottom) {
+          aboutHeaderContainer.css({'background-color':'#0ea2dc'});
+        } else {
+          aboutHeaderContainer.css({'background-color':''});
+        }
+      };
+
+      $(window).resize(scrollPositions).scroll(headerBG);
+      scrollPositions();
+      headerBG();
+    }
+    </script>
   </body>
 </html>

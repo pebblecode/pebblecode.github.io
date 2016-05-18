@@ -60,7 +60,36 @@
 
     {% include cta-contact.html %}
 
-    {% include footer.html %}
+    {% include footer.html scrollreveal=true %}
+
+    <script>
+    // Home - change header colour
+    var homeHeaderContainer = $('.home .gbl-head');
+    if ($(homeHeaderContainer).length > 0) {
+      var homeIndustry;
+      var homeFeatProject;
+
+      var scrollPositions = function () {
+        homeIndustry = $('#home-industry');
+        homeProject = $('#home-project');
+      };
+
+      var headerBG = function () {
+        var windowTop = $(window).scrollTop();
+        if (windowTop > homeProject.offset().top - 100 || homeProject.offset().bottom) {
+          homeHeaderContainer.css({'background-color':'#37bec0'});
+        } else if (windowTop > homeIndustry.offset().top - 200 || homeIndustry.offset().bottom) {
+          homeHeaderContainer.css({'background-color':'#0ea2dc'});
+        } else {
+          homeHeaderContainer.css({'background-color':'#ed4f7e'});
+        }
+      };
+
+      $(window).resize(scrollPositions).scroll(headerBG);
+      scrollPositions();
+      headerBG();
+    }
+    </script>
 
   </body>
 </html>

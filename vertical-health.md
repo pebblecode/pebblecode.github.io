@@ -4,6 +4,9 @@ title: Health
 categories: [health]
 permalink: /health/
 colour: aqua
+extraclasses: health
+extrascripts:
+ - link: "vertical.js"
 
 ## Hero Content
 hero-title: We care about Health

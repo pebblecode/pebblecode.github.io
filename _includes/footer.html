@@ -18,7 +18,8 @@
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 {% if include.maps %}
   <!--[if gt IE 8]><!-->
-  <script src="http://maps.google.com/maps/api/js?v=3&amp;sensor=false" defer></script>
+  <script src="http://maps.google.com/maps/api/js?v=3" defer></script>
+  <script src="{{ site.baseurl }}/js/map.js" defer></script>
   <!--<![endif]-->
 {% endif %}
 {% if include.lazyload %}
@@ -40,7 +41,10 @@
   });
   </script>
 {% endif %}
-<script src="{{ site.baseurl }}/js/vendor/scrollReveal.min.js" defer></script>
+{% if include.scrollreveal %}
+  <script src="{{ site.baseurl }}/js/vendor/scrollReveal.min.js"></script>
+  <script>window.sr = new scrollReveal();</script>
+{% endif %}
 <script src="{{ site.baseurl }}/js/main.min.js" defer></script>
 {% for extrascript in include.extrascripts %}
   <script src="{{ site.baseurl }}/js/{{extrascript.link}}" defer></script>
