@@ -19,20 +19,11 @@ You may need to include sudo at the start if there is a permissions error.
 
 `cd [project folder]`
 
-`jekyll serve`
-
-To host the site on the network for testing, you'll need
-
-`jekyll serve --host=0.0.0.0`
-
-
-#####3.5. Build and view the website locally with live reloading:
-
-`cd [project folder]`
-
-`guard`
+`bundle exec guard`
 
 This will start up a server on port 4000, and it will reload on any changes to SASS, JS, and content.
+
+To host the site on the network for testing, you'll need
 
 #####4. View the website:
 
