@@ -1,0 +1,33 @@
+//===============================================================================
+// ERROR (404) Pages
+//===============================================================================
+.error {
+  background-color: $blue;
+}
+
+.error-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.error-msg {
+  position: relative;
+  padding-right: 300px;
+
+  h1 {
+    color: white;
+    text-shadow: 3px 4px 0 rgba(black, 0.4);
+  }
+
+  p {
+    font-size: $beta;
+  }
+
+  img {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}
