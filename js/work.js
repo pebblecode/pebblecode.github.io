@@ -2,7 +2,7 @@
 
   // Work - change header colour
   var workHeaderContainer = $('.work .gbl-head');
-  if ($(workHeaderContainer).length > 0) {
+  if (workHeaderContainer.length > 0) {
     var workPharmaceutical;
     var workIntranets;
     var workSelfDirected;
