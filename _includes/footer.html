@@ -33,9 +33,6 @@
   });
   </script>
 {% endif %}
-{% if include.scrollreveal %}
-  <script src="{{ site.baseurl }}/js/scrollReveal.js"></script>
-{% endif %}
 <script src="{{ site.baseurl }}/js/main.js" defer></script>
 {% for extrascript in include.extrascripts %}
   <script src="{{ site.baseurl }}/js/{{extrascript.link}}" defer></script>

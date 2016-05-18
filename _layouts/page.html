@@ -8,7 +8,7 @@ layout: default
     {% include header.html %}
 
     <section class="hero-container {{ page.colour }}">
-      <div class="hero-inner grid" data-sr="wait 0.2s, enter left move 100px">
+      <div class="hero-inner grid">
         <h1 class="hero-title col-1-1">{% if page.hero-title %}{{page.hero-title}}{% else %}{{page.title}}{% endif %}</h1>
         {% if page.hero-subtitle %}
           <p class="hero-summary col-1-1">{{page.hero-subtitle}}</p>
