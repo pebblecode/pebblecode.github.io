@@ -2,7 +2,7 @@
 layout: post
 title: Future Thinking - Post-Scarcity
 author: Paul Addicott-Evans
-categories: [economics, futurology, opinion]
+categories: [economics, futurology, opinion, innovation, digital transformation]
 thumbnail: /img/blog/maslow.jpg
 ---
 
