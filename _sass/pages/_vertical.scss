@@ -32,7 +32,7 @@
     @media screen and ( max-width: $medium ) {
       height: 100%;
       float: right;
-      width:100px;
+      width: 100px;
     }
   }
 
@@ -208,6 +208,7 @@ a.vert-insur-cta-link {
 
 // Paragraphs and Points
 .vert-section-points {
+  margin-bottom: 20px;
   max-width: 50%;
 
   @media screen and ( max-width: $medium) {
@@ -215,68 +216,10 @@ a.vert-insur-cta-link {
   }
 
   li {
-    margin-bottom: 12px;
-    position: relative;
-    font-weight: $font-bold;
-    display: inline-block;
-    max-width: 100%;
-    padding: 6px 12px;
-    z-index: 1;
-
-    @media screen and ( max-width: $medium) {
-      font-size: 14px;
-    }
-
-    &:before {
-      @include shadow-pseudo;
-      height: 100%;
-      top: 0;
-      background-color: rgba(black, 0.3);
-      box-shadow: 0 0 10px rgba(black, 0.2);
-      z-index: -1;
-      transform: rotate(2deg) skew(1deg);
-    }
-
-    &:after {
-      @include shadow-pseudo;
-      height: 100%;
-      top: 0;
-      background-color: white;
-      box-shadow: 0 0 10px rgba(black, 0.2);
-      z-index: -1;
-      transform: rotate(-0.3deg) skew(1deg);
-
-      .blue & {
-        background-color: darken($blue, 10%);
-      }
-
-      .purple & {
-        background-color: darken($purple, 10%);
-      }
-    }
-
-    &:nth-child(2):before{
-      transform: rotate(-2deg) skew(-1deg);
-    }
-
-    &:nth-child(2):after{
-      transform: rotate(0.3deg) skew(-1deg);
-    }
-
-    &:nth-child(3):before{
-      transform: rotate(1.2deg) skew(0.4deg);
-    }
-
-    &:nth-child(3):after{
-      transform: rotate(1.2deg) skew(0.4deg);
-    }
-  }
-}
-
-.line-break {
-  display: block;
-  @media screen and ( max-width: $medium ) {
-   display: none;
+    margin-bottom: 8px;
+    padding: 10px 15px;
+    line-height: 1.2;
+    border: 5px solid rgba(white, 0.2);
   }
 }
 
@@ -287,7 +230,7 @@ a.vert-insur-cta-link {
   letter-spacing: 0;
   font-weight: $font-bold;
   font-style: normal;
-  margin-bottom: 24px;
+  margin-bottom: 10px;
 }
 
 // Sections
@@ -297,62 +240,42 @@ a.vert-insur-cta-link {
   overflow: hidden;
   color: white;
 
-  &.aqua {
-    background-color: $aqua;
-  }
+  &.aqua { background-color: $aqua; }
 
   &.orange {
       background-color: $orange;
 
-    &:before {
-      transform: rotate(-1.1deg) scale(1.2);
-    }
-
-    &:after {
-      transform: rotate(-2.4deg) scale(1.2);
-    }
+    &:before {   transform: rotate(-1.1deg) scale(1.2); }
+    &:after { transform: rotate(-2.4deg) scale(1.2); }
   }
 
   &.pink {
-    &:before {
-      transform: rotate(-1.1deg) scale(1.2);
-    }
-
-    &:after {
-      transform: rotate(-2.4deg) scale(1.2);
-    }
+    &:before { transform: rotate(-1.1deg) scale(1.2); }
+    &:after { transform: rotate(-2.4deg) scale(1.2); }
   }
 
   &.blue {
     background-color: $blue;
 
-    &:before {
-      transform: rotate(-0.4deg) scale(1.2);
-    }
-
-    &:after {
-      transform: rotate(-1.1deg) scale(1.2);
-    }
+    &:before { transform: rotate(-0.4deg) scale(1.2); }
+    &:after { transform: rotate(-1.1deg) scale(1.2); }
   }
 
   &.purple {
     background-color: $purple;
 
-    &:before {
-      transform: rotate(1.8deg) scale(1.2);
-    }
-
-    &:after {
-      transform: rotate(2.0deg) scale(1.2);
-    }
+    &:before { transform: rotate(1.8deg) scale(1.2); }
+    &:after { transform: rotate(2.0deg) scale(1.2); }
   }
 
-  &.green {
-    background-color: $green;
+  &.green { background-color: $green; }
+
+  &::before,
+  &::after {
+    @include shadow-pseudo;
   }
 
   &:before {
-    @include shadow-pseudo;
     bottom: 20px;
     height: 20px;
     background-color: rgba(black, 0.15);
@@ -360,7 +283,6 @@ a.vert-insur-cta-link {
   }
 
   &:after {
-    @include shadow-pseudo;
     bottom: -25px;
     height: 50px;
     background-color: white;
@@ -368,9 +290,7 @@ a.vert-insur-cta-link {
   }
 
 
-  &:nth-last-of-type(2) {
-    &:after { background-color: $pink; }
-  }
+  &:nth-last-of-type(2):after { background-color: $pink; }
 
   &:last-of-type {
     &:before,
@@ -379,21 +299,10 @@ a.vert-insur-cta-link {
     }
   }
 
-  &.next-color-green:after {
-    background-color: $green;
-  }
-
-  &.next-color-purple:after {
-    background-color: $purple;
-  }
-
-  &.next-color-blue:after {
-    background-color: $blue;
-  }
-
-  &.next-color-pink:after {
-    background-color: $pink;
-  }
+  &.next-color-green:after { background-color: $green; }
+  &.next-color-purple:after { background-color: $purple; }
+  &.next-color-blue:after { background-color: $blue; }
+  &.next-color-pink:after { background-color: $pink; }
 }
 
 .vert-section-inner {
@@ -432,25 +341,30 @@ a.vert-insur-cta-link {
 }
 
 .vert-section-table {
-  border: 2px solid darken($aqua, 20%);
+  color: $ink;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(black, 0.1);
+
+  @media screen and ( max-width: $medium ) {
+    width: 100%;
+  }
 
   tr {
-    background: lighten($aqua, 20%);
-    color: $ink;
-
     &:nth-child(odd) {
-      background: lighten($aqua, 30%);
+      background-color: rgba($ink, 0.04);
     }
 
     &:first-child {
-      background: darken($aqua, 20%);
-      color: white;
+      background-color: rgba($ink, 0.1);
       font-weight: $font-bold;
+
+      td { padding: 35px 15px 10px; }
     }
   }
 
   td {
-    padding: 6px 8px;
+    padding: 15px;
+    line-height: 1.1;
   }
 }
 
