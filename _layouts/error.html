@@ -87,6 +87,7 @@ layout: error
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script>
+    if (!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
       // Draggable Windows
       if (!$().draggable) {
       	$.fn.draggable = function() {
@@ -136,15 +137,16 @@ layout: error
       });
 
       $('.error-window').draggable();
+    }
+    
+    $('.error-msg .error-btn').click( function() {
+      $(this).parents('.error-window').hide();
+    });
 
-      $('.error-msg .error-btn').click( function() {
-        $(this).parents('.error-window').hide();
-      });
-
-      $('.error-help-btn').click( function() {
-        $(this).toggleClass('active');
-        $('.error-help').toggleClass('visible');
-      });
+    $('.error-help-btn').click( function() {
+      $(this).toggleClass('active');
+      $('.error-help').toggleClass('visible');
+    });
     </script>
 
   </body>

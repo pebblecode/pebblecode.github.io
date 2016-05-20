@@ -311,6 +311,10 @@ $help-black: 28px 25px $error-sprite-path 0 0;
   right: 0;
   margin: 20px;
 
+  @media screen and ( max-width: $medium ) {
+    display: none;
+  }
+
   span {
     margin-top: 2px;
     background-color: white;
