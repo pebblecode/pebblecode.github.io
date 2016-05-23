@@ -16,6 +16,8 @@ We opened up PageSpeed to find the red boxes of doom for our homepage. The user 
 
 {% include image.html url="/img/posts/2016-05-23-conquering-pagespeed-with-jekyll/pagespeed-score.png" caption="PageSpeed Insights' red box of doom" %}
 
+PageSpeed helped bring visibility to the major pain points of which to focus our efforts.
+
 #### Main areas of our focus:
 - Avoid render blocking javascript and CSS
 - Optimise how CSS is delivered
@@ -24,7 +26,7 @@ We opened up PageSpeed to find the red boxes of doom for our homepage. The user 
 - Increase spacing of links to reach a score of 100/100 in mobile user experience
 
 ## Render blocking javascript and CSS
-There were three offending requests delaying the rendering of the page. One of which was a Typekit javascript request. Typekit does offer an advanced asynchronous embed code, however we chose to use an altered script that utilises the browsers sessionStorage. SessionStorage allows browsers to locally cache the font files and avoid having to redownload as they browse between pages. See below the code, courtesy of this [gist](https://gist.github.com/skddc/9134225):
+There were three offending requests delaying the rendering of the page. The first offender we decided to tackle was a [Typekit](typekit.com) request. Typekit offers an advanced asynchronous embed code, however we chose to use an altered script that utilises the browsers sessionStorage. SessionStorage allows browsers to locally cache the font files and avoid having to redownload as visitors browse between pages. See below the code, courtesy of this [gist](https://gist.github.com/skddc/9134225):
 
 
     (function(d) {
@@ -81,7 +83,7 @@ Fortunately, our website uses only a small amount of javascript which makes this
 ## Optimising Images
 Jekyll has no clever way of optimising images and unfortunately can't set expiry headers on images with Github Pages, so this is something we have to keep in check manually. There are several tools on the market for image optimisation ranging from [ImageMagick](http://www.imagemagick.org/script/index.php) for the command line to a more GUI approach of [ImageOptim](https://imageoptim.com/). We started with Photoshop to ensure the image dimensions are set to the minimum and export sizes are reduced fully. Photoshop does a lot of the heavy duty work before we can do a final batch optimisation with ImageOptim or similar.
 
-Another technique to optimise images is to sprites. We use Sketch for all of our user interface needs here at pebble {code} and there is a simple plugin called [Sketch CSS Sprite Mixin](https://github.com/littlebusters/Sketch-CSS-Sprite-Mixin) that outputs the SCSS required for sprites. The SCSS includes a nifty mixin and a variable for each icon. We do some tweaks to the mixin so it accepts an svg file instead of png. The benefit of svg is it’s vector format allows for scaling to retina and beyond with ease. Armed with our sprite, we now have a reduction in requests and a single small file for all of our icons.
+Sprites are another technique in optimising image requests. We use Sketch for all of our user interface needs here at pebble {code} and there is a simple plugin called [Sketch CSS Sprite Mixin](https://github.com/littlebusters/Sketch-CSS-Sprite-Mixin) that outputs the SCSS required for sprites. The SCSS includes a nifty mixin and a variable for each icon. We do some tweaks to the mixin so it accepts an svg file instead of png. The benefit of svg is it’s vector format allows for scaling to retina and beyond with ease. Armed with our sprite, we now have a reduction in requests and a single small file for all of our icons.
 
 
 ## Time for Testing
