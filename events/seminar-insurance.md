@@ -77,11 +77,6 @@ speakers:
     - "Established record in new business start up and transformation."
     - "Proven record of developing strategic partnerships and evolving industry changing business models."
     - "Specialist in individual customer and client management. Customer sponsor for DWS Group."
- - name: Alan Horton
-   id: alan-horton
-   jobtitle: Non Executive Chairman, Independent Group
-   portrait: alan-horton.jpg
-   linkedin: https://www.linkedin.com/in/alan-horton-05a53010
  - name: Ruth Polyblank
    id: ruth-polyblank
    jobtitle: Head of Marketing and Customer Strategy, ACE Group
@@ -91,21 +86,6 @@ speakers:
     - "Chartered Marketer, heading marketing and customer strategy for a global organisation in the insurance industry. "
     - "B2B insurance marketing expert, devotee and enthusiast of all things Marketing and Communications and customer centricity."
     - "Coined the phrase 'Customer tenacity' - the art of pursuing the ultimate customer experience with absolute determination."
- - name: Rob Basinger
-   id: rob-basinger
-   jobtitle: Managing Director, Assurant Direct Ltd
-   portrait: rob-basinger.jpg
-   linkedin: https://www.linkedin.com/in/robbasinger?
-   bio:
-    - "Financial services business leader with 15 years blue-chip experience in retail banking, general insurance and wealth management."
-    - "Chartered Banker (MCIBS) and Member of the Chartered Institute of Marketing (MCIM)"
- - name: Beverley Russell
-   id: beverley-russell
-   jobtitle: Managing Partner, Resourceful Marketing Ltd
-   portrait: beverley-russell.jpg
-   linkedin: https://www.linkedin.com/in/beverleyjrussell
-   bio:
-    - "Beverley is passionate about the difference inbound marketing can make to tech businesses Tech through and through – started her career in hardware giants like Sony and Canon and then literally went into the cloud at start up MyQuickCloud and then to Cobweb a key Microsoft partner. Fully qualified in Marketing MA, CIM and fully accredited in inbound with Hubspot."
  - name: Nic Sproul
    id: nic-sproul
    jobtitle: Managing Partner, Resourceful Marketing Ltd
