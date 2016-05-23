@@ -224,15 +224,3 @@ hr {
     margin-right: 5px;
   }
 }
-
-// Code
-pre.prettyprint.prettyprinted {
-  background-color: lighten($ink, 48);
-  padding: 20px;
-  font-family: monospace;
-  border: none;
-
-  & * {
-    font-family: monospace;
-  }
-}
