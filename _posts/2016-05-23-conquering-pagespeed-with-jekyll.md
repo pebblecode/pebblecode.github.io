@@ -2,7 +2,7 @@
 layout: post
 title: Conquering PageSpeed with Jekyll
 author: Peter Tait
-categories: [performance, user experience]
+categories: [performance, tutorial]
 thumbnail: /img/posts/2016-05-23-conquering-pagespeed-with-jekyll/pagespeed-thumb.png
 ---
 
