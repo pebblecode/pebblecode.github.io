@@ -1,13 +1,28 @@
 //===============================================================================
 // CODE STYLES (PRETTIFY)
 //===============================================================================
+code {
+  background-color: lighten($ink, 48);
+}
+
 pre.prettyprint.prettyprinted {
+  background-color: lighten($ink, 48);
+  padding: 20px;
+  border: none;
+
+  * {
+    font-family: monospace;
+  }
+
+  code {
+    background-color: transparent;
+  }
+
   .pln {
     color: $ink;
   }
 
   @media screen {
-    
     .str {
       color: darken($aqua, 10);
     }
