@@ -108,6 +108,6 @@ We pushed our changes live and can happily say we now score:
 
 - User experience: 100/100
 
-All in the green zone, I think this is the best we can expect without the help of caching our resources. We can now sleep happy in the knowledge our visitors can zip across [pebblecode.com](pebblecode.com) in no time.
+All in the green zone, I think this is the best we can expect without the help of caching our resources. We can now sleep happy in the knowledge our visitors can zip across [pebblecode.com](http://pebblecode.com) in no time.
 
 {% include image.html url="/img/posts/2016-05-23-conquering-pagespeed-with-jekyll/fistpump.gif" %}
