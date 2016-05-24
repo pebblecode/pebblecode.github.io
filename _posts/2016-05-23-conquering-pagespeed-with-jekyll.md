@@ -26,7 +26,7 @@ PageSpeed helped bring visibility to the major pain points of which to focus our
 - Increase spacing of links to reach a score of 100/100 in mobile user experience
 
 ## Render blocking javascript and CSS
-There were three offending requests delaying the rendering of the page. The first offender we decided to tackle was a [Typekit](typekit.com) request. Typekit offers an advanced asynchronous embed code, however we chose to use an altered script that utilises the browsers sessionStorage. SessionStorage allows browsers to locally cache the font files and avoid having to redownload as visitors browse between pages. See below the code, courtesy of this [gist](https://gist.github.com/skddc/9134225):
+There were three offending requests delaying the rendering of the page. The first offender we decided to tackle was a [Typekit](https://typekit.com) request. Typekit offers an advanced asynchronous embed code, however we chose to use an altered script that utilises the browsers sessionStorage. SessionStorage allows browsers to locally cache the font files and avoid having to redownload as visitors browse between pages. See below the code, courtesy of this [gist](https://gist.github.com/skddc/9134225):
 
 
     (function(d) {
