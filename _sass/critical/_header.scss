@@ -10,17 +10,8 @@
 
   &.pink { background-color: $pink }
   &.purple { background-color: $purple; }
-
-  &.blue,
-  .blog-by-tag & {
-    background-color: $blue;
-  }
-
-  &.aqua,
-  .blog &,
-  .post & {
-    background-color: $aqua;
-  }
+  &.blue { background-color: $blue; }
+  &.aqua{ background-color: $aqua; }
 }
 
 .gbl-head-inner {

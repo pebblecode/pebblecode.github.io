@@ -2,25 +2,11 @@
 // BLOG
 //===============================================================================
 // Hero
-.blog,
-.blog-by-tag {
-  .gbl-head {
-    background-color: $aqua;
-  }
+.blog {
 
-  .content-container {
-    margin-top: 10px;
-
-    @media screen and ( max-width: $medium ) {
-      margin-top: -10px;
-    }
-  }
 }
 
-.blog-by-tag .gbl-head { background-color: $blue; }
-
-.hero-container-blog,
-.hero-container-blog.aqua {
+.hero-container-blog {
 
   &:before {
     bottom: 25px;

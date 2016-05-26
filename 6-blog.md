@@ -2,6 +2,6 @@
 layout: blog
 title: Blog
 permalink: /blog/
-colour: pink
+colour: blue
 group: nav
 ---
