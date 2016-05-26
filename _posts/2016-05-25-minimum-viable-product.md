@@ -26,7 +26,7 @@ At its most basic level, if you set out to build the ‘MVP’ for your idea, yo
 
 To cite an example: [Zappos](http://www.zappos.com/) is an online shoe retailer purchased by Amazon for £1.2bn in 2009. Today, it has revenues of over $1bn. Created in 1999 by Nick Swinmurn, it’s a shining example of an early eCommerce success. Nick recognised an opportunity for online shoe retail after failing to find the specific pair of Airwalk shoes he wanted to purchase in his local mall.
 
-Zappos did not being with multiple millions of dollars pumped into warehousing, logistics, marketing and eCommerce technology. It instead began with a simple MVP:
+Zappos did not begin with multiple millions of dollars pumped into warehousing, logistics, marketing and eCommerce technology. It instead began with a simple MVP:
 
 *Hypothesis:* People will buy shoes online.
 
