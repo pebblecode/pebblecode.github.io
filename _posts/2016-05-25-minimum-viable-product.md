@@ -30,7 +30,7 @@ Zappos did not being with multiple millions of dollars pumped into warehousing, 
 
 *Hypothesis:* People will buy shoes online.
 
-*MVP:* Nick went around local shoe stores, took pictures of the items they had for sale, and built a rudimentary website which displayed these pictures alongside their prices. If somebody wanted to buy them, he’d go back to the store, pay full price and send them on. This enabled him to quickly, and cheaply, test his hypothesis. Once proven, he was ready to to the next step.
+*MVP:* Nick went around local shoe stores, took pictures of the items they had for sale, and built a rudimentary website which displayed these pictures alongside their prices. If somebody wanted to buy them, he’d go back to the store, pay full price and send them on. This enabled him to quickly, and cheaply, test his hypothesis. Once proven, he was ready to take it to the next step.
 
 Homer Simpson's Car is an shining example of a product that desperately needed an MVP - the feature list sounds great on paper (“Shag Carpeting? Wow!”), and even meets all of the original requirements (engine, steering wheel, four tyres)  but nobody ever took a moment to check what the customer actually needed. Even if you were to conduct market research, the consumer might seem initially excited by the three horns play the song ‘La Cucaracha’, but if you were to install the horn in their current vehicle, how many would actually use it? Surely it would turn out to be too noisy and embarrassing.
 
