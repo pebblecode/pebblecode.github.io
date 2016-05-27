@@ -7,9 +7,32 @@ layout: blog
 
     {% include header.html %}
 
-    <section class="hero-container hero-container-blog {{ page.colour }}">
+    <header class="cat-head">
+      <div class="cat-head-inner grid">
+        <button class="cat-head-btn">All Categories</button>
+      </div>
+    </header>
+
+    <nav class="cat-modal">
+      <header class="cat-modal-head">
+        <h3 class="cat-modal-title">Categories</h3>
+        <button class="cat-modal-close">Close Categories</button>
+      </header>
+      <a class="cat-modal-btn">All categories</a>
+      <a class="cat-modal-btn">Transport</a>
+    </nav>
+
+    <section class="hero-container hero-container-feature">
       <div class="hero-inner grid">
-          <h1 class="hero-title col-1-1">{% if page.hero-title %}{{page.hero-title}}{% else %}{{page.title}}{% endif %}</h1>
+        <div class="meta-title-container">
+          <span class="meta-title">Featured Project</span>
+          <span class="meta-title pink-bg">Code</span>
+        </div>
+        <h1 class="hero-title col-1-1">OPTIMISING DEVELOPMENT ENVIRONMENTS IN SOAS</h1>
+        <div class="hero-meta">
+          <span class="post-author">George Ornbo</span>
+          <span class="post-date">May 17, 2016</span>
+        </div>
       </div>
 
     </section>
@@ -17,7 +40,7 @@ layout: blog
 
     <section class="content-container grid">
 
-      {% include blog-sidebar.html %}
+      <!-- {% include blog-sidebar.html %} -->
 
       <ul class="content col-1-1 post-list">
         {% for post in paginator.posts %}
@@ -47,6 +70,6 @@ layout: blog
     {% endif %}
 
     {% include footer.html %}
-    
+
   </body>
 </html>

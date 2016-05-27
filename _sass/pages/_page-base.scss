@@ -1,6 +1,6 @@
-//===============================================================================
+
 // PAGE BASE
-//===============================================================================
+
 // Content
 .content-container {
   margin-top: 30px;
@@ -75,8 +75,6 @@
   }
 }
 
-
-
 // Meta
 .meta-title {
   padding: 10px 15px;
@@ -86,7 +84,7 @@
   font-weight: $font-black;
   font-style: italic;
   text-transform: uppercase;
-  display: table;
+  display: inline-block;
   color: $ink;
   z-index: 2;
 
@@ -98,6 +96,26 @@
     box-shadow: 0 0 8px rgba(black, 0.3);
     z-index: -1;
     transform: rotate(-0.4deg) skew(1.2deg);
+  }
+
+  &.pink-bg::after {
+    background-color: $pink;
+  }
+
+  &.purple-bg::after {
+    background-color: $purple;
+  }
+
+  &.green-bg::after {
+    background-color: $green;
+  }
+
+  &.blue-bg::after {
+    background-color: $blue;
+  }
+
+  &.orange-bg::after {
+    background-color: $orange;
   }
 }
 

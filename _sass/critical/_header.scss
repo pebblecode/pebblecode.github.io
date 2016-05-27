@@ -1,6 +1,4 @@
-//===============================================================================
 // GLOBAL HEADER - CRITICAL STYLES
-//===============================================================================
 .gbl-head {
   background-color: $primary;
   position: fixed;
@@ -11,7 +9,8 @@
   &.pink { background-color: $pink }
   &.purple { background-color: $purple; }
   &.blue { background-color: $blue; }
-  &.aqua{ background-color: $aqua; }
+  &.aqua { background-color: $aqua; }
+  &.transparent { background-color: transparent; }
 }
 
 .gbl-head-inner {
