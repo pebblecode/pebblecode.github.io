@@ -10,9 +10,11 @@ thumbnail: /img/posts/2016-05-31-bacon-beacon/bacon-blog-cover-image.png
 
 Here at pebble we love getting to share our way of working with new people, so on Thursday 26th May, we invited a team from [PA Consulting](http://www.paconsulting.com/) to spend a day hacking in our offices.
 
-The theme was retail and consumer goods. After a bite to eat, we started discussing ideas and forming teams. Having seen a presentation by the [Wayfindr team](https://www.wayfindr.net/ ), I wanted to explore the potential of iBeacon technology, and quickly narrowed my area of interest to in-store navigation. Not long later, the concept of Bacon Beacon was born. Before we get on to that though, let me tell you about a young man named Frank.
+The theme was retail and consumer goods. After a bite to eat, we started discussing ideas and forming teams. Having seen a presentation by the [Wayfindr team](https://www.wayfindr.net/ ), I was keen to explore the potential of iBeacon technology, and quickly narrowed my area of interest to in-store navigation. Not long later, the concept of Bacon Beacon was born.
 
-It was 10:45am. Frank woke up, groggy from last nights' great party. He heard a buzzing beside him and saw a message on screen from his mum.
+Before we get on to that though, let me tell you about a young man named Frank.
+
+It was 10:45am. Frank woke up, groggy from last nights' great party. He heard a buzzing beside him and saw his phone glowing with a message from his mum:
 
 *“Good morning! Be with you in 15 minutes, can’t wait to see your new flat!”*.
 
@@ -33,9 +35,9 @@ To navigate to a product in a store
 #### Our Process
 We split the team into two strands. The development team got to work on reading locations from iBeacons, while the design team worked on the user experience.
 
-The development team explored a range of possible options before settling on a native android app. This would allow access the bluetooth and compass capabilities of the phone. The process was frought with struggles to accurately read information in a room littered with different beacons. They persevered, and by the end of the day, they were able to get the device to point at different beacons. Unfortunately, time ran out before any navigational guidance could be integrated.
+The development team explored a range of possible options before settling on a native android app. This would allow access to the bluetooth and compass capabilities of the phone. The process of pinpointing the nearest beacon didn't run as smoothly as planned. Thankfully, with perseverance, by the end of the day they were able to get the device to point at different beacons. Unfortunately, time ran out before any navigational guidance could be integrated.
 
-Meanwhile the design team produced a set of wireframes, created an animation to visualise the experience of the app, and put together a quick marketing site.
+Meanwhile the design team produced a set of wireframes, created an animation to visualise the experience of the app, and put together a marketing site.
 
 ![App wireframes](/img/posts/2016-05-31-bacon-beacon/bacon-wireframes.png)
 
