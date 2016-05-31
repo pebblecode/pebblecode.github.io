@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Bacon Beacon - Instore Navigation with iBeacons
+title: Bacon Beacon - In-store Navigation with iBeacons
 author: Ian Black
 categories: [hacks, innovation]
 thumbnail: /img/posts/2016-05-31-bacon-beacon/bacon-blog-cover-image.png
