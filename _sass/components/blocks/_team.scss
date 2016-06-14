@@ -5,21 +5,32 @@
     position: relative;
   }
 
-  @media screen and ( min-width: $medium ) {
-    .block-inner {
-      padding-bottom: 50px;
+  .block-inner {
+    margin-top: -70px;
+
+    @media screen and ( min-width: $medium ) {
+      padding: 0 50px 50px;
     }
   }
 }
 
-.person {
-  width: calc(50% - 48px);
-  margin-left: 34px;
-
+.team-col {
   @media screen and ( max-width: $medium ) {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+.person {
+  @media screen and ( max-width: $medium ) {
+    margin: 30px 0;
     padding-bottom: 30px;
-    width: calc(100% - 40px);
-    margin-left: 20px;
+  }
+
+  @media screen and ( min-width: $medium ) {
+    &:nth-of-type(odd) {
+      margin-bottom: 50px;
+    }
   }
 
   .card-img {

@@ -66,24 +66,91 @@
 
     {% include photo.html url="/img/features/couch-2.jpg" %}
 
+    <section id="team" class="team-block block blue-bg slash-shadow slash-top slash-right">
+      <div class="block blue-bg slash-shadow block-light">
+        <div class="block-inner grid">
+          <h2 class="text-center">{{ page.team-title }}</h2>
+          <ul class="team-col col-1-2">
+            <li class="person card">
+              <div class="card-inner">
+                <div class="card-img" style="background-image: url(/img/{{ page.person1-img }})"></div>
+                <h3 class="card-title slash-shadow slash-top">{{ page.person1-name }}</h3>
+                <h4 class="card-subtitle">{{ page.person1-role }}</h4>
+                <p class="card-excerpt">{{ page.person1-summary }}</p>
+              </div>
+            </li>
+            <li class="person card">
+              <div class="card-inner">
+                <div class="card-img" style="background-image: url(/img/{{ page.person2-img }})"></div>
+                <h3 class="card-title slash-shadow slash-top slash-right">{{ page.person2-name }}</h3>
+                <h4 class="card-subtitle">{{ page.person2-role }}</h4>
+                <p class="card-excerpt">{{ page.person2-summary }}.</p>
+              </div>
+            </li>
+            <li class="person card">
+              <div class="card-inner">
+                <div class="card-img" style="background-image: url(/img/{{ page.person3-img }})"></div>
+                <h3 class="card-title slash-shadow slash-top">{{ page.person3-name }}</h3>
+                <h4 class="card-subtitle">{{ page.person3-role }}</h4>
+                <p class="card-excerpt">{{ page.person3-summary }}</p>
+              </div>
+            </li>
+          </ul>
+          <ul class="team-col col-1-2">
+            <li class="person card">
+              <div class="card-inner">
+                <div class="card-img" style="background-image: url(/img/{{ page.person4-img }})"></div>
+                <h3 class="card-title slash-shadow slash-top slash-right">{{ page.person4-name }}</h3>
+                <h4 class="card-subtitle">{{ page.person4-role }}</h4>
+                <p class="card-excerpt">{{ page.person4-summary }}</p>
+              </div>
+            </li>
+            <li class="person card">
+              <div class="card-inner">
+                <div class="card-img" style="background-image: url(/img/{{ page.person5-img }})"></div>
+                <h3 class="card-title slash-shadow slash-top">{{ page.person5-name }}</h3>
+                <h4 class="card-subtitle">{{ page.person5-role }}</h4>
+                <p class="card-excerpt">{{ page.person5-summary }}</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    {% include photo.html url="/img/features/team.jpg" %}
+
+    <section class="product-block intro-block block slash-shadow slash-top slash-right">
+      <div class="block-inner grid">
+        <img class="product-img" src="/img/illustrations/{{ page.product-illustration }}" alt="">
+        <h1 class="product-title pink-text">{{ page.product-title }}</h1>
+        <p class="pink-text">{{ page.product-summary }}</p>
+        <a href="{{ page.product-btn-url }}" class="btn btn-lrg btn-center btn-arrow">{{ page.product-btn-text }}</a>
+      </div>
+    </section>
+
     {% include footer.html %}
 
     <script>
-    // About - header change colour
-    var aboutHeaderContainer = $('.about .gbl-head');
-    if (aboutHeaderContainer.length > 0) {
-      var aboutDirectors;
+    // Header change colour
+    var headerContainer = $('.gbl-head');
+    if ($(headerContainer).length > 0) {
+      var awards;
+      var team;
 
       var scrollPositions = function () {
-        aboutDirectors = $('#about-directors');
+        awards = $('#awards');
+        team = $('#team');
       };
 
       var headerBG = function () {
         var windowTop = $(window).scrollTop();
-        if (windowTop > aboutDirectors.offset().top - 200 || aboutDirectors.offset().bottom) {
-          aboutHeaderContainer.css({'background-color':'#0ea2dc'});
+        if (windowTop > team.offset().top - 200 || team.offset().bottom) {
+          headerContainer.css({'background-color':'#0ea2dc'});
+        } else if (windowTop > awards.offset().top - 200 || awards.offset().bottom) {
+          headerContainer.css({'background-color':'#ed4f7e'});
         } else {
-          aboutHeaderContainer.css({'background-color':''});
+          headerContainer.css({'background-color':'#37bec0'});
         }
       };
 

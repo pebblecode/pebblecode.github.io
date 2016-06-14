@@ -183,8 +183,11 @@
 
 .card-excerpt {
   padding: 0 25px;
-  margin-bottom: 0;
   color: $ink;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
 
   .block-light & {
     color: white;
