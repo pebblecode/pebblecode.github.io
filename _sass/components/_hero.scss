@@ -1,72 +1,14 @@
-//===============================================================================
-// HERO
-//===============================================================================
-.hero-container {
-  &.aqua {
-    &:before {
-      bottom: 25px;
-      transform: rotate(1.8deg) scale(1.2);
-    }
+.hero-play-btn {
+  position: absolute;
+  left: 50%;
+  bottom: -110px;
+  transform: translateX(-50%);
 
-    &:after {
-      transform: rotate(1.2deg) scale(1.2);
-    }
+  &:hover {
+    transform: translateX(-50%) scale(1.1);
   }
+}
 
-  &.blue {
-    &:before {
-      bottom: 25px;
-      transform: rotate(-2.2deg) scale(1.4);
-    }
-
-    &:after {
-      transform: rotate(-1.2deg) scale(1.2);
-    }
-
-    .hero-inner {
-      padding-bottom: 60px;
-    }
-  }
-
-  &.purple {
-    margin-bottom: 50px;
-
-    @media screen and ( max-width: $medium ) {
-      margin-bottom: 0;
-    }
-
-    &:before {
-      bottom: 25px;
-      transform: rotate(-2deg) scale(1.4);
-    }
-
-    &:after {
-      transform: rotate(-1.2deg) scale(1.2);
-    }
-
-    .hero-inner {
-      padding-bottom: 60px;
-    }
-  }
-
-  &.green {
-    margin-bottom: 50px;
-
-    @media screen and ( max-width: $medium ) {
-      margin-bottom: 0;
-    }
-
-    &:before {
-      bottom: 25px;
-      transform: rotate(-2deg) scale(1.4);
-    }
-
-    &:after {
-      transform: rotate(-1.2deg) scale(1.2);
-    }
-
-    .hero-inner {
-      padding-bottom: 60px;
-    }
-  }
+.hero .btn {
+  margin-top: 30px;
 }

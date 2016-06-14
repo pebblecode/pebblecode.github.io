@@ -1,13 +1,18 @@
-//===============================================================================
-// GLOBAL HEADER
-//===============================================================================
 .gbl-head {
-  transition: 0.3s box-shadow, 0.3s background-color;
+  -webkit-font-smoothing: antialiased;
+  transition: 0.3s;
   opacity: 0.99;
-  border-bottom: 1px solid rgba(white, 0.25);
+  border-bottom: 1px solid transparent;
   transform: translateZ(0);
 
-  &:not(.top) { box-shadow: 0 3px 0 rgba(black, 0.06); }
+  &:not(.top) {
+    border-bottom-color: rgba(white, 0.25);
+    box-shadow: 0 3px 0 rgba(black, 0.06);
+  }
+}
+
+.gbl-head-inner {
+  position: relative;
 }
 
 .gbl-head-logo:hover {
@@ -16,7 +21,7 @@
 }
 
 .gbl-head-nav {
-  @media screen and ( max-width: $medium + 100px ) {
+  @media screen and ( max-width: $medium ) {
     transition: 0.3s max-height ease-out, 0.3s box-shadow;
 
     &.active {
@@ -27,23 +32,17 @@
 }
 
 .gbl-head-nav-item {
-  border-bottom: 5px solid transparent;
-  transition: 0.2s;
-
-  @media screen and ( max-width: $medium + 100px ) {
-    border: none;
+  @media screen and ( max-width: $medium ) {
     text-align: right;
-    font-size: $delta;
-    background-color: rgba(black, 0.1);
-    margin: 1px 0 0;
+    background-color: rgba(black, 0.07);
   }
 
   &:hover {
     color: rgba(white, 0.9);
-    border-color: rgba(white, 0.4);
 
     @media screen and ( max-width: $medium ) {
-      background-color: rgba(black, 0.2);
+      background-color: rgba(black, 0.12);
+      border-top-color: rgba(black, 0.08);
     }
   }
 
@@ -51,7 +50,7 @@
   .blog &:last-child,
   .post &:last-child {
     color: white;
-    border-color: white;
+    font-weight: $font-bold;
   }
 }
 

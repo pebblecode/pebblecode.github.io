@@ -1,33 +1,32 @@
-//===============================================================================
-// TYPOGRAPHY - CRITICAL STYLES
-//===============================================================================
-h1, h2, h3 {
-  @include foutfix;
-  line-height: 1.3;
-  font-family: $brandon;
-  font-weight: $font-black;
-  font-style: italic;
-  text-transform: uppercase;
-  letter-spacing: -1px;
-}
-
 h1 {
   font-size: $tera;
+  font-family: $brandon;
+  font-weight: $font-black;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1;
+  letter-spacing: -2px;
+
+  @media screen and ( max-width: $large + 300px ) {
+    font-size: $giga;
+    font-size: 9vw;
+  }
 
   @media screen and ( max-width: $medium ) {
     font-size: $mega;
   }
-}
 
-h2 {
-  font-size: $mega;
-
-  @media screen and ( max-width: $medium ) {
+  @media screen and ( max-width: $small ) {
     font-size: $alpha;
   }
 }
 
-h3 {
+h2, h3 {
+  font-weight: $font-bold;
+  line-height: 1;
+}
+
+h2 {
   font-size: $alpha;
 
   @media screen and ( max-width: $medium ) {
@@ -35,26 +34,23 @@ h3 {
   }
 }
 
+h3 {
+  font-size: $beta;
+
+  @media screen and ( max-width: $medium ) {
+    font-size: $beta - 4px;
+  }
+}
+
 a {
   color: $primary;
   text-decoration: none;
+  border-bottom: 2px solid rgba($primary, 0.2);
   transition: 0.2s;
 
   &:hover {
     cursor: pointer;
     color: lighten($primary, 10);
-  }
-}
-
-blockquote {
-  border-left: 10px solid $primary;
-  padding-left: 20px;
-  font-style: normal;
-  margin: 45px 30px;
-  color: $primary;
-  font-size: $gamma + 4px;
-
-  @media screen and ( max-width: $medium ) {
-    margin: 30px 0;
+    border-bottom-color: rgba($primary, 0.4);
   }
 }

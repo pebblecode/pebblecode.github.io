@@ -9,11 +9,21 @@
 @import "shared/_normalize";
 @import "shared/_grid";
 @import "shared/_typography";
-@import "shared/_themes";
 @import "shared/_code";
 @import "shared/_elements";
+@import "shared/_slashes";
 
-// COMPONENTS
+@import "components/_cards";
+@import "components/blocks/_base";
+@import "components/blocks/_intro";
+@import "components/blocks/_photo";
+@import "components/blocks/_product";
+@import "components/blocks/_feature";
+@import "components/blocks/_team";
+@import "components/blocks/_aside";
+@import "components/blocks/_post";
+@import "components/_buttons";
+@import "components/_tabs";
 @import "components/_hero";
 @import "components/_header";
 @import "components/_footer";
@@ -21,23 +31,20 @@
 @import "components/_clients";
 @import "components/_share";
 @import "components/_related";
-@import "components/_cta";
 @import "components/_media";
 
-// PAGE TEMPLATES
-@import "pages/_page-base";
 @import "pages/_home";
 @import "pages/_services";
 @import "pages/_contact";
 @import "pages/_work";
 @import "pages/_about";
 @import "pages/_careers";
-@import "pages/_blog";
-@import "pages/_post";
 @import "pages/_seminar";
 @import "pages/_vertical";
 @import "pages/_video";
-// @import "pages/_invite";
 
-// IE 8
+@import "pages/blog/_base";
+@import "pages/blog/_post";
+@import "pages/blog/_meta";
+
 @import "shared/_ie";

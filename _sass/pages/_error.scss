@@ -1,6 +1,3 @@
-//===============================================================================
-// ERROR (404) Pages
-//===============================================================================
 @import url(https://fonts.googleapis.com/css?family=VT323);
 
 @mixin pixel-border {
@@ -88,7 +85,7 @@ $help-black: 28px 25px $error-sprite-path 0 0;
 }
 
 .error-help-btn {
-  @include icon;
+  @include hide-text;
   background-color: white;
   position: absolute;
   top: 0;
@@ -97,7 +94,7 @@ $help-black: 28px 25px $error-sprite-path 0 0;
   padding-right: 0;
 
   &::after {
-    @include icon-pseudo;
+    @include pseudo;
     @include sprite($help-black);
     top: 3px;
   }
@@ -214,7 +211,7 @@ $help-black: 28px 25px $error-sprite-path 0 0;
   text-decoration: none;
 
   &::before {
-    @include icon-pseudo;
+    @include pseudo;
     position: relative;
     margin: auto;
     display: table;

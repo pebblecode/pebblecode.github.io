@@ -1,7 +1,4 @@
-//===============================================================================
-// MIXINS
-//===============================================================================
-// CLEAR FIX
+// Clearfix
 @mixin clearfix {
   clear: both;
 
@@ -12,9 +9,16 @@
   }
 }
 
-// HIDE TEXT
+// Hide Text
 @mixin hide-text {
+  color: transparent;
   overflow: hidden;
+  display: block;
+  background-repeat: no-repeat;
+
+  &:hover {
+    color: transparent;
+  }
 
   &:before {
     content: "";
@@ -24,26 +28,8 @@
   }
 }
 
-// MARGIN AUTO
-@mixin margin-auto {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-// SPRITE ICON
-@mixin icon {
-  color: transparent;
-  overflow: hidden;
-  display: block;
-  background-repeat: no-repeat;
-
-  &:hover {
-    color: transparent;
-  }
-}
-
-// SPRITE ICON (PSEUDO)
-@mixin icon-pseudo {
+// Pseudo Defaults
+@mixin pseudo {
   content: "";
   overflow: hidden;
   display: block;
@@ -51,7 +37,7 @@
   background-repeat: no-repeat;
 }
 
-// BEFORE/AFTER SHADOWS
+// Before/After shadow slashes
 @mixin shadow-pseudo {
   content: "";
   overflow: hidden;
@@ -61,14 +47,30 @@
   width: 100%;
 }
 
-// Hide FOUT
-@mixin foutfix {
-  .wf-loading & {
-    opacity: 0;
-  }
+@mixin center {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
-  .wf-active & {
-    opacity: 1;
-    transition: 0.2s;
+// color: tint($pink, 42%);
+@function tint($color, $percentage) {
+  @return mix(white, $color, $percentage);
+}
+
+// color: shade($pink, 42%);
+@function shade($color, $percentage) {
+  @return mix(black, $color, $percentage);
+}
+
+@mixin text-shadow {
+  text-shadow: 1px 1px 0 rgba(black, 0.15);
+}
+
+@mixin text-shadow-lrg {
+  text-shadow: 2px 2px 0 rgba(black, 0.15);
+
+  @media screen and ( max-width: $medium ) {
+    text-shadow: 1px 1px 0 rgba(black, 0.15);
   }
 }

@@ -1,0 +1,35 @@
+//===============================================================================
+// FONTS
+//===============================================================================
+// REGULAR
+@font-face {
+  font-family: 'brandon-text';
+  font-weight: 400;
+  src: url('../fonts/brandon-text/brandon-text.eot');
+  src: url('../fonts/brandon-text/brandon-text.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/brandon-text/brandon-text.woff2') format('woff2'),
+       url('../fonts/brandon-text/brandon-text.woff') format('woff'),
+       url('../fonts/brandon-text/brandon-text.ttf') format('truetype');
+}
+
+// BOLD
+@font-face {
+  font-family: 'brandon-text';
+  font-weight: 700;
+  src: url('../fonts/brandon-text-bold/brandon-text-bold.eot');
+  src: url('../fonts/brandon-text-bold/brandon-text-bold.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/brandon-text-bold/brandon-text-bold.woff2') format('woff2'),
+       url('../fonts/brandon-text-bold/brandon-text-bold.woff') format('woff'),
+       url('../fonts/brandon-text-bold/brandon-text-bold.ttf') format('truetype');
+}
+
+// BLACK
+@font-face {
+  font-family: 'brandon-text';
+  font-weight: 900;
+  src: url('../fonts/brandon-text-black/brandon-text-black.eot');
+  src: url('../fonts/brandon-text-black/brandon-text-black.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/brandon-text-black/brandon-text-black.woff2') format('woff2'),
+       url('../fonts/brandon-text-black/brandon-text-black.woff') format('woff'),
+       url('../fonts/brandon-text-black/brandon-text-black.ttf') format('truetype');
+}

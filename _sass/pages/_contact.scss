@@ -1,30 +1,11 @@
-//===============================================================================
-// CONTACT
-//===============================================================================
-// Hero
-.contact .hero-container {
-  &:before {
-    @include shadow-pseudo;
-    bottom: 20px;
-    height: 20px;
-    background-color: rgba(black, 0.15);
-    transform: rotate(2.1deg) scale(1.2);
-  }
+.contact-block.block {
+  padding-top: 40px;
+  padding-bottom: 80px;
 
-  &:after {
-    @include shadow-pseudo;
-    bottom: -25px;
-    height: 50px;
-    background-color: #da426e;
-    transform: rotate(1.3deg) scale(1.2);
+  @media screen and ( max-width: $medium ) {
+    padding-top: 0;
+    padding-bottom: 60px;
   }
-}
-
-// Location
-.location-tab-container {
-  background-color: #da426e;
-  position: relative;
-  overflow: hidden;
 
   .tab-head-container {
     padding-left: $gutter * 2;
@@ -40,22 +21,16 @@
     color: rgba(black, 0.25);
     z-index: 1;
     position: relative;
-    margin-top: 10px;
     border-bottom: 6px solid transparent;
 
     &:hover {
       color: rgba(black, 0.4);
-      border-bottom-color: rgba(black, 0.1);
     }
 
     &.active {
       color: white;
       border-bottom-color: white;
       text-shadow: 1px 2px 0 rgba(black, 0.2);
-    }
-
-    @media screen and ( max-width: $medium ) {
-      margin-top: 0;
     }
   }
 
@@ -79,9 +54,8 @@
   }
 }
 
-.location-tab-content {}
-
-.location-item {
+.contact-item {
+  -webkit-font-smoothing: antialiased;
   font-size: $gamma;
   color: white;
   line-height: 1.4;
@@ -98,6 +72,7 @@
     transition: 0.2s;
     position: relative;
     word-break: break-word;
+    border: none;
 
     @media screen and ( max-width: $medium ) {
       padding-right: 0;
@@ -120,7 +95,7 @@
     }
 
     &:after {
-      @include icon-pseudo;
+      @include pseudo;
       opacity: 0.2;
       top: 0;
       left: 0;
@@ -128,24 +103,23 @@
   }
 }
 
-.location-item-address {
+.contact-item-address {
   & a:after { @include sprite($location-black); }
 }
 
-.location-item-phone {
+.contact-item-phone {
   line-height: 1;
 
   & a:after { @include sprite($phone-black); }
 }
 
-.location-item-email {
+.contact-item-email {
   line-height: 1;
 
   & a:after { @include sprite($mail-black); }
 }
 
-// Map
-.location-map-container {
+.map-container {
   position: relative;
   height: 500px;
 
@@ -155,23 +129,5 @@
 
   @media screen and ( max-width: $medium ) {
     height: 300px;
-  }
-
-  &:before {
-    @include shadow-pseudo;
-    top: 20px;
-    height: 20px;
-    background-color: rgba(black, 0.15);
-    z-index: 1;
-    transform: rotate(-2.1deg) scale(1.2);
-  }
-
-  &:after {
-    @include shadow-pseudo;
-    top: -25px;
-    height: 50px;
-    z-index: 2;
-    background-color: #da426e;
-    transform: rotate(-1.3deg) scale(1.2);
   }
 }

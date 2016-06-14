@@ -1,8 +1,6 @@
-//===============================================================================
-// VARIABLES
-//===============================================================================
-// COLOURS
-$paper: white;
+// Colours
+$white: white;
+$grey: #f8f9f9;
 $ink: #6b7482;
 
 $pink: #ed4f7e;
@@ -12,34 +10,63 @@ $aqua: #37bec0;
 $green: #a4ce4e;
 $orange: #faad40;
 
-$grey: darken($ink, 20);
 $primary: $pink;
 
+$colors: (
+  "primary": $primary,
+  "white": $white,
+  "grey": $grey,
+  "ink": $ink,
+  "pink": $pink,
+  "pink-dark5": shade($pink, 5%),
+  "pink-dark25": shade($pink, 25%),
+  "purple": $purple,
+  "purple-dark5": shade($purple, 5%),
+  "purple-dark25": shade($purple, 25%),
+  "blue": $blue,
+  "blue-dark5": shade($blue, 5%),
+  "blue-dark25": shade($blue, 25%),
+  "aqua": $aqua,
+  "aqua-dark5": shade($aqua, 5%),
+  "aqua-dark25": shade($aqua, 25%),
+  "green": $green,
+  "green-dark5": shade($green, 5%),
+  "green-dark25": shade($green, 25%),
+  "orange": $orange,
+  "orange-dark5": shade($orange, 5%),
+  "orange-dark25": shade($orange, 25%)
+);
 
-// TYPOGRAPHY
+// Typography
 $base-font: 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
-$museo: 'museo-sans', $base-font;
-$brandon: 'brandon-grotesque', $base-font;
+$brandon: 'brandon-text', $base-font;
 
-$body-font-size: 16px;
-$font-regular: 300; // $museo only
-$font-bold: 700; // $museo only
-$font-black: 900; // $brandon only
+$font-regular: 400;
+$font-bold: 700;
+$font-black: 900;
 
-$tera: 78px;
-$giga: 60px;
-$mega: 52px;
-$alpha: 42px;
+$tera: 110px;
+$giga: 72px;
+$mega: 64px;
+$alpha: 44px;
 $beta: 32px;
-$gamma: 22px;
-$delta: 18px;
-$epsilon: 14px;
-$zeta: 12px;
+$gamma: 24px;
+$delta: 20px;
+$epsilon: 18px;
+$zeta: 16px;
+$eta: 12px;
+
+$body-font-size: $epsilon;
+
+$box-shadow: 0 0 5px rgba(black, 0.2);
+$box-shadow-lrg: 0 0 10px rgba(black, 0.4);
 
 
-// SPACING: Grid, Viewports etc
+// Spacing: Grid, Viewports etc
 $large: 1000px;
-$medium: 650px;
+$medium: 700px;
 $small: 500px;
+
+$max-width: $large;
 
 $gutter: 20px;

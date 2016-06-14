@@ -1,4 +1,4 @@
-<footer class="gbl-foot">
+<footer class="gbl-foot {{ include.colour }}-bg">
   <div class="gbl-foot-inner grid">
     <ul class="gbl-foot-links">
       <li><a href="tel:+442033273940">+44 (0) 20 3327 3940</a></li>
@@ -51,11 +51,7 @@
   });
   </script>
 {% endif %}
-{% if include.scrollreveal %}
-  <script src="{{ site.baseurl }}/js/vendor/scrollReveal.min.js"></script>
-  <script>window.sr = new scrollReveal();</script>
-{% endif %}
-<script src="{{ site.baseurl }}/js/main.min.js" defer></script>
+<script src="{{ site.baseurl }}/js/main.js" defer></script>
 {% for extrascript in include.extrascripts %}
   <script src="{{ site.baseurl }}/js/{{extrascript.link}}" defer></script>
 {% endfor %}

@@ -1,24 +1,47 @@
 ---
 layout: home
+colour: pink
 title: Agile Development, Design Thinking and Rapid Prototyping
 permalink: /
 
-## Hero Content
-hero-title: Innovate like a start-up
-hero-subtitle: We help businesses propel their digital capability and enable innovation.
 
-## Main background image
-cover-img: features/couch.jpg
-
-## Featured project:
-feat-client:
-feat-title: Rail Travel Customer Experience System
-feat-excerpt: A tablet-based quality system allows a national rail company to make a quantum leap in the quality of the experience of passengers in stations and on their trains.
+## ------ Hero ------ ##
+hero-title: We do Digital Innovation
+hero-subtitle:
+hero-play-btn: Play Video
 
 
-## Vertical Section:
-vert-section-title: Industry Innovation
-vert-text-health: "Precision medicine, patient centricity, smart research."
-vert-text-transport: "Customer satisfaction, smart ticketing, internet of things."
-vert-text-insurance: "Internet of Things, cyber-security, speed to market."
+## ------ Intro ------ ##
+intro-title: Our Mission
+intro: pebble {code} helps bold businesses to innovate, grow internal capabilities and create digital products that customers love. From start-ups to global enterprises our clients hire us for digital acceleration and innovation.
+
+
+## ------ Expertise ------ ##
+expertise-title: Areas of Expertise
+expertise-subtitle: We’re good at harnessing the power of most complex tools and technology and applying these to solve business problems.
+expertise-btn-text: What we've done
+expertise-btn-url: /work
+
+# Expertise One
+expertise-one-title: Cloud
+expertise-one-summary: A great deal of the success of software projects lies in the correct identification of the problems to be solved.
+expertise-one-illustration: illustrations/chart.png
+
+# Expertise Two
+expertise-two-title: Mobility
+expertise-two-summary: A great deal of the success of software projects lies in the correct identification of the problems to be solved.
+expertise-two-illustration: illustrations/phone.png
+
+# Expertise Three
+expertise-three-title: Internet of Things
+expertise-three-summary: A great deal of the success of software projects lies in the correct identification of the problems to be solved.
+expertise-three-illustration: illustrations/microscope.png
+
+
+## ------ Product ------ ##
+product-illustration: illustrations/people.png
+product-title: Hack Days
+product-summary: We run a monthly introduction to Digital Innovation workshop at pebble HQ. The first step towards creating a culture of technical innovation is removing the fear of failure.
+product-btn-text: Sign Up Now
+product-btn-url: /contact
 ---

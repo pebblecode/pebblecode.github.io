@@ -7,9 +7,22 @@
   background-repeat: no-repeat;
   background-image: url( #{ nth( $spriteVals, 3 ) } );
   background-position: nth( $spriteVals, 4 ) nth( $spriteVals, 5 );
+  color: transparent;
+  overflow: hidden;
+  display: block;
+  background-repeat: no-repeat;
+
+  &:hover {
+    color: transparent;
+  }
 }
 
 $gbl-sprite-path: '../../../../img/gbl-sprite.svg';
+$play-pink: 28px 32px $gbl-sprite-path -407px -69px;
+$play-ink: 28px 32px $gbl-sprite-path -375px -69px;
+$arrowr-pink: 8px 12px $gbl-sprite-path -319px -33px;
+$arrowr-white: 8px 12px $gbl-sprite-path -310px -33px;
+$arrowr-ink: 8px 12px $gbl-sprite-path -301px -33px;
 $logo-white: 170px 29px $gbl-sprite-path 0px 0px;
 $charity-white: 21px 26px $gbl-sprite-path -164px -69px;
 $gym-white: 26px 19px $gbl-sprite-path -188px -69px;
@@ -19,29 +32,36 @@ $ten-white: 24px 26px $gbl-sprite-path -81px -69px;
 $snacks-white: 20px 25px $gbl-sprite-path -58px -69px;
 $holiday-white: 26px 25px $gbl-sprite-path -28px -69px;
 $flexible-white: 25px 26px $gbl-sprite-path 0px -69px;
-$mail-black: 29px 25px $gbl-sprite-path -230px -33px;
-$mail-white: 29px 25px $gbl-sprite-path -295px -33px;
-$phone-white: 29px 29px $gbl-sprite-path -263px -33px;
-$phone-black: 29px 29px $gbl-sprite-path -198px -33px;
-$location-black: 23px 32px $gbl-sprite-path -172px -33px;
-$close-grey: 17px 17px $gbl-sprite-path -152px -33px;
-$menu-grey: 19px 19px $gbl-sprite-path -130px -34px;
+$mail-black: 29px 25px $gbl-sprite-path -275px -69px;
+$mail-white: 29px 25px $gbl-sprite-path -340px -69px;
+$phone-white: 29px 29px $gbl-sprite-path -308px -69px;
+$phone-black: 29px 29px $gbl-sprite-path -243px -69px;
+$location-black: 23px 32px $gbl-sprite-path -217px -69px;
+$close-grey: 17px 17px $gbl-sprite-path -280px -33px;
+$menu-grey: 19px 19px $gbl-sprite-path -258px -34px;
+$facebook-white: 22px 22px $gbl-sprite-path -233px -34px;
 $facebook-pink: 22px 22px $gbl-sprite-path -105px -34px;
-$linkedin-pink: 23px 22px $gbl-sprite-path -80px -34px;
+$linkedin-white: 22px 22px $gbl-sprite-path -208px -34px;
+$linkedin-pink: 22px 22px $gbl-sprite-path -80px -34px;
+$octocat-white: 23px 23px $gbl-sprite-path -181px -33px;
 $octocat-pink: 23px 23px $gbl-sprite-path -53px -33px;
+$twitter-white: 26px 21px $gbl-sprite-path -154px -33px;
 $twitter-pink: 26px 21px $gbl-sprite-path -26px -33px;
+$vimeo-white: 24px 21px $gbl-sprite-path -128px -33px;
 $vimeo-pink: 24px 21px $gbl-sprite-path 0px -33px;
 
+
 $client-sprite-path: '../../../../img/client-sprite.svg';
-$bybox-logo: 220px 94px $client-sprite-path -438px -94px;
-$express-logo: 219px 94px $client-sprite-path -658px -94px;
-$pearson-logo: 219px 94px $client-sprite-path -439px 0px;
-$pwc-logo: 219px 94px $client-sprite-path -658px 0px;
+$vfs-logo: 195px 28px $client-sprite-path -450px -221px;
+$bybox-logo: 172px 33px $client-sprite-path -461px -126px;
+$express-logo: 121px 65px $client-sprite-path -708px -109px;
+$pearson-logo: 170px 28px $client-sprite-path -463px -33px;
+$pwc-logo: 98px 76px $client-sprite-path -718px -10px;
 $hp-logo: 220px 94px $client-sprite-path -877px 0px;
-$dentsu-logo: 219px 94px $client-sprite-path 0px -94px;
-$bede-logo: 219px 94px $client-sprite-path -219px -94px;
+$dentsu-logo: 66px 66px $client-sprite-path -75px -107px;
+$bede-logo: 114px 55px $client-sprite-path -272px -113px;
 $lloyds-logo: 220px 94px $client-sprite-path -877px -94px;
-$bill-logo: 219px 95px $client-sprite-path 0px -188px;
-$cancer-logo: 219px 95px $client-sprite-path -219px -188px;
-$aljazeera-logo: 219px 94px $client-sprite-path 0px 0px;
-$az-logo: 219px 94px $client-sprite-path -219px 0px;
+$bill-logo: 193px 40px $client-sprite-path -12px -215px;
+$cancer-logo: 162px 64px $client-sprite-path -246px -205px;
+$aljazeera-logo: 187px 64px $client-sprite-path -15px -13px;
+$az-logo: 205px 52px $client-sprite-path -226px -15px;

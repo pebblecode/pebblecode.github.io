@@ -3,7 +3,7 @@
   // Navigation appear on scroll up
   var gblHead = $('.gbl-head');
   $(window).scroll(function() {
-    if ($(this).scrollTop() > 100) {
+    if ($(this).scrollTop() > 0) {
       gblHead.removeClass('top');
     } else {
       gblHead.addClass('top');
@@ -20,9 +20,9 @@
 
   // Detect touch/click devices
   if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-    $( 'body' ).addClass( 'touch-device' );
+    $( 'body' ).addClass('touch-device');
   } else {
-    $( 'body' ).addClass( 'click-device' );
+    $( 'body' ).addClass('click-device');
   }
 
   // Tabs

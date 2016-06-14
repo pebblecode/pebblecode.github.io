@@ -1,0 +1,12 @@
+.product-block {}
+
+.product-img {
+  display: table;
+  margin: -140px auto 30px;
+  width: 300px;
+  max-width: 70%;
+}
+
+.product-title {
+  @extend h1;
+}

@@ -14,7 +14,10 @@
 .padded { padding: $gutter; }
 
 [class*='col-'] {
-  float: left;
+  display: inline-block;
+  margin-right: -2px;
+  margin-left: -2px;
+  vertical-align: top;
   padding-right: $gutter;
   padding-left: $gutter;
 }
@@ -29,7 +32,8 @@
 @media screen and ( max-width: $small ) {
   [class*='col-'] {
     width: 100%;
-    float: none;
+    display: block;
+    margin-left: 0;
   }
 
   .mobile-col-2-3,
@@ -37,7 +41,8 @@
   .mobile-col-1-2,
   .mobile-col-1-4,
   .mobile-col-1-8 {
-    float: left;
+    display: inline-block;
+    margin-left: -4px;
   }
 
   .mobile-col-2-3 { width: 66.66%; }

@@ -1,90 +1,3 @@
-//===============================================================================
-// ELEMENTS
-//===============================================================================
-::selection { background: rgba($ink, 0.3); }
-
-// BUTTONS
-.btn, button {
-  border: none;
-  border-radius: 0;
-  background: none;
-  -webkit-appearance: none;
-  transition: 0.2s;
-  line-height: 1;
-
-  &:focus { outline: none; }
-}
-
-.btn-primary {
-  color: $primary;
-  padding-bottom: 10px;
-  border-bottom: 4px solid rgba($primary, 0.2);
-  transition: 0.2s;
-
-  &:hover {
-    color: $primary;
-    border-bottom-color: rgba($primary, 0.4);
-  }
-}
-
-.btn-light {
-  color: white;
-  background-color: rgba(white, 0.2);
-
-  &:hover {
-    color: white;
-    background-color: rgba(white, 0.3);
-  }
-}
-
-.btn-block {
-  border-radius: 4px;
-  padding: 15px 30px;
-  font-family: $brandon;
-  font-weight: $font-black;
-  font-style: italic;
-  text-transform: uppercase;
-  font-size: $delta - 2px;
-  border-bottom: none;
-  transition: 0.2s;
-
-  @media screen and ( max-width: $medium ) {
-    padding: 14px;
-  }
-
-  &.btn-primary {
-    text-shadow: 1px 1px 0 rgba(black, 0.2);
-    background-color: $primary;
-    color: white;
-
-    &:hover {
-      color: white;
-      background-color: darken($primary, 10);
-    }
-  }
-
-  &.btn-secondary {
-    text-shadow: 1px 1px 0 rgba(black, 0.2);
-    background-color: $ink;
-    color: white;
-
-    &:hover {
-      color: white;
-      background-color: darken($ink, 10);
-    }
-  }
-
-  &.btn-disabled {
-    background-color: lighten($ink, 45);
-    color: lighten($ink, 15);
-  }
-}
-
-.btn-small {
-  padding: 5px 10px;
-  font-size: $epsilon;
-}
-
 // INPUT, TEXTAREA
 input, textarea {
   padding: 14px 10px;
@@ -126,9 +39,9 @@ dd {
   margin-left: 1.4em;
 }
 
-// Horizontal Lines
 hr {
-  border: 4px solid lighten($ink, 50);
+  margin: 20px auto;
+  border: 2px solid rgba(black, 0.08);
 }
 
 // Hidden Elements (For Screen Readers)
@@ -139,81 +52,6 @@ hr {
   width: 1px;
   height: 1px;
   overflow: hidden;
-}
-
-// TABS
-.tab-head {
-  padding-left: 0;
-  margin: 0;
-  max-width: 100%;
-  width: 100%;
-  white-space: nowrap;
-  overflow-y: hidden;
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
-  position: relative;
-}
-
-.tab-head-item {
-  font-size: $beta + 4px;
-  display: inline-block;
-  padding: 10px 0;
-  margin: 0 20px 0 0;
-  transition: 0.2s;
-  font-family: $brandon;
-  font-weight: $font-black;
-  font-style: italic;
-  text-transform: uppercase;
-
-  @media screen and ( max-width: 650px ) {
-    margin-right: 15px;
-  }
-
-  @media screen and ( max-width: 1000px ) {
-    margin-top: 15px;
-  }
-
-  @media screen and ( max-width: 760px ) {
-    font-size: $beta;
-  }
-
-  @media screen and ( max-width: 650px ) {
-    font-size: $gamma;
-  }
-
-  &:first-of-type {
-    margin-left: 0;
-  }
-
-  &:last-of-type {
-    margin-right: 20px;
-  }
-
-  &.active {
-    color: $ink;
-  }
-}
-
-.tab-content-container {
-  @include clearfix;
-  padding-top: 50px;
-
-  @media screen and ( max-width: 650px ) {
-    padding-top: 30px;
-  }
-}
-
-.tab-content {
-  opacity: 0;
-  height: 0;
-  overflow: hidden;
-  transition: opacity 0.8s;
-
-  &.active {
-    opacity: 1;
-    height: 100%;
-    transition: opacity 0.8s;
-  }
 }
 
 // Pagination

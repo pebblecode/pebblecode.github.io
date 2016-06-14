@@ -1,14 +1,7 @@
-//===============================================================================
-// GLOBAL FOOTER
-//===============================================================================
-.gbl-foot {
-  background-color: white;
-  border-top: 1px solid $primary;
-}
-
 .gbl-foot-inner {
+  -webkit-font-smoothing: antialiased;
   position: relative;
-  padding: 20px $gutter * 2 40px;
+  padding: 20px $gutter * 2 60px;
 
   @media screen and ( max-width: $medium + 100px ) {
     padding: 20px $gutter;
@@ -29,6 +22,10 @@
     bottom: 0;
     right: 0;
   }
+
+  .gbl-foot-light & {
+    color: rgba(white, 0.4);
+  }
 }
 
 .gbl-foot-links {
@@ -47,10 +44,20 @@
 
   a {
     color: $pink;
-    transition: 0.2s;
+    border: none;
     padding: 0;
 
-    &:hover { color: rgba($pink, 0.8); }
+    &:hover {
+      color: rgba($pink, 0.8);
+    }
+
+    .gbl-foot-light & {
+      color: white;
+
+      &:hover {
+        color: rgba(white, 0.6);
+      }
+    }
   }
 }
 
@@ -75,29 +82,18 @@
   }
 
   a {
-    position: relative;
-    color: transparent;
-    font-size: 1px;
-    overflow: hidden;
-    width: 25px;
-    height: 22px;
-    display: block;
-    transition: 0.2s;
+    border: none;
 
-    &:after {
-      @include icon-pseudo;
-      top: 0;
-      right: 0;
-    }
+    &:hover { opacity: 0.8; }
 
-    &:hover {
-      opacity: 0.8;
-    }
+    &.github { @include sprite($octocat-pink); }
+    &.twitter { @include sprite($twitter-pink); }
+    &.vimeo { @include sprite($vimeo-pink); }
+  }
 
-    &.github:after { @include sprite($octocat-pink); }
-
-    &.twitter:after { @include sprite($twitter-pink); }
-
-    &.vimeo:after { @include sprite($vimeo-pink); }
+  .gbl-foot-light & {
+    .github { @include sprite($octocat-white); }
+    .twitter { @include sprite($twitter-white); }
+    .vimeo { @include sprite($vimeo-white); }
   }
 }

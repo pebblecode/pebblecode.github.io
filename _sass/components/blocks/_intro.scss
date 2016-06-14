@@ -1,0 +1,24 @@
+.intro-block {
+  .block-inner {
+    text-align: center;
+    padding-left: $gutter * 3;
+    padding-right: $gutter * 3;
+
+    @media screen and ( max-width: $medium ) {
+      padding-left: $gutter;
+      padding-right: $gutter;
+    }
+  }
+
+  p {
+    font-size: $gamma;
+
+    @media screen and ( max-width: $medium ) {
+      font-size: $epsilon;
+    }
+  }
+
+  .btn {
+    margin-top: 30px;
+  }
+}

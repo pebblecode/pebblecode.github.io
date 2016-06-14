@@ -1,11 +1,14 @@
-<section class="hero-container {{ page.colour }}">
+<section class="hero-block block-clear slash-shadow {{ page.colour }}-bg {{ page.slash-angle }}">
   <div class="hero-inner grid">
     <h1 class="hero-title col-1-1">{% if page.hero-title %}{{page.hero-title}}{% else %}{{page.title}}{% endif %}</h1>
     {% if page.hero-subtitle %}
-      <p class="hero-summary col-1-1">{{page.hero-subtitle}}</p>
+      <p class="hero-subtitle col-1-1">{{page.hero-subtitle}}</p>
     {% endif %}
     {% if page.hero-btn %}
-      <a href="{{page.hero-btn-url}}" class="btn btn-primary btn-block" data-sr="scale up 20%, vF 0">{{page.hero-btn}}</a>
+      <a href="{{page.hero-btn-url}}" class="btn btn-light btn-arrow btn-lrg">{{page.hero-btn}}</a>
+    {% endif %}
+    {% if page.hero-play-btn %}
+      <button class="hero-play-btn btn-play btn-block btn-circle white-bg">{{page.hero-play-btn}}</button>
     {% endif %}
   </div>
 </section>

@@ -1,0 +1,19 @@
+<div class="card col-1-3">
+  <a class="card-link" href="{{ post.url }}">
+    <div class="card-img" style="background-image: url({{ post.thumbnail }})"></div>
+    <h3 class="card-title">{{ post.title }}</h3>
+    <div class="card-meta meta">
+      <span class="meta-author">{{ post.author }}</span>
+      <span class="meta-date">{{ post.date | date: '%B %d, %Y' }}</span>
+    </div>
+  </a>
+  <div class="card-tags tags">
+    {% for category in post.categories %}
+      {% assign catLink = category | replace: ' ', '-' %}
+      <a href="/blog/tag/{{catLink}}" class="btn tag">{{category}}</a>
+    {% endfor %}
+  </div>
+  <a class="card-btn" href="{{ post.url }}">
+    <button class="btn btn-arrow">Read Post</button>
+  </a>
+</div>

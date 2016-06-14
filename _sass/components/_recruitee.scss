@@ -147,7 +147,7 @@
   transition: 0.2s;
 
   &:after {
-    @include icon-pseudo;
+    @include pseudo;
     @include sprite($close-grey);
     top: 17px;
     left: 17px;
@@ -199,7 +199,6 @@
 
   .rt-btn {
     @extend .btn;
-    @extend .btn-primary;
     @extend .btn-block;
     margin: $gutter * 2 auto 0;
     display: table;

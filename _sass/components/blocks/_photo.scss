@@ -1,0 +1,35 @@
+.photo-block {
+  position: relative;
+  overflow: hidden;
+  height: 400px;
+
+  @media screen and ( max-width: $medium ) {
+    height: 250px;
+  }
+}
+
+.photo-top,
+.photo-btm {
+  height: 700px;
+  z-index: -1;
+}
+
+.photo-top {
+  margin-top: -350px;
+}
+
+.photo-btm {
+  margin-bottom: -350px;
+}
+
+.photo {
+  background-color: $grey;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}

@@ -294,7 +294,6 @@ h5.seminar-speaker-jobtitle {
   padding: 0;
 
   h3 {
-    font-family: $museo;
     font-size: $alpha - 4px;
     font-weight: normal;
     text-transform: none;
@@ -322,7 +321,6 @@ h5.seminar-speaker-jobtitle {
   text-align: center;
   font-style: normal;
   font-size: $alpha - 4px;
-  font-family: $museo;
   font-weight: $font-bold;
   text-transform: none;
 
@@ -533,7 +531,7 @@ input.seminar-form-submit {
     }
 
     &:after {
-      @include icon-pseudo;
+      @include pseudo;
       top: 0;
       left: 0;
     }
@@ -559,7 +557,6 @@ h3.seminar-info-item {
   font-size: $beta - 4px;
   font-weight: $font-regular;
   color: $pink;
-  font-family: $museo;
   font-style: normal;
   margin-top: 6px;
 }
@@ -574,7 +571,7 @@ h3.seminar-info-item {
   margin-bottom: 6px;
 
   &:after {
-    @include icon-pseudo;
+    @include pseudo;
     top: 0;
     left: 0;
   }

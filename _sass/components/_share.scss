@@ -6,7 +6,7 @@
   position: relative;
 
   &::before {
-    @include icon-pseudo;
+    @include pseudo;
     top: -30px;
     width: 200px;
     height: 6px;
@@ -21,7 +21,7 @@
 }
 
 .share-btn {
-  @include icon;
+  @include hide-text;
   display: inline-block;
   transform: scale(1.3);
   margin-right: 10px;

@@ -28,61 +28,30 @@
 }
 
 // Benefits Container
-.benefits-container {
-  background-color: $blue;
-  margin: 0;
-  padding-bottom: $gutter;
-  padding-top: $gutter;
-  color: white;
+.benefits-block {
 
-  @media screen and ( max-width: $medium ) {
-    padding-top: 0;
-    padding-bottom: 0;
+}
+
+.benefits-list {
+
+  li {
+    -webkit-font-smoothing: antialiased;
   }
 
-  & + .photo-container .photo-inner  {
+  h3 {
+    margin-bottom: 20px;
+
     &:before {
-      transform: rotate(1deg) scale(1.2);
-    }
+      content: "";
+      height: 6px;
+      width: 150px;
+      background-color: rgba(white, 0.2);
+      display: block;
+      margin: 30px 0 50px;
 
-    &:after {
-      background-color: $blue;
-      transform: rotate(1.6deg) scale(1.2);
-    }
-  }
-}
-
-.benefits-inner {
-  position: relative;
-  z-index: 3;
-  padding-top: 30px;
-
-  .content-title {
-    color: white;
-    border-bottom-color: rgba(white, 0.2);
-    text-shadow: 3px 4px 0 rgba(black, 0.2);
-  }
-}
-
-.benefits-list-container {
-  @include clearfix;
-}
-
-.benefits-list-title {
-  font-size: $beta;
-  text-shadow: 2px 2px 0 rgba(black, 0.2);
-  position: relative;
-
-  &:before {
-    content: "";
-    height: 6px;
-    width: 150px;
-    background-color: rgba(white, 0.2);
-    display: block;
-    margin: 30px 0 50px;
-
-    @media screen and ( max-width: $medium ) {
-      margin-bottom: 30px;
+      @media screen and ( max-width: $medium ) {
+        margin-bottom: 30px;
+      }
     }
   }
 }
@@ -102,7 +71,7 @@
   }
 
   &:after {
-    @include icon-pseudo;
+    @include pseudo;
     top: 15px;
     left: 25px;
     opacity: 0.6;
@@ -144,7 +113,7 @@
 }
 
 // Culture Photos grid
-.photos-container {
+.photo-grid-block {
   overflow: hidden;
   position: relative;
   height: 550px;
@@ -166,27 +135,9 @@
   @media screen and ( max-width: $small ) {
     height: 300px;
   }
-
-  &:before {
-    @include shadow-pseudo;
-    bottom: 2px;
-    height: 20px;
-    z-index: 1;
-    background-color: rgba(black, 0.15);
-    transform: rotate(-1.2deg) scale(1.2);
-  }
-
-  &:after {
-    @include shadow-pseudo;
-    bottom: -40px;
-    height: 50px;
-    z-index: 2;
-    background-color: $blue;
-    transform: rotate(-0.8deg) scale(1.2);
-  }
 }
 
-.photos-grid {
+.photo-grid {
   position: relative;
   width: 120%;
   width: calc(100% + 220px);
@@ -206,27 +157,9 @@
   @media screen and ( max-width: $small ) {
     width: calc(100% + 100px);
   }
-
-  &:before {
-    @include shadow-pseudo;
-    top: 15px;
-    height: 20px;
-    z-index: 1;
-    background-color: rgba(black, 0.15);
-    transform: rotate(1.6deg) scale(1.2);
-  }
-
-  &:after {
-    @include shadow-pseudo;
-    top: -25px;
-    height: 50px;
-    background-color: white;
-    z-index: 2;
-    transform: rotate(1deg) scale(1.2);
-  }
 }
 
-.photos-item {
+.photo-grid-item {
   padding: 0;
   width: 220px;
   height: 220px;
@@ -234,7 +167,7 @@
   overflow: hidden;
   float: left;
 
-  & > img {
+  img {
     display: block;
     width: auto;
     max-width: none;
@@ -250,7 +183,7 @@
     height: 280px;
     width: 280px;
 
-    & > img {
+    img {
       min-width: 280px;
       height: 280px;
     }
@@ -260,7 +193,7 @@
     height: 350px;
     width: 350px;
 
-    & > img {
+    img {
       min-width: 350px;
       height: 350px;
     }

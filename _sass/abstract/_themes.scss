@@ -1,0 +1,9 @@
+@each $name, $hexa in $colors {
+  .#{$name}-bg {
+    background-color: #{$hexa};
+  }
+
+  .#{$name}-text {
+    color: #{$hexa};
+  }
+}

@@ -1,32 +1,33 @@
-//===============================================================================
-// CLIENTS
-//===============================================================================
-.client-container {
-  padding-bottom: 20px;
-  background-color: lighten($ink, 45);
-  background-color: white;
+.clients-block {
+  padding-top: 50px;
+  padding-left: $gutter * 4;
+  padding-right: $gutter * 4;
 
-  @media screen and ( max-width: $medium ) {
-    padding-bottom: 10px;
+  @media screen and ( max-width: $large ) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  &.slash.block {
+    padding-bottom: 15px;
   }
 }
 
-.client-inner {
+.clients {
+  @include clearfix;
   position: relative;
-  z-index: 2;
 }
 
-.client-item {
+.client {
   height: 110px;
   position: relative;
-  margin-top: -15px;
 
   @media screen and ( max-width: $large ) {
     width: 33.33%;
   }
 
   @media screen and ( max-width: $medium ) {
-    float: left;
+    display: inline-block;
     width: 50%;
     transform: scale(0.9);
     margin-top: -20px;
@@ -34,33 +35,25 @@
 
   @media screen and ( max-width: $small ) {
     transform: scale(0.8);
+    margin-left: -2px;
+    margin-right: -2px;
+  }
+
+  .client-logo {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -70%);
   }
 }
 
 .client-logo {
-  color: transparent;
-  font-size: 1px;
-
-  &::after {
-    @include icon-pseudo;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-
-  &.az-logo {
-    &::after { @include sprite($az-logo); }
-
-    @media screen and ( max-width: $small ) {
-      transform: scale(0.7);
-    }
-  }
-
-  &.pearson-logo::after { @include sprite($pearson-logo); }
-  &.bede-logo::after { @include sprite($bede-logo); }
-  &.cancer-logo::after { @include sprite($cancer-logo); }
-  &.aljazeera-logo::after { @include sprite($aljazeera-logo); }
-  &.lloyds-logo::after { @include sprite($lloyds-logo); }
-  &.bybox-logo::after { @include sprite($bybox-logo); }
-  &.express-logo::after { @include sprite($express-logo); }
+  &.az-logo { @include sprite($az-logo); }
+  &.pearson-logo { @include sprite($pearson-logo); }
+  &.bede-logo { @include sprite($bede-logo); }
+  &.cancer-logo { @include sprite($cancer-logo); }
+  &.aljazeera-logo { @include sprite($aljazeera-logo); }
+  &.lloyds-logo { @include sprite($lloyds-logo); }
+  &.bybox-logo { @include sprite($bybox-logo); }
+  &.express-logo { @include sprite($express-logo); }
+  &.vfs-logo { @include sprite($vfs-logo); }
 }
