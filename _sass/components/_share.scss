@@ -1,7 +1,5 @@
-//===============================================================================
-// SHARING FEATURE
-//===============================================================================
 .share-container {
+  max-resolution: 50px;;
   padding: 5px $gutter 40px;
   position: relative;
 
@@ -26,6 +24,7 @@
   transform: scale(1.3);
   margin-right: 10px;
   transition: 0.2s;
+  border: none;
 
   &:hover {
     transform: scale(1.5);
@@ -35,12 +34,15 @@
 
 .share-twitter {
   @include sprite($twitter-pink);
+  display: inline-block;
 }
 
 .share-linkedin {
   @include sprite($linkedin-pink);
+  display: inline-block;
 }
 
 .share-facebook {
   @include sprite($facebook-pink);
+  display: inline-block;
 }

@@ -11,7 +11,8 @@
 }
 
 .tab-head-item {
-  @extend h2;
+  font-size: $alpha;
+  font-weight: $font-bold;
   text-transform: none;
   letter-spacing: 0;
   display: inline-block;
@@ -21,18 +22,9 @@
   border: none;
   border-radius: 0;
 
-  @media screen and ( max-width: $large ) {
-    margin-top: 15px;
-  }
-
   @media screen and ( max-width: $medium ) {
     margin-right: 15px;
-    font-size: $beta;
-  }
-
-  @media screen and ( max-width: $small ) {
-    margin-right: 15px;
-    font-size: $gamma;
+    font-size: $alpha - 4px;
   }
 
   &:first-of-type {

@@ -1,66 +1,11 @@
-//===============================================================================
-// BLOG
-//===============================================================================
-// Hero
-.blog,
-.blog-by-tag {
-  .gbl-head {
-    background-color: $aqua;
-  }
-
-  .content-container {
-    margin-top: 10px;
-
-    @media screen and ( max-width: $medium ) {
-      margin-top: -10px;
-    }
-  }
+.blog .content-block,
+.blog-by-tag .content-block {
+  padding-top: 90px;
 }
 
-.blog-by-tag .gbl-head { background-color: $blue; }
-
-.hero-container-blog,
-.hero-container-blog.aqua {
-
-  &:before {
-    bottom: 25px;
-    transform: rotate(-2deg) scale(1.2);
-  }
-
-  &:after {
-    transform: rotate(-1.4deg) scale(1.2);
-  }
-
-  .meta-title-container {
-    margin-bottom: 30px;
-  }
-
-  a .hero-title {
-    margin-bottom: 50px;
-    transition: 0.2s;
-    display: table;
-
-    @media screen and ( max-width: 1100px ) {
-      font-size: $tera - 10px;
-    }
-
-    @media screen and ( max-width: 900px ) {
-      font-size: $giga;
-      margin-bottom: 30px;
-    }
-
-    @media screen and ( max-width: 800px ) {
-      font-size: $mega;
-    }
-
-    @media screen and ( max-width: 700px ) {
-      font-size: $mega - 5px;
-    }
-
-    @media screen and ( max-width: 600px ) {
-      font-size: $alpha;
-    }
-  }
+.blog-by-tag .hero-inner {
+  padding-top: 100px;
+  padding-bottom: 0;
 }
 
 // Blog Tabs
@@ -146,33 +91,20 @@
 
 a .post-title {
   display: table;
-  font-family: $brandon;
-  font-weight: $font-black;
-  font-style: italic;
-  text-transform: uppercase;
-  letter-spacing: -1px;
   color: $primary;
   transition: 0.2s;
   line-height: 1;
   max-width: 90%;
-  margin: 0 0 0px;
+  margin: 0 0 10px;
 
   @media screen and ( max-width: $medium ) {
     max-width: 100%;
   }
 
   .post-item & {
-    font-size: $alpha;
-
     @media screen and ( max-width: $medium ) {
-      font-size: $beta;
       margin-bottom: 5px;
     }
-
-    @media screen and ( max-width: $small ) {
-      font-size: 22px;
-    }
-
   }
 
   &:hover {
@@ -256,31 +188,6 @@ a .post-title {
   }
 }
 
-.post-item .readmore-btn {
-  background: $pink;
-  color: white;
-  display:table;
-  padding:4px 8px;
-  color:white;
-  border-radius: 4px;
-  font-weight: bold;
-  box-shadow: 2px 4px 0 rgba(0,0,0,0.3);
-  font-size: 16px;
-
-  @media screen and (max-width: $small) {
-    @include clearfix;
-  }
-
-  &:hover {
-    background: darken($pink, 10%);
-  }
-
-  &:active {
-    transform: translate(2px,4px);
-    transition: 0.01s;
-    box-shadow: none;
-  }
-}
 
 // Hero
 .blog-pagination {
@@ -370,8 +277,6 @@ a .post-title {
   width: 200px;
   height: 100%;
   z-index: 3;
-  font-size: 16px;
-  padding-left: 12px;
 
   @media screen and (max-width: $medium) {
     width: 100%;
@@ -382,6 +287,11 @@ a .post-title {
 
 .blog-categories-sidebarul {
   line-height: 1.4;
+  margin-bottom: 20px;
+
+  li {
+    margin-bottom: 2px;
+  }
 
   @media screen and (max-width: $medium) {
     text-align: center;
@@ -401,8 +311,9 @@ a .post-title {
 }
 
 .blog-categories-title {
-  font-size: $epsilon;
-  color: #888;
+  font-size: $zeta;
+  font-weight: $font-regular;
+  color: lighten($ink, 25);
   margin-bottom: 2px;
 
   @media screen and (max-width: $medium) {
@@ -411,7 +322,6 @@ a .post-title {
 }
 
 .blog-category-title {
-  font-weight: bold;
   font-size: $body-font-size;
 }
 

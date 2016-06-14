@@ -1,39 +1,6 @@
-//===============================================================================
-// CAREERS
-//===============================================================================
-// Kaizen Container
-.kaizen-container {
-  color: white;
-  margin-top: $gutter + 5px;
-  margin-bottom: $gutter + 10px;
-
-  &:after {
-    @include clearfix;
-    background-color: $aqua;
-  }
-
-  @media screen and ( max-width: $medium ) {
-    background-color: $aqua;
-    margin-top: 0;
-    margin-bottom: $gutter;
-  }
-
-  h3 {
-    text-shadow: 2px 2px 0 rgba(black, 0.2);
-  }
-
-  p {
-    margin-bottom: 12px;
-  }
-}
-
-// Benefits Container
-.benefits-block {
-
-}
+.benefits-block {}
 
 .benefits-list {
-
   li {
     -webkit-font-smoothing: antialiased;
   }
@@ -114,9 +81,11 @@
 
 // Culture Photos grid
 .photo-grid-block {
+  z-index: -1;
   overflow: hidden;
   position: relative;
-  height: 550px;
+  margin-top: -230px;
+  height: 650px;
 
   @media screen and ( min-width: 1500px ) {
     height: 500px;

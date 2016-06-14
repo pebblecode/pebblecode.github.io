@@ -5,7 +5,7 @@ layout: post
 
   <body class="{{ page.layout }}">
     <script type="application/ld+json">
-      { 
+      {
         "@context": "http://schema.org",
         "@type": "Article",
         "headline": "{{ page.title }}",
@@ -13,7 +13,7 @@ layout: post
           "@type":"WebPage",
           "@id" : "http://pebblecode.com{{ page.url }}"
           },
-          "image": { 
+          "image": {
             "@type": "ImageObject",
             "url" : "{% if page.thumbnail %}http://pebblecode.com{{ page.thumbnail }}{% else %}http://pebblecode.com/img/blog/placeholders/blue-phold.svg{% endif %}",
             "width": 696,
@@ -27,7 +27,7 @@ layout: post
               "@type": "ImageObject",
               "url": "https://avatars2.githubusercontent.com/u/437686?v=3&s=200",
               "width": 600,
-              "height": 60 
+              "height": 60
             }
             },
           "datePublished": "{{ page.date}}",
@@ -38,8 +38,8 @@ layout: post
 
     {% include header.html %}
 
-    <section class="hero-container hero-container-blog {{ page.colour }}">
-      <div class="hero-inner grid"></div>
+    <section class="hero-block block aqua-bg slash-shadow slash-right">
+      <div class="block-inner"></div>
     </section>
     <!-- /.hero-container -->
 
@@ -52,7 +52,7 @@ layout: post
           <ul class="post-categories">
             {% for category in page.categories %}
               {% assign catLink = category | replace: ' ', '-' %}
-              <li><a class="blog-category-title" href="/blog/tag/{{catLink}}">{{category}}</a></li>
+              <li><a class="btn tag" href="/blog/tag/{{catLink}}">{{category}}</a></li>
             {% endfor %}
           </ul>
         </div>

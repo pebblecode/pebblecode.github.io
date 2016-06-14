@@ -1,10 +1,22 @@
 .contact-block.block {
   padding-top: 40px;
-  padding-bottom: 80px;
+  padding-bottom: 20px;
 
   @media screen and ( max-width: $medium ) {
-    padding-top: 0;
-    padding-bottom: 60px;
+    padding-top: 10px;
+    padding-bottom: 0;
+  }
+
+  &::before {
+    @include pseudo;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    background-color: $blue;
+    transform: rotate(2deg) scale(1.2);
+    box-shadow: 0 10px 0 rgba(black, 0.15);
+    bottom: -20px;
+    height: 50px;
   }
 
   .tab-head-container {
@@ -117,6 +129,10 @@
   line-height: 1;
 
   & a:after { @include sprite($mail-black); }
+}
+
+.map-block {
+  padding: 0;
 }
 
 .map-container {

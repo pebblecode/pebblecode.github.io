@@ -34,22 +34,18 @@
   }
 
   .post-title {
+    text-align: left;
+    margin-top: 40px;
     margin-bottom: 40px;
     color: $primary;
     line-height: 1;
-
-    @media screen and ( max-width: $large ) {
-      font-size: $mega + 4px;
-    }
+    font-size: $mega;
+    font-weight: $font-bold;
+    text-transform: none;
+    letter-spacing: 0;
 
     @media screen and ( max-width: $medium ) {
-      font-size: $mega - 4px;
-      margin-bottom: 20px;
-    }
-
-    @media screen and ( max-width: $small ) {
-      font-size: $alpha - 4px;
-      margin-bottom: 20px;
+      font-size: $mega - 8px;
     }
   }
 }

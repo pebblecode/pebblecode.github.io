@@ -2,11 +2,10 @@
   -webkit-font-smoothing: antialiased;
   transition: 0.3s;
   opacity: 0.99;
-  border-bottom: 1px solid transparent;
   transform: translateZ(0);
 
   &:not(.top) {
-    border-bottom-color: rgba(white, 0.25);
+    border-bottom: 1px solid rgba(white, 0.25);
     box-shadow: 0 3px 0 rgba(black, 0.06);
   }
 }

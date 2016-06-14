@@ -47,10 +47,6 @@ pre.prettyprint.prettyprinted {
       color: $purple;
     }
 
-    .tag {
-      color: darken($blue, 10);
-    }
-
     .atn {
       color: #550078;
     }
@@ -94,11 +90,6 @@ pre.prettyprint.prettyprinted {
 
     .pun, .opn, .clo {
       color: #440;
-    }
-
-    .tag {
-      font-weight: bold;
-      color: #006;
     }
 
     .atn {

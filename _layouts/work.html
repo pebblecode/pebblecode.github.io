@@ -6,140 +6,165 @@
 
     {% include hero.html %}
 
-    {% include clients.html %}
+    {% include photo.html url="/img/features/hackday-2.jpg" %}
 
-    <section class="project-container">
-      <div class="project-item-container photo">
-        <div class="project-item-inner photo grid" id="work-pharmaceutical">
-          <div class="project-item photo col-1-1">
-            <h3 class="project-item-title">Pharmaceutical Intelligence Platform</h3>
-            <p>Combining proprietary and open data sources to create world-leading consensus creation tool, helping to streamline company resources, identify risks, and take advantage of developments before the competition.</p>
+    <section class="intro-block block slash-shadow slash-top">
+      <div class="block-inner grid">
+        <h2>{{ page.intro-title }}</h2>
+        <p>{{ page.intro }}</p>
+        <a href="#{{ page.block1-id }}" class="btn btn-lrg">{{ page.block1-title }}</a>
+        <a href="#{{ page.block2-id }}" class="btn btn-lrg">{{ page.block2-title }}</a>
+        <a href="#{{ page.block3-id }}" class="btn btn-lrg">{{ page.block3-title }}</a>
+      </div>
+    </section>
+
+    <section id="{{ page.block1-id }}" class="block grey-bg">
+      <div class="card-block block">
+        <div class="intro-block block">
+          <div class="block-inner grid">
+            <h2>{{ page.block1-title }}</h2>
+            <p>{{ page.block1-subtitle }}</p>
+          </div>
+        </div>
+        <div class="block-inner grid">
+          <div class="card col-1-2">
+            <a href="{{ page.block1-project1-url }}" class="card-link">
+              <div class="card-img" style="background-image: url(/img/case-studies/{{ page.block1-project1-img }})"></div>
+              <span class="card-logo client-logo {{ page.block1-project1-logo }}">{{ page.block1-project1-client }}</span>
+              <h3 class="card-title">{{ page.block1-project1-title }}</h3>
+              <p class="card-excerpt">{{ page.block1-project1-summary }}</p>
+            </a>
+            <a href="{{ page.block1-project1-url }}" class="card-btn">
+              <button class="btn btn-arrow">Case Study</button>
+            </a>
+          </div>
+          <div class="card col-1-2">
+            <a href="{{ page.block1-project2-url }}" class="card-link">
+              <div class="card-img" style="background-image: url(/img/case-studies/{{ page.block1-project2-img }})"></div>
+              <span class="card-logo client-logo {{ page.block1-project2-logo }}">{{ page.block1-project2-client }}</span>
+              <h3 class="card-title">{{ page.block1-project2-title }}</h3>
+              <p class="card-excerpt">{{ page.block1-project2-summary }}</p>
+            </a>
+            <a href="{{ page.block1-project2-url }}" class="card-btn">
+              <button class="btn btn-arrow">Case Study</button>
+            </a>
           </div>
         </div>
       </div>
     </section>
-    <!-- /.project-container -->
 
-   <section class="photo-container work-photo-container purple-top">
-      <div id="video1" class="photo-inner">
-      </div>
-      <div id="gif1" class="photo-inner mobile test"></div>
-    </section>
-
-    <section class="project-container project-blue pink-top">
-      <div class="project-item-container">
-        <div class="project-item-inner" id="work-intranets">
-          <div class="project-item projects-item-inner grid">
-            <div class="col-2-3 project-item-img alignme">
-              <img class="lazyload" data-original="{{ site.baseurl }}/img/projects/intranet.png" alt="The mother of all intranets">
-            </div>
-            <div class="col-1-3 project-item-text alignme">
-              <h3 class="project-item-title">The mother of all intranets</h3>
-              <p>Combining the latest design thinking with cutting edge information architecture we have designed the global intranet for a worldwide enterprise. It supports 40 languages and 180 nations.</p>
-            </div>
+    <section id="{{ page.block2-id }}" class="block">
+      <div class="card-block block">
+        <div class="intro-block block">
+          <div class="block-inner grid">
+            <h2>{{ page.block2-title }}</h2>
+            <p>{{ page.block2-subtitle }}</p>
+          </div>
+        </div>
+        <div class="block-inner grid">
+          <div class="card col-1-2">
+            <a href="{{ page.block2-project1-url }}" class="card-link">
+              <div class="card-img" style="background-image: url(/img/case-studies/{{ page.block2-project1-img }})"></div>
+              <span class="card-logo client-logo {{ page.block2-project1-logo }}">{{ page.block2-project1-client }}</span>
+              <h3 class="card-title">{{ page.block2-project1-title }}</h3>
+              <p class="card-excerpt">{{ page.block2-project1-summary }}</p>
+            </a>
+            <a href="{{ page.block2-project1-url }}" class="card-btn">
+              <button class="btn btn-arrow">Case Study</button>
+            </a>
+          </div>
+          <div class="card col-1-2">
+            <a href="{{ page.block2-project2-url }}" class="card-link">
+              <div class="card-img" style="background-image: url(/img/case-studies/{{ page.block2-project2-img }})"></div>
+              <span class="card-logo client-logo {{ page.block2-project2-logo }}">{{ page.block2-project2-client }}</span>
+              <h3 class="card-title">{{ page.block2-project2-title }}</h3>
+              <p class="card-excerpt">{{ page.block2-project2-summary }}</p>
+            </a>
+            <a href="{{ page.block2-project2-url }}" class="card-btn">
+              <button class="btn btn-arrow">Case Study</button>
+            </a>
           </div>
         </div>
       </div>
     </section>
-    <!-- /.project-container -->
 
-    <section class="project-container project-aqua">
-      <div class="project-item-container photo">
-        <div class="project-item-inner photo grid" id="work-self-directed">
-          <div class="project-item photo col-1-1">
-            <h3 class="project-item-title">Self-directed Learning</h3>
-            <p>Moving training from a 5-day classroom course to support self-directed digital learning and realising significant cost-savings. A fully responsive course across platforms featuring games, mini-quizzes and a quirky attitude!</p>
+    <section id="{{ page.block3-id }}" class="block grey-bg slash-shadow slash-right">
+      <div class="card-block block">
+        <div class="intro-block block">
+          <div class="block-inner grid">
+            <h2>{{ page.block3-title }}</h2>
+            <p>{{ page.block3-subtitle }}</p>
+          </div>
+        </div>
+        <div class="block-inner grid">
+          <div class="card col-1-2">
+            <a href="{{ page.block3-project1-url }}" class="card-link">
+              <div class="card-img" style="background-image: url(/img/case-studies/{{ page.block3-project1-img }})"></div>
+              <span class="card-logo client-logo {{ page.block3-project1-logo }}">{{ page.block3-project1-client }}</span>
+              <h3 class="card-title">{{ page.block3-project1-title }}</h3>
+              <p class="card-excerpt">{{ page.block3-project1-summary }}</p>
+            </a>
+            <a href="{{ page.block3-project1-url }}" class="card-btn">
+              <button class="btn btn-arrow">Case Study</button>
+            </a>
+          </div>
+          <div class="card col-1-2">
+            <a href="{{ page.block3-project2-url }}" class="card-link">
+              <div class="card-img" style="background-image: url(/img/case-studies/{{ page.block3-project2-img }})"></div>
+              <span class="card-logo client-logo {{ page.block3-project2-logo }}">{{ page.block3-project2-client }}</span>
+              <h3 class="card-title">{{ page.block3-project2-title }}</h3>
+              <p class="card-excerpt">{{ page.block3-project2-summary }}</p>
+            </a>
+            <a href="{{ page.block3-project2-url }}" class="card-btn">
+              <button class="btn btn-arrow">Case Study</button>
+            </a>
           </div>
         </div>
       </div>
     </section>
-    <!-- /.project-container -->
 
-    <section class="photo-container work-photo-container">
-      <div id="video2" class="photo-inner">
-      </div>
-      <div id="gif2" class="photo-inner mobile"></div>
-    </section>
-
-    <aside class="aside-container work-container" style="visibility: visible; ">
-      {{content}}
-    </aside>
-
-    <section class="project-container project-blue">
-      <div class="project-item-container">
-        <div class="project-item-inner" id="work-next-gen">
-          <div class="project-item grid">
-            <div class="col-2-3 alignme">
-              <h3 class="project-item-title">Next Generation Delivery Experience</h3>
-              <p>Using the latest cutting edge Bluetooth Low Energy technology to create a delivery experience. By loading the smart stuff onto mobile devices, B2B deliveries are now much cheaper than before.</p>
-            </div>
-            <div class="col-1-3 alignme">
-              <img class="project-img-small lazyload" data-original="{{ site.baseurl }}/img/projects/by-box.png" alt="By Box">
-            </div>
-          </div>
-        </div>
+    <section id="cta" class="intro-block block block-clear block-light slash-shadow aqua-bg">
+      <div class="block-inner grid">
+        <h2>{{ page.cta-title }}</h2>
+        <p>{{ page.cta-subtitle }}</p>
+        <a href="{{ page.cta-btn-url }}" class="btn btn-lrg btn-light btn-arrow">{{ page.cta-btn-text }}</a>
       </div>
     </section>
-    <!-- /.project-container -->
 
-    <section class="project-container project-green">
-      <div class="project-item-container photo">
-        <div class="project-item-inner photo grid" id="work-enterprise-mobile">
-          <div class="project-item photo col-1-1">
-            <h3 class="project-item-title">Enterprise Mobile Directory</h3>
-            <p>A consumer-grade native application allowing users to search 60,000 people, add notes and bookmarks. The go-to directory for an enterprise transitioning to mobile by default.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- /.project-container -->
+    {% include photo.html url="/img/features/wshop.jpg" position="top" %}
 
-    <section class="photo-container work-photo-container green-top">
-      <div id="video3" class="photo-inner"></div>
-      <div id="gif3" class="photo-inner mobile"></div>
-    </section>
+    {% include verticals.html %}
 
-    <section class="project-container project-orange">
-      <div class="project-item-container">
-        <div class="project-item-inner" id="work-rail-travel">
-          <div class="project-item grid">
-            <div class="col-1-2 alignme">
-              <h3 class="project-item-title">Rail Travel Customer Experience System</h3>
-              <p>A tablet-based quality system allows a national rail company to make a quantum leap in the quality of the experience of passengers in stations and on their trains.</p>
-            </div>
-            <div class="col-1-2 alignme">
-            <img class="project-img-large lazyload" data-original="{{ site.baseurl }}/img/projects/rail-custom-exp.gif" alt="Rail Travel Customer Experience System">
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- /.project-container -->
+    {% include footer.html lazyload=true colour="blue" tone="light" %}
 
-    <section class="project-container project-pink project-last">
-      <div class="project-item-container">
-        <div class="project-item-inner" id="work-high-frequency">
-          <div class="project-item grid">
-            <div class="col-1-2 alignme">
-              <h3 class="project-item-title">High Frequency Audio Tagging</h3>
-              <p>An innovative project to use web technologies to tag broadcast media content with inaudible high frequency tags.</p>
-            </div>
-            <div class="col-1-2 alignme">
-              <img class="audio-mobile lazyload" data-original="{{ site.baseurl }}/img/projects/audio-tagging.gif" alt="High Frequency Audio Tagging">
-            </div>
-          </div>
-          <!-- /.ppl-col -->
-          <aside class="aside-container ppl-join-container">
-            <h3>Join the Team</h3>
-            <p>What we do is only one part of the story; what makes all of this possible is the top notch people who work here.</p>
-            <a href="{{ site.baseurl }}/careers" class="btn btn-primary btn-block">Join us</a>
-          </aside>
-        </div>
-      </div>
-    </section>
-    <!-- /.project-container -->
+    <script>
+    // Change header colour
+    var headerContainer = $('.gbl-head');
+    if ($(headerContainer).length > 0) {
+      var cta;
+      var verticals;
 
-    {% include footer.html extrascripts=page.extrascripts lazyload=true scrollreveal=true %}
+      var scrollPositions = function () {
+        cta = $('#cta');
+        verticals = $('#verticals');
+      };
+
+      var headerBG = function () {
+        var windowTop = $(window).scrollTop();
+        if (windowTop > verticals.offset().top - 200 || verticals.offset().bottom) {
+          headerContainer.css({'background-color':'#0ea2dc'});
+        } else if (windowTop > cta.offset().top - 200 || cta.offset().bottom) {
+          headerContainer.css({'background-color':'#37bec0'});
+        } else {
+          headerContainer.css({'background-color':'#0ea2dc'});
+        }
+      };
+
+      $(window).resize(scrollPositions).scroll(headerBG);
+      scrollPositions();
+      headerBG();
+    }
+    </script>
 
   </body>
 </html>
