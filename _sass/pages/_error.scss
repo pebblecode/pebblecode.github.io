@@ -36,12 +36,14 @@ $help-black: 28px 25px $error-sprite-path 0 0;
     font-family: $VT323 !important;
     color: black;
     line-height: 1.1;
+    border: none;
   }
 
   h1, h2, h3 {
     color: black;
     text-transform: none;
     font-style: normal;
+    text-align: left;
   }
 }
 
@@ -74,8 +76,12 @@ $help-black: 28px 25px $error-sprite-path 0 0;
 
 .error-menu-btn {
   margin: 0;
-  padding: 3px 10px 5px;
+  padding: 6px 10px 5px;
   display: inline-block;
+  text-transform: none;
+  letter-spacing: 0;
+  font-size: $delta;
+  border-radius: 0;
 
   &:hover,
   &.active {
@@ -90,7 +96,7 @@ $help-black: 28px 25px $error-sprite-path 0 0;
   position: absolute;
   top: 0;
   right: 20px;
-  padding-left: 8px;
+  padding-left: 5px;
   padding-right: 0;
 
   &::after {
@@ -119,6 +125,7 @@ $help-black: 28px 25px $error-sprite-path 0 0;
   }
 
   .error-btn {
+    margin-top: 10px;
     margin-bottom: 25px;
     float: right;
   }
@@ -198,6 +205,8 @@ $help-black: 28px 25px $error-sprite-path 0 0;
   letter-spacing: 1px;
   position: relative;
   border-radius: 1px;
+  text-transform: none;
+  font-size: $epsilon;
 
   &:hover {
     box-shadow: inset 0 0 0 200px black, 0 0 0 3px black;
@@ -307,6 +316,9 @@ $help-black: 28px 25px $error-sprite-path 0 0;
   top: 30px;
   right: 0;
   margin: 20px;
+  text-transform: none;
+  letter-spacing: 0;
+  font-size: $epsilon;
 
   @media screen and ( max-width: $medium ) {
     display: none;

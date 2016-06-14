@@ -3,32 +3,97 @@ layout: about
 title: About
 permalink: /about/
 group: nav
-colour: purple
+colour: aqua
 
-## Hero Content
-hero-title: About
-hero-subtitle: pebble {code} was founded by Alex, George and Toby to be the technology company that they wanted to work at. They continue to strive to create an environment where exceptional technologists can just get on and do exceptional things. 
 
-hero-btn:
-hero-btn-url:
+## ------ Hero ------ ##
+hero-title: Innovation in our DNA
+hero-subtitle:
+hero-slash-angle: right
 
-cover-img: features/stickies.jpg
+# ------- Photo -------- #
 
+## ------ Block 1 ------ ##
+block1-title: Who we are
+block1-summary-lrg: From young digital upstarts we have grown over six years into a business that combines cutting-edge digital innovation with deep business rigour.
+block1-summary:
+- "<p class='epsilon'>We are proud to have helped launch a number of successful start-ups and to have supported global enterprises embrace digital disruption.</p>"
+- "<p class='epsilon'>Along the way our digital products have helped young people to have a national voice, improved safety, cast actors, made TV ads, played bingo and unlocked locker doors.</p>"
+block1-illustration: flasks.png
+
+
+## ------ Block 2 ------ ##
+block2-title: Innovation in our DNA
+block2-summary-lrg: From inception pebble {code} has championed a love of experimentation and invention.
+block2-summary:
+- "<p class='epsilon'>Our ability to innovate is driven from an open, collaborative culture that promotes autonomy over micro-management and working software over meetings.</p>"
+- "<p class='epsilon'>Our culture allows us to help clients take new digital products to market, revolutionise existing business processes and find innovation in even the dustiest of drawers.</p>"
+block2-illustration: rocket.png
+
+# ------- Photo -------- #
+
+## ------ Block 3 (Pink) ------ ##
+block3-title: Award Winning Innovation
+block3-summary-lrg: By promoting experimentation and exploration our team challenge clients to be brave and think differently.
+block3-summary:
+- "<p class='epsilon'>We have won awards from Blue Chips and InnovateUK as well as patenting technical inventions. Whether we are creating a high-frequency audio tagging product or a musical instrument made from bananas our thirst for innovation is what drives the team and our culture.</p>"
+block3-illustration: trophy.png
+
+
+## ------ Block 4 (Pink) ------ ##
+block4-title: Accelerating Digital Innovation
+block4-summary-lrg: By seeding talented technologists into client teams we are able to accelerate both the delivery of digital products and building internal capability.
+block4-summary:
+- "<p class='epsilon'>We are strong advocates of learning by doing and would rather help clients understand Agile by running a project than sitting in a classroom.  We advocate continuous delivery and helping clients to ship digital products as soon as possible.</p>"
+block4-illustration: bulb.png
+block4-btn-text: Learn more
+block4-btn-url: /work
+
+# ------- Photo -------- #
+
+## ------ Leadership Team ------ ##
+# Person One
+person1-img: team/george.jpg
+person1-name: George Ornbo
+person1-role: Managing Director & Co-founder
+person1-summary: Expert developer, ex-McKinsey, author of Sam's Teach Yourself Node.js in 24 hours and writes for Guardian on technology matters. Clients include Shell, Cancer Research UK, Energy Saving Trust and Prince's Trust. Edinburgh University.
+
+# Person Two
+person2-img: team/toby.jpg
+person2-name: Areas of Expertise
+person2-role: We’re good at harnessing the power of most complex tools and technology and applying these to solve business problems.
+person2-summary: What we've done
+
+# Person Three
+person3-img: team/alex.jpg
+person3-name: Alex Butcher
+person3-role: Director & Co-founder
+person3-summary: Expert software architect specialising in fault tolerant system design. Passionate about continuous delivery and the application of agile and lean principles to improve processes. Durham University, Computer Science.
+
+# Person Four
+person4-img: team/stephen.jpg
+person4-name: Stephen Allott
+person4-role: Chairman & Adult Supervision
+person4-summary:
+- "<p>Some time Crown Representative for Small & Medium Enterprises in the Cabinet Office and UK delegate for the D5. Chaired BACFI, Jacobs Rimell, Parc Technology, Inforsense, Applied Generics, COE Group Plc, The Red Gate Council of Advisers, Tideway Systems and Trinamo. NXD on Bright Computing, Trampoline and Zeus.</p>"
+- "<p>Founded the Cambridge Computer Lab Ring and co-founded Trinamo. President, CFO and main board director of Micromuse Inc. (NASDAQ MUSE). Worked for McKinsey, Sun Microsystems, Xerox and Essex Court Chambers.</p>"
+- "<p>Graduate of Trinity College Cambridge, Barrister (Gray’s Inn), Member of the Bar Council of England and Wales, City Fellow of Hughes Hall Cambridge University.</p>"
+- "<p>Bike nut.</p>"
+
+# Person Five
+person5-img: team/john.jpg
+person5-name: John Mildinhall
+person5-role: Creative Director
+person5-summary:
+- "<p>On a mission to make people's working lives easier by giving them truly great software. Combining rigorous user research with a dose of inspiration and creativity, his team crafts applications that place power into the hands of the user - saving time, providing deeper insights and smoothing processes.</p>"
+- "<p>He has a Ph.D. in Experimental Psychology, is the co-author of Heads up Psychology, and has designed industrial control interfaces, trading systems for global banks, intelligence systems and scientific research platforms. Clients include EDF, HSBC, National Grid and AstraZeneca.</p>"
+
+# ------- Photo -------- #
+
+## ------ Product ------ ##
+product-illustration: illustrations/people.png
+product-title: Hack Days
+product-summary: We run a monthly introduction to Digital Innovation workshop at pebble HQ. The first step towards creating a culture of technical innovation is removing the fear of failure.
+product-btn-text: Sign Up Now
+product-btn-url: /contact
 ---
-
-## Promoting autonomy, mastery and purpose
-
-In 2010 Alex and George were programming and renting desks from [pebble.it][2] and quickly began to have too much work for themselves. Shortly after that Toby bounded over to them and suggested they start a business. Thus pebble {code} was born.
-
-The common vision of pebble's founders is to build the company that they wanted to work at. They knew that designers and developers are smart, self-organising people who crave autonomy and hate heavy management layers. They knew that for innovation to thrive collaboration, teamwork and an inspiring environment were all that mattered. 
-
-Embracing Lean and Agile philosophies we put highly talented creative technologists into small cross-functional teams and watch great things happen. 
-
-## Learning Together
-
-Promoting innovation expresses itself in a strong culture of experimentation, learning and hacking. Staff are able to take 10% time to experiment with new techniques and technologies. The business runs regular hack days that promote innovation and collaboration. Each month anyone is free to present a [lightning talk][1] on a topic of interest. We are interested in learning together and continuing to explore. 
-
-Now thirty strong we maintain the love of experimentation and innovation that we had when we started it all and are more energised than ever by the disruption that technology is bringing.
-
-[1]: https://www.youtube.com/watch?v=WLP7K6jS8Q4&list=PLuVEZFsd1m6XQFBGs8i4zezFkdm1rUJPM
-[2]: http://www.pebbleit.com/

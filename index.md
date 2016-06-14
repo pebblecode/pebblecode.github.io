@@ -9,7 +9,10 @@ permalink: /
 hero-title: We do Digital Innovation
 hero-subtitle:
 hero-play-btn: Play Video
+hero-translucancy: clear
+hero-slash-angle:
 
+# ------- Photo -------- #
 
 ## ------ Intro ------ ##
 intro-title: Our Mission
@@ -25,21 +28,22 @@ expertise-btn-url: /work
 # Expertise One
 expertise-one-title: Cloud
 expertise-one-summary: A great deal of the success of software projects lies in the correct identification of the problems to be solved.
-expertise-one-illustration: illustrations/chart.png
+expertise-one-illustration: chart.png
 
 # Expertise Two
 expertise-two-title: Mobility
 expertise-two-summary: A great deal of the success of software projects lies in the correct identification of the problems to be solved.
-expertise-two-illustration: illustrations/phone.png
+expertise-two-illustration: phone.png
 
 # Expertise Three
 expertise-three-title: Internet of Things
 expertise-three-summary: A great deal of the success of software projects lies in the correct identification of the problems to be solved.
-expertise-three-illustration: illustrations/microscope.png
+expertise-three-illustration: microscope.png
 
+# ------- Photo -------- #
 
 ## ------ Product ------ ##
-product-illustration: illustrations/people.png
+product-illustration: people.png
 product-title: Hack Days
 product-summary: We run a monthly introduction to Digital Innovation workshop at pebble HQ. The first step towards creating a culture of technical innovation is removing the fear of failure.
 product-btn-text: Sign Up Now
