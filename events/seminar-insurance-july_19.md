@@ -19,7 +19,7 @@ seminar-intro-paragraphs:
  - "<a href='http://pebblecode.com'>pebble {code}</a> is a digital product innovation consultancy with expertise in UX, design and Lean product development, <a href='http://www.ingenin.com/'>Ingenin</a> helps forward thinking insurers create innovative propositions for the constantly connected consumer by helping insurers benefit from disruptive technologies and business models."
  - "There will be a short keynote from <a href='https://uk.linkedin.com/in/manjitrana'>Manjit Rana</a>, Founder & CEO of <a href='http://www.ingenin.com/'>Ingenin</a>, followed by a roundtable discussion, chaired by <a href='http://pebblecode.com'>pebble {code}'s</a> Chairman, <a href='https://en.wikipedia.org/wiki/Stephen_Allott'>Stephen Allott</a>, for a small number of industry movers and shakers to facilitate connections and debate, and ultimately uncover the secret sauce for making innovation happen in insurance."
  - "We are extremely excited about the new opportunities innovative digital solutions can provide in the insurance space and we look forward to discussing it with you."
- - "We hope you can join us - please register below."
+ - "We hope you can join us - click below to register."
 
 
 ## Location and Time
