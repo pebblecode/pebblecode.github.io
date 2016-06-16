@@ -47,6 +47,6 @@ speakers:
 
 
 ## Google Maps URL
-invite-map-id: digitalmap
+invite-map-id: map
 invite-map: https://www.google.co.uk/maps/place/Vox+Studios/@51.4998238,-0.1419376,14z/data=!4m8!1m2!2m1!1svox+studios!3m4!1s0x487604ed1fb7e8fd:0xfe81af3650595ee2!8m2!3d51.4859298!4d-0.1185284
 ---
