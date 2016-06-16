@@ -18,8 +18,8 @@ seminar-intro-paragraphs:
 - "Please join us for an informal presentation and discussion at <a href='http://www.workspace.co.uk/workspaces/vox-studios'>Vox Studios</a> to discuss how hacking can empower your team and drive innovation and growth."
 - "The Digital Revolution is gathering pace. Are you interested in:"
 - "<ul>
-    <li>How could a Hack Day help your business</li>
     <li>Our Insights into Innovation</li>
+    <li>How could a Hack Day help your business</li>
     <li>How to run an effective Hack Day</li>
    </ul>"
 - "pebble {code} believes in the power of hacking and have helped businesses large and small embed it into their culture and use it to kick start innovation."
