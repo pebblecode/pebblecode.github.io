@@ -1,7 +1,7 @@
 ---
 layout: seminar
-title: Hack To Innovation
-permalink: /events/growth-hacking/
+title: Innovation Hacking
+permalink: /events/innovation-hacking/
 colour: pink
 
 seminar-eventlink: "https://www.eventbrite.com/"
@@ -9,23 +9,24 @@ seminar-call-to-action: "Sign up now"
 
 ## Seminar Details
 seminar-intro: pebble {code} & Workspace hosts a talk on
-seminar-title1: Hacking Your Way
-seminar-title2: To
-seminar-title3: Growth
+seminar-title1: Innovation
+seminar-title2:
+seminar-title3: Hacking
 seminar-hero: digital-seminar-hero.png
-seminar-subtitle: (the good type of hacking))
+seminar-subtitle: (the good type of hacking)
 seminar-intro-paragraphs:
-- "Please join us for an informal presentation and discussion <a href='http://www.workspace.co.uk/workspaces/vox-studios'>Vox Studios</a> to discuss how hacking can empower your team and drive innovation."
-- "The Digital revolution is gathering pace. Are you interested in:"
+- "Please join us for an informal presentation and discussion at <a href='http://www.workspace.co.uk/workspaces/vox-studios'>Vox Studios</a> to discuss how hacking can empower your team and drive innovation and growth."
+- "The Digital Revolution is gathering pace. Are you interested in:"
 - "<ul>
-   <li>How hacking help your business?</li>
-   <li>How to run a hack day?</li>
+    <li>How could a Hack Day help your business</li>
+    <li>Our Insights into Innovation</li>
+    <li>How to run an effective Hack Day</li>
    </ul>"
 - "pebble {code} believes in the power of hacking and have helped businesses large and small embed it into their culture and use it to kick start innovation."
 
 ## Location and Time
 seminar-time: "6pm"
-seminar-date: "Wednesday 29th June"
+seminar-date: "Wednesday 13th July"
 seminar-rsvp-address: "events@pebblecode.com"
 seminar-location: "Vox Studios <br>1-45 Durham Street <br>London <br>SE11 5JH"
 seminar-location-shorthand: "Vox Studios"
