@@ -37,7 +37,7 @@ expertise-two-illustration: phone.png
 
 # Expertise Three
 expertise-three-title: Internet of Things
-expertise-three-summary: We have strong experience of working with internet enabled hardware including firmware. We have worked with Bluetooth Low Energy, Light Bulbs, Rasperry Pis and Sensors.
+expertise-three-summary: We have strong experience of working with internet-enabled hardware including firmware. We have worked with Bluetooth Low Energy, Light Bulbs, Rasperry Pis and Sensors.
 expertise-three-illustration: microscope.png
 
 # ------- Photo -------- #
@@ -45,7 +45,7 @@ expertise-three-illustration: microscope.png
 ## ------ Product ------ ##
 product-illustration: people.png
 product-title: Hack Days
-product-summary: We run a monthly introduction to Digital Innovation workshop at pebble HQ. The first step towards creating a culture of technical innovation is removing the fear of failure.
+product-summary: We run a monthly introduction to Digital Innovation workshop at pebble HQ. This is a practical workshop on techniques that can make your organisation more innovative.
 product-btn-text: Sign Up Now
 product-btn-url: /contact
 ---
