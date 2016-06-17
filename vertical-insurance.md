@@ -3,7 +3,7 @@ layout: vertical
 title: Insurance
 permalink: /insurance/
 categories: [innovation, insurance]
-colour: blue
+colour: blue-bg
 extraclasses: insurance
 extrascripts:
  - link: "vertical.js"

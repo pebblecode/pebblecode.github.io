@@ -262,13 +262,13 @@ a .post-title {
   display: inline-block;
   text-transform: capitalize;
 
-  &::after {
-    content: ",";
-  }
+//  &::after {
+//    content: ",";
+//  }
 
-  &:last-of-type::after {
-    content: "";
-  }
+//  &:last-of-type::after {
+//    content: "";
+//  }
 }
 
 // Sidebar

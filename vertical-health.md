@@ -3,7 +3,7 @@ layout: vertical
 title: Health
 categories: [health]
 permalink: /health/
-colour: aqua
+colour: aqua-bg
 extraclasses: health
 extrascripts:
  - link: "vertical.js"
