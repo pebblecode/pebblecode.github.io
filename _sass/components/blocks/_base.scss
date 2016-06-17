@@ -66,6 +66,10 @@
   &.slash {
     padding-bottom: 30px;
   }
+
+  &.thick-slash::after {
+    height: 120%;
+  }
 }
 
 .block-clear-top {
