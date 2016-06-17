@@ -2,6 +2,6 @@
 layout: blog-by-tag
 title: blog-development
 permalink: blog/tag/development/
-colour:
+colour: aqua
 category: development
 ---

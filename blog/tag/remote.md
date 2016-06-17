@@ -2,6 +2,6 @@
 layout: blog-by-tag
 title: blog-remote
 permalink: blog/tag/remote/
-colour:
+colour: aqua
 category: remote
 ---

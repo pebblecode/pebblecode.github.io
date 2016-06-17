@@ -2,6 +2,6 @@
 layout: blog-by-tag
 title: blog-strategy
 permalink: blog/tag/strategy/
-colour:
+colour: aqua
 category: strategy
 ---

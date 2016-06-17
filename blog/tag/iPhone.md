@@ -2,6 +2,6 @@
 layout: blog-by-tag
 title: blog-iPhone
 permalink: blog/tag/iPhone/
-colour:
+colour: aqua
 category: iPhone
 ---

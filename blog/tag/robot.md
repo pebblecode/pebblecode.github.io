@@ -2,6 +2,6 @@
 layout: blog-by-tag
 title: blog-robot
 permalink: blog/tag/robot/
-colour:
+colour: aqua
 category: robot
 ---

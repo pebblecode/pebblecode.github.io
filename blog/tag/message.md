@@ -2,6 +2,6 @@
 layout: blog-by-tag
 title: blog-message
 permalink: blog/tag/message/
-colour:
+colour: aqua
 category: message
 ---

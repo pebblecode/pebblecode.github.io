@@ -2,6 +2,6 @@
 layout: blog-by-tag
 title: blog-categories
 permalink: blog/tag/categories/
-colour:
+colour: aqua
 category: categories
 ---

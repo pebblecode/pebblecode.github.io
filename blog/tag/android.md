@@ -2,6 +2,6 @@
 layout: blog-by-tag
 title: blog-android
 permalink: blog/tag/android/
-colour:
+colour: aqua
 category: android
 ---

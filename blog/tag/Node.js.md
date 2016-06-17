@@ -2,6 +2,6 @@
 layout: blog-by-tag
 title: blog-Node.js
 permalink: blog/tag/Node.js/
-colour:
+colour: aqua
 category: Node.js
 ---

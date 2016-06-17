@@ -2,6 +2,6 @@
 layout: blog-by-tag
 title: blog-talks
 permalink: blog/tag/talks/
-colour:
+colour: aqua
 category: talks
 ---

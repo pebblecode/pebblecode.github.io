@@ -2,6 +2,6 @@
 layout: blog-by-tag
 title: blog-waterfall
 permalink: blog/tag/waterfall/
-colour:
+colour: aqua
 category: waterfall
 ---

@@ -2,6 +2,6 @@
 layout: blog-by-tag
 title: blog-life
 permalink: blog/tag/life/
-colour:
+colour: aqua
 category: life
 ---

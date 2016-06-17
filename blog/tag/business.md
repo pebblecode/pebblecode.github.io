@@ -2,6 +2,6 @@
 layout: blog-by-tag
 title: blog-business
 permalink: blog/tag/business/
-colour:
+colour: aqua
 category: business
 ---

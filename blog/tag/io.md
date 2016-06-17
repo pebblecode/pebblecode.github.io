@@ -2,6 +2,6 @@
 layout: blog-by-tag
 title: blog-io
 permalink: blog/tag/io/
-colour:
+colour: aqua
 category: io
 ---

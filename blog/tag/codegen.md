@@ -2,6 +2,6 @@
 layout: blog-by-tag
 title: blog-codegen
 permalink: blog/tag/codegen/
-colour:
+colour: aqua
 category: codegen
 ---

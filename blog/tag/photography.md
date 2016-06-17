@@ -2,6 +2,6 @@
 layout: blog-by-tag
 title: blog-photography
 permalink: blog/tag/photography/
-colour:
+colour: aqua
 category: photography
 ---

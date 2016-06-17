@@ -2,6 +2,6 @@
 layout: blog-by-tag
 title: blog-javascript
 permalink: blog/tag/javascript/
-colour:
+colour: aqua
 category: javascript
 ---

@@ -2,6 +2,6 @@
 layout: blog-by-tag
 title: blog-Open
 permalink: blog/tag/Open/
-colour:
+colour: aqua
 category: Open
 ---

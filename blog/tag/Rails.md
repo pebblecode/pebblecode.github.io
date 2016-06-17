@@ -2,6 +2,6 @@
 layout: blog-by-tag
 title: blog-Rails
 permalink: blog/tag/Rails/
-colour:
+colour: aqua
 category: Rails
 ---

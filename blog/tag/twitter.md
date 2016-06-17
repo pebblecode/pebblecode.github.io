@@ -2,6 +2,6 @@
 layout: blog-by-tag
 title: blog-twitter
 permalink: blog/tag/twitter/
-colour:
+colour: aqua
 category: twitter
 ---

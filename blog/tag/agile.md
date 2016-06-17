@@ -2,6 +2,6 @@
 layout: blog-by-tag
 title: blog-agile
 permalink: blog/tag/agile/
-colour:
+colour: aqua
 category: agile
 ---

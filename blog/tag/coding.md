@@ -2,6 +2,6 @@
 layout: blog-by-tag
 title: blog-coding
 permalink: blog/tag/coding/
-colour:
+colour: aqua
 category: coding
 ---

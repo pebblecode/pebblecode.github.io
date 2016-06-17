@@ -2,6 +2,6 @@
 layout: blog-by-tag
 title: blog-startups
 permalink: blog/tag/startups/
-colour:
+colour: aqua
 category: startups
 ---

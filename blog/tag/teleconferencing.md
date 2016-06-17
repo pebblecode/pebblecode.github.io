@@ -2,6 +2,6 @@
 layout: blog-by-tag
 title: blog-teleconferencing
 permalink: blog/tag/teleconferencing/
-colour:
+colour: aqua
 category: teleconferencing
 ---

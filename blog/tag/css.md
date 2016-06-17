@@ -2,6 +2,6 @@
 layout: blog-by-tag
 title: blog-CSS
 permalink: blog/tag/CSS/
-colour:
+colour: aqua
 category: CSS
 ---

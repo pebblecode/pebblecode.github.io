@@ -2,6 +2,6 @@
 layout: blog-by-tag
 title: blog-react
 permalink: blog/tag/react/
-colour:
+colour: aqua
 category: react
 ---

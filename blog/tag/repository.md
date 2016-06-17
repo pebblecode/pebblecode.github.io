@@ -2,6 +2,6 @@
 layout: blog-by-tag
 title: blog-repository
 permalink: blog/tag/repository/
-colour:
+colour: aqua
 category: repository
 ---

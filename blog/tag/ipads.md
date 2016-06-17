@@ -2,6 +2,6 @@
 layout: blog-by-tag
 title: blog-ipads
 permalink: blog/tag/ipads/
-colour:
+colour: aqua
 category: ipads
 ---

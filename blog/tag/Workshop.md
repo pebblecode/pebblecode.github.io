@@ -2,6 +2,6 @@
 layout: blog-by-tag
 title: blog-Workshop
 permalink: blog/tag/Workshop/
-colour:
+colour: aqua
 category: Workshop
 ---

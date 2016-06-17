@@ -2,6 +2,6 @@
 layout: blog-by-tag
 title: blog-collaboration
 permalink: blog/tag/collaboration/
-colour:
+colour: aqua
 category: collaboration
 ---

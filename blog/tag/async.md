@@ -2,6 +2,6 @@
 layout: blog-by-tag
 title: blog-async
 permalink: blog/tag/async/
-colour:
+colour: aqua
 category: async
 ---

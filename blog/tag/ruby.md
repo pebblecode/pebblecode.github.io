@@ -2,6 +2,6 @@
 layout: blog-by-tag
 title: blog-ruby
 permalink: blog/tag/ruby/
-colour:
+colour: aqua
 category: ruby
 ---

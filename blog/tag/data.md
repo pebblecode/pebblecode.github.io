@@ -2,6 +2,6 @@
 layout: blog-by-tag
 title: blog-data
 permalink: blog/tag/data/
-colour:
+colour: aqua
 category: data
 ---

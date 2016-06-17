@@ -2,6 +2,6 @@
 layout: blog-by-tag
 title: blog-code
 permalink: blog/tag/code/
-colour:
+colour: aqua
 category: code
 ---

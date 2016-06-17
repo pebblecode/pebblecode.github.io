@@ -2,6 +2,6 @@
 layout: blog-by-tag
 title: blog-socket
 permalink: blog/tag/socket/
-colour:
+colour: aqua
 category: socket
 ---

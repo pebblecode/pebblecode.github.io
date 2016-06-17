@@ -2,6 +2,6 @@
 layout: blog-by-tag
 title: blog-tools
 permalink: blog/tag/tools/
-colour:
+colour: aqua
 category: tools
 ---

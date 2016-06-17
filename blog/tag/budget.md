@@ -2,6 +2,6 @@
 layout: blog-by-tag
 title: blog-budget
 permalink: blog/tag/budget/
-colour:
+colour: aqua
 category: budget
 ---
