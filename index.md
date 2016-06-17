@@ -27,17 +27,17 @@ expertise-btn-url: /work
 
 # Expertise One
 expertise-one-title: Cloud
-expertise-one-summary: A great deal of the success of software projects lies in the correct identification of the problems to be solved.
+expertise-one-summary: We are experts in working with cloud technologies and have experience of configuring, automating and managing Amazon Web Services, Azure, Rackspace and even some old school bare metal. 
 expertise-one-illustration: chart.png
 
 # Expertise Two
 expertise-two-title: Mobility
-expertise-two-summary: A great deal of the success of software projects lies in the correct identification of the problems to be solved.
+expertise-two-summary: We are a mobile by default team and have strong expertise in design and development for mobile. We are excited by progressive web apps and the blurring between native and web. 
 expertise-two-illustration: phone.png
 
 # Expertise Three
 expertise-three-title: Internet of Things
-expertise-three-summary: A great deal of the success of software projects lies in the correct identification of the problems to be solved.
+expertise-three-summary: We have strong experience of working with internet enabled hardware including firmware. We have worked with Bluetooth Low Energy, Light Bulbs, Rasperry Pis and Sensors.
 expertise-three-illustration: microscope.png
 
 # ------- Photo -------- #
