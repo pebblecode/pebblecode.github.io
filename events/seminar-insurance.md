@@ -19,16 +19,15 @@ seminar-intro-paragraphs:
  - "<a href='http://pebblecode.com'>pebble {code}</a> is a digital product innovation consultancy with expertise in UX, design and Lean product development, <a href='http://www.ingenin.com/'>Ingenin</a> helps forward thinking insurers create innovative propositions for the constantly connected consumer by helping insurers benefit from disruptive technologies and business models."
  - "There will be a short keynote from <a href='https://uk.linkedin.com/in/manjitrana'>Manjit Rana</a>, Founder & CEO of <a href='http://www.ingenin.com/'>Ingenin</a>, followed by a roundtable discussion, chaired by <a href='http://pebblecode.com'>pebble {code}'s</a> Chairman, <a href='https://en.wikipedia.org/wiki/Stephen_Allott'>Stephen Allott</a>, for a small number of industry movers and shakers to facilitate connections and debate, and ultimately uncover the secret sauce for making innovation happen in insurance."
  - "We are extremely excited about the new opportunities innovative digital solutions can provide in the insurance space and we look forward to discussing it with you."
- - "We hope you can join us - please register below."
+ - "We hope you can join us - click below to register."
 
 
 ## Location and Time
 seminar-time: "8am - 9:30am"
-seminar-date: "Wednesday 25th May"
+seminar-date: "Tuesday 19th July"
 seminar-rsvp-address: "events@pebblecode.com"
 seminar-location: "The Gherkin <br>30 St Mary Axe <br>London <br>EC3A 8EP"
 seminar-location-shorthand: "The Gherkin, London"
-
 
 ## Speakers
 speakers:
@@ -67,44 +66,6 @@ speakers:
     - "Seeking to experience more entrepreneurial and market facing challenge he progressed to lead 3 businesses in and around the claims management sector, the most visible of these being as CEO UK & Ireland for Crawford & Company for 3.5 years."
     - "Recently Greg has moved on to follow a portfolio career providing mentoring support to some leaders of tomorrow, consultancy services to existing businesses and advisory insight to a number of start ups."
     - "He has a real interest in emerging technology opportunities, and a large network of contacts from 30+ years in the insurance industry to connect with. His ability to translate ideas and possibilities into valued commercial outcomes completes our tri-party partnership perfectly."
- - name: Paul Pancham
-   id: paul-pancham
-   jobtitle: CEO, DWS Automotive Repair Solutions
-   portrait: paul-pancham.jpg
-   linkedin: https://www.linkedin.com/in/paul-pancham-0a60911a
-   bio:
-    - "30 years experience in the Automotive and Insurance sectors."
-    - "Established record in new business start up and transformation."
-    - "Proven record of developing strategic partnerships and evolving industry changing business models."
-    - "Specialist in individual customer and client management. Customer sponsor for DWS Group."
- - name: Ruth Polyblank
-   id: ruth-polyblank
-   jobtitle: Head of Marketing and Customer Strategy, ACE Group
-   portrait: ruth-polyblank.jpg
-   linkedin: https://www.linkedin.com/in/ruth-polyblank-18575513
-   bio:
-    - "Chartered Marketer, heading marketing and customer strategy for a global organisation in the insurance industry. "
-    - "B2B insurance marketing expert, devotee and enthusiast of all things Marketing and Communications and customer centricity."
-    - "Coined the phrase 'Customer tenacity' - the art of pursuing the ultimate customer experience with absolute determination."
- - name: Nic Sproul
-   id: nic-sproul
-   jobtitle: Managing Partner, Resourceful Marketing Ltd
-   portrait: nic-sproul.jpg
-   linkedin: https://uk.linkedin.com/in/nic-sproul-77b7003
- - name: Jodi Cartwright
-   id: jodi-cartwright
-   jobtitle: CEO, 1919 Insurance
-   portrait: jodi-cartwright.jpg
-   linkedin: https://www.linkedin.com/in/jodigrattidge123
-   bio:
-    - "Senior commercially focused Insurance professional with 20 years experience specifically in the UK commercial and personal lines market."
- - name: Michael Wolfe
-   id: michael-wolfe
-   jobtitle: Marketing Director, XL Catlin
-   portrait: michael-wolfe.jpg
-   linkedin: https://www.linkedin.com/in/michael-wolfe-ba57645
-   bio:
-    - "An experienced marketing professional with proven success across leadership roles. Commercially driven with a genuine passion to continually create value through marketing effectiveness."
 
 ## Google Maps URL
 invite-map-id: insuremap
