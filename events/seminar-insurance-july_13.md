@@ -1,7 +1,7 @@
 ---
 layout: seminar
 title: Insurance Innovation
-permalink: /events/insurance/
+permalink: /events/insurance-july-13/
 colour: pink
 
 seminar-eventlink: "https://www.eventbrite.com/"
@@ -24,7 +24,7 @@ seminar-intro-paragraphs:
 
 ## Location and Time
 seminar-time: "8am - 9:30am"
-seminar-date: "Tuesday 19th July"
+seminar-date: "Wednesday 13th July"
 seminar-rsvp-address: "events@pebblecode.com"
 seminar-location: "The Gherkin <br>30 St Mary Axe <br>London <br>EC3A 8EP"
 seminar-location-shorthand: "The Gherkin, London"

@@ -1,7 +1,7 @@
 ---
 layout: seminar
 title: Insurance Innovation
-permalink: /events/insurance/
+permalink: /events/insurance-july-19/
 colour: pink
 
 seminar-eventlink: "https://www.eventbrite.com/"
