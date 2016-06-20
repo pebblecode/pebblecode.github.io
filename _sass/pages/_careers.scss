@@ -96,13 +96,8 @@
   }
 
   @media screen and ( max-width: $medium ) {
-    margin-top: 0;
-    margin-bottom: 0;
-    height: 350px;
-  }
-
-  @media screen and ( max-width: $small ) {
-    height: 300px;
+    margin-top: -150px; 
+    height: 450px;
   }
 }
 

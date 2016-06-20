@@ -1,20 +1,5 @@
-//===============================================================================
-// RECRUITEE
-//===============================================================================
-.careers-container {
-  @include clearfix;
-  margin-top: $gutter + 10px;
-  margin-bottom: $gutter;
-
-  @media screen and ( max-width: $medium ) {
-    margin-top: 0;
-  }
-
-  .content-title {
-    width: auto;
-    padding-top: $gutter + 10px;
-    margin-bottom: $gutter;
-  }
+.rt-offers {
+  margin-top: 40px;  
 }
 
 .rt-title {
@@ -144,6 +129,7 @@
   border-radius: 50%;
   background: lighten($ink, 50);
   box-shadow: 0 4px 0 rgba(black, 0.1);
+  border: none;
   transition: 0.2s;
 
   &:after {
@@ -199,7 +185,7 @@
 
   .rt-btn {
     @extend .btn;
-    @extend .btn-block;
+    @extend .btn-lrg;
     margin: $gutter * 2 auto 0;
     display: table;
   }
