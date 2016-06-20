@@ -18,6 +18,7 @@
   transition: 0.2s ease-in-out;
 
   @media screen and ( max-width: $medium ) {
+    padding-bottom: $gutter;
     width: 100%;
     display: table;
   }
@@ -114,7 +115,7 @@
 }
 
 .card-link {
-  border-bottom: none; 
+  border-bottom: none;
 }
 
 .card-inner {
@@ -246,5 +247,6 @@
 
   @media screen and ( max-width: $medium ) {
     margin-bottom: 0;
+    padding-bottom: 0;
   }
 }
