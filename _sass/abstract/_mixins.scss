@@ -34,6 +34,7 @@
   overflow: hidden;
   display: block;
   position: absolute;
+  backface-visibility: hidden;
   background-repeat: no-repeat;
 }
 
@@ -43,6 +44,7 @@
   overflow: hidden;
   display: block;
   position: absolute;
+  backface-visibility: hidden;
   left: 0;
   width: 100%;
 }
