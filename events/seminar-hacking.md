@@ -1,5 +1,5 @@
 ---
-layout: seminar
+layout: seminar-form
 title: Innovation Hacking
 permalink: /events/innovation-hacking/
 colour: pink
