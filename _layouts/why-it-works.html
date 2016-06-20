@@ -2,11 +2,11 @@
 
   <body class="{{ page.layout }}">
 
-    {% include header.html %}
+    {% include header.html slash-angle="right" %}
 
     {% include hero.html %}
 
-    <section class="process-hero card-block block purple-dark25-bg slash-shadow slash-right block-light block-clear">
+    <section class="process-hero card-block block purple-dark25-bg slash-shadow block-light block-clear">
       <div class="block-inner grid">
         <h2 class="text-center">{{ page.herosub-title }}</h2>
         <div class="card col-1-3">
@@ -36,9 +36,9 @@
       </div>
     </section>
 
-    {% include photo.html url="/img/features/collab.jpg" position="top" %}
+    {% include photo.html url="/img/features/fussball.jpg" position="top" %}
 
-    <section class="intro-block process-problem-block block slash-shadow slash-top">
+    <section class="intro-block process-problem-block block slash-shadow slash-top slash-right">
       <div class="block-inner grid">
         <h2>{{ page.intro-title }}</h2>
         <p>{{ page.intro }}</p>
@@ -138,7 +138,7 @@
       </div>
     </section>
 
-    {% include photo.html url="/img/features/wshop.jpg" %}
+    {% include photo.html url="/img/features/eliaemma.jpg" %}
 
     <section id="work" class="intro-block block block-light slash-shadow slash-top {{ page.cta-colour }}-bg">
       <div class="block-inner grid">
