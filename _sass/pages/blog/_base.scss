@@ -114,7 +114,7 @@ a .post-title {
 
 // Post Excerpt and Thumbnail
 .blog-post-details {
-  margin-bottom: 0;
+  margin-bottom: 10px;
 }
 
 .post-thumbnail-wrapper {
@@ -170,8 +170,7 @@ a .post-title {
 }
 
 .post-excerpt {
-  margin-bottom: 12px;
-  margin-top: 8px;
+  margin: 15px 0;
 }
 
 .post-list-meta {
@@ -191,68 +190,28 @@ a .post-title {
 
 // Hero
 .blog-pagination {
-  padding-top: 80px;
-  padding-bottom: 40px;
-  background-color: lighten($ink, 50);
-  position: relative;
+  padding-top: 30px;
+  padding-bottom: 60px;
+  background-color: $grey;
 
   @media screen and ( max-width: $small ) {
-    padding-top: 20px;
     padding-bottom: 20px;
-  }
 
-  &:after {
-    @include shadow-pseudo;
-    top: -25px;
-    height: 50px;
-    background-color: white;
-    z-index: 2;
-    transform: rotate(1.2deg) scale(1.2);
-
-    @media screen and ( max-width: $small ) {
-      display: none;
+    .btn-lrg {
+      display: table;
+      margin: 0 auto 20px;
     }
   }
 
-  .btn {
-    display: table;
-
-    @media screen and ( max-width: $small ) {
-      padding: 12px 8px;
-
-      padding: 0;
-      background-color: transparent;
-      color: $primary;
-      text-shadow: none;
-
-      &:hover {
-        background-color: transparent;
-        color: $primary
-      }
-    }
+  & + .gbl-foot {
+    background-color: $grey;
   }
 
-  .btn-old {
-    position: absolute;
-    right: 15px;
-    top: 0;
-
-    @media screen and ( max-width: $small ) {
-      color: $ink;
-
-      &:hover {
-        color: $primary;
-      }
-    }
-  }
-
-  .btn-disabled {
-    @media screen and ( max-width: $small ) {
-      color: lighten($ink, 30);
-
-      &:hover {
-        color: lighten($ink, 30);
-      }
+  @media screen and (min-width: $small) {
+    .btn-old {
+      position: absolute;
+      right: 15px;
+      top: 0;
     }
   }
 }
@@ -261,14 +220,6 @@ a .post-title {
 .post-categories li {
   display: inline-block;
   text-transform: capitalize;
-
-//  &::after {
-//    content: ",";
-//  }
-
-//  &:last-of-type::after {
-//    content: "";
-//  }
 }
 
 // Sidebar
@@ -339,4 +290,27 @@ a .post-title {
 .blog-no-posts {
   float: left;
   width: calc(100% - 200px);
+}
+
+// card-tags
+.blog-card {
+  &:nth-child(even) .card-img {
+    background-image: url('../img/blog/placeholders/blue-phold.svg');
+  }
+
+  &:nth-child(3n+3) .card-img {
+    background-image: url('../img/blog/placeholders/purple-phold.svg');
+  }
+
+  &:nth-child(4n+4) .card-img {
+    background-image: url('../img/blog/placeholders/orange-phold.svg');
+  }
+
+  &:nth-child(5n+5) .card-img {
+    background-image: url('../img/blog/placeholders/green-phold.svg');
+  }
+
+  &:nth-child(6n+6) .card-img {
+    background-image: url('../img/blog/placeholders/aqua-phold.svg');
+  }
 }

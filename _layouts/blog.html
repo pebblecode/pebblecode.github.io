@@ -27,14 +27,14 @@ layout: blog
       <div class="grid">
         <div class="pagination col-1-1">
           {% if paginator.previous_page %}
-            <a class="btn" rel="prev" href="{{ paginator.previous_page_path | replace: 'index.html', '/' | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer Posts</a>
+            <a class="btn btn-lrg" rel="prev" href="{{ paginator.previous_page_path | replace: 'index.html', '/' | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer Posts</a>
           {% else %}
-            <span class="btn">&larr; Newer Posts</span>
+            <span class="btn btn-lrg btn-disabled">&larr; Newer Posts</span>
           {% endif %}
           {% if paginator.next_page %}
-            <a class="btn" rel="next" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Posts &rarr;</a>
+            <a class="btn btn-lrg btn-old" rel="next" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Posts &rarr;</a>
           {% else %}
-            <span class="btn">Older Posts &rarr;</span>
+            <span class="btn btn-lrg btn-old btn-disabled">Older Posts &rarr;</span>
           {% endif %}
         </div>
       </div>

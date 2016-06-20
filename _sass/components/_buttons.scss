@@ -66,6 +66,12 @@
   background-color: white;
 }
 
+.btn-disabled,
+.btn-disabled:hover {
+  border-color: rgba($ink, 0.1);
+  color: rgba($ink, 0.4);
+}
+
 .btn-med {
   padding: 12px 20px 10px;
   font-size: $eta;
