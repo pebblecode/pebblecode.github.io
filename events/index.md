@@ -18,31 +18,27 @@ upcomingevents:
  - name: Insurance Seminar
    date: "July 9th, 2016"
    location: The Gherkin
-   thumbnail: "/img/events/test1.jpg"
+   thumbnail: "/img/events/insurance-innovation-thumb.png"
    description: "pebble {code} and Ingenin invite you to join us for a breakfast seminar at Searcys in the Gherkin to discuss the future of technology and innovation in insurance."
-   eventlink: "http://www.google.com"
- - name: Transport Seminar
-   date: "May 31, 2016"
-   location: The Gherkin
-   thumbnail: "/img/events/test2.jpg"
-   description: "An innovative project for Effective delivery of SMSC, including British values and Prevent. Supports PSHE and Citizenship."
-   eventlink: "http://www.google.com"
+   eventlink: "/events/insurance/"
+ - name: Innovation hacking
+   date: "July 13th, 2016"
+   location: Vox Studios
+   thumbnail: "/img/events/hacking-innovation-thumb.png"
+   description: "Please join us for an informal presentation and discussion at Vox Studios to discuss how hacking can empower your team and drive innovation and growth."
+   eventlink: "/events/innovation-hacking/"
 
 
 recent-events-title: Recent Events
 recent-events-intro: Past events we have hosted, be sure to check out the event page for videos and more.
 
 recentevents:
- - name: Transport Seminar
+ - name: Innovation in Insurance
    date: "May 31, 2016"
-   location: The Gherkin
-   thumbnail: "/img/events/test3.jpg"
-   description: "An innovative project for Effective delivery of SMSC, including British values and Prevent. Supports PSHE and Citizenship."
- - name: Transport Seminar
-   date: "May 31, 2016"
-   location: The Gherkin
-   thumbnail: "/img/events/test4.jpg"
-   description: "An innovative project for Effective delivery of SMSC, including British values and Prevent. Supports PSHE and Citizenship."
+   location: Quaglinos
+   thumbnail: "/img/events/manjit.jpg"
+   description: "In conjunction with Ingenin, pebble {code} chaired a seminar on Innovation in the Insurance sector. Innovation Expert; Manjit Rana talked us through the ways the digital revolution is impacting on Insurance."
+   eventlink: "/events/insurance-seminar/"
 
 ---
 

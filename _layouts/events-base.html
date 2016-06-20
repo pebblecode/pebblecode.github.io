@@ -8,22 +8,7 @@ layout: events-base
 
   {% include hero.html %}
 
-  <section class="feature-block feature-hero-block block blue-dark25-bg slash-shadow block-light block-clear">
-    <div class="block-inner grid">
-      <div class="col-1-3">
-        <img src="/img/illustrations/chart.png" alt="">
-      </div>
-      <div class="col-2-3">
-        <div class="feature-meta meta">
-          <span class="meta-date">May 31, 2016 – Next Event</span>
-          <span class="meta-location">The Hospital Club, London</span>
-        </div>
-        <h2>Health Seminar</h2>
-        <p>Bringing together the leaders in Health to discuss the role of digital innovation.</p>
-        <a class="btn btn-lrg btn-light btn-arrow">View Event</a>
-      </div>
-    </div>
-  </section>
+<!--  -->
 
   <section class="photo-block photo-top">
     <div class="photo" style="background-image: url(/img/features/couch.jpg)"></div>
@@ -38,7 +23,7 @@ layout: events-base
         {% for upcomingevent in page.upcomingevents %}
 
         <li class="post card">
-          <a class="post-link">
+          <a class="post-link" href="{{upcomingevent.eventlink}}">
             <div class="post-thumb" style="background-image: url({{upcomingevent.thumbnail}})"></div>
             <div class="post-inner">
               <div class="card-meta meta">
@@ -47,7 +32,7 @@ layout: events-base
               </div>
               <h3 class="card-title">{{upcomingevent.name}}</h3>
               <p class="card-excerpt">{{upcomingevent.description}}</p>
-              <button class="btn btn-arrow">View Upcoming Event</button>
+              <button class="btn btn-arrow" href="{{upcomingevent.eventlink}}">View Upcoming Event</button>
             </div>
           </a>
         </li>
@@ -66,7 +51,7 @@ layout: events-base
           {% for recentevent in page.recentevents %}
 
            <li class="post card">
-            <a class="post-link">
+            <a class="post-link" href="{{recentevent.eventlink}}">
               <div class="post-thumb" style="background-image: url({{recentevent.thumbnail}})"></div>
               <div class="post-inner">
                 <div class="card-meta meta">
@@ -75,7 +60,7 @@ layout: events-base
                 </div>
                 <h3 class="card-title">{{recentevent.name}}</h3>
                 <p class="card-excerpt">{{recentevent.description}}</p>
-                <button class="btn btn-arrow">View Upcoming Event</button>
+                <button class="btn btn-arrow" href="{{recentevent.eventlink}}">View Recent Event</button>
               </div>
             </a>
           </li>
@@ -88,14 +73,14 @@ layout: events-base
 
 
   <section id="signup" class="photo-block">
-    <div class="photo" style="background-image: url(/img/features/couch.jpg)"></div>
+    <div class="photo" style="background-image: url(/img/features/hackday-2.jpg)"></div>
   </section>
 
   <section class="intro-block block pink-bg block-light slash-shadow slash-top slash-right">
     <div class="block-inner grid">
       <h2>What We've Done</h2>
       <p>We help business propel their digital capabiltiy and enable innovativion.</p>
-      <a href="work.html" class="btn btn-lrg btn-light btn-arrow">View our Work</a>
+      <a href="/work/" class="btn btn-lrg btn-light btn-arrow">View our Work</a>
     </div>
   </section>
 
