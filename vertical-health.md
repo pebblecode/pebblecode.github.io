@@ -3,7 +3,7 @@ layout: vertical
 title: Health
 categories: [health]
 permalink: /health/
-colour: aqua-bg
+colour: aqua
 extraclasses: health
 extrascripts:
  - link: "vertical.js"
@@ -40,6 +40,7 @@ sections:
    bubbleimage: vert-health-sr.svg
    largeimage: vert-health-sr-emblem.svg
    color: purple
+   extra-classes:
    paragraphs:
     - In our interactions with the Health sector we have noticed that Research Scientists are increasingly using Computer Science to accelerate processes and discovery and to reduce costs.
     - list-title: "We have observed:"
@@ -58,6 +59,7 @@ sections:
    bubbleimage: vert-health-bui.svg
    largeimage: vert-health-bui-emblem.svg
    color: aqua
+   extra-classes: slash-shadow slash-right
    paragraphs:
     - "To date Government Institutions, Charities and Pharmaceuticals have conceived of digital innovation from a top-down perspective.<br /><br />Simply put large, monolithic organisations struggle to innovate at the speed of the open market. Top-down innovation is also extremely risky, often resulting in high profile failures like the NHS Patient Record system."
     - We believe by starting small and involving users early and often in the process that innovation projects stand a better chance of success. Gradually, we believe large organisations can learn to innovate like the open market.
@@ -80,7 +82,6 @@ sections:
        - row:
           - Failure is expensive
           - Failure is discovered early
-
 
 ---
 

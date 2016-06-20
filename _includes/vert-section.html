@@ -1,8 +1,8 @@
 {% if vsecloop.now-image %}
-	<section id="{{vsecloop.sectionid}}" class="vert-section-container {{vsecloop.color}} {{vsecloop.extra-classes}}">
+	<section id="{{vsecloop.sectionid}}" class="vert-section-container {{vsecloop.color}}-bg {{vsecloop.extra-classes}}">
 {% else %}
 	{% capture nextColor %}next-color-{{ nextSection.color }}{% endcapture %}
-	<section id="{{vsecloop.sectionid}}" class="vert-section-container {{vsecloop.color}} {{vsecloop.extra-classes}} {{nextColor}}">
+	<section id="{{vsecloop.sectionid}}" class="vert-section-container {{vsecloop.color}}-bg {{vsecloop.extra-classes}}">
 {% endif %}
 <div class="vert-section-inner grid">
 	<h4 class="vert-section-breadcrumb">{{page.title}}</h4>
@@ -54,30 +54,31 @@
 	    {% endfor %}
 
   </div>
-</section>
 
-{% if vsecloop.now-image %}
-  <div class="vert-section-prediction-wrapper">
-    <div class="grid">
-  	  <h3 class="vert-section-prediction-heading {{vsecloop.color}}">We predict:</h3>
+	{% if vsecloop.now-image %}
+	  <div class="vert-section-prediction-wrapper slash-shadow">
+	    <div class="grid">
+	  	  <h3 class="vert-section-prediction-heading">We predict:</h3>
 
-			<div class="vert-section-prediction now">
-				<h4 class="vert-section-prediction-title">Currently:</h4>
-				<div class="vert-section-prediction-img-wrap">
-					<img src="../img/verticals/{{vsecloop.now-image}}.svg" />
+				<div class="vert-section-prediction now">
+					<h4 class="vert-section-prediction-title">Currently:</h4>
+					<div class="vert-section-prediction-img-wrap">
+						<img src="../img/verticals/{{vsecloop.now-image}}.svg" />
+					</div>
 				</div>
-			</div>
 
-			{% if vsecloop.future-image %}
-			<div class="vert-section-prediction future">
-				<h4 class="vert-section-prediction-title">In the future:</h4>
+				{% if vsecloop.future-image %}
+				<div class="vert-section-prediction future">
+					<h4 class="vert-section-prediction-title">In the future:</h4>
 
-				<div class="vert-section-prediction-img-wrap">
-					<img src="../img/verticals/{{vsecloop.future-image}}.svg" />
+					<div class="vert-section-prediction-img-wrap">
+						<img src="../img/verticals/{{vsecloop.future-image}}.svg" />
+					</div>
 				</div>
+				{% endif %}
 			</div>
-			{% endif %}
 		</div>
-	</div>
-{% endif %}
-<!-- /.vert-section-container -->
+	{% endif %}
+	<!-- /.vert-section-container -->
+
+</section>

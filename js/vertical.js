@@ -26,7 +26,7 @@
       } else if (windowTop > healthPatient.offset().top - 100 || healthPatient.offset().bottom) {
         healthHeaderContainer.css({'background-color':'#0ea2dc'});
       } else {
-        healthHeaderContainer.css({'background-color':''});
+        healthHeaderContainer.css({'background-color':'#37bec0'});
       }
      };
 
@@ -61,7 +61,7 @@
       } else if (windowTop > transportRail.offset().top - 100 || transportRail.offset().bottom) {
         transportHeaderContainer.css({'background-color':'#37bec0'});
       } else {
-        transportHeaderContainer.css({'background-color':''});
+        transportHeaderContainer.css({'background-color':'#0ea2dc'});
       }
      };
 
@@ -84,7 +84,7 @@
       if (windowTop > insuranceContact.offset().top - 100 || insuranceContact.offset().bottom) {
         insuranceHeaderContainer.css({'background-color':'#ed4f7e'});
       } else {
-        insuranceHeaderContainer.css({'background-color':''});
+        insuranceHeaderContainer.css({'background-color':'#0ea2dc'});
       }
      };
 

@@ -3,7 +3,7 @@ layout: vertical
 title: Insurance
 permalink: /insurance/
 categories: [innovation, insurance]
-colour: blue-bg
+colour: blue
 extraclasses: insurance
 extrascripts:
  - link: "vertical.js"
@@ -50,7 +50,7 @@ insurance-paragraphs:
      image: vert-insur-cmccalls.svg
    - text: "App-based / digital claims journey <span>How can apps streamline the claims process...</span>"
      image: vert-insur-claimjourney.svg
- - "We are holding an Insurance Innovation Seminar in March 2016 <a class='vert-insur-cta-link' href='mailto:hello@pebblecode.com'>If interested, get in touch.</a>"
+ - "We are holding an Insurance Innovation Seminar in July 2016 <a class='btn btn-lrg btn-light btn-center' href='mailto:hello@pebblecode.com'>If interested, get in touch.</a>"
 
 ---
 

@@ -4,7 +4,7 @@
 
     {% include header.html %}
     {% capture nextColor %}next-color-{{ page.sections[0].color }}{% endcapture %}
-    <section class="hero-block {{ page.colour }} {{ nextColor }}">
+    <section class="hero-block slash-shadow {{ page.colour }}-bg {{ nextColor }}">
       <div class="hero-inner grid">
       <h1 class="hero-title col-1-1">{% if page.hero-title %}{{page.hero-title}}{% else %}{{page.title}}{% endif %}</h1>
 
@@ -32,12 +32,12 @@
             </div>
           {% endif %}
 
-          <div class="vert-insur-list-container">
+          <ul class="vert-insur-list-container">
             <!-- Insurance Bubbles -->
             {% for insurancebubble in page.insurance-sections %}
-                <h2 data-bubble="{{insurancebubble.bubbleclass}}" class="vert-sec-bubble-title">{{ insurancebubble.title }}</h2>
+              <li data-bubble="{{insurancebubble.bubbleclass}}" class="vert-sec-bubble-title">{{ insurancebubble.title }}</li>
             {% endfor %}
-          </div>
+          </ul>
 
         </div>
           {% for insurpara in page.insurance-paragraphs %}
@@ -72,16 +72,12 @@
       {% include vert-section.html %}
     {% endfor %}
 
-    <section id="vertcontact" class="vert-section-container">
+    <section id="vertcontact" class="vert-section-container grey-bg">
       <div class="vert-section-inner grid vert-section-contact ">
         <h2 class="vert-section-title">Sound interesting?</h2>
         <p class="vert-contact-para">Get in contact to discuss how we can help you</p>
-        <div class="location-item location-item-email">
-          <a href="mailto:hello@pebblecode.com">hello@pebblecode.com</a>
-        </div>
-        <div class="location-item location-item-phone">
-          <a href="tel:+442033273940">+44 (0) 20 3327 3940</a>
-        </div>
+        <a href="mailto:hello@pebblecode.com" class="btn btn-lrg">hello@pebblecode.com</a>
+        <a href="tel:+442033273940" class="btn btn-lrg">+44 (0) 20 3327 3940</a>
       </div>
     </section>
 

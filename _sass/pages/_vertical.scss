@@ -1,6 +1,3 @@
-//===============================================================================
-// Vertical
-//===============================================================================
 // Bubbles
 .vert-bubble-container {
   text-align: center;
@@ -21,6 +18,8 @@
   display: inline-block;
   position: relative;
   vertical-align: top;
+  color: white;
+  border: none;
 
   img {
     height: 100%;
@@ -51,10 +50,6 @@
     border: rgba(white, 0.6) solid 6px;
     border-radius: 6px;
     margin-bottom: 8px;
-
-    &:hover {
-      background: $pink;
-    }
   }
 
   &:first-child {
@@ -76,6 +71,7 @@
 
   &:hover {
     transform: scale(1.1);
+    color: white;
 
     @media screen and ( max-width: $medium ) {
       transform: none;
@@ -85,16 +81,13 @@
 
 .vert-sec-bubble-title {
   font-size: $gamma;
-  text-transform: none;
-  font-weight: $font-bold;
-  font-style: normal;
-  color: white;
-  text-shadow: 2px 2px 0 rgba(black, 0.2);
+  margin-top: 20px;
 
   @media screen and ( max-width: $medium ) {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
+    margin-top: 0;
     padding-right: 128px;
   }
 
@@ -195,15 +188,6 @@
 }
 
 
-a.vert-insur-cta-link {
-  display: block;
-  color: white;
-  font-weight: $font-bold;
-
-  &:hover {
-    color: rgba(white, 0.8);
-  }
-}
 
 // Paragraphs and Points
 .vert-section-points {
@@ -233,74 +217,16 @@ a.vert-insur-cta-link {
 
 // Sections
 .vert-section-container {
-  background-color: $primary;
-  position: relative;
-  overflow: hidden;
   color: white;
 
-  &.aqua { background-color: $aqua; }
+  &.grey-bg {
+    color: $ink;
+    text-align: center;
 
-  &.orange {
-      background-color: $orange;
-
-    &:before {   transform: rotate(-1.1deg) scale(1.2); }
-    &:after { transform: rotate(-2.4deg) scale(1.2); }
-  }
-
-  &.pink {
-    &:before { transform: rotate(-1.1deg) scale(1.2); }
-    &:after { transform: rotate(-2.4deg) scale(1.2); }
-  }
-
-  &.blue {
-    background-color: $blue;
-
-    &:before { transform: rotate(-0.4deg) scale(1.2); }
-    &:after { transform: rotate(-1.1deg) scale(1.2); }
-  }
-
-  &.purple {
-    background-color: $purple;
-
-    &:before { transform: rotate(1.8deg) scale(1.2); }
-    &:after { transform: rotate(2.0deg) scale(1.2); }
-  }
-
-  &.green { background-color: $green; }
-
-  &::before,
-  &::after {
-    @include shadow-pseudo;
-  }
-
-  &:before {
-    bottom: 20px;
-    height: 20px;
-    background-color: rgba(black, 0.15);
-    transform: rotate(2.1deg) scale(1.2);
-  }
-
-  &:after {
-    bottom: -25px;
-    height: 50px;
-    background-color: white;
-    transform: rotate(1.3deg) scale(1.2);
-  }
-
-
-  &:nth-last-of-type(2):after { background-color: $pink; }
-
-  &:last-of-type {
-    &:before,
-    &:after {
-     content: none;
+    .btn {
+      margin-top: 20px;
     }
   }
-
-  &.next-color-green:after { background-color: $green; }
-  &.next-color-purple:after { background-color: $purple; }
-  &.next-color-blue:after { background-color: $blue; }
-  &.next-color-pink:after { background-color: $pink; }
 }
 
 .vert-section-inner {
@@ -310,13 +236,13 @@ a.vert-insur-cta-link {
   position: relative;
 
   @media screen and ( max-width: $medium + 100px ) {
-    padding: 20px;
-    padding-bottom: 90px;
+    padding: 45px $gutter 90px;
   }
 
   p:first-of-type {
-    font-size: 24px;
+    font-size: $gamma;
     line-height: 1.2;
+
     @media screen and ( max-width: $medium) {
       font-size: $delta;
     }
@@ -324,17 +250,24 @@ a.vert-insur-cta-link {
 }
 
 .vert-section-title {
+  @include text-shadow;
   color: white;
-  margin: 0 0 10px;
+  margin: 0 0 48px;
   line-height: 1;
-  margin-bottom: 48px;
   padding-bottom: 24px;
   border-bottom: 5px solid rgba(black, 0.2);
-  text-shadow: 3px 4px 0 rgba(black, 0.2);
 
   @media screen and ( max-width: $medium ) {
     margin: 0 0 10px;
     line-height: 1;
+  }
+
+  .grey-bg & {
+    text-shadow: none;
+    color: $ink;
+    border-bottom: none;
+    padding-top: 40px;
+    margin-bottom: 0;
   }
 }
 
@@ -449,11 +382,13 @@ h4.vert-section-breadcrumb {
 }
 
 .vert-section-prediction-wrapper {
-  background: white;
-  overflow: hidden;
+  color: $ink;
+  padding-top: 40px;
+  margin-top: -30px;
+  background-color: white;
 
   @media screen and ( max-width: $medium) {
-    padding: 12px;
+    padding: 40px $gutter 20px;
   }
 }
 
