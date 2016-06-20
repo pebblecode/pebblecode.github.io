@@ -25,7 +25,7 @@ seminar-intro-paragraphs:
 - "pebble {code} believes in the power of hacking and have helped businesses large and small embed it into their culture and use it to kick start innovation."
 
 ## Location and Time
-seminar-time: "6pm"
+seminar-time: "6pm-8pm"
 seminar-date: "Wednesday 13th July"
 seminar-rsvp-address: "events@pebblecode.com"
 seminar-location: "Vox Studios <br>1-45 Durham Street <br>London <br>SE11 5JH"
