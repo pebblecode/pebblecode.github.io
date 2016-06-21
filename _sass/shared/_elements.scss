@@ -1,5 +1,5 @@
-// INPUT, TEXTAREA
 input, textarea {
+  max-width: 100%;
   padding: 14px 10px;
   display: block;
   border-radius: 0;
@@ -11,10 +11,8 @@ input[type="radio"] {
   display: inline-block;
 }
 
-// IMAGES
 img { display: block; }
 
-// LISTS
 ol {
   padding-left: 1.4em;
 

@@ -1,6 +1,7 @@
 ---
 layout: events-base
 ---
+
 {% include head.html %}
 <body class="{{ page.layout }} {{ page.colour }}">
 
@@ -8,13 +9,9 @@ layout: events-base
 
   {% include hero.html %}
 
-<!--  -->
+  {% include photo.html url="/img/features/couch.jpg" %}
 
-  <section class="photo-block photo-top">
-    <div class="photo" style="background-image: url(/img/features/couch.jpg)"></div>
-  </section>
-
-    <section class="intro-block post-block block slash-shadow slash-top slash-right grey-bg">
+  <section class="intro-block post-block block slash-shadow slash-top slash-right grey-bg">
     <div class="block-inner grid">
       <h2>{{page.upcoming-events-title}}</h2>
       <p>{{page.upcoming-events-intro}}</p>
@@ -38,39 +35,39 @@ layout: events-base
         </li>
 
         {% endfor %}
+
       </ul>
     </div>
   </section>
 
   <section class="intro-block post-block block slash-shadow">
-      <div class="block-inner grid">
-        <h2>{{page.recent-events-title}}</h2>
-        <p>{{page.recent-events-intro}}</p>
-        <ul class="posts">
+    <div class="block-inner grid">
+      <h2>{{page.recent-events-title}}</h2>
+      <p>{{page.recent-events-intro}}</p>
+      <ul class="posts">
 
-          {% for recentevent in page.recentevents %}
+        {% for recentevent in page.recentevents %}
 
-           <li class="post card">
-            <a class="post-link" href="{{recentevent.eventlink}}">
-              <div class="post-thumb" style="background-image: url({{recentevent.thumbnail}})"></div>
-              <div class="post-inner">
-                <div class="card-meta meta">
-                  <span class="meta-date">{{recentevent.date}}</span>
-                  <span class="meta-location">{{recentevent.location}}</span>
-                </div>
-                <h3 class="card-title">{{recentevent.name}}</h3>
-                <p class="card-excerpt">{{recentevent.description}}</p>
-                <button class="events-btn btn btn-arrow" href="{{recentevent.eventlink}}">View Recent Event</button>
+         <li class="post card">
+          <a class="post-link" href="{{recentevent.eventlink}}">
+            <div class="post-thumb" style="background-image: url({{recentevent.thumbnail}})"></div>
+            <div class="post-inner">
+              <div class="card-meta meta">
+                <span class="meta-date">{{recentevent.date}}</span>
+                <span class="meta-location">{{recentevent.location}}</span>
               </div>
-            </a>
-          </li>
+              <h3 class="card-title">{{recentevent.name}}</h3>
+              <p class="card-excerpt">{{recentevent.description}}</p>
+              <button class="events-btn btn btn-arrow" href="{{recentevent.eventlink}}">View Recent Event</button>
+            </div>
+          </a>
+        </li>
 
-          {% endfor %}
+        {% endfor %}
 
-        </ul>
-      </div>
-    </section>
-
+      </ul>
+    </div>
+  </section>
 
   <section id="signup" class="photo-block">
     <div class="photo" style="background-image: url(/img/features/hackday-2.jpg)"></div>
@@ -84,7 +81,7 @@ layout: events-base
     </div>
   </section>
 
-  {% include footer.html lazyload=true colour="pink" tone="light" %}
+  {% include footer.html colour="pink" tone="light" %}
 
 </body>
 </html>
