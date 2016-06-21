@@ -16,6 +16,11 @@
 
   [class*='col-'] {
     vertical-align: middle;
+
+    @media screen and ( max-width: $medium ) {
+      width: 100%;
+      display: block;
+    }
   }
 
   img {
@@ -23,8 +28,7 @@
     width: 70%;
 
     @media screen and ( max-width: $medium ) {
-      margin: 20px 25%;
-      width: 50%;
+      margin: 0 0 40px;
     }
   }
 

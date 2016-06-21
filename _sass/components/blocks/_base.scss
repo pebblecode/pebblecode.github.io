@@ -96,3 +96,13 @@
     bottom: auto;
   }
 }
+
+@media screen and ( min-width: $medium ) {
+  .block-inner-right {
+    direction: rtl;
+
+    * {
+      direction: ltr;
+    }
+  }
+}
