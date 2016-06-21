@@ -16,7 +16,7 @@ upcoming-events-intro: pebble hosts a wide range of events including seminars an
 
 upcomingevents:
  - name: Insurance Seminar
-   date: "July 9th, 2016"
+   date: "July 19th, 2016"
    location: The Gherkin
    thumbnail: "/img/events/insurance-innovation-thumb.png"
    description: "pebble {code} and Ingenin invite you to join us for a breakfast seminar at Searcys in the Gherkin to discuss the future of technology and innovation in insurance."
