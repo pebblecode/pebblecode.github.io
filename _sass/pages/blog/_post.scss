@@ -4,7 +4,13 @@
     background-color: $aqua;
   }
 
-  .content-container { margin-top: 10px; }
+  .hero-block {
+    padding-top: 30px;
+  }
+
+  .content-container {
+    padding-top: 40px;
+  }
 }
 
 .post-header {
@@ -46,12 +52,18 @@
 
     @media screen and ( max-width: $medium ) {
       font-size: $mega - 8px;
+      margin-bottom: 30px;
+    }
+
+    @media screen and ( max-width: $small ) {
+      font-size: $alpha;
     }
   }
 }
 
 .post-meta {
   font-size: $gamma - 2px;
+  margin-bottom: 10px;
 }
 
 .post-author {

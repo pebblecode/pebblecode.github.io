@@ -1,6 +1,3 @@
-//===============================================================================
-// SEMINAR
-//===============================================================================
 .seminar.pink,
 .seminar-form.pink {
   background-color: $pink;
@@ -26,11 +23,9 @@
   padding-bottom: 30px;
 
   p, ul {
-    font-size: $delta + 2px;
     padding: 0 40px;
 
     @media screen and ( max-width: $medium ) {
-      font-size: $delta;
       padding: 0 30px;
     }
   }
@@ -39,11 +34,6 @@
     margin: 0 0 10px 20px;
     list-style-type: disc;
     list-style-position: outside;
-    font-size: $delta + 2px;
-
-    @media screen and ( max-width: $medium ) {
-      font-size: $delta;
-    }
   }
 
   @media screen and ( min-width: $medium ) {
@@ -93,7 +83,7 @@
 .seminar-machine-img {
   width: 100%;
   margin-top: -130px;
-  left: -12px;
+  left: -4px;
   position: relative;
   transform: rotate(-0.3deg) skew(1deg);
 
@@ -201,6 +191,7 @@ h4.seminar-titlestack-sub {
   color: $ink;
   margin-top: 0;
   margin-bottom: 8px;
+  border: none;
 
   @media screen and (max-width: $medium) {
     padding-left: 0;
@@ -252,6 +243,10 @@ h4.seminar-titlestack-sub {
   position: relative;
   margin-left: 232px;
   hyphens: none;
+
+  p {
+    font-size: $body-font-size;
+  }
 
   @media screen and ( max-width: $medium ) {
     margin-left: 0;
@@ -320,10 +315,8 @@ h5.seminar-speaker-jobtitle {
 .seminar-header-location {
   color: $pink;
   text-align: center;
-  font-style: normal;
   font-size: $alpha - 4px;
-  font-weight: $font-bold;
-  text-transform: none;
+  margin-bottom: 30px;
 
   @media screen and ( max-width: $small ) {
     font-size: $gamma + 2px;
@@ -489,12 +482,6 @@ h3.seminar-header-time::before {
   }
 }
 
-input.seminar-form-submit {
-  width: 100%;
-  position: relative;
-  margin: 15px 0 0;
-}
-
 .seminar-form-header {
   color: $pink;
 
@@ -575,6 +562,7 @@ h3.seminar-info-item {
   font-weight: $font-bold;
   padding-top: 2px;
   margin-bottom: 6px;
+  border: none;
 
   &:after {
     @include pseudo;
