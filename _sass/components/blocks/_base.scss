@@ -9,6 +9,10 @@
 
   .delta {
     font-size: $delta + 2px;
+
+    @media screen and ( max-width: $medium ) {
+      font-size: $epsilon;
+    }
   }
 
   .epsilon {

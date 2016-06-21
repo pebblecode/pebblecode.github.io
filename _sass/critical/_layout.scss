@@ -1,6 +1,3 @@
-//===============================================================================
-// LAYOUT - CRITICAL STYLES
-//===============================================================================
 html {
   box-sizing: border-box;
 }
@@ -13,7 +10,6 @@ body {
   text-rendering: optimizeSpeed;
   line-height: 1.4;
   color: $ink;
-  overflow-x: hidden;
   position: relative;
 }
 

@@ -1,7 +1,11 @@
-//===============================================================================
-// STYLES FIXES BEFORE MAIN.CSS LOADS
-//===============================================================================
-img { max-width: 100%; }
+body,
+html {
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+}
 
 .photo-container {
   height: 400px;
