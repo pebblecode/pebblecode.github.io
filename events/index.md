@@ -20,7 +20,7 @@ upcomingevents:
    location: The Gherkin
    thumbnail: "/img/events/insurance-innovation-thumb.png"
    description: "pebble {code} and Ingenin invite you to join us for a breakfast seminar at Searcys in the Gherkin to discuss the future of technology and innovation in insurance."
-   eventlink: "/events/insurance/"
+   eventlink: "/events/insurance-july-19/"
  - name: Innovation hacking
    date: "July 13th, 2016"
    location: Vox Studios
