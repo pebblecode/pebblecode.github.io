@@ -1,0 +1,38 @@
+{% include head.html %}
+
+  <body class="{{ page.layout }}">
+
+    {% include header.html slash-angle="right" %}
+
+    {% include hero.html %}
+
+
+    {% include footer.html %}
+
+    <script>
+    // Change header colour
+    var headerContainer = $('.gbl-head');
+    if ($(headerContainer).length > 0) {
+      var work;
+
+      var scrollPositions = function () {
+        work = $('#work');
+      };
+
+      var headerBG = function () {
+        var windowTop = $(window).scrollTop();
+        if (windowTop > work.offset().top - 500 || work.offset().bottom) {
+          headerContainer.css({'background-color':'#ed4f7e'});
+        } else {
+          headerContainer.css({'background-color':'#9b5ca4'});
+        }
+      };
+
+      $(window).resize(scrollPositions).scroll(headerBG);
+      scrollPositions();
+      headerBG();
+    }
+    </script>
+
+  </body>
+</html>

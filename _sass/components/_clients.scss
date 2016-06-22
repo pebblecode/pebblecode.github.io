@@ -50,14 +50,25 @@
 }
 
 .client-logo {
-  &.az-logo { @include sprite($az-logo); }
-  &.pearson-logo { @include sprite($pearson-logo); }
-  &.bede-logo { @include sprite($bede-logo); }
-  &.cancer-logo { @include sprite($cancer-logo); }
-  &.aljazeera-logo { @include sprite($aljazeera-logo); }
-  &.lloyds-logo { @include sprite($lloyds-logo); }
-  &.bybox-logo { @include sprite($bybox-logo); }
-  &.express-logo { @include sprite($express-logo); }
-  &.vfs-logo { @include sprite($vfs-logo); }
-  &.adon-logo { @include sprite($adon-logo); }
+  &.az-logo-ink { @include sprite($az-logo-ink); }
+  &.pearson-logo-ink { @include sprite($pearson-logo-ink); }
+  &.bede-logo-ink { @include sprite($bede-logo-ink); }
+  &.cancer-logo-ink { @include sprite($cancer-logo-ink); }
+  &.aljazeera-logo-ink { @include sprite($aljazeera-logo-ink); }
+  &.lloyds-logo-ink { @include sprite($lloyds-logo-ink); }
+  &.bybox-logo-ink { @include sprite($bybox-logo-ink); }
+  &.express-logo-ink { @include sprite($express-logo-ink); }
+  &.vfs-logo-ink { @include sprite($vfs-logo-ink); }
+  &.adon-logo-ink { @include sprite($adon-logo-ink); }
+
+  &.az-logo-white { @include sprite($az-logo-white); }
+  &.pearson-logo-white { @include sprite($pearson-logo-white); }
+  &.bede-logo-white { @include sprite($bede-logo-white); }
+  &.cancer-logo-white { @include sprite($cancer-logo-white); }
+  &.aljazeera-logo-white { @include sprite($aljazeera-logo-white); }
+  &.lloyds-logo-white { @include sprite($lloyds-logo-white); }
+  &.bybox-logo-white { @include sprite($bybox-logo-white); }
+  &.express-logo-white { @include sprite($express-logo-white); }
+  &.vfs-logo-white { @include sprite($vfs-logo-white); }
+  // &.adon-logo-white { @include sprite($adon-logo-white); }
 }

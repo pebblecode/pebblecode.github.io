@@ -5,8 +5,10 @@
 {% endif %}
 
   <div class="hero-inner grid">
+    {% if page.hero-logo %}
+      <span class="client-logo {{page.hero-logo}}-logo-white">{{page.client}}</span>
+    {% endif %}
     <h1 class="hero-title col-1-1">{% if page.hero-title %}{{page.hero-title}}{% else %}{{page.title}}{% endif %}</h1>
-
     {% if page.hero-subtitle %}
       <p class="hero-subtitle col-1-1">{{page.hero-subtitle}}</p>
     {% endif %}

@@ -24,8 +24,8 @@
   }
 
   img {
-    margin: 10px 15%;
-    width: 70%;
+    margin: 10px 10%;
+    width: 80%;
 
     @media screen and ( max-width: $medium ) {
       margin: 0 0 40px;
@@ -34,6 +34,10 @@
 
   h2 {
     margin-bottom: 20px;
+
+    &.text-center {
+      margin-bottom: 40px;
+    }
   }
 
   p {

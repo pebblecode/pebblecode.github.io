@@ -1,0 +1,91 @@
+.method-list {
+  margin: 80px $gutter * 2 60px;
+  position: relative;
+
+  @media screen and ( max-width: $medium ) {
+    margin: 50px $gutter * 2;
+  }
+
+  &::before {
+    @include pseudo;
+    border-radius: 100px;
+    top: 10px;
+    left: 50%;
+    width: 60px;
+    height: 110%;
+    transform: translateX(-50%);
+    background-color: darken($blue, 10);
+    border: 6px solid darken($blue, 13);
+    box-shadow: $box-shadow;
+
+    @media screen and ( max-width: $medium ) {
+      border-width: 4px;
+      left: 15px;
+      width: 50px;
+    }
+  }
+}
+
+.method {
+  position: relative;
+  width: calc(50% - 80px);
+  text-align: right;
+  margin-top: 20px;
+  margin-bottom: 40px;
+
+  @media screen and ( min-width: $medium ) {
+    &:nth-of-type(even) {
+      margin-left: calc(50% + 80px);
+      text-align: left;
+
+      .method-count {
+        left: -120px;
+      }
+    }
+  }
+
+  @media screen and ( max-width: $medium ) {
+    width: 100%;
+    padding-left: 75px;
+    margin-bottom: 60px;
+    text-align: left;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+
+  h4 {
+    line-height: 1.1;
+  }
+
+  p {
+    font-size: $epsilon;
+  }
+}
+
+.method-count {
+  @include text-shadow;
+  top: -15px;
+  right: -120px;
+  position: absolute;
+  background-color: $blue;
+  display: table;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  padding-top: 17px;
+  color: white;
+  font-weight: $font-bold;
+  font-size: $alpha;
+  line-height: 1;
+  background-color: $blue;
+  border: 6px solid darken($blue, 5);
+  box-shadow: $box-shadow;
+  text-align: center;
+
+  @media screen and ( max-width: $medium ) {
+    top: -15px;
+    left: -25px;
+  }
+}

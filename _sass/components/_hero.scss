@@ -1,14 +1,20 @@
-.hero-play-btn {
-  position: absolute;
-  left: 50%;
-  bottom: -110px;
-  transform: translateX(-50%);
+.hero-block {
+  .client-logo {
+    position: relative;
+    display: table;
+    margin: -30px auto 40px;
+    padding-bottom: 70px;
+    overflow: visible;
 
-  &:hover {
-    transform: translateX(-50%) scale(1.1);
+    &::before {
+      @include pseudo;
+      transform: translateX(-50%);
+      left: 50%;
+      bottom: 0;
+      width: 100px;
+      height: 8px;
+      border-radius: 5px;
+      background-color: rgba(white, 0.2);
+    }
   }
-}
-
-.hero .btn {
-  margin-top: 30px;
 }

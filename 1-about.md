@@ -93,10 +93,10 @@ person5-summary:
 # ------- Photo -------- #
 
 ## ------ Product ------ ##
-product-illustration: people.svg
-product-title: Hack Days
-product-summary: We run a monthly introduction to Digital Innovation workshop at pebble HQ. The first step towards creating a culture of technical innovation is removing the fear of failure.
-product-btn-text: Sign Up Now
-product-btn-url: /contact
+action-illustration: people.svg
+action-title: Hack Days
+action-summary: We run a monthly introduction to Digital Innovation workshop at pebble HQ. The first step towards creating a culture of technical innovation is removing the fear of failure.
+action-btn-text: Sign Up Now
+action-btn-url: /contact
 
 ---
