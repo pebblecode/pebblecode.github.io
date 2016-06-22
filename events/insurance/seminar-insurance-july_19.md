@@ -16,10 +16,10 @@ seminar-hero: insurance-innovation-header.png
 seminar-subtitle: In the trenches
 seminar-intro-paragraphs:
  - "<a href='http://pebblecode.com'>pebble {code}</a> and <a href='http://www.ingenin.com/'>Ingenin</a> invite you to join us for a breakfast seminar at <a href='http://searcys.co.uk/venues/the-gherkin/'>Searcys</a> in the Gherkin to discuss the future of technology and innovation in insurance."
- - "<a href='http://pebblecode.com'>pebble {code}</a> is a digital product innovation consultancy with expertise in UX, design and Lean product development, <a href='http://www.ingenin.com/'>Ingenin</a> helps forward thinking insurers create innovative propositions for the constantly connected consumer by helping insurers benefit from disruptive technologies and business models."
- - "There will be a short keynote from <a href='https://uk.linkedin.com/in/manjitrana'>Manjit Rana</a>, Founder & CEO of <a href='http://www.ingenin.com/'>Ingenin</a>, followed by a roundtable discussion, chaired by <a href='http://pebblecode.com'>pebble {code}'s</a> CEO, <a href='https://www.linkedin.com/in/tobyhunt'>Toby Hunt</a>, for a small number of industry movers and shakers to facilitate connections and debate, and ultimately uncover the secret sauce for making innovation happen in insurance."
+ - "<a href='http://pebblecode.com'>pebble {code}</a> is a digital product innovation consultancy with expertise in UX, design and Lean product development. <a href='http://www.ingenin.com/'>Ingenin</a> helps forward thinking insurers create innovative propositions for the constantly connected consumer by advising on disruptive technologies and business models."
+ - "There will be a short keynote from <a href='https://uk.linkedin.com/in/manjitrana'>Manjit Rana</a>, Founder & CEO of <a href='http://www.ingenin.com/'>Ingenin</a>, followed by a roundtable discussion, chaired by <a href='http://pebblecode.com'>pebble {code}</a> Co-founder, <a href='https://www.linkedin.com/in/tobyhunt'>Toby Hunt</a>. We have invited a small number of industry movers and shakers to facilitate connections and debate, and ultimately uncover the secret sauce for making innovation happen in insurance."
  - "We are extremely excited about the new opportunities innovative digital solutions can provide in the insurance space and we look forward to discussing it with you."
- - "We hope you can join us - click below to register."
+ - "We hope you can join us - click below to register, and <a href='http://pebblecode.com/events/insurance-seminar/'>here</a> to check out a short video of our last event."
 eventbright-url: "https://www.eventbrite.co.uk/e/innovation-in-insurance-tickets-26147397570"
 
 
@@ -53,7 +53,7 @@ speakers:
    bio:
     - "As co-founder of both pebble {code} and pebble.it, and board member for various digital businesses, Toby is passionate about effecting positive change through the best use of technology and design."
     - "Toby is an expert in innovation, leadership and managing teams on rapid development projects, and regularly speaks on Lean Product Development and Startup acceleration."
-    - "Toby has worked in both startup and enterprise businesses, and brings the best of both worlds to pebble and pebble's clients. He is excited about helping businesses in the Insurance industry understand their customers and users, and use technology to differentiate and win!"
+    - "Toby has worked in both startup and enterprise businesses, and brings the best of both worlds to pebble and pebble's clients. He is excited about helping businesses in the insurance industry understand their customers and users, and use technology to differentiate and win!"
     - "Toby has a Computer Science degree from Durham University."
 
 ## Google Maps URL
