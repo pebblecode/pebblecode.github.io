@@ -1,7 +1,7 @@
 ---
 layout: seminar
 title: Digital Innovation
-permalink: /events/digital/
+permalink: /events/digital/may-23/
 colour: pink
 
 seminar-eventlink: "https://www.eventbrite.com/"

@@ -1,5 +1,6 @@
 .seminar.pink,
-.seminar-form.pink {
+.seminar-form.pink,
+.seminar-new.pink {
   background-color: $pink;
 }
 
@@ -100,9 +101,11 @@
 .seminar-titlestack {
   margin: 40px auto;
   text-align: center;
-  transform: skewY(-5deg);
-  text-shadow: 3px 4px 0 rgba(black, 0.15);
-  color: $ink;
+  // transform: skewY(-5deg);
+  text-shadow: 7px 8px 0 rgba(black, 0.40);
+  // -webkit-text-stroke-width: 3px;
+  // -webkit-text-stroke-color: #ed4f7e;
+  color: #ddd;
   position: relative;
   z-index: 2;
 
@@ -126,6 +129,10 @@
     }
   }
 
+  h3.seminar-titlestack-bottom {
+    line-height: 0.7;
+  }
+
   h3.seminar-titlestack-top {
     margin-bottom: 0;
   }
@@ -134,6 +141,10 @@
     font-size: $beta - 4px;
     margin-bottom: 0px;
     color: $ink;
+    text-transform: uppercase;
+    text-shadow: none;
+    // -webkit-text-stroke-width: none;
+    // -webkit-text-stroke-color: none;
 
     &:before,
     &:after {
@@ -282,6 +293,10 @@ h5.seminar-speaker-jobtitle {
   font-weight: $font-regular;
   color: lighten($ink, 20);
   font-size: $delta;
+}
+
+.seminar-new .seminar-header-details {
+  margin-top: 24px;
 }
 
 .seminar-header-details {

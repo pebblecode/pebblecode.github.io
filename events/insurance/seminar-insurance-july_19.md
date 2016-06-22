@@ -1,7 +1,7 @@
 ---
-layout: seminar
+layout: seminar-new
 title: Insurance Innovation
-permalink: /events/insurance/
+permalink: /events/insurance/july-19/
 colour: pink
 
 seminar-eventlink: "https://www.eventbrite.com/"
@@ -12,19 +12,20 @@ seminar-intro: pebble {code} chairs a breakfast seminar on
 seminar-title1: Innovation
 seminar-title2: in
 seminar-title3: Insurance
-seminar-hero: insurance-seminar-hero.png
+seminar-hero: insurance-innovation-header.png
 seminar-subtitle: In the trenches
 seminar-intro-paragraphs:
  - "<a href='http://pebblecode.com'>pebble {code}</a> and <a href='http://www.ingenin.com/'>Ingenin</a> invite you to join us for a breakfast seminar at <a href='http://searcys.co.uk/venues/the-gherkin/'>Searcys</a> in the Gherkin to discuss the future of technology and innovation in insurance."
  - "<a href='http://pebblecode.com'>pebble {code}</a> is a digital product innovation consultancy with expertise in UX, design and Lean product development, <a href='http://www.ingenin.com/'>Ingenin</a> helps forward thinking insurers create innovative propositions for the constantly connected consumer by helping insurers benefit from disruptive technologies and business models."
- - "There will be a short keynote from <a href='https://uk.linkedin.com/in/manjitrana'>Manjit Rana</a>, Founder & CEO of <a href='http://www.ingenin.com/'>Ingenin</a>, followed by a roundtable discussion, chaired by <a href='http://pebblecode.com'>pebble {code}'s</a> Chairman, <a href='https://en.wikipedia.org/wiki/Stephen_Allott'>Stephen Allott</a>, for a small number of industry movers and shakers to facilitate connections and debate, and ultimately uncover the secret sauce for making innovation happen in insurance."
+ - "There will be a short keynote from <a href='https://uk.linkedin.com/in/manjitrana'>Manjit Rana</a>, Founder & CEO of <a href='http://www.ingenin.com/'>Ingenin</a>, followed by a roundtable discussion, chaired by <a href='http://pebblecode.com'>pebble {code}'s</a> CEO, <a href='https://www.linkedin.com/in/tobyhunt'>Toby Hunt</a>, for a small number of industry movers and shakers to facilitate connections and debate, and ultimately uncover the secret sauce for making innovation happen in insurance."
  - "We are extremely excited about the new opportunities innovative digital solutions can provide in the insurance space and we look forward to discussing it with you."
  - "We hope you can join us - click below to register."
+eventbright-url: "https://www.eventbrite.co.uk/e/innovation-in-insurance-tickets-26147397570"
 
 
 ## Location and Time
 seminar-time: "8am - 9:30am"
-seminar-date: "Tuesday 19th July"
+seminar-date: "Tuesday 19th May"
 seminar-rsvp-address: "events@pebblecode.com"
 seminar-location: "The Gherkin <br>30 St Mary Axe <br>London <br>EC3A 8EP"
 seminar-location-shorthand: "The Gherkin, London"
@@ -43,29 +44,17 @@ speakers:
     - "A seasoned senior executive and dynamic leader with a proven track record of management success in both start-up and corporate arena’s and over 25 years experience of technology based proposition development."
     - "He has created a number of start-ups as well as working for large corporates such as CSC, Fujitsu Consulting and AXA Insurance where he was recruited to help create the AXA Innovation Hub."
     - "Manjit is a regular speaker at industry events, sits on the judging panels of industry awards and is an advisor and mentor to several start-ups."
- - name: Stephen Allott
-   id: stephen-allott
-   jobtitle: Chairman, pebble {code}
-   portrait: stephen.jpg
-   linkedin: https://www.linkedin.com/in/stephen-allott-77992b24
-   twitter: https://twitter.com/smecrownrep
+ - name: Toby Hunt
+   id: toby-hunt
+   jobtitle: Co-Founder & Director, pebble {code}
+   portrait: toby.jpg
+   linkedin: https://www.linkedin.com/in/tobyhunt
+   twitter: https://twitter.com/tobyhunt?lang=en-gb
    bio:
-    - "Some time Crown Representative for Small & Medium Enterprises in the Cabinet Office and UK delegate for the D5."
-    - "Chaired BACFI, Jacobs Rimell, Parc Technology, Inforsense, Applied Generics, COE Group Plc, The Red Gate Council of Advisers, Tideway Systems and Trinamo. NXD on Bright Computing, Trampoline and Zeus."
-    - "Founded the Cambridge Computer Lab Ring and co-founded Trinamo. President, CFO and main board director of Micromuse Inc. (NASDAQ: MUSE)."
-    - "Worked for McKinsey, Sun Microsystems, Xerox and Essex Court Chambers. Graduate of Trinity College Cambridge, Barrister (Gray’s Inn), Member of the Bar Council of England and Wales, City Fellow of Hughes Hall Cambridge University."
- - name: Greg Gladwell
-   id: greg-gladwell
-   jobtitle: Owner and Founder Gladwell Enterprises Ltd
-   portrait: greg-gladwell.jpg
-   linkedin: https://www.linkedin.com/in/greggladwell
-   twitter: https://twitter.com/greggladwell
-   bio:
-    - "Greg adds unique insurance business insight to both pebble {code} and Ingenin as one of the few people to have successfully delivered in profile leadership roles on both the insurer and supplier sides of the market."
-    - "Joining  Aviva at the ground floor and working his way up to a senior level, Greg experienced  many varied senior leadership roles that embraced operational, central service function and change programme management activities."
-    - "Seeking to experience more entrepreneurial and market facing challenge he progressed to lead 3 businesses in and around the claims management sector, the most visible of these being as CEO UK & Ireland for Crawford & Company for 3.5 years."
-    - "Recently Greg has moved on to follow a portfolio career providing mentoring support to some leaders of tomorrow, consultancy services to existing businesses and advisory insight to a number of start ups."
-    - "He has a real interest in emerging technology opportunities, and a large network of contacts from 30+ years in the insurance industry to connect with. His ability to translate ideas and possibilities into valued commercial outcomes completes our tri-party partnership perfectly."
+    - "As co-founder of both pebble {code} and pebble.it, and board member for various digital businesses, Toby is passionate about effecting positive change through the best use of technology and design."
+    - "Toby is an expert in innovation, leadership and managing teams on rapid development projects, and regularly speaks on Lean Product Development and Startup acceleration."
+    - "Toby has worked in both startup and enterprise businesses, and brings the best of both worlds to pebble and pebble's clients. He is excited about helping businesses in the Insurance industry understand their customers and users, and use technology to differentiate and win!"
+    - "Toby has a Computer Science degree from Durham University."
 
 ## Google Maps URL
 invite-map-id: insuremap
