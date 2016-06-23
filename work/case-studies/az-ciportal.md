@@ -1,6 +1,6 @@
 ---
 layout: case-study
-title: AstraZeneca - Competitor Intelligence
+title: AstraZeneca Competitor Intelligence | Case Study
 client: AstraZeneca
 permalink: /work/case-studies/az-ciportal/
 colour: blue
@@ -11,6 +11,11 @@ hero-title: Competitive Intelligence
 hero-subtitle: How can we radically improve competitive analysis to efficiently understand and report financial and clinical drug information?
 hero-logo: az
 hero-angle:
+
+
+## ------ Intro ------ ##
+intro-title:
+intro:
 
 
 ## ------- Photo 1 -------- ##

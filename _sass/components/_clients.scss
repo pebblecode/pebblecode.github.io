@@ -59,6 +59,7 @@
   &.bybox-logo-ink { @include sprite($bybox-logo-ink); }
   &.express-logo-ink { @include sprite($express-logo-ink); }
   &.vfs-logo-ink { @include sprite($vfs-logo-ink); }
+  &.pwc-logo-ink { @include sprite($pwc-logo-ink); }
   &.adon-logo-ink { @include sprite($adon-logo-ink); }
 
   &.az-logo-white { @include sprite($az-logo-white); }
@@ -70,5 +71,6 @@
   &.bybox-logo-white { @include sprite($bybox-logo-white); }
   &.express-logo-white { @include sprite($express-logo-white); }
   &.vfs-logo-white { @include sprite($vfs-logo-white); }
+  &.pwc-logo-white { @include sprite($pwc-logo-white); }
   // &.adon-logo-white { @include sprite($adon-logo-white); }
 }

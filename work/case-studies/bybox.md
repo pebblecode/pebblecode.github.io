@@ -1,7 +1,7 @@
 ---
 layout: case-study
-title: ByBox - Innovation in Logistics
-client: AstraZeneca
+title: ByBox Logistics Innovation | Case Study
+client: ByBox
 permalink: /work/case-studies/bybox/
 colour: aqua
 
@@ -10,7 +10,11 @@ colour: aqua
 hero-title: Innovation in Logistics
 hero-subtitle: How do you increase logistic efficiency between drivers and engineers, and reduce costs at the same time?
 hero-logo: bybox
-hero-angle:
+
+
+## ------ Intro ------ ##
+intro-title:
+intro:
 
 
 ## ------- Photo 1 -------- ##

@@ -1,6 +1,6 @@
 ---
 layout: case-study
-title: AstraZeneca - Agile Transformation
+title: AstraZeneca Agile Transformation | Case Study
 client: AstraZeneca
 permalink: /work/case-studies/az-overview/
 colour: purple
@@ -10,7 +10,6 @@ colour: purple
 hero-title: Streamlining A to Z
 hero-subtitle: How do you transform and unify internal communication for one of the world’s largest pharmaceutical companies?
 hero-logo: az
-hero-angle: right
 
 
 ## ------- Photo 1 -------- ##

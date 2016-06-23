@@ -2,15 +2,30 @@
 
   <body class="{{ page.layout }}">
 
-    {% include header.html slash-angle="right" %}
+    {% include header.html %}
 
     {% include hero.html %}
+
+    {% if page.intro %}
+    <section class="{{ page.colour }}-dark25-bg intro-block block block-light grey-bg slash-shadow slash-right">
+      <div class="block-inner grid">
+        {% if page.intro-title  %}
+          <h2>{{ page.intro-title }}</h2>
+        {% endif %}
+        <p>{{ page.intro }}</p>
+      </div>
+    </section>
+    {% endif %}
 
     <section class="photo-block">
       <div class="photo" style="background-image: url(/img/features/{{ page.photo1-url }})"></div>
     </section>
 
-    <section class="feature-block block slash-shadow slash-top slash-right grey-bg">
+    {% if page.intro %}
+    <section class="feature-block block grey-bg slash-shadow slash-top">
+    {% else %}
+    <section class="feature-block block grey-bg slash-shadow slash-top slash-right">
+    {% endif %}
       <div class="block-inner block-inner-right grid">
         <div class="col-1-2">
           <img src="/img/illustrations/{{ page.results-illustration }}" alt="">
