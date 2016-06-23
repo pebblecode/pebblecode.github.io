@@ -1,10 +1,13 @@
 ---
 layout: post
-title: Innovation Hacking
+title: Innovation Hacking Event
 author: George Ornbo
 categories: [hacks, innovation, events]
 thumbnail: /img/blog/innohack.png
 ---
+
+### Wednesday 13th July 6pm-8pm - Vox Studios
+
 
 Please join our MD, George Ornbo, for an informal presentation and discussion at Vox Studios to discuss how hacking can empower your team and drive innovation and growth.
 
