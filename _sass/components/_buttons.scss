@@ -215,6 +215,10 @@
     height: 80px;
   }
 
+  &.video-play-btn {
+    opacity: 1;
+  }
+  
   &::after {
     @include pseudo;
     top: 50%;

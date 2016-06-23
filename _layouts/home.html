@@ -6,10 +6,6 @@
 
     {% include hero.html %}
 
-    <section class="video-block photo-block photo-top">
-      <video class="video" id="officespace" preload src="https://s3-eu-west-1.amazonaws.com/pebblecodecom/officeloop.mp4" autoplay loop></video>
-    </section>
-
     <section class="intro-block block grey-bg slash-shadow slash-top slash-right">
       <div class="block-inner grid">
         <h2>{{ page.intro-title }}</h2>
@@ -19,7 +15,7 @@
 
     {% include clients.html %}
 
-    <section class="expertise-block block blue-bg slash-shadow slash-right">
+    <section id="expertise" class="expertise-block block blue-bg slash-shadow slash-right">
       <div class="intro-block block block-light">
         <div class="block-inner grid">
           <h2>{{ page.expertise-title }}</h2>
@@ -81,16 +77,18 @@
     // Header change colour
     var headerContainer = $('.gbl-head');
     if ($(headerContainer).length > 0) {
-      var clients;
+      var expertise;
 
       var scrollPositions = function () {
-        clients = $('#clients');
+        expertise = $('#expertise');
       };
 
       var headerBG = function () {
         var windowTop = $(window).scrollTop();
-        if (windowTop > clients.offset().top || clients.offset().bottom) {
+        if (windowTop > expertise.offset().top - 200 || expertise.offset().bottom) {
           headerContainer.css({'background-color':'#0ea2dc'});
+        } else if (windowTop < 1) {
+          headerContainer.css({'background-color':''});
         } else {
           headerContainer.css({'background-color':'#ed4f7e'});
         }

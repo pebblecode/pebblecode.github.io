@@ -1,6 +1,6 @@
 ---
 layout: home
-colour: pink
+colour:
 title: Agile Development, Design Thinking and Rapid Prototyping
 permalink: /
 

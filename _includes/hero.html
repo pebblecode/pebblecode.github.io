@@ -1,5 +1,5 @@
 {% if page.layout == 'home' %}
-  <section class="hero-block block-clear">
+  <section class="hero-block video-block">
 {% else %}
   <section class="hero-block slash-shadow block-{{ page.hero-translucancy }} {{ page.colour }}-bg slash-{{ page.hero-slash-angle }}">
 {% endif %}
@@ -15,8 +15,9 @@
     {% if page.hero-btn-text %}
       <a href="{{page.hero-btn-url}}" class="btn btn-light btn-arrow btn-lrg btn-center">{{page.hero-btn-text}}</a>
     {% endif %}
-    {% if page.hero-play-btn %}
-      <button id="fs-video" class="hero-play-btn btn-play btn-block btn-circle white-bg">{{page.hero-play-btn}}</button>
-    {% endif %}
   </div>
+  {% if page.layout == 'home' %}
+    <button id="fs-video" class="video-play-btn btn-play btn-block btn-circle white-bg">{{page.hero-play-btn}}</button>
+    <video class="video" id="officespace" preload src="https://s3-eu-west-1.amazonaws.com/pebblecodecom/officeloop-bw.mp4" autoplay loop></video>
+  {% endif %}
 </section>

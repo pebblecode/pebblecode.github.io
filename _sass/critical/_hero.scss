@@ -34,14 +34,3 @@
   color: rgba(white, 0.7);
   font-size: $zeta - 2px;
 }
-
-.hero-play-btn {
-  position: absolute;
-  left: 50%;
-  bottom: -110px;
-  transform: translateX(-50%);
-
-  &:hover {
-    transform: translateX(-50%) scale(1.1);
-  }
-}
