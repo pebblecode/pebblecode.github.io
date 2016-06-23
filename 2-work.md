@@ -32,10 +32,10 @@ block1-project1-summary: An innovative project for Effective delivery of SMSC, i
 block1-project1-url:
 
 #Project 2
-block1-project2-img: /adon-thumb.jpg
-block1-project2-logo: adon-logo
-block1-project2-title: High Frequency Audio Tagging
-block1-project2-summary: A high frequency audio project to connect broadcast media with consumers. Winner of InnovateUK award.
+block1-project2-img: /bede-thumb.jpg
+block1-project2-logo: bede-logo
+block1-project2-title: Disrupting the gaming industry
+block1-project2-summary: A new player in the gaming platform market handling massive load and player stakes.
 block1-project2-url:
 
 
@@ -49,7 +49,7 @@ block2-project1-img: /bybox-thumb.jpg
 block2-project1-logo: bybox-logo
 block2-project1-title: IoT Locker product
 block2-project1-summary: An innovative IoT Bluetooth Low Energy product that moves logic into smartphones to reduce costs and open new markets.
-block2-project1-url:
+block2-project1-url: bybox
 
 #Project 2
 block2-project2-img: /bede-thumb.jpg
