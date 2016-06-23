@@ -1,0 +1,48 @@
+//===============================================================================
+// HUBSPOT COMPONENTS
+//===============================================================================
+.contact .hbspt-form {
+  margin-top: 20px;
+
+  label {
+    color: $white;
+    font-family: $brandon;
+    font-size: $eta;
+    font-weight: $font-regular !important;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .hs-error-msgs {
+    opacity: .7;
+  }
+
+  .hs-form-required {
+    color: $pink;
+    margin-left: 2px;
+  }
+
+  input[type="text"],
+  input[type="email"] {
+    color: rgba(white, 0.9);
+    border: 3px solid rgba(white, 0.2);
+    background-color: transparent;
+    padding: 8px 8px 4px 8px;
+    width: 100%;
+    transition: border-color .2s;
+    border-radius: 4px;
+    margin-bottom: 8px;
+
+    &:focus { border-color: rgba(white, 0.5); }
+  }
+
+  input[type="submit"] {
+    @extend .btn, .btn-light, .btn-lrg;
+
+    margin-top: 8px;
+  }
+
+  .submitted-message {
+    margin-top: 45px;
+    color: $white;
+  }
+}
