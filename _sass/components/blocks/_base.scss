@@ -153,13 +153,13 @@
     }
 
     &::before {
-      content: "“";
+      content: "\201C";
       top: -30px;
       left: -30px;
     }
 
     &::after {
-      content: "”";
+      content: "\201D";
       bottom: -130px;
       right: -30px;
     }

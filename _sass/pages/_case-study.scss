@@ -14,8 +14,7 @@
     width: 60px;
     height: 110%;
     transform: translateX(-50%);
-    background-color: darken($blue, 10);
-    border: 6px solid darken($blue, 13);
+    border: 6px solid rgba(black, 0.15);
     box-shadow: $box-shadow;
 
     @media screen and ( max-width: $medium ) {
@@ -23,6 +22,30 @@
       left: 15px;
       width: 50px;
     }
+  }
+
+  &.pink::before {
+    background-color: shade($pink, 15%);
+  }
+
+  &.blue::before {
+    background-color: shade($blue, 15%);
+  }
+
+  &.aqua::before {
+    background-color: shade($aqua, 15%);
+  }
+
+  &.purple::before {
+    background-color: shade($purple, 15%);
+  }
+
+  &.green::before {
+    background-color: shade($green, 15%);
+  }
+
+  &.orange::before {
+    background-color: shade($orange, 15%);
   }
 }
 
@@ -69,7 +92,6 @@
   top: -15px;
   right: -120px;
   position: absolute;
-  background-color: $blue;
   display: table;
   width: 80px;
   height: 80px;
@@ -79,8 +101,7 @@
   font-weight: $font-bold;
   font-size: $alpha;
   line-height: 1;
-  background-color: $blue;
-  border: 6px solid darken($blue, 5);
+  border: 6px solid rgba(black, 0.1);
   box-shadow: $box-shadow;
   text-align: center;
 

@@ -25,17 +25,6 @@
     $( 'body' ).addClass('click-device');
   }
 
-  // Tabs
-  var tabHeadItem = $('.tab-head-item');
-  var tabContent = $('.tab-content');
-  tabHeadItem.click( function() {
-    $(this).siblings().removeClass('active');
-    $(this).addClass('active');
-    var tabID = $(this).data('tab-id');
-    $('#' + tabID).siblings('.tab-content').removeClass('active');
-    $('#' + tabID).addClass('active');
-  });
-
   // Smooth Scrolling for Internal Links
   $('a[href*=#]:not([href=#])').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
@@ -52,32 +41,5 @@
 
   // Console advert
   console.log('%cHey! Love the console? Then check out our careers page.','font-family: "brandon-grotesque","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;font-weight: 900;font-style: italic;text-transform: uppercase;letter-spacing: -1px;text-shadow: 3px 4px 0 rgba(0,0,0,0.1);font-size:42px;color:#ed4f7e;');
-
-  // loop the video
-  var video = document.getElementById('officespace');
-  if (video) {
-    video.addEventListener('ended', function(e) {
-      this.play();
-    });
-  }
-
-  var videoPlay = document.getElementById('fs-video');
-  if (videoPlay) {
-    var $videoContainer = $('#fs-video-container');
-    var videoClose = $videoContainer.find('.close')[0];
-
-    videoClose.addEventListener('click', function(e) {
-      $videoContainer.fadeOut(350, function() {
-        $videoContainer.find('video')[0].pause();
-      });
-    });
-
-    videoPlay.addEventListener('click', function(e) {
-      $('#fs-video-container').fadeIn(350, function() {
-        $(this).css('display', 'flex');
-        $videoContainer.find('video')[0].play();
-      });
-    });
-  }
 
 }()); // end 'use strict'

@@ -6,7 +6,9 @@
 
     {% include hero.html %}
 
-    {% include photo.html url="/img/features/lunch.jpg" %}
+    <section class="photo-block">
+      <div class="photo" style="background-image: url(/img/features/{{ page.photo1-url }})"></div>
+    </section>
 
     <section class="hero-block slash-shadow slash-top slash-right"></section>
 
@@ -53,7 +55,9 @@
 
     <section class="hero-block slash-shadow slash-right blue-bg"></section>
 
-    {% include photo.html url="/img/features/hardware.jpg" %}
+    <section class="photo-block">
+      <div class="photo" style="background-image: url(/img/features/{{ page.photo2-url }})"></div>
+    </section>
 
     {% include recruitee.html %}
 

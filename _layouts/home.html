@@ -100,6 +100,33 @@
       scrollPositions();
       headerBG();
     }
+
+    // Video - loop the video
+    var video = document.getElementById('officespace');
+    if (video) {
+      video.addEventListener('ended', function(e) {
+        this.play();
+      });
+    }
+
+    var videoPlay = document.getElementById('fs-video');
+    if (videoPlay) {
+      var $videoContainer = $('#fs-video-container');
+      var videoClose = $videoContainer.find('.close')[0];
+
+      videoClose.addEventListener('click', function(e) {
+        $videoContainer.fadeOut(350, function() {
+          $videoContainer.find('video')[0].pause();
+        });
+      });
+
+      videoPlay.addEventListener('click', function(e) {
+        $('#fs-video-container').fadeIn(350, function() {
+          $(this).css('display', 'flex');
+          $videoContainer.find('video')[0].play();
+        });
+      });
+    }
     </script>
     <div id="fs-video-container">
       <div class="close">close</div>

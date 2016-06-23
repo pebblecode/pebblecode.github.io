@@ -13,7 +13,8 @@ hero-subtitle: Since inception, pebble {code} has strived to create an environme
 hero-btn-text: We are hiring!
 hero-btn-url: "#careers-list"
 
-# ------- Photo -------- #
+## ------- Photo 1 -------- ##
+photo1-url: lunch.jpg
 
 ## ------ Block 1 ------ ##
 block1-title: Delivering Awesome
@@ -35,5 +36,14 @@ block2-title: Awesome Benefits
 block2-summary:
 - "<p class='delta'>Everyone in the company benefits from 10% time to work on what they are passionate about, have additional days off for volunteering, is encouraged to go to events and conferences and is empowered to help make pebble a great place to work.</p>"
 - "<p class='delta'>We’re always up for exploring new technologies, whether it be software or hardware through regular internal hack days. We embrace a start up culture and are light on management layers, favouring team responsibility and autonomy.</p>"
+
+# ------- Benefits -------- #
+
+## ------- Photo 2 -------- ##
+photo2-url: hardware.jpg
+
+# ------- Recruitee -------- #
+
+# ------- Related Blog Posts -------- #
 
 ---

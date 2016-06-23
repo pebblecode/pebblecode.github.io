@@ -6,7 +6,9 @@
 
     {% include hero.html %}
 
-    {% include photo.html url="/img/features/iot.jpg" %}
+    <section class="photo-block">
+      <div class="photo" style="background-image: url(/img/features/{{ page.photo1-url }})"></div>
+    </section>
 
     <section class="feature-block block grey-bg slash-shadow slash-top">
       <div class="block-inner block-inner-right grid">
@@ -34,7 +36,9 @@
       </div>
     </section>
 
-    {% include photo.html url="/img/features/hackday.jpg" %}
+    <section class="photo-block">
+      <div class="photo" style="background-image: url(/img/features/{{ page.photo2-url }})"></div>
+    </section>
 
     <section id="awards" class="feature-block block block-light slash-shadow slash-top pink-bg">
       <div class="block-inner block-inner-right grid">
@@ -64,7 +68,9 @@
       </div>
     </section>
 
-    {% include photo.html url="/img/features/couch-2.jpg" %}
+    <section class="photo-block">
+      <div class="photo" style="background-image: url(/img/features/{{ page.photo3-url }})"></div>
+    </section>
 
     <section id="team" class="team-block block blue-bg slash-shadow slash-top slash-right">
       <div class="block blue-bg slash-shadow block-light">
@@ -118,7 +124,9 @@
       </div>
     </section>
 
-    {% include photo.html url="/img/features/pebble.jpg" %}
+    <section class="photo-block">
+      <div class="photo" style="background-image: url(/img/features/{{ page.photo4-url }})"></div>
+    </section>
 
     <section class="action-block intro-block block slash-shadow slash-top slash-right">
       <div class="block-inner grid">

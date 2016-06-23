@@ -42,7 +42,7 @@ expertise-three-illustration: microscope.svg
 
 # ------- Photo -------- #
 
-## ------ Product ------ ##
+## ------ Actionable CTA ------ ##
 action-illustration: people.png
 action-title: Hack Days
 action-summary: We run a monthly introduction to Digital Innovation workshop at pebble HQ. This is a practical workshop on techniques that can make your organisation more innovative.

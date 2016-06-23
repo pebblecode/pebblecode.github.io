@@ -11,7 +11,10 @@ hero-title: Innovation in our DNA
 hero-subtitle:
 hero-slash-angle: right
 
-# ------- Photo -------- #
+
+## ------- Photo 1 -------- ##
+photo1-url: iot.jpg
+
 
 ## ------ Block 1 ------ ##
 block1-title: Who we are
@@ -30,7 +33,10 @@ block2-summary:
 - "<p class='epsilon'>Our culture allows us to help clients take new digital products to market, revolutionise existing business processes and find innovation in even the dustiest of drawers.</p>"
 block2-illustration: rocket.svg
 
-# ------- Photo -------- #
+
+## ------- Photo 2 -------- ##
+photo2-url: hackday.jpg
+
 
 ## ------ Block 3 (Pink) ------ ##
 block3-title: Award Winning Innovation
@@ -49,7 +55,10 @@ block4-illustration: bulb.svg
 block4-btn-text: Learn more
 block4-btn-url: /work
 
-# ------- Photo -------- #
+
+## ------- Photo 3 -------- ##
+photo3-url: couch-2.jpg
+
 
 ## ------ Leadership Team ------ ##
 team-title: Leadership Team
@@ -90,7 +99,10 @@ person5-summary:
 - "<p class='card-excerpt'>Graduate of Trinity College Cambridge, Barrister (Gray’s Inn), Member of the Bar Council of England and Wales, City Fellow of Hughes Hall Cambridge University.</p>"
 - "<p class='card-excerpt'>Bike nut.</p>"
 
-# ------- Photo -------- #
+
+## ------- Photo 4 -------- ##
+photo4-url: pebble.jpg
+
 
 ## ------ Product ------ ##
 action-illustration: people.svg
