@@ -116,11 +116,20 @@
 }
 
 .block blockquote {
+  text-align: center;
+  color: $ink;
   border-left: none;
-  color: white;
   position: relative;
-  padding: 70px 0 0;
+  padding: 70px $gutter 0;
   margin-bottom: 0;
+
+  &.block-light {
+    color: white;
+
+    &::before {
+      background-color: rgba(white, 0.2);
+    }
+  }
 
   &::before {
     @include pseudo;
@@ -130,7 +139,7 @@
     width: 80px;
     height: 10px;
     border-radius: 5px;
-    background-color: rgba(white, 0.2);
+    background-color: rgba($ink, 0.2);
   }
 
   .quote {
@@ -167,10 +176,11 @@
 
   .quote-author {
     margin-top: 40px;
-    color: rgba(white, 0.7);
+    opacity: 0.7;
 
     @media screen and ( max-width: $medium ) {
       margin: 20px auto 0;
+      font-size: $delta;
     }
   }
 }

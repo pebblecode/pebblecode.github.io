@@ -7,7 +7,7 @@
 }
 
 .gbl-head-inner {
-  padding: 30px $gutter * 2 20px;
+  padding: 33px $gutter * 2 17px;
 
   @media screen and ( max-width: $medium ) {
     padding: 20px 0 15px;
@@ -25,8 +25,8 @@
 }
 
 .gbl-head-nav {
-  top: 0;
   position: absolute;
+  top: 37px;
   right: $gutter * 2;
 
   @media screen and ( max-width: $medium ) {
@@ -42,7 +42,7 @@
   color: white;
   display: block;
   float: left;
-  margin: 32px 0 18px $gutter * 2;
+  margin-left: $gutter * 2;
   border: none;
   color: rgba(white, 0.5);
 

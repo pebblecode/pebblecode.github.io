@@ -10,14 +10,20 @@
       <div class="photo" style="background-image: url(/img/features/{{ page.photo1-url }})"></div>
     </section>
 
-    <section class="intro-block block slash-shadow slash-top slash-right">
-      <div class="block-inner grid">
-        <h2>{{ page.problem-title }}</h2>
-        <p>{{ page.problem-summary }}</p>
+    <section class="feature-block block slash-shadow slash-top slash-right grey-bg">
+      <div class="block-inner block-inner-right grid">
+        <div class="col-1-2">
+          <img src="/img/illustrations/{{ page.results-illustration }}" alt="">
+        </div>
+        <div class="col-1-2">
+          <h2>{{ page.problem-title }}</h2>
+          <p class="delta">{{ page.problem-summary-lrg }}</p>
+          <p class="epsilon">{{ page.problem-summary }}</p>
+        </div>
       </div>
     </section>
 
-    <section class="process-block block grey-bg slash-shadow">
+    <section class="process-block block slash-shadow">
       <div class="block-inner grid">
         <h2 class="text-center">{{ page.method-title }}</h2>
         <ul class="{{ page.colour }} method-list">
@@ -37,11 +43,17 @@
             <p>{{ page.method3-summary }}</p>
           </li>
         </ul>
+        {% if page.quote1 %}
+        <blockquote>
+          <p class="quote">{{ page.quote1 }}</p>
+          <p class="quote-author">{{ page.quote1-author }}</p>
+        </blockquote>
+        {% endif %}
       </div>
     </section>
 
     <section id="results" class="feature-block block ink-bg block-light">
-      <div class="block-inner block-inner-right grid">
+      <div class="block-inner grid">
         <div class="col-1-2">
           <img src="/img/illustrations/{{ page.results-illustration }}" alt="">
         </div>
@@ -61,10 +73,12 @@
       <div class="block-inner grid">
         <h2>{{ page.future-title }}</h2>
         <p>{{ page.future-summary }}</p>
-        <blockquote>
-          <p class="quote">{{ page.quote }}</p>
-          <p class="quote-author">{{ page.quote-author }}</p>
+        {% if page.quote2 %}
+        <blockquote class="block-light">
+          <p class="quote">{{ page.quote2 }}</p>
+          <p class="quote-author">{{ page.quote2-author }}</p>
         </blockquote>
+        {% endif %}
       </div>
     </section>
     <section class="ink-dark5-bg slash-shadow"></section>

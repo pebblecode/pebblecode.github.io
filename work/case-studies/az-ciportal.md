@@ -1,7 +1,7 @@
 ---
 layout: case-study
-title: Astrazeneca - Competitor Intelligence
-client: Astrazeneca
+title: AstraZeneca - Competitor Intelligence
+client: AstraZeneca
 permalink: /work/case-studies/az-ciportal/
 colour: blue
 
@@ -10,6 +10,7 @@ colour: blue
 hero-title: Competitive Intelligence
 hero-subtitle: How can we radically improve competitive analysis to efficiently understand and report financial and clinical drug information?
 hero-logo: az
+hero-angle:
 
 
 ## ------- Photo 1 -------- ##
@@ -18,7 +19,8 @@ photo1-url: stickies.jpg
 
 ## ------ Problem ------ ##
 problem-title: The Problem
-problem-summary: Business analysts at AstraZeneca (AZ) regularly research and report on their competitors in order to help leaders understand which programs and product lines to prioritise. Too much time is spent gathering relevant data across multiple sources, and that information is already outdated by the time leaders receive it.
+problem-summary-lrg: Business analysts at AstraZeneca (AZ) regularly research and report on their competitors in order to help leaders understand which programs and product lines to prioritise.
+problem-summary: Too much time is spent gathering relevant data across multiple sources, and that information is already outdated by the time leaders receive it.
 
 
 ## ------ Method ------ ##
@@ -36,6 +38,10 @@ method2-summary: We rapidly produced lo- and hi-fi prototypes with the findings 
 method3-title: Development of a fast, time-saving app
 method3-summary: Since multiple data sources are used by the analysts, pebble developers worked with AZ developers to create a highly intuitive app that consolidates multiple sources into one interface.
 
+# Quote
+quote1:
+quote1-author:
+
 
 ## ------ The Results ------ ##
 results-title: The Results
@@ -50,8 +56,8 @@ future-title: The Future
 future-summary: Efficiency from start to finish - that means timely decisions and more value for shareholders.
 
 # Quote
-quote: Working with pebble {code} has been a pleasurable, productive and successful collaboration. Innovative, flexible, creative and responsive are all words I would use to describe pebble {code}. I look forward to hopefully being able to working with them again.
-quote-author: Ed Johnson, Senior Business Intelligence Architect, AstraZeneca
+quote2: Working with pebble {code} has been a pleasurable, productive and successful collaboration. Innovative, flexible, creative and responsive are all words I would use to describe pebble {code}. I look forward to hopefully being able to working with them again.
+quote2-author: Ed Johnson, Senior Business Intelligence Architect, AstraZeneca
 
 
 ## ------- Photo 2 -------- ##
