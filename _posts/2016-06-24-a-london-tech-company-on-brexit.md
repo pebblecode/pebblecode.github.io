@@ -9,11 +9,11 @@ A sombre office resounds disbelief and concern for the London Technology Scene.
 
 ## A diverse team
 
-Like many businesses in London pebble {code} (a Digital Innovation consultancy) is made up of a diverse group of individuals. We have a number of EU Nationals working at pebble {code}. Many of our team live with EU Nationals and as Londoners this diversity brings colour to our lives and skill to the office we work in. London is an international city. We feel part of Europe and rub shoulders with nationalities from all over the world. It feeds our capital, our creativity and our energy. 
+Like many businesses in London pebble {code} (a Digital Innovation consultancy) is made up of a diverse group of individuals. We have a number of EU Nationals working at pebble {code}. Many of our team live with EU Nationals and as Londoners this diversity brings colour to our lives and skill to the office we work in. London is the vibrant International City I've lived in. We feel part of Europe and rub shoulders with nationalities from all over the world. It feeds our capital, our creativity and our energy. 
 
 ## London The European Technology Hub
 
-London has been growing steadily as a technology hub for a number of reasons. The City of London provides the finance needed for startups to get off the ground and for technology innovation to happen. The UK Government has a good number of programmes to support this too including [InnovateUK][1] to [Digital Catapult][2]. As a major European capital London can draw on talent from within European countries. As European Citizens have the right to work in any other European Country it is easy to hire talent. These factors combine to make London the European Technology Hub where funding, culture and skill collide. After Brexit Berlin looks even more worthy rival.
+London has been growing steadily as a technology hub for a number of reasons. The City of London provides the finance needed for startups to get off the ground and for technology innovation to happen. The UK Government has a good number of programmes to support this too including [InnovateUK][1] and [Digital Catapult][2]. As a major European capital London can draw on talent from within European countries. As European Citizens have the right to work in any other European Country it is easy to hire talent. These factors combine to make London the European Technology Hub where funding, culture and skill collide. After Brexit Berlin looks even more worthy rival.
 
 ## Poorer for less investment
 
