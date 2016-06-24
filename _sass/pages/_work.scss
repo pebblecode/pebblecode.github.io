@@ -1,3 +1,10 @@
+
+@media screen and ( max-width: $medium ) {
+  .work .btn:not(:first-of-type) {
+    margin-top: 10px;
+  }
+}
+
 .process-hero.block {
   padding-bottom: 0;
 

@@ -7,18 +7,6 @@
     var marker;
     var map;
 
-    $('#london-btn').click( function() {
-      var latLng = new google.maps.LatLng(51.485672, -0.118554);
-      marker.setPosition(latLng);
-      map.panTo(latLng);
-    });
-
-    $('#sofia-btn').click(function(){
-      var latLng = new google.maps.LatLng(42.6742392, 23.3543577);
-      marker.setPosition(latLng);
-      map.panTo(latLng);
-    });
-
     // Initialise google maps
     function initialize() {
       initmap("map", 51.485672, -0.118554);

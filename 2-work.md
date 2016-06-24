@@ -11,7 +11,10 @@ hero-title: What we've done
 hero-subtitle: We help businesses propel their digital capability and enable innovation.
 hero-slash-angle: right
 
-# ------- Photo -------- #
+
+## ------- Photo 1 -------- ##
+photo1-url: hackday-2.jpg
+
 
 ## ------ Intro ------ ##
 intro-title: Our Clients
@@ -24,19 +27,20 @@ block1-title: Start up
 block1-subtitle: Helping young companies reach their true potential, fast.
 
 # Project 1
-block1-project1-img: /vfs-thumb.jpg
-block1-project1-logo: vfs-logo
-block1-project1-client: VotesForSchools
-block1-project1-title: Education Platform
-block1-project1-summary: An innovative project for Effective delivery of SMSC, including British values and Prevent. Supports PSHE and Citizenship.
+block1-project1-img: /bede-thumb.jpg
+block1-project1-logo: bede-logo
+block1-project1-client: Bede Gaming
+block1-project1-title: Disrupting the gaming industry
+block1-project1-summary: A new player in the gaming platform market handling massive load and player stakes.
 block1-project1-url:
 
 #Project 2
-block1-project2-img: /bede-thumb.jpg
-block1-project2-logo: bede-logo
-block1-project2-title: Disrupting the gaming industry
-block1-project2-summary: A new player in the gaming platform market handling massive load and player stakes.
-block1-project2-url:
+block1-project2-img: /bybox-thumb.jpg
+block1-project2-logo: bybox-logo
+block1-project2-client: ByBox
+block1-project2-title: IoT Locker product
+block1-project2-summary: An innovative IoT Bluetooth Low Energy product that moves logic into smartphones to reduce costs and open new markets.
+block1-project2-url: bybox
 
 
 ## ------ Block 2 ------ ##
@@ -45,18 +49,20 @@ block2-title: Scale up
 block2-subtitle: Bring a boost of growth to your company through rapid innovation.
 
 # Project 1
-block2-project1-img: /bybox-thumb.jpg
-block2-project1-logo: bybox-logo
-block2-project1-title: IoT Locker product
-block2-project1-summary: An innovative IoT Bluetooth Low Energy product that moves logic into smartphones to reduce costs and open new markets.
-block2-project1-url: bybox
+block2-project1-img: /pwc-thumb.jpg
+block2-project1-logo: pwc-logo
+block2-project1-client: PwC
+block2-project1-title: Future of Consulting
+block2-project1-summary: pebble {code} produced an app in just three weeks, giving PwC clients access to consultants that were previously inaccessible, opening PwC to an enormous market of short-term, smaller clients.
+block2-project1-url: pwc
 
 #Project 2
-block2-project2-img: /bede-thumb.jpg
-block2-project2-logo: bede-logo
-block2-project2-title: Disrupting the gaming industry
-block2-project2-summary: A new player in the gaming platform market handling massive load and player stakes.
-block2-project2-url:
+block2-project2-img: /c2c-thumb.jpg
+block2-project2-logo: express-logo
+block2-project2-client: c2c
+block2-project2-title: City to Coast
+block2-project2-summary: Through our signature rapid prototyping process, we were able to deliver a working software to c2c within weeks that streamlines assessments.
+block2-project2-url: c2c
 
 
 ## ------ Block 3 ------ ##
@@ -67,16 +73,18 @@ block3-subtitle: We help big businesses embrace and compete with digital disrupt
 # Project 1
 block3-project1-img: /az-thumb.jpg
 block3-project1-logo: az-logo
+block3-project1-client: AstraZeneca
 block3-project1-title: Technology Partnership
-block3-project1-summary: A three year strong relationship covering Innovation, Agile Transformation, Business Intelligence and a Global Intranet.
-block3-project1-url:
+block3-project1-summary: A three year strong relationship covering Innovation, Agile Transformation, Business Intelligence and a Global Intranet. pebble {code} aided AstraZeneca in transitioning to an Agile business model, providing them with internal tools.
+block3-project1-url: az-overview
 
 #Project 2
-block3-project2-img: /pearson-thumb.jpg
-block3-project2-logo: pearson-logo
-block3-project2-title: Health and Safety training reimagined
-block3-project2-summary: Reinventing a five day classroom based course to allow learning to happen on the go and realising a 75% cost saving.
-block3-project2-url:
+block3-project2-img: /az-thumb.jpg
+block3-project2-logo: az-logo
+block3-project2-client: AstraZeneca
+block3-project2-title: Competitive Intelligence
+block3-project2-summary: Efficiency from start to finish - that means timely decisions and more value for shareholders.
+block3-project2-url: az-ciportal
 
 
 ## ------ Call to action ------ ##
@@ -85,7 +93,10 @@ cta-subtitle: We help businesses propel their digital capability and enable inno
 cta-btn-text: Why it Works
 cta-btn-url: /why-it-works
 
-# ------- Photo -------- #
+
+## ------- Photo 2 -------- ##
+photo2-url: wshop.jpg
+
 
 # ------- Verticals -------- #
 
