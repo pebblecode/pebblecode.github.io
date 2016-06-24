@@ -9,7 +9,7 @@ A sombre office resounds disbelief and concern for the London Technology Scene.
 
 ## A diverse team
 
-Like many businesses in London pebble {code} (a Digital Innovation consultancy) is made up of a diverse group of individuals. We have a number of EU Nationals working at pebble {code}. Many of our team live with EU Nationals and as Londoners this diversity brings colour to our lives and skill to the office we work in. London is the vibrant International City I've lived in. We feel part of Europe and rub shoulders with nationalities from all over the world. It feeds our capital, our creativity and our energy. 
+Like many businesses in London pebble {code} (a Digital Innovation consultancy) is made up of a diverse group of individuals. We have a number of EU Nationals working at pebble {code}. Many of our team live with EU Nationals and as Londoners this diversity brings colour to our lives and skill to the office we work in. London is the most vibrant International City I've lived in. We feel part of Europe and rub shoulders with nationalities from all over the world. It feeds our capital, our creativity and our energy. 
 
 ## London The European Technology Hub
 
