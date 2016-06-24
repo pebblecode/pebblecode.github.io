@@ -18,11 +18,11 @@ intro: c2c operates an important train line connecting the city of London and th
 
 
 ## ------- Photo 1 -------- ##
-photo1-url: stickies.jpg
+photo1-url: features/team.jpg
 
 
 ## ------ Problem ------ ##
-problem-illustration: people-2.png
+problem-illustration: uxdesign.png
 problem-title: The Problem
 problem-summary-lrg: c2c positioned workers around their platforms analysing problems as they arose.
 problem-summary: This pen-and-paper method required an extra step to relay feedback to engineers, delaying repairs and leaving everyone unsatisfied.
@@ -50,10 +50,10 @@ quote1-author:
 
 ## ------ The Results ------ ##
 results-title: The Results
-results-illustration: chart.svg
+results-illustration: design.png
 results-summary-lrg: Through our signature rapid prototyping process, we were able to deliver a working software to c2c within weeks that streamlines assessments.
 results-summary: Virtually cutting the process time in half. The app’s automated reports highlight problem areas for more efficient resource allocation.
-results-screenshot: az-ciportal/screenshot-1.png
+results-screenshot: c2c/screenshot.png
 
 
 ## ------ The Future ------ ##
@@ -66,7 +66,7 @@ quote2-author:
 
 
 ## ------- Photo 2 -------- ##
-photo2-url: stickies.jpg
+photo2-url: features/stickies.jpg
 
 
 ## ------ Actionable CTA ------ ##
