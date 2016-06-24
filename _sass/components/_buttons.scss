@@ -196,7 +196,7 @@
   &:hover {
     transform: scale(1.03);
 
-    &:not(.hero-play-btn):hover::after {
+    &:not(.video-play-btn):hover::after {
       opacity: 1;
       @include sprite($play-pink);
     }
@@ -218,7 +218,7 @@
   &.video-play-btn {
     opacity: 1;
   }
-  
+
   &::after {
     @include pseudo;
     top: 50%;
