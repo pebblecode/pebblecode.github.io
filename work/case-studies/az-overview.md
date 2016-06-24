@@ -7,18 +7,18 @@ colour: purple
 
 
 ## ------ Hero ------ ##
-hero-title: Streamlining A to Z
+hero-title: Streamlining <br>A to Z
 hero-subtitle: How do you transform and unify internal communication for one of the world’s largest pharmaceutical companies?
 hero-logo: az
 
 
 ## ------- Photo 1 -------- ##
-photo1-url: stickies.jpg
+photo1-url: features/stickies.jpg
 
 
 ## ------ Problem ------ ##
-problem-illustration: people-2.png
 problem-title: The Problem
+problem-illustration: people-3.png
 problem-summary-lrg: Being such a large enterprise, AstraZeneca (AZ) is always changing – size, methods, systems.
 problem-summary: Creating inconsistencies in communication and slowing down the business process, all at the expense of quality. Their outdated waterfall method needed a push into the 21st century.
 
@@ -45,10 +45,10 @@ quote1-author: Kris Nayak, Head of Innovation, AstraZeneca
 
 ## ------ The Results ------ ##
 results-title: The Results
-results-illustration: chart.svg
+results-illustration: agile.png
 results-summary-lrg: pebble {code} aided AstraZeneca in transitioning to an Agile business model, providing them with internal tools.
 results-summary: These include a Competitive Intelligence Portal, a Global Search Engine, an Adaptive Delivery Framework Portal, a global intranet, a Data & Metrics app, Development Strategy, and other custom mobile apps. <br><br>We unified the contents of a global corporation into a single digital destination and implemented resources for continued Agile growth - at 50% of the cost of most off-the-shelf tools.
-results-screenshot: az-ciportal/screenshot-1.png
+results-screenshot: az-ciportal/screenshot.png
 
 
 ## ------ The Future ------ ##
@@ -61,7 +61,7 @@ quote2-author: Nick Brown, CTO office, AstraZeneca
 
 
 ## ------- Photo 2 -------- ##
-photo2-url: stickies.jpg
+photo2-url: features/hackday.jpg
 
 
 ## ------ Actionable CTA ------ ##
