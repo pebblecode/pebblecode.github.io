@@ -13,7 +13,7 @@ Like many businesses in London pebble {code} (a Digital Innovation consultancy) 
 
 ## London The European Technology Hub
 
-London has been growing steadily as a technology hub for a number of reasons. The City of London provides the finance needed for startups to get off the ground and for technology innovation to happen. The UK Government has a good number of programmes to support this too including [InnovateUK][1] and [Digital Catapult][2]. As a major European capital London can draw on talent from within European countries. As European Citizens have the right to work in any other European Country it is easy to hire talent. These factors combine to make London the European Technology Hub where funding, culture and skill collide. After Brexit Berlin looks even more worthy rival though.
+London has been growing steadily as a technology hub for a number of reasons. The City of London provides the finance needed for startups to get off the ground and for technology innovation to happen. The UK Government has a good number of programmes to support this too including [InnovateUK][1] and [Digital Catapult][2]. As a major European capital London can draw on talent from within European countries. As European Citizens have the right to work in any other European Country it is easy to hire talent. These factors combine to make London the European Technology Hub where funding, culture and skill collide. After Brexit Berlin looks an even more worthy rival.
 
 ## Poorer for less investment
 
