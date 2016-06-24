@@ -22,7 +22,8 @@
   }
 
   input[type="text"],
-  input[type="email"] {
+  input[type="email"],
+  textarea {
     color: rgba(white, 0.9);
     border: 3px solid rgba(white, 0.2);
     background-color: transparent;
