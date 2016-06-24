@@ -22,6 +22,7 @@ photo1-url: stickies.jpg
 
 
 ## ------ Problem ------ ##
+problem-illustration: people-2.png
 problem-title: The Problem
 problem-summary-lrg: c2c positioned workers around their platforms analysing problems as they arose.
 problem-summary: This pen-and-paper method required an extra step to relay feedback to engineers, delaying repairs and leaving everyone unsatisfied.

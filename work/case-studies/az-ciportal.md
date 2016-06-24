@@ -23,6 +23,7 @@ photo1-url: stickies.jpg
 
 
 ## ------ Problem ------ ##
+problem-illustration: people-2.png
 problem-title: The Problem
 problem-summary-lrg: Business analysts at AstraZeneca (AZ) regularly research and report on their competitors in order to help leaders understand which programs and product lines to prioritise.
 problem-summary: Too much time is spent gathering relevant data across multiple sources, and that information is already outdated by the time leaders receive it.

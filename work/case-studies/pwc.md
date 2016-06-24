@@ -21,6 +21,7 @@ photo1-url: stickies.jpg
 
 
 ## ------ Problem ------ ##
+problem-illustration: people-2.png
 problem-title: The Problem
 problem-summary-lrg: Highly-skilled tax consultants were not being utilized fully.
 problem-summary: While a small number work with large firms at any given time, many consultants were left ‘on the bench’ waiting for a new project.<br><br> PwC loses money paying expensive consultants to wait.

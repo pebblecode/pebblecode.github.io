@@ -17,6 +17,7 @@ photo1-url: stickies.jpg
 
 
 ## ------ Problem ------ ##
+problem-illustration: people-2.png
 problem-title: The Problem
 problem-summary-lrg: Being such a large enterprise, AstraZeneca (AZ) is always changing – size, methods, systems.
 problem-summary: Creating inconsistencies in communication and slowing down the business process, all at the expense of quality. Their outdated waterfall method needed a push into the 21st century.

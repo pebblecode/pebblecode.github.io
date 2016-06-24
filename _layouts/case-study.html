@@ -18,7 +18,7 @@
     {% endif %}
 
     <section class="photo-block">
-      <div class="photo" style="background-image: url(/img/features/{{ page.photo1-url }})"></div>
+      <div class="photo" style="background-image: url(/img/{{ page.photo1-url }})"></div>
     </section>
 
     {% if page.intro %}
@@ -28,7 +28,7 @@
     {% endif %}
       <div class="block-inner block-inner-right grid">
         <div class="col-1-2">
-          <img src="/img/illustrations/{{ page.results-illustration }}" alt="">
+          <img src="/img/illustrations/{{ page.problem-illustration }}" alt="">
         </div>
         <div class="col-1-2">
           <h2>{{ page.problem-title }}</h2>
@@ -81,7 +81,7 @@
     </section>
 
     <aside class="screens-block block ink-bg">
-      <img src="/img/case-studies/{{ page.results-screenshot }}" alt="">
+      <img class="lazyload" src="/img/case-studies/{{ page.results-screenshot }}" alt="">
     </aside>
 
     <section class="intro-block block ink-dark5-bg block-light slash-shadow slash-right slash-top">
@@ -99,7 +99,7 @@
     <section class="ink-dark5-bg slash-shadow"></section>
 
     <section class="photo-block">
-      <div class="photo" style="background-image: url(/img/features/{{ page.photo2-url }})"></div>
+      <div class="photo" style="background-image: url(/img/{{ page.photo2-url }})"></div>
     </section>
 
     <section class="action-block intro-block block slash-shadow slash-top slash-right">
@@ -111,7 +111,7 @@
       </div>
     </section>
 
-    {% include footer.html %}
+    {% include footer.html lazyload=true %}
 
     <script>
     // Change header colour
