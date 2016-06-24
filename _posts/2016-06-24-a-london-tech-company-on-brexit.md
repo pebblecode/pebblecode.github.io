@@ -13,7 +13,7 @@ Like many businesses in London pebble {code} (a Digital Innovation consultancy) 
 
 ## London The European Technology Hub
 
-London has been growing steadily as a technology hub for a number of reasons. The City of London provides the finance needed for startups to get off the ground and for technology innovation to happen. The UK Government has a good number of programmes to support this too including [InnovateUK][1] and [Digital Catapult][2]. As a major European capital London can draw on talent from within European countries. As European Citizens have the right to work in any other European Country it is easy to hire talent. These factors combine to make London the European Technology Hub where funding, culture and skill collide. After Brexit Berlin looks even more worthy rival.
+London has been growing steadily as a technology hub for a number of reasons. The City of London provides the finance needed for startups to get off the ground and for technology innovation to happen. The UK Government has a good number of programmes to support this too including [InnovateUK][1] and [Digital Catapult][2]. As a major European capital London can draw on talent from within European countries. As European Citizens have the right to work in any other European Country it is easy to hire talent. These factors combine to make London the European Technology Hub where funding, culture and skill collide. After Brexit Berlin looks even more worthy rival though.
 
 ## Poorer for less investment
 
@@ -29,7 +29,7 @@ Right now there are a number of European Laws that cover startups in the UK. The
 
 ## Conclusion
 
-The atmosphere around the office today has been one of deep sadness. As a Technology Company in London we feel very much part of the European economy and have served clients from many of the European nations. Whilst we have valid commercial concerns about what Brexit means for our business the sadness in the office is as much cultural. Brilliant technology comes out of London as we are able to attract great European talent and feed in the energy of a diverse, cosmopolitan capital.
+The atmosphere around the office today has been one of deep sadness. As a Technology Company in London we feel very much part of the European economy and have served clients from many of the European nations. Whilst we have valid commercial concerns about what Brexit means for our business the sadness in the office is as much cultural. Brilliant technology comes out of London as we are able to attract great European talent and combine with the energy of a diverse, cosmopolitan capital.
 
 With the vote to leave the EU we have become poorer on a number of levels. 
 
