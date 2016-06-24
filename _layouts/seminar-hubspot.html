@@ -28,16 +28,9 @@ layout: seminar-hubspot
           <p>{{paragraph}}</p>
         {% endfor %}
 
-        <div class="eventbright-register">
+<!--         <div class="eventbright-register">
           <a href="{{page.eventbright-url}}" class="btn btn-lrg">Register</a>
-        </div>
-
-        <div class="seminar-social-links">
-          <span>Follow us:</span>
-          <a class="linkedin" href="https://www.linkedin.com/company/2512247">linkedIn</a>
-          <a class="twitter" href="https://twitter.com/pebblecode">twitter</a>
-          <a class="vimeo" href="https://vimeo.com/pebblecode">vimeo</a>
-        </div>
+        </div> -->
 
 
         <!--[if lte IE 8]>
@@ -45,11 +38,18 @@ layout: seminar-hubspot
         <![endif]-->
         <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
         <script>
-          hbspt.forms.create({ 
-            portalId: '2277134',
-            formId: 'cfcc1c8e-4218-4c14-8421-2f218438f458'
+          hbspt.forms.create({
+            portalId: '{{page.hubspot-portalid}}',
+            formId: '{{page.hubspot-formid}}'
           });
         </script>
+
+        <div class="seminar-social-links">
+          <span>Follow us:</span>
+          <a class="linkedin" href="https://www.linkedin.com/company/2512247">linkedIn</a>
+          <a class="twitter" href="https://twitter.com/pebblecode">twitter</a>
+          <a class="vimeo" href="https://vimeo.com/pebblecode">vimeo</a>
+        </div>
 
       </article>
 
