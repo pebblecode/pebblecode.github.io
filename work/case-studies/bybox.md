@@ -22,8 +22,8 @@ photo1-url: case-studies/bybox/bybox.jpg
 
 
 ## ------ Problem ------ ##
-problem-illustration: people-2.png
 problem-title: The Problem
+problem-illustration: people-2.png
 problem-summary-lrg: Multi-site workers, such as field engineers, spend more time in between jobs trudging back and forth to the warehouse than fixing problems. Life becomes a delivery waiting game.
 problem-summary: In 2000, ByBox launched an electronic locker bank that allowed users to enter a passcode on a tablet interface on the locker to reach their packages, without having to sign with a delivery man or remember a key. These lockers enabled cheaper overnight deliveries, but were expensive to produce and operate, requiring power and network connectivity.<br><br>More recently, ByBox have turned to emerging wireless technologies and mobile devices in order to streamline the delivery process further and produce cost-effective locker solutions that can be installed anywhere.
 
@@ -54,7 +54,7 @@ results-title: The Results
 results-illustration: sticker.png
 results-summary-lrg: pebble {code} aided ByBox in developing a multi-platform mobile application equipped with a cloud-based admin system.
 results-summary: From concept to real-world implementation by Hewlett Packard Data Centres in just 10 months, Stockonnect allows users to locate all locker locations accessible to them, and provides an interface for users to choose which available doors to unlock.<br><br> The secure, battery-powered locks require no data connection, greatly reducing the costs to manufacture by 90%.
-results-screenshot: bybox/screenshot-1.png
+results-screenshot: bybox/screenshot.png
 
 
 ## ------ The Future ------ ##

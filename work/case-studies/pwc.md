@@ -17,12 +17,12 @@ intro: PricewaterhouseCooper (PwC) is one of the largest consultancies in the wo
 
 
 ## ------- Photo 1 -------- ##
-photo1-url: stickies.jpg
+photo1-url: features/collab.jpg
 
 
 ## ------ Problem ------ ##
-problem-illustration: people-2.png
 problem-title: The Problem
+problem-illustration: chat.png
 problem-summary-lrg: Highly-skilled tax consultants were not being utilized fully.
 problem-summary: While a small number work with large firms at any given time, many consultants were left ‘on the bench’ waiting for a new project.<br><br> PwC loses money paying expensive consultants to wait.
 
@@ -49,10 +49,10 @@ quote1-author:
 
 ## ------ The Results ------ ##
 results-title: The Results
-results-illustration: chart.svg
+results-illustration: meter.svg
 results-summary-lrg: pebble {code} produced an app in just three weeks, giving PwC clients access to consultants that were previously inaccessible, opening PwC to an enormous market of short-term, smaller clients.
 results-summary: The new system allows consultants to be placed smartly, serving clients in their immediate areas rather than needing to first come to a home-base office.
-results-screenshot: az-ciportal/screenshot-1.png
+results-screenshot: pwc/screenshot.png
 
 
 ## ------ The Future ------ ##
@@ -65,7 +65,7 @@ quote2-author: Ollie Phillips, Director, PwC
 
 
 ## ------- Photo 2 -------- ##
-photo2-url: stickies.jpg
+photo2-url: features/ideas.jpg
 
 
 ## ------ Actionable CTA ------ ##
