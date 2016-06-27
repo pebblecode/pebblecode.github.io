@@ -17,7 +17,7 @@ intro: PricewaterhouseCooper (PwC) is one of the largest consultancies in the wo
 
 
 ## ------- Photo 1 -------- ##
-photo1-url: features/collab.jpg
+photo1-url: case-studies/pwc/feature-1.jpg
 
 
 ## ------ Problem ------ ##
@@ -65,7 +65,7 @@ quote2-author: Ollie Phillips, Director, PwC
 
 
 ## ------- Photo 2 -------- ##
-photo2-url: features/ideas.jpg
+photo2-url: case-studies/pwc/feature-2.jpg
 
 
 ## ------ Actionable CTA ------ ##

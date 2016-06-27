@@ -66,7 +66,7 @@ quote2-author:
 
 
 ## ------- Photo 2 -------- ##
-photo2-url: features/stickies.jpg
+photo2-url: case-studies/c2c/feature-1.jpg
 
 
 ## ------ Actionable CTA ------ ##

@@ -13,7 +13,7 @@ hero-logo: az
 
 
 ## ------- Photo 1 -------- ##
-photo1-url: features/stickies.jpg
+photo1-url: case-studies/az-overview/feature-1.jpg
 
 
 ## ------ Problem ------ ##
@@ -61,7 +61,7 @@ quote2-author: Nick Brown, CTO office, AstraZeneca
 
 
 ## ------- Photo 2 -------- ##
-photo2-url: features/hackday.jpg
+photo2-url: case-studies/az-overview/feature-3.jpg
 
 
 ## ------ Actionable CTA ------ ##

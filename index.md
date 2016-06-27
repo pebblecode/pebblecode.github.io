@@ -40,7 +40,10 @@ expertise-three-title: Internet of Things
 expertise-three-summary: We have strong experience of working with internet-enabled hardware including firmware. We have worked with Bluetooth Low Energy, Light Bulbs, Rasperry Pis and Sensors.
 expertise-three-illustration: v2/microscope.svg
 
-# ------- Photo -------- #
+
+## ------- Photo 1 -------- ##
+photo1-url: hackday.jpg
+
 
 ## ------ Actionable CTA ------ ##
 action-illustration: v2/people.svg

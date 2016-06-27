@@ -58,7 +58,9 @@
       </div>
     </section>
 
-    {% include photo.html url="/img/features/hackday.jpg" %}
+    <section class="photo-block">
+      <div class="photo" style="background-image: url(/img/features/{{ page.photo1-url }})"></div>
+    </section>
 
     <section class="action-block intro-block block slash-shadow slash-top">
       <div class="block-inner grid">
@@ -80,7 +82,7 @@
         <source type="video/mp4" src="https://s3-eu-west-1.amazonaws.com/pebblecodecom/549361110.mp4" />
       </video>
     </div>
-    
+
     <script>
     // Header change colour
     var headerContainer = $('.gbl-head');

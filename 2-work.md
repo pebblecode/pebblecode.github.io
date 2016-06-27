@@ -13,7 +13,7 @@ hero-slash-angle: right
 
 
 ## ------- Photo 1 -------- ##
-photo1-url: hackday-2.jpg
+photo1-url: v2/workshop-4.jpg
 
 
 ## ------ Intro ------ ##
@@ -95,7 +95,7 @@ cta-btn-url: why-it-works
 
 
 ## ------- Photo 2 -------- ##
-photo2-url: wshop.jpg
+photo2-url: v2/workshop-3.jpg
 
 
 # ------- Verticals -------- #

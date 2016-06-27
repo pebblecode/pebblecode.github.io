@@ -19,12 +19,12 @@ intro:
 
 
 ## ------- Photo 1 -------- ##
-photo1-url: stickies.jpg
+photo1-url: features/v2/team-2.jpg
 
 
 ## ------ Problem ------ ##
-problem-illustration: v2/workshop.svg
 problem-title: The Problem
+problem-illustration: v2/workshop.svg
 problem-summary-lrg: Business analysts at AstraZeneca (AZ) regularly research and report on their competitors in order to help leaders understand which programs and product lines to prioritise.
 problem-summary: Too much time is spent gathering relevant data across multiple sources, and that information is already outdated by the time leaders receive it.
 
@@ -67,7 +67,7 @@ quote2-author: Ed Johnson, Senior Business Intelligence Architect, AstraZeneca
 
 
 ## ------- Photo 2 -------- ##
-photo2-url: stickies.jpg
+photo2-url: case-studies/az-ciportal/feature-1.jpg
 
 
 ## ------ Actionable CTA ------ ##

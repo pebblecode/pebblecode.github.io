@@ -13,7 +13,7 @@ hero-slash-angle: right
 
 
 ## ------- Photo 1 -------- ##
-photo1-url: iot.jpg
+photo1-url: v2/hardware-3.jpg
 
 
 ## ------ Block 1 ------ ##
@@ -35,7 +35,7 @@ block2-illustration: v2/rocket.svg
 
 
 ## ------- Photo 2 -------- ##
-photo2-url: hackday.jpg
+photo2-url: v2/team-2.jpg
 
 
 ## ------ Block 3 (Pink) ------ ##
