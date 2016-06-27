@@ -57,7 +57,7 @@ results-screenshot: pwc/screenshot.png
 
 ## ------ The Future ------ ##
 future-title: The Future
-future-summary: A more flexible system to acquire consulting not only generates more business, but vastly increases our utilisation.
+future-summary: A more flexible system to acquire consulting not only generates more business, but vastly increases PwC’s utilisation.
 
 # Quote
 quote2: Going through pebble {code}'s rapid prototyping process was totally unlike anything we have tried before, but it was great to be part of! The feedback from stakeholders and customers has been top notch.
