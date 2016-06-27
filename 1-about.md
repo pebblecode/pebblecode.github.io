@@ -22,7 +22,7 @@ block1-summary-lrg: From young digital upstarts we have grown over six years int
 block1-summary:
 - "<p class='epsilon'>We are proud to have helped launch a number of successful start-ups and to have supported global enterprises embrace digital disruption.</p>"
 - "<p class='epsilon'>Along the way our digital products have helped young people to have a national voice, improved safety, cast actors, made TV ads, played bingo and unlocked locker doors.</p>"
-block1-illustration: flasks.svg
+block1-illustration: v2/flasks.svg
 
 
 ## ------ Block 2 ------ ##
@@ -31,7 +31,7 @@ block2-summary-lrg: From inception pebble {code} has championed a love of experi
 block2-summary:
 - "<p class='epsilon'>Our ability to innovate is driven from an open, collaborative culture that promotes autonomy over micro-management and working software over meetings.</p>"
 - "<p class='epsilon'>Our culture allows us to help clients take new digital products to market, revolutionise existing business processes and find innovation in even the dustiest of drawers.</p>"
-block2-illustration: rocket.svg
+block2-illustration: v2/rocket.svg
 
 
 ## ------- Photo 2 -------- ##
@@ -43,7 +43,7 @@ block3-title: Award Winning Innovation
 block3-summary-lrg: By promoting experimentation and exploration our team challenge clients to be brave and think differently.
 block3-summary:
 - "<p class='epsilon'>We have won awards from Blue Chips and InnovateUK as well as patenting technical inventions. Whether we are creating a high-frequency audio tagging product or a musical instrument made from bananas our thirst for innovation is what drives the team and our culture.</p>"
-block3-illustration: trophy.svg
+block3-illustration: v2/trophy.svg
 
 
 ## ------ Block 4 (Pink) ------ ##
@@ -51,7 +51,7 @@ block4-title: Accelerating Digital Innovation
 block4-summary-lrg: By seeding talented technologists into client teams we are able to accelerate both the delivery of digital products and building internal capability.
 block4-summary:
 - "<p class='epsilon'>We are strong advocates of learning by doing and would rather help clients understand Agile by running a project than sitting in a classroom.  We advocate continuous delivery and helping clients to ship digital products as soon as possible.</p>"
-block4-illustration: bulb.svg
+block4-illustration: v2/bulb.svg
 block4-btn-text: Learn more
 block4-btn-url: /work
 
@@ -105,7 +105,7 @@ photo4-url: pebble.jpg
 
 
 ## ------ Product ------ ##
-action-illustration: people.svg
+action-illustration: v2/people.svg
 action-title: Hack Days
 action-summary: We run a monthly introduction to Digital Innovation workshop at pebble HQ. The first step towards creating a culture of technical innovation is removing the fear of failure.
 action-btn-text: Sign Up Now

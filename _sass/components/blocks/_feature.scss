@@ -24,8 +24,8 @@
   }
 
   img {
-    margin: 10px 10%;
-    width: 80%;
+    margin: 10px auto;
+    width: 70%;
 
     @media screen and ( max-width: $medium ) {
       margin: 0 0 40px;

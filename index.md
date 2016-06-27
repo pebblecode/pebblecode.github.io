@@ -28,17 +28,17 @@ expertise-btn-url: /work
 # Expertise One
 expertise-one-title: Cloud
 expertise-one-summary: We are experts in working with cloud technologies and have experience of configuring, automating and managing Amazon Web Services, Azure, Rackspace and even some old school bare metal.
-expertise-one-illustration: cloud.svg
+expertise-one-illustration: v2/clouds.svg
 
 # Expertise Two
 expertise-two-title: Mobility
 expertise-two-summary: We are a mobile by default team and have strong expertise in design and development for mobile. We are excited by progressive web apps and the blurring between native and web.
-expertise-two-illustration: phone.svg
+expertise-two-illustration: v2/design.svg
 
 # Expertise Three
 expertise-three-title: Internet of Things
 expertise-three-summary: We have strong experience of working with internet-enabled hardware including firmware. We have worked with Bluetooth Low Energy, Light Bulbs, Rasperry Pis and Sensors.
-expertise-three-illustration: microscope.svg
+expertise-three-illustration: v2/microscope.svg
 
 # ------- Photo -------- #
 
