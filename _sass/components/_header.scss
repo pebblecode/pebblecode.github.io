@@ -8,6 +8,10 @@
     border-bottom: 1px solid rgba(white, 0.25);
     box-shadow: 0 3px 0 rgba(black, 0.06);
   }
+
+  .home &.active {
+    background-color: $pink;
+  }
 }
 
 .gbl-head-inner {
@@ -23,7 +27,7 @@
   @media screen and ( max-width: $medium ) {
     transition: 0.3s max-height ease-out, 0.3s box-shadow;
 
-    &.active {
+    .active & {
       box-shadow: 0 4px 0 rgba(black, 0.06);
       max-height: 500px;
     }

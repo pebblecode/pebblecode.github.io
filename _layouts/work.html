@@ -6,7 +6,9 @@
 
     {% include hero.html %}
 
-    {% include photo.html url="/img/features/hackday-2.jpg" %}
+    <section class="photo-block">
+      <div class="photo" style="background-image: url(/img/features/{{ page.photo1-url }})"></div>
+    </section>
 
     <section class="intro-block block slash-shadow slash-top">
       <div class="block-inner grid">
@@ -28,30 +30,34 @@
         </div>
         <div class="block-inner grid">
           <div class="card col-1-2">
-            <a href="{{ page.block1-project1-url }}" class="card-link">
+          {% if page.block1-project1-url%}
+            <a href="/work/case-studies/{{ page.block1-project1-url }}/" class="card-link">
+          {% endif %}
               <div class="card-img" style="background-image: url(/img/case-studies/{{ page.block1-project1-img }})"></div>
-              <span class="card-logo client-logo {{ page.block1-project1-logo }}">{{ page.block1-project1-client }}</span>
+              <span class="card-logo client-logo {{ page.block1-project1-logo }}-ink">{{ page.block1-project1-client }}</span>
               <h3 class="card-title">{{ page.block1-project1-title }}</h3>
               <p class="card-excerpt">{{ page.block1-project1-summary }}</p>
+          {% if page.block1-project1-url%}
             </a>
-            {% if page.block1-project1-url%}
-            <a href="{{ page.block1-project1-url }}" class="card-btn">
+            <a href="/work/case-studies/{{ page.block1-project1-url }}/" class="card-btn">
               <button class="btn btn-arrow">Case Study</button>
             </a>
-            {% endif %}
+          {% endif %}
           </div>
           <div class="card col-1-2">
-            <a href="{{ page.block1-project2-url }}" class="card-link">
+          {% if page.block1-project2-url%}
+            <a href="/work/case-studies/{{ page.block1-project2-url }}/" class="card-link">
+          {% endif %}
               <div class="card-img" style="background-image: url(/img/case-studies/{{ page.block1-project2-img }})"></div>
-              <span class="card-logo client-logo {{ page.block1-project2-logo }}">{{ page.block1-project2-client }}</span>
+              <span class="card-logo client-logo {{ page.block1-project2-logo }}-ink">{{ page.block1-project2-client }}</span>
               <h3 class="card-title">{{ page.block1-project2-title }}</h3>
               <p class="card-excerpt">{{ page.block1-project2-summary }}</p>
+          {% if page.block1-project2-url%}
             </a>
-            {% if page.block1-project2-url%}
-            <a href="{{ page.block1-project2-url }}" class="card-btn">
+            <a href="/work/case-studies/{{ page.block1-project2-url }}/" class="card-btn">
               <button class="btn btn-arrow">Case Study</button>
             </a>
-            {% endif %}
+          {% endif %}
           </div>
         </div>
       </div>
@@ -67,29 +73,33 @@
         </div>
         <div class="block-inner grid">
           <div class="card col-1-2">
-            <a href="{{ page.block2-project1-url }}" class="card-link">
+          {% if page.block2-project1-url%}
+            <a href="/work/case-studies/{{ page.block2-project1-url }}/" class="card-link">
+          {% endif %}
               <div class="card-img" style="background-image: url(/img/case-studies/{{ page.block2-project1-img }})"></div>
-              <span class="card-logo client-logo {{ page.block2-project1-logo }}">{{ page.block2-project1-client }}</span>
+              <span class="card-logo client-logo {{ page.block2-project1-logo }}-ink">{{ page.block2-project1-client }}</span>
               <h3 class="card-title">{{ page.block2-project1-title }}</h3>
               <p class="card-excerpt">{{ page.block2-project1-summary }}</p>
+          {% if page.block2-project1-url%}
             </a>
-            {% if page.block2-project1-url%}
-            <a href="{{ page.block2-project1-url }}" class="card-btn">
+            <a href="/work/case-studies/{{ page.block2-project1-url }}/" class="card-btn">
               <button class="btn btn-arrow">Case Study</button>
             </a>
-            {% endif %}
+          {% endif %}
           </div>
           <div class="card col-1-2">
-            <a href="{{ page.block2-project2-url }}" class="card-link">
+          {% if page.block2-project2-url%}
+            <a href="/work/case-studies/{{ page.block2-project2-url }}/" class="card-link">
+          {% endif %}
               <div class="card-img" style="background-image: url(/img/case-studies/{{ page.block2-project2-img }})"></div>
-              <span class="card-logo client-logo {{ page.block2-project2-logo }}">{{ page.block2-project2-client }}</span>
+              <span class="card-logo client-logo {{ page.block2-project2-logo }}-ink">{{ page.block2-project2-client }}</span>
               <h3 class="card-title">{{ page.block2-project2-title }}</h3>
               <p class="card-excerpt">{{ page.block2-project2-summary }}</p>
-            </a>
             {% if page.block2-project2-url%}
-            <a href="{{ page.block2-project2-url }}" class="card-btn">
-              <button class="btn btn-arrow">Case Study</button>
-            </a>
+              </a>
+              <a href="/work/case-studies/{{ page.block2-project2-url }}/" class="card-btn">
+                <button class="btn btn-arrow">Case Study</button>
+              </a>
             {% endif %}
           </div>
         </div>
@@ -106,29 +116,33 @@
         </div>
         <div class="block-inner grid">
           <div class="card col-1-2">
-            <a href="{{ page.block3-project1-url }}" class="card-link">
+          {% if page.block3-project1-url%}
+            <a href="/work/case-studies/{{ page.block3-project1-url }}/" class="card-link">
+          {% endif %}
               <div class="card-img" style="background-image: url(/img/case-studies/{{ page.block3-project1-img }})"></div>
-              <span class="card-logo client-logo {{ page.block3-project1-logo }}">{{ page.block3-project1-client }}</span>
+              <span class="card-logo client-logo {{ page.block3-project1-logo }}-ink">{{ page.block3-project1-client }}</span>
               <h3 class="card-title">{{ page.block3-project1-title }}</h3>
               <p class="card-excerpt">{{ page.block3-project1-summary }}</p>
-            </a>
             {% if page.block3-project1-url%}
-            <a href="{{ page.block3-project1-url }}" class="card-btn">
-              <button class="btn btn-arrow">Case Study</button>
-            </a>
+              </a>
+              <a href="/work/case-studies/{{ page.block3-project1-url }}/" class="card-btn">
+                <button class="btn btn-arrow">Case Study</button>
+              </a>
             {% endif %}
           </div>
           <div class="card col-1-2">
-            <a href="{{ page.block3-project2-url }}" class="card-link">
+          {% if page.block3-project2-url%}
+            <a href="/work/case-studies/{{ page.block3-project2-url }}/" class="card-link">
+          {% endif %}
               <div class="card-img" style="background-image: url(/img/case-studies/{{ page.block3-project2-img }})"></div>
-              <span class="card-logo client-logo {{ page.block3-project2-logo }}">{{ page.block3-project2-client }}</span>
+              <span class="card-logo client-logo {{ page.block3-project2-logo }}-ink">{{ page.block3-project2-client }}</span>
               <h3 class="card-title">{{ page.block3-project2-title }}</h3>
               <p class="card-excerpt">{{ page.block3-project2-summary }}</p>
-            </a>
             {% if page.block3-project2-url%}
-            <a href="{{ page.block3-project2-url }}" class="card-btn">
-              <button class="btn btn-arrow">Case Study</button>
-            </a>
+              </a>
+              <a href="/work/case-studies/{{ page.block3-project2-url }}/" class="card-btn">
+                <button class="btn btn-arrow">Case Study</button>
+              </a>
             {% endif %}
           </div>
         </div>
@@ -140,16 +154,18 @@
         <h2>{{ page.cta-title }}</h2>
         <p>{{ page.cta-subtitle }}</p>
         {% if page.cta-btn-text %}
-          <a href="{{page.cta-btn-url}}" class="btn btn-arrow btn-lrg btn-light">{{page.cta-btn-text}}</a>
+          <a href="/{{page.cta-btn-url}}/" class="btn btn-arrow btn-lrg btn-light">{{page.cta-btn-text}}</a>
         {% endif %}
       </div>
     </section>
 
-    {% include photo.html url="/img/features/wshop.jpg" position="top" %}
+    <section class="photo-block">
+      <div class="photo" style="background-image: url(/img/features/{{ page.photo2-url }})"></div>
+    </section>
 
     {% include verticals.html %}
 
-    {% include footer.html lazyload=true colour="blue" tone="light" %}
+    {% include footer.html colour="blue" tone="light" %}
 
     <script>
     // Change header colour

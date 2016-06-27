@@ -44,6 +44,45 @@
   }
 }
 
+.btn-icon {
+  padding-left: 35px;
+
+  &::after {
+    @include pseudo;
+    top: 50%;
+    left: 3px;
+    transform: translateY(-50%) scale(0.5);
+    transition: opacity 0.3s;
+    opacity: 0.3;
+  }
+
+  &:hover::after {
+    opacity: 1;
+  }
+}
+
+.btn-phone {
+  &::after {
+    @include sprite($phone-ink);
+  }
+
+  &:hover::after {
+    @include sprite($phone-pink);
+    opacity: 1;
+  }
+}
+
+.btn-mail {
+  &::after {
+    @include sprite($mail-ink);
+  }
+
+  &:hover::after {
+    @include sprite($mail-pink);
+    opacity: 1;
+  }
+}
+
 .btn-light {
   color: rgba(white, 0.9);
   border-color: rgba(white, 0.2);
@@ -84,6 +123,15 @@
       right: 12px;
     }
   }
+
+  &.btn-icon {
+    padding-left: 48px;
+
+    &::after {
+      transform: translateY(-50%) scale(0.7);
+      left: 12px;
+    }
+  }
 }
 
 .btn-lrg {
@@ -97,6 +145,15 @@
     &::after {
       transform: translateY(-53%);
       right: 12px;
+    }
+  }
+
+  &.btn-icon {
+    padding-left: 60px;
+
+    &::after {
+      transform: translateY(-50%) scale(0.7);
+      left: 18px;
     }
   }
 }
@@ -139,7 +196,7 @@
   &:hover {
     transform: scale(1.03);
 
-    &:not(.hero-play-btn):hover::after {
+    &:not(.video-play-btn):hover::after {
       opacity: 1;
       @include sprite($play-pink);
     }
@@ -156,6 +213,10 @@
   @media screen and ( max-width: $medium ) {
     width: 80px;
     height: 80px;
+  }
+
+  &.video-play-btn {
+    opacity: 1;
   }
 
   &::after {

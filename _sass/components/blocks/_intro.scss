@@ -13,6 +13,10 @@
   p {
     font-size: $gamma;
 
+    &:last-child {
+      margin-bottom: 0;
+    }
+
     @media screen and ( max-width: $medium ) {
       font-size: $epsilon;
     }

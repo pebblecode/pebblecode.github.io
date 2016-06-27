@@ -76,13 +76,82 @@
       <div class="vert-section-inner grid vert-section-contact ">
         <h2 class="vert-section-title">Sound interesting?</h2>
         <p class="vert-contact-para">Get in contact to discuss how we can help you</p>
-        <a href="mailto:hello@pebblecode.com" class="btn btn-lrg">hello@pebblecode.com</a>
-        <a href="tel:+442033273940" class="btn btn-lrg">+44 (0) 20 3327 3940</a>
+        <a href="mailto:{{site.email}}" class="btn btn-lrg btn-icon btn-mail">Email us</a>
+        <a href="tel:+442033273940" class="btn btn-lrg btn-icon btn-phone">Call us</a>
       </div>
     </section>
 
     {% include blog-related.html %}
 
-    {% include footer.html extrascripts=page.extrascripts %}
+    {% include footer.html %}
+
+    <script>
+    // Health - change header colour
+    var healthHeaderContainer = $('.health .gbl-head');
+    if (healthHeaderContainer.length > 0) {
+      var healthPatient;
+      var healthResearch;
+      var healthInnovation;
+      var healthContact;
+
+      var scrollPositions = function () {
+        healthPatient = $('#patientcentricity');
+        healthResearch = $('#smartresearch');
+        healthInnovation = $('#bottomupinnovation');
+        healthContact = $('#vertcontact');
+      };
+
+      var headerBG = function () {
+        var windowTop = $(window).scrollTop();
+        if (windowTop > healthInnovation.offset().top - 100 || healthInnovation.offset().bottom) {
+          healthHeaderContainer.css({'background-color':'#37bec0'});
+        } else if (windowTop > healthResearch.offset().top - 100 || healthResearch.offset().bottom) {
+          healthHeaderContainer.css({'background-color':'#9b5ca4'});
+        } else if (windowTop > healthPatient.offset().top - 100 || healthPatient.offset().bottom) {
+          healthHeaderContainer.css({'background-color':'#0ea2dc'});
+        } else {
+          healthHeaderContainer.css({'background-color':'#37bec0'});
+        }
+       };
+
+      $(window).resize(scrollPositions).scroll(headerBG);
+      scrollPositions();
+      headerBG();
+    }
+
+    // Transport - change header colour
+    var transportHeaderContainer = $('.transport .gbl-head');
+    if (transportHeaderContainer.length > 0) {
+      var transportRail;
+      var transportTech;
+      var transportFuture;
+      var transportContact;
+
+      var scrollPositions = function () {
+        transportRail = $('#railservice');
+        transportTech = $('#transporttechnology');
+        transportFuture = $('#imaginingthefuture');
+        transportContact = $('#vertcontact');
+      };
+
+      var headerBG = function () {
+        var windowTop = $(window).scrollTop();
+        if (windowTop > transportFuture.offset().top - 100 || transportFuture.offset().bottom) {
+          transportHeaderContainer.css({'background-color':'#9b5ca4'});
+        } else if (windowTop > transportTech.offset().top - 100 || transportTech.offset().bottom) {
+          transportHeaderContainer.css({'background-color':'#a4ce4e'});
+        } else if (windowTop > transportRail.offset().top - 100 || transportRail.offset().bottom) {
+          transportHeaderContainer.css({'background-color':'#37bec0'});
+        } else {
+          transportHeaderContainer.css({'background-color':'#0ea2dc'});
+        }
+       };
+
+      $(window).resize(scrollPositions).scroll(headerBG);
+      scrollPositions();
+      headerBG();
+    }
+    </script>
+    
   </body>
 </html>

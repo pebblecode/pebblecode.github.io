@@ -1,31 +1,17 @@
 .photo-block {
   position: relative;
   overflow: hidden;
-  height: 400px;
+  height: 450px;
 
   @media screen and ( max-width: $medium ) {
     height: 250px;
   }
-  video {
-    height: 100%;
-    width: 100%;
-    background-color: $pink;
-    object-fit: cover;
+
+  .block-clear + & {
+    height: 800px;
+    margin-top: -350px;
+    z-index: -1;
   }
-}
-
-.photo-top,
-.photo-btm {
-  height: 700px;
-  z-index: -1;
-}
-
-.photo-top {
-  margin-top: -350px;
-}
-
-.photo-btm {
-  margin-bottom: -350px;
 }
 
 .photo {
@@ -38,30 +24,4 @@
   position: absolute;
   top: 0;
   left: 0;
-}
-
-#fs-video-container {
-  position: fixed;
-  top: 0;
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  left: 0;
-  z-index: 100;
-  background-color: #000000;
-  display: none;
-  video {
-    width: 100%;
-    max-height: 100%;
-  }
-  .close {
-    position: absolute;
-    z-index: 999;
-    top: 15px;
-    right: 15px;
-    cursor: pointer;
-    @include sprite($close-grey);
-  }
 }

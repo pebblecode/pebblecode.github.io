@@ -84,7 +84,7 @@
       box-shadow: 1px 1px 10px rgba(black, 0.2);
     }
 
-    .card-btn {
+    .card-btn:not(.btn) {
       padding-bottom: 25px;
     }
   }
@@ -143,9 +143,9 @@
 }
 
 .card-logo {
-  margin: 25px 25px -10px;
+  margin: 15px 25px -15px;
   transform-origin: left;
-  transform: scale(0.8);
+  transform: scale(0.7);
 }
 
 .card-title {
@@ -209,7 +209,6 @@
     &::after {
       @include pseudo;
       top: 0;
-
       width: 40px;
       height: 5px;
       border-radius: 5px;
@@ -250,8 +249,8 @@
     margin-bottom: 0;
     padding-bottom: 0;
   }
-}
 
-.events-btn{
-  margin-left: 30px;
+  &.btn {
+    margin: $gutter $gutter 0;
+  }
 }

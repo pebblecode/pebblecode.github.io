@@ -5,8 +5,6 @@ permalink: /insurance/
 categories: [innovation, insurance]
 colour: blue
 extraclasses: insurance
-extrascripts:
- - link: "vertical.js"
 
 ## Hero Content
 hero-title: Insuring the future...

@@ -1,6 +1,6 @@
 ---
 layout: home
-colour: pink
+colour:
 title: Agile Development, Design Thinking and Rapid Prototyping
 permalink: /
 
@@ -27,25 +27,28 @@ expertise-btn-url: /work
 
 # Expertise One
 expertise-one-title: Cloud
-expertise-one-summary: We are experts in working with cloud technologies and have experience of configuring, automating and managing Amazon Web Services, Azure, Rackspace and even some old school bare metal. 
-expertise-one-illustration: chart.png
+expertise-one-summary: We are experts in working with cloud technologies and have experience of configuring, automating and managing Amazon Web Services, Azure, Rackspace and even some old school bare metal.
+expertise-one-illustration: v2/clouds.svg
 
 # Expertise Two
 expertise-two-title: Mobility
-expertise-two-summary: We are a mobile by default team and have strong expertise in design and development for mobile. We are excited by progressive web apps and the blurring between native and web. 
-expertise-two-illustration: phone.png
+expertise-two-summary: We are a mobile by default team and have strong expertise in design and development for mobile. We are excited by progressive web apps and the blurring between native and web.
+expertise-two-illustration: v2/design.svg
 
 # Expertise Three
 expertise-three-title: Internet of Things
 expertise-three-summary: We have strong experience of working with internet-enabled hardware including firmware. We have worked with Bluetooth Low Energy, Light Bulbs, Rasperry Pis and Sensors.
-expertise-three-illustration: microscope.png
+expertise-three-illustration: v2/microscope.svg
 
-# ------- Photo -------- #
 
-## ------ Product ------ ##
-product-illustration: people.png
-product-title: Hack Days
-product-summary: We run a monthly introduction to Digital Innovation workshop at pebble HQ. This is a practical workshop on techniques that can make your organisation more innovative.
-product-btn-text: Sign Up Now
-product-btn-url: /contact
+## ------- Photo 1 -------- ##
+photo1-url: hackday.jpg
+
+
+## ------ Actionable CTA ------ ##
+action-illustration: v2/people.svg
+action-title: Hack Days
+action-summary: We run a monthly introduction to Digital Innovation workshop at pebble HQ. This is a practical workshop on techniques that can make your organisation more innovative.
+action-btn-text: Sign Up Now
+action-btn-url: /contact
 ---

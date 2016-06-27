@@ -17,6 +17,7 @@ $colors: (
   "white": $white,
   "grey": $grey,
   "ink": $ink,
+  "ink-dark5": shade($ink, 5%),
   "pink": $pink,
   "pink-dark5": shade($pink, 5%),
   "pink-dark25": shade($pink, 25%),

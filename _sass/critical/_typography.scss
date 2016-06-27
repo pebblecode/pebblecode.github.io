@@ -50,7 +50,7 @@ a {
 
   &:hover {
     cursor: pointer;
-    color: lighten($primary, 10);
-    border-bottom-color: rgba($primary, 0.4);
+    color: $primary;
+    border-bottom-color: rgba($primary, 0.6);
   }
 }
