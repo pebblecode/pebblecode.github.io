@@ -8,7 +8,7 @@ seminar-eventlink: "https://www.eventbrite.com/"
 seminar-call-to-action: "Sign up now"
 
 hubspot-portalid: 2277134
-hubspot-formid: 9865cef3-53aa-449e-b7a1-3caed970b6b5
+hubspot-formid: cfcc1c8e-4218-4c14-8421-2f218438f458
 
 ## Seminar Details
 seminar-intro: pebble {code} leads an intro to
