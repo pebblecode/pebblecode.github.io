@@ -1,6 +1,7 @@
 .seminar.pink,
 .seminar-form.pink,
-.seminar-new.pink {
+.seminar-new.pink,
+.seminar-hubspot.pink {
   background-color: $pink;
 }
 
@@ -102,7 +103,7 @@
   margin: 40px auto;
   text-align: center;
   // transform: skewY(-5deg);
-  text-shadow: 7px 8px 0 rgba(black, 0.40);
+
   // -webkit-text-stroke-width: 3px;
   // -webkit-text-stroke-color: #ed4f7e;
   color: #ddd;
@@ -111,7 +112,7 @@
 
   @media screen and ( max-width: $medium ) {
     margin: 20px auto 40px;
-    text-shadow: 2px 3px 0 rgba(black, 0.1);
+
   }
 
   h3.seminar-titlestack-top,
@@ -119,9 +120,11 @@
     font-size: $tera + 5px;
     font-style: normal;
     line-height: 1;
+    text-shadow: 7px 8px 0 rgba(black, 0.40);
 
     @media screen and ( max-width: $large ) {
       font-size: $mega;
+      text-shadow: 2px 3px 0 rgba(black, 0.40);
     }
 
     @media screen and ( max-width: $small ) {
@@ -303,6 +306,7 @@ h5.seminar-speaker-jobtitle {
   color: $pink;
   text-align: center;
   padding: 0;
+  margin-top: 12px;
 
   h3 {
     font-size: $alpha - 4px;
@@ -588,4 +592,11 @@ h3.seminar-info-item {
   &.linkedin:after { @include sprite($linkedin-pink); }
   &.twitter:after { @include sprite($twitter-pink); }
   &.vimeo:after { @include sprite($vimeo-pink); }
+}
+
+
+.seminar-points {
+  li {
+    -webkit-font-smoothing: antialiased;
+  }
 }

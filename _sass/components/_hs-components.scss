@@ -1,0 +1,188 @@
+//===============================================================================
+// HUBSPOT COMPONENTS
+//===============================================================================
+.contact .hbspt-form {
+  margin-top: 20px;
+
+  label {
+    color: $white;
+    font-family: $brandon;
+    font-size: $eta;
+    font-weight: $font-regular !important;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .hs-error-msgs {
+    opacity: .7;
+  }
+
+  .hs-form-required {
+    color: $pink;
+    margin-left: 2px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    color: rgba(white, 0.9);
+    border: 3px solid rgba(white, 0.2);
+    background-color: transparent;
+    padding: 8px 8px 4px 8px;
+    width: 100%;
+    transition: border-color .2s;
+    border-radius: 4px;
+    margin-bottom: 8px;
+
+    &:focus { border-color: rgba(white, 0.5); }
+  }
+
+  input[type="submit"] {
+    @extend .btn, .btn-light, .btn-lrg;
+
+    margin-top: 8px;
+  }
+
+  .submitted-message {
+    margin-top: 45px;
+    color: $white;
+  }
+}
+
+
+//===============================================================================
+// HUBSPOT FORM ELEMENTS
+//===============================================================================
+
+//===============================================================================
+// FORMS
+//===============================================================================
+
+
+
+.seminar-hubspot .hbspt-form {
+  @media (min-width: $medium) {
+    width: 50%;
+    margin: auto;
+  }
+
+    @media (max-width: $medium) {
+    padding: 0 30px;
+  }
+}
+
+
+.seminar-hubspot .hbspt-form form ul {
+  list-style: none;
+}
+
+.seminar-hubspot .hbspt-form label:not(.hs-form-checkbox-display, .hs-form-radio-display) {
+  color: lighten($ink, 20);
+  font-size: $zeta;
+}
+
+.seminar-hubspot .hbspt-form textarea,
+.seminar-hubspot .hbspt-form input[type="text"],
+.seminar-hubspot .hbspt-form input[type="email"],
+.seminar-hubspot .hbspt-form input[type="tel"],
+.seminar-hubspot .hbspt-form input[type="number"],
+.seminar-hubspot .hbspt-form input[type="date"],
+.seminar-hubspot .hbspt-form input[type="month"],
+.seminar-hubspot .hbspt-form input[type="password"] {
+  outline: 0;
+  padding: 10px 10px 6px 10px;
+  display: block;
+  background-color: lighten($ink, 47);
+  border-radius: 3px;
+  border: $pink;
+  width: 100%;
+  margin-bottom: 18px;
+  z-index: 1;
+  transition: background-color 0.2s;
+  position: relative;
+  max-width: 540px;
+
+  &:focus { background-color: lighten($ink, 43); }
+}
+
+.seminar-hubspot .hbspt-form select {
+  margin-bottom: 18px;
+}
+
+.seminar-hubspot .hbspt-form select {
+  @extend .btn;
+}
+
+.seminar-hubspot .hbspt-form .hs-form-checkbox-display,
+.seminar-hubspot .hbspt-form .hs-form-radio-display {
+  cursor: pointer;
+
+.seminar-hubspot .hbspt-form   input { display: none; }
+}
+
+.seminar-hubspot .hbspt-form input[type="radio"] + span,
+.seminar-hubspot .hbspt-form input[type="checkbox"] + span {
+  position: relative;
+  padding-left: 20px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    background-color: lighten($ink, 47);
+    border: 1px solid lighten($ink, 40);
+    left: 0;
+    top: 1px;
+    transition: background-color .2s, border .2s;
+  }
+
+  &:hover::before{
+    background-color: lighten($ink, 40);
+    border: 1px solid lighten($ink, 33);
+  }
+}
+
+.seminar-hubspot .hbspt-form input[type="radio"] {
+  & + span::before {
+    border-radius: 50%;
+  }
+
+  &:checked + span::before {
+    border: 4px solid $pink;
+  }
+}
+
+.seminar-hubspot .hbspt-form input[type="checkbox"]:checked + span::after {
+  content: "✓";
+  color: $pink;
+  position: absolute;
+  left: 2px;
+}
+
+.seminar-hubspot .hbspt-form input[type="submit"] {
+  @extend .btn, .btn-lrg;
+}
+
+.seminar-hubspot .hbspt-form .hs-form-required {
+  color: $pink;
+}
+
+
+.seminar-hubspot .hs-form-field span {
+  color: $pink;
+}
+
+
+.seminar-hubspot .hs-form .hs-button{
+  margin-left: auto;
+  margin-right: auto;
+  text-shadow: none !important;
+  &:hover, &:focus {
+    border: 3px solid rgba(107,116,130,0.2) !important;
+    box-shadow: inset 0px 1px 0px rgba(255,255,255,0.5),0 0 5px lighten($pink, 30%) !important;
+  }
+  &:active {
+    background: $pink !important;
+  }
+}
+
