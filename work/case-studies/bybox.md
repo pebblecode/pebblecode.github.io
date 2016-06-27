@@ -59,7 +59,7 @@ results-screenshot: bybox/screenshot.png
 
 ## ------ The Future ------ ##
 future-title: The Future
-future-summary: With improved business functionality and Agile processes, AZ will be able to make decisions quickly and consistently. Teams will be less siloed, creating a cooperative workplace where everyone has a vested interest in each other’s success.
+future-summary: The Stockonnect Project, delivered by pebble {code} in partnership with ByBox, is revolutionising how organisations across the globe are supporting field services and managing their inventory.<br><br>pebble and Bybox will continue to collaborate to further develop guided delivery, automated returns and inventory management, whilst also adding new features to better cater to Universities Campus environments and other markets.
 
 # Quote
 quote2:
