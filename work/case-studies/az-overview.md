@@ -18,7 +18,7 @@ photo1-url: features/stickies.jpg
 
 ## ------ Problem ------ ##
 problem-title: The Problem
-problem-illustration: people-3.png
+problem-illustration: v2/people-3.svg
 problem-summary-lrg: Being such a large enterprise, AstraZeneca (AZ) is always changing – size, methods, systems.
 problem-summary: Creating inconsistencies in communication and slowing down the business process, all at the expense of quality. Their outdated waterfall method needed a push into the 21st century.
 
@@ -45,10 +45,10 @@ quote1-author: Kris Nayak, Head of Innovation, AstraZeneca
 
 ## ------ The Results ------ ##
 results-title: The Results
-results-illustration: agile.png
+results-illustration: v2/agile.svg
 results-summary-lrg: pebble {code} aided AstraZeneca in transitioning to an Agile business model, providing them with internal tools.
 results-summary: These include a Competitive Intelligence Portal, a Global Search Engine, an Adaptive Delivery Framework Portal, a global intranet, a Data & Metrics app, Development Strategy, and other custom mobile apps. <br><br>We unified the contents of a global corporation into a single digital destination and implemented resources for continued Agile growth - at 50% of the cost of most off-the-shelf tools.
-results-screenshot: az-ciportal/screenshot.png
+results-screenshot: az-overview/screenshot.png
 
 
 ## ------ The Future ------ ##
@@ -65,7 +65,7 @@ photo2-url: features/hackday.jpg
 
 
 ## ------ Actionable CTA ------ ##
-action-illustration: brain.png
+action-illustration: v2/brain.svg
 action-title: Want to streamline your internal processes? pebble {code} has you covered.
 
 ---
