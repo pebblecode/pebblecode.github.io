@@ -20,15 +20,15 @@ seminar-subtitle: In the trenches
 seminar-intro-paragraphs:
  - "pebble {code}'s Hacking Workshop introduces Digital Innovation through practical techniques that we use regularly with clients. Delegates will gain an understanding of the value of digital experimentation and the approach that organisations need to adopt for success."
  - "The half day workshop includes:"
- - "<ul>
+ - "<ul class='seminar-points'>
     <li>An introduction to how organisations should approach digital innovation</li>
-    <li>An introduction to the role of empathy in digital innovation</li>
+    <li>An overview of the role of empathy in digital innovation</li>
     <li>A practical session working collaboratively on an idea</li>
-    <li>A practical session on how constraints can fuel creativity</li>
+    <li>A hands-on session of how constraints can fuel creativity</li>
     <li>A 'Show and Tell' of the work that teams have created</li>
     </ul>"
  - "Delegates will take away an opinion on how they can apply practical innovation techniques to their organisation and how they can get buy-in from senior leadership. Attendees will also work collaboratively on an idea during the session."
- - "This session will be led by George Ornbo, Co-founder and Managing Director at pebble {code}."
+ - "This session will be led by <a href='#george-ornbo'>George Ornbo,</a> Co-founder and Managing Director at pebble {code}."
 eventbright-url: "https://www.eventbrite.co.uk/e/innovation-in-insurance-tickets-26147397570"
 
 

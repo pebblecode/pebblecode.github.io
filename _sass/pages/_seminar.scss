@@ -306,6 +306,7 @@ h5.seminar-speaker-jobtitle {
   color: $pink;
   text-align: center;
   padding: 0;
+  margin-top: 12px;
 
   h3 {
     font-size: $alpha - 4px;
@@ -591,4 +592,11 @@ h3.seminar-info-item {
   &.linkedin:after { @include sprite($linkedin-pink); }
   &.twitter:after { @include sprite($twitter-pink); }
   &.vimeo:after { @include sprite($vimeo-pink); }
+}
+
+
+.seminar-points {
+  li {
+    -webkit-font-smoothing: antialiased;
+  }
 }
