@@ -14,7 +14,7 @@ hero-logo: express
 
 ## ------ Intro ------ ##
 intro-title: Moving forward with Consumer Feedback
-intro: c2c operates an important train line connecting the city of London and the coasts.
+intro: c2c operates an important train line connecting the city of London and the East coast.
 
 
 ## ------- Photo 1 -------- ##
@@ -24,7 +24,7 @@ photo1-url: features/team.jpg
 ## ------ Problem ------ ##
 problem-illustration: v2/digital.svg
 problem-title: The Problem
-problem-summary-lrg: c2c positioned workers around their platforms analysing problems as they arose.
+problem-summary-lrg: c2c workers toured their platforms recording problems as they arose.
 problem-summary: This pen-and-paper method required an extra step to relay feedback to engineers, delaying repairs and leaving everyone unsatisfied.
 
 
@@ -51,8 +51,8 @@ quote1-author:
 ## ------ The Results ------ ##
 results-title: The Results
 results-illustration: v2/devices.svg
-results-summary-lrg: Through our signature rapid prototyping process, we were able to deliver a working software to c2c within weeks that streamlines assessments.
-results-summary: Virtually cutting the process time in half. The app’s automated reports highlight problem areas for more efficient resource allocation.
+results-summary-lrg: Through our signature rapid prototyping process, we were able to deliver working software to C2C in weeks that streamlines assessments.
+results-summary: We cut the processing time in half. The app’s automated reports highlight problem areas for more efficient resource allocation.
 results-screenshot: c2c/screenshot.png
 
 

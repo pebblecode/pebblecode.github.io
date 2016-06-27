@@ -20,7 +20,7 @@ photo1-url: case-studies/az-overview/feature-1.jpg
 problem-title: The Problem
 problem-illustration: v2/people-3.svg
 problem-summary-lrg: Being such a large enterprise, AstraZeneca (AZ) is always changing – size, methods, systems.
-problem-summary: Creating inconsistencies in communication and slowing down the business process, all at the expense of quality. Their outdated waterfall method needed a push into the 21st century.
+problem-summary: Inconsistencies in communication hampered the business process. Their outdated waterfall method needed a push into the 21st century.
 
 
 ## ------ Method ------ ##
@@ -39,7 +39,7 @@ method3-title: Creating a sustainable process
 method3-summary: While streamlining the testing and hiring processes, we helped develop seven different internal tools to increase efficiency and create a sustainable process.
 
 # Quote
-quote1: From the minute we started our Hack Day I knew this was going to be amazing and exciting experience and I was right.
+quote1: From the minute we started our Hack Day I knew this was going to be an amazing and exciting experience, and I was right.
 quote1-author: Kris Nayak, Head of Innovation, AstraZeneca
 
 
