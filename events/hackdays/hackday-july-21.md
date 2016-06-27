@@ -1,7 +1,7 @@
 ---
-layout: seminar-hubspot
+layout: seminar-hubspot-update
 title: Hack Days
-permalink: /events/hackdays/july-21/
+permalink: /events/hackdays/july-21b/
 colour: pink
 
 seminar-eventlink: "https://www.eventbrite.com/"
