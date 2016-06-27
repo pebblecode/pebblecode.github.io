@@ -12,10 +12,10 @@ hubspot-formid: 9865cef3-53aa-449e-b7a1-3caed970b6b5
 
 ## Seminar Details
 seminar-intro: pebble {code} leads an intro to
-seminar-title1: Hack Days
+seminar-title1: Hacking
 seminar-title2:
 seminar-title3:
-seminar-hero: insurance-innovation-header.png
+seminar-hero: hacking-header.png
 seminar-subtitle: In the trenches
 seminar-intro-paragraphs:
  - "pebble {code}'s Hacking Workshop introduces Digital Innovation through practical techniques that we use regularly with clients. Delegates will gain an understanding of the value of digital experimentation and the approach that organisations need to adopt for success."

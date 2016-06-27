@@ -181,5 +181,8 @@
     border: 3px solid rgba(107,116,130,0.2) !important;
     box-shadow: inset 0px 1px 0px rgba(255,255,255,0.5),0 0 5px lighten($pink, 30%) !important;
   }
+  &:active {
+    background: $pink !important;
+  }
 }
 
