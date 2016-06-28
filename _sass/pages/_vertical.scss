@@ -299,41 +299,6 @@
   }
 }
 
-.vertical .hero-container {
-  background-image: url(../img/tile-white.png);
-  background-repeat: repeat-x;
-  background-position: bottom;
-  background-size: 400px;
-
-  &:after {
-    background: $blue;
-  }
-
-  &.next-color-:after {
-    background-color: $pink;
-  }
-
-  &.next-color-aqua:after {
-    background: $aqua;
-  }
-
-  &.next-color-green:after {
-    background-color: $green;
-  }
-
-  &.next-color-purple:after {
-    background-color: $purple;
-  }
-
-  &.next-color-blue:after {
-    background-color: $blue;
-  }
-
-  &.next-color-pink:after {
-    background-color: $pink;
-  }
-}
-
 h4.vert-section-breadcrumb {
   margin-bottom: 4px;
   color: rgba(black, 0.3);
