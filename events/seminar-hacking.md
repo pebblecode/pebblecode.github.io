@@ -23,7 +23,7 @@ seminar-intro-paragraphs:
     <li>How to run an effective Hack Day</li>
    </ul>"
 - "pebble {code} believes in the power of hacking and have helped businesses large and small embed it into their culture and use it to kick start innovation."
-eventbright-url: "https://www.eventbrite.co.uk/e/innovation-hacking-tickets-26145593173"
+eventbright-url: "https://www.f6s.com/innovationhacking"
 ## Location and Time
 seminar-time: "6pm-8pm"
 seminar-date: "Wednesday 13th July"
