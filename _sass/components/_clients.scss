@@ -9,6 +9,7 @@
 
   &.slash.block {
     padding-bottom: 15px;
+    padding-bottom: 50px /9;
 
     @media screen and ( max-width: $large ) {
       padding-bottom: 0;
