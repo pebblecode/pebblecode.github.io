@@ -40,7 +40,7 @@ block1-project2-logo: bybox-logo
 block1-project2-client: ByBox
 block1-project2-title: Innovation in Logistics
 block1-project2-summary: An innovative IoT Bluetooth Low Energy product that moves logic into smartphones to reduce costs and open new markets.
-block1-project2-url: bybox
+block1-project2-url:
 
 
 ## ------ Block 2 ------ ##
