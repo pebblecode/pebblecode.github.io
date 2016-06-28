@@ -33,7 +33,7 @@ eventbright-url: "https://www.eventbrite.co.uk/e/innovation-in-insurance-tickets
 
 
 ## Location and Time
-seminar-time: "9:30am - 12:00am"
+seminar-time: "9:30 - 12:00"
 seminar-date: "Thursday 21st July"
 seminar-rsvp-address: "events@pebblecode.com"
 seminar-location: "pebble HQ,<br>W214 Westminster Business Square<br>1-45 Durham Street<br>London,<br>London<br>SE11 5JH"
