@@ -84,8 +84,10 @@
       box-shadow: 1px 1px 10px rgba(black, 0.2);
     }
 
-    .card-btn:not(.btn) {
-      padding-bottom: 25px;
+    @media screen and ( min-width: $medium ) {
+      .card-btn:not(.btn) {
+        padding-bottom: 35px;
+      }
     }
   }
 
