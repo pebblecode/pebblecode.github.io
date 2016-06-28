@@ -25,7 +25,7 @@ This analogous industry has showed the way for several platforms that are now ga
 
 Traditional insurance has been limited by the flexibility of products that can be underwritten. Newer and more flexible models will allow brokers to customise their offerings to more closely meet the needs of their clients. This means that insurance can move to becoming more of a problem solver than a reimburser of lost value. Think of the insurers that can provide a replacement car while yours is fixed after an accident. This sort of value-added service can be more widely supported by flexible business models. Perhaps the insurer can provide a same-day replacement camera for the wedding photographer who has lost his; or maybe a reputation management service for a financial services company that has been accused of mismanagement. 
 
-## What can be done about digital disruption
+## What can be done about digital disruption?
 
 
 The first step to protect yourself against digital disruption is to become digital yourself. This process involves the realignment of the company mindset to being the owner and creator of a set of continually developing and improving set of digital tools that provide maximum value as well as a competitive advantage. New tools can be integrated into existing ones, and existing tools can be adapted to suit new and changing markets. 
