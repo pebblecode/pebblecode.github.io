@@ -3,7 +3,7 @@ layout: post
 title: Digital Disruption in Insurance
 author: John Mildinhall
 categories: [opinion, insurance, economics, disruption]
-thumbnail: http://pebblecode.com/img/events/insurance-innovation-header.png
+thumbnail: /img/blog/success.gif
 --- 
 
 Disruption is coming, and if you don’t think your business can be disrupted, you’re probably going to be next. Digital services have come of age, and the magic that has transformed our personal lives (think WhatsApp, Instagram, Uber) is coming to more and more businesses around us. Premiums in the UK insurance market totalled £330 billion in 2014, making it the largest in Europe and the third largest in the world. It is only natural that sleek new services that are digital to their core will come after a slice of this enormous pie. 
