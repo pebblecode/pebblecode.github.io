@@ -13,7 +13,7 @@ hero-slash-angle: right
 
 
 ## ------- Photo 1 -------- ##
-photo1-url: v2/hardware-3.jpg
+photo1-url: couch-2.jpg
 
 
 ## ------ Block 1 ------ ##
@@ -57,7 +57,7 @@ block4-btn-url: /work
 
 
 ## ------- Photo 3 -------- ##
-photo3-url: couch-2.jpg
+photo3-url: v2/hardware-3.jpg
 
 
 ## ------ Leadership Team ------ ##
