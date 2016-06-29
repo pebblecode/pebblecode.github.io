@@ -132,10 +132,18 @@
       var videoClose = $videoContainer.find('.btn-close')[0];
 
       videoClose.addEventListener('click', function(e) {
+        videoStop()
+      });
+
+      $(document).keyup(function(e) {
+        if (e.keyCode == 27) { videoStop() }
+      });
+
+      var videoStop = function() {
         $videoContainer.fadeOut(350, function() {
           $videoContainer.find('#fs-video')[0].pause();
         });
-      });
+      }
 
       videoPlay.addEventListener('click', function(e) {
         $videoContainer.find('#fs-video')[0].play();
