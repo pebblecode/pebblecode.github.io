@@ -294,23 +294,27 @@ a .post-title {
 
 // card-tags
 .blog-card {
-  &:nth-child(even) .card-img {
+  .card-img {
+    background-image: url('../img/blog/placeholders/pink-phold.svg');
+  }
+
+  &:nth-of-type(2n) .card-img {
     background-image: url('../img/blog/placeholders/blue-phold.svg');
   }
 
-  &:nth-child(3n+3) .card-img {
+  &:nth-of-type(3n) .card-img {
     background-image: url('../img/blog/placeholders/purple-phold.svg');
   }
 
-  &:nth-child(4n+4) .card-img {
+  &:nth-of-type(4n) .card-img {
+    background-image: url('../img/blog/placeholders/aqua-phold.svg');
+  }
+
+  &:nth-of-type(5n) .card-img {
     background-image: url('../img/blog/placeholders/orange-phold.svg');
   }
 
-  &:nth-child(5n+5) .card-img {
+  &:nth-of-type(6n) .card-img {
     background-image: url('../img/blog/placeholders/green-phold.svg');
-  }
-
-  &:nth-child(6n+6) .card-img {
-    background-image: url('../img/blog/placeholders/aqua-phold.svg');
   }
 }

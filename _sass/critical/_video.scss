@@ -19,22 +19,22 @@
     background-position: center;
     background-size: cover;
   }
-}
 
-.video {
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-color: $pink;
-  object-fit: cover;
-  z-index: 0;
+  .video {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: $pink;
+    object-fit: cover;
+    z-index: 0;
 
-  .touch-device & {
-    display: none;
+    .touch-device & {
+      display: none;
+    }
   }
 }
 
