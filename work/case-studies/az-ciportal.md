@@ -24,7 +24,7 @@ photo1-url: features/v2/team-2.jpg
 
 ## ------ Problem ------ ##
 problem-title: The Problem
-problem-illustration: v2/workshop.svg
+problem-illustration: v2/workshop.png
 problem-summary-lrg: Business analysts at AstraZeneca (AZ) regularly research and report on their competitors in order to help leaders understand which programs and product lines to prioritise.
 problem-summary: Too much time is spent gathering relevant data across multiple sources, and that information is already outdated by the time leaders receive it.
 
@@ -51,7 +51,7 @@ quote1-author:
 
 ## ------ The Results ------ ##
 results-title: The Results
-results-illustration: v2/chart.svg
+results-illustration: v2/chart.png
 results-summary-lrg: Within 2 months, we were able to give hundreds of analysts at AZ instant access to competitive data, that can be used to inform strategic decision making at the highest levels of the organisation.
 results-summary: Working with analysts and developers at AZ, pebble {code} provided an efficient product that cuts hundreds of man-hours every month - time that can be better spent on analysis rather than stuck in the collection phase - therefore saving AZ valuable time and money.
 results-screenshot: az-ciportal/screenshot.png
@@ -71,7 +71,7 @@ photo2-url: case-studies/az-ciportal/feature-1.jpg
 
 
 ## ------ Actionable CTA ------ ##
-action-illustration: v2/brain.svg
+action-illustration: v2/brain.png
 action-title: Want to make your team more efficient? pebble {code} has you covered.
 
 ---
