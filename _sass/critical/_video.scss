@@ -13,6 +13,12 @@
     width: 100%;
     height: 100%;
   }
+
+  .touch-device &.hero-block {
+    background: url(../img/features/video-fallback.jpg);
+    background-position: center;
+    background-size: cover;
+  }
 }
 
 .video {
@@ -26,6 +32,10 @@
   background-color: $pink;
   object-fit: cover;
   z-index: 0;
+
+  .touch-device & {
+    display: none;
+  }
 }
 
 .video-play-btn {
