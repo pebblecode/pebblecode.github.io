@@ -22,9 +22,9 @@ intro: Our work spreads across many verticals and size of businesses.
 
 
 ## ------ Block 1 ------ ##
-block1-id: startup
-block1-title: Start up
-block1-subtitle: Helping young companies reach their true potential, fast.
+block1-id: disruption
+block1-title: Disruption
+block1-subtitle: We help businesses embrace and compete with digital disruption.
 
 # Project 1
 block1-project1-img: bede/thumb.png
@@ -44,9 +44,9 @@ block1-project2-url:
 
 
 ## ------ Block 2 ------ ##
-block2-id: scaleup
-block2-title: Scale up
-block2-subtitle: Bring a boost of growth to your company through rapid innovation.
+block2-id: digital
+block2-title: Digital Transformation
+block2-subtitle: Helping companies reach their true potential, fast.
 
 # Project 1
 block2-project1-img: pwc/thumb.png
@@ -66,9 +66,9 @@ block2-project2-url: c2c
 
 
 ## ------ Block 3 ------ ##
-block3-id: enterprise
-block3-title: Enterprise
-block3-subtitle: We help big businesses embrace and compete with digital disruption.
+block3-id: innovation
+block3-title: Innovation
+block3-subtitle: Bring a boost of growth to your company through rapid innovation.
 
 # Project 1
 block3-project1-img: az-overview/thumb.png
