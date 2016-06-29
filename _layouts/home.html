@@ -140,9 +140,9 @@
       });
 
       videoPlay.addEventListener('click', function(e) {
+        $videoContainer.find('video')[0].play();
         $('#fs-video-container').fadeIn(350, function() {
           $(this).css('display', 'flex');
-          $videoContainer.find('video')[0].play();
         });
       });
     }
