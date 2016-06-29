@@ -242,3 +242,17 @@
     -ms-transform: scale(1.1);
   }
 }
+
+.btn-close {
+  z-index: 2;
+  position: absolute;
+  right: 5px;
+  top: 10px;
+  width: 45px;
+  height: 45px;
+
+  &::after {
+    @include sprite($close-grey);
+    left: 51%;
+  }
+}
