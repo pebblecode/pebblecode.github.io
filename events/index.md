@@ -40,5 +40,13 @@ recentevents:
    description: "In conjunction with Ingenin, pebble {code} chaired a seminar on Innovation in the Insurance sector. Innovation Expert; Manjit Rana talked us through the ways the digital revolution is impacting on Insurance."
    eventlink: "/events/insurance-seminar/"
 
+hackdays:
+ - name: Innovation in Insurance
+   date: "May 31, 2016"
+   location: Quaglinos
+   thumbnail: "/img/events/manjit.jpg"
+   description: "In conjunction with Ingenin, pebble {code} chaired a seminar on Innovation in the Insurance sector. Innovation Expert; Manjit Rana talked us through the ways the digital revolution is impacting on Insurance."
+   eventlink: "/events/insurance-seminar/"
+
 ---
 
