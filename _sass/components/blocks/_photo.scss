@@ -7,10 +7,12 @@
     height: 250px;
   }
 
-  .block-clear + & {
-    height: 800px;
-    margin-top: -350px;
-    z-index: -1;
+  @media screen and ( min-width: $medium ) {
+    .block-clear + & {
+      height: 800px;
+      margin-top: -350px;
+      z-index: -1;
+    }
   }
 }
 

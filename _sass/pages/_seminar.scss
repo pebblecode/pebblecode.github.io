@@ -532,6 +532,7 @@ h3.seminar-header-time::before {
     margin-right: 6px;
     font-weight: $font-bold;
     padding-top: 2px;
+    border: none;
 
     @media screen and ( max-width: $medium ) {
       margin-right: 8px;

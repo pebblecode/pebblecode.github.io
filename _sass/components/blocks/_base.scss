@@ -38,78 +38,59 @@
   }
 }
 
-.block-clear {
-  z-index: 0;
+@media screen and ( min-width: $medium ) {
+  .click-device .block-clear {
+    z-index: 0;
 
-  &.pink-bg {
-    background: linear-gradient(-8deg, transparent 40%, $pink 40%), linear-gradient(10deg, transparent 40%, rgba($pink, 0.5) 40%);
-  }
+    &.pink-bg {
+      background: linear-gradient(-8deg, transparent 40%, $pink 40%), linear-gradient(10deg, transparent 40%, rgba($pink, 0.5) 40%);
+    }
 
-  &.pink-dark25-bg {
-    background: linear-gradient(-8deg, transparent 40%, shade($pink, 25%) 40%), linear-gradient(10deg, transparent 40%, rgba(shade($pink, 25%), 0.5) 40%);
-  }
+    &.pink-dark25-bg {
+      background: linear-gradient(-8deg, transparent 40%, shade($pink, 25%) 40%), linear-gradient(10deg, transparent 40%, rgba(shade($pink, 25%), 0.5) 40%);
+    }
 
-  &.blue-bg {
-    background: linear-gradient(-8deg, transparent 40%, $blue 40%), linear-gradient(10deg, transparent 40%, rgba($blue, 0.5) 40%);
-  }
+    &.blue-bg {
+      background: linear-gradient(-8deg, transparent 40%, $blue 40%), linear-gradient(10deg, transparent 40%, rgba($blue, 0.5) 40%);
+    }
 
-  &.blue-dark25-bg {
-    background: linear-gradient(-8deg, transparent 40%, shade($blue, 25%) 40%), linear-gradient(10deg, transparent 40%, rgba(shade($blue, 25%), 0.5) 40%);
-  }
+    &.blue-dark25-bg {
+      background: linear-gradient(-8deg, transparent 40%, shade($blue, 25%) 40%), linear-gradient(10deg, transparent 40%, rgba(shade($blue, 25%), 0.5) 40%);
+    }
 
-  &.aqua-bg {
-    background: linear-gradient(-8deg, transparent 40%, $aqua 40%), linear-gradient(10deg, transparent 40%, rgba($aqua, 0.5) 40%);
-  }
+    &.aqua-bg {
+      background: linear-gradient(-8deg, transparent 40%, $aqua 40%), linear-gradient(10deg, transparent 40%, rgba($aqua, 0.5) 40%);
+    }
 
-  &.aqua-dark25-bg {
-    background: linear-gradient(-8deg, transparent 40%, shade($aqua, 25%) 40%), linear-gradient(10deg, transparent 40%, rgba(shade($aqua, 25%), 0.5) 40%);
-  }
+    &.aqua-dark25-bg {
+      background: linear-gradient(-8deg, transparent 40%, shade($aqua, 25%) 40%), linear-gradient(10deg, transparent 40%, rgba(shade($aqua, 25%), 0.5) 40%);
+    }
 
-  &.purple-bg {
-    background: linear-gradient(-8deg, transparent 40%, $purple 40%), linear-gradient(10deg, transparent 40%, rgba($purple, 0.5) 40%);
-  }
+    &.purple-bg {
+      background: linear-gradient(-8deg, transparent 40%, $purple 40%), linear-gradient(10deg, transparent 40%, rgba($purple, 0.5) 40%);
+    }
 
-  &.purple-dark25-bg {
-    background: linear-gradient(-8deg, transparent 40%, shade($purple, 25%) 40%), linear-gradient(10deg, transparent 40%, rgba(shade($purple, 25%), 0.5) 40%);
-  }
+    &.purple-dark25-bg {
+      background: linear-gradient(-8deg, transparent 40%, shade($purple, 25%) 40%), linear-gradient(10deg, transparent 40%, rgba(shade($purple, 25%), 0.5) 40%);
+    }
 
-  &.ink-bg {
-    background: linear-gradient(-8deg, transparent 40%, $ink 40%), linear-gradient(10deg, transparent 40%, rgba($ink, 0.5) 40%);
-  }
+    &.ink-bg {
+      background: linear-gradient(-8deg, transparent 40%, $ink 40%), linear-gradient(10deg, transparent 40%, rgba($ink, 0.5) 40%);
+    }
 
-  &.slash::after {
-    opacity: 0.92;
-    bottom: 0;
-    height: 80%;
-  }
+    &.slash::after {
+      opacity: 0.92;
+      bottom: 0;
+      height: 80%;
+    }
 
-  &.slash {
-    padding-bottom: 30px;
-  }
+    &.slash {
+      padding-bottom: 30px;
+    }
 
-  &.thick-slash::after {
-    height: 120%;
-  }
-}
-
-.block-clear-top {
-  @extend .block-clear;
-
-  &.pink-bg {
-    background: linear-gradient(10deg, $pink 65%, transparent 65%), linear-gradient(-10deg, rgba(darken($pink, 20), 0.8) 65%, transparent 65%);
-  }
-
-  &.blue-bg {
-    background: linear-gradient(-10deg, transparent 40%, $blue 40%), linear-gradient(10deg, transparent 40%, rgba($blue, 0.5) 40%);
-  }
-
-  &.aqua-bg {
-    background: linear-gradient(-10deg, transparent 40%, $aqua 40%), linear-gradient(10deg, transparent 40%, rgba($aqua, 0.5) 40%);
-  }
-
-  &.slash::after {
-    top: 0;
-    bottom: auto;
+    &.thick-slash::after {
+      height: 120%;
+    }
   }
 }
 
