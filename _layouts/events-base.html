@@ -20,7 +20,6 @@ layout: events-base
         {% for upcomingevent in page.upcomingevents %}
 
         <li class="post card">
-          <!-- <a class="post-link" href="{{upcomingevent.eventlink}}"> -->
             <div class="post-thumb" style="background-image: url({{upcomingevent.thumbnail}})"></div>
             <div class="post-inner">
               <div class="card-meta meta">
@@ -33,7 +32,6 @@ layout: events-base
               <p class="card-excerpt">{{upcomingevent.description}}</p>
               <a class="events-btn btn btn-arrow" href="{{upcomingevent.eventlink}}">View Upcoming Event</a>
             </div>
-          <!-- </a> -->
         </li>
 
         {% endfor %}
@@ -51,7 +49,6 @@ layout: events-base
         {% for recentevent in page.recentevents %}
 
          <li class="post card">
-          <!-- <a class="post-link" href="{{recentevent.eventlink}}"> -->
             <div class="post-thumb" style="background-image: url({{recentevent.thumbnail}})"></div>
             <div class="post-inner">
               <div class="card-meta meta">
@@ -64,7 +61,6 @@ layout: events-base
               <p class="card-excerpt">{{recentevent.description}}</p>
               <a class="events-btn btn btn-arrow" href="{{recentevent.eventlink}}">View Recent Event</a>
             </div>
-          <!-- </a> -->
         </li>
 
         {% endfor %}

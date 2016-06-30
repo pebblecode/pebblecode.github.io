@@ -31,7 +31,7 @@ upcomingevents:
    date: "July 21st, 2016"
    location: pebble HQ, Vauxhall
    thumbnail: "/img/events/hacking-intro-thumb.png"
-   description: "We run a monthly introduction to Digital Innovation workshop at pebble HQ. This is a practical workshop on techniques that can make your organisation more innovative.<br>The next event will be held on <a href='/events/hackdays/july-21/'>July 12th</a> but if you miss out, our next events are on <a href='/events/hackdays/august-25/'>August 25th</a> and <a href='/events/hackdays/september-22/'>September 22nd</a>"
+   description: "We run a monthly introduction to Digital Innovation workshop at pebble HQ. This is a practical workshop on techniques that can make your organisation more innovative.<br>The next event will be held on <a href='/events/hackdays/july-21/'>July 21th</a> but if you miss out, our next events are on <a href='/events/hackdays/august-25/'>August 25th</a> and <a href='/events/hackdays/september-22/'>September 22nd</a>"
    eventlink: "/events/hackdays/july-21/"
 
 recent-events-title: Recent Events
