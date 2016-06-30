@@ -3,6 +3,7 @@ layout: events-base
 title: Events
 permalink: /events/
 colour: blue
+group: nav
 
 ## Hero Content
 hero-title: Events
