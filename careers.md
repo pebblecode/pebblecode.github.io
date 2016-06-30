@@ -3,7 +3,6 @@ layout: careers
 title: Careers
 permalink: /careers/
 categories: [hacks]
-group: nav
 colour: purple
 
 

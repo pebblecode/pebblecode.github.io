@@ -100,15 +100,32 @@ person5-summary:
 - "<p class='card-excerpt'>Bike nut.</p>"
 
 
+## ------ Innovation Team ------ ##
+core-team-title: Core Team
+core-intro: "Drawn from a range of unique backgrounds, our core team of designers, developers and creative technologists are passionate and commited to innovation. We create Awesome! and have fun doing it!"
+
+core-btn: Come Join Us
+core-btn-url: "/careers/"
+
+
 ## ------- Photo 4 -------- ##
 photo4-url: pebble.jpg
 
 
-## ------ Product ------ ##
+## ------ Actionable CTA ------ ##
 action-illustration: v2/people.png
 action-title: Hack Days
-action-summary: We run a monthly introduction to Digital Innovation workshop at pebble HQ. The first step towards creating a culture of technical innovation is removing the fear of failure.
-action-btn-text: Sign Up Now
-action-btn-url: /contact
+action-summary: We run a monthly introduction to Digital Innovation workshop at pebble HQ. This is a practical workshop on techniques that can make your organisation more innovative.
+action-btn-text: Sign Up for the Next one now
+action-btn-url: "http://pebblecode.com/events/hackdays/july-21/"
+
+## ------ Hackday Events ------ ##
+hackday-events:
+ - name: July 21
+   link: "http://pebblecode.com/events/hackdays/july-21/"
+ - name: August 25
+   link: "http://pebblecode.com/events/hackdays/august-25/"
+ - name: September 22
+   link: "http://pebblecode.com/events/hackdays/september-22/"
 
 ---
