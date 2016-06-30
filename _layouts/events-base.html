@@ -20,18 +20,18 @@ layout: events-base
         {% for upcomingevent in page.upcomingevents %}
 
         <li class="post card">
-          <a class="post-link" href="{{upcomingevent.eventlink}}">
             <div class="post-thumb" style="background-image: url({{upcomingevent.thumbnail}})"></div>
             <div class="post-inner">
               <div class="card-meta meta">
                 <span class="meta-date">{{upcomingevent.date}}</span>
                 <span class="meta-location">{{upcomingevent.location}}</span>
               </div>
-              <h3 class="card-title">{{upcomingevent.name}}</h3>
+              <a href="{{upcomingevent.eventlink}}">
+                <h3 class="card-title">{{upcomingevent.name}}</h3>
+              </a>
               <p class="card-excerpt">{{upcomingevent.description}}</p>
-              <button class="events-btn btn btn-arrow" href="{{upcomingevent.eventlink}}">View Upcoming Event</button>
+              <a class="events-btn btn btn-arrow" href="{{upcomingevent.eventlink}}">View Upcoming Event</a>
             </div>
-          </a>
         </li>
 
         {% endfor %}
@@ -49,18 +49,18 @@ layout: events-base
         {% for recentevent in page.recentevents %}
 
          <li class="post card">
-          <a class="post-link" href="{{recentevent.eventlink}}">
             <div class="post-thumb" style="background-image: url({{recentevent.thumbnail}})"></div>
             <div class="post-inner">
               <div class="card-meta meta">
                 <span class="meta-date">{{recentevent.date}}</span>
                 <span class="meta-location">{{recentevent.location}}</span>
               </div>
+              <a href="{{recentevent.eventlink}}">
               <h3 class="card-title">{{recentevent.name}}</h3>
+              </a>
               <p class="card-excerpt">{{recentevent.description}}</p>
-              <button class="events-btn btn btn-arrow" href="{{recentevent.eventlink}}">View Recent Event</button>
+              <a class="events-btn btn btn-arrow" href="{{recentevent.eventlink}}">View Recent Event</a>
             </div>
-          </a>
         </li>
 
         {% endfor %}
