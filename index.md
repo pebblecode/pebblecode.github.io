@@ -22,8 +22,10 @@ intro: pebble {code} helps bold businesses to innovate, grow internal capabiliti
 ## ------ Expertise ------ ##
 expertise-title: Areas of Expertise
 expertise-subtitle: We’re good at harnessing the power of the most complex tools and technologies and applying these to solve business problems.
-expertise-btn-text: What we've done
-expertise-btn-url: /work
+expertise-work-btn-text: What we've done
+expertise-work-btn-url: /work
+expertise-wiw-btn-text: Why it works
+expertise-wiw-btn-url: /why-it-works
 
 # Expertise One
 expertise-one-title: Cloud
