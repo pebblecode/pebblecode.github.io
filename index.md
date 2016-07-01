@@ -4,7 +4,6 @@ colour:
 title: Agile Development, Design Thinking and Rapid Prototyping
 permalink: /
 
-
 ## ------ Hero ------ ##
 hero-title: We do Digital Innovation
 hero-subtitle:
