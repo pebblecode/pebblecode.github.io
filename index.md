@@ -47,7 +47,7 @@ photo1-url: hackday.jpg
 
 ## ------ Actionable CTA ------ ##
 action-illustration: v2/people.png
-action-title: Hack Days
+action-title: Innovation, Uncovered
 action-summary: We run a monthly introduction to Digital Innovation workshop at pebble HQ. This is a practical workshop on techniques that can make your organisation more innovative.
 action-btn-text: Sign Up for the Next one now
 action-btn-url: "http://pebblecode.com/events/hackdays/july-21/"
