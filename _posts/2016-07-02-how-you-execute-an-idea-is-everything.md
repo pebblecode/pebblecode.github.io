@@ -1,9 +1,9 @@
 ---
 layout: post
-title: How you execute an idea is everything
+title:  How you execute an idea is everything
 author: George Ornbo
 categories: [opinion]
---- 
+---
 
 The time when startups had an uncontested market for their idea is mostly over. In the winner takes all economy how you execute your idea is everything.
 
