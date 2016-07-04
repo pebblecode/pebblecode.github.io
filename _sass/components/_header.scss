@@ -4,7 +4,8 @@
   opacity: 0.99;
   transform: translateZ(0);
 
-  &:not(.top) {
+  &:not(.top),
+  &.active {
     border-bottom: 1px solid rgba(white, 0.25);
     box-shadow: 0 3px 0 rgba(black, 0.06);
   }
