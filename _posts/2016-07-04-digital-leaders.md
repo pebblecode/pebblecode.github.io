@@ -21,7 +21,8 @@ If you’re thinking, “Could agile help my business?” you’re not alone. Th
 		Get your employees and later your clients on board with agile with proof that this process was used to turn out a working product, and that it’s not just a “nice idea.”
 
 
-For more on the agile process, watch the full videocast [here][2], and register for one of our Intro to Innovation Hack Days at pebble HQ!
+For more on the agile process, watch the full videocast [here][2], and [register][3] for one of our Intro to Innovation Hack Days at pebble HQ!
 
 [1]: https://www.google.com/url?q=http://digileaders.com&sa=D&ust=1467645514774000&usg=AFQjCNGEa669MQO0ZjOxfJogb2ZyAACKCQ
 [2]: https://www.youtube.com/watch?v=kKnpLIBebcg&list=PL-dJIEIRPT5cyo4P2abSPMQtdrD35jsaR
+[3]: http://pebblecode.com/events/
