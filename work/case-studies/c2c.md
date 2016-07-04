@@ -22,7 +22,7 @@ photo1-url: features/team.jpg
 
 
 ## ------ Problem ------ ##
-problem-illustration: v2/digital.svg
+problem-illustration: v2/digital.png
 problem-title: The Problem
 problem-summary-lrg: c2c workers toured their platforms recording problems as they arose.
 problem-summary: This pen-and-paper method required an extra step to relay feedback to engineers, delaying repairs and leaving everyone unsatisfied.
@@ -50,7 +50,7 @@ quote1-author:
 
 ## ------ The Results ------ ##
 results-title: The Results
-results-illustration: v2/devices.svg
+results-illustration: v2/devices.png
 results-summary-lrg: Through our signature rapid prototyping process, we were able to deliver working software to C2C in weeks that streamlines assessments.
 results-summary: We cut the processing time in half. The app’s automated reports highlight problem areas for more efficient resource allocation.
 results-screenshot: c2c/screenshot.png
@@ -70,7 +70,7 @@ photo2-url: case-studies/c2c/feature-1.jpg
 
 
 ## ------ Actionable CTA ------ ##
-action-illustration: v2/brain.svg
+action-illustration: v2/brain.png
 action-title: Want to minimize frustrations? pebble {code} has you covered.
 
 ---
