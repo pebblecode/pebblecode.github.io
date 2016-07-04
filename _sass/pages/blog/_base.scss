@@ -118,7 +118,7 @@ a .post-title {
 }
 
 .post-thumbnail-wrapper {
-  background-image: url('../img/blog/placeholders/pink-phold.svg');
+  background-image: url('../img/blog/placeholders/pink-phold.png');
   background-size: cover;
   background-position: center;
   display: inline-block;
@@ -140,23 +140,23 @@ a .post-title {
   }
 
   .post-item:nth-child(even) & {
-    background-image: url('../img/blog/placeholders/blue-phold.svg');
+    background-image: url('../img/blog/placeholders/blue-phold.png');
   }
 
   .post-item:nth-child(3n+3) & {
-    background-image: url('../img/blog/placeholders/purple-phold.svg');
+    background-image: url('../img/blog/placeholders/purple-phold.png');
   }
 
   .post-item:nth-child(4n+4) & {
-    background-image: url('../img/blog/placeholders/orange-phold.svg');
+    background-image: url('../img/blog/placeholders/orange-phold.png');
   }
 
   .post-item:nth-child(5n+5) & {
-    background-image: url('../img/blog/placeholders/green-phold.svg');
+    background-image: url('../img/blog/placeholders/green-phold.png');
   }
 
   .post-item:nth-child(6n+6) & {
-    background-image: url('../img/blog/placeholders/aqua-phold.svg');
+    background-image: url('../img/blog/placeholders/aqua-phold.png');
   }
 }
 
@@ -294,26 +294,26 @@ a .post-title {
 // card-tags
 .blog-card {
   .card-img {
-    background-image: url('../img/blog/placeholders/pink-phold.svg');
+    background-image: url('../img/blog/placeholders/pink-phold.png');
   }
 
   &:nth-of-type(2n) .card-img {
-    background-image: url('../img/blog/placeholders/blue-phold.svg');
+    background-image: url('../img/blog/placeholders/blue-phold.png');
   }
 
   &:nth-of-type(3n) .card-img {
-    background-image: url('../img/blog/placeholders/purple-phold.svg');
+    background-image: url('../img/blog/placeholders/purple-phold.png');
   }
 
   &:nth-of-type(4n) .card-img {
-    background-image: url('../img/blog/placeholders/aqua-phold.svg');
+    background-image: url('../img/blog/placeholders/aqua-phold.png');
   }
 
   &:nth-of-type(5n) .card-img {
-    background-image: url('../img/blog/placeholders/orange-phold.svg');
+    background-image: url('../img/blog/placeholders/orange-phold.png');
   }
 
   &:nth-of-type(6n) .card-img {
-    background-image: url('../img/blog/placeholders/green-phold.svg');
+    background-image: url('../img/blog/placeholders/green-phold.png');
   }
 }
