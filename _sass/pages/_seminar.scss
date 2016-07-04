@@ -102,10 +102,6 @@
 .seminar-titlestack {
   margin: 40px auto;
   text-align: center;
-  // transform: skewY(-5deg);
-
-  // -webkit-text-stroke-width: 3px;
-  // -webkit-text-stroke-color: #ed4f7e;
   color: #ddd;
   position: relative;
   z-index: 2;
@@ -532,6 +528,7 @@ h3.seminar-header-time::before {
     margin-right: 6px;
     font-weight: $font-bold;
     padding-top: 2px;
+    border: none;
 
     @media screen and ( max-width: $medium ) {
       margin-right: 8px;
