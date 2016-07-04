@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  The Recipe for Innovation
-author: 
+author: Hanna Kielar
 categories: [innovation]
 ---
 ##Practical Approaches to Innovation
