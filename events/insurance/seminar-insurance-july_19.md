@@ -12,7 +12,7 @@ seminar-intro: pebble {code} chairs a breakfast seminar on
 seminar-title1: Innovation
 seminar-title2: in
 seminar-title3: Insurance
-seminar-hero: insurance-innovation-header.png
+seminar-hero: "events/insurance-innovation-header.png"
 seminar-subtitle: In the trenches
 seminar-intro-paragraphs:
  - "<a href='http://pebblecode.com'>pebble {code}</a> and <a href='http://www.ingenin.com/'>Ingenin</a> invite you to join us for a breakfast seminar at <a href='http://searcys.co.uk/venues/the-gherkin/'>Searcys</a> in the Gherkin to discuss the future of technology and innovation in insurance."
