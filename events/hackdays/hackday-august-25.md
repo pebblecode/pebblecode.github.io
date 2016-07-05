@@ -11,10 +11,10 @@ hubspot-portalid: 2277134
 hubspot-formid: 439628ec-84af-4e8b-b781-7089d432d645
 
 ## Seminar Details
-seminar-intro: pebble {code} leads an intro to
-seminar-title1: Hacking
-seminar-title2:
-seminar-title3:
+seminar-intro: pebble {code} leads a workshop on
+seminar-title1: Intro
+seminar-title2: to
+seminar-title3: Innovation
 seminar-hero: "events/hacking-header.png"
 seminar-subtitle: In the trenches
 seminar-intro-paragraphs:
