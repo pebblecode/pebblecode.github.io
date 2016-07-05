@@ -12,7 +12,7 @@ seminar-intro: pebble {code} & Workspace hosts a talk on
 seminar-title1: Innovation
 seminar-title2:
 seminar-title3: Hacking
-seminar-hero: digital-seminar-hero.png
+seminar-hero: "events/hacking-header.png"
 seminar-subtitle: (the good type of hacking)
 seminar-intro-paragraphs:
 - "Please join us for an informal presentation and discussion at <a href='http://www.workspace.co.uk/workspaces/vox-studios'>Vox Studios</a> to discuss how hacking can empower your team and drive innovation and growth."

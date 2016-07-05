@@ -1,6 +1,6 @@
 ---
-layout: seminar-hubspot
-title: Hack Days
+layout: seminar-new
+title: Intro to Innovation days
 permalink: /events/hackdays/july-21/
 colour: pink
 
@@ -15,7 +15,7 @@ seminar-intro: pebble {code} leads an intro to
 seminar-title1: Hacking
 seminar-title2:
 seminar-title3:
-seminar-hero: hacking-header.png
+seminar-hero: "events/hacking-header.png"
 seminar-subtitle: In the trenches
 seminar-intro-paragraphs:
  - "pebble {code}'s Hacking Workshop introduces Digital Innovation through practical techniques that we use regularly with clients. Delegates will gain an understanding of the value of digital experimentation and the approach that organisations need to adopt for success."
@@ -29,7 +29,7 @@ seminar-intro-paragraphs:
     </ul>"
  - "Delegates will take away an opinion on how they can apply practical innovation techniques to their organisation and how they can get buy-in from senior leadership. Attendees will also work collaboratively on an idea during the session."
  - "This session will be led by <a href='#george-ornbo'>George Ornbo,</a> Co-founder and Managing Director at pebble {code}."
-eventbright-url: "https://www.eventbrite.co.uk/e/innovation-in-insurance-tickets-26147397570"
+eventbright-url: "https://www.eventbrite.co.uk/e/intro-to-innovation-tickets-26409708148"
 
 
 ## Location and Time
