@@ -4,7 +4,7 @@ title:  The Recipe for Innovation
 author: Hanna Kielar
 categories: [innovation]
 ---
-##Practical Approaches to Innovation
+## Practical Approaches to Innovation
 
 It takes anywhere from 7 seconds all the way down to a millisecond for someone to form an opinion - about a person, a product, about anything. And every minute, consumers are inundated with ads, links, sights, and sounds. Life moves fast. 
 
