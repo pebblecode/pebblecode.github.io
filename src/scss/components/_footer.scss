@@ -1,0 +1,99 @@
+.gbl-foot-inner {
+  -webkit-font-smoothing: antialiased;
+  position: relative;
+  padding: 20px $gutter * 2 60px;
+
+  @media screen and ( max-width: $medium + 100px ) {
+    padding: 20px $gutter;
+  }
+}
+
+.gbl-foot-tagline {
+  color: rgba($primary, 0.4);
+  position: absolute;
+  right: $gutter * 2;
+  bottom: $gutter;
+  width: 100%;
+  text-align: right;
+
+  @media screen and ( max-width: $medium + 100px ) {
+    position: relative;
+    text-align: left;
+    bottom: 0;
+    right: 0;
+  }
+
+  .gbl-foot-light & {
+    color: rgba(white, 0.4);
+  }
+}
+
+.gbl-foot-links {
+  position: relative;
+  z-index: 3;
+
+  li {
+    display: inline-block;
+    margin-right: 20px;
+
+    @media screen and ( max-width: $medium + 100px ) {
+      display: block;
+      margin-bottom: 10px;
+    }
+  }
+
+  a {
+    color: $pink;
+    border: none;
+    padding: 0;
+
+    &:hover {
+      color: rgba($pink, 0.8);
+    }
+
+    .gbl-foot-light & {
+      color: white;
+
+      &:hover {
+        color: rgba(white, 0.6);
+      }
+    }
+  }
+}
+
+.gbl-foot-social {
+  position: absolute;
+  right: $gutter * 2;
+  top: 22px;
+  z-index: 3;
+
+  @media screen and ( max-width: $medium + 100px ) {
+    right: $gutter;
+  }
+
+  li {
+    display: inline-block;
+    margin-left: 10px;
+    vertical-align: top;
+
+    @media screen and ( max-width: $medium ) {
+      margin-left: 4px;
+    }
+  }
+
+  a {
+    border: none;
+
+    &:hover { opacity: 0.8; }
+
+    &.github { @include sprite($octocat-pink); }
+    &.twitter { @include sprite($twitter-pink); }
+    &.vimeo { @include sprite($vimeo-pink); }
+  }
+
+  .gbl-foot-light & {
+    .github { @include sprite($octocat-white); }
+    .twitter { @include sprite($twitter-white); }
+    .vimeo { @include sprite($vimeo-white); }
+  }
+}

@@ -1,0 +1,54 @@
+---
+layout: cruk-search-widget
+---
+{% include head-cruk.html %}
+
+  <body class="{{ page.layout }}">
+
+    {% include header.html %}
+
+    <section class="hero-container {{ page.colour }}">
+      <div class="hero-inner grid">
+        <h1 class="hero-title col-1-1">{% if page.hero-title %}{{page.hero-title}}{% else %}{{page.title}}{% endif %}</h1>
+        {% if page.hero-subtitle %}
+          <p class="hero-summary col-1-1">{{page.hero-subtitle}}</p>
+        {% endif %}
+      </div>
+    </section>
+    <!-- /.hero-container -->
+
+    <section class="content-container grid">
+      <article class="content col-1-1">
+        {{content}}
+
+        <!-- CRUK HTML Code -->
+        <div id="cancerresearch-search-widget" style="max-width:960px; width:auto; margin-right:auto; margin-left:auto;"></div>
+         <script type="text/javascript" id="cancerresearch-search-widget-js" class="cancerresearch-search-widget-loader">
+        (function() {
+         function asyncLoad() {
+          var widget = document.createElement('script');
+          widget.type = 'text/javascript';
+          widget.async = true;
+          widget.src = '../js/search-widget.js';
+          var embedder = document.getElementById('cancerresearch-search-widget');
+          embedder.parentNode.insertBefore(widget, embedder);
+
+          var stylingRef = document.createElement('link');
+          stylingRef.setAttribute('rel', 'stylesheet');
+          stylingRef.setAttribute('type', 'text/css');
+          stylingRef.setAttribute('href', '../css/search-widget_css.css');
+          document.getElementsByTagName('head')[0].appendChild(stylingRef); }
+
+         if (window.attachEvent)
+          window.attachEvent('onload', asyncLoad);
+         else
+          window.addEventListener('load', asyncLoad, false); })()
+         </script>
+         <!-- end CRUK HTML code -->
+
+      </article>
+    </section>
+    <!-- /.content-container -->
+    {% include footer.html %}
+  </body>
+</html>

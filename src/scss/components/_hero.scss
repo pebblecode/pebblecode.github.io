@@ -1,0 +1,20 @@
+.hero-block {
+  .client-logo {
+    position: relative;
+    display: table;
+    margin: -20px auto 40px;
+    padding-bottom: 70px;
+    overflow: visible;
+
+    &::before {
+      @include pseudo;
+      transform: translateX(-50%);
+      left: 50%;
+      bottom: 0;
+      width: 100px;
+      height: 8px;
+      border-radius: 5px;
+      background-color: rgba(white, 0.2);
+    }
+  }
+}

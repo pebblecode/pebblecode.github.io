@@ -1,0 +1,57 @@
+<footer class="gbl-foot {{ include.colour }}-bg gbl-foot-{{ include.tone }}">
+  <div class="gbl-foot-inner grid">
+    <ul class="gbl-foot-links">
+      <li><a href="tel:+442033273940">+44 (0) 20 3327 3940</a></li>
+      <li><a href="mailto:{{site.email}}">{{site.email}}</a></li>
+      <li><a href="{{ site.baseurl }}/contact">Find us</a></li>
+      <li><a href="{{ site.baseurl }}/careers">Join us</a></li>
+    </ul>
+    <ul class="gbl-foot-social">
+      <li><a href="https://github.com/{{site.github}}" class="github" target="_blank">Github</a></li>
+      <li><a href="https://twitter.com/{{site.twitter}}" class="twitter" target="_blank">Twitter</a></li>
+      <li><a href="https://vimeo.com/{{site.vimeo}}" class="vimeo" target="_blank">Vimeo</a></li>
+    </ul>
+    <span class="gbl-foot-tagline">Delivering Awesome!</span>
+  </div>
+</footer>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<!-- Start of Async HubSpot Analytics Code -->
+<script type="text/javascript">
+  (function(d,s,i,r) {
+   if (d.getElementById(i)){return;}
+   var n=d.createElement(s),e=d.getElementsByTagName(s)[0];
+   n.id=i;n.src='//js.hs-analytics.net/analytics/'+(Math.ceil(new Date()/r)*r)+'/2277134.js';
+   e.parentNode.insertBefore(n, e);
+   })(document,"script","hs-analytics",300000);
+</script>
+<!-- End of Async HubSpot Analytics Code -->
+{% if include.maps %}
+  <!--[if gt IE 8]><!-->
+  <script src="http://maps.google.com/maps/api/js?v=3" defer></script>
+  <script src="{{ site.baseurl }}/js/map.js" defer></script>
+  <!--<![endif]-->
+{% endif %}
+{% if include.lazyload %}
+  <script src="{{ site.baseurl }}/js/vendor/jquery.lazyload.min.js"></script>
+  <script>
+    $(function ($) {
+      $('img.lazyload').lazyload({
+        effect: 'fadeIn',
+        threshold: 200
+      });
+    });
+  </script>
+{% endif %}
+{% if include.prettyprint %}
+  <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js" defer></script>
+  <script>
+  [].forEach.call(document.getElementsByTagName("pre"), function(el) {
+    el.classList.add("prettyprint");
+  });
+  </script>
+{% endif %}
+<script src="{{ site.baseurl }}/js/main.min.js" defer></script>
+{% for extrascript in include.extrascripts %}
+  <script src="{{ site.baseurl }}/js/{{extrascript.link}}" defer></script>
+{% endfor %}

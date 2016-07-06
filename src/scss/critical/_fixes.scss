@@ -1,0 +1,16 @@
+body,
+html {
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+}
+
+.photo-container {
+  height: 400px;
+
+  @media screen and ( max-width: $medium ) {
+    height: 200px;
+  }
+}

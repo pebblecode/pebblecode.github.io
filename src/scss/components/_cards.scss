@@ -1,0 +1,262 @@
+.card-block {
+  padding-left: $gutter * 2 + 8px;
+  padding-right: $gutter * 2;
+
+  @media screen and ( max-width: $medium ) {
+    padding-left: $gutter + 8px;
+    padding-right: $gutter;
+    padding-bottom: 0;
+  }
+}
+
+.card {
+  margin: 30px -4px;
+  padding: 0;
+  background: $grey;
+	position: relative;
+	box-shadow: 0 -2px 10px rgba(black, 0.12);
+  transition: 0.2s ease-in-out;
+
+  @media screen and ( max-width: $medium ) {
+    margin: 20px -4px 0;
+    padding-bottom: $gutter;
+    width: 100%;
+    display: table;
+  }
+
+  .grey-bg &,
+  .grey-bg &::after {
+    background-color: white;
+  }
+
+  &:hover {
+    transform: scale(1.03);
+    box-shadow: 0 -2px 10px rgba(black, 0.25);
+
+    &::before {
+      box-shadow: -1px 1px 10px rgba(black, 0.2);
+    }
+  }
+
+  &::before,
+  &::after {
+    @include pseudo;
+    transform: rotate(-3deg) skewX(-3deg);
+    width: 100%;
+    bottom: -15px;
+    transition: 0.2s ease-in-out;
+
+    @media screen and ( max-width: $medium ) {
+      display: none;
+    }
+  }
+
+	&::before {
+    transition: 0.2s;
+  	height: 30px;
+  	box-shadow: -1px 1px 10px rgba(black, 0.12);
+	}
+
+	&::after {
+  	position: relative;
+  	height: 35px;
+  	background-color: $grey;
+  }
+
+  &:nth-of-type(even) {
+    margin-bottom: 30px;
+    top: -10px;
+
+    @media screen and ( min-width: $medium ) {
+      z-index: 4;
+    }
+
+    @media screen and ( max-width: $medium ) {
+      top: 0;
+    }
+
+    &::before,
+    &::after {
+      transform: rotate(3deg) skewX(3deg);
+    }
+
+    &::before {
+      box-shadow: 1px 1px 10px rgba(black, 0.12);
+    }
+
+    &:hover::before {
+      box-shadow: 1px 1px 10px rgba(black, 0.2);
+    }
+
+    @media screen and ( min-width: $medium ) {
+      .card-btn:not(.btn) {
+        padding-bottom: 35px;
+      }
+    }
+  }
+
+  [class*="blue-"] &,
+  [class*="blue-"] &::after,
+  [class*="blue-"] & .card-title::after {
+    background-color: lighten($blue, 10);
+  }
+
+  [class*="blue-"] &:hover,
+  [class*="blue-"] &:hover::after,
+  [class*="blue-"] &:hover .card-title::after {
+    background-color: lighten($blue, 14);
+  }
+
+  [class*="purple-"] &,
+  [class*="purple-"] &::after,
+  [class*="purple-"] & .card-title::after {
+    background-color: tint($purple, 2%);
+  }
+
+  [class*="purple-"] &:hover,
+  [class*="purple-"] &:hover::after,
+  [class*="purple-"] &:hover .card-title::after {
+    background-color: tint($purple, 5%);
+  }
+}
+
+
+.card-link {
+  border-bottom: none;
+}
+
+.card-inner {
+  position: relative;
+  overflow: hidden;
+}
+
+.card-ball {
+  width: 180px;
+  height: 180px;
+  margin: -40px auto -10px;
+  border-radius: 50%;
+  box-shadow: $box-shadow-lrg;
+
+  & + .card-title {
+    @extend h2;
+  }
+}
+
+.card-img {
+  height: 150px;
+  background-position: center;
+  background-size: cover;
+}
+
+.card-logo {
+  margin: 15px 25px -15px;
+  transform-origin: left;
+  transform: scale(0.7);
+}
+
+.card-title {
+	color: $primary;
+	padding: 30px 25px 0;
+  transition: 0.2s;
+
+  &.slash-top {
+    padding-top: 5px;
+  }
+
+  .card:hover & {
+    color: darken($primary, 10);
+  }
+
+  .block-light &,
+  .block-light:hover & {
+    color: white;
+  }
+
+  &::after {
+    transition: 0.2s;
+    z-index: -1;
+  }
+}
+
+.card-subtitle {
+  color: lighten($ink, 25);
+  padding: 0 25px;
+  line-height: 1.1;
+  font-weight: $font-regular;
+
+  @media screen and ( max-width: $medium ) {
+    font-size: $delta;
+  }
+
+  .block-light & {
+    color: rgba(white, 0.6);
+  }
+}
+
+.card-excerpt {
+  padding: 0 25px;
+  color: $ink;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+
+  .block-light & {
+    color: white;
+  }
+
+  li {
+    -webkit-font-smoothing: antialiased;
+    font-size: $zeta;
+    padding: 20px 0 15px;
+    line-height: 1.3;
+    position: relative;
+
+    &::after {
+      @include pseudo;
+      top: 0;
+      width: 40px;
+      height: 5px;
+      border-radius: 5px;
+      background-color: rgba(white, 0.2);
+    }
+
+    &:first-child {
+      margin-top: 30px;
+    }
+
+    @media screen and ( min-width: $medium ) {
+      &:last-child {
+        margin-bottom: -30px;
+      }
+    }
+  }
+}
+
+.card-meta {
+	color: $ink;
+  padding: 0 25px 5px;
+}
+
+.card-tags {
+  padding: 0 25px;
+  display: table;
+}
+
+.card-btn {
+  position: relative;
+  z-index: 1;
+  display: block;
+  padding: $gutter + 10px $gutter $gutter;
+  margin-bottom: -50px;
+  border: none;
+
+  @media screen and ( max-width: $medium ) {
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  &.btn {
+    margin: $gutter $gutter 0;
+  }
+}

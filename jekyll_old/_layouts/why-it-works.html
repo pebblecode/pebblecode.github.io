@@ -1,0 +1,192 @@
+{% include head.html %}
+
+  <body class="{{ page.layout }}">
+
+    {% include header.html slash-angle="right" %}
+
+    {% include hero.html %}
+
+    <section class="process-hero card-block block purple-dark25-bg slash-shadow block-light block-clear">
+      <div class="block-inner grid">
+        <h2 class="text-center">{{ page.herosub-title }}</h2>
+        <div class="card col-1-3">
+          <h3 class="card-title">{{ page.herosub-block1-title }}</h3>
+          <ul class="card-excerpt">
+            <li>{{ page.herosub-block1-item1 }}</li>
+            <li>{{ page.herosub-block1-item2 }}</li>
+            <li>{{ page.herosub-block1-item3 }}</li>
+          </ul>
+        </div>
+        <div class="card col-1-3">
+          <h3 class="card-title">{{ page.herosub-block2-title }}</h3>
+          <ul class="card-excerpt">
+            <li>{{ page.herosub-block2-item1 }}</li>
+            <li>{{ page.herosub-block2-item2 }}</li>
+            <li>{{ page.herosub-block2-item3 }}</li>
+          </ul>
+        </div>
+        <div class="card col-1-3">
+          <h3 class="card-title">{{ page.herosub-block3-title }}</h3>
+          <ul class="card-excerpt">
+            <li>{{ page.herosub-block3-item1 }}</li>
+            <li>{{ page.herosub-block3-item2 }}</li>
+            <li>{{ page.herosub-block3-item3 }}</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    {% include photo.html url="/img/features/fussball.jpg" position="top" %}
+
+    <section class="intro-block process-problem-block block slash-shadow slash-top slash-right">
+      <div class="block-inner grid">
+        <h2>{{ page.intro-title }}</h2>
+        <p>{{ page.intro }}</p>
+        <div class="process-problem-diagram">
+          <div class="target target-1">
+            <button class="target-btn">1</button>
+            <div class="target-popup">
+              <div class="target-popup-inner">
+                <button class="target-close-btn">Close</button>
+                <h4>{{ page.popup1-title }}</h4>
+                <p>{{ page.popup1-summary }}</p>
+                {% if page.popup1-btn-text %}
+                  <a href="{{page.popup1-btn-url}}" class="btn btn-arrow">{{page.popup1-btn-text}}</a>
+                {% endif %}
+              </div>
+            </div>
+          </div>
+          <div class="target target-2">
+            <div class="target-popup target-popup-down">
+              <div class="target-popup-inner">
+                <button class="target-close-btn">Close</button>
+                <h4>{{ page.popup2-title }}</h4>
+                <p>{{ page.popup2-summary }}</p>
+                {% if page.popup2-btn-text %}
+                  <a href="{{page.popup2-btn-url}}" class="btn btn-arrow">{{page.popup2-btn-text}}</a>
+                {% endif %}
+              </div>
+            </div>
+            <button class="target-btn">2</button>
+          </div>
+          <div class="target target-3">
+            <div class="target-popup target-popup-down">
+              <div class="target-popup-inner">
+                <button class="target-close-btn">Close</button>
+                <h4>{{ page.popup3-title }}</h4>
+                <p>{{ page.popup3-summary }}</p>
+                {% if page.popup3-btn-text %}
+                  <a href="{{page.popup3-btn-url}}" class="btn btn-arrow">{{page.popup3-btn-text}}</a>
+                {% endif %}
+              </div>
+            </div>
+            <button class="target-btn">3</button>
+          </div>
+          <h3 class="process-title">Problem</h3>
+          <ul class="process-problem-points">
+            <li class="process-problem">
+              <h4 class="process-problem-title">{{ page.process1-title }}</h4>
+            </li>
+            <li class="process-problem">
+              <h4 class="process-problem-title">{{ page.process2-title }}</h4>
+            </li>
+            <li class="process-problem">
+              <h4 class="process-problem-title">{{ page.process3-title }}</h4>
+            </li>
+            <li class="process-problem">
+              <h4 class="process-problem-title">{{ page.process4-title }}</h4>
+            </li>
+            <li class="process-problem">
+              <h4 class="process-problem-title">{{ page.process5-title }}</h4>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="intro-block process-solution-block block slash-shadow slash-right grey-bg">
+      <div class="block-inner grid">
+        <div class="process-solution-diagram">
+          <img src="/img/illustrations/process-solution.png" alt="" class="process-solution">
+          <div class="target target-4">
+            <button class="target-btn">4</button>
+            <div class="target-popup">
+              <div class="target-popup-inner">
+                <button class="target-close-btn">Close</button>
+                <h4>{{ page.popup4-title }}</h4>
+                <p>{{ page.popup4-summary }}</p>
+                {% if page.popup4-btn-text %}
+                  <a href="{{page.popup4-btn-url}}" class="btn btn-arrow">{{page.popup4-btn-text}}</a>
+                {% endif %}
+              </div>
+            </div>
+          </div>
+          <div class="target target-5">
+            <div class="target-popup target-popup-down">
+              <div class="target-popup-inner">
+                <button class="target-close-btn">Close</button>
+                <h4>{{ page.popup5-title }}</h4>
+                <p>{{ page.popup5-summary }}</p>
+                {% if page.popup5-btn-text %}
+                  <a href="{{page.popup5-btn-url}}" class="btn btn-arrow">{{page.popup5-btn-text}}</a>
+                {% endif %}
+              </div>
+            </div>
+            <button class="target-btn">5</button>
+          </div>
+          <h3 class="process-title">Solution</h3>
+        </div>
+      </div>
+    </section>
+
+    {% include photo.html url="/img/features/eliaemma.jpg" %}
+
+    <section id="work" class="intro-block block block-light slash-shadow slash-top {{ page.cta-colour }}-bg">
+      <div class="block-inner grid">
+        <h2>{{ page.cta-title }}</h2>
+        <p>{{ page.cta-subtitle }}</p>
+        {% if page.cta-btn-text %}
+          <a href="{{page.cta-btn-url}}" class="btn btn-lrg btn-light  btn-arrow">{{page.cta-btn-text}}</a>
+        {% endif %}
+      </div>
+    </section>
+
+    {% include footer.html lazyload=true colour="pink" tone="light" %}
+
+    <script>
+    // Change header colour
+    var headerContainer = $('.gbl-head');
+    if ($(headerContainer).length > 0) {
+      var work;
+
+      var scrollPositions = function () {
+        work = $('#work');
+      };
+
+      var headerBG = function () {
+        var windowTop = $(window).scrollTop();
+        if (windowTop > work.offset().top - 500 || work.offset().bottom) {
+          headerContainer.css({'background-color':'#ed4f7e'});
+        } else {
+          headerContainer.css({'background-color':'#9b5ca4'});
+        }
+      };
+
+      $(window).resize(scrollPositions).scroll(headerBG);
+      scrollPositions();
+      headerBG();
+    }
+
+    var target = $('.target');
+    var targetBtn = $('.target-btn');
+    var targetClose = $('.target-close-btn');
+    targetBtn.click(function() {
+      $(target).removeClass('active');
+      $(this).parent(target).addClass('active');
+    });
+    targetClose.click(function() {
+      $(target).removeClass('active');
+    });
+    </script>
+
+  </body>
+</html>

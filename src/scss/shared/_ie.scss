@@ -1,0 +1,91 @@
+//===============================================================================
+// IE8 AND BELOW
+//===============================================================================
+.lt-ie9 {
+  // Global Header
+  .gbl-head-logo {
+    color: white;
+    width: auto;
+    font-size: $gamma;
+    font-weight: $font-bold;
+  }
+
+  .gbl-head-nav {
+    right: 100px;
+  }
+
+  // Global Footer
+  .gbl-foot-social li a {
+    width: auto;
+    font-size: $body-font-size;
+    color: $primary;
+  }
+
+  // Hide Content
+  .feat-content-img,
+  .client-container,
+  .services-process-container,
+  .services-item-img,
+  .project-item hr {
+    display: none;
+  }
+
+  // Services
+  .services-item-inner {
+    display: block;
+    position: relative;
+    top: auto;
+    left: auto;
+    right: auto;
+  }
+
+  // Work
+  .project-title {
+    background-color: white;
+    padding-bottom: 20px;
+  }
+
+  // Careers
+  .kaizen-container {
+    background-color: $aqua;
+  }
+
+  .benefits-list-item {
+    padding-left: 20px;
+
+    &:after {
+      display: none;
+    }
+  }
+
+  // Contact
+  .tab-head-item {
+    color: white;
+    opacity: 0.5;
+
+    &.active {
+      opacity: 1;
+    }
+  }
+
+  .location-item a {
+    padding-left: 0;
+
+    &:after {
+      display: none;
+    }
+  }
+
+  .ppl-container .content-title {
+    border-bottom: none;
+    margin-bottom: 20px;
+  }
+
+  .ppl-item {
+    padding: 0 0 20px;
+  }
+
+  .ppl-join-container {
+    background-color: white;
+  }
+}

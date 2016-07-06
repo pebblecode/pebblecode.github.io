@@ -1,0 +1,32 @@
+<section id="careers-list" class="recruitee-block block careers-container slash-shadow slash-top">
+  <div class="block block-inner grid">
+    <article class="col-1-1">
+      <h2>More Makers Please!</h2>
+      <p class="delta">If you love building great digital products and want to work in fun and relaxed environment on difficult problems with great people for great clients… we want to hear from you.</p>
+      <div id="recruitee-offers"></div>
+    </article>
+  </div>
+</section>
+
+<script src='https://recruitee.com/assets/widget.js' type='text/javascript'></script>
+<script type='text/javascript' charset='utf-8'>
+  RT.jQuery(document).ready(function() {
+    RT.recruitee.init({company: 418, language: "en"});
+    RT.recruitee.renderOffers("#recruitee-offers");
+    RT.recruitee.subscribeListener("opened",
+      function(offer) {
+        analytics.track('JobOfferFormOpened', {
+          id: offer.id,
+          title: offer.title
+        });
+      });
+    RT.recruitee.subscribeListener("applied",
+      function(offer) {
+        analytics.track('JobOfferFormSubmitted', {
+          id: offer.id,
+          title: offer.title
+        });
+      })
+  });
+</script>
+<!-- /.careers-container -->

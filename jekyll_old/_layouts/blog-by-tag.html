@@ -1,0 +1,46 @@
+---
+layout: blog-by-tag
+---
+{% include head.html %}
+
+  <body class="{{ page.layout }}">
+
+    {% include header.html %}
+
+    <section class="hero-block slash-shadow block-{{ page.hero-translucancy }} aqua-bg slash-{{ page.hero-slash-angle }}">
+      <div class="hero-inner grid">
+        <p class="col-1-1 blog-category-head">Blog Posts tagged with:</p>
+        <h1 class="hero-title col-1-1">{{ page.category }}</h1>
+      </div>
+    </section>
+
+    <section class="content-block block">
+      <div class="block-inner grid">
+
+        {% include blog-sidebar.html %}
+
+        <ul class="content col-1-1 post-list">
+        {% assign noblogposts = true %}
+        {% for post in site.posts %}
+          {% for category in post.categories %}
+              {% assign preCat = category | replace: ' ', '-' %}
+              {% assign newCat = preCat | downcase %}
+              {% if newCat == page.category %}
+                {% include blog-listpost.html %}
+                {% assign noblogposts = false %}
+              {% endif %}
+          {% endfor %}
+        {% endfor %}
+        </ul>
+
+        {% if noblogposts %}
+          <p class="col-1-1 blog-no-posts">No posts tagged <strong>{{page.category}}</strong></p>
+        {% endif %}
+
+      </div>
+    </section>
+
+    {% include footer.html %}
+
+  </body>
+</html>

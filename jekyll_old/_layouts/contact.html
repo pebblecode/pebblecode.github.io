@@ -1,0 +1,76 @@
+{% include head.html %}
+
+  <body class="{{ page.layout }}">
+
+    {% include header.html %}
+
+    {% include hero.html %}
+
+    <section class="photo-block">
+      <div class="photo" style="background-image: url(/img/features/{{ page.photo1-url }})"></div>
+    </section>
+
+    <section id="contact" class="contact-block block block-light blue-bg slash-shadow slash-right slash-top">
+      <div class="block-inner grid">
+        <h2 class="col-1-1">London</h2>
+        <ul class="contact">
+          <li class="contact-item contact-item-address col-1-2">
+            <a href="https://www.google.co.uk/maps/place/pebble+%7Bcode%7D/@51.485665,-0.118521,15z/data=!4m5!3m4!1s0x0:0xb39ad30b38f1e82a!8m2!3d51.485665!4d-0.118521" title="View pebble {code} London office on Google Maps" target="_blank">W214 Westminster Business Square<br> Durham Street<br> London<br> SE11 5JH</a>
+            <div class="contact-item contact-item-phone">
+              <a href="tel:+442033273940">+44 (0) 20 3327 3940</a>
+            </div>
+            <div class="contact-item contact-item-email">
+              <a href="mailto:hello@pebblecode.com">hello@pebblecode.com</a>
+            </div>
+          </li>
+          <li class="contact-col-item col-1-2">
+            <!--[if lte IE 8]>
+            <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
+            <![endif]-->
+            <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+            <script>
+              hbspt.forms.create({
+                css: '',
+                portalId: '2277134',
+                formId: 'cc06259d-3ffc-4f5c-a0a7-ebf9f87f3dad'
+              });
+            </script>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!--[if gt IE 8]><!-->
+    <section class="map-block block">
+      <div id="map" class="map-container"></div>
+    </section>
+    <!--<![endif]-->
+
+    {% include footer.html maps=true %}
+
+    <script>
+    var headerContainer = $('.gbl-head');
+    if ($(headerContainer).length > 0) {
+      var contact;
+
+      var scrollPositions = function () {
+        contact = $('#contact');
+      };
+
+      var headerBG = function () {
+        var windowTop = $(window).scrollTop();
+        if (windowTop > contact.offset().top - 200 || contact.offset().bottom) {
+          headerContainer.css({'background-color':'#0ea2dc'});
+        } else {
+          headerContainer.css({'background-color':'#ed4f7e'});
+        }
+      };
+
+      $(window).resize(scrollPositions).scroll(headerBG);
+      scrollPositions();
+      headerBG();
+    }
+  </script>
+
+  </body>
+</html>

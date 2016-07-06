@@ -1,0 +1,29 @@
+<section class="card-block block {{ include.colour}}-bg">
+  <div class="block-inner grid">
+    <h2 class="text-center">Recent Posts</h2>
+    {% assign pstCnt = 0 %}
+    {% for pcategory in page.categories %}
+      {% assign pcatrep = pcategory | replace: ' ', '-' %}
+      {% for post in site.posts %}
+        {% for category in post.categories %}
+          {% assign preCat = category | replace: ' ', '-' %}
+          {% assign newCat = preCat | downcase %}
+          {% if post.url != page.url %}
+            {% if newCat == pcatrep limit:3 %}
+              {% if pstCnt < 3 %}
+                {% include blog-single-post.html %}
+                {% assign noblogposts = false %}
+                {% assign pstCnt = pstCnt | plus: 1 %}
+              {% endif %}
+            {% endif %}
+            <!-- if newCat == pcatrep limit:3 -->
+          {% endif %}
+          <!-- /if post.url != page.url -->
+        {% endfor %}
+        <!-- /category in post.categories -->
+      {% endfor %}
+      <!-- for post in site.posts -->
+    {% endfor %}
+    <!-- for pcategory in page.categories -->
+  </div>
+</section>

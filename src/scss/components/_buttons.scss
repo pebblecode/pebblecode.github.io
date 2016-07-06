@@ -1,0 +1,258 @@
+.btn, button {
+  -webkit-font-smoothing: subpixel-antialiased;
+  background: none;
+  -webkit-appearance: none;
+  transition: 0.2s;
+  line-height: 1;
+  color: $ink;
+  position: relative;
+  margin-right: 5px;
+  padding: 10px 12px 7px 15px;
+  border: 2px solid rgba($ink, 0.2);
+  border-radius: 50px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: $eta - 2px;
+  display: inline-block;
+
+  &:hover {
+    color: $primary;
+    border-color: lighten($primary, 30);
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.btn-arrow {
+  padding-right: 22px;
+
+  &::after {
+    @include pseudo;
+    @include sprite($arrowr-ink);
+    transform: translateY(-55%) scale(0.8);
+    -ms-transform: translateY(-55%) scale(0.8);
+    top: 50%;
+    right: 7px;
+    transition: opacity 0.3s;
+    opacity: 0.5;
+  }
+
+  &:hover::after {
+    @include sprite($arrowr-pink);
+    opacity: 1;
+  }
+}
+
+.btn-icon {
+  padding-left: 35px;
+
+  &::after {
+    @include pseudo;
+    top: 50%;
+    left: 3px;
+    transform: translateY(-50%) scale(0.5);
+    -ms-transform: translateY(-50%) scale(0.5);
+    transition: opacity 0.3s;
+    opacity: 0.3;
+  }
+
+  &:hover::after {
+    opacity: 1;
+  }
+}
+
+.btn-phone {
+  &::after {
+    @include sprite($phone-ink);
+  }
+
+  &:hover::after {
+    @include sprite($phone-pink);
+    opacity: 1;
+  }
+}
+
+.btn-mail {
+  &::after {
+    @include sprite($mail-ink);
+  }
+
+  &:hover::after {
+    @include sprite($mail-pink);
+    opacity: 1;
+  }
+}
+
+.btn-light {
+  color: rgba(white, 0.9);
+  border-color: rgba(white, 0.2);
+
+  &::after {
+    @include sprite($arrowr-white);
+  }
+
+  &:hover {
+    color: white;
+    border-color: rgba(white, 0.6);
+
+    &::after {
+      @include sprite($arrowr-white);
+    }
+  }
+}
+
+.btn-white {
+  background-color: white;
+}
+
+.btn-disabled,
+.btn-disabled:hover {
+  border-color: rgba($ink, 0.1);
+  color: rgba($ink, 0.4);
+}
+
+.btn-med {
+  padding: 12px 20px 10px;
+  font-size: $eta;
+
+  &.btn-arrow {
+    padding-right: 34px;
+
+    &::after {
+      transform: translateY(-53%);
+      -ms-transform: translateY(-53%);
+      right: 12px;
+    }
+  }
+
+  &.btn-icon {
+    padding-left: 48px;
+
+    &::after {
+      transform: translateY(-50%) scale(0.7);
+      -ms-transform: translateY(-50%) scale(0.7);
+      left: 12px;
+    }
+  }
+}
+
+.btn-lrg {
+  padding: 15px 30px 13px;
+  font-size: $eta;
+  border-width: 3px;
+
+  &.btn-arrow {
+    padding-right: 37px;
+
+    &::after {
+      transform: translateY(-53%);
+      -ms-transform: translateY(-53%);
+      right: 12px;
+    }
+  }
+
+  &.btn-icon {
+    padding-left: 60px;
+
+    &::after {
+      transform: translateY(-50%) scale(0.7);
+      -ms-transform: translateY(-50%) scale(0.7);
+      left: 18px;
+    }
+  }
+}
+
+.btn-center {
+  margin-top: 30px;
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn-block {
+  border: none;
+  box-shadow: 0 2px 4px rgba(black, 0.2);
+
+  &.btn-med {
+    padding: 14px 22px 12px;
+  }
+
+  &:hover {
+    box-shadow: 0 4px 6px rgba(black, 0.2);
+  }
+}
+
+.btn-play {
+  &.btn {
+    padding-left: 45px;
+  }
+
+  &::after {
+    @include pseudo;
+    @include sprite($play-ink);
+    transform: translateY(-50%) scale(0.55);
+    -ms-transform: translateY(-50%) scale(0.55);
+    top: 50%;
+    left: 12px;
+    opacity: 0.5;
+    transition: opacity 0.3s;
+  }
+
+  &:hover {
+    transform: scale(1.03);
+    -ms-transform: scale(1.03);
+
+    &:not(.video-play-btn):hover::after {
+      @include sprite($play-pink);
+      opacity: 1;
+    }
+  }
+}
+
+.btn-circle {
+  @include hide-text;
+  box-shadow: 0 4px 6px rgba(black, 0.2);
+  color: transparent;
+  width: 90px;
+  height: 90px;
+
+  @media screen and ( max-width: $medium ) {
+    width: 80px;
+    height: 80px;
+  }
+
+  &.video-play-btn {
+    opacity: 1;
+  }
+
+  &::after {
+    @include pseudo;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    top: 50%;
+    left: 53%;
+    opacity: 1;
+  }
+
+  &:hover {
+    color: transparent;
+    transform: scale(1.1);
+    -ms-transform: scale(1.1);
+  }
+}
+
+.btn-close {
+  z-index: 2;
+  position: absolute;
+  right: 5px;
+  top: 10px;
+  width: 45px;
+  height: 45px;
+
+  &::after {
+    @include sprite($close-grey);
+    left: 51%;
+  }
+}

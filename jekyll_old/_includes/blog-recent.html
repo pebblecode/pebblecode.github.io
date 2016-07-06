@@ -1,0 +1,8 @@
+<section class="card-block block {{ include.colour}}-bg">
+  <div class="block-inner grid">
+    <h2 class="text-center">Recent Posts</h2>
+    {% for post in site.posts limit:3 %}
+      {% include blog-single-post.html %}
+    {% endfor %}
+  </div>
+</section>

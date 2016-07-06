@@ -1,21 +1,12 @@
 var gulp = require('gulp');
-var postcss = require('gulp-postcss');
-var sourcemaps = require('gulp-sourcemaps');
-var cssnano = require('gulp-cssnano');
+var sass = require('gulp-sass');
+var autoprefixer = require('gulp-autoprefixer');
+var cleancss = require('gulp-clean-css');
 
-var processors = [
-  require('autoprefixer'),
-  require('precss'),
-  require('postcss-for'),
-  require('postcss-conditionals'),
-  require('postcss-nesting'),
-  require('postcss-color-function')
-];
-
-gulp.task('styles', function(  ) {
-  gulp.src('src/css/*.css')
-    .pipe(sourcemaps.init())
-    .pipe(postcss(processors))
-    .pipe(cssnano())
+gulp.task('styles', function() {
+  return gulp.src('src/scss/*.scss')
+    .pipe(sass())
+    .pipe(autoprefixer('last 2 version'))
+    .pipe(cleancss({advanced:false}))
     .pipe(gulp.dest('staging/css'));
 });

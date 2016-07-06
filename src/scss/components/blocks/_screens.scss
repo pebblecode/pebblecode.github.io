@@ -1,0 +1,11 @@
+.screens-block {
+  padding: 0 $gutter;
+  margin: -20px 0 0;
+
+  img {
+    margin: auto;
+    display: table;
+    width: 100%;
+    max-width: $max-width - $gutter * 4;
+  }
+}

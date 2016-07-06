@@ -1,0 +1,150 @@
+---
+layout: error
+---
+
+{% include head.html %}
+
+  <style type="text/css">
+    {% capture include_to_scssify %}
+     {% include error.scss %}
+    {% endcapture %}
+    {{ include_to_scssify | scssify }}
+  </style>
+
+  <body class="{{ page.layout }}">
+
+    <header class="error-menubar">
+      <nav class="error-menu">
+        <button class="error-menu-btn">File</button>
+        <button class="error-menu-btn">Edit</button>
+        <button class="error-menu-btn">View</button>
+        <button class="error-menu-btn">Label</button>
+        <button class="error-menu-btn error-help-btn">Help</button>
+      </nav>
+    </header>
+
+    <div class="error-window error-help">
+      <div class="error-window-inner">
+        <div class="error-window-content">
+          <h1>Hello, you are lost...</h1>
+          <p>If you have not contacted your webmaster yet, do not panic. We are here to help you.</p>
+          <p>Simply click the OK button with the cursor and be on your way.</p>
+          <a href="{{ site.baseurl }}/" class="error-btn">OK</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="error-window error-msg active">
+      <div class="error-window-inner">
+        <header class="error-window-head"><h3>Error code: 404</h3></header>
+        <div class="error-window-content">
+          <h1>404 System Error</h1>
+          <p>Please get in contact with your webmaster.</p>
+          <button class="error-btn">Cancel</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="error-window error-finder">
+      <div class="error-window-inner">
+        <header class="error-window-head"><h3>pebble {code}</h3></header>
+        <header class="error-window-subhead">
+          <span>7 items</span>
+          <span>6.1 MB in disk</span>
+          <span>12.7 MB available</span>
+        </header>
+        <div class="error-window-content">
+          <div class="error-folder-list">
+            <a href="{{ site.baseurl }}/" class="error-folder-icon error-icon" title="Back to pebble {code}'s home'">
+              <span>Home</span>
+            </a>
+            <a href="{{ site.baseurl }}/about" class="error-folder-icon error-icon" title="Learn more about pebble {code}">
+              <span>About</span>
+            </a>
+            <a href="{{ site.baseurl }}/work" class="error-folder-icon error-icon" title="See some of pebble {codes}' work'">
+              <span>Work</span>
+            </a>
+            <a href="{{ site.baseurl }}/events" class="error-folder-icon error-icon" title="Learn more about upcoming pebble {code} events">
+              <span>Events</span>
+            </a>
+            <a href="{{ site.baseurl }}/contact" class="error-folder-icon error-icon" title="Get in contact with pebble {code}">
+              <span>Contact</span>
+            </a>
+            <a href="{{ site.baseurl }}/blog" class="error-folder-icon error-icon" title="Dive into the writings of pebble {code}">
+              <span>Blog</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <button class="error-desktop-icon error-icon">
+      <span>Macintosh HD</span>
+    </button>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script>
+    if (!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+      // Draggable Windows
+      if (!$().draggable) {
+      	$.fn.draggable = function() {
+      		this
+      			.css('cursor', 'move')
+      			.on('mousedown touchstart', function(e) {
+      				var $dragged = $(this);
+
+      				var x = $dragged.offset().left - e.pageX,
+      					y = $dragged.offset().top - e.pageY,
+      					z = $dragged.css('z-index');
+
+      				if (!$.fn.draggable.stack) {
+      					$.fn.draggable.stack = 3;
+      				}
+      				stack = $.fn.draggable.stack;
+
+      				$(window)
+      					.on('mousemove.draggable touchmove.draggable', function(e) {
+      						$dragged
+      							.css({'z-index': stack, 'bottom': 'auto', 'right': 'auto'})
+      							.offset({
+      								left: x + e.pageX,
+      								top: y + e.pageY
+      							})
+      							.find('a').one('click.draggable', function(e) {
+      								e.preventDefault();
+      							});
+
+      						e.preventDefault();
+      					})
+      					.one('mouseup touchend touchcancel', function() {
+      						$(this).off('mousemove.draggable touchmove.draggable click.draggable');
+      						$dragged.css({'z-index': stack, 'transform': 'scale(1)'});
+      						$.fn.draggable.stack++;
+      					});
+
+      				e.preventDefault();
+      			});
+      		return this;
+      	};
+      }
+
+      $('.error-window').mousedown( function() {
+        $(this).addClass('active');
+        $(this).siblings('.error-window').removeClass('active');
+      });
+
+      $('.error-window').draggable();
+    }
+
+    $('.error-msg .error-btn').click( function() {
+      $(this).parents('.error-window').hide();
+    });
+
+    $('.error-help-btn').click( function() {
+      $(this).toggleClass('active');
+      $('.error-help').toggleClass('visible');
+    });
+    </script>
+
+  </body>
+</html>

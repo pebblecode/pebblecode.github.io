@@ -1,0 +1,77 @@
+.clients-block {
+  padding-top: 30px;
+  padding-left: $gutter * 4;
+  padding-right: $gutter * 4;
+
+  @media screen and ( max-width: $large ) {
+    padding: 30px 0 0;
+  }
+
+  &.slash.block {
+    padding-bottom: 15px;
+    padding-bottom: 50px /9;
+
+    @media screen and ( max-width: $large ) {
+      padding-bottom: 0;
+    }
+  }
+}
+
+.clients {
+  @include clearfix;
+  position: relative;
+}
+
+.client {
+  height: 110px;
+  position: relative;
+
+  @media screen and ( max-width: $large ) {
+    width: 33.33%;
+  }
+
+  @media screen and ( max-width: $medium ) {
+    display: inline-block;
+    width: 50%;
+    transform: scale(0.9);
+    margin-top: -20px;
+  }
+
+  @media screen and ( max-width: $small ) {
+    transform: scale(0.8);
+    margin-left: -2px;
+    margin-right: -2px;
+  }
+
+  .client-logo {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+  }
+}
+
+.client-logo {
+  &.az-logo-ink { @include sprite($az-logo-ink); }
+  &.pearson-logo-ink { @include sprite($pearson-logo-ink); }
+  &.bede-logo-ink { @include sprite($bede-logo-ink); }
+  &.cancer-logo-ink { @include sprite($cancer-logo-ink); }
+  &.aljazeera-logo-ink { @include sprite($aljazeera-logo-ink); }
+  &.lloyds-logo-ink { @include sprite($lloyds-logo-ink); }
+  &.bybox-logo-ink { @include sprite($bybox-logo-ink); }
+  &.express-logo-ink { @include sprite($express-logo-ink); }
+  &.vfs-logo-ink { @include sprite($vfs-logo-ink); }
+  &.pwc-logo-ink { @include sprite($pwc-logo-ink); }
+  &.adon-logo-ink { @include sprite($adon-logo-ink); }
+
+  &.az-logo-white { @include sprite($az-logo-white); }
+  &.pearson-logo-white { @include sprite($pearson-logo-white); }
+  &.bede-logo-white { @include sprite($bede-logo-white); }
+  &.cancer-logo-white { @include sprite($cancer-logo-white); }
+  &.aljazeera-logo-white { @include sprite($aljazeera-logo-white); }
+  &.lloyds-logo-white { @include sprite($lloyds-logo-white); }
+  &.bybox-logo-white { @include sprite($bybox-logo-white); }
+  &.express-logo-white { @include sprite($express-logo-white); }
+  &.vfs-logo-white { @include sprite($vfs-logo-white); }
+  &.pwc-logo-white { @include sprite($pwc-logo-white); }
+  // &.adon-logo-white { @include sprite($adon-logo-white); }
+}

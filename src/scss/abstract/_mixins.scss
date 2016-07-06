@@ -1,0 +1,78 @@
+// Clearfix
+@mixin clearfix {
+  clear: both;
+
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+// Hide Text
+@mixin hide-text {
+  color: transparent;
+  overflow: hidden;
+  display: block;
+  background-repeat: no-repeat;
+
+  &:hover {
+    color: transparent;
+  }
+
+  &:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 100%;
+  }
+}
+
+// Pseudo Defaults
+@mixin pseudo {
+  content: "";
+  overflow: hidden;
+  display: block;
+  position: absolute;
+  backface-visibility: hidden;
+  background-repeat: no-repeat;
+}
+
+// Before/After shadow slashes
+@mixin shadow-pseudo {
+  content: "";
+  overflow: hidden;
+  display: block;
+  position: absolute;
+  backface-visibility: hidden;
+  left: 0;
+  width: 100%;
+}
+
+@mixin center {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+// color: tint($pink, 42%);
+@function tint($color, $percentage) {
+  @return mix(white, $color, $percentage);
+}
+
+// color: shade($pink, 42%);
+@function shade($color, $percentage) {
+  @return mix(black, $color, $percentage);
+}
+
+@mixin text-shadow {
+  text-shadow: 1px 1px 0 rgba(black, 0.15);
+}
+
+@mixin text-shadow-lrg {
+  text-shadow: 2px 2px 0 rgba(black, 0.15);
+
+  @media screen and ( max-width: $medium ) {
+    text-shadow: 1px 1px 0 rgba(black, 0.15);
+  }
+}

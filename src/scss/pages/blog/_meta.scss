@@ -1,0 +1,25 @@
+.meta {}
+
+.meta-author {
+  color: $ink;
+}
+
+.meta-date {
+  color: lighten($ink, 25);
+}
+
+.tags {}
+
+.btn.tag {
+  color: $ink;
+  display: inline-block;
+  margin: 1px 5px 1px 0;
+  padding: 8px 7px 5px 9px;
+  border: none;
+  background-color: lighten($ink, 47);
+
+  &:hover {
+    color: $pink;
+    background-color: lighten($primary, 35);
+  }
+}

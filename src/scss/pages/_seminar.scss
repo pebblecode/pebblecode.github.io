@@ -1,0 +1,599 @@
+.seminar.pink,
+.seminar-form.pink,
+.seminar-new.pink,
+.seminar-hubspot.pink {
+  background-color: $pink;
+}
+
+.seminar-container {
+  margin: 50px auto 0;
+  padding-top: 100px;
+  padding-bottom: 40px;
+
+  @media screen and ( max-width: $medium ) {
+    padding-top: 20px;
+  }
+}
+
+.seminar-content {
+ @include clearfix;
+  position: relative;
+  margin: 0 10%;
+  width: 80%;
+  z-index: 2;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  p, ul {
+    padding: 0 40px;
+
+    @media screen and ( max-width: $medium ) {
+      padding: 0 30px;
+    }
+  }
+
+  li {
+    margin: 0 0 10px 20px;
+    list-style-type: disc;
+    list-style-position: outside;
+  }
+
+  @media screen and ( min-width: $medium ) {
+    &::before,
+    &::after {
+      @include shadow-pseudo;
+      box-shadow: 0 0 10px rgba(black, 0.2);
+      height: 100%;
+      top: 0;
+      z-index: -1;
+    }
+
+    &:before {
+      background-color: rgba(white, 0.8);
+      transform: rotate(2deg) skew(1deg);
+    }
+
+    &:after {
+      background-color: white;
+      transform: rotate(-0.3deg) skew(1deg);
+    }
+  }
+
+  @media screen and ( max-width: $medium ) {
+    background: white;
+    width: calc(100% - 40px);
+    margin: 10px 20px;
+    padding: 0;
+    box-shadow: 0 0 10px rgba(black, 0.2);
+  }
+}
+
+.seminar-presents-title {
+  text-align: center;
+  color: $pink;
+  font-weight: normal;
+  font-size: $gamma + 2px;
+  padding: 10px;
+  line-height: 1.1;
+
+  @media screen and ( max-width: $medium ) {
+    padding-top: 20px;
+    font-size: $delta;
+  }
+}
+
+.seminar-machine-img {
+  width: 100%;
+  margin-top: -130px;
+  left: -4px;
+  position: relative;
+  transform: rotate(-0.3deg) skew(1deg);
+
+  @media screen and ( max-width: $large ) {
+    margin-top: -100px;
+  }
+
+  @media screen and ( max-width: $medium ) {
+    margin-top: -70px;
+    left: -2px;
+  }
+}
+
+.seminar-titlestack {
+  margin: 40px auto;
+  text-align: center;
+  color: #ddd;
+  position: relative;
+  z-index: 2;
+
+  @media screen and ( max-width: $medium ) {
+    margin: 20px auto 40px;
+
+  }
+
+  h3.seminar-titlestack-top,
+  h3.seminar-titlestack-bottom {
+    font-size: $tera + 5px;
+    font-style: normal;
+    line-height: 1;
+    text-shadow: 7px 8px 0 rgba(black, 0.40);
+
+    @media screen and ( max-width: $large ) {
+      font-size: $mega;
+      text-shadow: 2px 3px 0 rgba(black, 0.40);
+    }
+
+    @media screen and ( max-width: $small ) {
+      font-size: $beta;
+    }
+  }
+
+  h3.seminar-titlestack-bottom {
+    line-height: 0.7;
+  }
+
+  h3.seminar-titlestack-top {
+    margin-bottom: 0;
+  }
+
+  h3.seminar-titlestack-mid {
+    font-size: $beta - 4px;
+    margin-bottom: 0px;
+    color: $ink;
+    text-transform: uppercase;
+    text-shadow: none;
+    // -webkit-text-stroke-width: none;
+    // -webkit-text-stroke-color: none;
+
+    &:before,
+    &:after {
+      color: lighten($pink, 10%);
+      content: "-";
+    }
+  }
+}
+
+h4.seminar-titlestack-sub {
+  font-weight: $font-regular;
+  font-size: $alpha;
+  text-align: center;
+  position: absolute;
+  margin-top: 200px;
+  width: 100%;
+}
+
+.seminar-speakers-container {
+  &:after {
+    z-index: -3;
+    transform: none;
+  }
+
+  @media screen and ( min-width: $medium ) {
+    &:before {
+      @include shadow-pseudo;
+      height: 100%;
+      top: 0;
+      background-color: rgba(white, 0.8);
+      box-shadow: 0 0 10px rgba(black, 0.2);
+      z-index: -5;
+      transform: rotate(2deg) skew(1deg);
+    }
+  }
+}
+
+.seminar-location-container {
+  @media screen and ( min-width: $medium ) {
+    &:before {
+      @include shadow-pseudo;
+      height: 100%;
+      top: 0;
+      background-color: rgba(white, 0.8);
+      box-shadow: 0 0 10px rgba(black, 0.2);
+      z-index: -5;
+      transform: rotate(2deg) skew(1deg);
+    }
+  }
+}
+
+.seminar-location-heading { margin-bottom: 0; }
+
+.seminar-location-container .location-item a {
+  color: $ink;
+  margin-top: 0;
+  margin-bottom: 8px;
+  border: none;
+
+  @media screen and (max-width: $medium) {
+    padding-left: 0;
+  }
+}
+
+.seminar-speaker {
+  padding-bottom: 24px;
+  border-bottom: 4px solid rgba(black, 0.1);
+
+  &:last-of-type {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+}
+
+.seminar-speaker-image {
+  height: 200px;
+  width: 200px;
+  float: left;
+  border: 1px solid white;
+  box-shadow: 0 0 5px rgba(black, 0.2);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  margin-right: 32px;
+
+  &:after {
+    @include shadow-pseudo;
+    height: 100%;
+    top: 0;
+    background-color: lighten($ink, 45);
+    z-index: -1;
+    transform: rotate(-5deg) skew(1deg);
+  }
+
+  @media screen and ( max-width: $medium ) {
+    display: block;
+    float: left;
+    height: 150px;
+    width: 150px;
+    margin: auto;
+    margin-bottom: 24px;
+  }
+}
+
+.seminar-speaker-bio {
+  position: relative;
+  margin-left: 232px;
+  hyphens: none;
+
+  p {
+    font-size: $body-font-size;
+  }
+
+  @media screen and ( max-width: $medium ) {
+    margin-left: 0;
+  }
+}
+
+.seminar-speakers {
+  margin-top: 48px;
+
+  li {
+    @include clearfix;
+    margin-bottom: 48px;
+  }
+
+  @media screen and ( max-width: $medium ) {
+    margin-top: 32px;
+  }
+}
+
+h4.seminar-speaker-title {
+  font-size: $beta;
+  line-height: 1;
+  color: $pink;
+  margin-bottom: 4px;
+
+  @media screen and ( max-width: $medium ) {
+    clear: both;
+    font-size: $gamma;
+  }
+}
+
+h5.seminar-speaker-jobtitle {
+  font-weight: $font-regular;
+  color: lighten($ink, 20);
+  font-size: $delta;
+}
+
+.seminar-new .seminar-header-details {
+  margin-top: 24px;
+}
+
+.seminar-header-details {
+  color: $pink;
+  text-align: center;
+  padding: 0;
+  margin-top: 12px;
+
+  h3 {
+    font-size: $alpha - 4px;
+    font-weight: normal;
+    text-transform: none;
+    display: inline;
+
+    @media screen and ( max-width: $medium ) {
+      display: block;
+      margin-top: 4px;
+      margin-bottom: 4px;
+      line-height: 1;
+    }
+
+    @media screen and ( max-width: $small ) {
+      font-size: $gamma + 2px;
+    }
+  }
+}
+
+.seminar-header-details h3 {
+  font-style: normal;
+}
+
+.seminar-header-location {
+  color: $pink;
+  text-align: center;
+  font-size: $alpha - 4px;
+  margin-bottom: 30px;
+
+  @media screen and ( max-width: $small ) {
+    font-size: $gamma + 2px;
+  }
+}
+
+h3.seminar-header-time::before {
+  margin: 0 12px;
+  content: "•";
+
+  @media screen and ( max-width: $medium ) {
+    display: none;
+  }
+}
+
+.seminar-map-container {
+  display: block;
+  position: relative;
+  height: 500px;
+  width: 100%;
+  margin-top: 30px;
+  border: 2px solid white;
+  box-shadow: 0 0 15px rgba(black, 0.1);
+
+  @media screen and ( max-width: $medium ) {
+    height: 300px;
+  }
+}
+
+.seminar-sprite-brain {
+  width: 226px;
+  height: 235px;
+  margin: 10px 30px;
+  background: url(../img/seminar/brain-sprite.png) left center;
+  // go 1 step above the total
+  animation: brainSprite 2s steps(48) infinite;
+  float: right;
+  position: absolute;
+  top: -97px;
+  right: -25px;
+  transform: scale(0.6);
+  z-index: 2;
+
+   @media screen and ( max-width: $small ) {
+    right: -67px;
+  }
+}
+
+@keyframes brainSprite {
+  100% { background-position: -10849px; }
+}
+
+.seminar-sprite-lightbulb {
+  width: 350px;
+  height: 350px;
+  background: url(../img/seminar/lightbulb-sprite2.png) left center;
+  // go 1 step above the total
+  animation: bulbSprite 1s steps(18) infinite;
+  // bulbRotate 2000ms linear infinite;
+  transform: scale(0.5) rotate(24deg);
+  top: -60px;
+  right: -50px;
+  position: absolute;
+
+  @media screen and ( max-width: $medium ) {
+    display: none;
+  }
+}
+
+@keyframes bulbSprite {
+  100% { background-position: -6337px; }
+}
+
+.seminar-sprite-testtube {
+  width: 252px;
+  height: 252px;
+  background: url(../img/seminar/testtube-sprite.png) left center;
+  // go 1 step above the total
+  animation: ttubeSprite 3s steps(48) infinite;
+  float: left;
+}
+
+@keyframes ttubeSprite {
+  100% { background-position: -12097px; }
+}
+
+.seminar-form-wrapper {
+  padding: 5px 40px 0;
+  width: 50%;
+  margin: 70px auto 40px;
+  position: relative;
+  z-index: 1;
+
+  &::before,
+  &::after {
+    z-index: -1;
+    @include shadow-pseudo;
+    top: 5px;
+    background-color: white;
+    box-shadow: 0 0 5px rgba(black, 0.2);
+    height: 100%;
+  }
+
+  &::before {
+    background-color: lighten($ink, 50);
+    transform: rotate(0.8deg) scale(1.2);
+  }
+
+  &::after {
+    transform: rotate(-1.8deg) scale(1.2);
+  }
+
+  .seminar-form-input {
+    background-color: lighten($ink, 47);
+    border-radius: 3px;
+    border: $pink;
+    width: 100%;
+    margin-bottom: 10px;
+    z-index: 1;
+    transition: 0.2s;
+    position: relative;
+
+    &:focus { background-color: lighten($ink, 43); }
+  }
+
+  @media screen and ( max-width: $large ) {
+    margin: 40px auto 20px;
+    width: 75%;
+
+    &::before,
+    &::after { display: none; }
+  }
+
+  @media screen and ( max-width: $medium ) {
+    width: 100%;
+  }
+}
+
+.seminar-form-title {
+  margin: 15px 0 0;
+  font-size: $delta;
+
+  &:after { content: ":"; }
+
+  &.attendance { display: inline; }
+}
+
+.seminar-form-checkbox {
+  margin-bottom: 6px;
+  font-size: $delta;
+  color: $ink;
+  padding-left: 48px;
+
+  input,
+  h4 {
+    display: inline;
+  }
+
+  input {
+    margin-left: -40px;
+    margin-right: 18px;
+    transform: scale(1.8);
+  }
+}
+
+.seminar-form-header {
+  color: $pink;
+
+  @media screen and ( max-width: $small ) {
+    font-size: $beta;
+  }
+}
+
+.eventbright-register {
+  text-align: center;
+  margin: 40px 0 20px;
+}
+
+.seminar-social-links {
+  text-align: center;
+  padding: 30px 40px 20px;
+
+  @media screen and ( max-width: $small ) {
+    text-align: left;
+    padding: 10px 40px 30px;
+
+    span { display: block; }
+  }
+
+  a {
+    position: relative;
+    height: 22px;
+    padding-left: 28px;
+    margin-right: 6px;
+    font-weight: $font-bold;
+    padding-top: 2px;
+    border: none;
+
+    @media screen and ( max-width: $medium ) {
+      margin-right: 8px;
+    }
+
+    @media screen and ( max-width: $medium ) {
+      font-size: $epsilon;
+      margin-bottom: 32px;
+    }
+
+    &:after {
+      @include pseudo;
+      top: 0;
+      left: 0;
+    }
+
+    &.linkedin:after { @include sprite($linkedin-pink); }
+    &.twitter:after { @include sprite($twitter-pink); }
+    &.vimeo:after { @include sprite($vimeo-pink); }
+  }
+}
+
+.seminar-location-container {
+  text-align: center;
+}
+
+.seminar-location-wrapper .btn-block {
+  margin: 0 auto 30px;
+  display: table;
+}
+
+h3.seminar-info-item {
+  text-transform: none;
+  letter-spacing: normal;
+  font-size: $beta - 4px;
+  font-weight: $font-regular;
+  color: $pink;
+  font-style: normal;
+  margin-top: 6px;
+}
+
+.seminar-speaker-link {
+  position: relative;
+  height: 22px;
+  padding-left: 28px;
+  margin-right: 6px;
+  font-weight: $font-bold;
+  padding-top: 2px;
+  margin-bottom: 6px;
+  border: none;
+
+  &:after {
+    @include pseudo;
+    top: 0;
+    left: 0;
+  }
+
+  &.linkedin:after { @include sprite($linkedin-pink); }
+  &.twitter:after { @include sprite($twitter-pink); }
+  &.vimeo:after { @include sprite($vimeo-pink); }
+}
+
+
+.seminar-points {
+  li {
+    -webkit-font-smoothing: antialiased;
+  }
+}

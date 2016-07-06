@@ -1,0 +1,41 @@
+p { -webkit-font-smoothing: antialiased; }
+
+::selection { background: rgba($ink, 0.2); }
+
+h1, h2, h3, h4, h5, h6,
+p, ul, ol, dl, blockquote, pre, button {
+  margin: 0 0 10px 0;
+}
+
+.tera    { font-size: $tera; }
+.giga    { font-size: $giga; }
+.mega    { font-size: $mega; }
+.alpha   { font-size: $alpha; }
+.beta    { font-size: $beta; }
+.gamma   { font-size: $gamma; }
+.delta   { font-size: $delta; }
+.epsilon { font-size: $epsilon; }
+.zeta    { font-size: $zeta; }
+
+h4, h5, h6, strong { font-weight: $font-bold; }
+h4 { font-size: $gamma; }
+h5 { font-size: $epsilon; }
+h6 { font-size: $zeta; }
+
+.text-left { text-align: left; }
+.text-center { text-align: center; }
+.text-right { text-align: right; }
+
+blockquote {
+  -webkit-font-smoothing: antialiased;
+  border-left: 10px solid $primary;
+  padding-left: 20px;
+  font-style: normal;
+  margin: 45px 30px;
+  color: $primary;
+  font-size: $gamma + 4px;
+
+  @media screen and ( max-width: $medium ) {
+    margin: 30px 0;
+  }
+}

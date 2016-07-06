@@ -1,0 +1,200 @@
+{% include head.html %}
+
+  <body class="{{ page.layout }}">
+
+    {% include header.html %}
+
+    {% include hero.html %}
+
+    <section class="photo-block">
+      <div class="photo" style="background-image: url(/img/features/{{ page.photo1-url }})"></div>
+    </section>
+
+    <section class="intro-block block slash-shadow slash-top">
+      <div class="block-inner grid">
+        <h2>{{ page.intro-title }}</h2>
+        <p>{{ page.intro }}</p>
+        <a href="#{{ page.block1-id }}" class="btn btn-lrg">{{ page.block1-title }}</a>
+        <a href="#{{ page.block2-id }}" class="btn btn-lrg">{{ page.block2-title }}</a>
+        <a href="#{{ page.block3-id }}" class="btn btn-lrg">{{ page.block3-title }}</a>
+      </div>
+    </section>
+
+    <section id="{{ page.block1-id }}" class="block grey-bg">
+      <div class="card-block block">
+        <div class="intro-block block">
+          <div class="block-inner grid">
+            <h2>{{ page.block1-title }}</h2>
+            <p>{{ page.block1-subtitle }}</p>
+          </div>
+        </div>
+        <div class="block-inner grid">
+          <div class="card col-1-2">
+          {% if page.block1-project1-url%}
+            <a href="/work/case-studies/{{ page.block1-project1-url }}/" class="card-link">
+          {% endif %}
+              <div class="card-img" style="background-image: url(/img/case-studies/{{ page.block1-project1-img }})"></div>
+              <span class="card-logo client-logo {{ page.block1-project1-logo }}-ink">{{ page.block1-project1-client }}</span>
+              <h3 class="card-title">{{ page.block1-project1-title }}</h3>
+              <p class="card-excerpt">{{ page.block1-project1-summary }}</p>
+          {% if page.block1-project1-url%}
+            </a>
+            <a href="/work/case-studies/{{ page.block1-project1-url }}/" class="card-btn">
+              <button class="btn btn-arrow">Case Study</button>
+            </a>
+          {% endif %}
+          </div>
+          <div class="card col-1-2">
+          {% if page.block1-project2-url%}
+            <a href="/work/case-studies/{{ page.block1-project2-url }}/" class="card-link">
+          {% endif %}
+              <div class="card-img" style="background-image: url(/img/case-studies/{{ page.block1-project2-img }})"></div>
+              <span class="card-logo client-logo {{ page.block1-project2-logo }}-ink">{{ page.block1-project2-client }}</span>
+              <h3 class="card-title">{{ page.block1-project2-title }}</h3>
+              <p class="card-excerpt">{{ page.block1-project2-summary }}</p>
+          {% if page.block1-project2-url%}
+            </a>
+            <a href="/work/case-studies/{{ page.block1-project2-url }}/" class="card-btn">
+              <button class="btn btn-arrow">Case Study</button>
+            </a>
+          {% endif %}
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="{{ page.block2-id }}" class="block">
+      <div class="card-block block">
+        <div class="intro-block block">
+          <div class="block-inner grid">
+            <h2>{{ page.block2-title }}</h2>
+            <p>{{ page.block2-subtitle }}</p>
+          </div>
+        </div>
+        <div class="block-inner grid">
+          <div class="card col-1-2">
+          {% if page.block2-project1-url%}
+            <a href="/work/case-studies/{{ page.block2-project1-url }}/" class="card-link">
+          {% endif %}
+              <div class="card-img" style="background-image: url(/img/case-studies/{{ page.block2-project1-img }})"></div>
+              <span class="card-logo client-logo {{ page.block2-project1-logo }}-ink">{{ page.block2-project1-client }}</span>
+              <h3 class="card-title">{{ page.block2-project1-title }}</h3>
+              <p class="card-excerpt">{{ page.block2-project1-summary }}</p>
+          {% if page.block2-project1-url%}
+            </a>
+            <a href="/work/case-studies/{{ page.block2-project1-url }}/" class="card-btn">
+              <button class="btn btn-arrow">Case Study</button>
+            </a>
+          {% endif %}
+          </div>
+          <div class="card col-1-2">
+          {% if page.block2-project2-url%}
+            <a href="/work/case-studies/{{ page.block2-project2-url }}/" class="card-link">
+          {% endif %}
+              <div class="card-img" style="background-image: url(/img/case-studies/{{ page.block2-project2-img }})"></div>
+              <span class="card-logo client-logo {{ page.block2-project2-logo }}-ink">{{ page.block2-project2-client }}</span>
+              <h3 class="card-title">{{ page.block2-project2-title }}</h3>
+              <p class="card-excerpt">{{ page.block2-project2-summary }}</p>
+            {% if page.block2-project2-url%}
+              </a>
+              <a href="/work/case-studies/{{ page.block2-project2-url }}/" class="card-btn">
+                <button class="btn btn-arrow">Case Study</button>
+              </a>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="{{ page.block3-id }}" class="z-index-fix block grey-bg slash-shadow slash-right">
+      <div class="card-block block">
+        <div class="intro-block block">
+          <div class="block-inner grid">
+            <h2>{{ page.block3-title }}</h2>
+            <p>{{ page.block3-subtitle }}</p>
+          </div>
+        </div>
+        <div class="block-inner grid">
+          <div class="card col-1-2">
+          {% if page.block3-project1-url%}
+            <a href="/work/case-studies/{{ page.block3-project1-url }}/" class="card-link">
+          {% endif %}
+              <div class="card-img" style="background-image: url(/img/case-studies/{{ page.block3-project1-img }})"></div>
+              <span class="card-logo client-logo {{ page.block3-project1-logo }}-ink">{{ page.block3-project1-client }}</span>
+              <h3 class="card-title">{{ page.block3-project1-title }}</h3>
+              <p class="card-excerpt">{{ page.block3-project1-summary }}</p>
+            {% if page.block3-project1-url%}
+              </a>
+              <a href="/work/case-studies/{{ page.block3-project1-url }}/" class="card-btn">
+                <button class="btn btn-arrow">Case Study</button>
+              </a>
+            {% endif %}
+          </div>
+          <div class="card col-1-2">
+          {% if page.block3-project2-url%}
+            <a href="/work/case-studies/{{ page.block3-project2-url }}/" class="card-link">
+          {% endif %}
+              <div class="card-img" style="background-image: url(/img/case-studies/{{ page.block3-project2-img }})"></div>
+              <span class="card-logo client-logo {{ page.block3-project2-logo }}-ink">{{ page.block3-project2-client }}</span>
+              <h3 class="card-title">{{ page.block3-project2-title }}</h3>
+              <p class="card-excerpt">{{ page.block3-project2-summary }}</p>
+            {% if page.block3-project2-url%}
+              </a>
+              <a href="/work/case-studies/{{ page.block3-project2-url }}/" class="card-btn">
+                <button class="btn btn-arrow">Case Study</button>
+              </a>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="cta" class="intro-block block block-clear block-light slash-shadow aqua-bg thick-slash">
+      <div class="block-inner grid">
+        <h2>{{ page.cta-title }}</h2>
+        <p>{{ page.cta-subtitle }}</p>
+        {% if page.cta-btn-text %}
+          <a href="/{{page.cta-btn-url}}/" class="btn btn-arrow btn-lrg btn-light">{{page.cta-btn-text}}</a>
+        {% endif %}
+      </div>
+    </section>
+
+    <section class="photo-block">
+      <div class="photo" style="background-image: url(/img/features/{{ page.photo2-url }})"></div>
+    </section>
+
+    {% include verticals.html %}
+
+    {% include footer.html colour="blue" tone="light" %}
+
+    <script>
+    // Change header colour
+    var headerContainer = $('.gbl-head');
+    if ($(headerContainer).length > 0) {
+      var cta;
+      var verticals;
+
+      var scrollPositions = function () {
+        cta = $('#cta');
+        verticals = $('#verticals');
+      };
+
+      var headerBG = function () {
+        var windowTop = $(window).scrollTop();
+        if (windowTop > verticals.offset().top - 200 || verticals.offset().bottom) {
+          headerContainer.css({'background-color':'#0ea2dc'});
+        } else if (windowTop > cta.offset().top - 200 || cta.offset().bottom) {
+          headerContainer.css({'background-color':'#37bec0'});
+        } else {
+          headerContainer.css({'background-color':'#0ea2dc'});
+        }
+      };
+
+      $(window).resize(scrollPositions).scroll(headerBG);
+      scrollPositions();
+      headerBG();
+    }
+    </script>
+
+  </body>
+</html>

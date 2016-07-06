@@ -1,0 +1,97 @@
+{% include head.html %}
+
+  <body class="{{ page.layout }}">
+
+    {% include header.html %}
+
+    {% include hero.html %}
+
+    <section class="photo-block">
+      <div class="photo" style="background-image: url(/img/features/{{ page.photo1-url }})"></div>
+    </section>
+
+    <section class="hero-block slash-shadow slash-top slash-right"></section>
+
+    <section class="block block-content slash-shadow" id="careers-kaizen">
+      <div class="block-inner grid">
+        <article class="content-intro col-1-1">
+          <h2>{{ page.block1-title }}</h2>
+          <p>{{ page.block1-summary }}</p>
+          <a href="{{ page.block1-btn-url }}" class="btn btn-lrg btn-arrow">{{ page.block1-btn-text }}</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="aside" class="intro-block block block-clear block-light slash-shadow slash-right aqua-bg">
+      <div class="block-inner grid">
+        <h2>{{ page.aside-title }}</h2>
+        <p>{{ page.aside-subtitle }}</p>
+      </div>
+    </section>
+
+    {% include photos.html %}
+
+    <section id="benefits" class="benefits-block block block-content block-light blue-bg slash-shadow slash-top">
+      <div class="block-inner grid">
+        <article class="col-1-1">
+          <h2>{{ page.block2-title }}</h2>
+          <p>{{ page.block2-summary }}</p>
+        </article>
+        <aside class="benefits-list grid-container">
+          <h3 class="col-1-1">Benefits</h3>
+          <ul class="benefits-list">
+            <li class="benefits-list-item benefit-flexible col-1-2">Flexible working practices (remote working, flexible hours, shorts &amp; flip flops welcome)</li>
+            <li class="benefits-list-item benefit-10 col-1-2"  data-sr="wait 0.05s, scale up 20%">10% time – spend half a day a week working on your own projects</li>
+            <li class="benefits-list-item benefit-holidays col-1-2" >26 days/year holiday</li>
+            <li class="benefits-list-item benefit-snacks col-1-2" >Free snacks and drinks</li>
+            <li class="benefits-list-item benefit-pay col-1-2" >Competitive salaries</li>
+            <li class="benefits-list-item benefit-gym col-1-2" >Flexible contributions (towards gym, pension or healthcare)</li>
+            <li class="benefits-list-item benefit-social col-1-2" >Regular social events</li>
+            <li class="benefits-list-item benefit-charity col-1-2" >Additional time off for volunteer days</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <section class="hero-block slash-shadow slash-right blue-bg"></section>
+
+    <section class="photo-block">
+      <div class="photo" style="background-image: url(/img/features/{{ page.photo2-url }})"></div>
+    </section>
+
+    {% include recruitee.html %}
+
+    {% include blog-related.html colour="grey" %}
+
+    {% include footer.html lazyload=true colour="grey" %}
+
+    <script>
+    var headerContainer = $('.gbl-head');
+    if (headerContainer.length > 0) {
+      var aside;
+      var benefits;
+
+      var scrollPositions = function () {
+        aside = $('#aside');
+        benefits = $('#benefits');
+      };
+
+      var headerBG = function () {
+        var windowTop = $(window).scrollTop();
+        if (windowTop > benefits.offset().top - 300 || benefits.offset().bottom) {
+          headerContainer.css({'background-color':'#0ea2dc'});
+        } else if (windowTop > aside.offset().top - 300 || aside.offset().bottom) {
+          headerContainer.css({'background-color':'#37bec0'});
+        } else {
+          headerContainer.css({'background-color':''});
+        }
+       };
+
+      $(window).resize(scrollPositions).scroll(headerBG);
+      scrollPositions();
+      headerBG();
+    }
+    </script>
+
+  </body>
+</html>
