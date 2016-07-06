@@ -18,7 +18,7 @@ seminar-title3: Innovation
 seminar-hero: "events/hacking-header.png"
 seminar-subtitle: In the trenches
 seminar-intro-paragraphs:
- - "pebble {code}'s Hacking Workshop introduces Digital Innovation through practical techniques that we use regularly with clients. Delegates will gain an understanding of the value of digital experimentation and the approach that organisations need to adopt for success."
+ - "This workshop introduces Digital Innovation through practical techniques that we use regularly with clients. Delegates will gain an understanding of the value of digital experimentation and the approach that organisations need to adopt for success."
  - "The half day workshop includes:"
  - "<ul class='seminar-points'>
     <li>An introduction to how organisations should approach digital innovation</li>
@@ -36,7 +36,8 @@ eventbright-url: "https://www.eventbrite.co.uk/e/intro-to-innovation-tickets-264
 seminar-time: "9:30 - 12:00"
 seminar-date: "Thursday 21st July"
 seminar-rsvp-address: "events@pebblecode.com"
-seminar-location: "pebble HQ,<br>W214 Westminster Business Square<br>1-45 Durham Street<br>London,<br>London<br>SE11 5JH"
+seminar-location: "pebble HQ,<br>W214 Westminster Business Square<br>1-45 Durham Street<br>London,
+SE11 5JH"
 seminar-location-shorthand: "pebble HQ, Vauxhall"
 
 ## Speakers
