@@ -13,7 +13,7 @@ var processors = [
 ];
 
 gulp.task('styles', function(  ) {
-  gulp.src('src/css/**/*.css')
+  gulp.src('src/css/*.css')
     .pipe(sourcemaps.init())
     .pipe(postcss(processors))
     .pipe(cssnano())
