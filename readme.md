@@ -1,83 +1,60 @@
-# pebblecode.com
+pebblecode.com
+======
 
-The Jekyll based website for pebblecode.com.
+This is the main repo for the [pebble {code}](pebblecode.com) website, hosted on gh-pages. The website is built using Hugo and using tech such as gulp, postcss and es2015.
+
+Initial boilerplate is based off of [hugulp](https://github.com/jbrodriguez/hugulp) by Juan B. Rodriguez.
+
+<br>
+
+***
 
 ## Getting Started
 
-#####1. Install [bundler](http://bundler.io/):
+#### Install Hugo
+`brew install hugo`
 
-`gem install bundler`
+#### Install Node
+`brew install node`
 
-You may need to include sudo at the start if there is a permissions error.
-
-#####2. Install jekyll bundle:
-
-`bundle install`
-
-
-#####3. Build and view the website locally:
-
-`cd [project folder]`
-
-`jekyll serve`
-
-To host the site on the network for testing, you'll need
-
-`jekyll serve --host=0.0.0.0`
+#### Install npm dependencies
+`npm install`
 
 
-#####3.5. Build and view the website locally with live reloading:
+<br>
 
-`cd [project folder]`
+***
 
-`guard`
+## Run Gulp
+Run the `default` gulp task with:
 
-This will start up a server on port 4000, and it will reload on any changes to SASS, JS, and content.
+`npm start`
 
-#####4. View the website:
+<br>
 
-`http://localhost:4000`
-
-## Developing
-Template source can be found in `_layouts`. Component source can be found in `_includes`. Sass styles can be found in `_sass`. The jekyll website is then built into the `_site` folder which includes all of the files needed to make the website.
-
-## Content
-Most of the major editable content can be found in the markdown files (such as 1-services.md). Use the number at the start of the filename to order the pages.
-
-
-## Creating a Blog Post
-Create a Markdown file within the `_posts` folder. The name structure is a backward date followed by the title of your post, for example: `2011-10-18-a-day-with-clojure.md`. All of the content within this file is written using the [Markdown language](http://daringfireball.net/projects/markdown/syntax).
-
-At the top of your markdown file there should be the post information like so:
-
+This will do the following:
+- The **styles**, **scripts** and **images** tasks get executed first to do the heavy lifting of compressing images and minifying css/js files.
+- The **revision** task runs next to fingerprint the optimized assets.
+- Then the **hugo:all** task is invoked to generate the static site<br>
+hugo will run as if invoked like this:
 ```
----
-layout: post
-title:  On Average, the World is Happy
-author: Ian Black
-categories: hackday
-thumbnail: /img/blog/happy.jpg
----
+$ hugo --config=./hugo/config.yaml -s ./hugo -d ./public --buildDrafts=true --verbose=true --baseUrl="http://localhost:3000/"
 ```
 
-You can set whether an article is featured at the top of the blog homepage by setting: `feature: true` within the information section at the top of the markdown file. Make sure only *one* post is set to this.
+- The **reference:all** task replaces all asset ocurrences with their fingerprinted versions
+- Finally, the browser is reloaded so that you can very quickly check the changes you made
 
-Images are linked like this:
-```
-![3DS](/img/posts/2015-07-17-solving-the-right-problem/3ds.jpg)
-```
-The caption is included within square brackets `![caption]` and the path to the image file included within the regular brackets directly after. Include images within the `img/posts/` folder and create a new folder named after your post file name.
+<br>
 
-#### Categories
-Creating new categories isn't advised due to categorised blog templates needing to be created manually. Either seek out already created categories within the `blog/tag` folder or use the following top categories:
+***
 
-```
-Health, Transport, Design, Agile, Lightning Talks, Hacks, Tutorial, Opinion, Digital Transformation, Lean, Innovation, Bluetooth
-```
+## Publish step
+There's also a `publish` task you can run:
 
-## Deploying
-Once you are happy, push this file to the `master` branch to go LIVE.
+`npm run publish`
 
-#### Tips
-- Always wrap video elements in a `<div class="video"></div>` element if you want it to look awesome.
-- Use an h3 at the start of articles to give a summary of the post.
+<br>
+
+This will perform all the steps above, but Hugo will be run with as follows:
+
+`hugo --config=./hugo/config.yaml -s ./hugo -d ./public"`

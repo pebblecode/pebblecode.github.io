@@ -1,0 +1,15 @@
+@import 'global/colors';
+@import 'global/typography';
+@import 'global/grid';
+@import 'global/base';
+
+@import 'partials/header';
+@import 'partials/footer';
+
+h1 {
+  transform: translate(50%);
+}
+
+h1:between(1, 4) {
+  color: red;
+}

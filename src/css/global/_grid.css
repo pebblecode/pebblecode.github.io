@@ -1,0 +1,40 @@
+$bpoint-large: 1000px;
+$bpoint-small: 500px;
+$bpoint-max: $bpoint-large;
+
+$gutter: 20px;
+$columns: 4;
+
+.grid {
+  margin: 0 auto;
+  max-width: $bpoint-max;
+
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+.col {
+  width: 100%;
+  float: left;
+  padding-right: $gutter;
+  padding-left: $gutter;
+}
+
+@media screen and (min-width: $bpoint-small) {
+  @for $i from 1 to $columns {
+    .col--$i {
+      width: calc(((100 / $columns) * $i) * 1%);
+    }
+  }
+}
+
+@media screen and (max-width: $bpoint-small) {
+  @for $i from 1 to $columns {
+    .col__mob--$i {
+      width: calc(((100 / $columns) * $i) * 1%);
+    }
+  }
+}
