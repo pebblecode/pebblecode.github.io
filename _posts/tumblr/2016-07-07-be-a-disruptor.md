@@ -8,7 +8,7 @@ thumbnail: /img/posts/2016-07-07-be-a-disruptor/ford-model-t.jpg
 
 ## Do you need to be a startup to be disruptive?
 
-Any discussion of a ‘disruptive’ technology or innovation typically conjures up visions of outsiders, operating their boot-strapped operation from a residential garage, and taking on the big players. This is not always the case.
+Any discussion of a ‘disruptive’ technology or innovation typically conjures up visions of outsiders, operating their bootstrapped operation from a residential garage, and taking on the big players. This is not always the case.
 
 Just as often, disruption can be born from well-funded entrepreneurs - with previous successes, or indeed, previous failed ventures. Disruption can also come from established players in the market - including enterprise and larger organisations.
 
