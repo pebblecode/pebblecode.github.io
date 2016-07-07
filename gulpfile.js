@@ -1,9 +1,17 @@
 // Automatically load Gulp plugins
-require('matchdep').filterDev('gulp*').forEach(function( module ) {
-  var module_name = module.replace(/^gulp-/, '').replace(/-/, '');
-  if (module_name==='postcss') module_name = 'postCSS';
-  global[module_name] = require(module);
-});
+var gulp = require('gulp'),
+    babel = require('gulp-babel'),
+    changed = require('gulp-changed'),
+    jscs = require('gulp-jscs'),
+    livereload = require('gulp-livereload'),
+    autoprefixer = require('gulp-autoprefixer'),
+    sourcemaps = require('gulp-sourcemaps'),
+    lazypipe = require('lazypipe'),
+    cssnano = require('gulp-cssnano'),
+    sass = require('gulp-sass'),
+    concat = require('gulp-concat'),
+    uglify = require('gulp-uglify'),
+    rename = require('gulp-rename')
 
 // Define filepaths
 var paths = {
@@ -11,7 +19,7 @@ var paths = {
     src: 'src/scss/styles.scss',
     destDir: 'static/css/',
     destFile: 'styles.css',
-    watch: 'src/scss/**/*.css'
+    watch: 'src/scss/**/*.scss'
   },
   scripts: {
     src: 'src/js/*.js',
@@ -23,9 +31,6 @@ var paths = {
     watch: [ 'src/img/**/*', '!src/img/**/*@2x.{jpg,png}' ]
   }
 };
-
-// Load the plugin into a variable
-var lazypipe = require('lazypipe');
 
 // Styles Build
 gulp.task('styles', ['clean:styles'], function() {
@@ -39,29 +44,12 @@ gulp.task('styles', ['clean:styles'], function() {
 // Script Builds
 gulp.task('scripts', ['clean:scripts'], function(  ) {
   gulp.src(paths.scripts.src)
-    .pipe(using())
-    .pipe(jscs({
-      preset: 'airbnb',
-      esnext: true
-    }))
-    .on('error', function( error ) { console.log(error.message); })
     .pipe(sourcemaps.init())
     .pipe(concat('main.js'))
     .pipe(babel())
     .pipe(uglify())
     .pipe(rename({ suffix: '.min' }))
     .pipe(gulp.dest(paths.scripts.destDir));
-});
-
-gulp.task('scripts:fix', function( ) {
-  gulp.src(paths.scripts.src)
-    .pipe(jscs({
-      preset: 'airbnb',
-      esnext: true,
-      fix: true
-    }))
-    .pipe(rename({ suffix: '.fixed' }))
-    .pipe(gulp.dest('source/scripts/'));
 });
 
 // Image Builds
