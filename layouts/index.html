@@ -2,8 +2,8 @@
 {{ if eq .Type "index" }}
   {{ partial "head.html" . }}
   <body>
-    {{ partial "header.html" . }}
 
+    {{ partial "header.html" . }}
     {{ partial "hero.html" . }}
 
     <section class="intro-block block grey-bg slash-shadow slash-top slash-right">
@@ -12,9 +12,8 @@
         <p>{{ .Params.intro }}</p>
       </div>
     </section>
+
     {{ .Content }}
-
-
 
     {{ partial "footer.html" . }}
   </body>
