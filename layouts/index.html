@@ -1,7 +1,10 @@
 {{ partial "head.html" . }}
 <body>
   {{ partial "header.html" . }}
-  <h1>Test</h1>
-  <h1>Test</h1>
+  {{ range .Data.Pages }}
+    {{if eq .Type "index" }}
+        {{.Content}}
+    {{end}}
+  {{ end }}
   {{ partial "footer.html" . }}
 </body>
