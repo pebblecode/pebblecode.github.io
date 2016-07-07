@@ -1,6 +1,6 @@
 {{ partial "head.html" . }}
-<body>
+<body class="{{.Params.color}}">
   {{ partial "header.html" . }}
-  404
+    {{.Content}}
   {{ partial "footer.html" . }}
 </body>

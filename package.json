@@ -1,7 +1,7 @@
 {
-  "name": "hugo-starter",
-  "version": "0.0.1",
-  "description": "Hugo starter with postcss and gulp.",
+  "name": "pebblecode.com",
+  "version": "1.1.0",
+  "description": "Website for pebble {code} - pebblecode.com",
   "main": "gulpfile.js",
   "scripts": {
     "gulp": "gulp",
@@ -9,9 +9,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:petertait/petertait.com.git"
+    "url": "git@github.com:pebblecode/pebblecode.github.io.git"
   },
-  "author": "Peter Tait <contact@petertait.com>",
+  "author": "pebble {code} <hello@pebblecode.com>",
   "devDependencies": {
     "del": "^1.2.1",
     "gulp": "^3.9.0",
