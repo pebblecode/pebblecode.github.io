@@ -52,6 +52,6 @@ Some of the core principles of how we at pebble {code} approach digital innovati
 
 By understanding these concepts - minimising risk, embracing failure and understanding users - any organisation can become a disruptor in a marketplace.
 
-As a Digital Innovation Consultancy, pebble {code} helps businesses of all sizes embed these concepts, and we use the principles of Agile and Lean to deliver innovative digital products, transform businesses, and potentially enable them to  become the disruptive force in a market. If you’re developing a product, or need to accelerate innovation in your business, contact us to arrange a [workshop](http://pebblecode.com/blog/the-power-of-design-thinking/) or [hackday](http://pebblecode.com/blog/why-we-still-hack/).
+As a Digital Innovation Consultancy, pebble {code} helps businesses of all sizes embed these concepts, and we use the principles of Agile and Lean to deliver innovative digital products, transform businesses, and potentially enable them to  become the disruptive force in a market. If you’re developing a product, or need to accelerate innovation in your business, contact us to arrange a [workshop](http://pebblecode.com/blog/the-power-of-design-thinking/) or [hackday](http://pebblecode.com/blog/why-we-still-hack/). We're also holding a free Innovation event on July 13th - register [here](pebblecode.com/events/innovation-hacking).
 
 [1]: https://hbr.org/2015/12/what-is-disruptive-innovation
