@@ -10,8 +10,10 @@ var gulp = require('gulp'),
     cssnano = require('gulp-cssnano'),
     sass = require('gulp-sass'),
     concat = require('gulp-concat'),
+    imagemin = require('gulp-imagemin'),
     uglify = require('gulp-uglify'),
-    rename = require('gulp-rename')
+    rename = require('gulp-rename'),
+    pngquant = require('imagemin-pngquant');
 
 // Define filepaths
 var paths = {
@@ -54,10 +56,8 @@ gulp.task('scripts', ['clean:scripts'], function(  ) {
 
 // Image Builds
 gulp.task('images', ['clean:images'], function(  ) {
-  var pngquant = require('imagemin-pngquant');
   gulp.src(paths.images.src)
     .pipe(changed(paths.images.destDir))
-    .pipe(using())
     .pipe(imagemin({
       progressive: true,
       use: [ pngquant() ]

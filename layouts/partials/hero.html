@@ -1,0 +1,16 @@
+{{ if eq (relURL .URL) ("/" | safeHTML) }}
+  <section class="hero-block video-block">
+{{ else }}
+  <section class="hero-block slash-shadow block-{{ .Params.heroTranslucancy }} {{ .Params.color }}-bg slash-{{ .Params.heroSlashAngle }}">
+{{ end }}
+  <div class="hero-inner grid">
+    <span class="client-logo {{ .Params.heroLogo }}-logo-white">{{ .Params.client }}</span>
+    <h1 class="hero-title col-1-1">{{ .Params.heroTitle }}</h1>
+    <p class="hero-subtitle col-1-1">{{ .Params.heroSubtitle }}</p>
+    <a href="{{ .Params.heroBtnUrl }}" class="btn btn-light btn-arrow btn-lrg btn-center">{{ .Params.heroBtnText }}</a>
+  </div>
+  {{ if eq (relURL .URL) ("/" | safeHTML) }}
+    <button id="fs-video" class="video-play-btn btn-play btn-block btn-circle white-bg">{{ .Params.heroPlayBtn }}</button>
+    <video class="video" id="officespace" preload src="https://s3-eu-west-1.amazonaws.com/pebblecodecom/officeloop-bw.mp4" autoplay loop></video>
+  {{ end }}
+</section>

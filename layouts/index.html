@@ -1,10 +1,22 @@
-{{ partial "head.html" . }}
-<body class="{{.Site.Params.color}}">
-  {{ partial "header.html" . }}
-  {{ range .Data.Pages }}
-    {{if eq .Type "index" }}
-        {{.Content}}
-    {{end}}
-  {{ end }}
-  {{ partial "footer.html" . }}
-</body>
+{{ range .Data.Pages }}
+{{ if eq .Type "index" }}
+  {{ partial "head.html" . }}
+  <body>
+    {{ partial "header.html" . }}
+
+    {{ partial "hero.html" . }}
+
+    <section class="intro-block block grey-bg slash-shadow slash-top slash-right">
+      <div class="block-inner grid">
+        <h2>{{ .Params.introTitle }}</h2>
+        <p>{{ .Params.intro }}</p>
+      </div>
+    </section>
+    {{ .Content }}
+
+
+
+    {{ partial "footer.html" . }}
+  </body>
+{{ end }}
+{{ end }}

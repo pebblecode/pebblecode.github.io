@@ -1,6 +1,7 @@
 {{ partial "head.html" . }}
 <body class="{{.Params.color}}">
   {{ partial "header.html" . }}
+    {{.Params.color}}
     {{.Content}}
   {{ partial "footer.html" . }}
 </body>

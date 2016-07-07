@@ -2,10 +2,9 @@
 title: About
 type: page
 layout: about
-slug: about
+url: /about
 menu: main
-
-color: "pink"
+color: pink
 ---
 
 Abouttttt

@@ -1,8 +1,15 @@
 ---
-title: hey
+title: Home
+url: /
 type: index
-params:
-  color: "pink"
+color: clear
+
+## ------ Hero ------ ##
+heroTitle: We do Digital Innovation
+heroSubtitle:
+heroPlayBtn: Play Video
+heroTranslucancy: clear
+heroSlashAngle:
 ---
 
-heyyyy
+Home
