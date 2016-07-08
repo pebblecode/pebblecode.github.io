@@ -6,9 +6,10 @@ url: /about
 menu: main
 color: pink
 
-## ------ Hero ------ ##
-heroTitle: We do Digital Innovation
-heroSubtitle:
+params:
+  ## ------ Hero ------ ##
+  heroTitle: We do Digital Innovation
+  heroSubtitle: Hey
 
 ---
 
