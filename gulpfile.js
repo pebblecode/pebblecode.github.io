@@ -2,7 +2,6 @@
 var gulp = require('gulp'),
     babel = require('gulp-babel'),
     changed = require('gulp-changed'),
-    jscs = require('gulp-jscs'),
     livereload = require('gulp-livereload'),
     autoprefixer = require('gulp-autoprefixer'),
     sourcemaps = require('gulp-sourcemaps'),
