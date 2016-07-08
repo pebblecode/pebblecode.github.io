@@ -130,4 +130,33 @@
   </section>
 
   {{ partial "footer.html" . }}
+
+  <script>
+    // Header change colour
+    var headerContainer = $('.gbl-head');
+    if ($(headerContainer).length > 0) {
+      var awards;
+      var team;
+
+      var scrollPositions = function () {
+        awards = $('#awards');
+        team = $('#team');
+      };
+
+      var headerBG = function () {
+        var windowTop = $(window).scrollTop();
+        if (windowTop > team.offset().top - 200 || team.offset().bottom) {
+          headerContainer.css({'background-color':'#0ea2dc'});
+        } else if (windowTop > awards.offset().top - 200 || awards.offset().bottom) {
+          headerContainer.css({'background-color':'#ed4f7e'});
+        } else {
+          headerContainer.css({'background-color':'#37bec0'});
+        }
+      };
+
+      $(window).resize(scrollPositions).scroll(headerBG);
+      scrollPositions();
+      headerBG();
+    }
+    </script>
 </body>
