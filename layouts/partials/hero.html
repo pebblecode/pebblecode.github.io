@@ -1,24 +1,24 @@
 {{ if eq (relURL .URL) ("/" | safeHTML) }}
   <section class="hero-block video-block">
 {{ else }}
-  <section class="hero-block slash-shadow block-{{ .Params.heroTranslucancy }} {{ .Params.color }}-bg slash-{{ .Params.heroSlashAngle }}">
+  <section class="hero-block slash-shadow block-{{ .Params.hero_translucancy }} {{ .Params.color }}-bg slash-{{ .Params.hero_slash_angle }}">
 {{ end }}
 
   <div class="hero-inner grid">
-    {{ if (isset .Params "heroLogo") }}
-      <span class="client-logo {{ .Params.heroLogo }}-logo-white">{{ .Params.client }}</span>
+    {{ if (isset .Params "hero_logo") }}
+      <span class="client-logo {{ .Params.hero_logo }}-logo-white">{{ .Params.client }}</span>
     {{ end }}
-    <h1 class="hero-title col-1-1">{{ .Params.heroTitle }}</h1>
-    {{ if (isset .Params "heroSubtitle") }}
-      <p class="hero-subtitle col-1-1">{{ .Params.heroSubtitle }}</p>
+    <h1 class="hero-title col-1-1">{{ .Params.hero_title }}</h1>
+    {{ if (isset .Params "hero_subtitle") }}
+      <p class="hero-subtitle col-1-1">{{ .Params.hero_subtitle }}</p>
     {{ end }}
-    {{ if (isset .Params "heroBtnText") }}
-      <a href="{{ .Params.heroBtnUrl }}" class="btn btn-light btn-arrow btn-lrg btn-center">{{ .Params.heroBtnText }}</a>
+    {{ if (isset .Params "hero_btn_text") }}
+      <a href="{{ .Params.heroBtnUrl }}" class="btn btn-light btn-arrow btn-lrg btn-center">{{ .Params.hero_btn_text }}</a>
     {{ end }}
   </div>
 
   {{ if eq (relURL .URL) ("/" | safeHTML) }}
-    <button id="fs-video" class="video-play-btn btn-play btn-block btn-circle white-bg">{{ .Params.heroPlayBtn }}</button>
+    <button id="fs-video" class="video-play-btn btn-play btn-block btn-circle white-bg">{{ .Params.hero_play_btn }}</button>
     <video class="video" id="officespace" preload src="https://s3-eu-west-1.amazonaws.com/pebblecodecom/officeloop-bw.mp4" autoplay loop></video>
   {{ end }}
 </section>

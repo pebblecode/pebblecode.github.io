@@ -8,7 +8,7 @@
 
     <section class="intro-block block grey-bg slash-shadow slash-top slash-right">
       <div class="block-inner grid">
-        <h2>{{ .Params.introTitle }}</h2>
+        <h2>{{ .Params.intro_title }}</h2>
         <p>{{ .Params.intro }}</p>
       </div>
     </section>
@@ -17,5 +17,67 @@
 
     {{ partial "footer.html" . }}
   </body>
+
+  <script>
+    // Header change colour
+    var headerContainer = $('.gbl-head');
+    if ($(headerContainer).length > 0) {
+      var expertise;
+
+      var scrollPositions = function () {
+        expertise = $('#expertise');
+      };
+
+      var headerBG = function () {
+        var windowTop = $(window).scrollTop();
+        if (windowTop > expertise.offset().top - 200 || expertise.offset().bottom) {
+          headerContainer.css({'background-color':'#0ea2dc'});
+        } else if (windowTop < 1) {
+          headerContainer.css({'background-color':''});
+        } else {
+          headerContainer.css({'background-color':'#ed4f7e'});
+        }
+      };
+
+      $(window).resize(scrollPositions).scroll(headerBG);
+      scrollPositions();
+      headerBG();
+    }
+
+    // Video - loop the video
+    var video = document.getElementById('officespace');
+    if (video) {
+      video.addEventListener('ended', function(e) {
+        this.play();
+      });
+    }
+
+    var videoPlay = document.getElementById('fs-video');
+    if (videoPlay) {
+      var $videoContainer = $('#fs-video-container');
+      var videoClose = $videoContainer.find('.btn-close')[0];
+
+      videoClose.addEventListener('click', function(e) {
+        videoStop()
+      });
+
+      $(document).keyup(function(e) {
+        if (e.keyCode == 27) { videoStop() }
+      });
+
+      var videoStop = function() {
+        $videoContainer.fadeOut(350, function() {
+          $videoContainer.find('#fs-video')[0].pause();
+        });
+      }
+
+      videoPlay.addEventListener('click', function(e) {
+        $videoContainer.find('#fs-video')[0].play();
+        $('#fs-video-container').fadeIn(350, function() {
+          $(this).css('display', 'flex');
+        });
+      });
+    }
+    </script>
 {{ end }}
 {{ end }}

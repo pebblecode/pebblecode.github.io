@@ -2,13 +2,6 @@
 
 @import "shared/_abstracts";
 
-@import "critical/_fixes";
-@import "critical/_layout";
-@import "critical/_typography";
-@import "critical/_header";
-@import "critical/_hero";
-@import "critical/_video";
-
 @import "shared/_normalize";
 @import "shared/_grid";
 @import "shared/_typography";
@@ -52,3 +45,10 @@
 @import "pages/blog/_meta";
 
 @import "shared/_ie";
+
+@import "critical/_fixes";
+@import "critical/_layout";
+@import "critical/_typography";
+@import "critical/_header";
+@import "critical/_hero";
+@import "critical/_video";
