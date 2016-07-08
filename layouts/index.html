@@ -76,7 +76,7 @@
             </div>
           {{ end }}
         </div>
-        <a href="{{ .Params.action_btn_url }}" class="btn btn-lrg btn-center btn-arrow">{{ .Params.action_btn_text }}</a>
+        <a href="{{ .Site.BaseURL }}{{ .Params.action_btn_url }}" class="btn btn-lrg btn-center btn-arrow">{{ .Params.action_btn_text }}</a>
       </div>
     </section>
 

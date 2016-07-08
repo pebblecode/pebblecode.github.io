@@ -6,10 +6,7 @@ color: clear
 
 ## ------ Hero ------ ##
 hero_title: We do Digital Innovation
-hero_subtitle:
-hero_play_btn:
 hero_translucancy: clear
-hero_slash_angle:
 
 # ------- Photo -------- #
 
@@ -51,7 +48,7 @@ action_illustration: v2/people.png
 action_title: Intro to Innovation workshops
 action_summary: We run a monthly introduction to Digital Innovation workshop at pebble HQ. This is a practical workshop on techniques that can make your organisation more innovative.
 action_btn_text: Sign Up for the Next one now
-action_btn_url: "http://pebblecode.com/events/hackdays/july-21/"
+action_btn_url: "events/hackdays/july-21/"
 
 ## ------ Hackday Events ------ ##
 hackday_events:
@@ -60,7 +57,7 @@ hackday_events:
  - name: August 25
    link: "events/hackdays/august-25/"
  - name: September 22
-   link: "http://pebblecode.com/events/hackdays/september-22/"
+   link: "events/hackdays/september-22/"
 
 ## ------ Footer ------ ##
 footer_color: grey

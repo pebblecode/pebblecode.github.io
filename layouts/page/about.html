@@ -4,14 +4,130 @@
   {{ partial "header.html" . }}
   {{ partial "hero.html" . }}
 
-  <section class="intro-block block grey-bg slash-shadow slash-top slash-right">
-    <div class="block-inner grid">
-      <h2>{{ .Params.introTitle }}</h2>
-      <p>{{ .Params.intro }}</p>
+  <section class="photo-block">
+    <div class="photo" style="background-image: url(/img/features/{{ .Params.photo1_url }})"></div>
+  </section>
+
+  <section class="feature-block block grey-bg slash-shadow slash-top">
+    <div class="block-inner block-inner-right grid">
+      <div class="col-1-2">
+        <img src="/img/illustrations/{{ .Params.block1_illustration }}" alt="">
+      </div>
+      <div class="col-1-2">
+        <h2>{{ .Params.block1_title }}</h2>
+        <p class="delta">{{ .Params.block1_summary_lrg }}</p>
+        <p class="epsilon">{{ .Params.block1_summary }}</p>
+      </div>
     </div>
   </section>
 
-  {{ .Content }}
+  <section class="feature-block block slash-shadow slash-right">
+    <div class="block-inner grid">
+      <div class="col-1-2">
+        <img src="/img/illustrations/{{ .Params.block2_illustration }}" alt="">
+      </div>
+      <div class="col-1-2">
+        <h2>{{ .Params.block2_title }}</h2>
+        <p class="delta">{{ .Params.block2_summary_lrg }}</p>
+        <p class="epsilon">{{ .Params.block2_summary }}</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="photo-block">
+    <div class="photo" style="background-image: url(/img/features/{{ .Params.photo2_url }})"></div>
+  </section>
+
+  <section id="awards" class="feature-block block block-light slash-shadow slash-top pink-bg">
+    <div class="block-inner block-inner-right grid">
+      <div class="col-1-2">
+        <img src="/img/illustrations/{{ .Params.block3_illustration }}" alt="">
+      </div>
+      <div class="col-1-2">
+        <h2>{{ .Params.block3_title }}</h2>
+        <p class="delta">{{ .Params.block3_summary_lrg }}</p>
+        <p class="epsilon">{{ .Params.block3_summary }}</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="block feature-block block block-light pink-dark5-bg slash-shadow">
+    <div class="block-inner grid">
+      <div class="col-1-2">
+        <img src="/img/illustrations/{{ .Params.block4_illustration }}" alt="">
+      </div>
+      <div class="col-1-2">
+        <h2>{{ .Params.block4_title }}</h2>
+        <p class="delta">{{ .Params.block4_summary_lrg }}</p>
+        <p class="epsilon">{{ .Params.block4_summary }}</p>
+        <a href="{{ .Params.block4_btn_url }}" class="btn btn-light btn-med btn-arrow">{{ .Params.block4_btn_text }}</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="photo-block">
+    <div class="photo" style="background-image: url(/img/features/{{ .Params.photo3_url }})"></div>
+  </section>
+
+  <section id="team" class="team-block block blue-bg slash-shadow slash-top slash-right">
+    <div class="block blue-bg slash-shadow block-light">
+      <div class="block-inner grid">
+        <h2 class="text-center">{{ .Params.team_title }}</h2>
+        <ul class="team-col col-1-2">
+          {{ range .Params.person_col1 }}
+          <li class="person card">
+            <div class="card-inner">
+              <div class="card-img" style="background-image: url(/img/{{ .img }})"></div>
+              <h3 class="card-title slash-shadow slash-top">{{ .name }}</h3>
+              <h4 class="card-subtitle">{{ .role }}</h4>
+              <p class="card-excerpt">{{ .summary }}</p>
+            </div>
+          </li>
+          {{ end }}
+        </ul>
+        <ul class="team-col col-1-2">
+          {{ range .Params.person_col2 }}
+          <li class="person card">
+            <div class="card-inner">
+              <div class="card-img" style="background-image: url(/img/{{ .img }})"></div>
+              <h3 class="card-title slash-shadow slash-top">{{ .name }}</h3>
+              <h4 class="card-subtitle">{{ .role }}</h4>
+              <p class="card-excerpt">{{ .summary }}</p>
+            </div>
+          </li>
+          {{ end }}
+        </ul>
+      </div>
+      <div class="block-inner grid block block-team-intro">
+        <div class="col-1-1">
+          <h2 class="text-center">{{ .Params.core_team_title }}</h2>
+          <p class="epsilon">{{ .Params.core_intro }}</p>
+          <a href="{{ .Params.core_btn_url }}" class="btn btn-lrg btn-light btn-center btn-arrow">{{ .Params.core_btn }}</a>
+          </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="photo-block">
+    <div class="photo" style="background-image: url(/img/features/{{ .Params.photo4_url }})"></div>
+  </section>
+
+  <section class="action-block intro-block block slash-shadow slash-top">
+    <div class="block-inner grid">
+      <img class="action-img" src="/img/illustrations/{{ .Params.action_illustration }}" alt="">
+      <h2 class="action-title pink-text">{{ .Params.action_title }}</h2>
+      <p class="pink-text">{{ .Params.action_summary }}</p>
+      <div class="upcoming-hackdays">
+      <h4 class="text-center">Upcoming:</h4>
+        {{ range .Params.hackday_events }}
+          <div class="col-1-3">
+            <a href="{{ .Site.BaseURL }}{{ .link }}">{{ .name }}</a>
+          </div>
+        {{ end }}
+      </div>
+      <a href="{{ .Site.BaseURL }}{{ .Params.action_btn_url }}" class="btn btn-lrg btn-center btn-arrow">{{ .Params.action_btn_text }}</a>
+    </div>
+  </section>
 
   {{ partial "footer.html" . }}
 </body>

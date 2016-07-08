@@ -5,7 +5,7 @@ url: "http://pebblecode.com" # the base hostname & protocol for your site
 
 params:
   description: Digital Innovation Consultancy - Agile Development, Design Thinking and Rapid Prototyping.
-  
+
   email: hello@pebblecode.com
   twitter: pebblecode
   github: pebblecode
