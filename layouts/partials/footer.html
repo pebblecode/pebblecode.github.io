@@ -1,3 +1,20 @@
+  <footer class="gbl-foot {{ .Params.footer_color }}-bg gbl-foot-{{ .Params.footer_tone }}">
+  <div class="gbl-foot-inner grid">
+    <ul class="gbl-foot-links">
+      <li><a href="tel:+442033273940">+44 (0) 20 3327 3940</a></li>
+      <li><a href="mailto:{{ .Site.Params.email }}">{{ .Site.Params.email }}</a></li>
+      <li><a href="{{ .Site.BaseURL }}/contact">Find us</a></li>
+      <li><a href="{{ .Site.BaseURL }}/careers">Join us</a></li>
+    </ul>
+    <ul class="gbl-foot-social">
+      <li><a href="https://github.com/{{ .Site.Params.github }}" class="github" target="_blank">Github</a></li>
+      <li><a href="https://twitter.com/{{ .Site.Params.twitter }}" class="twitter" target="_blank">Twitter</a></li>
+      <li><a href="https://vimeo.com/{{ .Site.Params.vimeo }}" class="vimeo" target="_blank">Vimeo</a></li>
+    </ul>
+    <span class="gbl-foot-tagline">Delivering Awesome!</span>
+  </div>
+  </footer>
+
   <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <script src="js/main.min.js"></script>
 </html>

@@ -12,12 +12,13 @@ var gulp = require('gulp'),
     imagemin = require('gulp-imagemin'),
     uglify = require('gulp-uglify'),
     rename = require('gulp-rename'),
-    pngquant = require('imagemin-pngquant');
+    pngquant = require('imagemin-pngquant'),
+    critical = require('critical');
 
 // Define filepaths
 var paths = {
   styles: {
-    src: 'src/scss/styles.scss',
+    src: 'src/scss/*.scss',
     destDir: 'static/css/',
     destFile: 'styles.css',
     watch: 'src/scss/**/*.scss'

@@ -1,14 +1,15 @@
 # Site settings
 title: pebble {code}
-email: hello@pebblecode.com
-description: > # this means to ignore newlines until "baseurl:"
-  Digital Innovation Consultancy - Agile Development, Design Thinking and Rapid Prototyping.
 baseurl: "http://pebblecode.com" # the subpath of your site, e.g. /blog/
 url: "http://pebblecode.com" # the base hostname & protocol for your site
 
-twitter: pebblecode
-github: pebblecode
-vimeo: pebblecode
+params:
+  description: Digital Innovation Consultancy - Agile Development, Design Thinking and Rapid Prototyping.
+  
+  email: hello@pebblecode.com
+  twitter: pebblecode
+  github: pebblecode
+  vimeo: pebblecode
 
 
 # Pagination

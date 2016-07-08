@@ -56,10 +56,14 @@ action_btn_url: "http://pebblecode.com/events/hackdays/july-21/"
 ## ------ Hackday Events ------ ##
 hackday_events:
  - name: July 21
-   link: "http://pebblecode.com/events/hackdays/july-21/"
+   link: "events/hackdays/july-21/"
  - name: August 25
-   link: "http://pebblecode.com/events/hackdays/august-25/"
+   link: "events/hackdays/august-25/"
  - name: September 22
    link: "http://pebblecode.com/events/hackdays/september-22/"
+
+## ------ Footer ------ ##
+footer_color: grey
+footer_tone: pink
 
 ---

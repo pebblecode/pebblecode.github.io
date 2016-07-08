@@ -13,7 +13,72 @@
       </div>
     </section>
 
-    {{ .Content }}
+    {{ partial "clients.html" . }}
+
+    <section id="expertise" class="expertise-block block blue-bg slash-shadow slash-right">
+      <div class="intro-block block block-light">
+        <div class="block-inner grid">
+          <h2>{{ .Params.expertise_title }}</h2>
+          <p>{{ .Params.expertise_subtitle }}</p>
+          <a href="{{ .Params.expertise_work_btn_url }}" class="btn btn-lrg btn-light btn-arrow">{{ .Params.expertise_work_btn_text }}</a>
+          <a href="{{ .Params.expertise_wiw_btn_url }}" class="btn btn-lrg btn-light btn-arrow">{{ .Params.expertise_wiw_btn_text }}</a>
+        </div>
+      </div>
+      <div class="feature-block block block-light">
+        <div class="block-inner grid">
+          <div class="col-1-2">
+            <img src="/img/illustrations/{{ .Params.expertise_one_illustration }}" alt="">
+          </div>
+          <div class="col-1-2">
+            <h3>{{ .Params.expertise_one_title }}</h3>
+            <p>{{ .Params.expertise_one_summary }}</p>
+          </div>
+        </div>
+      </div>
+      <div class="feature-block block block-light blue-dark5-bg">
+        <div class="block-inner block-inner-right grid">
+          <div class="col-1-2">
+            <img src="/img/illustrations/{{ .Params.expertise_two_illustration }}" alt="">
+          </div>
+          <div class="col-1-2 text-right">
+            <h3>{{ .Params.expertise_two_title }}</h3>
+            <p>{{ .Params.expertise_two_summary }}</p>
+          </div>
+        </div>
+      </div>
+      <div class="feature-block block block-light">
+        <div class="block-inner grid">
+          <div class="col-1-2">
+            <img src="/img/illustrations/{{ .Params.expertise_three_illustration }}" alt="">
+          </div>
+          <div class="col-1-2">
+            <h3>{{ .Params.expertise_three_title }}</h3>
+            <p>{{ .Params.expertise_three_summary }}</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="photo-block">
+      <div class="photo" style="background-image: url(/img/features/{{ .Params.photo1_url }})"></div>
+    </section>
+
+    <section class="action-block intro-block block slash-shadow slash-top">
+      <div class="block-inner grid">
+        <img class="action-img" src="/img/illustrations/{{ .Params.action_illustration }}" alt="">
+        <h2 class="action-title pink-text">{{ .Params.action_title }}</h2>
+        <p class="pink-text">{{ .Params.action_summary }}</p>
+        <div class="upcoming-hackdays">
+        <h4 class="text-center">Upcoming:</h4>
+          {{ range .Params.hackday_events }}
+            <div class="col-1-3">
+              <a href="{{ .Site.BaseURL }}{{ .link }}">{{ .name }}</a>
+            </div>
+          {{ end }}
+        </div>
+        <a href="{{ .Params.action_btn_url }}" class="btn btn-lrg btn-center btn-arrow">{{ .Params.action_btn_text }}</a>
+      </div>
+    </section>
 
     {{ partial "footer.html" . }}
   </body>
