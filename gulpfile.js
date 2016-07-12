@@ -12,8 +12,7 @@ var gulp = require('gulp'),
     imagemin = require('gulp-imagemin'),
     uglify = require('gulp-uglify'),
     rename = require('gulp-rename'),
-    pngquant = require('imagemin-pngquant'),
-    critical = require('critical');
+    pngquant = require('imagemin-pngquant');
 
 // Define filepaths
 var paths = {
