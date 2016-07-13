@@ -18,7 +18,7 @@ intro: c2c operates an important train line connecting the city of London and th
 
 
 ## ------- Photo 1 -------- ##
-photo1-url: features/team.jpg
+photo1-url: case-studies/c2c/feature-1.jpg
 
 
 ## ------ Problem ------ ##
@@ -66,7 +66,7 @@ quote2-author:
 
 
 ## ------- Photo 2 -------- ##
-photo2-url: case-studies/c2c/feature-1.jpg
+photo2-url: case-studies/c2c/feature-2.jpg
 
 
 ## ------ Actionable CTA ------ ##

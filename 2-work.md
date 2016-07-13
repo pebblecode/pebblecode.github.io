@@ -32,7 +32,7 @@ block1-project1-logo: bede-logo
 block1-project1-client: Bede Gaming
 block1-project1-title: Disrupting the gaming industry
 block1-project1-summary: A new player in the gaming platform market handling massive load and player stakes.
-block1-project1-url:
+block1-project1-url: bede
 
 #Project 2
 block1-project2-img: bybox/thumb.png
