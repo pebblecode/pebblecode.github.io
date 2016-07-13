@@ -34,7 +34,7 @@ method-title: The Methods
 
 # Method 1
 method1-title: Concept creation
-method1-summary: pebble {code} were involved in the early days of Bede Gaming, and worked quickly to help create the initial concepts for the platform with the founders.
+method1-summary: pebble {code} were involved in the early days of Bede Gaming, and worked quickly to help Bede's Founders develop the early prototypes of Bede's eWallet and bingo games.
 
 # Method 2
 method2-title: Agile rapid prototyping
@@ -42,7 +42,7 @@ method2-summary: pebble {code} and Bede Gaming created hybrid agile teams, with 
 
 # Method 3
 method3-title: Continuous delivery
-method3-summary: 5 years on, pebble {code} continues to provide development support and senior architectural consultancy to Bede Gaming as they win major gambling clients.
+method3-summary: Five years on, pebble {code} continues to provide development support and architectural consultancy to Bede Gaming as they win major gambling clients.
 
 # Quote
 quote1:
@@ -53,17 +53,17 @@ quote1-author:
 results-title: The Results
 results-illustration: v2/rocket-2.svg
 results-summary-lrg: Through early-stage collaboration with pebble {code}, Bede Gaming built their own platform that gives customers and gamers the freedom to adapt their products and play them on any device.
-results-summary: The platform also integrates best of breed games from other content providers, delivering gaming of all kinds on a whole new industry-leading platform. They have also created a world-class engineering team that pebble {code} is proud to have contributed to.<br><br> The platform has supported at peak times up to 5000 players using different games and devices. Bede Gaming currently has 100 cloud-based servers under their management, and power 30 different gambling websites.
+results-summary: The platform also integrates best of breed games from other content providers, delivering gaming of all kinds on a whole new industry-leading platform. They have also created a world-class engineering team that pebble {code} is proud to have contributed to.<br><br> The platform has supported at peak times up to 5000 players using different games and devices. Bede Gaming currently has 1000 cloud-based servers under their management, and power 30 different gambling websites.
 results-screenshot: bede/screenshot.png
 
 
 ## ------ The Future ------ ##
 future-title: The Future
-future-summary: The new platform adds £100 million in stakes each month for Bede Gaming, adding value and attracting new games to the software every day.
+future-summary: The new platform adds £100 million in stakes each month for Bede Gaming, adding value and attracting new games to the product suite every day.
 
 # Quote
-quote2:
-quote2-author:
+quote2: pebble {code} has been fantastic long-term partner for Bede Gaming. They shared our vision from the start and have consistently proven themselves to be highly innovative and extremely capable.
+quote2-author: Dan Smyth, Founder, Bede Gaming
 
 
 ## ------- Photo 2 -------- ##
