@@ -62,7 +62,7 @@ future-title: The Future
 future-summary: The new platform adds £100 million in stakes each month for Bede Gaming, adding value and attracting new games to the product suite every day.
 
 # Quote
-quote2: pebble {code} has been fantastic long-term partner for Bede Gaming. They shared our vision from the start and have consistently proven themselves to be highly innovative and extremely capable.
+quote2: pebble {code} has been a fantastic long-term partner for Bede Gaming. They shared our vision from the start and have consistently proven themselves to be highly innovative and extremely capable.
 quote2-author: Dan Smyth, Founder, Bede Gaming
 
 
