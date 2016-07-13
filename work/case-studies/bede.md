@@ -71,7 +71,7 @@ photo2-url: case-studies/bede/feature-2.jpg
 
 
 ## ------ Actionable CTA ------ ##
-action-illustration: v2/brain.svg
+action-illustration: v2/brain.png
 action-title: Want to bring innovation to your team? pebble {code} has you covered.
 
 ---
