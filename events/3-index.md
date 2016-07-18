@@ -16,12 +16,6 @@ upcoming-events-title: Upcoming Events
 upcoming-events-intro: pebble hosts a wide range of events including seminars and lightning talks. Get involved.
 
 upcomingevents:
- - name: Innovation hacking
-   date: "July 13th, 2016"
-   location: Vox Studios
-   thumbnail: "/img/events/hacking-innovation-thumb.png"
-   description: "Please join us for an informal presentation and discussion at Vox Studios to discuss how hacking can empower your team and drive innovation and growth."
-   eventlink: "/events/innovation-hacking/"
  - name: Insurance Seminar
    date: "July 19th, 2016"
    location: The Gherkin
