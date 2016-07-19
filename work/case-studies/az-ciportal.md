@@ -67,7 +67,7 @@ quote2-author: Ed Johnson, Senior Business Intelligence Architect, AstraZeneca
 
 
 ## ------- Photo 2 -------- ##
-photo2-url: case-studies/az-ciportal/feature-1.jpg
+photo2-url: culture/img-1.jpg
 
 
 ## ------ Actionable CTA ------ ##
