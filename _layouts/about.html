@@ -149,8 +149,12 @@
           {% endfor %}
         </div>
         <a href="{{ page.action-btn-url }}" class="btn btn-lrg btn-center btn-arrow">{{ page.action-btn-text }}</a>
+     </div>
+     <div class="block-inner grid">
+        <p class="action-title pink-text">{{ page.action-summary2 }}</p>
+        <img class="action-img-middle" src="/img/illustrations/{{ page.ebook-illustration }}" alt="">
+        <a href="{{ page.action-btn2-url }}" class="btn btn-lrg btn-center btn-arrow">{{ page.action-btn2-text }}</a>
       </div>
-
     </section>
 
     {% include footer.html %}

@@ -48,10 +48,14 @@ photo1-url: hackday.jpg
 
 ## ------ Actionable CTA ------ ##
 action-illustration: v2/people.png
-action-title: Intro to Innovation workshops
+action-title: Interested in Innovation?
 action-summary: We run a monthly introduction to Digital Innovation workshop at pebble HQ. This is a practical workshop on techniques that can make your organisation more innovative.
 action-btn-text: Sign Up for the Next one now
-action-btn-url: "http://pebblecode.com/events/hackdays/september-22/"
+action-btn-url: "http://pebblecode.com/events/hackdays/july-21/"
+action-summary2: or Download our 5 steps to Innovation eBook now.
+ebook-illustration: ebook-graphic.png
+action-btn2-text: Sign up now
+action-btn2-url: "http://ohai.pebblecode.com/5-steps-to-digital-innovation-e-book"
 
 ## ------ Hackday Events ------ ##
 hackday-events:
