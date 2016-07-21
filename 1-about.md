@@ -121,10 +121,6 @@ action-btn-url: "http://pebblecode.com/events/hackdays/july-21/"
 
 ## ------ Hackday Events ------ ##
 hackday-events:
- - name: July 21
-   link: "http://pebblecode.com/events/hackdays/july-21/"
- - name: August 25
-   link: "http://pebblecode.com/events/hackdays/august-25/"
  - name: September 22
    link: "http://pebblecode.com/events/hackdays/september-22/"
 
