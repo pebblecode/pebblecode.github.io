@@ -51,14 +51,10 @@ action-illustration: v2/people.png
 action-title: Intro to Innovation workshops
 action-summary: We run a monthly introduction to Digital Innovation workshop at pebble HQ. This is a practical workshop on techniques that can make your organisation more innovative.
 action-btn-text: Sign Up for the Next one now
-action-btn-url: "http://pebblecode.com/events/hackdays/july-21/"
+action-btn-url: "http://pebblecode.com/events/hackdays/september-22/"
 
 ## ------ Hackday Events ------ ##
 hackday-events:
- - name: July 21
-   link: "http://pebblecode.com/events/hackdays/july-21/"
- - name: August 25
-   link: "http://pebblecode.com/events/hackdays/august-25/"
  - name: September 22
    link: "http://pebblecode.com/events/hackdays/september-22/"
 
