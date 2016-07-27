@@ -51,7 +51,7 @@ action-illustration: v2/people.png
 action-title: Interested in Innovation?
 action-summary: We run a monthly introduction to Digital Innovation workshop at pebble HQ. This is a practical workshop on techniques that can make your organisation more innovative.
 action-btn-text: Sign Up for the Next one now
-action-btn-url: "http://pebblecode.com/events/hackdays/july-21/"
+action-btn-url: "http://pebblecode.com/events/hackdays/september-22/"
 action-summary2: or Download our 5 steps to Innovation eBook now.
 ebook-illustration: ebook-graphic.png
 action-btn2-text: Sign up now
