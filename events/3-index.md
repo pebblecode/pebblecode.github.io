@@ -17,7 +17,7 @@ upcoming-events-intro: pebble hosts a wide range of events including seminars an
 
 upcomingevents:
  - name: Intro to Innovation workshops
-   date: "July 21st, 2016"
+   date: "September 22nd, 2016"
    location: pebble HQ, Vauxhall
    thumbnail: "/img/events/hacking-intro-thumb.png"
    description: "We run a monthly introduction to Digital Innovation workshop at pebble HQ. This is a practical workshop on techniques that can make your organisation more innovative.<br>The next event will be held on <a href='/events/hackdays/september-22/'>September 22nd</a>"
