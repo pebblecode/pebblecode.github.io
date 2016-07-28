@@ -24,7 +24,7 @@ About a year ago, I started tinkering with the Spotify API. This allows users to
 
 ## Falala.co is born
 
-To achieve the above aim, an web app was in order. I elected to use Node.js, MongoDB, along with the Jade templating engine. The app is rolled into 2 Docker images (one for the app, one for the database), and hosted on AWS. A future blog post will detail getting MongoDB up and running on AWS. You can see the result here:
+To achieve the above aim, a web app was in order. I elected to use Node.js, MongoDB, along with the Jade templating engine. The app is rolled into 2 Docker images (one for the app, one for the database), and hosted on AWS. A future blog post will detail getting MongoDB up and running on AWS. You can see the result here:
 
 [falala.co](http://falala.co)
 
