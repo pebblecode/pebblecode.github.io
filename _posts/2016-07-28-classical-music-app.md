@@ -3,7 +3,7 @@ layout: post
 title: Falala.co - a Spotfiy Classical Music Companion App
 author: John Mildinhall
 categories: [music, development, node]
-thumbnail: /img/blog/worms.jpg
+thumbnail: /img/blog/beethoven.jpg
 --- 
 
 Like many other people in our office, I am a subscriber to Spotify's excellent music streaming service. I have a pretty wide-ranging taste, but tend to mainly hover around the area of blues and rock with a few forays into electronica. Recently I also started to listen to more classical music. As a young musician, I had a fairly strong grounding in the genre when I was younger - I played the bassoon, oboe and piano. 
