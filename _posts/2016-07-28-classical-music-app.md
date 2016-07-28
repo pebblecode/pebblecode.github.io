@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Falala.co - a Spotfiy Classical Music Companion App
+title: Falala.co - a Spotify Classical Music Companion App
 author: John Mildinhall
 categories: [music, development, node]
 thumbnail: /img/blog/beethoven.jpg
