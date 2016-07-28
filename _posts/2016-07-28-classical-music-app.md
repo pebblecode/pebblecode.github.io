@@ -18,11 +18,11 @@ The Spotify client tends to cut off the key information, which is often at the e
 
 From the perspective of Spotify, this is understandable. The vast majority of their listenership is interested in music which essentially has the same information architecture: That of the pop song. It does mean that the UX is sub-optimal for classical music however. 
 
-# Opening Pandora's Box
+## Opening Pandora's Box
 
 About a year ago, I started tinkering with the Spotify API. This allows users to read the data of artists, including their top tracks, their albums and related artists. It also provides URLs of track previews. I decided that it would be interesting to use this information to re-order the experience of the Spotify data in order to support the classical listener. 
 
-# Falala.co is born
+## Falala.co is born
 
 To achieve the above aim, an web app was in order. I elected to use Node.js, MongoDB, along with the Jade templating engine. The app is rolled into 2 Docker images (one for the app, one for the database), and hosted on AWS. A future blog post will detail getting MongoDB up and running on AWS. You can see the result here:
 
