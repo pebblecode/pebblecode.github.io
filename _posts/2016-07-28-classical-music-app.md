@@ -18,11 +18,11 @@ The Spotify client tends to cut off the key information, which is often at the e
 
 From the perspective of Spotify, this is understandable. The vast majority of their listenership is interested in music which essentially has the same information architecture: That of the pop song. It does mean that the UX is sub-optimal for classical music however. 
 
-#Opening Pandora's Box
+# Opening Pandora's Box
 
 About a year ago, I started tinkering with the Spotify API. This allows users to read the data of artists, including their top tracks, their albums and related artists. It also provides URLs of track previews. I decided that it would be interesting to use this information to re-order the experience of the Spotify data in order to support the classical listener. 
 
-#Falala.co is born
+# Falala.co is born
 
 To achieve the above aim, an web app was in order. I elected to use Node.js, MongoDB, along with the Jade templating engine. The app is rolled into 2 Docker images (one for the app, one for the database), and hosted on AWS. A future blog post will detail getting MongoDB up and running on AWS. You can see the result here:
 
@@ -30,7 +30,7 @@ To achieve the above aim, an web app was in order. I elected to use Node.js, Mon
 
 ![falala](/img/blog/falala-2.jpg)
 
-##Separating the Composer from the Artist
+## Separating the Composer from the Artist
 
 The primary challenge with Falala.co was to define what is classical music. Spotify does not really do this for the consumer of the API. There are some genre tags, but they appear to be sparsely applied and somewhat inconsistent - for example, one is `classical` and another is `classical opera`. In the language of maths, one is a subset of the other, but the data is not ordered that way. 
 
@@ -44,17 +44,17 @@ By extension, if a classical composer was listed with other artists, then those 
 
 Much as I love the ouevre of Ricky Martin, he can't really be considered classical, can he? To define a boundary between classical and other music, it was necessary to develop a metric of classicalness. This allows these artists to be excluded from the app. 
 
-##Catalogues
+## Catalogues
 
 In pop music, for the most part a recorded song is the root of an artist's work. What do I mean by this? Like a Virgin by Madonna is the canonical recording of that song. All other recordings of that song are subordinate to that particular recording. On the other hand, the root of a composer's work is the written notes of that particular piece. No recording of that piece has primacy over another (although they may vary in quality). This means that popularity of a recording is less important for a classical piece of music: There is no 'original' version. This means that it is more important to be able to compare recordings of the same work.
 
 To achieve this, the tracks from albums associated with composers and classical artists were analysed. By searching for catalogue information of the form `Catalogue Prefix. Catalogue Number : Piece Number` , e.g: `Op. 25 : IX` , a catalogue for each composer was generated. In some cases for example [Franz Schubert](http://falala.co/composers/Franz%20Schubert/cat/D), this is extensive with nearly a thousand separate pieces and tens of thousands of individual recordings. 
 
-##Concerts
+## Concerts
 
 Wouldn't it be great to find out where and when a particular piece is being played in concert next? We're not quite there yet, but on our way. Indexing concerts from the websites of venues is quite messy and slow work. So far the app associates composers and artists with concerts in the [South Bank Centre and the Royal Albert Hall](http://falala.co/concerts), both in London. 
 
-##What's next?
+## What's next?
 
 Organising all classical music is like trying to sweep up all the needles in a pine forest. Hundreds of years of culture have created a vast array of complex data structures and relationships. Disentangling them involves a great deal of work. I am considering open sourcing the app, because this is more than one person can deal with. For the moment, I am focusing on improving the apps ability to update itself with the latest releases. 
 
