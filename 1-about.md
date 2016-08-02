@@ -99,6 +99,16 @@ person5-summary:
 - "<p class='card-excerpt'>Graduate of Trinity College Cambridge, Barrister (Gray’s Inn), Member of the Bar Council of England and Wales, City Fellow of Hughes Hall Cambridge University.</p>"
 - "<p class='card-excerpt'>Bike nut.</p>"
 
+# Person Six
+person6-img: team/stephen.jpg
+person6-name: Greg Gladwell
+person6-role: Insurance Expert
+person6-summary:
+- "<p class='card-excerpt'>Greg provides unique insurance business insight as one of the few people to have successfully delivered in profile leadership roles on both the insurer and supplier sides of the market. He has a real interest in emerging innovation and technology opportunities, and a large network of contacts from 30+ years in the insurance industry. His ability to translate ideas and possibilities into valued commercial outcomes is highly regarded.</p>"
+- "<p class='card-excerpt'>Joining  Aviva at the ground floor and working his way up to a senior level  Greg experienced  many varied senior leadership roles that embraced large operational, central service function and change programme management activities.</p>"
+- "<p class='card-excerpt'>Seeking to experience more entrepreneurial and market facing challenge he progressed to lead 3 businesses in and around the claims management sector, the highest profile of these being as CEO UK & Ireland at Crawford & Company for 3.5 years.</p>"
+- "<p class='card-excerpt'> Recently Greg has moved on to a portfolio career providing mentoring  support to leaders of tomorrow, consultancy services to existing businesses and advisory insight to a number of start up businesses.  He has also formed his own tech start up, EzyAs Insurance Solutions ,which will launch shortly.</p>"
+
 
 ## ------ Innovation Team ------ ##
 core-team-title: Core Team
