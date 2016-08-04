@@ -240,18 +240,8 @@ karma.config.js
 
 You'll notice we're doing some funky stuff with sinon to stop it breaking require. Yeah we can share `webpack.config` here to reduce duplication but for this example we've copied and pasted it.
 
-We can now test our react components in silo and with the power of PhantomJS, we're able to test our components very fast. Setup a ```npm run karma:watch``` task to run in the background whilst developing. Here we're currently testing a dumb presentational component, but we can go further and test our redux containers for more functional testing.
+We can now test our react components in silo and with the power of PhantomJS, we're able to test our components very fast. Setup a ```npm run karma:watch``` task to run in the background whilst developing. Here we're currently testing a dumb presentational component, but we can go further and test our redux containers for more functional testing. *EDIT:* If you're looking to test Redux containers, we recently added a blogpost detailing [how we approached testing a dynamic Breadcrumb container component](/blog/testing-redux-containers/). Think of it as a Part 2 to this blogpost.
 
 And thats it! in the coming week I'll release a bare bones boilerplate project, complete with postcss, hot module replacement and the testing config shown here.
 
 Voice you're opinion at me [@export_mike](https://twitter.com/@export_mike) on twitter or [@pebblecode](https://twitter.com/@pebblecode). I'm just scratching the surface of the react testing story, I'd be interested if you've had any pains or gains in testing your React components. Is this useful information? Let me know. Thanks for reading, oh! I almost forgot we're [hiring](http://pebblecode.com/careers/#job-1220)!
-
-
-
-
-
-
-
-
-
-
