@@ -60,7 +60,7 @@ hackday_events:
    link: "events/hackdays/september-22/"
 
 ## ------ Footer ------ ##
-footer_color: grey
+footer_color: white
 footer_tone: pink
 
 ---
