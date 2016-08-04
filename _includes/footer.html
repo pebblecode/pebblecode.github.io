@@ -45,9 +45,15 @@
 {% endif %}
 {% if include.prettyprint %}
   <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js" defer></script>
+  <script src="{{ site.baseurl }}/js/vendor/prism.js" defer></script>
+  <link rel="stylesheet" href="{{ site.baseurl }}/css/prism.css">
   <script>
   [].forEach.call(document.getElementsByTagName("pre"), function(el) {
-    el.classList.add("prettyprint");
+    var prism = false;
+    el.classList.forEach(function(i) {
+      prism = /language-/.test(i) ? true : false;
+    })
+    if (!prism) el.classList.add("prettyprint");
   });
   </script>
 {% endif %}

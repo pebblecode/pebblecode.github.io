@@ -160,10 +160,12 @@ So we can include two types of `name` prop in our Route components in `routes.js
 1. Functions, that pull it out of state.
 2. Strings, that are directly formatted.
 
-{% highlight html %}
-<Route name={state => state.locations.name} path={'locations/:id'} component={Locations}/>
-<Route name={'locations'} path={'locations/:id'} component={Locations}/>
-{% endhighlight %}
+<pre class="language-jsx">
+  <code class="language-jsx">
+    <Route name={state => state.locations.name} path={'locations/:id'} component={Locations}/>
+    <Route name={'locations'} path={'locations/:id'} component={Locations}/>
+  </code>
+</pre>
 
 Then, finally, we can do a bit of further mapping and reducing in the Breadcrumb container component to concatenate the paths correctly and evaluate the params.
 
