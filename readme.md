@@ -68,6 +68,12 @@ Images are linked like this:
 ```
 The caption is included within square brackets `![caption]` and the path to the image file included within the regular brackets directly after. Include images within the `img/posts/` folder and create a new folder named after your post file name.
 
+If you're thinking of adding code snippets, [embedding Github Gists](https://github.com/blog/122-embedded-gists) is highly advised for readability and syntax highlighting. You can do it like so:
+```
+{% gist $ID_OF_YOUR_GIST  %}
+```
+You can easily create and upload gists with [a tool like this](https://github.com/defunkt/gist).
+
 #### Categories
 Creating new categories isn't advised due to categorised blog templates needing to be created manually. Either seek out already created categories within the `blog/tag` folder or use the following top categories:
 
