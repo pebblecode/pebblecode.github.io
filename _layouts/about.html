@@ -49,7 +49,6 @@
           <h2>{{ page.block3-title }}</h2>
           <p class="delta">{{ page.block3-summary-lrg }}</p>
           <p class="epsilon">{{ page.block3-summary }}</p>
-          <!-- <a class="btn btn-block btn-med btn-white btn-play">Team Hacking</a> -->
         </div>
       </div>
     </section>
@@ -125,7 +124,6 @@
           <div class="col-1-1">
             <h2 class="text-center">{{ page.core-team-title }}</h2>
             <p class="epsilon">{{ page.core-intro }}</p>
-            <a href="{{ page.core-btn-url }}" class="btn btn-lrg btn-light btn-center btn-arrow">{{ page.core-btn }}</a>
             </div>
         </div>
       </div>
@@ -140,15 +138,6 @@
         <img class="action-img" src="/img/illustrations/{{ page.action-illustration }}" alt="">
         <h2 class="action-title pink-text">{{ page.action-title }}</h2>
         <p class="pink-text">{{ page.action-summary }}</p>
-        <div class="upcoming-hackdays">
-        <h4 class="text-center">Upcoming:</h4>
-          {% for hackday in page.hackday-events %}
-            <div class="col-1-3">
-              <a href="{{hackday.link}}">{{hackday.name}}</a>
-            </div>
-          {% endfor %}
-        </div>
-        <a href="{{ page.action-btn-url }}" class="btn btn-lrg btn-center btn-arrow">{{ page.action-btn-text }}</a>
      </div>
      <div class="block-inner grid">
         <p class="action-title pink-text">{{ page.action-summary2 }}</p>
@@ -156,7 +145,11 @@
         <a href="{{ page.action-btn2-url }}" class="btn btn-lrg btn-center btn-arrow">{{ page.action-btn2-text }}</a>
       </div>
     </section>
-
+    <div style = "
+      height:200px;
+      width: 100%;
+      background-color:white;
+    "></div>
     {% include footer.html %}
 
     <script>
