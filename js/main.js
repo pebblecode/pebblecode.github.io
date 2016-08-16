@@ -48,7 +48,4 @@
     }
   });
 
-  // Console advert
-  console.log('%cHey! Love the console? Then check out our careers page.','font-family: "brandon-text","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;font-weight: 900;text-transform: uppercase;letter-spacing: -1px;text-shadow: 3px 4px 0 rgba(0,0,0,0.1);font-size:42px;color:#ed4f7e;');
-
 }()); // end 'use strict'

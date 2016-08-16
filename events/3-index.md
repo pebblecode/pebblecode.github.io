@@ -3,7 +3,6 @@ layout: events-base
 title: Events
 permalink: /events/
 colour: blue
-group: nav
 
 ## Hero Content
 hero-title: Events
@@ -11,17 +10,6 @@ hero-subtitle: We help businesses propel their digital capability and enable inn
 hero-btn:
 hero-btn-url:
 
-
-upcoming-events-title: Upcoming Events
-upcoming-events-intro: pebble hosts a wide range of events including seminars and lightning talks. Get involved.
-
-upcomingevents:
- - name: Intro to Innovation workshops
-   date: "September 22nd, 2016"
-   location: pebble HQ, Vauxhall
-   thumbnail: "/img/events/hacking-intro-thumb.png"
-   description: "We run a monthly introduction to Digital Innovation workshop at pebble HQ. This is a practical workshop on techniques that can make your organisation more innovative.<br>The next event will be held on <a href='/events/hackdays/september-22/'>September 22nd</a>"
-   eventlink: "/events/hackdays/september-22/"
 
 recent-events-title: Recent Events
 recent-events-intro: Past events we have hosted, be sure to check out the event page for videos and more.
